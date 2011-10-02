@@ -1,0 +1,274 @@
+/**************
+FILE          : spp.yc
+***************
+PROJECT       : SaX2 - SuSE advanced X configuration
+              :
+AUTHOR        : Marcus Schäfer <ms@suse.de>
+              :
+BELONGS TO    : configuration tool for the X window system 
+              : released under the GPL license
+              :
+DESCRIPTION   : SaX2 profile parser syntax analysis
+              : ----
+              :
+STATUS        : Status: Development
+**************/
+%{
+//====================================
+// C declaration part...
+//------------------------------------
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <qlist.h>
+#include <q3dict.h>
+#include <qstring.h>
+
+//====================================
+// External Variables...
+//------------------------------------
+extern char *yytext;
+extern char *yyline;
+extern int  lineno;
+extern int  yyletter;
+extern int  yystop;
+extern int  yystdin;
+
+//====================================
+// External Variables...
+//------------------------------------
+extern Q3Dict<QString> keyHash;
+extern Q3Dict<QString> varHash;
+
+//====================================
+// Variables...
+//------------------------------------
+int last_yyletter = 0;
+QString key;
+
+//====================================
+// Defines...
+//------------------------------------
+#define P1_1 "invalid sequence: expected KEY -> [sequence], "
+#define P1_2 "VARIABLE definition or #COMMAND"
+#define P1 P1_1 P1_2
+
+#define P2 "invalid expression: expected -> followed by [expression]"
+
+#define P3_1 "invalid KEY in LValue specification or invalid assignment: "
+#define P3_2 "expected LValue=RValue with LValue=KEY sequence and RValue=STRING"
+#define P3 P3_1 P3_2
+
+#define P4 "invalid KEY specified"
+
+//====================================
+// Functions...
+//------------------------------------
+int yylex (void);
+
+//====================================
+// yyerror
+//------------------------------------
+void yyerror ( const char* s) {
+	if (strcmp(s,"syntax error") == 0) {
+		return;
+	}
+	if (yyletter == last_yyletter) {
+		return;
+	}
+	fprintf(stderr,"%s\n",yyline);
+	for (int i=1; i<yyletter;i++) {
+		fprintf (stderr," ");
+	}
+	fprintf (stderr," ^ line <%d>: ", lineno); \
+	fprintf (stderr,"syntax error: %s\n",s);
+	last_yyletter = yyletter;
+	if (! yystdin) {
+		yystop = 1;
+	}
+}
+//====================================
+// yycmd
+//------------------------------------
+void yycmd ( const QString& c, const QString& v = "" ) {
+	if (v.isEmpty()) {
+		keyHash.insert (c,new QString("__cmd__"));
+	} else {
+		keyHash.insert (c,new QString(v));
+	}
+}
+//====================================
+// yykey
+//------------------------------------
+void yykey ( const QString& pk ) {
+	QString k = pk.trimmed();
+	if (key.isEmpty()) {
+		key.append ( k );
+	} else {
+		key.append ( "->"+k );
+	}
+}
+//====================================
+// yyvalue
+//------------------------------------
+void yyvalue ( const QString& pv, bool isKey=false ) {
+	QString v = pv.trimmed();
+	if (! isKey) {
+		QString* k = new QString (key);
+		keyHash.insert (*k,new QString(v));
+	} else {
+		QString* val = keyHash[key];
+		if (val) {
+			keyHash.remove ( key );
+			key = v + "->" + key;
+			yyvalue ( *val );
+		}
+	}
+}
+//====================================
+// yyvariable
+//------------------------------------
+void yyvariable ( const QString& pvname ) {
+	QString vname = pvname.trimmed();
+	if (keyHash[key]) {
+		QString* k = new QString (key);
+		varHash.insert (*k,new QString(vname));
+	}
+}
+void yyvariable ( const QString& pvname, const QString& pvval ) {
+	QString vname = pvname.trimmed();
+	QString vval  = pvval.trimmed();
+	varHash.insert (vname,new QString(vval));
+}
+
+//====================================
+// syntax analysis
+//------------------------------------
+%}
+
+%start line
+
+%union {
+	char  string[256];
+}
+
+%token <string> STRING ARROW EQUALS TRASH KEY HELP RET
+%token <string> OB CB VARIABLE ENDKEY REMOVE
+%token EMPTY
+
+%%
+
+line		:	sequence
+			|	line sequence
+			|	error {
+					yyerror (P1)
+				}
+			;
+
+sequence	:	left expression
+			|	HELP {
+					yycmd ($1);
+					//printf ("+++ successfull command\n");
+					yystop=1;
+				}
+			|	REMOVE KEY smallexp {
+					//printf ("+++ got remove command\n");
+					yyvalue ($2,true);
+					yycmd ($1,key);
+					keyHash.remove ( key );
+					yystop=1;
+				}
+			|	VARIABLE EQUALS STRING {
+					//printf ("Variable: %s = %s\n",$1,$3);
+					yyvariable ($1,$3);
+					//printf ("+++ successfull variable assignment\n");
+					yystop=1;
+				}
+			|   VARIABLE EQUALS ENDKEY {
+					//printf ("Variable: %s = %s\n",$1,$3);
+					yyvariable ($1,$3);
+					//printf ("+++ successfull variable assignment\n");
+					yystop=1;
+				}
+			|	VARIABLE EQUALS KEY smallexp {
+					//printf ("Variable: %s\n",$1);
+					yyvalue ($3,true);
+					yyvariable ($1,key);
+					keyHash.remove ( key );
+					//printf ("+++ successfull variable assignment\n");
+					yystop=1;
+				}
+			|	RET {
+					yyletter = 0;
+					last_yyletter = 0;
+					key = "";
+				}
+			; 
+
+expression	:	ARROW right expression
+			|	ARROW right
+			|	error {
+					yyerror (P2);
+				} RET {
+					yyletter = 0;
+					last_yyletter = 0;
+					key = "";
+					yyerrok;
+				}
+			;
+
+
+smallexp	:   ARROW smallright smallexp
+			|	ARROW smallright
+			|	error {
+					yyerror (P2);
+				} RET {
+					yyletter = 0;
+					last_yyletter = 0;
+					key = "";
+					yyerrok;
+				}
+			;
+
+smallright	:	KEY {
+					yykey($1);
+				}
+			|	ENDKEY {
+					yykey($1); yyvalue ("__read__");
+					//printf ("+++ successfull query\n");
+					yystop=1;
+				}
+			|	error {
+					yyerror (P4);
+				}
+			;
+
+
+left		:	KEY  {
+					yykey($1);
+				}
+			;
+
+right		:	KEY {
+					yykey($1);
+				}
+			|   ENDKEY {
+					yykey($1); yyvalue ("__read__");
+					//printf ("+++ successfull query\n");
+					yystop=1;
+				}
+			|	KEY EQUALS STRING {
+					yykey($1); yyvalue($3);
+					//printf ("+++ successfull assignment\n");
+					yystop=1;
+				}
+			|	KEY EQUALS ENDKEY {
+					yykey($1); yyvalue($3);
+					//printf ("+++ successfull assignment\n");
+					yystop=1;
+				}
+			|	error {
+					yyerror (P3);
+				}
+			;
+%%

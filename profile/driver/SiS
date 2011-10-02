@@ -1,0 +1,10 @@
+# /.../
+# SiS profile applied as driver profile to the sis
+# driver to enable the sis control protocol
+# -----------------------------------------
+Desktop -> [X] ->  CalcModelines = no
+Monitor -> [X] ->  CalcAlgorithm = XServerPool
+
+!remove Monitor -> [X] -> Modeline
+
+Device->[X]->Raw->11->Option = "EnableSiSCtrl" "on"

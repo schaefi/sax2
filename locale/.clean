@@ -1,0 +1,5 @@
+#!/bin/sh
+
+rm -f `find -name *.po.old`
+rm -f `find -name sax.*.po`
+rm -f `find -name *.mo`

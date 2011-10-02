@@ -1,0 +1,33 @@
+#!/usr/bin/perl
+# Copyright (c) 2002 SuSE GmbH Nuernberg, Germany.  All rights reserved.
+#
+# Author: Marcus Schaefer <sax@suse.de>, 2002
+# xapi script: try to find the tablet port if USB
+# --
+#
+# CVS ID:
+# --------
+# Status: Up-to-date
+#
+use strict;
+
+my $input = "/sys/class/input";
+my @tabletDrivers = (
+	"wacom"
+);
+
+foreach my $file (<$input/event*>) {
+if (-l "$file/device/driver") {
+	my $link = readlink ("$file/device/driver");
+	foreach my $validDriver (@tabletDrivers) {
+		if ($link =~ /$validDriver/) {
+			my $eventNr = chop ($file);
+			print "/dev/input/event$eventNr\n";
+			exit (0);
+		}
+	}
+}
+}
+
+print "/dev/input/event0\n";
+exit (1);

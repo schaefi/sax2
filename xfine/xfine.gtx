@@ -1,0 +1,40 @@
+# /.../
+# Copyright (c) 2000 SuSE GmbH Nuernberg, Germany.  All rights reserved.
+# This file contains the gettext keys used within a gettext call in the
+# application code for XFine2
+#
+# Maximum length: 40  characters
+Stepsize=&Step size
+
+# Maximum length: 40  characters
+small=Small
+
+# Maximum length: 40  characters
+normal=Normal
+
+# Maximum length: 40  characters
+big=Big
+
+# Maximum length: 40  characters
+huge=Huge
+
+# Maximum length: 40  characters
+Cancel=&Cancel
+
+# Maximum length: 40  characters
+GotoNextScreen=&Next Screen
+
+# Maximum length: 40  characters
+Save=S&ave
+
+# Maximum length: 40  characters
+ChangePosition=Change &Position
+
+# Maximum length: 40  characters
+ChangeSize=C&hange Size
+
+# Maximum length: 40  characters
+Screen=Screen
+
+# Maximum length: 60  characters
+NoVidtune=No video mode tuning available

@@ -1,0 +1,5 @@
+# / ... /
+# ATI 8 Bit profile used for old ATI 210888GX card
+# which can only handle 8 Bit color depth
+# -----------------------------------------------------
+Screen->[X]->DefaultDepth = 8

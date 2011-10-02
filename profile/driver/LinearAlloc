@@ -1,0 +1,5 @@
+# /.../
+# LinearAlloc profile applied as driver profile to the i810
+# driver to enable the LinearAlloc option
+# ---------------------------------------
+Device->[X]->Raw->11->Option = "LinearAlloc" "16384"

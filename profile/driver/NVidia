@@ -1,0 +1,5 @@
+# /.../
+# NVidia profile applied as driver profile to the nv
+# driver to check if the binary nvidia driver can be used
+# -------------------------------------------------------
+Device  -> [X] ->  Driver = nvidia

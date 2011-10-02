@@ -1,0 +1,219 @@
+#!/usr/bin/perl
+# Copyright (c) 2000 SuSE GmbH Nuernberg, Germany.  All rights reserved.
+#
+# Author: Marcus Schaefer <sax@suse.de>, 2000
+# This script put the current translation bundles to the SuSE
+# FTP area and mail a notification to 
+# Antje Faber <afaber@suse.de>
+# 
+# Status : development
+#
+use strict;
+
+# init...
+# --------
+my %var;
+
+$var{FTP}     = "/mirror/SuSE/ftp.suse.com/pub/suse/noarch/i18n/sax";
+$var{xfine}   = "./xfine/locale";
+$var{sax}     = "./locale";
+$var{Subject} = "Changes";
+$var{Address} = "afaber";
+$var{Base}    = "/suse/ms/sax";
+
+#----[ main ]---------#
+sub main {
+#--------------------------------------------
+# this is the main procedure, to put the
+# new bundles on the ftp server
+#
+	my $stable;
+	foreach my $program ("sax") {
+	$stable = CompareExistingBundle($program); 
+	if ($stable ne "UpToDate") {
+		print "Updating $stable... ";
+		UpdateBundle($stable,$program);
+		print "done\n";
+	} else {
+		print "No update needed for: $program\n";
+	}
+	}
+}
+
+#----[ CompareExistingBundle ]------#
+sub CompareExistingBundle {
+#-------------------------------------------------
+# this function is used to compare the bundle 
+# which sould be put on the ftp server with the
+# existing bundles on the ftp server. 
+#
+# Result:
+#
+#  - There is no need to put the bundle on the ftp server
+#  - Return the remaining bundle for the FTP server
+#    This is the bundle which sould be there for diff`s
+#    after the new bundle is copied to the FTP server
+# 
+	my $prefix = $_[0];
+
+	my @files;
+	my %date;
+	my $year;
+	my $month;
+	my $day;
+	my $max;
+	my $new;
+
+	# numeric sort...
+	# -----------------
+	sub numeric { $a <=> $b; };
+
+	# open dir and get files...
+	# ---------------------------
+	opendir(FD,$var{FTP}); 
+	@files = readdir(FD);
+	closedir(FD);
+	foreach (@files) {
+	if ($_ =~ /^$prefix-(.*)-(.*)-(.*)\.tar\.gz/) {
+		$date{$1}{$2}{$3} = $_;
+	}
+	}
+
+	# prepare new bundle...
+	# ----------------------
+	opendir(FD,$var{$prefix});
+	@files = readdir(FD);
+	closedir(FD);
+	foreach (@files) {
+	if ($_ =~ /^$prefix-(.*)-(.*)-(.*)\.tar\.gz/) {
+		$new = $_;
+		last;
+	}
+	}
+
+	# get the latest tarball on the FTP server...
+	# --------------------------------------------
+	$max = 0;
+	foreach $year (sort numeric keys %date) {
+		if ($year > $max) { $max = $year; }
+	}
+	$year = $max;
+	$max  = 0;
+	foreach $month (sort numeric keys %{$date{$year}}) {
+		if ($month > $max) { $max = $month; } 
+	}
+	$month = $max;
+	$max   = 0;
+	foreach $day (sort numeric keys %{$date{$year}{$month}}) {
+		if ($day > $max) { $max = $day; }
+	}
+	$day = $max;
+
+	if ($new eq $date{$year}{$month}{$day}) {
+		# nothing to do...
+		# ------------------
+		return("UpToDate");
+	} else {
+		# return remaining archive...
+		# -----------------------------
+		return($date{$year}{$month}{$day});
+	}
+}
+
+#----[ UpdateBundle ]---------#
+sub UpdateBundle {
+#-------------------------------------------------
+# this function is called to update the latest
+# translation on the ftp server:
+#
+# - remove all tarballs except the given one
+# - add the new bundle
+#
+	my $noremove = $_[0];
+	my $prefix   = $_[1];
+
+	my @files;
+	my $new;
+	my $subject;
+	my $dest;
+	my $date;
+
+	# open dir and get files...
+	# ---------------------------
+	opendir(FD,$var{FTP});
+	@files = readdir(FD);
+	closedir(FD);
+	foreach (@files) {
+	if ($_ =~ /^$prefix-(.*)-(.*)-(.*)\.tar\.gz/) {
+		# remove the bundles...
+		# -----------------------
+		if ($_ ne $noremove) {
+			RemoveFromFtp($_);
+		}
+	}
+	}
+
+	# put the new bundle on the server...
+	# -------------------------------------
+	opendir(FD,$var{$prefix});
+	@files = readdir(FD);
+	closedir(FD);
+	foreach (@files) {
+	if ($_ =~ /^$prefix-(.*)-(.*)-(.*)\.tar\.gz/) {
+		$date = "$1-$2-$3";
+		$new = $_;
+		last;
+	}
+	} 
+	PutOnFtp($new,$prefix);
+
+	# send e-mail notification to afaber 
+	# ------------------------------------
+	qx (cd locale && ./.fuzzy >/tmp/fuzzy);
+	qx (cd locale && ./.lastchange > /tmp/lastchange);
+	$subject = "$var{Subject} $prefix : $date...";
+	$dest = $var{Address}.'@suse.de -c ms@suse.de';
+	qx(cat /tmp/lastchange /tmp/fuzzy | mail -s \"$subject\" $dest);
+}
+
+#----[ PutOnFtp ]------------#
+sub PutOnFtp {
+#----------------------------------------
+# this function put a file to the FTP
+# area
+#
+	my $file   = $_[0];
+	my $prefix = $_[1];
+	my @error;
+	my $e1;
+	my $e2;
+	my $path;
+
+	$path = $var{Base}.$var{$prefix};
+	$path =~ s/\.//g;
+
+	#$e1 = qx(ssh -l ms euklid "cp $path/$file $var{FTP}");
+	#$e2 = qx(ssh -l ms euklid "chgrp -h susewww $var{FTP}/$file");
+
+	my $destination = 'ms@euklid:'.$var{FTP};
+	qx (scp $path/$file $destination);
+
+	push(@error,$e1); push(@error,$e2);
+	return(@error);
+}
+
+#----[ RemoveFromFtp ]-------------#
+sub RemoveFromFtp {
+#----------------------------------------
+# this function remove a file from the
+# FTP area
+#
+	my $file = $_[0];
+	my $error;
+
+	$error = qx(ssh -l ms euklid "rm $var{FTP}/$file");
+	return($error);
+}
+
+main();
+

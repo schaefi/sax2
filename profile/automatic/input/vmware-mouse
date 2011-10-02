@@ -1,0 +1,5 @@
+# VMware mouse
+InputDevice -> [X] -> Identifier = Mouse[[X]]
+InputDevice -> [X] -> Driver     = vmmouse 
+InputDevice -> [X] -> Option -> InputFashion   = Mouse
+InputDevice -> [X] -> Option -> Name           = VMware Pointer

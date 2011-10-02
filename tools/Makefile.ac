@@ -1,0 +1,42 @@
+# /.../
+# Copyright (c) 2005 SuSE GmbH Nuernberg, Germany. All rights reserved.
+# Author: Marcus Schaefer <sax@suse.de>, 2005
+#
+# Makefile for SaX2 tools area
+# X-Server configuration program
+#
+# Version 8.1
+# Status: Up-to-date
+#
+buildroot = /
+
+all:
+	touch NEWS README ChangeLog
+	aclocal
+	autoconf
+	autoheader
+	automake --add-missing
+	./configure --prefix=${buildroot}
+
+clean:
+	${MAKE} distclean
+	for i in `ls -1`; do \
+	if [ -d ./$$i ];then \
+		rm -f ./$$i/Makefile.in ./$$i/Makefile ;\
+		rm -rf ./$$i/.deps ;\
+	fi \
+	done
+	rm -f aclocal.m4
+	rm -f config.log
+	rm -f config.status
+	rm -f configure
+	rm -f configure.h
+	rm -f configure.h.in
+	rm -f depcomp install-sh missing mkinstalldirs
+	rm -rf autom4te.cache
+	rm -f compile
+	rm -f stamp*
+	rm -f Makefile.in
+	rm -f NEWS README ChangeLog
+	rm -f INSTALL COPYING
+	rm -f plog/Makefile.PL

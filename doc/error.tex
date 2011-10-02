@@ -1,0 +1,144 @@
+\chapter{libsax - Error Handling}
+\minitoc
+
+There are two possible methods to handle errors from the library:
+\begin{itemize}
+\item \textbf{\underline{Exception handling}}\\
+      asynchronous method using callback functions to handle the errors.
+      The programmer needs to inherit from SaXException and bind an instance
+      of this class to an instance of a SaX* class which itself inherits from
+      SaXException as well.
+\item \textbf{\underline{Traditional \textit{error} functions}}\\
+      synchronous method calling error methodes after each call to check
+      if the return code is ok or not. 
+\end{itemize}
+\section{Exception handling}
+Every SaX class which is able to throw exceptions inherits from the 
+SaXException class and therfore provides an interface to make use
+of the signal/slot concept provided by Qt. If an error occurs the library
+will emit a signal which can be catched. The following example will
+illustrate that:
+
+\textbf{\underline{exception.h}}
+
+\begin{Command}{12cm}
+\begin{small}
+\begin{verbatim}
+#include <sax/sax.h>
+class myException : public SaXException {
+    Q_OBJECT
+
+    public:
+    myException ( SaXException* );
+
+    private slots:
+    void permissionDenied (void);
+};
+\end{verbatim}
+\end{small}
+\end{Command}
+
+\newpage
+
+\textbf{\underline{exception.cpp}}
+
+\begin{Command}{12cm}
+\begin{small}
+\begin{verbatim}
+#include <sax/sax.h>
+#include "exception.h"
+myException::myException (SaXException* mException)  {
+    QObject::connect (
+        mException , SIGNAL ( saxPermissionDenied (void) ),
+        this       , SLOT   ( permissionDenied    (void) )
+    );
+}
+void myException::permissionDenied (void) {
+    printf ("_______Permission denied\n");
+}
+\end{verbatim}
+\end{small}
+\end{Command}
+
+\textbf{\underline{main.cpp}}
+
+\begin{Command}{12cm}
+\begin{small}
+\begin{verbatim}
+#include <sax/sax.h>
+#include "exception.h"
+int main (void) {
+    SaXException().setDebug (true);
+
+    SaXInit* init  = new SaXInit;
+    new myException (init);
+
+    init->doInit();
+}
+\end{verbatim}
+\end{small}
+\end{Command}
+
+\textbf{\underline{main.pro}}
+
+\begin{Command}{12cm}
+\begin{small}
+\begin{verbatim}
+TEMPLATE  = app
+SOURCES   += exception.cpp
+SOURCES   += main.cpp
+HEADERS   += exception.h
+CONFIG    += qt warn_on release
+TARGET    = testlib
+unix:LIBS += -lsax
+unix:INCLUDEPATH += -I /usr/X11/include
+\end{verbatim}
+\end{small}
+\end{Command}
+
+\textbf{\underline{build with qmake}}
+
+\begin{Command}{12cm}
+\begin{small}
+\begin{verbatim}
+export QMAKESPEC=$QTDIR/mkspecs/linux-g++
+export PATH=$PATH:$QTDIR/bin/qmake
+qmake -makefile -unix -o Makefile main.pro
+make
+\end{verbatim}
+\end{small}
+\end{Command}
+
+\newpage
+
+\section{Traditional \textit{error} functions}
+If using signals is not appropriate for the current language environment
+the programmer can call one of the following public error methods:
+\begin{itemize}
+\item code = errorCode()
+\item info = errorString()
+\item value = errorValue()
+\item errorReset()
+\end{itemize}
+Every SaX class which can throw an exception will provide these
+error functions. The following example show how to make use of the error
+functions instead of the exception handling:
+
+\textbf{\underline{main.cpp}}
+
+\begin{Command}{12cm}
+\begin{small}
+\begin{verbatim}
+#include <sax.h>
+
+int main (void) {
+    SaXInit* init = new SaXInit;
+    ...
+    printf ("%d : %s\n",
+        init->errorCode(),
+        init->errorString().ascii()
+    );
+}
+\end{verbatim}
+\end{small}
+\end{Command}

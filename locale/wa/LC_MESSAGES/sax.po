@@ -1,0 +1,1895 @@
+# Translation into the walloon language.
+# Copyright (C) 2007 SUSE Linux Products GmbH.
+#
+# Pablo Saratxaga <pablo@walon.org>, 2001, 2004.
+# Jean Cayron <jean.cayron@gmail.com>, 2007, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: lcn memory\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-10-01 19:37+0200\n"
+"PO-Revision-Date: 2009-09-05 19:42+0200\n"
+"Last-Translator: Jean Cayron <jean.cayron@gmail.com>\n"
+"Language-Team: Walloon <linux-wa@walon.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Lokalize 0.3\n"
+
+#. /.../
+#. Copyright (c) 2005 SuSE GmbH Nuernberg, Germany.  All rights reserved.
+#. This file contains the gettext keys used within a gettext call in the
+#. application code for the SaX2 and XFine GUI
+#.
+#. Dear Translator, translate this string as 'RTL' if your language is right-to-left
+msgid "I18N"
+msgstr "I18N"
+
+#. RTF text: Startup information for the user
+msgid "<b>SaX2 Suggestion</b><hr>The currently-started graphics system is based on a suggestion made by SaX2. If this is acceptable, click <b>OK</b>. Otherwise, change the configuration."
+msgstr "<b>Sudjestion di SaX2</b><hr>Li sistinme enondé pol moumint est båzé sos ene sudjestion fwaite pa SaX2. Si c' est bon por vos, clitchîz <b>I va</b>. Ôtrumint, candjîz l' apontiaedje."
+
+#. RTF text: 3D acceleration not supported with this card
+msgid "<b>3D acceleration not supported</b><hr>SaX2 cannot offer activation of the 3D subsystem because your graphics card/driver doesn't support 3D"
+msgstr "<b>Acceleråcion 3D nén sopoirtêye</b><hr>SaX2 n' sait nén vs mete en alaedje li sorsistinme 3D a cåze ki vosse cwåte/mineu grafike ni sopoite nén l' 3D"
+
+#. RTF text: 3D acceleration not supported with Xinerama
+msgid "<b>3D acceleration not supported</b><hr>SaX2 cannot offer activation of the 3D subsystem because Xinerama based dual head mode is used. The Xorg Xinerama extension for combining graphics screens doesn't support 3D on all heads"
+msgstr "<b>Acceleråcion 3D nén sopoirtêye</b><hr>SaX2 n' sait nén vs mete en alaedje li sorsistinme 3D a cåze ki Xinemara båzé sol môde dobe tiesse est eployî. Li stindaedje Xorg Xinemara po mete eshonne des waitroûles grafikes ni sopoité nén l' 3D so totes les tiesses"
+
+#. Caption text for the startup information window
+msgid "Automatic Graphics System Setup"
+msgstr "Apontiaedje otomatike do sistinme grafike"
+
+#. Caption text for informing the user
+msgid "Information..."
+msgstr "Pondants et djondants..."
+
+#. Caption text for the main window
+msgid "SaX2: X11 Configuration"
+msgstr "SaX2: Apontiaedje di X11"
+
+#. Title text on the left side
+msgid "SaX Control Center"
+msgstr "Cinte di contrôle di SaX"
+
+#. Info message about display size changes
+msgid "<b>Display size changed</b><hr>The display size has been adapted to the new layout."
+msgstr "<b>Li grandeu di håyhnaedje a candjî</b><hr>Li grandeu di håynaedje a stî radjustêye å novea adjinçmint."
+
+#. Help Button text
+msgid "&Help"
+msgstr "&Aidance"
+
+#. Ok Button text
+msgid "O&K"
+msgstr "&I va"
+
+#. Yes Button text
+msgid "&Yes"
+msgstr "&Oyi"
+
+#. No Button text
+msgid "&No"
+msgstr "&Nonna"
+
+#. Cancel Button text
+#. Maximum length: 40  characters
+msgid "&Cancel"
+msgstr "&Rinoncî"
+
+#. RTF text: exit SaX message
+msgid "<b>Exit SaX2</b><hr>Exit SaX2 now?"
+msgstr "<b>Moussî foû di SaX2</b><hr>Moussî foû di SaX2 sol côp?"
+
+#. Message box default caption text
+msgid "Message"
+msgstr "Messaedje"
+
+#. Change configuration Button text
+msgid "C&hange Configuration"
+msgstr "Ca&ndjî l' apontiaedje"
+
+#. Short description of the Monitor module
+#. Monitor name label
+msgid "Monitor"
+msgstr "Waitroûle"
+
+#. title of module dialog
+msgid "Card and Monitor Properties"
+msgstr "Prôpietés del cwåte et del waitroûle"
+
+#. Short description of the Mouse module
+#. Simple mouse text for the mouse tab
+msgid "Mouse"
+msgstr "Sori"
+
+#. title of module dialog
+msgid "Mouse Properties"
+msgstr "Prôpietés del sori"
+
+#. Short description of the Keyboard module
+#. Keyboard name label
+msgid "Keyboard"
+msgstr "Taprece"
+
+#. title of module dialog
+msgid "Keyboard Properties"
+msgstr "Prôpietés del taprece"
+
+#. Short description of the Tablet module
+#. Tab title: Tablet vendor name selection
+msgid "Tablet"
+msgstr "Tåvlete"
+
+#. title of module dialog
+msgid "Tablet Properties"
+msgstr "Prôpietés del tåvlete"
+
+#. Short description of the Touchscreen module
+msgid "Touchscreen"
+msgstr "Waitroûle a toutchî"
+
+#. title of module dialog
+msgid "Touchscreen Properties"
+msgstr "Prôpieté del waitroûle a toutchî"
+
+#. Short description of the VNC module
+msgid "Remote Access"
+msgstr "Accès då lon"
+
+#. title of module dialog
+msgid "Remote Access Properties"
+msgstr "Prôpietés di l' accès då lon"
+
+#. Tab text for a display tab of the monitor dialog
+msgid "Display %1"
+msgstr "Håynaedje %1"
+
+#. Tab text for a display tab of the mouse dialog
+msgid "Mouse %1"
+msgstr "Sori %1"
+
+#. Activate display checkbox, Display=screen
+msgid "Activate This Display"
+msgstr "Mete en alaedje ci håynaedje ci"
+
+#. Activate mouse checkbox
+msgid "Activate This Pointer"
+msgstr "Mete en alaedje ci pwinteu ci"
+
+#. Graphics Card name label
+msgid "Card"
+msgstr "Cwåte"
+
+#. Desktop name label
+msgid "Desktop"
+msgstr "Sicribanne"
+
+#. Pointers name label, global name for input devices
+msgid "Pointers"
+msgstr "Pwinteus"
+
+#. Layout name label, desktop layout
+#. Tab text for a layout tab of the keyboard dialog
+#. Label text for the primary keyboard layout
+#. Table topic text describing the keyboard layout column
+msgid "Layout"
+msgstr "Adjinçmint"
+
+#. Path name label, search paths
+msgid "Path"
+msgstr "Tchimin"
+
+#. Extensions name label, X11 extensions
+msgid "Extensions"
+msgstr "Rawetes"
+
+#. Change data
+msgid "&Change..."
+msgstr "&Candjî..."
+
+#. Set options for some kind of data
+msgid "&Options..."
+msgstr "&Tchuzes"
+
+#. Configure some data
+msgid "Con&figure..."
+msgstr "&Apontyî..."
+
+#. Group box title for dual head setup
+msgid "Dual Head Mode"
+msgstr "Môde deus tiesses"
+
+#. Group box title for card options
+#. Group box title for mouse options
+#. Tab text for an options tab of the keyboard dialog
+#. Group box title for tablet options
+#. Group box title for the VNC options
+msgid "Options"
+msgstr "Tchuzes"
+
+#. CheckBox label to activate the mouse wheel
+msgid "Activate Mouse Wheel"
+msgstr "Mete li rôlete del sori en alaedje"
+
+#. CheckBox label to invert the mouse X axis
+msgid "Invert X-Axis"
+msgstr "Mete l' acse X å rvier"
+
+#. CheckBox label to invert the mouse Y axis
+msgid "Invert Y-Axis"
+msgstr "Mete l' acse Y å rvier"
+
+#. CheckBox label to activate left hand mouse
+msgid "Activate Left-Hand Button Mapping"
+msgstr "Mete les botons del sori en alaedje come pol hintche mwin"
+
+#. CheckBox label to activate the 3 Button emulation
+msgid "Activate 3-Button Emulation"
+msgstr "Mete l' emulåcion di 3 botons en alaedje"
+
+#. CheckBox label to activate the wheel emulation
+msgid "Emulate Wheel with Mouse Button"
+msgstr "Emuler l' rôlete avou on boton d' sori"
+
+#. Group box title for card rotation
+msgid "Rotate Screen"
+msgstr "Fé tourner l' waitroûle"
+
+#. Group box title for the mouse test field
+#. Line edit label pointing to the keyboard test field
+msgid "Test"
+msgstr "Sayî"
+
+#. Button text in final step message box for testing the configuration
+msgid "&Test"
+msgstr "Sa&yî"
+
+#. Button text in final step message box for saving the configuration
+msgid "&Save"
+msgstr "&Schaper"
+
+#. Status line of mouse test field: ready
+msgid "Test ready"
+msgstr "Sayaedje presse"
+
+#. Status line of mouse test field: single button click
+msgid "Single Click: Done"
+msgstr "Simpe clitchaedje: fwait"
+
+#. Status line of mouse test field: double button click
+msgid "Double Click: Done"
+msgstr "Dobe clitchaedje: fwait"
+
+#. Status line of mouse test field: wheel moved
+msgid "Scrolling"
+msgstr "Disrôlaedje"
+
+#. Status line of mouse test field: button pressed
+msgid "Button pressed"
+msgstr "Boton tchôkî"
+
+#. Status line of mouse test field: button released
+msgid "Button released"
+msgstr "Boton låtchî"
+
+#. Status line of mouse test field: wheel stopped
+msgid "Stopped: Done"
+msgstr "Aresté: fwait"
+
+#. Group box title for properties
+msgid "Properties"
+msgstr "Prôpietés"
+
+#. Activate dual head mode checkbox
+msgid "Activate Dual Head Mode"
+msgstr "Mete li môde dobe tiesse en alaedje"
+
+#. Set display resolution
+msgid "Resolution"
+msgstr "Finté"
+
+#. Set display colors
+msgid "Colors"
+msgstr "Coleurs"
+
+#. Activate 3D checkboc
+msgid "Activate 3D Acceleration"
+msgstr "Mete l' acceleråcion 3D en alaedje"
+
+#. Tab title: Setup monitor properties for card X
+msgid "Monitor for Card"
+msgstr "Waitroûle pol cwåte"
+
+#. Tab title: Setup monitor for second channel on card X
+msgid "Second Monitor for Card"
+msgstr "Deujhinme waitroûle pol cwåte"
+
+#. Tab title: Setup sync frequencies
+msgid "Sync Frequencies"
+msgstr "Frecwinces di sincronijhaedje"
+
+#. Tab title: Setup display size
+msgid "Display Size"
+msgstr "Grandeu di håynaedje"
+
+#. Tab title: Setup the monitor arrangement
+#. Title for the multihead arrangement
+msgid "Arrangement"
+msgstr "Arindjmint"
+
+#. Information about dual head mode. %1=the dual head modus %2=the resolution
+msgid "Activated in %1 mode with %2"
+msgstr "Metou en alaedje e môde %1 avou %2"
+
+#. Short Information that something has been activated
+msgid "Activated in driver default mode"
+msgstr "Metou en alaedje e môde mineu prémetou"
+
+#. rwalter
+#. Monitor Model is unknown and should be changed
+#. rwalter
+#. Mouse Model is unknown and should be changed
+msgid "Unconfigured"
+msgstr "Nén co apontyî"
+
+#. Message appears when user is trying to deactivate all displays
+msgid "<b>Cannot Deactivate All Displays</b><hr><nobr>At least one display must be active.</nobr>"
+msgstr "<b>Dji n' sai essocter tos les håynaedjes</b><hr><nobr>I fåt pol moens on håynaedje k' overe.</nobr>"
+
+#. Info label for dual head checkbox
+msgid "No configuration available"
+msgstr "I gn a pont d' apontiaedje di disponibe"
+
+#. Radiobutton for traditional multihead mode
+msgid ""
+"Traditional Multihead:\n"
+"Each screen is an independent display"
+msgstr ""
+"Sacwantès waitroûles tradicionel:\n"
+"Tchaeke waitroûle est on håynaedje dislaxhî"
+
+#. Radiobutton for cloned multihead mode
+msgid ""
+"Cloned Multihead:\n"
+"Each display is a clone of the primary display"
+msgstr ""
+"Sacwantès waitroûles clôné:\n"
+"Tchaeke håynaedje est on clône do prumî håynaedje"
+
+#. Radiobutton for xinerama multihead mode
+msgid ""
+"Xinerama Multihead:\n"
+"Build one big display out of all screens"
+msgstr ""
+"Sacwantès waitroûles Xinerama:\n"
+"Costrure on grand håynaedje a pårti d' totes les waitroûles"
+
+#. Title for multihead modi
+msgid "Multihead Mode"
+msgstr "Môde sacwantès waitroûles"
+
+#. Monitor X - connected to - CardY
+msgid "Connected To"
+msgstr "Raloyî a"
+
+#. Tooltip text if monitor is unknown
+msgid "Unknown Monitor:"
+msgstr "Waitroûle nén cnoxhowe:"
+
+#. Tooltip text for primary monitor
+msgid "Primary Monitor:"
+msgstr "Prumire waitroûle:"
+
+#. Windowanager title for the monitor model setup
+#. Windowanager title for the second monitor model setup
+msgid "Monitor Settings"
+msgstr "Tchuzes del waitroûle"
+
+#. Windowanager title for the mouse mode setup
+msgid "Mouse Settings"
+msgstr "Tchuzes del sori"
+
+#. Windowanager title for the card options dialog
+msgid "Graphics Card Settings"
+msgstr "Tchuzes del cwåte grafike"
+
+#. Windowanager title for the dual head setup
+msgid "Dual Head Settings"
+msgstr "Tchuzes po sacwantès waitroûles"
+
+#. Radiobutton don't rotate
+msgid "Not Rotated"
+msgstr "Nén tourné"
+
+#. Radiobutton rotate to the left side
+msgid "To the Left"
+msgstr "Viè l' hintche"
+
+#. Radiobutton rotate to the right side
+msgid "To the Right"
+msgstr "Viè l' droete"
+
+#. Popup message to inform the user about fbdev restrictions
+msgid "<b>Invalid Color/Resolution combination:</b><hr><nobr>The selected resolution and/or color settings</nobr> are not supported by the graphics cards framebuffer."
+msgstr "<p>Combinåjhon d' coleur/finté nén valåbe:</b><hr><nobr>Li finté et/ou les tchuzes des coleurs</nobr> ni sont nén sopoirtés pal framebuffer des cwåtes grafikes."
+
+#. Popup message to ask the user for an option value
+msgid "<b>Option Needs a Value</b><hr><nobr>Set up a value for option %1.</nobr>"
+msgstr "<p>Li tchuze a dandjî d' ene valixhance</b><hr><nobr>Apontyîz ene valixhance pol tchuze %1.</nobr>"
+
+#. Group box title for the monitor vendor and name selection
+msgid "Monitor: Vendor and Name Selection"
+msgstr "Waitroûle: Tchoes do vindeu eyet do no"
+
+#. Group box title for the mouse vendor and name selection
+msgid "Mouse: Vendor and Name Selection"
+msgstr "Sori: Tchoes do vindeu eyet do no"
+
+#. Group box title for the manual sync frequency set up
+msgid "Manual Sync Frequency Setup"
+msgstr "Apontiaedje al mwin do sincronijhaedje del frecwince"
+
+#. Group box title for the aspect/ratio selection
+msgid "Diagonal and Aspect Ratio"
+msgstr "Rapoirt lårdjeur/hôteur eyet diagonåle"
+
+#. Group box title for the display size setup
+msgid "Display Size in [ mm ]"
+msgstr "Grandeu d' håynaedje e [mm]"
+
+#. Text message telling to be carefull with the monitor sync frequencies
+msgid "<b>Note:</b> Wrong sync ranges may damage your monitor. Consult the monitor manual for the settings.<br><br>If you want your monitor not to use its maximum rating, decrease the sync ranges."
+msgstr "<b>Note:</b> Des mwaijhès fortchetes di sincronijhaedje pôrént fé do må a vosse waitroûle. Alez vey dins les esplikêyes del waitroûle po conoxhe les apontiaedjes.<br><br>Si vs ni vloz nén k' vosse waitroûle eploye si frecwince macsimom, raptitixhoz les fortchetes di sincronijhaedje."
+
+#. Checkbox to activate DPMS
+msgid "Activate DPMS"
+msgstr "Mete en alaedje les DPMS"
+
+#. Button to popup the disk dialog for reading the monitor utility disk
+msgid "Utility Disk..."
+msgstr "Plake d' usteye..."
+
+#. Label text for horizontal sync frequency
+msgid "Horizontal"
+msgstr "Coûtchî"
+
+#. Label text for second monitor name
+msgid "Second Monitor:"
+msgstr "Deujhinme waitroûle:"
+
+#. Label text for second monitor resolution
+msgid "Second Monitor Resolution"
+msgstr "Finté del deujhinme waitroûle"
+
+#. Label text for vertical sync frequency
+msgid "Vertical"
+msgstr "Astampé"
+
+#. Label text for hsync unit
+msgid "KHz"
+msgstr "KHz"
+
+#. Label text for vsync unit
+msgid "Hz"
+msgstr "Hz"
+
+#. Label text for the aspect ratio combo box
+msgid "Aspect Ratio"
+msgstr "Rapoirt lårdjeur/hôteur"
+
+#. Label text for the diagonal length combo box
+msgid "Diagonal"
+msgstr "Diagonåle"
+
+#. Label text for the display size X-Axis
+msgid "X Axis [mm]"
+msgstr "Acse X [mm]"
+
+#. Label text for the display size Y-Axis
+msgid "Y Axis [mm]"
+msgstr "Acse Y [mm]"
+
+#. Something is not configured
+msgid "Not configured"
+msgstr "Nén co apontyî"
+
+#. Unit name for inches in german zoll
+msgid "inches"
+msgstr "pôces"
+
+#. Message box of type Ok, telling to user to insert a CD or disk
+msgid "<b>Insert CD or Disk</b><hr>Insert the display utility CD or disk from the monitor vendor."
+msgstr "<b>Stitchîz l' plake lazer CD ou DVD</b><hr>Sititchîz l' plake lazer d' usteye di håynaedje do vindeu del waitroûle."
+
+#. Message box of type Error, telling that the utility disk cannot be opened
+msgid "<b>Read Error</b><hr>Could not read from CD or disk. This may point to a damaged medium or incorrectly formatted information files."
+msgstr "<b>Arok di lijhadje</b><hr>Dji n' a sepou lére a pårti del plake lazer CD ou del plake. Ça pôreut dire ki vosse mediom est cron oudonbén k' les fitchîs d' informåcion ont stî må abwesnés."
+
+#. First gap of the ActivateInfo text: Multihead mode name
+msgid "Traditional"
+msgstr "Tradicionel"
+
+#. First gap of the ActivateInfo text: Multihead mode name
+msgid "Clone"
+msgstr "Clôner"
+
+#. First gap of the ActivateInfo text: Multihead mode name
+msgid "Xinerama"
+msgstr "Xinerama"
+
+#. Tab text for the mouse model dialog
+msgid "Mouse Model"
+msgstr "Modele del sori"
+
+#. Group box title for the primary keyboard setup
+msgid "Primary Setup"
+msgstr "Prumî apontiaedje"
+
+#. Label text for the primary keyboard type
+msgid "Type"
+msgstr "Sôre"
+
+#. Label text for the primary keyboard variant
+#. Table topic text describing the variant column
+msgid "Variant"
+msgstr "Variante"
+
+#. Group box title for the additional keyboard setup
+msgid "Additional Layouts"
+msgstr "Ôtes adjinçmints"
+
+#. Table topic text describing the status column
+msgid "Status"
+msgstr "Estat"
+
+#. Table topic text describing the keytable column
+msgid "Keytable"
+msgstr "Tåve di tapes"
+
+#. List View root item text
+msgid "Group Shift/Lock Behavior"
+msgstr "Grouper l' dujhance di Maj/Aclawer"
+
+#. List View root item text
+msgid "Use Keyboard LED to Show Alternate Group"
+msgstr "Si siervi do LED del taprece po mostrer les ôtes groupes"
+
+#. List View root item text
+msgid "Compose Key Position"
+msgstr "Eplaeçmint del tape Compôze"
+
+#. List View root item text
+#. XKBFile extension text
+msgid "Control Key Position"
+msgstr "Eplaeçmint del tape Controle"
+
+#. List View root item text
+msgid "Third Level Chooser"
+msgstr "Tchoezixheu di troejhinme livea"
+
+#. List View root item text
+msgid "Alt/Win Key Behavior"
+msgstr "Dujhance del tape Alt/Win"
+
+#. List View root item text
+msgid "EuroSign Key Position"
+msgstr "Eplaeçmint del tape avou l' simbole di l' Uro"
+
+#. List View root item text
+msgid "CapsLock Key Behavior"
+msgstr "Dujhance del tape CapsLock"
+
+#. List View item text: Radiobutton no item selected
+msgid "None"
+msgstr "Nole"
+
+#. XKBFile extension text
+msgid "Morocco"
+msgstr "Marok"
+
+#. XKBFile extension text
+msgid "Braille"
+msgstr "Braye"
+
+#. XKBFile extension text
+msgid "Ethiopia"
+msgstr "Etiopeye"
+
+#. XKBFile extension text
+msgid "NICOLA-F style Backspace"
+msgstr "Backspace (en erî) del sôre NICOLA-F"
+
+#. XKBFile extension text
+msgid "Right Alt key never chooses 3rd level."
+msgstr "Li tape Alt di droete ni tchoezi djamåy l' troejhinme livea."
+
+#. XKBFile extension text
+msgid "Left Alt key switches layout while pressed."
+msgstr "Li tape Alt di hintche candje l' adjinçmint cwand tchôkeye."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Space key outputs non"
+msgstr "Li bår d' espåce rexhe on caractere d' espåce nén côpåve"
+
+#. XKBFile extension text
+msgid "Default numeric keypad keys."
+msgstr "Tapes del taprece limerike come prémetou."
+
+#. XKBFile extension text
+msgid "Both Ctrl keys together change layout."
+msgstr "Les deus tapes Ctrl eshonne candjèt l' adjinçmint."
+
+#. XKBFile extension text
+msgid "Using space key to input non-breakable space character"
+msgstr "Si siervi del bår d' espåce pos intrer des caractere d' espåce nén côpåve"
+
+#. XKBFile extension text
+msgid "Right Shift key changes layout."
+msgstr "Li tape Maj di droete candje l' adjinçmint."
+
+#. XKBFile extension text
+msgid "Left Win-key changes layout."
+msgstr "Li tape Win di hintche candje l' adjinçmint."
+
+#. XKBFile extension text
+msgid "LCtrl+LShift change layout."
+msgstr "Ctrl-hintche+Maj-hintche candjèt l' adjinçmint."
+
+#. XKBFile extension text
+msgid "Left Alt key changes layout."
+msgstr "Li tape Alt di hintche candje l' adjinçmint."
+
+#. XKBFile extension text
+msgid "Both Win-keys switch layout while pressed."
+msgstr "Les deus tapes Win candjèt l' adjinçmint cwand tchôkî."
+
+#. XKBFile extension text
+msgid "Right Ctrl key switches layout while pressed."
+msgstr "Li tape Ctrl di droete candje l' adjinçmint cwand tchôkeye."
+
+#. XKBFile extension text
+msgid "Space key outputs non-breakable space character"
+msgstr "Li bår d' espåce rexhe on caractere d' espåce nén côpåve"
+
+#. XKBFile extension text
+msgid "Shift+CapsLock changes layout."
+msgstr "Maj+CapsLock candje l' adjinçmint."
+
+#. XKBFile extension text
+msgid "R-Alt switches layout while pressed."
+msgstr "Alt-droete candje l' adjinçmint cwand tchôkeye."
+
+#. XKBFile extension text
+msgid "Numeric keypad layout selection"
+msgstr "Tchoes di l' adjinçmint del taprece limerike"
+
+#. XKBFile extension text
+msgid "Right Ctrl key changes layout."
+msgstr "Li tape Ctrl di droete candje l' adjinçmint."
+
+#. XKBFile extension text
+msgid "Alt+CapsLock changes layout."
+msgstr "Alt+CapsLock candjèt l' adjinçmint."
+
+#. XKBFile extension text
+msgid "Super is mapped to the Win-keys."
+msgstr "Super est mapé so les tapes Win."
+
+#. XKBFile extension text
+msgid "ScrollLock LED shows alternative layout."
+msgstr "Li LED ScrollLock (Djoker li defilmint) mostere l' ôte adjinçmint."
+
+#. XKBFile extension text
+msgid "Both Shift keys together change layout."
+msgstr "Les deus tapes Maj eshonne candjèt l' adjinçmint."
+
+#. XKBFile extension text
+msgid "Space key outputs non-breakable space character at second level."
+msgstr "Li bår d' espåce rexhe on caractere d' espåce nén côpåve å deujhinme livea."
+
+#. XKBFile extension text
+msgid "Right Win-key changes layout."
+msgstr "Li tape Win di droete candje l' adjinçmint."
+
+#. XKBFile extension text
+msgid "Space key outputs non-breakable space character at third level."
+msgstr "Li bår d' espåce rexhe on caractere d' espåce nén côpåve å troejhinme livea."
+
+#. XKBFile extension text
+msgid "Numeric keypad keys work as with Mac."
+msgstr "Les tapes del taprece limerike rote come dins les Mac."
+
+#. XKBFile extension text
+msgid "CapsLock LED shows alternative layout."
+msgstr "Li LED CapsLock mostere l' ôte adjinçmint."
+
+#. XKBFile extension text
+msgid "NumLock LED shows alternative layout."
+msgstr "Li LED NumLock mostere l' ôte adjinçmint."
+
+#. XKBFile extension text
+msgid "Left Shift key changes layout."
+msgstr "Li tape Maj di hintche candje l' adjinçmint."
+
+#. XKBFile extension text
+msgid "Left Win-key switches layout while pressed."
+msgstr "Li tape Win di hintche candje l' adjinçmint cwand tchôkeye."
+
+#. XKBFile extension text
+msgid "Space key outputs non-breakable space character at fourth level."
+msgstr "Li bår d' espåce rexhe on caractere d' espåce nén côpåve å cwatrinme livea."
+
+#. XKBFile extension text
+msgid "Both Alt keys together change layout."
+msgstr "Les deus tapes Alt eshonne candjèt l' adjinçmint."
+
+#. XKBFile extension text
+msgid "CapsLock key changes layout."
+msgstr "Li tape CapsLock candje l' adjinçmint."
+
+#. XKBFile extension text
+msgid "Control is mapped to the Win-keys (and the usual Ctrl keys)."
+msgstr "Controle est mapé so les tapes Win (eyet les normålès tapes Ctrl)."
+
+#. XKBFile extension text
+msgid "Right Alt key changes layout."
+msgstr "Li tape Alt di droete candje l' adjinçmint."
+
+#. XKBFile extension text
+msgid "Shift with numeric keypad keys works as in MS Windows."
+msgstr "Maj avou les tapes del taprece limerike rote come dins MS Windows."
+
+#. XKBFile extension text
+msgid "Alt and Meta are on the Alt keys."
+msgstr "Alt eyet Meta sont so les tapes Alt."
+
+#. XKBFile extension text
+msgid "Alt+Shift change layout."
+msgstr "Alt+Maj candjèt l' adjinçmint."
+
+#. XKBFile extension text
+msgid "Ctrl+Shift change layout."
+msgstr "Ctrl+Maj candjèt l' adjinçmint."
+
+#. XKBFile extension text
+msgid "Space key outputs usual space at any level."
+msgstr "Li tape espåce rexhe èn espåce normå a tolminme ké livea."
+
+#. XKBFile extension text
+msgid "Japanese keyboard options"
+msgstr "Tchuzes del taprece djaponesse."
+
+#. XKBFile extension text
+msgid "Use keyboard LED to show alternative layout."
+msgstr "Si siervi do LED del taprece po mostrer les ôtes adjinçmints."
+
+#. XKBFile extension text
+msgid "Left Ctrl key changes layout."
+msgstr "Li tape Ctrl di hintche candje l' adjinçmint."
+
+#. XKBFile extension text
+msgid "Menu key changes layout."
+msgstr "Li tape Dressêye candje l' adjinçmint."
+
+#. XKBFile extension text
+msgid "Alt+Ctrl change layout."
+msgstr "Alt+Ctrl candjèt l' adjinçmint."
+
+#. XKBFile extension text
+msgid "Right Win-key switches layout while pressed."
+msgstr "Li tape Win di droete candje l' adjinçmint cwand tchôkeye."
+
+#. XKBFile extension text
+msgid "Layout switching"
+msgstr "Discandjaedje d' adjinçmint"
+
+#. XKBFile extension text
+msgid "Left Alt key switches group while pressed."
+msgstr "Li tape Alt di hintche candje li groupe cwand tchôkeye."
+
+#. XKBFile extension text
+msgid "Both Ctrl keys together change group."
+msgstr "Les deus tapes Ctrl eshonne candjèt l' groupe."
+
+#. XKBFile extension text
+msgid "Right Shift key changes group."
+msgstr "Li tape Maj di droete candje li groupe."
+
+#. XKBFile extension text
+msgid "Left Win key changes group."
+msgstr "Li tape Win di hintche candje li groupe."
+
+#. XKBFile extension text
+msgid "Left Alt key changes group."
+msgstr "Li tape Alt di hintche candje li groupe."
+
+#. XKBFile extension text
+msgid "Both Win keys switch group while pressed."
+msgstr "Les deus tapes Wine candjèt l' groupe cwand tchôkî."
+
+#. XKBFile extension text
+msgid "Right Ctrl key switches group while pressed."
+msgstr "Li tape Ctrl di droete candje li groupe cwand tchôkeye."
+
+#. XKBFile extension text
+msgid "Left Alt is swapped with left Win-key."
+msgstr "Li tape Alt di hintche est discandjeye avou l' tape Win di hintche."
+
+#. XKBFile extension text
+msgid "Default numpad keys."
+msgstr "Tapes del taprece limerike come prémetou."
+
+#. XKBFile extension text
+msgid "Adding the nobreakspace keysym to space key"
+msgstr "Dji radjoute li simbole del tape espåce nén côpåve al tape espåce"
+
+#. XKBFile extension text
+msgid "Use keypad with unicode additions (arrows and math operators)"
+msgstr "Si siervi del taprece avou les acdicions unicode (fletches eyet operateus matematikes)"
+
+#. XKBFile extension text
+msgid "Force standard legacy keypad"
+msgstr "Foirci l' adjinçmint del taprece sitandård"
+
+#. XKBFile extension text
+msgid "CapsLock uses internal capitalization. Shift doesn't affect CapsLock."
+msgstr "CapsLock eploye l' divintrin metaedje e grandès letes. Maj ni candje rén a CapsLock."
+
+#. XKBFile extension text
+msgid "Keypad layout selection"
+msgstr "Tchoes di l' adjinçmint del taprece."
+
+#. XKBFile extension text
+msgid "Alt+CapsLock changes group."
+msgstr "Alt+CapsLock candjèt l' groupe."
+
+#. XKBFile extension text
+msgid "Space key output nobreakspace at second level."
+msgstr "Li bår d' espåce rexhe espåce nén côpåve å deujhinme livea."
+
+#. XKBFile extension text
+msgid "CapsLock acts as Shift with locking. Shift doesn't affect CapsLock."
+msgstr "CapsLock fwait come Maj avou l' aclawaedje. Maj ni candje rén a CapsLock."
+
+#. XKBFile extension text
+msgid "CapsLock uses internal capitalization. Shift \"pauses\" CapsLock."
+msgstr "CapsLock eploye l' divintrin metaedje e grandès letes. Maj « djoke » CapsLock."
+
+#. XKBFile extension text
+msgid "Space key output nobreakspace at third level."
+msgstr "Li bår d' espåce rexhe espåce nén côpåve å troejhinme livea."
+
+#. XKBFile extension text
+msgid "Swap keycodes of two keys when Mac keyboards are misdetected by kernel."
+msgstr "Replaecî onk pa l' ôte les côdes di deus tapes cwand les tapreces Mac sont må detectêyes på nawea."
+
+#. XKBFile extension text
+msgid "Numpad keys work as with Mac."
+msgstr "Les tapes del taprece rotèt come dins les Mac."
+
+#. XKBFile extension text
+msgid "Kana Lock key is locking"
+msgstr "Li tape Kana Lock aclawe"
+
+#. XKBFile extension text
+msgid "Space key output nobreakspace at fourth level."
+msgstr "Li bår d' espåce rexhe espåce nén côpåve å cwatrinme livea."
+
+#. XKBFile extension text
+msgid "Left Win-key is Compose."
+msgstr "Li tape Win di hintche est Compôze"
+
+#. XKBFile extension text
+msgid "Press Right Alt key to choose 3rd level, Shift+Right Alt key is Multi_Key."
+msgstr "Tchôkîz l' tape Alt di droete po tchoezi l' 3inme livea, Maj+Alt di droete est Multi_Key."
+
+#. XKBFile extension text
+msgid "Space key output space at any level."
+msgstr "Li bår d' espåce rexhe espåce a tolminme ké livea."
+
+#. XKBFile extension text
+msgid "Japanese Keyboard Options"
+msgstr "Tchuzes del taprece djaponesse."
+
+#. XKBFile extension text
+msgid "CapsLock acts as Shift with locking. Shift \"pauses\" CapsLock."
+msgstr "CapsLock fwait come Maj avou l' aclawaedje. Maj « djoke » CapsLock."
+
+#. XKBFile extension text
+msgid "CapsLock uses internal capitalization. Shift doesn't cancel CapsLock."
+msgstr "CapsLock eploye l' divintrin metaedje e grandès letes. Maj ni fwait nén rnoncî CapsLock."
+
+#. XKBFile extension text
+msgid "CapsLock just locks the Shift modifier."
+msgstr "CapsLock aclawe djusse li modifieu Maj."
+
+#. XKBFile extension text
+msgid "CapsLock toggles normal capitalization of alphabetic characters."
+msgstr "CapsLock (dis)met l' normå metaedje e grandès letes des caracteres di l' alfabet."
+
+#. XKBFile extension text
+msgid "CapsLock toggles Shift so all keys are affected."
+msgstr "CapsLock (dis)met Maj po k' ça candje so totes les tapes."
+
+#. XKBFile extension text
+msgid "Right Win-key is Compose."
+msgstr "Li tape Win di droete est Compôze."
+
+#. XKBFile extension text
+msgid "Shift+CapsLock changes group."
+msgstr "Maj+CapsLock candjèt l' groupe."
+
+#. XKBFile extension text
+msgid "R-Alt switches group while pressed."
+msgstr "Li tape Alt di droete candje li groupe cwand tchôkeye."
+
+#. XKBFile extension text
+msgid "Right Control key works as Right Alt."
+msgstr "Li tape Controle di droete rote come Alt di droete."
+
+#. XKBFile extension text
+msgid "Control key at bottom left"
+msgstr "Li tape Controle al valêye hintche"
+
+#. XKBFile extension text
+msgid "Press any of Win-keys to choose 3rd level."
+msgstr "Tchôkîz tolminme kéne tape Win po tchoezi l' 3inme livea."
+
+#. XKBFile extension text
+msgid "Press Right Alt key to choose 3rd level."
+msgstr "Tchôkîz l' tape Alt di droete po tchoezi l' 3inme livea."
+
+#. XKBFile extension text
+msgid "Right Ctrl key changes group."
+msgstr "Li tape Ctrl di droete candje li groupe."
+
+#. XKBFile extension text
+msgid "Right Alt is Compose."
+msgstr "Li tape Alt di droete est Compôze."
+
+#. XKBFile extension text
+msgid "Right Ctrl is Compose."
+msgstr "Li tape Ctrl di droete est Compôze."
+
+#. XKBFile extension text
+msgid "ScrollLock LED shows alternative group."
+msgstr "Li LED ScrollLock (Djoker li defilmint) mostere l' ôte groupe."
+
+#. XKBFile extension text
+msgid "Control key at left of -A-"
+msgstr "Li tape Controle al hintche di -A-"
+
+#. XKBFile extension text
+msgid "Third level choosers"
+msgstr "Tchoezixheu di troejhinme livea"
+
+#. XKBFile extension text
+msgid "Both Shift keys together change group."
+msgstr "Les deus tapes Maj eshonne candjèt l' groupe."
+
+#. XKBFile extension text
+msgid "CapsLock acts as Shift with locking. Shift doesn't cancel CapsLock."
+msgstr "CapsLock fwait come Maj avou l' aclawaedje. Maj ni fwait rnoncî CapsLock."
+
+#. XKBFile extension text
+msgid "CapsLock uses internal capitalization. Shift cancels CapsLock."
+msgstr "CapsLock eploye l' divintrin metaedje e grandès letes. Maj fwait rnoncî CapsLock."
+
+#. XKBFile extension text
+msgid "Make CapsLock an additional Control."
+msgstr "Fé di CapsLock on Controle di pus."
+
+#. XKBFile extension text
+msgid "Press Left Win-key to choose 3rd level."
+msgstr "Tchôkîz l' tape Win di hintche po tchoezi l' 3inme livea."
+
+#. XKBFile extension text
+msgid "Right Win-key changes group."
+msgstr "Li tape Win di droete candje li groupe."
+
+#. XKBFile extension text
+msgid "Meta is mapped to the left Win-key."
+msgstr "Meta est mapé sol tape Win di hintche."
+
+#. XKBFile extension text
+msgid "CapsLock LED shows alternative group."
+msgstr "Li LED CapsLock mostere l' ôte groupe."
+
+#. XKBFile extension text
+msgid "NumLock LED shows alternative group."
+msgstr "Li LED NumLock mostere l' ôte groupe."
+
+#. XKBFile extension text
+msgid "Left Shift key changes group."
+msgstr "Li tape Maj di hintche candje li groupe."
+
+#. XKBFile extension text
+msgid "Left Win-key switches group while pressed."
+msgstr "Li tape Win di hintche candje li groupe cwand tchôkeye."
+
+#. XKBFile extension text
+msgid "Menu is Compose."
+msgstr "Dressêye est Compôze."
+
+#. XKBFile extension text
+msgid "Both Alt keys together change group."
+msgstr "Les deus tapes Alt eshonne candjèt l' groupe."
+
+#. XKBFile extension text
+msgid "CapsLock key changes group."
+msgstr "Li tape CapsLock candje li groupe."
+
+#. XKBFile extension text
+msgid "Swap Control and CapsLock."
+msgstr "Discandjî les tapes Controle eyet CapsLock."
+
+#. XKBFile extension text
+msgid "Press any of Alt keys to choose 3rd level."
+msgstr "Tchôkîz tolminme kéne tape Alt po tchoezi l' 3inme livea."
+
+#. XKBFile extension text
+msgid "Right Alt key changes group."
+msgstr "Li tape Alt di droete candje li groupe."
+
+#. XKBFile extension text
+msgid "Shift with numpad keys works as in MS Windows."
+msgstr "Maj avou les tapes del taprece limerike rote come dins MS Windows."
+
+#. XKBFile extension text
+msgid "Special keys (Ctrl+Alt+<key>) handled in a server."
+msgstr "Especiålès tapes (Ctrl+Alt+<key>) apougneye dins on sierveu."
+
+#. XKBFile extension text
+msgid "Hyper is mapped to the Win-keys."
+msgstr "Hyper est mapé so les tapes Win."
+
+#. XKBFile extension text
+msgid "Alt is mapped to the right Win-key and Super to Menu."
+msgstr "Alt est mapé sol tape Win  di droete eyet Super sol Dressêye."
+
+#. XKBFile extension text
+msgid "Super is mapped to the Win-keys (default)."
+msgstr "Super est mapé so les tapes Win (prémetou)."
+
+#. XKBFile extension text
+msgid "Alt and Meta on the Alt keys (default)."
+msgstr "Alt eyet Meta so les tapes Alt (prémetou)."
+
+#. XKBFile extension text
+msgid "Add the standard behavior to Menu key."
+msgstr "Radjouter l' dujhance sitandård al tape Dressêye."
+
+#. XKBFile extension text
+msgid "Alt and Meta are on the Alt keys (default)."
+msgstr "Alt eyet Meta sont so les tapes Alt (prémetou)."
+
+#. XKBFile extension text
+msgid "Press Right Control to choose 3rd level."
+msgstr "Tchôkîz l' tape Controle di droete po tchoezi l' 3inme livea."
+
+#. XKBFile extension text
+msgid "Alt+Shift changes group."
+msgstr "Alt+Maj candjèt l' groupe."
+
+#. XKBFile extension text
+msgid "Control+Shift changes group."
+msgstr "Controle+Maj candjèt l' groupe."
+
+#. XKBFile extension text
+msgid "CapsLock acts as Shift with locking. Shift cancels CapsLock."
+msgstr "CapsLock fwait come Maj avou l' aclawaedje. Maj fwait rnoncî CapsLock."
+
+#. XKBFile extension text
+msgid "Use keyboard LED to show alternative group."
+msgstr "Si siervi do LED del taprece po mostrer les ôtes groupes."
+
+#. XKBFile extension text
+msgid "Press Right Win-key to choose 3rd level."
+msgstr "Tchôkîz l' tape Win di droete po tchoezi l' 3inme livea."
+
+#. XKBFile extension text
+msgid "Press Left Alt key to choose 3rd level."
+msgstr "Tchôkîz l' tape Alt di hintche po tchoezi l' 3inme livea."
+
+#. XKBFile extension text
+msgid "Meta is mapped to the Win-keys."
+msgstr "Meta est mapé so les tapes Win."
+
+#. XKBFile extension text
+msgid "Press Menu key to choose 3rd level."
+msgstr "Tchôkîz l' tape Dressêye po tchoezi l' 3inme livea."
+
+#. XKBFile extension text
+msgid "Left Ctrl key changes group."
+msgstr "Li tape Ctrl di hintche candje li groupe."
+
+#. XKBFile extension text
+msgid "Menu key changes group."
+msgstr "Li tape Dressêye candje li groupe."
+
+#. XKBFile extension text
+msgid "Alt+Control changes group."
+msgstr "Alt+Controle candjèt l' groupe."
+
+#. XKBFile extension text
+msgid "Right Win-key switches group while pressed."
+msgstr "Li tape Win di droete candje li groupe cwand tchôkeye."
+
+#. XKBFile extension text
+msgid "Serbia"
+msgstr "Serbeye"
+
+#. XKBFile extension text
+msgid "Guinea"
+msgstr "Guinêye"
+
+#. XKBFile extension text
+msgid "Montenegro"
+msgstr "Montenegro"
+
+#. XKBFile extension text
+msgid "China"
+msgstr "Chine"
+
+#. XKBFile extension text
+msgid "USA"
+msgstr "USA"
+
+#. XKBFile extension text
+msgid "Add the EuroSign to the 4 key."
+msgstr "Radjouter l' simbole di l' Uro avou l' tape 4."
+
+#. XKBFile extension text
+msgid "Four-level key with dot"
+msgstr "Tape di livea cwate avou pont"
+
+#. XKBFile extension text
+msgid "Legacy Wang 724 keypad"
+msgstr "Taprece Legacy Wang 724"
+
+#. XKBFile extension text
+msgid "Four-level key with abstract separators"
+msgstr "Tape di livea cwate avou separateus absitroets"
+
+#. XKBFile extension text
+msgid "Keypad with unicode additions (arrows and math operators)"
+msgstr "Taprece avou les acdicions unicode (fletches eyet operateus matematikes)"
+
+#. XKBFile extension text
+msgid "Legacy keypad"
+msgstr "Taprece sitandård"
+
+#. XKBFile extension text
+msgid "Shift cancels CapsLock."
+msgstr "Maj fwait rnoncî CapsLock."
+
+#. XKBFile extension text
+msgid "Swap ESC and CapsLock."
+msgstr "Discandjî les tapes ESC eyet CapsLock."
+
+#. XKBFile extension text
+msgid "Wang 724 keypad with unicode additions (arrows and math operators). Math operators on default level."
+msgstr "Taprece Wang 724 avou les acdicions unicode (fletches eyet operateus matematikes). Les operateus matematikes å livea prémetou."
+
+#. XKBFile extension text
+msgid "Four-level key with comma"
+msgstr "Tape di livea cwate avou coma"
+
+#. XKBFile extension text
+msgid "Legacy key with comma"
+msgstr "Tape sitandård cwate avou coma"
+
+#. XKBFile extension text
+msgid "Keypad with unicode additions (arrows and math operators). Math operators on default level."
+msgstr "Taprece avou les acdicions unicode (fletches eyet operateus matematikes). Les operateus matematikes å livea prémetou."
+
+#. XKBFile extension text
+msgid "Legacy key with dot"
+msgstr "Tape sitandård cwate avou pont"
+
+#. XKBFile extension text
+msgid "Four-level key with momayyez"
+msgstr "Tape di livea cwate avou "
+
+#. XKBFile extension text
+msgid "Numeric keypad delete key behaviour"
+msgstr "Li taprece limerike disface li dujhance del tape"
+
+#. XKBFile extension text
+msgid "Wang 724 keypad with unicode additions (arrows and math operators)"
+msgstr "Taprece Wang 724 avou les acdicions unicode (fletches eyet operateus matematikes)"
+
+#. Tab title: Tablet port and mode selection
+msgid "Port and Mode"
+msgstr "Pôrt eyet môde"
+
+#. Tab title: Tablet electronic pens (pen,eraser)
+msgid "Electronic Pens"
+msgstr "Penes electronikes"
+
+#. Activate tablet checkbox
+msgid "Activate This Tablet"
+msgstr "Mete en alaedje cisse tåvlete ci"
+
+#. Group box title for the tablet vendor and name selection
+msgid "Tablet: Vendor and Name Selection"
+msgstr "Tåvlete: Tchoes do vindeu eyet do no"
+
+#. Group box title for tablet port combobox
+msgid "Connection Port"
+msgstr "Pôrt di raloyaedje"
+
+#. Group box title for tablet mode
+msgid "Primary Tablet Mode"
+msgstr "Prumi môde del tåvlete"
+
+#. Group box title for pen/eraser tablet mode
+msgid "Pen or Eraser Mode"
+msgstr "Môde del pene ou del gome"
+
+#. Radiobutton for relative tablet mode
+msgid "Relative"
+msgstr "Candjant"
+
+#. Radiobutton for absolute tablet mode
+msgid "Absolute"
+msgstr "Absolou"
+
+#. Combobox item text for tablet port: USB
+msgid "USB"
+msgstr "USB"
+
+#. Combobox item text for tablet port: ttyS0
+msgid "COM-1 [ /dev/ttyS0 ]"
+msgstr "COM-1 [ /dev/ttyS0 ]"
+
+#. Combobox item text for tablet port: ttyS1
+msgid "COM-2 [ /dev/ttyS1 ]"
+msgstr "COM-2 [ /dev/ttyS1 ]"
+
+#. Combobox item text for tablet port: ttyS2
+msgid "COM-3 [ /dev/ttyS2 ]"
+msgstr "COM-3 [ /dev/ttyS2 ]"
+
+#. Combobox item text for tablet port: ttyS3
+msgid "COM-4 [ /dev/ttyS3 ]"
+msgstr "COM-4 [ /dev/ttyS3 ]"
+
+#. Combobox item text for tablet port: ttyS4
+msgid "COM-5 [ /dev/ttyS4 ]"
+msgstr "COM-5 [ /dev/ttyS4 ]"
+
+#. Group box title for the tablet tools (pen/eraser)
+msgid "Tools"
+msgstr "Usteyes"
+
+#. Add Pen Checkbox
+msgid "Add Pen"
+msgstr "Radjouter pene"
+
+#. Add Eraser Checkbox
+msgid "Add Eraser"
+msgstr "Radjouter gome"
+
+#. Add Touch Checkbox
+msgid "Add Touch"
+msgstr "Radjouter waitroûle a toutchî                "
+
+#. Add Pad Checkbox
+msgid "Add Pad"
+msgstr "Radjouter pad"
+
+#. Windowanager title for the tablet pen options dialog
+msgid "Pen or Eraser Settings"
+msgstr "Tchuzes del pene ou del gome"
+
+#. Tab title: Pen properties
+msgid "Pen Properties"
+msgstr "Prôpietés del pene"
+
+#. Tab title: Pad properties
+msgid "Pad Properties"
+msgstr "Prôpietés do pad"
+
+#. Tab title: Eraser properties
+msgid "Eraser Properties"
+msgstr "Prôpietés del gome"
+
+#. Tab title: Touch properties
+msgid "Touch Properties"
+msgstr "Prôpietés del waitroûle a toutchî"
+
+#. Tab text for a touchscreen tab of the touchscreen dialog
+msgid "Touchscreen %1"
+msgstr "Waitroûle a toutchî %1"
+
+#. Activate/Assign touchscreen checkbox
+msgid "Assign a Touchscreen to Display Number %1"
+msgstr "Aroyî ene Waitroûle a toutchî å Håynaedje limero %1"
+
+#. Group box title for the touchscreen vendor and name selection
+msgid "Touchscreen: Vendor and Name Selection"
+msgstr "Waitroûle a toutchî: Tchoes do vindeu eyet do no"
+
+#. Finish configuration message box
+msgid "<b>Final Steps</b><hr>The last step is saving your new configuration. It is recommended to test the new configuration before saving it. If the test server shows a corrupted desktop, press <b>[ Ctrl+Alt+Backspace ]</b> and <b>[ Ctrl+Alt+Backspace ]</b> shortly after a loud warning (beep) to kill the server."
+msgstr ""
+"<b>Dierinnès etapes</b><hr>Li dierinne etape schape vosse novea apontiaedje. Il est ricmandé d' sayî l' novea apontiaedje divant del schaper. Sel sierveu di sayaedje mostere on cron scribanne, tchôkîz <b>[ Ctrl+Alt+Backspace ]</b> eyet <b>[ Ctrl+Alt+Backspace ]</b> nén lontins après on foirt adviertixhmint "
+"(xhuflet) po touwer l' sierveu."
+
+#. Finish configuration message box (without test)
+msgid "<b>Saving the configuration</b><hr>Click on Save to store the configuration. Your changes will become effective on next X-Server restart."
+msgstr "<b>Schapaedje di l' apontiaedje</b><hr>Clitchîz so Schaper po wårder vost apontiaedje. Vos candjmints sront metous en ouve li côp après k' vos åyîxhe renondé l' Sierveu X."
+
+#. Tab title: VNC Server configuration
+msgid "X Server Remote Control"
+msgstr "Controle då lon do Sierveu X"
+
+#. Activate VNC server checkbox
+msgid "Allow access to display and keyboard/mouse of your X Server"
+msgstr "Permet d' moussî e håynaedje ey el taprece/sori di vosse Sierveu X"
+
+#. Activate VNC password protection checkbox
+msgid "Activate Password Protection"
+msgstr "Mete ene alaedje li waerantixhaedje avou on scret"
+
+#. LineEdit label: enter password
+msgid "Password"
+msgstr "Sicret"
+
+#. LineEdit contents: enter new password
+msgid "<Enter new password>"
+msgstr "<Taper on novea sicret>"
+
+#. LineEdit contents: change password
+msgid "<Change password>"
+msgstr "<Candjî d' sicret>"
+
+#. LineEdit contents: verify password
+msgid "<Verify password>"
+msgstr "<Verifyî sicret>"
+
+#. Activate HTTP access checkbox
+msgid "Activate HTTP Access"
+msgstr "Mete en alaedje l' accès HTTP"
+
+#. Activate multiple VNC connection checkbox
+msgid "Allow Multiple Connections"
+msgstr "Permet sacwants raloyaedjes"
+
+#. SpinBox label to setup the HTTP port number
+msgid "HTTP Port"
+msgstr "Pôrt HTTP"
+
+#. VNC message box appearing if password strings doesn't match
+msgid "<b>Remote Access Password Mismatch</b><hr>The first and the second version of the password do not match."
+msgstr "<b>Li scret po l' accès då lon n' corespond nén</b><hr>Li prumire eyet l' deujhinme modêye do sicret n' corespondèt nén."
+
+#. VNC message box appearing if password is too short
+msgid "<b>Remote Access Password Fault</b><hr>The password field has been left empty or the password is too short. Enter a password with at least six characters."
+msgstr "<b>Aroke do scret po l' accès då lon</b><hr>Li tchamp di scret a stî wårdé vude oudonbén l' sicret est trop court. Tapez on scret avou pol moens shijh caracteres."
+
+#. VNC message box appearing if password is too long
+msgid "<b>Remote Access Password Fault</b><hr>The password is too long. Enter a password with a maximum of eight characters."
+msgstr "<b>Aroke do scret po l' accès då lon</b><hr>Li scret est trop long. Tapez on scret avou macsimom ût caracteres."
+
+#. Install missing packages box
+msgid "<b>Software Installation:</b><hr>Some packages are missing. Install the missing packages now?"
+msgstr "<b>Astalaedje di programe:</b><hr>I gn a des pacaedjes ki mankèt. Astaler les pacaedjes ki mankèt sol côp?"
+
+#. Caption text for the missing package info window
+msgid "Package Installation"
+msgstr "Astalaedje des pacaedjes"
+
+#. Progress bar title text
+msgid "Importing module"
+msgstr "Dj' aberwete li module"
+
+#. Progress window caption text
+msgid "SaX2: Importing data..."
+msgstr "SaX2: Dj' aberwete les dinêyes..."
+
+#. Progress window label text
+msgid "Initialize cache..."
+msgstr "Inicialijhaedje del muchete..."
+
+#. Message box text: configuration cannot be saved
+msgid "<b>Saving Configuration Failed</b><hr>The following report has been created:"
+msgstr "<b>Li schapaedje di l' apontiaedje a fwait berwete</b><hr>Li rapoirt shuvant a stî ahivé:"
+
+#. Message box test: configuration has been saved
+msgid "<b>Configuration Saved</b><hr>Your modifications will take effect the next time the graphics system is restarted. Exit SaX2 now?"
+msgstr "<b>Apontiaedje schapé</b><hr> Vos candjmints sront metous en ouve li côp après k' vos åyîxhe renondé l' sistinme grafike. Moussî foû di SaX2 asteure?"
+
+#. Message box text: testing the configuration has failed
+msgid "<b>Testing Configuration Failed</b><hr>For further information, refer to the file <tt>/var/log/Xorg.99.log</tt>. The following report has been created from the calling instance:"
+msgstr "<b>Li sayaedje di l' apontiaedje a fwait berwete</b><hr>Po ndè saveur di pus, alez vey e fitchî <tt>/var/log/Xorg.99.log</tt>. i rapoirt shuvant a stî ahivé pa l' instance cålante:"
+
+#. Message box text: if VNC has been enabled the firewall should be checked
+msgid "<b>Remote Access configuration information</b><hr>The Remote Access service requires that the TCP port 5900 and an HTTP port (5800 by default) be open in the firewall. You can configure this with YaST."
+msgstr "<b>Pondants et djondants di l' apontiaedje di l' accès då lon</b><hr>Li siervice d' accès då lon dimande kel pôrt TCP 5900 eyet on pôrt HTTP (prémetou: 5800) soeye drovou e côpe-feu. Vos ploz apontyî çouci avou YaST."
+
+#. XKBFile extension text
+msgid "Miscellaneous compatibility options"
+msgstr "Tchuzes di copatibilité di totes sôres"
+
+#. XKBFile extension text
+msgid "Add the EuroSign to the 5 key."
+msgstr "Radjouter l' simbole di l' Uro avou l' tape 5."
+
+#. XKBFile extension text
+msgid "CapsLock key behavior"
+msgstr "Dujhance del tape CapsLock"
+
+#. XKBFile extension text
+msgid "Alt/Win key behavior"
+msgstr "Dujhance del tape Alt/Win"
+
+#. XKBFile extension text
+msgid "Adding the EuroSign to certain keys"
+msgstr "Dji radjoute li simbole di l' Uro a des tapes"
+
+#. XKBFile extension text
+msgid "Caps Lock is Compose."
+msgstr "Caps Lock est Compôze"
+
+#. XKBFile extension text
+msgid "Right Ctrl key works as Right Alt."
+msgstr "Li tape Ctrl di droete rote come Alt di droete."
+
+#. XKBFile extension text
+msgid "Ctrl key at bottom left"
+msgstr "Li tape Ctrl al valêye hintche"
+
+#. XKBFile extension text
+msgid "Ctrl key at left of 'A'"
+msgstr "Li tape Ctrl al valêye di 'A'"
+
+#. XKBFile extension text
+msgid "Make CapsLock an additional Ctrl."
+msgstr "Fé di CapsLock on Ctrl di pus."
+
+#. XKBFile extension text
+msgid "Swap Ctrl and CapsLock."
+msgstr "Discandjî les tapes Ctrl eyet CapsLock."
+
+#. XKBFile extension text
+msgid "Ctrl key position"
+msgstr "Eplaeçmint del tape Ctrl"
+
+#. XKBFile extension text
+msgid "Special keys (Ctrl+Alt+&lt;key&gt;) handled in a server."
+msgstr "Especiålès tapes (Ctrl+Alt+&lt;key&gt;) apougneye dins on sierveu."
+
+#. XKBFile extension text
+msgid "Press Right Ctrl to choose 3rd level."
+msgstr "Tchôkîz l' tape Ctrl di droete po tchoezi l' 3inme livea."
+
+#. XKBFile extension text
+msgid "Ctrl+Shift changes group."
+msgstr "Ctrl+Maj candjèt l' groupe."
+
+#. XKBFile extension text
+msgid "Add the EuroSign to the E key."
+msgstr "Radjouter l' simbole di l' Uro avou l' tape E."
+
+#. XKBFile extension text
+msgid "Add the EuroSign to the 2 key."
+msgstr "Radjouter l' simbole di l' Uro avou l' tape 2."
+
+#. XKBFile extension text
+msgid "key Compose key position"
+msgstr "tape Eplaeçmint del tape Compôze"
+
+#. XKBFile extension text
+msgid "Alt+Ctrl changes group."
+msgstr "Alt+Ctrl candjèt l' groupe."
+
+#. XKBFile extension text
+msgid "Group Shift/Lock behavior"
+msgstr "Grouper l' dujhance di Maj/Aclawer"
+
+#. XKBFile extension text
+msgid "Arabic"
+msgstr "Arabe"
+
+#. XKBFile extension text
+msgid "Nepal"
+msgstr "Nepal"
+
+#. XKBFile extension text
+msgid "Congo, Democratic Republic of the"
+msgstr "Congo, Republike Democratike do"
+
+#. XKBFile extension text
+msgid "Korea, Republic of"
+msgstr "Corêye (nonnrece)"
+
+#
+#. XKBFile extension text
+msgid "Iraq"
+msgstr "Irak"
+
+#. XKBFile extension text
+msgid "Nigeria"
+msgstr "Nidjeria"
+
+#. XKBFile extension text
+msgid "Japan (PC-98xx Series)"
+msgstr "Djapon (Séreyes PC-98xx)"
+
+#. XKBFile extension text
+msgid "Estonia"
+msgstr "Estoneye"
+
+#. XKBFile extension text
+msgid "Myanmar"
+msgstr "Birmaneye"
+
+#. XKBFile extension text
+msgid "Norway"
+msgstr "Norvedje"
+
+#. XKBFile extension text
+msgid "Germany"
+msgstr "Almagne"
+
+#. XKBFile extension text
+msgid "Mongolia"
+msgstr "Mongoleye"
+
+#. XKBFile extension text
+msgid "Bhutan"
+msgstr "Boutan"
+
+#
+#. XKBFile extension text
+msgid "Bangladesh"
+msgstr "Bangladesh"
+
+#. XKBFile extension text
+msgid "Latin American"
+msgstr "Latene Amerike"
+
+#. XKBFile extension text
+msgid "Belgium"
+msgstr "Beljike"
+
+#. XKBFile extension text
+msgid "Finland"
+msgstr "Finlande"
+
+#. XKBFile extension text
+msgid "Israel"
+msgstr "Israyel"
+
+#. XKBFile extension text
+msgid "Sweden"
+msgstr "Suwede"
+
+#. XKBFile extension text
+msgid "Russia"
+msgstr "Rûsseye"
+
+#. XKBFile extension text
+msgid "Portugal"
+msgstr "Portugal"
+
+#. XKBFile extension text
+msgid "Korean"
+msgstr "Coreyin"
+
+#. XKBFile extension text
+msgid "Maori"
+msgstr "Mawori"
+
+#. XKBFile extension text
+msgid "Uzbekistan"
+msgstr "Ouzbekistan"
+
+#. XKBFile extension text
+msgid "Bulgaria"
+msgstr "Bulgåreye"
+
+#. XKBFile extension text
+msgid "Thailand"
+msgstr "Taylande"
+
+#
+#. XKBFile extension text
+msgid "India"
+msgstr "Inde"
+
+#. XKBFile extension text
+msgid "Bengali"
+msgstr "Bengali"
+
+#. XKBFile extension text
+msgid "Switzerland"
+msgstr "Swisse"
+
+#. XKBFile extension text
+msgid "Laos"
+msgstr "Lawosse"
+
+#. XKBFile extension text
+msgid "Japan"
+msgstr "Djapon"
+
+#. XKBFile extension text
+msgid "Syria"
+msgstr "Sireye"
+
+#. XKBFile extension text
+msgid "Czechia"
+msgstr "Tchekeye"
+
+#
+#. XKBFile extension text
+msgid "Belarus"
+msgstr "Belaruss"
+
+#. XKBFile extension text
+msgid "Tajikistan"
+msgstr "Tadjikistan"
+
+#. XKBFile extension text
+msgid "Denmark"
+msgstr "Daenmåtche"
+
+#. XKBFile extension text
+msgid "Slovenia"
+msgstr "Esloveneye"
+
+#. XKBFile extension text
+msgid "Malta"
+msgstr "Male"
+
+#. XKBFile extension text
+msgid "Azerbaijan"
+msgstr "Azerbaydjan"
+
+#. XKBFile extension text
+msgid "Lithuania"
+msgstr "Litwaneye"
+
+#. XKBFile extension text
+msgid "Vietnam"
+msgstr "Vietnam"
+
+#. XKBFile extension text
+msgid "Faroe Islands"
+msgstr "Iyes Faeroyé"
+
+#. XKBFile extension text
+msgid "South Africa"
+msgstr "Nonne Afrike"
+
+#. XKBFile extension text
+msgid "Farsi"
+msgstr "Farsi"
+
+#
+#. XKBFile extension text
+msgid "Slovakia"
+msgstr "Eslovakeye"
+
+#. XKBFile extension text
+msgid "Maldives"
+msgstr "Maldives"
+
+#. XKBFile extension text
+msgid "Iceland"
+msgstr "Izlande"
+
+#. XKBFile extension text
+msgid "Croatia"
+msgstr "Crowåceye"
+
+#. XKBFile extension text
+msgid "Latvia"
+msgstr "Letoneye"
+
+#. XKBFile extension text
+msgid "Albania"
+msgstr "Albaneye"
+
+#. XKBFile extension text
+msgid "Italy"
+msgstr "Itåleye"
+
+#. XKBFile extension text
+msgid "Greece"
+msgstr "Grece"
+
+#. XKBFile extension text
+msgid "United Kingdom"
+msgstr "Grande-Burtaegne"
+
+#. XKBFile extension text
+msgid "France"
+msgstr "France"
+
+#. XKBFile extension text
+msgid "Armenia"
+msgstr "Årmeneye"
+
+#. XKBFile extension text
+msgid "Pakistan"
+msgstr "Pakistan"
+
+#. XKBFile extension text
+msgid "Poland"
+msgstr "Pologne"
+
+#. XKBFile extension text
+msgid "Kyrgyzstan"
+msgstr "Kirguiztan"
+
+#. XKBFile extension text
+msgid "Ireland"
+msgstr "Irlande"
+
+#. XKBFile extension text
+msgid "Hungary"
+msgstr "Hongreye"
+
+#. XKBFile extension text
+msgid "Cambodia"
+msgstr "Cambodje"
+
+#. XKBFile extension text
+msgid "Spain"
+msgstr "Espagne"
+
+#. XKBFile extension text
+msgid "Ukraine"
+msgstr "Oucrinne"
+
+#. XKBFile extension text
+msgid "Romania"
+msgstr "Roumaneye"
+
+#. XKBFile extension text
+msgid "Kazakhstan"
+msgstr "Kazaxhtan"
+
+#. XKBFile extension text
+msgid "Georgia"
+msgstr "Djeyordjeye"
+
+#. XKBFile extension text
+msgid "U.S. English"
+msgstr "Inglès U.S."
+
+#. XKBFile extension text
+msgid "Turkish"
+msgstr "Turk"
+
+#. XKBFile extension text
+msgid "PC-98xx Series"
+msgstr "Séreyes PC-98xx"
+
+#. XKBFile extension text
+msgid "Netherlands"
+msgstr "Bas Payis"
+
+#. XKBFile extension text
+msgid "Macedonia"
+msgstr "Macedoneye"
+
+#. XKBFile extension text
+msgid "Canada"
+msgstr "Canada"
+
+#. XKBFile extension text
+msgid "Sri Lanka"
+msgstr "Sri Lanka"
+
+#. XKBFile extension text
+msgid "Bosnia and Herzegovina"
+msgstr "Bosneye"
+
+#. XKBFile extension text
+msgid "Brazil"
+msgstr "Braezi"
+
+#. XKBFile extension text
+msgid "Ghana"
+msgstr "Gana"
+
+#. XKBFile extension text
+msgid "Andorra"
+msgstr "Andore"
+
+#. XKBFile extension text
+msgid "Afghanistan"
+msgstr "Afganistan"
+
+#. XKBFile extension text
+msgid "Esperanto"
+msgstr "Esperanto"
+
+#. XKBFile extension text
+msgid "Turkey"
+msgstr "Turkeye"
+
+#. XKBFile extension text
+msgid "CapsLock key switches layout while pressed, Alt+CapsLock does the original capslock action."
+msgstr "Li tape CapsLock candje l' adjinçmint cwand tchôkî, Alt+CapsLock fwait l' faitindje CapsLock d' oridjinne."
+
+#. XKBFile extension text
+msgid "CapsLock switch to first layout, Shift+CapsLock switch to last layout."
+msgstr "CapsLock fwait passer å prumî adjinçmint, Maj+CapsLock fwait passer å dierin adjinçmint."
+
+#. XKBFile extension text
+msgid "Less-than/Greater-than is Compose."
+msgstr "Moens-ki/Pus-ki est Compôze."
+
+#. XKBFile extension text
+msgid "Space key outputs non-breakable space character at fourth level, thin non-breakable space character at sixth level (via Ctrl+Shift"
+msgstr "Li bår d' espåce rexhe on caractere d' espåce nén côpåve å cwatrinme livea, on tene caractere d' espåce nén côpåve å shijhinme livea (via Ctrl+Maj"
+
+#. /.../
+#. Copyright (c) 2000 SuSE GmbH Nuernberg, Germany.  All rights reserved.
+#. This file contains the gettext keys used within a gettext call in the
+#. application code for XFine2
+#.
+#. Maximum length: 40  characters
+msgid "&Step size"
+msgstr "Grandeu di &dgré"
+
+#. Maximum length: 40  characters
+msgid "Small"
+msgstr "Pitit"
+
+#. Maximum length: 40  characters
+msgid "Normal"
+msgstr "Normå"
+
+#. Maximum length: 40  characters
+msgid "Big"
+msgstr "Grand"
+
+#. Maximum length: 40  characters
+msgid "Huge"
+msgstr "Foû grand"
+
+#. Maximum length: 40  characters
+msgid "&Next Screen"
+msgstr "Waitroûle &shuvante"
+
+#. Maximum length: 40  characters
+msgid "S&ave"
+msgstr "&Schaper"
+
+#. Maximum length: 40  characters
+msgid "Change &Position"
+msgstr "Candjî &eplaeçmint"
+
+#. Maximum length: 40  characters
+msgid "C&hange Size"
+msgstr "&Candjî grandeu"
+
+#. Maximum length: 40  characters
+msgid "Screen"
+msgstr "Waitroûle"
+
+#. Maximum length: 60  characters
+msgid "No video mode tuning available"
+msgstr "Apontiaedje do môde videyo nén disponibe"
+
+msgid "Display"
+msgstr "Håynaedje"
+
+msgid "Configuration on display"
+msgstr "Apontiaedje sol håynaedje"
+
+msgid "Idle timer..."
+msgstr "Munutreye di cwand ça n' fwait rén..."
+
+

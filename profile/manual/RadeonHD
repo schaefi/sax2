@@ -1,0 +1,6 @@
+# /.../
+# RadeonHD driver profile which adds the option monitor-X -> Monitor[0]
+# to the primary monitor section for the radeonhd driver
+# ---- 
+# dynamic profile
+#

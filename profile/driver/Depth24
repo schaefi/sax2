@@ -1,0 +1,6 @@
+# .../
+# Driver dependant color profile, enabling 24bit color depth
+# The data of this profile may be overwritten by a graphics card
+# dependant profile
+# ---- 
+Screen->[X]->DefaultDepth = 24

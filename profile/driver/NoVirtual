@@ -1,0 +1,9 @@
+# /.../
+# Used for graphics cards with not enough memory for Virtual profile
+# ----
+
+!remove Screen  -> [X] ->  Depth->8->Virtual
+!remove Screen  -> [X] ->  Depth->15->Virtual
+!remove Screen  -> [X] ->  Depth->16->Virtual
+!remove Screen  -> [X] ->  Depth->24->Virtual
+!remove Screen  -> [X] ->  Depth->32->Virtual

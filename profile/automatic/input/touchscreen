@@ -1,0 +1,13 @@
+!remove InputDevice -> [X] -> Option -> Device
+!remove InputDevice -> [X] -> Option -> Buttons
+!remove InputDevice -> [X] -> Option -> Protocol
+!remove InputDevice -> [X] -> Option -> ZAxisMapping
+
+InputDevice -> [X] -> Identifier = Mouse[[X]]
+InputDevice -> [X] -> Driver     = evdev
+InputDevice -> [X] -> Option -> InputFashion         = Mouse
+InputDevice -> [X] -> Option -> Name                 = evdev;Touchscreen
+InputDevice -> [X] -> Option -> evBits               = +1 +3
+InputDevice -> [X] -> Option -> keyBits              = -272-274 +330
+InputDevice -> [X] -> Option -> absBits              = +0-1
+InputDevice -> [X] -> Option -> Pass                 = 3

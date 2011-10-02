@@ -1,0 +1,1974 @@
+# translation of sax.el.po to Ελληνικά
+# Copyright (C) 2003, 2004, 2005, 2007, 2008 Free Software Foundation, Inc.
+#
+# Filippos Papadopoulos-csst9923@cs.uoi.gr    <Bill Giannakopoulos - billyg@acn.gr>, 2003.
+# Filippos Papadopoulos-csst9923@cs.uoi.gr    <Bill Giannakopoulos - BillG@remalia.com>, 2003, 2005.
+# Hellenic SuSE Translators Group <hstg@billg.gr>, 2004.
+# Filippos Papadopoulos <filip@cs.uoi.gr>, 2005.
+# Hellenic SuSE Translators Group <filip@cs.uoi.gr>, 2005.
+# Hellenic SuSE Translation Team <hstg@billg.gr>, 2005.
+# Vasileios Giannakopoulos <billg@hellug.gr>, 2007.
+# Kostas Boukouvalas <quantis@hellug.gr>, 2007.
+# Vasileios Giannakopoulos <billg@billg.gr>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: sax.el\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2008-06-06 01:04+0100\n"
+"Last-Translator: Vasileios Giannakopoulos <billg@billg.gr>\n"
+"Language-Team: Ελληνικά <billg@billg.gr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Giannakopoulos - BillG@remalia.com>\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#. /.../
+#. Copyright (c) 2005 SuSE GmbH Nuernberg, Germany.  All rights reserved.
+#. This file contains the gettext keys used within a gettext call in the
+#. application code for the SaX2 and XFine GUI
+#.
+#. Dear Translator, translate this string as 'RTL' if your language is right-to-left
+msgid "I18N"
+msgstr "I18N"
+
+#. RTF text: Startup information for the user
+msgid "<b>SaX2 Suggestion</b><hr>The currently-started graphics system is based on a suggestion made by SaX2. If this is acceptable, click <b>OK</b>. Otherwise, change the configuration."
+msgstr "<b>Υπόδειξη του SaX2</b><hr>Το τρέχον σύστημα γραφικών βασίζεται  στην υπόδειξη που έγινε μέσω του SaX2. Αν σας είναι αποδεκτό αυτό το περιβάλλον κάντε κλικ στο <b>Εντάξει</b>. Διαφορετικά αλλάξτε τις ρυθμίσεις."
+
+#. RTF text: 3D acceleration not supported with this card
+msgid "<b>3D acceleration not supported</b><hr>SaX2 cannot offer activation of the 3D subsystem because your graphics card/driver doesn't support 3D"
+msgstr "<b>Η επιτάχυνση 3D δεν υποστήριζεται</b><hr>Το SaX2 δεν είναι σε θέση να προσφέρει ενεργοποίηση του υποσυστήματος 3D επειδή η κάρτα γραφικών σας δεν υποστηρίζει 3D"
+
+#. RTF text: 3D acceleration not supported with Xinerama
+msgid "<b>3D acceleration not supported</b><hr>SaX2 cannot offer activation of the 3D subsystem because Xinerama based dual head mode is used. The Xorg Xinerama extension for combining graphics screens doesn't support 3D on all heads"
+msgstr "<b>Η επιτάχυνση 3D δεν υποστηρίζεται</b><hr>Το SaX2 δεν είναι σε θέση να προσφέρει ενεργοποίηση του υποσυστήματος 3D επειδή το Xinerama βασίζεται σε λειτουργία διπλής κεφαλής. Η επέκταση Xorg Xinerama για το συνδυασμό γραφικών οθονών δεν υποστηρίζει 3D σε όλες τις κεφαλές"
+
+#. Caption text for the startup information window
+msgid "Automatic Graphics System Setup"
+msgstr "Αυτόματη ρύθμιση συστήματος γραφικών"
+
+#. Caption text for informing the user
+msgid "Information..."
+msgstr "Πληροφορίες..."
+
+#. Caption text for the main window
+msgid "SaX2: X11 Configuration"
+msgstr "SaX2: Ρύθμιση Χ11"
+
+#. Title text on the left side
+msgid "SaX Control Center"
+msgstr "Κέντρο Ελέγχου SaX"
+
+#. Info message about display size changes
+msgid "<b>Display size changed</b><hr>The display size has been adapted to the new layout."
+msgstr "<b>Η ανάλυση οθόνης άλλαξε</b><hr>Η ανάλυση οθόνης έχει υιοθετήσει τη νεα εμφάνιση."
+
+#. Help Button text
+msgid "&Help"
+msgstr "&Βοήθεια"
+
+#. Ok Button text
+msgid "O&K"
+msgstr "Ο&Κ"
+
+#. Yes Button text
+msgid "&Yes"
+msgstr "&Ναι"
+
+#. No Button text
+msgid "&No"
+msgstr "Ό&χι"
+
+#. Cancel Button text
+#. Maximum length: 40  characters
+msgid "&Cancel"
+msgstr "Ά&κυρο"
+
+#. RTF text: exit SaX message
+msgid "<b>Exit SaX2</b><hr>Exit SaX2 now?"
+msgstr "<b>Έξοδος από το SaX2</b><hr>Θέλετε να εγκαταλείψετε το SaX2 τώρα;"
+
+#. Message box default caption text
+msgid "Message"
+msgstr "Μήνυμα"
+
+#. Change configuration Button text
+msgid "C&hange Configuration"
+msgstr "Α&λλαγή ρυθμίσεων"
+
+#. Short description of the Monitor module
+#. Monitor name label
+msgid "Monitor"
+msgstr "Οθόνη"
+
+#. title of module dialog
+msgid "Card and Monitor Properties"
+msgstr "Ιδιότητες κάρτας και οθόνης"
+
+#. Short description of the Mouse module
+#. Simple mouse text for the mouse tab
+msgid "Mouse"
+msgstr "Ποντίκι"
+
+#. title of module dialog
+msgid "Mouse Properties"
+msgstr "Ιδιότητες Ποντικιού"
+
+#. Short description of the Keyboard module
+#. Keyboard name label
+msgid "Keyboard"
+msgstr "Πληκτρολόγιο"
+
+#. title of module dialog
+msgid "Keyboard Properties"
+msgstr "Ιδιότητες πληκτρολογίου"
+
+#. Short description of the Tablet module
+#. Tab title: Tablet vendor name selection
+msgid "Tablet"
+msgstr "Ταμπλέτα"
+
+#. title of module dialog
+msgid "Tablet Properties"
+msgstr "Ιδιότητες ταμπλέτας"
+
+#. Short description of the Touchscreen module
+msgid "Touchscreen"
+msgstr "Οθόνη επαφής"
+
+#. title of module dialog
+msgid "Touchscreen Properties"
+msgstr "Ιδιότητες οθόνης επαφής"
+
+#. Short description of the VNC module
+msgid "Remote Access"
+msgstr "Απομακρυσμένη Πρόσβαση"
+
+#. title of module dialog
+msgid "Remote Access Properties"
+msgstr "Ιδιότητες απομακρυσμένης πρόσβασης"
+
+#. Tab text for a display tab of the monitor dialog
+msgid "Display %1"
+msgstr "Προβολή %1"
+
+#. Tab text for a display tab of the mouse dialog
+#, fuzzy
+msgid "Mouse %1"
+msgstr "Ποντίκι"
+
+#. Activate display checkbox, Display=screen
+msgid "Activate This Display"
+msgstr "Ενεργοποίηση αυτής της απεικόνισης"
+
+#. Activate mouse checkbox
+msgid "Activate This Pointer"
+msgstr "Ενεργοποίηση αυτού του δείκτη"
+
+#. Graphics Card name label
+msgid "Card"
+msgstr "Κάρτα"
+
+#. Desktop name label
+msgid "Desktop"
+msgstr "Επιφάνεια Εργασίας"
+
+#. Pointers name label, global name for input devices
+#, fuzzy
+msgid "Pointers"
+msgstr "Εκτυπωτής"
+
+#. Layout name label, desktop layout
+#. Tab text for a layout tab of the keyboard dialog
+#. Label text for the primary keyboard layout
+#. Table topic text describing the keyboard layout column
+msgid "Layout"
+msgstr "Διάταξη"
+
+#. Path name label, search paths
+msgid "Path"
+msgstr "Διαδρομή"
+
+#. Extensions name label, X11 extensions
+msgid "Extensions"
+msgstr ""
+
+#. Change data
+msgid "&Change..."
+msgstr "&Αλλαγή..."
+
+#. Set options for some kind of data
+msgid "&Options..."
+msgstr "&Επιλογές..."
+
+#. Configure some data
+msgid "Con&figure..."
+msgstr "Ρύθμι&ση..."
+
+#. Group box title for dual head setup
+msgid "Dual Head Mode"
+msgstr "Κατάσταση Dual Head"
+
+#. Group box title for card options
+#. Group box title for mouse options
+#. Tab text for an options tab of the keyboard dialog
+#. Group box title for tablet options
+#. Group box title for the VNC options
+msgid "Options"
+msgstr "Επιλογές"
+
+#. CheckBox label to activate the mouse wheel
+msgid "Activate Mouse Wheel"
+msgstr "Ενεργοποίηση ροδέλας ποντικιού"
+
+#. CheckBox label to invert the mouse X axis
+msgid "Invert X-Axis"
+msgstr "Αντιστροφή Άξονα Χ"
+
+#. CheckBox label to invert the mouse Y axis
+msgid "Invert Y-Axis"
+msgstr "Αντιστροφή Άξονα Υ"
+
+#. CheckBox label to activate left hand mouse
+msgid "Activate Left-Hand Button Mapping"
+msgstr "Ενεργοποίηση Λειτουργίας Κουμπιου Αριστερόχειρα"
+
+#. CheckBox label to activate the 3 Button emulation
+msgid "Activate 3-Button Emulation"
+msgstr "Ενεργοποίηση εξομοίωσης 3-κουμπιών"
+
+#. CheckBox label to activate the wheel emulation
+msgid "Emulate Wheel with Mouse Button"
+msgstr "Εξομοίωση της ροδέλας με πλήκτρο ποντικιού"
+
+#. Group box title for card rotation
+msgid "Rotate Screen"
+msgstr "Περιστροφή οθόνης"
+
+#. Group box title for the mouse test field
+#. Line edit label pointing to the keyboard test field
+msgid "Test"
+msgstr "Δοκιμή"
+
+#. Button text in final step message box for testing the configuration
+msgid "&Test"
+msgstr "&Δοκιμή"
+
+#. Button text in final step message box for saving the configuration
+msgid "&Save"
+msgstr "&Αποθήκευση"
+
+#. Status line of mouse test field: ready
+msgid "Test ready"
+msgstr "Δοκιμή έτοιμη"
+
+#. Status line of mouse test field: single button click
+msgid "Single Click: Done"
+msgstr "Μονό κλικ: Έγινε"
+
+#. Status line of mouse test field: double button click
+msgid "Double Click: Done"
+msgstr "Διπλό κλικ: Έγινε"
+
+#. Status line of mouse test field: wheel moved
+msgid "Scrolling"
+msgstr "Κύλιση"
+
+#. Status line of mouse test field: button pressed
+msgid "Button pressed"
+msgstr "Πατήθηκε κουμπί"
+
+#. Status line of mouse test field: button released
+msgid "Button released"
+msgstr "Ελευθερώθηκε κουμπί"
+
+#. Status line of mouse test field: wheel stopped
+msgid "Stopped: Done"
+msgstr "Σταμάτημα: Έγινε"
+
+#. Group box title for properties
+msgid "Properties"
+msgstr "Ιδιότητες"
+
+#. Activate dual head mode checkbox
+msgid "Activate Dual Head Mode"
+msgstr "Ενεργοποίηση κατάστασης Dual Head"
+
+#. Set display resolution
+msgid "Resolution"
+msgstr "Ανάλυση"
+
+#. Set display colors
+msgid "Colors"
+msgstr "Χρώματα"
+
+#. Activate 3D checkboc
+msgid "Activate 3D Acceleration"
+msgstr "Ενεργοποίηση 3Δ επιτάχυνσης"
+
+#. Tab title: Setup monitor properties for card X
+msgid "Monitor for Card"
+msgstr "Οθόνη για την κάρτα"
+
+#. Tab title: Setup monitor for second channel on card X
+msgid "Second Monitor for Card"
+msgstr "Δεύτερη οθόνη για την κάρτα"
+
+#. Tab title: Setup sync frequencies
+msgid "Sync Frequencies"
+msgstr "Συχνότητες συγχρονισμού"
+
+#. Tab title: Setup display size
+msgid "Display Size"
+msgstr "Μέγεθος απεικόνισης"
+
+#. Tab title: Setup the monitor arrangement
+#. Title for the multihead arrangement
+msgid "Arrangement"
+msgstr "Διευθέτηση"
+
+#. Information about dual head mode. %1=the dual head modus %2=the resolution
+msgid "Activated in %1 mode with %2"
+msgstr "Ενεργοποιήθηκε σε κατάσταση %1 σε %2"
+
+#. Short Information that something has been activated
+msgid "Activated in driver default mode"
+msgstr "Ενεργοποιήθηκε στην προκαθορισμένη κατάσταση του οδηγού"
+
+#. rwalter
+#. Monitor Model is unknown and should be changed
+#. rwalter
+#. Mouse Model is unknown and should be changed
+msgid "Unconfigured"
+msgstr "Δεν έχει ρυθμιστεί"
+
+#. Message appears when user is trying to deactivate all displays
+msgid "<b>Cannot Deactivate All Displays</b><hr><nobr>At least one display must be active.</nobr>"
+msgstr "<b>Αδυναμία απενεργοποίησης όλων των απεικονίσεων</b><hr><nobr>Τουλάχιστον μία απεικόνιση πρέπει να είναι ενεργή.</nobr>"
+
+#. Info label for dual head checkbox
+msgid "No configuration available"
+msgstr "Καμία διαθέσιμη διαμόρφωση"
+
+# /tmp/xapi:147 ##
+#. Radiobutton for traditional multihead mode
+msgid ""
+"Traditional Multihead:\n"
+"Each screen is an independent display"
+msgstr ""
+"Παραδοσιακό Multihead:\n"
+"Κάθε οθόνη είναι μια ανεξάρτητη απεικόνιση"
+
+# /tmp/xapi:149##
+#. Radiobutton for cloned multihead mode
+msgid ""
+"Cloned Multihead:\n"
+"Each display is a clone of the primary display"
+msgstr ""
+"Κλωνοποιημένο Multihead:\n"
+"Κάθε απεικόνιση είναι κλώνος της πρωτεύουσας απεικόνισης"
+
+# /tmp/xapi:151##
+#. Radiobutton for xinerama multihead mode
+msgid ""
+"Xinerama Multihead:\n"
+"Build one big display out of all screens"
+msgstr ""
+"Xinerama Multihead:\n"
+"Κατασκευή μιας μεγάλης απεικόνισης από όλες τις οθόνες."
+
+#. Title for multihead modi
+msgid "Multihead Mode"
+msgstr "Κατάσταση Multihead"
+
+#. Monitor X - connected to - CardY
+msgid "Connected To"
+msgstr "Συνδεδεμένη σε"
+
+#. Tooltip text if monitor is unknown
+msgid "Unknown Monitor:"
+msgstr "Άγνωστη οθόνη:"
+
+#. Tooltip text for primary monitor
+msgid "Primary Monitor:"
+msgstr "Πρωτεύουσα οθόνη:"
+
+#. Windowanager title for the monitor model setup
+#. Windowanager title for the second monitor model setup
+msgid "Monitor Settings"
+msgstr "Ρυθμίσεις οθόνης"
+
+#. Windowanager title for the mouse mode setup
+msgid "Mouse Settings"
+msgstr "Ρυθμίσεις ποντικιού"
+
+#. Windowanager title for the card options dialog
+msgid "Graphics Card Settings"
+msgstr "Ρυθμίσεις κάρτας γραφικών"
+
+#. Windowanager title for the dual head setup
+msgid "Dual Head Settings"
+msgstr "Ρυθμίσεις Dual Head"
+
+#. Radiobutton don't rotate
+msgid "Not Rotated"
+msgstr "Δεν έχει περιστραφεί"
+
+#. Radiobutton rotate to the left side
+msgid "To the Left"
+msgstr "Στα αριστερά"
+
+#. Radiobutton rotate to the right side
+msgid "To the Right"
+msgstr "Στα δεξιά"
+
+#. Popup message to inform the user about fbdev restrictions
+msgid "<b>Invalid Color/Resolution combination:</b><hr><nobr>The selected resolution and/or color settings</nobr> are not supported by the graphics cards framebuffer."
+msgstr "<b>Λανθασμένος συνδυασμός Χρώματος/Ανάλυσης:</b><hr><nobr>Η επιλεγμένη ανάλυση και/ή ρυθμίσεις χρωμάτων</nobr> δεν υποστηρίζονται από το framebuffer των καρτών γραφικών."
+
+#. Popup message to ask the user for an option value
+msgid "<b>Option Needs a Value</b><hr><nobr>Set up a value for option %1.</nobr>"
+msgstr "<b>Η επιλογή απαιτεί μια τιμή</b><hr><nobr> Καθορίστε μια τιμή για την επιλογή %1.</nobr>"
+
+#. Group box title for the monitor vendor and name selection
+msgid "Monitor: Vendor and Name Selection"
+msgstr "Οθόνη: Επιλογή Κατασκευαστή και Ονόματος"
+
+#. Group box title for the mouse vendor and name selection
+msgid "Mouse: Vendor and Name Selection"
+msgstr "Ποντίκι: Επιλογή Κατασκευαστή και Ονόματος"
+
+#. Group box title for the manual sync frequency set up
+msgid "Manual Sync Frequency Setup"
+msgstr "Χειροκίνητη ρύθμιση συχνοτήτων συγχρονισμού"
+
+#. Group box title for the aspect/ratio selection
+msgid "Diagonal and Aspect Ratio"
+msgstr "Διαγώνιος και λόγος διαστάσεων"
+
+#. Group box title for the display size setup
+msgid "Display Size in [ mm ]"
+msgstr "Μέγεθος απεικόνισης σε [ mm ]"
+
+#. Text message telling to be carefull with the monitor sync frequencies
+msgid "<b>Note:</b> Wrong sync ranges may damage your monitor. Consult the monitor manual for the settings.<br><br>If you want your monitor not to use its maximum rating, decrease the sync ranges."
+msgstr "<b>Σημείωση:</b>Λανθασμένες εμβέλειες συγχρονισμού μπορεί να βλάψουν την οθόνη σας. Μελετήστε το εγχειρίδιο της οθόνης σας για τις ρυθμίσεις.<br><br>Εάν δεν θέλετε να χρησιμοποιηθούν τα μέγιστα όρια της οθόνης, μειώστε τις εμβέλειες συγχρονισμού."
+
+#. Checkbox to activate DPMS
+msgid "Activate DPMS"
+msgstr "Ενεργοποίηση του DPMS"
+
+#. Button to popup the disk dialog for reading the monitor utility disk
+msgid "Utility Disk..."
+msgstr "Δισκέτα βοηθητικών εργαλείων..."
+
+#. Label text for horizontal sync frequency
+msgid "Horizontal"
+msgstr "Οριζόντια"
+
+#. Label text for second monitor name
+msgid "Second Monitor:"
+msgstr "Δεύτερη Οθόνη:"
+
+#. Label text for second monitor resolution
+msgid "Second Monitor Resolution"
+msgstr "Ανάλυση δεύτερης οθόνης"
+
+#. Label text for vertical sync frequency
+msgid "Vertical"
+msgstr "Κάθετη"
+
+#. Label text for hsync unit
+msgid "KHz"
+msgstr "KHz"
+
+#. Label text for vsync unit
+msgid "Hz"
+msgstr "Hz"
+
+#. Label text for the aspect ratio combo box
+msgid "Aspect Ratio"
+msgstr "Λόγος διαστάσεων"
+
+#. Label text for the diagonal length combo box
+msgid "Diagonal"
+msgstr "Διαγώνιος"
+
+#. Label text for the display size X-Axis
+msgid "X Axis [mm]"
+msgstr "Άξονας X [mm]"
+
+#. Label text for the display size Y-Axis
+msgid "Y Axis [mm]"
+msgstr "Άξονας Y [mm]"
+
+#. Something is not configured
+msgid "Not configured"
+msgstr "Δεν έχει ρυθμιστεί"
+
+#. Unit name for inches in german zoll
+msgid "inches"
+msgstr "ίντσες"
+
+#. Message box of type Ok, telling to user to insert a CD or disk
+msgid "<b>Insert CD or Disk</b><hr>Insert the display utility CD or disk from the monitor vendor."
+msgstr "<b>Εισαγωγή δισκέτας ή CD </b><hr>Παρακαλώ εισάγετε τη δισκέτα ή το CD εργαλείων οθόνης από τον κατασκευαστή της οθόνης."
+
+#. Message box of type Error, telling that the utility disk cannot be opened
+msgid "<b>Read Error</b><hr>Could not read from CD or disk. This may point to a damaged medium or incorrectly formatted information files."
+msgstr "<b>Σφάλμα ανάγνωσης</b><hr>Δεν είναι δυνατή η ανάγνωση από το CD ή τη δισκέτα. Αυτό μπορεί να οφείλεται σε έναν χαλασμένο μέσο αποθήκευσης ή σε λάθος διαμορφωμένες πληροφορίες αρχείου του μέσου."
+
+#. First gap of the ActivateInfo text: Multihead mode name
+msgid "Traditional"
+msgstr "Παραδοσιακή"
+
+#. First gap of the ActivateInfo text: Multihead mode name
+msgid "Clone"
+msgstr "Κλώνος"
+
+#. First gap of the ActivateInfo text: Multihead mode name
+msgid "Xinerama"
+msgstr "Xinerama"
+
+#. Tab text for the mouse model dialog
+msgid "Mouse Model"
+msgstr "Μοντέλο ποντικιού"
+
+#. Group box title for the primary keyboard setup
+msgid "Primary Setup"
+msgstr "Πρωτεύουσα ρύθμιση"
+
+#. Label text for the primary keyboard type
+msgid "Type"
+msgstr "Τύπος"
+
+#. Label text for the primary keyboard variant
+#. Table topic text describing the variant column
+msgid "Variant"
+msgstr "Παραλλαγή"
+
+#. Group box title for the additional keyboard setup
+msgid "Additional Layouts"
+msgstr "Επιπρόσθετες διατάξεις"
+
+#. Table topic text describing the status column
+msgid "Status"
+msgstr "Κατάσταση"
+
+#. Table topic text describing the keytable column
+msgid "Keytable"
+msgstr "Keytable"
+
+#. List View root item text
+msgid "Group Shift/Lock Behavior"
+msgstr "Ομαδοποίηση συμπεριφοράς Shift/Lock"
+
+#. List View root item text
+msgid "Use Keyboard LED to Show Alternate Group"
+msgstr "Χρήση του LED του πληκτρολογίου για την εμφάνιση εναλλακτικής ομάδας"
+
+#. List View root item text
+msgid "Compose Key Position"
+msgstr "Θέση του πλήκτρου Compose"
+
+#. List View root item text
+#. XKBFile extension text
+msgid "Control Key Position"
+msgstr "Θέση του Control Key"
+
+#. List View root item text
+msgid "Third Level Chooser"
+msgstr "Επιλογέας τρίτου επιπέδου"
+
+#. List View root item text
+msgid "Alt/Win Key Behavior"
+msgstr "Συμπεριφορά πλήκτρου Alt/Win"
+
+#. List View root item text
+msgid "EuroSign Key Position"
+msgstr "Θέση του Ευρώ"
+
+#. List View root item text
+msgid "CapsLock Key Behavior"
+msgstr "Συμπεριφορά πλήκτρου CapsLock"
+
+#. List View item text: Radiobutton no item selected
+msgid "None"
+msgstr "Κανένα"
+
+#. XKBFile extension text
+msgid "Morocco"
+msgstr "Μαρόκο"
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Braille"
+msgstr "Βραζιλία"
+
+#. XKBFile extension text
+msgid "Ethiopia"
+msgstr "Αιθιοπία"
+
+#. XKBFile extension text
+#, fuzzy
+msgid "NICOLA-F style Backspace"
+msgstr "Πίσω"
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Right Alt key never chooses 3rd level."
+msgstr "Το Αριστερό Alt πλήκτρο επιλέγει 3ο επίπεδο."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Left Alt key switches layout while pressed."
+msgstr "Το Αριστερό Alt πλήκτρο αλλάζει ομάδα κατα το πάτημα του."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Space key outputs non"
+msgstr "Το πλήκτρο Space αποδίδει space σε οποιοδήποτε επίπεδο."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Default numeric keypad keys."
+msgstr "Προκαθορισμένα πλήκτρα αριθμών."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Both Ctrl keys together change layout."
+msgstr "Τα δυο Ctrl πλήκτρα μαζί αλλάζουν ομάδα."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Using space key to input non-breakable space character"
+msgstr "Το πλήκτρο Space αποδίδει nobreakspace στο τέταρτο επίπεδο."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Right Shift key changes layout."
+msgstr "Το Δεξί Shift πλήκτρο αλλάζει ομάδα."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Left Win-key changes layout."
+msgstr "Το Αριστερό Win πλήκτρο αλλάζει ομάδα."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "LCtrl+LShift change layout."
+msgstr "Ctrl+Shift αλλάζει ομάδα."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Left Alt key changes layout."
+msgstr "Το Αριστερό Alt πλήκτρο αλλάζει ομάδα."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Both Win-keys switch layout while pressed."
+msgstr "Τα δυο Win πλήκτρα μαζί αλλάζουν ομάδα."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Right Ctrl key switches layout while pressed."
+msgstr "Το Δεξί Ctrl πλήκτρο αλλάζει ομάδα κατα το πάτημα του."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Space key outputs non-breakable space character"
+msgstr "Το πλήκτρο Space αποδίδει nobreakspace στο τέταρτο επίπεδο."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Shift+CapsLock changes layout."
+msgstr "Το Shift+CapsLock αλλάζει ομάδα."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "R-Alt switches layout while pressed."
+msgstr "R-Alt αλλάζει ομάδα κατα το πάτημα."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Numeric keypad layout selection"
+msgstr "Επιλογή εμφάνισης keypad"
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Right Ctrl key changes layout."
+msgstr "Το Δεξία Ctrl πλήκτρο αλλάζει ομάδα."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Alt+CapsLock changes layout."
+msgstr "Alt+CapsLock αλλάζει ομάδα."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Super is mapped to the Win-keys."
+msgstr "Το Hyper βρίσκεται στα πλήκτρα Win."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "ScrollLock LED shows alternative layout."
+msgstr "Το LED του ScrollLock δείχνει εναλλακτική ομάδα."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Both Shift keys together change layout."
+msgstr "Μαζί δυο πλήκτρα Shift αλλάζουν ομάδα."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Space key outputs non-breakable space character at second level."
+msgstr "Το πλήκτρο space εμφανίζει nobreakspace σε δεύτερο επίπεδο."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Right Win-key changes layout."
+msgstr "Το Δεξί Win πλήκτρο αλλάζει ομάδα."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Space key outputs non-breakable space character at third level."
+msgstr "Το πλήκτρο space εμφανίζει nobreakspace σε τρίτο επίπεδο."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Numeric keypad keys work as with Mac."
+msgstr "Τα πλήκτρα αριθμών δουλεύουν και με Mac."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "CapsLock LED shows alternative layout."
+msgstr "Το LED του CapsLock δείχνει εναλλακτική ομάδα."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "NumLock LED shows alternative layout."
+msgstr "Το LED του NumLock δείχνει μια εναλλακτική ομάδα."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Left Shift key changes layout."
+msgstr "Το Αριστερό Shift πλήκτρο αλλάζει ομάδα."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Left Win-key switches layout while pressed."
+msgstr "Το αριστερό πλήκτρο Win αλλάζει ομάδα κατα το πάτημα."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Space key outputs non-breakable space character at fourth level."
+msgstr "Το πλήκτρο Space αποδίδει nobreakspace στο τέταρτο επίπεδο."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Both Alt keys together change layout."
+msgstr "Τα δύο πλήκτρα Alt μαζί αλλάζουν ομάδα."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "CapsLock key changes layout."
+msgstr "Το πλήκτρο CapsLock αλλάζει ομάδα."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Control is mapped to the Win-keys (and the usual Ctrl keys)."
+msgstr "Το Super βρίσκεται στα πλήκτρα Win (προκαθορισμένο)."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Right Alt key changes layout."
+msgstr "Το δεξί πλήκτρο Alt αλλάζει ομάδα."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Shift with numeric keypad keys works as in MS Windows."
+msgstr "Το Shift με τα πλήκτρα αριθμών λειτουργεί όπως και στα MS Windows."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Alt and Meta are on the Alt keys."
+msgstr "Alt και Meta είναι στα πλήκτρα Alt (προκαθορισμένο)."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Alt+Shift change layout."
+msgstr "Το Alt+Shift αλλάζει ομάδα."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Ctrl+Shift change layout."
+msgstr "Ctrl+Shift αλλάζει ομάδα."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Space key outputs usual space at any level."
+msgstr "Το πλήκτρο Space αποδίδει space σε οποιοδήποτε επίπεδο."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Japanese keyboard options"
+msgstr "Επιλογές Ιαπωνικού Πληκτρολογίου"
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Use keyboard LED to show alternative layout."
+msgstr "Χρησιμοποίηση του LED πληκτρολογίου για την προβολή άλλης ομάδας."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Left Ctrl key changes layout."
+msgstr "Το Αριστερό Ctrl πλήκτρο αλλάζει ομάδα."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Menu key changes layout."
+msgstr "Το πλήκτρο Menu αλλάζει ομάδα."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Alt+Ctrl change layout."
+msgstr "Alt+Ctrl αλλάζει ομάδα."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Right Win-key switches layout while pressed."
+msgstr "Το δεξί πλήκτρο Win εναλλάσσει την ομάδα ενώ είναι πατημένο"
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Layout switching"
+msgstr "Διάταξη"
+
+#. XKBFile extension text
+msgid "Left Alt key switches group while pressed."
+msgstr "Το Αριστερό Alt πλήκτρο αλλάζει ομάδα κατα το πάτημα του."
+
+#. XKBFile extension text
+msgid "Both Ctrl keys together change group."
+msgstr "Τα δυο Ctrl πλήκτρα μαζί αλλάζουν ομάδα."
+
+#. XKBFile extension text
+msgid "Right Shift key changes group."
+msgstr "Το Δεξί Shift πλήκτρο αλλάζει ομάδα."
+
+#. XKBFile extension text
+msgid "Left Win key changes group."
+msgstr "Το Αριστερό Win πλήκτρο αλλάζει ομάδα."
+
+#. XKBFile extension text
+msgid "Left Alt key changes group."
+msgstr "Το Αριστερό Alt πλήκτρο αλλάζει ομάδα."
+
+#. XKBFile extension text
+msgid "Both Win keys switch group while pressed."
+msgstr "Τα δυο Win πλήκτρα μαζί αλλάζουν ομάδα."
+
+#. XKBFile extension text
+msgid "Right Ctrl key switches group while pressed."
+msgstr "Το Δεξί Ctrl πλήκτρο αλλάζει ομάδα κατα το πάτημα του."
+
+#. XKBFile extension text
+msgid "Left Alt is swapped with left Win-key."
+msgstr "Το Αριστερό Left πλήκτρο εναλλάσεται με το Αριστερό Win πλήκτρο."
+
+#. XKBFile extension text
+msgid "Default numpad keys."
+msgstr "Προκαθορισμένα πλήκτρα αριθμών."
+
+#. XKBFile extension text
+msgid "Adding the nobreakspace keysym to space key"
+msgstr "Προσθήκη του nobreakspace keysym στο πλήκτρο space"
+
+#. XKBFile extension text
+msgid "Use keypad with unicode additions (arrows and math operators)"
+msgstr "Χρησιμοποίηση του keypad με προσθήκες unicode (βέλη και μαθηματικούς συντελεστές)"
+
+#. XKBFile extension text
+msgid "Force standard legacy keypad"
+msgstr "Εξαναγκασμός standard legacy keypad"
+
+#. XKBFile extension text
+msgid "CapsLock uses internal capitalization. Shift doesn't affect CapsLock."
+msgstr "Το CapsLock χρησιμοποιεί εσωτερική κεφαλαιοποίηση. Το Shift δεν επηρεάζει το CapsLock."
+
+#. XKBFile extension text
+msgid "Keypad layout selection"
+msgstr "Επιλογή εμφάνισης keypad"
+
+#. XKBFile extension text
+msgid "Alt+CapsLock changes group."
+msgstr "Alt+CapsLock αλλάζει ομάδα."
+
+#. XKBFile extension text
+msgid "Space key output nobreakspace at second level."
+msgstr "Το πλήκτρο space εμφανίζει nobreakspace σε δεύτερο επίπεδο."
+
+#. XKBFile extension text
+msgid "CapsLock acts as Shift with locking. Shift doesn't affect CapsLock."
+msgstr "Το CapsLock συμπεριφέρεται ως Shift με το κλείδωμα. ΤοShift δεν επηράζει το CapsLock."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "CapsLock uses internal capitalization. Shift \"pauses\" CapsLock."
+msgstr "Το CapsLock χρησιμοποιεί εσωτερική κεφαλαιοποίηση. Το Shift ακυρώνει το CapsLock."
+
+#. XKBFile extension text
+msgid "Space key output nobreakspace at third level."
+msgstr "Το πλήκτρο space εμφανίζει nobreakspace σε τρίτο επίπεδο."
+
+#. XKBFile extension text
+msgid "Swap keycodes of two keys when Mac keyboards are misdetected by kernel."
+msgstr "Εναλλαγή keycodes δυο πλήκτρων όταν τα πληκτρολόγια Mac δεν ανιχνεύονται καλά από τον πυρήνα."
+
+#. XKBFile extension text
+msgid "Numpad keys work as with Mac."
+msgstr "Τα πλήκτρα αριθμών δουλεύουν και με Mac."
+
+#. XKBFile extension text
+msgid "Kana Lock key is locking"
+msgstr "Το πλήκτρο Kana Lock κλειδώνει"
+
+#. XKBFile extension text
+msgid "Space key output nobreakspace at fourth level."
+msgstr "Το πλήκτρο Space αποδίδει nobreakspace στο τέταρτο επίπεδο."
+
+#. XKBFile extension text
+msgid "Left Win-key is Compose."
+msgstr "Το αριστερό Win πλήκτρο είναι το Compose."
+
+#. XKBFile extension text
+msgid "Press Right Alt key to choose 3rd level, Shift+Right Alt key is Multi_Key."
+msgstr "Πατήστε Δεξί Alt πλήκτρο για να επιλέξετε το 3ο επίπεδο, Shift + Δεξί Alt πλήκτρο είναι Multi_Key"
+
+#. XKBFile extension text
+msgid "Space key output space at any level."
+msgstr "Το πλήκτρο Space αποδίδει space σε οποιοδήποτε επίπεδο."
+
+#. XKBFile extension text
+msgid "Japanese Keyboard Options"
+msgstr "Επιλογές Ιαπωνικού Πληκτρολογίου"
+
+#. XKBFile extension text
+#, fuzzy
+msgid "CapsLock acts as Shift with locking. Shift \"pauses\" CapsLock."
+msgstr "Το CapsLock συμπεριφέρεται όπως και το Shift με το κλείδωμα. "
+
+#. XKBFile extension text
+msgid "CapsLock uses internal capitalization. Shift doesn't cancel CapsLock."
+msgstr "Το CapsLock χρησιμοποιεί εσωτερική κεφαλαιοποίηση. Το Shift δεν ακυρώνει το CapsLock."
+
+#. XKBFile extension text
+msgid "CapsLock just locks the Shift modifier."
+msgstr "Το CapsLock απλώς κλειδώνει τον μετασχηματιστή Shift."
+
+#. XKBFile extension text
+msgid "CapsLock toggles normal capitalization of alphabetic characters."
+msgstr "Το CapsLock αλλάζει την εσωτερική κεφαλαιοποίηση των αλφαβητικών χαρακτήρων."
+
+#. XKBFile extension text
+msgid "CapsLock toggles Shift so all keys are affected."
+msgstr "Το CapsLock αλλάζει το Shift έτσι ώστε όλα τα πλήκτρα επηρεάζονται."
+
+#. XKBFile extension text
+msgid "Right Win-key is Compose."
+msgstr "Το δεξί πλήκτρο Win είναι το Compose."
+
+#. XKBFile extension text
+msgid "Shift+CapsLock changes group."
+msgstr "Το Shift+CapsLock αλλάζει ομάδα."
+
+#. XKBFile extension text
+msgid "R-Alt switches group while pressed."
+msgstr "R-Alt αλλάζει ομάδα κατα το πάτημα."
+
+#. XKBFile extension text
+msgid "Right Control key works as Right Alt."
+msgstr "Το Δεξί Control πλήκτρο δουλεύει όπως το Αριστερό Alt."
+
+#. XKBFile extension text
+msgid "Control key at bottom left"
+msgstr "Το πλήκτρο Ctrl κάτω αριστερά"
+
+#. XKBFile extension text
+msgid "Press any of Win-keys to choose 3rd level."
+msgstr "Πάτημα οποιποιουδήποτε Win πλήκτρου επιλέγει 3ο επίπεδο."
+
+#. XKBFile extension text
+msgid "Press Right Alt key to choose 3rd level."
+msgstr "Το Αριστερό Alt πλήκτρο επιλέγει 3ο επίπεδο."
+
+#. XKBFile extension text
+msgid "Right Ctrl key changes group."
+msgstr "Το Δεξία Ctrl πλήκτρο αλλάζει ομάδα."
+
+#. XKBFile extension text
+msgid "Right Alt is Compose."
+msgstr "Το δεξί Alt είναι το Compose."
+
+#. XKBFile extension text
+msgid "Right Ctrl is Compose."
+msgstr "Το δεξί Ctrl είναι το Compose."
+
+#. XKBFile extension text
+msgid "ScrollLock LED shows alternative group."
+msgstr "Το LED του ScrollLock δείχνει εναλλακτική ομάδα."
+
+#. XKBFile extension text
+msgid "Control key at left of -A-"
+msgstr "Το πλήκτρο Control αριστερά του -Α-"
+
+#. XKBFile extension text
+msgid "Third level choosers"
+msgstr "Επιλογείς Τρίτου επιπέδου"
+
+#. XKBFile extension text
+msgid "Both Shift keys together change group."
+msgstr "Μαζί δυο πλήκτρα Shift αλλάζουν ομάδα."
+
+#. XKBFile extension text
+msgid "CapsLock acts as Shift with locking. Shift doesn't cancel CapsLock."
+msgstr "Το CapsLock λειτουργεί ως Shift με κλείδωμα. Το Shift δεν επηρεάζει το CapsLock."
+
+#. XKBFile extension text
+msgid "CapsLock uses internal capitalization. Shift cancels CapsLock."
+msgstr "Το CapsLock χρησιμοποιεί εσωτερική κεφαλαιοποίηση. Το Shift ακυρώνει το CapsLock."
+
+#. XKBFile extension text
+msgid "Make CapsLock an additional Control."
+msgstr "Το CapsLock να γίνει ένα επιπλέον Control."
+
+#. XKBFile extension text
+msgid "Press Left Win-key to choose 3rd level."
+msgstr "Πατήστε το αριστερό πλήκτρο Win για να επιλέξετε το 3ο επίπεδο."
+
+#. XKBFile extension text
+msgid "Right Win-key changes group."
+msgstr "Το Δεξί Win πλήκτρο αλλάζει ομάδα."
+
+#. XKBFile extension text
+msgid "Meta is mapped to the left Win-key."
+msgstr "Το Meta βρίσκεται στο αριστερό πλήκτρο Win."
+
+#. XKBFile extension text
+msgid "CapsLock LED shows alternative group."
+msgstr "Το LED του CapsLock δείχνει εναλλακτική ομάδα."
+
+#. XKBFile extension text
+msgid "NumLock LED shows alternative group."
+msgstr "Το LED του NumLock δείχνει μια εναλλακτική ομάδα."
+
+#. XKBFile extension text
+msgid "Left Shift key changes group."
+msgstr "Το Αριστερό Shift πλήκτρο αλλάζει ομάδα."
+
+#. XKBFile extension text
+msgid "Left Win-key switches group while pressed."
+msgstr "Το αριστερό πλήκτρο Win αλλάζει ομάδα κατα το πάτημα."
+
+#. XKBFile extension text
+msgid "Menu is Compose."
+msgstr "Το Menu είναι το Compose."
+
+#. XKBFile extension text
+msgid "Both Alt keys together change group."
+msgstr "Τα δύο πλήκτρα Alt μαζί αλλάζουν ομάδα."
+
+#. XKBFile extension text
+msgid "CapsLock key changes group."
+msgstr "Το πλήκτρο CapsLock αλλάζει ομάδα."
+
+#. XKBFile extension text
+msgid "Swap Control and CapsLock."
+msgstr "Εναλλαγή Control και CapsLock."
+
+#. XKBFile extension text
+msgid "Press any of Alt keys to choose 3rd level."
+msgstr "Πατήστε οποιοδήποτε από τα πλήκτρα Alt για την επιλογή 3ου επιπέδου."
+
+#. XKBFile extension text
+msgid "Right Alt key changes group."
+msgstr "Το δεξί πλήκτρο Alt αλλάζει ομάδα."
+
+#. XKBFile extension text
+msgid "Shift with numpad keys works as in MS Windows."
+msgstr "Το Shift με τα πλήκτρα αριθμών λειτουργεί όπως και στα MS Windows."
+
+#. XKBFile extension text
+msgid "Special keys (Ctrl+Alt+<key>) handled in a server."
+msgstr "Ειδικά πλήκτρα (Ctrl+Alt+<key>) πατημένα σε ένα διακομιστή."
+
+#. XKBFile extension text
+msgid "Hyper is mapped to the Win-keys."
+msgstr "Το Hyper βρίσκεται στα πλήκτρα Win."
+
+#. XKBFile extension text
+msgid "Alt is mapped to the right Win-key and Super to Menu."
+msgstr "Το Alt βρίσκεται στο δεξί πλήκτρο Win και το Super στο Menu."
+
+#. XKBFile extension text
+msgid "Super is mapped to the Win-keys (default)."
+msgstr "Το Super βρίσκεται στα πλήκτρα Win (προκαθορισμένο)."
+
+#. XKBFile extension text
+msgid "Alt and Meta on the Alt keys (default)."
+msgstr "Alt και Meta στα πλήκτρα Alt (προκαθορισμένο)."
+
+#. XKBFile extension text
+msgid "Add the standard behavior to Menu key."
+msgstr "Προσθήκη της standard συμπεριφοράς στο πλήκτρο Menu."
+
+#. XKBFile extension text
+msgid "Alt and Meta are on the Alt keys (default)."
+msgstr "Alt και Meta είναι στα πλήκτρα Alt (προκαθορισμένο)."
+
+#. XKBFile extension text
+msgid "Press Right Control to choose 3rd level."
+msgstr "Πατήστε Δεξί Control για την επιλογή 3ου επιπέδου."
+
+#. XKBFile extension text
+msgid "Alt+Shift changes group."
+msgstr "Το Alt+Shift αλλάζει ομάδα."
+
+#. XKBFile extension text
+msgid "Control+Shift changes group."
+msgstr "Το Control+Shift αλλάζει ομάδα."
+
+#. XKBFile extension text
+msgid "CapsLock acts as Shift with locking. Shift cancels CapsLock."
+msgstr "Το CapsLock συμπεριφέρεται όπως και το Shift με το κλείδωμα. "
+
+#. XKBFile extension text
+msgid "Use keyboard LED to show alternative group."
+msgstr "Χρησιμοποίηση του LED πληκτρολογίου για την προβολή άλλης ομάδας."
+
+#. XKBFile extension text
+msgid "Press Right Win-key to choose 3rd level."
+msgstr "Πατήστε το Δεξί Win πλήκτρο για την επιλογή 3ου επιπέδου."
+
+#. XKBFile extension text
+msgid "Press Left Alt key to choose 3rd level."
+msgstr "Πατήστε το Αριστερό Alt πλήκτρο για να επιλέξετε 3ο επίπεδο."
+
+#. XKBFile extension text
+msgid "Meta is mapped to the Win-keys."
+msgstr "Το Meta αντιστοιχίζεται στα πλήκτρα-Win."
+
+#. XKBFile extension text
+msgid "Press Menu key to choose 3rd level."
+msgstr "Πατήστε το πλήκτρο Menu για να επιλέξετε 3ο επίπεδο."
+
+#. XKBFile extension text
+msgid "Left Ctrl key changes group."
+msgstr "Το Αριστερό Ctrl πλήκτρο αλλάζει ομάδα."
+
+#. XKBFile extension text
+msgid "Menu key changes group."
+msgstr "Το πλήκτρο Menu αλλάζει ομάδα."
+
+#. XKBFile extension text
+msgid "Alt+Control changes group."
+msgstr "Το Alt+Control αλλάζουν group."
+
+#. XKBFile extension text
+msgid "Right Win-key switches group while pressed."
+msgstr "Το δεξί πλήκτρο Win εναλλάσσει την ομάδα ενώ είναι πατημένο"
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Serbia"
+msgstr "Serbian"
+
+#. XKBFile extension text
+msgid "Guinea"
+msgstr "Γουϊνέα"
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Montenegro"
+msgstr "Σερβία και Μαυροβούνιο"
+
+#. XKBFile extension text
+msgid "China"
+msgstr "Κίνα"
+
+#. XKBFile extension text
+#, fuzzy
+msgid "USA"
+msgstr "USB"
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Add the EuroSign to the 4 key."
+msgstr "Προσθήκη του πλήκτρου του Ευρώ στο πλήκτρο 5."
+
+#. XKBFile extension text
+msgid "Four-level key with dot"
+msgstr ""
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Legacy Wang 724 keypad"
+msgstr "Κληρονομιά"
+
+#. XKBFile extension text
+msgid "Four-level key with abstract separators"
+msgstr ""
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Keypad with unicode additions (arrows and math operators)"
+msgstr "Χρησιμοποίηση του keypad με προσθήκες unicode (βέλη και μαθηματικούς συντελεστές)"
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Legacy keypad"
+msgstr "Κληρονομιά"
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Shift cancels CapsLock."
+msgstr "Εναλλαγή Ctrl και CapsLock."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Swap ESC and CapsLock."
+msgstr "Εναλλαγή Ctrl και CapsLock."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Wang 724 keypad with unicode additions (arrows and math operators). Math operators on default level."
+msgstr "Χρησιμοποίηση του keypad με προσθήκες unicode (βέλη και μαθηματικούς συντελεστές)"
+
+#. XKBFile extension text
+msgid "Four-level key with comma"
+msgstr ""
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Legacy key with comma"
+msgstr "Κληρονομιά"
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Keypad with unicode additions (arrows and math operators). Math operators on default level."
+msgstr "Χρησιμοποίηση του keypad με προσθήκες unicode (βέλη και μαθηματικούς συντελεστές)"
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Legacy key with dot"
+msgstr "Κληρονομιά"
+
+#. XKBFile extension text
+msgid "Four-level key with momayyez"
+msgstr ""
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Numeric keypad delete key behaviour"
+msgstr "Επιλογή εμφάνισης keypad"
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Wang 724 keypad with unicode additions (arrows and math operators)"
+msgstr "Χρησιμοποίηση του keypad με προσθήκες unicode (βέλη και μαθηματικούς συντελεστές)"
+
+#. Tab title: Tablet port and mode selection
+msgid "Port and Mode"
+msgstr "Θύρα και Κατάσταση"
+
+#. Tab title: Tablet electronic pens (pen,eraser)
+msgid "Electronic Pens"
+msgstr "Ηλεκτρονικές πένες"
+
+#. Activate tablet checkbox
+msgid "Activate This Tablet"
+msgstr "Ενεργοποίηση αυτής της ταμπλέτας"
+
+#. Group box title for the tablet vendor and name selection
+msgid "Tablet: Vendor and Name Selection"
+msgstr "Ταμπλέτα: Επιλογή Κατασκευαστή και Ονόματος"
+
+#. Group box title for tablet port combobox
+msgid "Connection Port"
+msgstr "Θύρα σύνδεσης"
+
+#. Group box title for tablet mode
+msgid "Primary Tablet Mode"
+msgstr "Κατάσταση πρωτεύουσας ταμπλέτας"
+
+#. Group box title for pen/eraser tablet mode
+msgid "Pen or Eraser Mode"
+msgstr "Κατάσταση πένας ή σβήστρας"
+
+#. Radiobutton for relative tablet mode
+msgid "Relative"
+msgstr "Σχετική"
+
+#. Radiobutton for absolute tablet mode
+msgid "Absolute"
+msgstr "Απόλυτη"
+
+#. Combobox item text for tablet port: USB
+msgid "USB"
+msgstr "USB"
+
+#. Combobox item text for tablet port: ttyS0
+msgid "COM-1 [ /dev/ttyS0 ]"
+msgstr "COM-1 [ /dev/ttyS0 ]"
+
+#. Combobox item text for tablet port: ttyS1
+msgid "COM-2 [ /dev/ttyS1 ]"
+msgstr "COM-2 [ /dev/ttyS1 ]"
+
+#. Combobox item text for tablet port: ttyS2
+msgid "COM-3 [ /dev/ttyS2 ]"
+msgstr "COM-3 [ /dev/ttyS2 ]"
+
+#. Combobox item text for tablet port: ttyS3
+msgid "COM-4 [ /dev/ttyS3 ]"
+msgstr "COM-4 [ /dev/ttyS3 ]"
+
+#. Combobox item text for tablet port: ttyS4
+#, fuzzy
+msgid "COM-5 [ /dev/ttyS4 ]"
+msgstr "COM-1 [ /dev/ttyS0 ]"
+
+#. Group box title for the tablet tools (pen/eraser)
+msgid "Tools"
+msgstr "Εργαλεία"
+
+#. Add Pen Checkbox
+msgid "Add Pen"
+msgstr "Προσθήκη πένας"
+
+#. Add Eraser Checkbox
+msgid "Add Eraser"
+msgstr "Προσθήκη σβήστρας"
+
+#. Add Touch Checkbox
+msgid "Add Touch"
+msgstr ""
+
+#. Add Pad Checkbox
+msgid "Add Pad"
+msgstr "Προσθήκη Γραφίδας"
+
+#. Windowanager title for the tablet pen options dialog
+msgid "Pen or Eraser Settings"
+msgstr "Ρυθμίσεις πένας ή σβήστρας"
+
+#. Tab title: Pen properties
+msgid "Pen Properties"
+msgstr "Ιδιότητες πένας"
+
+#. Tab title: Pad properties
+msgid "Pad Properties"
+msgstr "Ιδιότητες Γραφίδας"
+
+#. Tab title: Eraser properties
+msgid "Eraser Properties"
+msgstr "Ιδιότητες σβήστρας"
+
+#. Tab title: Touch properties
+#, fuzzy
+msgid "Touch Properties"
+msgstr "Ιδιότητες οθόνης επαφής"
+
+#. Tab text for a touchscreen tab of the touchscreen dialog
+#, fuzzy
+msgid "Touchscreen %1"
+msgstr "Οθόνη επαφής"
+
+#. Activate/Assign touchscreen checkbox
+msgid "Assign a Touchscreen to Display Number %1"
+msgstr "Ανάθεση μιας οθόνης επαφής στην απεικόνιση με αριθμό %1"
+
+#. Group box title for the touchscreen vendor and name selection
+msgid "Touchscreen: Vendor and Name Selection"
+msgstr "Οθόνη επαφής: Επιλογή Κατασκευαστή και Ονόματος"
+
+#. Finish configuration message box
+#, fuzzy
+msgid "<b>Final Steps</b><hr>The last step is saving your new configuration. It is recommended to test the new configuration before saving it. If the test server shows a corrupted desktop, press <b>[ Ctrl+Alt+Backspace ]</b> and <b>[ Ctrl+Alt+Backspace ]</b> shortly after a loud warning (beep) to kill the server."
+msgstr "<b>Τελικά βήματα:</b><hr>Το τελευταίο βήμα είναι η αποθήκευση των νέων ρυθμίσεων σας. Προτείνεται να δοκιμάσετε τη νέα σας ρύθμιση πριν την αποθηκεύσετε. Αν ο διακομιστής δοκιμής εμφανίσει μια αλλοιωμένη επιφάνεια εργασίας, πατήστε <b>[ Ctrl+Alt+Backspace ]</b> για να τον σταματήσετε."
+
+#. Finish configuration message box (without test)
+msgid "<b>Saving the configuration</b><hr>Click on Save to store the configuration. Your changes will become effective on next X-Server restart."
+msgstr ""
+
+#. Tab title: VNC Server configuration
+msgid "X Server Remote Control"
+msgstr "Απομακρυσμένος Χειρισμός Διακομιστή Χ"
+
+#. Activate VNC server checkbox
+msgid "Allow access to display and keyboard/mouse of your X Server"
+msgstr "Επίτρεψη πρόσβασης στην οθόνη και το πληκτρολόγιο/ποντίκι του X Server σας"
+
+#. Activate VNC password protection checkbox
+msgid "Activate Password Protection"
+msgstr "Ενεργοποίηση προστασίας με κωδικό"
+
+#. LineEdit label: enter password
+msgid "Password"
+msgstr "Κωδικός"
+
+#. LineEdit contents: enter new password
+msgid "<Enter new password>"
+msgstr "<Εισάγετε νέο κωδικό πρόσβασης>"
+
+#. LineEdit contents: change password
+msgid "<Change password>"
+msgstr "<Αλλαγή κωδικού>"
+
+#. LineEdit contents: verify password
+msgid "<Verify password>"
+msgstr "<Επαλήθευση κωδικού>"
+
+#. Activate HTTP access checkbox
+msgid "Activate HTTP Access"
+msgstr "Ενεργοποίηση πρόσβασης HTTP"
+
+#. Activate multiple VNC connection checkbox
+msgid "Allow Multiple Connections"
+msgstr "Επίτρεψε Πολλαπλές Συνδέσεις"
+
+#. SpinBox label to setup the HTTP port number
+msgid "HTTP Port"
+msgstr "Θύρα HTTP"
+
+#. VNC message box appearing if password strings doesn't match
+msgid "<b>Remote Access Password Mismatch</b><hr>The first and the second version of the password do not match."
+msgstr "<b>Αναντιστοιχία Συνθηματικού Απομακρυσμένης Χρήσης</b><hr>Η πρώτη και η δεύτερη έκδοση του συνθηματικού δεν ταιριάζουν."
+
+#. VNC message box appearing if password is too short
+msgid "<b>Remote Access Password Fault</b><hr>The password field has been left empty or the password is too short. Enter a password with at least six characters."
+msgstr "<b>Σφάλμα Συνθηματικού Απομακρυσμένης Πρόσβασης</b><hr>Το πεδίο συνθηματικού έχει αφεθεί άδειο ή ο κωδικός είναι πολύ μικρός. Εισάγετε ένα κωδικό με τουλάχιστον έξι χαρακτήρες."
+
+#. VNC message box appearing if password is too long
+msgid "<b>Remote Access Password Fault</b><hr>The password is too long. Enter a password with a maximum of eight characters."
+msgstr "<b> Απομακρυσμένος Κωδικός</b><hr>."
+
+#. Install missing packages box
+msgid "<b>Software Installation:</b><hr>Some packages are missing. Install the missing packages now?"
+msgstr "<b>Εγκατάσταση λογισμικού:</b><hr>Κάποια πακέτα λείπουν. Θέλετε να εγκατασταθούν τώρα τα πακέτα που λείπουν;"
+
+#. Caption text for the missing package info window
+msgid "Package Installation"
+msgstr "Εγκατάσταση πακέτων"
+
+#. Progress bar title text
+msgid "Importing module"
+msgstr "Εισαγωγή μονάδας"
+
+#. Progress window caption text
+msgid "SaX2: Importing data..."
+msgstr "SaX2: Γίνεται εισαγωγή δεδομένων..."
+
+#. Progress window label text
+msgid "Initialize cache..."
+msgstr "Αρχικοποίηση της cache..."
+
+#. Message box text: configuration cannot be saved
+msgid "<b>Saving Configuration Failed</b><hr>The following report has been created:"
+msgstr "<b>Η αποθήκευση των ρυθμίσεων απέτυχε</b><hr>Έχει δημιουργηθεί η ακόλουθη αναφορά:"
+
+#. Message box test: configuration has been saved
+msgid "<b>Configuration Saved</b><hr>Your modifications will take effect the next time the graphics system is restarted. Exit SaX2 now?"
+msgstr "<b>Οι ρυθμίσεις έχουν αποθηκευτεί</b><hr>Οι αλλαγές σας θα ενεργοποιηθούν μόλις επανεκκινηθεί το σύστημα γραφικών. Έξοδος από το SaX2 τώρα;"
+
+#. Message box text: testing the configuration has failed
+msgid "<b>Testing Configuration Failed</b><hr>For further information, refer to the file <tt>/var/log/Xorg.99.log</tt>. The following report has been created from the calling instance:"
+msgstr "<b>Αποτυχία ελέγχου των ρυθμίσεων</b><hr>Για περισσότερες πληροφορίες, ανατρέξτε στο αρχείο <tt>/var/log/Xorg.99.log</tt>. Έχει δημιουργηθεί η ακόλουθη αναφορά από το στιγμιότυπο:"
+
+#. Message box text: if VNC has been enabled the firewall should be checked
+msgid "<b>Remote Access configuration information</b><hr>The Remote Access service requires that the TCP port 5900 and an HTTP port (5800 by default) be open in the firewall. You can configure this with YaST."
+msgstr "<b>Πληροφορίες ρύθμισης Απομακρυσμένης πρόσβασης</b><hr>Η υπηρεσία Απομακρυσμένης Πρόσβασης απαιτεί ότι οι θύρες TCP 5900 και HTTP (5800 εξ' ορισμού) θα είναι ανοιχτές από το τείχος ασφαλείας. Μπορείτε να το ρυθμίσετε αυτό με το YaST."
+
+#. XKBFile extension text
+msgid "Miscellaneous compatibility options"
+msgstr "Διάφορες επιλογές συμβατότητας"
+
+#. XKBFile extension text
+msgid "Add the EuroSign to the 5 key."
+msgstr "Προσθήκη του πλήκτρου του Ευρώ στο πλήκτρο 5."
+
+#. XKBFile extension text
+msgid "CapsLock key behavior"
+msgstr "Συμπεριφορά πλήκτρου CapsLock"
+
+#. XKBFile extension text
+msgid "Alt/Win key behavior"
+msgstr "Συμπεριφορά πλήκτρου Alt/Win"
+
+#. XKBFile extension text
+msgid "Adding the EuroSign to certain keys"
+msgstr "Προσθήκη του συμβόλου τουΕυρώ σε συγκεκριμένα πλήκτρα"
+
+#. XKBFile extension text
+msgid "Caps Lock is Compose."
+msgstr "Το Caps Lock είναι το Compose"
+
+#. XKBFile extension text
+msgid "Right Ctrl key works as Right Alt."
+msgstr "Το δεξί πλήκτρο Ctrl λειτουργεί ως δεξί Alt."
+
+#. XKBFile extension text
+msgid "Ctrl key at bottom left"
+msgstr "πλήκτρο Ctrl κάτω αριστερά"
+
+#. XKBFile extension text
+msgid "Ctrl key at left of 'A'"
+msgstr "πλήκτρο Ctrl στα αριστερά του 'A'"
+
+#. XKBFile extension text
+msgid "Make CapsLock an additional Ctrl."
+msgstr "Το CapsLock να γίνει ένα επιπλέον Ctrl."
+
+#. XKBFile extension text
+msgid "Swap Ctrl and CapsLock."
+msgstr "Εναλλαγή Ctrl και CapsLock."
+
+#. XKBFile extension text
+msgid "Ctrl key position"
+msgstr "Θέση κλειδιού Ctrl"
+
+#. XKBFile extension text
+msgid "Special keys (Ctrl+Alt+&lt;key&gt;) handled in a server."
+msgstr "Ειδικά πλήκτρα (Ctrl+Alt+&lt;key&gt;) πατημένα σε ένα διακομιστή."
+
+#. XKBFile extension text
+msgid "Press Right Ctrl to choose 3rd level."
+msgstr "Πατήστε το Δεξί Ctrl για την επιλογή 3ου επιπέδου."
+
+#. XKBFile extension text
+msgid "Ctrl+Shift changes group."
+msgstr "Ctrl+Shift αλλάζει ομάδα."
+
+#. XKBFile extension text
+msgid "Add the EuroSign to the E key."
+msgstr "Προσθήκη του συμβόλου του Ευρώ στο πλήκτρο Ε."
+
+#. XKBFile extension text
+msgid "Add the EuroSign to the 2 key."
+msgstr "Προσθήκη του συμβόλου Ευρώ στο πλήκτρο 2."
+
+#. XKBFile extension text
+msgid "key Compose key position"
+msgstr "πλήκτρο Compose θέση πλήκτρου"
+
+#. XKBFile extension text
+msgid "Alt+Ctrl changes group."
+msgstr "Alt+Ctrl αλλάζει ομάδα."
+
+#. XKBFile extension text
+msgid "Group Shift/Lock behavior"
+msgstr "Συμπεριφορά Ομάδας Shift/Lock"
+
+#. XKBFile extension text
+msgid "Arabic"
+msgstr "Αραβικά"
+
+#. XKBFile extension text
+msgid "Nepal"
+msgstr "Νεπάλ"
+
+#. XKBFile extension text
+msgid "Congo, Democratic Republic of the"
+msgstr "Λαϊκή Δημοκρατία του Κονγκό"
+
+#. XKBFile extension text
+msgid "Korea, Republic of"
+msgstr "Δημοκρατία της Κορέας"
+
+#. XKBFile extension text
+msgid "Iraq"
+msgstr "Ιράκ"
+
+#. XKBFile extension text
+msgid "Nigeria"
+msgstr "Νιγηρία"
+
+#. XKBFile extension text
+msgid "Japan (PC-98xx Series)"
+msgstr "Ιαπωνία (Σειρές PC-98xx)"
+
+#. XKBFile extension text
+msgid "Estonia"
+msgstr "Εσθονία"
+
+#. XKBFile extension text
+msgid "Myanmar"
+msgstr "Μιανμάρ"
+
+#. XKBFile extension text
+msgid "Norway"
+msgstr "Νορβηγία"
+
+#. XKBFile extension text
+msgid "Germany"
+msgstr "Γερμανία"
+
+#. XKBFile extension text
+msgid "Mongolia"
+msgstr "Μογγολία"
+
+#. XKBFile extension text
+msgid "Bhutan"
+msgstr "Μπουτάν"
+
+#. XKBFile extension text
+msgid "Bangladesh"
+msgstr "Μπανγκλαντες"
+
+#. XKBFile extension text
+msgid "Latin American"
+msgstr "Λατινικής Αμερικής"
+
+#. XKBFile extension text
+msgid "Belgium"
+msgstr "Βέλγιο"
+
+#. XKBFile extension text
+msgid "Finland"
+msgstr "Φινλανδία"
+
+#. XKBFile extension text
+msgid "Israel"
+msgstr "Ισραήλ"
+
+#. XKBFile extension text
+msgid "Sweden"
+msgstr "Σουηδία"
+
+#. XKBFile extension text
+msgid "Russia"
+msgstr "Ρωσσία"
+
+#. XKBFile extension text
+msgid "Portugal"
+msgstr "Πορτογαλία"
+
+#. XKBFile extension text
+msgid "Korean"
+msgstr "Κορεατικά"
+
+#. XKBFile extension text
+msgid "Maori"
+msgstr "Maori"
+
+#. XKBFile extension text
+msgid "Uzbekistan"
+msgstr "Ουζμπεκιστάν"
+
+#. XKBFile extension text
+msgid "Bulgaria"
+msgstr "Βουλγαρία"
+
+#. XKBFile extension text
+msgid "Thailand"
+msgstr "Ταϊλάνδη"
+
+#. XKBFile extension text
+msgid "India"
+msgstr "Ινδία"
+
+#. XKBFile extension text
+msgid "Bengali"
+msgstr "Bengali"
+
+#. XKBFile extension text
+msgid "Switzerland"
+msgstr "Ελβετία"
+
+#. XKBFile extension text
+msgid "Laos"
+msgstr "Λάος"
+
+#. XKBFile extension text
+msgid "Japan"
+msgstr "Ιαπωνία"
+
+#. XKBFile extension text
+msgid "Syria"
+msgstr "Συρία"
+
+#. XKBFile extension text
+msgid "Czechia"
+msgstr "Τσεχία"
+
+#. XKBFile extension text
+msgid "Belarus"
+msgstr "Λευκορωσία"
+
+#. XKBFile extension text
+msgid "Tajikistan"
+msgstr "Τατζικιστάν"
+
+#. XKBFile extension text
+msgid "Denmark"
+msgstr "Δανία"
+
+#. XKBFile extension text
+msgid "Slovenia"
+msgstr "Σλοβενία"
+
+#. XKBFile extension text
+msgid "Malta"
+msgstr "Μάλτα"
+
+#. XKBFile extension text
+msgid "Azerbaijan"
+msgstr "Αζερμπαϊτζάν"
+
+#. XKBFile extension text
+msgid "Lithuania"
+msgstr "Λιθουανία"
+
+#
+#. XKBFile extension text
+msgid "Vietnam"
+msgstr "Βιετνάμ"
+
+#. XKBFile extension text
+msgid "Faroe Islands"
+msgstr "Φερόες Νήσοι"
+
+#. XKBFile extension text
+msgid "South Africa"
+msgstr "Νότια Αφρική"
+
+#. XKBFile extension text
+msgid "Farsi"
+msgstr "Φαρσί"
+
+#. XKBFile extension text
+msgid "Slovakia"
+msgstr "Σλοβακία"
+
+#. XKBFile extension text
+msgid "Maldives"
+msgstr "Μαλβίδες"
+
+#. XKBFile extension text
+msgid "Iceland"
+msgstr "Ισλανδία"
+
+#. XKBFile extension text
+msgid "Croatia"
+msgstr "Κροατία"
+
+#. XKBFile extension text
+msgid "Latvia"
+msgstr "Λετονία"
+
+#. XKBFile extension text
+msgid "Albania"
+msgstr "Αλβανία"
+
+#. XKBFile extension text
+msgid "Italy"
+msgstr "Ιταλία"
+
+#. XKBFile extension text
+msgid "Greece"
+msgstr "Ελλάδα"
+
+#. XKBFile extension text
+msgid "United Kingdom"
+msgstr "Ηνωμένο Βασίλειο"
+
+#. XKBFile extension text
+msgid "France"
+msgstr "Γαλλία"
+
+#. XKBFile extension text
+msgid "Armenia"
+msgstr "Αρμενία"
+
+#. XKBFile extension text
+msgid "Pakistan"
+msgstr "Πακιστάν"
+
+#. XKBFile extension text
+msgid "Poland"
+msgstr "Πολωνία"
+
+#. XKBFile extension text
+msgid "Kyrgyzstan"
+msgstr "Κιργιστάν"
+
+#. XKBFile extension text
+msgid "Ireland"
+msgstr "Ιρλανδία"
+
+#. XKBFile extension text
+msgid "Hungary"
+msgstr "Ουγγαρία"
+
+#. XKBFile extension text
+msgid "Cambodia"
+msgstr "Καμπότζη"
+
+#. XKBFile extension text
+msgid "Spain"
+msgstr "Ισπανία"
+
+#. XKBFile extension text
+msgid "Ukraine"
+msgstr "Ουκρανία"
+
+#. XKBFile extension text
+msgid "Romania"
+msgstr "Ρουμανία"
+
+#. XKBFile extension text
+msgid "Kazakhstan"
+msgstr "Καζακστάν"
+
+#. XKBFile extension text
+msgid "Georgia"
+msgstr "Γεωργία"
+
+#. XKBFile extension text
+msgid "U.S. English"
+msgstr "Αγγλικά Η.Π.Α."
+
+#. XKBFile extension text
+msgid "Turkish"
+msgstr "Τούρκικα"
+
+#. XKBFile extension text
+msgid "PC-98xx Series"
+msgstr "Σειρές PC-98xx"
+
+#. XKBFile extension text
+msgid "Netherlands"
+msgstr "Ολλανδία"
+
+#. XKBFile extension text
+msgid "Macedonia"
+msgstr "Π.Γ.Δ.Μ."
+
+#. XKBFile extension text
+msgid "Canada"
+msgstr "Καναδάς"
+
+#. XKBFile extension text
+msgid "Sri Lanka"
+msgstr "Σρι Λάνκα"
+
+#. XKBFile extension text
+msgid "Bosnia and Herzegovina"
+msgstr "Βοσνία-Ερζεγοβίνη"
+
+#. XKBFile extension text
+msgid "Brazil"
+msgstr "Βραζιλία"
+
+#. XKBFile extension text
+msgid "Ghana"
+msgstr "Γκάνα"
+
+#. XKBFile extension text
+msgid "Andorra"
+msgstr "Ανδόρα"
+
+#. XKBFile extension text
+msgid "Afghanistan"
+msgstr "Αφγανιστάν"
+
+#. XKBFile extension text
+msgid "Esperanto"
+msgstr "Εσπεράντο"
+
+#. XKBFile extension text
+msgid "Turkey"
+msgstr "Τουρκία"
+
+#. XKBFile extension text
+msgid "CapsLock key switches layout while pressed, Alt+CapsLock does the original capslock action."
+msgstr ""
+
+#. XKBFile extension text
+msgid "CapsLock switch to first layout, Shift+CapsLock switch to last layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Less-than/Greater-than is Compose."
+msgstr ""
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Space key outputs non-breakable space character at fourth level, thin non-breakable space character at sixth level (via Ctrl+Shift"
+msgstr "Το πλήκτρο Space αποδίδει nobreakspace στο τέταρτο επίπεδο."
+
+# /tmp/xapi:514#
+#. /.../
+#. Copyright (c) 2000 SuSE GmbH Nuernberg, Germany.  All rights reserved.
+#. This file contains the gettext keys used within a gettext call in the
+#. application code for XFine2
+#.
+#. Maximum length: 40  characters
+msgid "&Step size"
+msgstr "&Μέγεθος βήματος"
+
+#. Maximum length: 40  characters
+msgid "Small"
+msgstr "Μικρό"
+
+#. Maximum length: 40  characters
+msgid "Normal"
+msgstr "Κανονικό"
+
+#. Maximum length: 40  characters
+msgid "Big"
+msgstr "Μεγάλο"
+
+#. Maximum length: 40  characters
+msgid "Huge"
+msgstr "Τεράστιο"
+
+#. Maximum length: 40  characters
+msgid "&Next Screen"
+msgstr "&Επόμενη οθόνη"
+
+#. Maximum length: 40  characters
+msgid "S&ave"
+msgstr "Α&ποθήκευση"
+
+#. Maximum length: 40  characters
+msgid "Change &Position"
+msgstr "Αλλαγή &θέσης"
+
+#. Maximum length: 40  characters
+msgid "C&hange Size"
+msgstr "Αλλα&γή μεγέθους"
+
+#. Maximum length: 40  characters
+msgid "Screen"
+msgstr "Οθόνη"
+
+#. Maximum length: 60  characters
+msgid "No video mode tuning available"
+msgstr "Δεν είναι διαθέσιμος ο συντονισμός(tuning) της κατάστασης βίντεο"
+
+msgid "Display"
+msgstr "Απεικόνιση"
+
+msgid "Configuration on display"
+msgstr "Ρύθμιση στην απεικόνιση οθόνης"
+
+msgid "Idle timer..."
+msgstr "Χρονόμετρο αδράνειας..."
+
+#~ msgid "CapsLock uses internal capitalization. Shift "
+#~ msgstr "Το CapsLock χρησιμοποιεί εσωτερική κεφαλαιοποίηση. Shift"
+
+#~ msgid "CapsLock acts as Shift with locking. Shift "
+#~ msgstr "To CapsLock λειτουργία όπως το Shift με το κλείδωμα. Shift "

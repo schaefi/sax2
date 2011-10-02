@@ -1,0 +1,4 @@
+- changing keyboard has no effect on text mode
+  (bnc #306269 - https://bugzilla.novell.com/show_bug.cgi?id=306269)
+- Remove Multicard support / No longer write BusID
+  (bnc #381644 - https://bugzilla.novell.com/show_bug.cgi?id=381644)

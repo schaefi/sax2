@@ -1,0 +1,4895 @@
+-------------------------------------------------------------------
+Thu Apr 15 17:01:49 CEST 2010 - sndirsch@suse.de
+
+- latest translation fixes
+
+-------------------------------------------------------------------
+Wed Apr 14 15:12:56 CEST 2010 - sndirsch@suse.de
+
+- back to gcc 4.5, since we see meanwhile the same problems with
+  gcc 4.3 and 4.5
+
+-------------------------------------------------------------------
+Wed Apr 14 11:52:34 CEST 2010 - sndirsch@suse.de
+
+- specfile: introduce use_gcc43 macro
+
+-------------------------------------------------------------------
+Wed Apr 14 10:23:01 CEST 2010 - sndirsch@suse.de
+
+- parse/parse.c: escape sequence %D no longer defined in X.Org
+  (bnc #596454)
+
+-------------------------------------------------------------------
+Wed Apr 14 09:50:36 CEST 2010 - sndirsch@suse.de
+
+- .doit: no longer create %changelog entries
+
+-------------------------------------------------------------------
+Wed Apr 14 09:31:39 CEST 2010 - sndirsch@suse.de
+
+- defined(%hash) is deprecated (bnc #596454)
+
+-------------------------------------------------------------------
+Tue Apr 13 07:53:43 UTC 2010 - coolo@novell.com
+
+- let sax2-tools supplement yast2-installation (bnc#585432)
+
+-------------------------------------------------------------------
+Wed Apr  7 00:02:38 CEST 2010 - sndirsch@suse.de
+
+- likely fixed buffer overflow in sysp (bnc #586112) 
+
+-------------------------------------------------------------------
+Sat Mar 27 13:06:39 CET 2010 - sndirsch@suse.de
+
+- switch to gcc 4.3 for now to fix buffer overflows in sysp 
+  (bnc #586112)
+
+-------------------------------------------------------------------
+Fri Mar 26 10:52:32 CET 2010 - sndirsch@suse.de
+
+- latest translation fixes 
+
+-------------------------------------------------------------------
+Tue Mar 16 05:38:43 CET 2010 - sndirsch@suse.de
+
+- specify domain in BusID if > 0 (bnc #583359) 
+
+-------------------------------------------------------------------
+Thu Feb 25 12:35:27 UTC 2010 - prusnak@suse.cz
+
+- replace X-KDE-SubstituteUID in favor of xdg-su [#bnc540627]
+
+-------------------------------------------------------------------
+Mon Nov 30 11:26:40 CET 2009 - meissner@suse.de
+
+- linux/vt.h has "new" and we built with C++ ... not good.
+  try redefining it for the inclusion
+
+-------------------------------------------------------------------
+Wed Nov  4 14:48:15 CET 2009 - sndirsch@suse.de
+
+- fixed german (intel based) macbook mapping (bnc #552448)
+
+-------------------------------------------------------------------
+Sun Nov  1 20:23:11 CET 2009 - sndirsch@suse.de
+
+- changed device path to /dev/input/by-id/usb-1b96_0001-event-mouse
+  for HP tx2-12nnxx pen/touchscreen (bnc #541082)
+
+-------------------------------------------------------------------
+Sun Nov  1 12:10:57 CET 2009 - sndirsch@suse.de
+
+- added touchscreen support for HP tx2-12nnxx (bnc #541082)
+
+-------------------------------------------------------------------
+Sun Nov  1 05:00:49 CET 2009 - sndirsch@suse.de
+
+- no longer try to use a multi-layout for dvorak; apparently it
+  doesn't work, maybe it never did (bnc #549432)
+
+-------------------------------------------------------------------
+Mon Oct 19 22:31:51 CEST 2009 - sndirsch@suse.de
+
+- back to "us,ru" keyboard combination (bnc #540494)
+
+-------------------------------------------------------------------
+Thu Oct  1 16:28:37 CEST 2009 - sndirsch@suse.de
+
+- fixed memory leak (bnc #542345)
+
+-------------------------------------------------------------------
+Thu Oct  1 14:28:50 CEST 2009 - sndirsch@suse.de
+
+- key for Tajik keyboard changed from "tj" to "tj_alt-UTF8"
+
+-------------------------------------------------------------------
+Fri Sep  4 18:09:36 CEST 2009 - sndirsch@suse.de
+
+- added keyboard mapping for Tajik (tj) 
+
+-------------------------------------------------------------------
+Tue Sep  1 22:39:11 CEST 2009 - sndirsch@suse.de
+
+- fixed keyboard map for Brazilian keyboard layout (bnc #531818) 
+
+-------------------------------------------------------------------
+Sat Aug 29 13:53:40 CEST 2009 - sndirsch@suse.de
+
+- added 26" as monitor size to select (bnc #535192)
+- added 6/5 as monitor ratio to select (example: 1920x1600)
+- added 1920x1680 as monitor resolution to select
+- sorted monitor sizes/ratios by value
+
+-------------------------------------------------------------------
+Wed Aug 12 00:03:13 CEST 2009 - sndirsch@suse.de
+
+- added missing 16:9 modes as valid modes requested by HP
+  (bnc #527080) 
+
+-------------------------------------------------------------------
+Wed Jul 29 16:27:03 CEST 2009 - sndirsch@suse.de
+
+- added 1600 x 900 to vesa list (bnc #524724)
+- obsoletes special entry for "CMO N156O6-L01" monitor in 
+  api/data/cdb/Monitors
+
+-------------------------------------------------------------------
+Fri Jul 24 05:56:07 CEST 2009 - sndirsch@suse.de
+
+- fixed hsync values for CMO N156O6-L01 monitor to allow also lower
+  resolutions than 1600x900 (bnc #524724)
+
+-------------------------------------------------------------------
+Sun Jul 12 14:23:50 CEST 2009 - coolo@novell.com
+
+- disable as-needed to fix build
+
+-------------------------------------------------------------------
+Thu Jul  9 13:23:15 CEST 2009 - sndirsch@suse.de
+
+- updated translations from LCN SVN (20090709)
+
+-------------------------------------------------------------------
+Fri Jul  3 06:16:52 CEST 2009 - sndirsch@suse.de
+
+- added special profile for CMO N156O6-L01 monitor (bnc #518206) 
+
+-------------------------------------------------------------------
+Wed Jun 24 16:30:29 CEST 2009 - sndirsch@suse.de
+
+-  updated translations from LCN SVN (20090624)
+
+-------------------------------------------------------------------
+Fri Jun 19 11:42:48 CEST 2009 - sndirsch@suse.de
+
+- redo VT_ACTIVATE until it succeeds (bnc #504728)
+  This fixes a case Matthias hasn't thought of before. It's more
+  theoretical, though, we never had this issue so far. 
+  *Theoretically*, the ioctl() for VT_ACTIVATE could fail. In this
+  case, sax2 wouldn't switch back to the correct VT, and the
+  configuration would fail like we see in this bug - so this never
+  has happened so far. In this case the previous change wouldn't
+  kill the alarm() and cleanup the signal handler. This is fixed by
+  this change. Bears testing, but is trivial. 
+
+-------------------------------------------------------------------
+Thu Jun 18 18:53:03 CEST 2009 - mhopf@suse.de
+
+- fix bnc 504728: on some machines the intel agpgart takes a long time
+  for memory cleanup, thus a race condition triggers and the VT_ACTIVATE
+  never gets through. Thus do it every second.
+
+-------------------------------------------------------------------
+Mon Jun  1 20:40:32 CEST 2009 - sndirsch@suse.de
+
+- fixed MSI-AE1900 and MSI-N011 profiles (bnc #507437, bnc #497963) 
+
+-------------------------------------------------------------------
+Sat May 30 11:34:52 CEST 2009 - sndirsch@suse.de
+
+- MSI-AE1900 profile
+  * added monitor-<output> options, which are still required by
+    KMS at least (bnc #507437)
+
+-------------------------------------------------------------------
+Fri May 29 16:28:03 CEST 2009 - sndirsch@suse.de
+
+- use special profile for MSI-N011 (bnc #499110) 
+
+-------------------------------------------------------------------
+Thu May 28 13:04:32 CEST 2009 - sndirsch@suse.de
+
+- sysfsutils no longer required in BuildRequires
+
+-------------------------------------------------------------------
+Wed May 27 22:37:52 CEST 2009 - sndirsch@suse.de
+
+- disabled mouse and keyboard module (bnc #483554)
+
+-------------------------------------------------------------------
+Wed May 27 17:04:05 CEST 2009 - sndirsch@suse.de
+
+- getPrimary.sh:
+  * only run 'lspci -vv' for VGA devices (bnc #478164)
+
+-------------------------------------------------------------------
+Thu May 21 05:08:27 CEST 2009 - sndirsch@suse.de
+
+- use special profile for ACER-EZ1600 (bnc #504710) 
+
+-------------------------------------------------------------------
+Tue May 19 19:09:14 CEST 2009 - sndirsch@suse.de
+
+- added required geometry options for HP Compaq 2710p/2730p Tablet
+  PC (bnc #504036)
+
+-------------------------------------------------------------------
+Fri May 15 16:12:36 CEST 2009 - sndirsch@suse.de
+
+- use special profile for MSI AE1900 (bnc #500853) 
+- switch to "ru,us" as default (before: "us,ru")
+
+-------------------------------------------------------------------
+Tue Apr 28 10:39:26 CEST 2009 - sndirsch@suse.de
+
+- added missing include (<stdio.h>) to fix build for gcc 4.4 
+
+-------------------------------------------------------------------
+Mon Apr 27 18:04:03 CEST 2009 - sndirsch@suse.de
+
+- Keyboard.map: use 'inet:microsoftpro' for XkbOptions for br/jp
+  layout (bnc #497647) 
+
+-------------------------------------------------------------------
+Sat Apr 25 16:46:58 CEST 2009 - sndirsch@suse.de
+
+- Keyboard.map: use 'jp106_inet' as xkbmodel/variant for jp
+  layouts (bnc #497647)
+
+-------------------------------------------------------------------
+Sat Apr 25 03:45:38 CEST 2009 - sndirsch@suse.de
+
+- Keyboard.map: use 'abnt2_inet' as xkbmodel/variant for br
+  layouts (bnc #497647)
+
+-------------------------------------------------------------------
+Fri Apr 24 21:13:32 CEST 2009 - sndirsch@suse.de
+
+- Keyboard.map: use 'microsoftpro' also for br and jp layouts
+  (bnc #497647)
+
+-------------------------------------------------------------------
+Wed Mar 25 17:25:39 CET 2009 - sndirsch@suse.de
+
+- fixed panel detection for panels of 800x480, 1024x480, 1280x720
+  (bnc #485801)
+
+-------------------------------------------------------------------
+Sun Mar  8 20:39:09 CET 2009 - sndirsch@suse.de
+
+- removed invalid synaptics driver options (ZAxisMapping,
+  Emulate3Buttons) in alps/alps-macbook/synaptics profiles
+- no longer apply synaptics/mouse/evdev/vmmouse/kbd profiles via
+  Input.map (evdev/synaptics is now loaded via HAL; evdev
+  replaces mouse/kbd/vmmouse)
+
+-------------------------------------------------------------------
+Mon Mar  2 16:57:14 CET 2009 - ms@suse.de
+
+- fixed panel detection for panels of 1366x768 (bnc #473910)
+
+-------------------------------------------------------------------
+Sun Mar  1 21:38:36 CET 2009 - sndirsch@suse.de
+
+- freetype module no longer a seperate server plugin
+
+-------------------------------------------------------------------
+Sat Feb 28 21:35:02 CET 2009 - sndirsch@suse.de
+
+- use simplified 'synaptics' profile for all Synaptics/Alps
+  touchpads, i.e. rely on the improved parameter autodetection of
+  updated 'synaptics' driver
+
+-------------------------------------------------------------------
+Mon Feb 16 10:42:44 CET 2009 - ms@suse.de
+
+- added optimized data for alps profile from user experience
+  (bnc #469262)
+
+-------------------------------------------------------------------
+Fri Feb 13 14:11:06 CET 2009 - sndirsch@suse.de
+
+- FireGL profile: set again BusID (bnc #473662)
+
+-------------------------------------------------------------------
+Thu Feb  5 18:14:35 CET 2009 - sndirsch@suse.de
+
+- vboxmouse is no longer a standard mouse, i.e. add default mouse
+  again; use vboxmouse driver by default again (bnc #444747)
+
+-------------------------------------------------------------------
+Thu Feb  5 17:02:30 CET 2009 - ms@suse.de
+
+- fixed xkb key quoting in xapi.gtx (bnc #447492)
+
+-------------------------------------------------------------------
+Thu Jan 29 11:48:20 CET 2009 - sndirsch@suse.de
+
+- Identity.map:
+  * IBM's 855GM/915G no longer need vesa driver; use intel driver
+    instead (bnc #448656)
+  * fixed typo in vendor name for 845 (Intec --> Intel)
+
+-------------------------------------------------------------------
+Thu Jan 15 16:59:09 CET 2009 - sndirsch@suse.de
+
+- Identity.map:
+  * use EXANocomposite also for 855 to fix suspend-to-disk
+    (bnc #465950)
+
+-------------------------------------------------------------------
+Wed Jan 14 12:46:28 CET 2009 - sndirsch@suse.de
+
+- Identity.map:
+  * use vesa driver for 'GeForce 6100 nForce 430' (bnc #465190)
+
+-------------------------------------------------------------------
+Tue Jan 13 11:54:25 CET 2009 - ms@suse.de
+
+- don't display a test button when a special configuration
+  dialog was requested (bnc #464487)
+
+-------------------------------------------------------------------
+Mon Jan 12 18:16:29 CET 2009 - sndirsch@suse.de
+
+- Identity.map: 
+  * use "EXANoComposite" option for Intel 965/965GM; fixes various
+    Xserver crashes and shouldn't harm desktop performance
+
+-------------------------------------------------------------------
+Fri Jan  9 17:02:00 CET 2009 - sndirsch@suse.de
+
+- Input.map: added another device (0x04b3:0x300f) to use
+  ibm-trackpoint profile
+
+-------------------------------------------------------------------
+Wed Jan  7 11:20:25 CET 2009 - ms@suse.de
+
+- fixed parser version check
+
+-------------------------------------------------------------------
+Mon Jan  5 15:15:11 CET 2009 - sndirsch@suse.de
+
+- consider also variant when setting console keyboard; required
+  for cz/sk (bnc #458623)
+
+-------------------------------------------------------------------
+Mon Jan  5 11:01:55 CET 2009 - ms@suse.de
+
+- fixed tmp race problem in SaX2/sax.sh (bnc #460471)
+
+-------------------------------------------------------------------
+Fri Jan  2 23:50:51 CET 2009 - sndirsch@suse.de
+
+- always use '-br' option when starting the Xserver; workarounds
+  configuration of Intel 845G machines (bnc #463288)
+
+-------------------------------------------------------------------
+Fri Jan  2 23:25:42 CET 2009 - sndirsch@suse.de
+
+- added monitor entry for 'Samsung SyncMaster 206BW' (bnc #463320) 
+
+-------------------------------------------------------------------
+Fri Jan  2 02:52:53 CET 2009 - sndirsch@suse.de
+
+- added monitor entry for 'ASUS VW246' (bnc #462668) 
+
+-------------------------------------------------------------------
+Mon Dec 22 12:12:26 CET 2008 - sndirsch@suse.de
+
+- don't use broken geode driver (bnc #457182) 
+
+-------------------------------------------------------------------
+Fri Dec 19 14:18:30 CET 2008 - sndirsch@suse.de
+
+- xapi.gtx: added missig XKB keys (bnc #450851) 
+
+-------------------------------------------------------------------
+Fri Dec 19 13:26:27 CET 2008 - sndirsch@suse.de
+
+- xapi.gtx: double quotes needs to be quoted, otherwise string in
+  .pot file is truncated (bnc #447492) 
+
+-------------------------------------------------------------------
+Mon Dec  8 16:56:23 CET 2008 - mhopf@suse.de
+
+- fix build on s390, sax2-tools only.
+
+-------------------------------------------------------------------
+Thu Dec  4 12:23:26 CET 2008 - ms@suse.de
+
+- added missing progress bar labels to be able to show them
+  as translated text. Also fixed the setLabel call to display
+  the translated version of the text (bnc #449100)
+
+-------------------------------------------------------------------
+Wed Dec  3 13:08:47 CET 2008 - ms@suse.de
+
+- fixed typo in Keyboard.map
+
+-------------------------------------------------------------------
+Fri Nov 28 12:52:36 CET 2008 - sndirsch@suse.de
+
+- Radeon 9200 needs 'Option "BusType" "PCI"' on EFIKA/Pegasos PPC
+  boards (bnc #449938)
+
+-------------------------------------------------------------------
+Fri Nov 28 01:42:10 CET 2008 - sndirsch@suse.de
+
+- use intel driver again, now with Option 'ExaNoComposite' 
+  (bfo #18270) 
+
+-------------------------------------------------------------------
+Wed Nov 26 16:50:20 CET 2008 - ms@suse.de
+
+- fixed sysp processing on multiple devices (bnc #448209)
+
+-------------------------------------------------------------------
+Wed Nov 26 14:54:24 CET 2008 - sndirsch@suse.de
+
+- use 'vesa' driver for some POS Intel devices (bnc #448656)
+- use NoVirtual profile for Radeon Mobility M6 LY (bnc #448909)
+
+-------------------------------------------------------------------
+Sun Nov 23 08:16:47 CET 2008 - sndirsch@suse.de
+
+- added 1600x900 as selectable resolution (bnc #447990)
+
+-------------------------------------------------------------------
+Fri Nov 21 23:11:16 CET 2008 - sndirsch@suse.de
+
+- use touchscreen profile also for Elo serial devices (bnc #447809)
+
+-------------------------------------------------------------------
+Fri Nov 21 06:53:27 CET 2008 - sndirsch@suse.de
+
+- no longer try to use broken vboxmouse driver by default 
+  (bnc #444747) 
+
+-------------------------------------------------------------------
+Thu Nov 20 15:47:07 CET 2008 - sndirsch@suse.de
+
+- updated translations from LCN SVN (20081120)
+
+-------------------------------------------------------------------
+Wed Nov 19 12:09:30 CET 2008 - sndirsch@suse.de
+
+- limit Vsync to 74-76 for Dell 1703P ("DEL3010") monitor
+  (bnc #445989)
+
+-------------------------------------------------------------------
+Wed Nov 19 05:34:51 CET 2008 - sndirsch@suse.de
+
+- use touchscreen profile also for inputattach'ed Microtouch RS232
+  touchscreens (bnc #357800)
+ 
+-------------------------------------------------------------------
+Fri Nov 14 22:42:56 CET 2008 - sndirsch@suse.de
+
+- added LCD monitors for 16:9 resolutions (1280x720@60, 1366x768@60,
+  1600x900@60, 1920x1080@60); added 16:9 as possible Display Size
+  (bnc #388479)
+
+-------------------------------------------------------------------
+Fri Nov 14 18:31:30 CET 2008 - sndirsch@suse.de
+
+- don't use 'Virtual 3840 1200' for Radeon LW (bnc #445167)
+
+-------------------------------------------------------------------
+Fri Nov 14 17:19:29 CET 2008 - sndirsch@suse.de
+
+- use touchscreen profile also for Microtouch USB touchscreens
+  (bnc #444765)
+
+-------------------------------------------------------------------
+Thu Nov 13 04:58:01 CET 2008 - sndirsch@suse.de
+
+- replaced existing "elo" profile with generic "touchscreen"
+  profile and removed obsolete udev rule for elo device 
+  (bnc #444332)
+
+-------------------------------------------------------------------
+Wed Nov 12 16:52:00 CET 2008 - sndirsch@suse.de
+
+- don't use 'Virtual 3840 1200' for Radeon 9200 Mobility 9200
+  (5C63) on ppc (bnc #444175)
+
+-------------------------------------------------------------------
+Tue Nov 11 17:35:44 CET 2008 - sndirsch@suse.de
+
+- added monitor data for 
+  * HP LP2275w
+  * Samsung Syncmaster 245B/245BW/245BPlus 
+  (bnc #443761)
+
+-------------------------------------------------------------------
+Mon Nov 10 15:06:44 CET 2008 - ms@suse.de
+
+- fixed standard mouse detection (bnc #433339)
+- removed xorg-server-1_5.diff, added check for XORG_VERSION_MINOR
+- created udev directory in svn, moved udev rule to that
+  directory instead of maintaining it as source
+
+-------------------------------------------------------------------
+Mon Nov 10 14:28:38 CET 2008 - sndirsch@suse.de
+
+- use NoVirtual profile for Intel 810/815 (bnc #442413)
+
+-------------------------------------------------------------------
+Mon Nov 10 11:13:36 CET 2008 - ms@suse.de
+
+- fixed Input.map, vmware-mouse line is missing the driver (bnc #433339)
+
+-------------------------------------------------------------------
+Fri Nov  7 12:22:40 CET 2008 - sndirsch@suse.de
+
+- no longer use intel driver for i845, since the support for this
+  GPU is currently completely broken (bfo #18270)
+
+-------------------------------------------------------------------
+Wed Nov  5 08:33:27 CET 2008 - sndirsch@suse.de
+
+- accept vboxmouse as standard mouse, i.e. no longer add default
+  mouse if vboxmouse detected
+- updated translations from LCN SVN (20081106)
+
+-------------------------------------------------------------------
+Tue Nov  4 13:22:52 CET 2008 - sndirsch@suse.de
+
+- added arabic keyboard mapping (bnc #429430)
+
+-------------------------------------------------------------------
+Mon Nov  3 23:57:27 CET 2008 - sndirsch@suse.de
+
+- frequencies for monitors need to specified as integers
+- removed 'Dell' from Monitor model name 
+
+-------------------------------------------------------------------
+Mon Nov  3 22:25:31 CET 2008 - sndirsch@suse.de
+
+- added a bunch of Dell Monitors
+  *  DELL E207WFP
+  *  Dell 1569
+  *  Dell 1706FPV (Analog)
+  *  Dell 1706FPV (Digital)
+  *  Dell 1707FP (Analog)
+  *  Dell 1707FP (Digital)
+  *  Dell 1707FPV(Analog)
+  *  Dell 1707FPV(Digital)
+  *  Dell 1708FP(Analog)
+  *  Dell 1708FP(Digital)
+  *  Dell 1800FP (Analog)
+  *  Dell 1800FP (Digital)
+  *  Dell 1906FP (Analog)
+  *  Dell 1906FP (Digital)
+  *  Dell 1907FP (Analog)
+  *  Dell 1907FP (Digital)
+  *  Dell 1907FPV(Analog)
+  *  Dell 1907FPV(Digital)
+  *  Dell 1908FP(Analog)
+  *  Dell 1908FP(Digital)
+  *  Dell 1908WFP(Analog)
+  *  Dell 1908WFP(Digital)
+  *  Dell 1909W(Analog)
+  *  Dell 1909W(Digital)
+  *  Dell 2007FP (Digital)
+  *  Dell 2007WFP (Analog)
+  *  Dell 2007WFP (Digital)
+  *  Dell 2009W(Analog)
+  *  Dell 2009W(Digital)
+  *  Dell 2208WFP(Analog)
+  *  Dell 2208WFP(Digital)
+  *  Dell 2405FPW (Analog)
+  *  Dell 2405FPW (Digital)
+  *  Dell 2407WFP (Analog)
+  *  Dell 2407WFP (Digital)
+  *  Dell 2407WFP-HC (Analog)
+  *  Dell 2407WFP-HC (Digital)
+  *  Dell 2408WFP(Analog)
+  *  Dell 2408WFP(Digital)
+  *  Dell 2707WFP
+  *  Dell 2709W(Analog)
+  *  Dell 2709W(Digital)
+  *  Dell 2709W(HDMI)
+  *  Dell 3008WFP(Analog)
+  *  Dell 3008WFP(DP)
+  *  Dell 3008WFP(Digital)
+  *  Dell 3008WFP(HDMI)
+  *  Dell C22W(HDMI)
+  *  Dell E152FP
+  *  Dell E156FP
+  *  Dell E157FP
+  *  Dell E157FPT
+  *  Dell E1609W
+  *  Dell E1709W
+  *  Dell E171FPb
+  *  Dell E176FP
+  *  Dell E177FP
+  *  Dell E178FP
+  *  Dell E178WFP
+  *  Dell E1909W(Analog)
+  *  Dell E1909W(Digital)
+  *  Dell E196FP
+  *  Dell E197FP
+  *  Dell E198FP
+  *  Dell E198WFP(Analog)
+  *  Dell E198WFP(Digital)
+  *  Dell E2009W(Analog)
+  *  Dell E2009W(Digital)
+  *  Dell E207WFP
+  *  Dell E2209W
+  *  Dell E228WFP
+  *  Dell E248WFP(Analog)
+  *  Dell E248WFP(Digital)
+  *  Dell E550mm
+  *  Dell E773mm
+  *  Dell Laptop Display Panel 1280x800
+  *  Dell Laptop Display Panel 1440x900
+  *  Dell Laptop Display Panel 1680x1050
+  *  Dell Laptop Display Panel 1920x1080
+  *  Dell Laptop Display Panel 1920x1200
+  *  Dell M781p
+  *  Dell M783c
+  *  Dell M791
+  *  Dell P791
+  *  Dell S1709W
+  *  Dell S1909W(Analog)
+  *  Dell S1909W(Digital)
+  *  Dell S1909WX(Analog)
+  *  Dell S1909WX(Digital)
+  *  Dell S199WFP(Analog)
+  *  Dell S199WFP(Digital)
+  *  Dell S2209W(Analog)
+  *  Dell S2209W(Digital)
+  *  Dell S2309W(Analog)
+  *  Dell S2309W(Digital)
+  *  Dell S2409W(Analog)
+  *  Dell S2409W(Digital)
+  *  Dell S2409W(HDMI)
+  *  Dell SE177FP
+  *  Dell SE178WFP
+  *  Dell SE197FP
+  *  Dell SE198WFP
+  *  Dell SP1908FP
+  *  Dell SP1908FP (DVI)
+  *  Dell SP2008WFP(Analog)
+  *  Dell SP2008WFP(Digital)
+  *  Dell SP2009W
+  *  Dell SP2208WFP(Analog)
+  *  Dell SP2208WFP(Digital)
+  *  Dell SP2208WFP(HDMI)
+  *  Dell Ultrascan 14XE
+  *  Dell Ultrascan 21TE
+  *  Dell Ultrascan V17X
+  *  Dell VS17X
+
+-------------------------------------------------------------------
+Wed Oct 29 11:26:20 CET 2008 - kukuk@suse.de
+
+- Move sax2 manual page to correct package
+- Only build sax2-tools on s390/s390x
+
+-------------------------------------------------------------------
+Mon Oct 27 21:18:58 CET 2008 - sndirsch@suse.de
+
+- no longer exclude s390 from building (bnc #432738) 
+
+-------------------------------------------------------------------
+Mon Oct 27 17:25:25 CET 2008 - ms@suse.de
+
+- prepared for building on s390x, not completed (bnc #432738)
+- removed local copy of libhd, other distros will now complain
+  because libhd is not a public open source project AI snwint
+- added rpmlintrc
+
+-------------------------------------------------------------------
+Sun Oct 26 16:33:08 CET 2008 - sndirsch@suse.de
+
+- Identity.map: renamed "AST1000/2000" to "ASPEED Graphics Family"
+  (bnc #439053)
+
+-------------------------------------------------------------------
+Thu Oct 23 17:06:10 CEST 2008 - ms@suse.de
+
+- fixed setPrimaryChip option setup (bnc #432732)
+
+-------------------------------------------------------------------
+Thu Oct 23 06:49:23 CEST 2008 - sndirsch@suse.de
+
+- Identity.map: remove fglrx driver entries (bnc #436727, #437935)
+
+-------------------------------------------------------------------
+Wed Oct 22 14:12:41 CEST 2008 - sndirsch@suse.de
+
+- updated translations from LCN SVN (20081022)
+
+-------------------------------------------------------------------
+Mon Oct 20 22:19:16 CEST 2008 - sndirsch@suse.de
+
+- removed HP preload monitor entries and profile, since these are
+  no longer required; fixes also bnc #436905
+
+-------------------------------------------------------------------
+Thu Oct 16 12:57:12 CEST 2008 - sndirsch@suse.de
+
+- use NoBorder layout if ((X <= 800) || (Y <= 600)), and *not*
+  if ((X <= 800) && (Y <= 600)); makes Ok/Cancel button visible
+  on Netbooks with 1024x600/1024x576 display panels (bnc #431290)
+
+-------------------------------------------------------------------
+Thu Oct 16 06:24:47 CEST 2008 - sndirsch@suse.de
+
+- testX: changed minimum resolution to 800x576 due to new Netbook
+  panel resolution (bnc #435879)
+
+-------------------------------------------------------------------
+Wed Oct 15 15:15:16 CEST 2008 - sndirsch@suse.de
+
+- insert device name for COM5 (ttyS4) 
+
+-------------------------------------------------------------------
+Wed Oct 15 12:56:44 CEST 2008 - sndirsch@suse.de
+
+- allow to select also COM5 (ttyS4) as device for 
+  tablets/touchscreens (bnc #432350)
+
+-------------------------------------------------------------------
+Tue Oct 14 22:36:23 CEST 2008 - sndirsch@suse.de
+
+- accept vmmouse as standard mouse, i.e. no longer add default
+  mouse if vmmouse detected (Matthias Hopf, bnc #433339)
+
+-------------------------------------------------------------------
+Tue Oct 14 13:29:00 CEST 2008 - sndirsch@suse.de
+
+- Identity.map: use vesa driver for IBM 855GM (8086:3582:8086:3582)
+  (bnc #410305)
+
+-------------------------------------------------------------------
+Mon Oct 13 22:58:36 CEST 2008 - sndirsch@suse.de
+
+- added 1024x576 as possible VESA mode to sysp 
+
+-------------------------------------------------------------------
+Thu Oct  9 16:03:20 CEST 2008 - sndirsch@suse.de
+
+- fixed mixed up MinY/MaxY values for ELO 2300 touchscreen
+  (bnc #380278)
+
+-------------------------------------------------------------------
+Thu Oct  9 10:46:10 CEST 2008 - ms@suse.de
+
+- added kbd mapping for ruwin_alt-UTF-8 (bnc #432862)
+
+-------------------------------------------------------------------
+Wed Oct  8 18:57:23 CEST 2008 - sndirsch@suse.de
+
+- used Noaccel,Swcursor for 855GM(IBM) (bnc #379946) 
+
+-------------------------------------------------------------------
+Tue Oct  7 21:28:50 CEST 2008 - sndirsch@suse.de
+
+- use NoVirtual profile for ATI Radeon VE cards (bnc #433124)
+- change the default from caps:shiftlock to caps:capslock for
+  french/belgian keyboards (bnc #432682)
+
+-------------------------------------------------------------------
+Mon Oct  6 21:02:42 CEST 2008 - sndirsch@suse.de
+
+- added NoVirtual profile, which can be used for graphics cards
+  with not enough memory in addition to Virtual profile
+- using NoVirtual profile for ES1000 cards (bnc #431088)
+
+-------------------------------------------------------------------
+Tue Sep 23 16:32:03 CEST 2008 - ms@suse.de
+
+- fixed use of sux which was replaced by su (bnc #427753)
+- fixed deactivation of the 3D subsystem (bnc #427753)
+- fixed initial 3D (dri) setup (bnc #427753)
+
+-------------------------------------------------------------------
+Mon Sep 22 15:19:20 CEST 2008 - ms@suse.de
+
+- fixed wrong option setup for init call (bnc #427371)
+
+-------------------------------------------------------------------
+Fri Sep 19 11:43:52 CEST 2008 - sndirsch@suse.de
+
+- Identity.map: sw_cursor no longer required for GeForce 2 MX 
+  (bnc #427640)
+
+-------------------------------------------------------------------
+Wed Sep 10 15:44:19 CEST 2008 - sndirsch@suse.de
+
+- added new entry for Wacom based OQO 02. This machine use ttyS1
+  as port. (Danny Kukawka <dkukawka@suse.de>)
+
+-------------------------------------------------------------------
+Wed Sep 10 15:42:59 CEST 2008 - sndirsch@suse.de
+
+- added entry for a Samsung Q1, which is slightly different from
+  the Q1-Ultra (Q1U) as it looks in some reports on the web. 
+  (Danny Kukawka <dkukawka@suse.de>) 
+
+-------------------------------------------------------------------
+Wed Sep 10 15:41:45 CEST 2008 - sndirsch@suse.de
+
+- add Gateway CX2724 and set "Option" "TrackRandR" for all fpit
+  TabletPCs. (Danny Kukawka <dkukawka@suse.de>)
+
+-------------------------------------------------------------------
+Wed Sep 10 15:40:09 CEST 2008 - sndirsch@suse.de
+
+- add evtouch based machine: ASUS R2H
+  (Danny Kukawka <dkukawka@suse.de>)
+
+-------------------------------------------------------------------
+Wed Sep 10 15:37:55 CEST 2008 - sndirsch@suse.de
+
+- added new entry for the HP TC1100 which is wacom based (serial)
+  and have no eraser as it looks in exsting install instructions
+  in the net. (Danny Kukawka <dkukawka@suse.de>)
+
+-------------------------------------------------------------------
+Wed Sep 10 15:36:25 CEST 2008 - sndirsch@suse.de
+
+- fixed port handling for Touchscreens. Enable also ttyS2/ttyS3
+  and allow also /dev/input/(elo|evtouch_event|touchscreen)
+  (Danny Kukawka <dkukawka@suse.de>)
+
+-------------------------------------------------------------------
+Wed Sep 10 15:35:12 CEST 2008 - sndirsch@suse.de
+
+- set the stylus/pen button for all Wacom TabletPC devices to the 
+  right mouse button (via Option "Button2" "3"). This setting 
+  should be more useful for all users. 
+  (Danny Kukawka <dkukawka@suse.de>)
+
+-------------------------------------------------------------------
+Wed Sep 10 15:33:37 CEST 2008 - sndirsch@suse.de
+
+- added new Gateway TabletPCs: C-140X/E-295C, updated existing
+  entries with the business model IDs: C-120X/E-155C, C210X/M280E
+  (Danny Kukawka <dkukawka@suse.de>)
+
+-------------------------------------------------------------------
+Wed Sep 10 15:32:08 CEST 2008 - sndirsch@suse.de
+
+- moved LG-C1 to Touchscreen section, moved all TabletPCs with
+  touchscreen to Vendor TabletPC, add new machines:
+  - Clevo TN120R (a.k.a Nexoc Osiris S621)
+  - Samsung Q1-Ultra
+  (Danny Kukawka <dkukawka@suse.de>)
+
+-------------------------------------------------------------------
+Wed Sep 10 15:30:48 CEST 2008 - sndirsch@suse.de
+
+- added entry for HP Compaq 2710p/2730p 
+  (Danny Kukawka <dkukawka@suse.de>)
+
+-------------------------------------------------------------------
+Wed Sep 10 15:28:52 CEST 2008 - sndirsch@suse.de
+
+- add LG C1 TabletPC (based on the fujitouch driver)
+  (Danny Kukawka <dkukawka@suse.de>)
+
+-------------------------------------------------------------------
+Wed Sep 10 15:27:30 CEST 2008 - sndirsch@suse.de
+
+- add new machine: Gateway E-155C (Wacom USB) with calibration data
+  from pinglinux@gmail.com. Added correct Name of the existing fpit 
+  based Gateway (M280E) and sorted the existing entries.
+  (Danny Kukawka <dkukawka@suse.de>)
+
+-------------------------------------------------------------------
+Wed Sep 10 15:26:05 CEST 2008 - sndirsch@suse.de
+
+- add HP TC4400 serial TabletPC (Danny Kukawka <dkukawka@suse.de>)
+
+-------------------------------------------------------------------
+Wed Sep 10 15:23:24 CEST 2008 - sndirsch@suse.de
+
+- add some more serial Wacom TabletPCs:
+  * LG LT20 Tablet PC
+  * Panasonic Toughbook CF-18
+  * Toshiba Portégé M series Tablet PC
+  * Toshiba Satellite R15/R20
+  * Toshiba Tecra M series Tablet PC
+  (Danny Kukawka <dkukawka@suse.de>)
+
+-------------------------------------------------------------------
+Wed Sep 10 15:21:04 CEST 2008 - sndirsch@suse.de
+
+- Added touch devices also the the generic Wacom USB TabletPC entry
+  (Danny Kukawka <dkukawka@suse.de>)
+
+-------------------------------------------------------------------
+Wed Sep 10 15:19:04 CEST 2008 - sndirsch@suse.de
+
+- added Tablet PC support for HP Pavilion tx2000/tx2001 series
+  (Danny Kukawka <dkukawka@suse.de>)
+
+-------------------------------------------------------------------
+Wed Sep 10 15:15:16 CEST 2008 - sndirsch@suse.de
+
+- added Tablet PC support for  HP Pavilion tx2500 series
+  (Danny Kukawka <dkukawka@suse.de>)
+
+-------------------------------------------------------------------
+Wed Sep 10 15:09:05 CEST 2008 - sndirsch@suse.de
+
+- port SaX2 to use the new paths under /dev/input/by-id generated
+  by patched udev version: /dev/input/by-id/usb-Tablet_ISD-V4-event-stylus 
+  (instead of: /dev/input/by-id/usb-Tablet_ISD-V4-event-mouse)
+  (Danny Kukawka <dkukawka@suse.de>)
+
+-------------------------------------------------------------------
+Wed Sep 10 02:45:51 CEST 2008 - sndirsch@suse.de
+
+- make "microsoftpro" the default for all previous "pc101", "pc102"
+  and "pc105" models (bnc #210881)
+
+-------------------------------------------------------------------
+Tue Sep  9 10:22:49 CEST 2008 - ms@suse.de
+
+- allow GUI to be displayed on a 1024x600 area (bnc #419304)
+
+-------------------------------------------------------------------
+Thu Sep  4 12:25:03 CEST 2008 - ms@suse.de
+
+- added setPrimaryChip function in init.cpp to allow setup
+  of primary chip and nobus profile in libsax (bnc #417575)
+
+-------------------------------------------------------------------
+Mon Sep  1 16:21:55 CEST 2008 - sndirsch@suse.de
+
+- borderless SaX2 for xres <= 800 or yres <=600; this was hardcoded
+  to 800x600 before and resulted in problems with famous Netbook
+  resolution 1024x600 (bnc #419304)
+
+-------------------------------------------------------------------
+Wed Aug 27 03:44:28 CEST 2008 - sndirsch@suse.de
+
+- the logic in existing dynamic Radeon.pl profile was obsolete since
+  a long time - AFAIK; replaced with the logic also used by Intel.pl,
+  RadeonHD.pl, which make sure that 'Option "monitor-<output>"' is
+  used (bnc #420124)
+
+-------------------------------------------------------------------
+Fri Aug 22 22:11:03 CEST 2008 - sndirsch@suse.de
+
+- Extended existing serial 'Wacom ISDV4 TabletPC' entry with Touch
+  device. Added new generic entry for TabletPCs based on internal
+  Wacom USB devices.
+  (Danny Kukawka)
+
+-------------------------------------------------------------------
+Fri Aug 22 22:09:04 CEST 2008 - sndirsch@suse.de
+
+- Added new entries for TabletPCs with internal WACOM USB Tablet
+  devices from ASUS (R1E and R1F).
+  (Danny Kukawka)
+
+-------------------------------------------------------------------
+Fri Aug 22 22:05:08 CEST 2008 - sndirsch@suse.de
+
+- This patch allows to use for Tablets (as also TabletPCs) devices
+  which are not /dev/input/event* as e.g.:
+  * /dev/input/wacom
+  * /dev/input/by-id/*
+  * /dev/input/by-path/*
+  This allows to use persistend device names as e.g. needed for 
+  new Wacom USB based TabletPC devices.
+  (Danny Kukawka)
+
+-------------------------------------------------------------------
+Fri Aug 22 22:02:23 CEST 2008 - sndirsch@suse.de
+
+- Fixed handling of serial tablet ports in the SaX2 GUI. Solved
+  problem that ttyS1 and ttyS2 was mapped both to ttyS1.
+  (Danny Kukawka)
+
+-------------------------------------------------------------------
+Wed Aug 13 12:07:29 CEST 2008 - sndirsch@suse.de
+
+- alps-macbook profile:
+  * no longer set *Edge values; these are now detected and set by
+    the synaptics driver itself, which appears to work fine at
+    least on ALPS touchpads used in Macbooks
+
+-------------------------------------------------------------------
+Mon Aug 11 22:42:43 CEST 2008 - sndirsch@suse.de
+
+- added 'Virtual2k' for Intel < 965; still useful for hotplugging
+  a monitor in cloned mode (bnc #414156)
+
+-------------------------------------------------------------------
+Tue Aug  5 11:23:01 CEST 2008 - sndirsch@suse.de
+
+- type1 module no longer available; obsoleted by freetype module
+  since some time
+
+-------------------------------------------------------------------
+Mon Aug  4 20:50:36 CEST 2008 - sndirsch@suse.de
+
+- HP Preload:
+  * added monitor entries and profiles
+- SLEPOS:
+  * use evdev driver for elo touchscreen (bnc #408436)
+  * Identity.map/Identity.map.i386:
+    - 855GM IBM hardware needs swcursor + noaccel (bnc #408994)
+    - use DDC profile for IBM 855G device to make additionally
+      required options (Noaccel,SWcursor) available again 
+      (bnc #408994)
+  * added elo udev rule to use /dev/input/elo as device for elo
+    profile; adjusted elo profile (bnc #410315)
+
+-------------------------------------------------------------------
+Mon Aug  4 17:03:50 CEST 2008 - sndirsch@suse.de
+
+- added 'Virtual' profile for RANDR 1.2 drivers, since framebuffer
+  size cannot be changed on-the-fly at the moment; currently used
+  by radeon, radeonhd drivers and Intel 965 series (bnc #414156)
+
+-------------------------------------------------------------------
+Thu Jul 31 16:40:26 CEST 2008 - sndirsch@suse.de
+
+- Added support for the new Touch support of Wacom TabletPC
+  devices (as e.g. the WACf008 in the Lenovo ThinkPad X61t) to
+  Sax2  (Danny Kukawka) This patch includes:
+  * new pen type Touch 
+  * extended Wacom template for Touch devices and an updated
+    Lenovo ThinkPad X61t entry, added values to calibrate the touch
+    device
+  * removed Multitouch parameter from supported Wacom parameter
+    list
+  * update for German po-file
+  * fixed Makefile to prevent trouble with RPM if a patch get added
+    (ignore *.orig files)
+
+-------------------------------------------------------------------
+Mon Jul 28 15:50:20 CEST 2008 - sndirsch@suse.de
+
+- sax2-ident requires sax2 and sax2-libsax-perl 
+
+-------------------------------------------------------------------
+Thu Jul 24 16:41:12 CEST 2008 - sndirsch@suse.de
+
+- remove "Use vnc" to reduce dependancies (bnc #411766)
+- replace qx(whoami) with $UID (bnc #411766)
+
+-------------------------------------------------------------------
+Wed Jul 23 16:22:19 CEST 2008 - sndirsch@suse.de
+
+- new Ids for Xen mouse; use "event" instead of "by-id" (again) to
+  detect RealDevice (bnc #411264)
+
+-------------------------------------------------------------------
+Tue Jul 22 15:38:22 CEST 2008 - sndirsch@suse.de
+
+- make all device tabs more multilingual (bnc #218433)
+- apply 'xorg-server-1_5.diff' only on openSUSE > 11.0
+
+-------------------------------------------------------------------
+Wed Jul 16 11:30:59 CEST 2008 - sndirsch@suse.de
+
+- disable intelmagic by default; obsoleted by single card setup,
+  which we use as default now
+
+-------------------------------------------------------------------
+Wed Jul 16 10:29:40 CEST 2008 - sndirsch@suse.de
+
+- no longer set BusID for single card configurations (bnc #381644)
+
+-------------------------------------------------------------------
+Tue Jul 15 17:37:02 CEST 2008 - sndirsch@suse.de
+
+- configure only primary VGA card by default, i.e. no multicard
+  setups any more by default; you can still force SaX2 to create
+  a mulitcard setup with "-c 0,1" (bnc #381644)
+
+-------------------------------------------------------------------
+Mon Jul 14 18:08:54 CEST 2008 - ms@suse.de
+
+- fixed missing pad removal before writing new config (bnc #408737)
+
+-------------------------------------------------------------------
+Mon Jul 14 14:59:17 CEST 2008 - sndirsch@suse.de
+
+- added LCD TV resolution 1366x768 to the list (bnc #408870)
+
+-------------------------------------------------------------------
+Wed Jul  9 16:35:37 CEST 2008 - sndirsch@suse.de
+
+- show "busy cursor" when setting console keyboard
+
+-------------------------------------------------------------------
+Wed Jul  9 11:07:33 CEST 2008 - ms@suse.de
+
+- added vmware-mouse to be applied in Input.map
+- moved api scripts from libsax/tools to api/macros
+
+-------------------------------------------------------------------
+Wed Jul  9 03:50:18 CEST 2008 - sndirsch@suse.de
+
+- set console keyboard using YaST keyboard module (FATE #302925,
+  bnc #306269)
+
+-------------------------------------------------------------------
+Tue Jul  8 03:42:20 CEST 2008 - sndirsch@suse.de
+
+- fix driver entry for Quadro FX 360M (bnc #406960) 
+
+-------------------------------------------------------------------
+Mon Jul  7 14:28:10 CEST 2008 - sndirsch@suse.de
+
+- don't call no longer existing function GetRgbPath
+
+-------------------------------------------------------------------
+Mon Jul  7 13:09:36 CEST 2008 - sndirsch@suse.de
+
+- updated translations from LCN SVN (20080707)
+
+-------------------------------------------------------------------
+Fri Jul  4 22:18:19 CEST 2008 - sndirsch@suse.de
+
+- fixed build for xorg-server 1.5 
+
+-------------------------------------------------------------------
+Thu Jul  3 20:26:19 CEST 2008 - sndirsch@suse.de
+
+- another x11DB update 
+
+-------------------------------------------------------------------
+Wed Jul  2 22:30:27 CEST 2008 - sndirsch@suse.de
+
+- update x11DB
+
+-------------------------------------------------------------------
+Mon Jun 30 16:34:56 CEST 2008 - sndirsch@suse.de
+
+- allow to select also COM2/COM3 as device for touchscreens
+  (bnc #381319) 
+
+-------------------------------------------------------------------
+Mon Jun 30 13:07:33 CEST 2008 - sndirsch@suse.de
+
+- dynamic profile for wacom no longer required since udev rule is
+  now used to create /dev/input/wacom for Wacom USB tablets
+  (bnc #404847)
+
+-------------------------------------------------------------------
+Mon Jun 30 11:39:32 CEST 2008 - sndirsch@suse.de
+
+- added Resolution/DPI entries to Samsung SyncMaster 930B
+  (bnc #391816)
+
+-------------------------------------------------------------------
+Mon Jun 30 09:51:46 CEST 2008 - ms@suse.de
+
+- fixed xkb layout for Latin America keyboard (bnc #404307)
+
+-------------------------------------------------------------------
+Fri Jun 27 17:00:13 CEST 2008 - sndirsch@suse.de
+
+- reverted r1619, which broke the VerticalScroll support for a lot
+  of ALPS touchpads (bnc #401661)
+- added alps-macbook profile and use it for Macbook ALPS touchpad 
+  (bnc #250427)
+
+-------------------------------------------------------------------
+Wed Jun 25 11:05:58 CEST 2008 - sndirsch@suse.de
+
+- disable horizontal scroll on ALPS touchpads by default
+  (bnc #396097)
+
+-------------------------------------------------------------------
+Tue Jun 24 11:40:36 CEST 2008 - ms@suse.de
+
+- yet another qt4 fix, checking for empty tables
+- fixed mouse setup if no CDB selection is available
+- fixed positioning problems of various top level boxes
+- fixed location of icerc.sax file
+
+-------------------------------------------------------------------
+Tue Jun 24 04:06:49 CEST 2008 - sndirsch@suse.de
+
+- added monitor entry with special modeline for Samsung SyncMaster
+  225BW (bnc #402353) 
+
+-------------------------------------------------------------------
+Tue Jun 24 03:45:00 CEST 2008 - sndirsch@suse.de
+
+- added monitor entry for Samsung SyncMaster 226CW (bnc #402615)
+
+-------------------------------------------------------------------
+Mon Jun 23 12:41:31 CEST 2008 - ms@suse.de
+
+- fixed word wrap for labels (bnc #402503)
+
+-------------------------------------------------------------------
+Thu Jun 12 16:57:41 CEST 2008 - ms@suse.de
+
+- patch by Stefan Dirsch which adds radeon randr v1.2 support
+
+-------------------------------------------------------------------
+Tue Jun 10 10:51:08 CEST 2008 - ms@suse.de
+
+- fixed korean X11 keyboard setup (bnc #388057)
+
+-------------------------------------------------------------------
+Wed Jun  4 11:56:13 CEST 2008 - ms@suse.de
+
+- prevent sax2 from calling too many test X-Servers
+- removed redundant DDC entry for STC0777 (bnc #396029)
+- fixed xapi DISPLAY handling (bnc #396777)
+
+-------------------------------------------------------------------
+Tue Jun  3 16:21:52 CEST 2008 - ms@suse.de
+
+- update hwinfo source (bnc #374101)
+
+-------------------------------------------------------------------
+Mon Jun  2 12:16:04 CEST 2008 - ms@suse.de
+
+- fixed alps profile synaptics options (bnc #250427)
+
+-------------------------------------------------------------------
+Mon Jun  2 10:05:22 CEST 2008 - ms@suse.de
+
+- fixed segmentation fault in SaXStorage::merge (bnc #396127)
+- don't include variant basic (bnc #396117)
+
+-------------------------------------------------------------------
+Tue May 27 11:47:20 CEST 2008 - ms@suse.de
+
+- fixed keyboard layout/varian setup. The libsax functions which
+  adds additional layouts and/or variants uses a QTextStream (QString)
+  object which was overwritten no matter what data was in the QString.
+  With Qt4 this behavior has changed and the information is now used.
+  Therefore the code QTextOStream (&val) << val << "," << option;
+  needs to be changed into QTextOStream (&val) << "," << option;
+  This fix is related to (bnc #394579)
+
+-------------------------------------------------------------------
+Mon May 26 17:52:22 CEST 2008 - ms@suse.de
+
+- fixed DDC data for Samsung SEC3346 (bnc #394523)
+
+-------------------------------------------------------------------
+Mon May 26 09:45:23 CEST 2008 - ms@suse.de
+
+- fixed DDC data for Sony E430 (bnc #392828)
+
+-------------------------------------------------------------------
+Fri May 23 15:16:58 CEST 2008 - ms@suse.de
+
+- disable Composite for nv driver by default (bnc #392499)
+- use US layout by default if current layout is invalid (bnc #393198)
+- update translations
+
+-------------------------------------------------------------------
+Thu May 22 21:48:39 CEST 2008 - ms@suse.de
+
+- don't create X11 links if /var/X11R6/bin/X exists (bnc #197328)
+
+-------------------------------------------------------------------
+Tue May 20 11:40:10 CEST 2008 - ms@suse.de
+
+- added Samsung Syncmaster 930B (bnc #391816)
+
+-------------------------------------------------------------------
+Tue May 20 10:03:52 CEST 2008 - ms@suse.de
+
+- update hwinfo source
+
+-------------------------------------------------------------------
+Mon May 19 15:57:20 CEST 2008 - ms@suse.de
+
+- disabled message to indicate that 3D is not available (bnc #391983) 
+
+-------------------------------------------------------------------
+Fri May 16 12:31:29 CEST 2008 - ms@suse.de
+
+- changed finish text according to Ctrl-Alt-BS change (bnc #391134)
+
+-------------------------------------------------------------------
+Fri May 16 10:25:12 CEST 2008 - ms@suse.de
+
+- fixed mouse detection. Added driver information into the
+  InputMap file and use this information to evaluate whether
+  a default mouse driver based InputSection is required or not
+  This is realted to the bugs (bnc #388224) (bnc #391120)
+
+-------------------------------------------------------------------
+Wed May 14 18:26:07 CEST 2008 - ms@suse.de
+
+- fixed import of multihead configurations (bnc #385914)
+- fixed export of multihead configurations (bnc #385914)
+- fixed array buffer overflow (bnc #385914)
+- fixed paintEvent loop (bnc #385914)
+
+-------------------------------------------------------------------
+Tue May 13 09:39:20 CEST 2008 - ms@suse.de
+
+- added HD resolutions (720p/1080p) (bnc #389133)
+
+-------------------------------------------------------------------
+Mon May 12 12:47:42 CEST 2008 - ms@suse.de
+
+- update hwinfo source
+
+-------------------------------------------------------------------
+Fri May  9 12:20:34 CEST 2008 - ms@suse.de
+
+- allow labels to wrap the text (bnc #354386)
+
+-------------------------------------------------------------------
+Fri May  9 11:23:13 CEST 2008 - ms@suse.de
+
+- added Qt3 to Qt4 cleanup patch from Dirk Mueller (bnc #385914)
+- added 1920X1200@60HZ (bnc #388479)
+
+-------------------------------------------------------------------
+Thu May  8 23:39:11 CEST 2008 - coolo@suse.de
+
+- fix for live installer crash (bnc #382703)
+
+-------------------------------------------------------------------
+Thu May  8 16:26:03 CEST 2008 - ms@suse.de
+
+- update X11 database (bnc #387880)
+- mark cdb/Monitors as %config file (bnc #388164)
+- added synaptics profile script to add a generic input
+  device section if required (bnc #388224)
+
+-------------------------------------------------------------------
+Thu May  8 11:23:50 CEST 2008 - ms@suse.de
+
+- fixed error string setup in exception.cpp
+
+-------------------------------------------------------------------
+Tue May  6 16:42:11 CEST 2008 - ms@suse.de
+
+- added SyncMaster 940FN (bnc #378479)
+
+-------------------------------------------------------------------
+Tue May  6 16:27:41 CEST 2008 - ms@suse.de
+
+- fixed sortres result validation (bnc #378479)
+
+-------------------------------------------------------------------
+Tue May  6 14:59:46 CEST 2008 - ms@suse.de
+
+- added Depth24 profile for radeonrandr12 driver (bnc #387092)
+
+-------------------------------------------------------------------
+Fri May  2 14:05:33 CEST 2008 - ms@suse.de
+
+- fixed libsax and xapi object return values according
+  to qt3 -> qt4 changes (bnc #382703)
+
+-------------------------------------------------------------------
+Tue Apr 29 09:47:23 CEST 2008 - ms@suse.de
+
+- update hwinfo source, monitors added (bnc #373997)
+
+-------------------------------------------------------------------
+Mon Apr 28 14:51:49 CEST 2008 - ms@suse.de
+
+- removed invalid synaptics profile script which adds 
+  additional InputDevice sections. This is done in sysp directly
+  now (bnc #373176)
+
+-------------------------------------------------------------------
+Mon Apr 28 10:07:43 CEST 2008 - ms@suse.de
+
+- fixed build
+
+-------------------------------------------------------------------
+Fri Apr 25 14:17:55 CEST 2008 - ms@suse.de
+
+- update translations
+
+-------------------------------------------------------------------
+Thu Apr 24 15:39:28 CEST 2008 - ms@suse.de
+
+- added support for evdev absBits (bnc #356036)
+
+-------------------------------------------------------------------
+Mon Apr 21 10:47:44 CEST 2008 - ms@suse.de
+
+- update translations
+
+-------------------------------------------------------------------
+Fri Apr 18 10:48:23 CEST 2008 - ms@suse.de
+
+- fixed support for evdev on logitech VX nano (bnc #380734)
+- added general setup of PreferredMode (bnc #380785)
+
+-------------------------------------------------------------------
+Thu Apr 17 14:20:01 CEST 2008 - ms@suse.de
+
+- added support for evdev on logitech VX nano (bnc #380734)
+
+-------------------------------------------------------------------
+Wed Apr 16 16:59:36 CEST 2008 - ms@suse.de
+
+- fixed CardNumber adaption which should only apply for intel
+  i810 and intel driver based cards (bnc #380298)
+
+-------------------------------------------------------------------
+Tue Apr 15 09:13:42 CEST 2008 - ms@suse.de
+
+- update hwinfo source
+
+-------------------------------------------------------------------
+Mon Apr 14 13:32:48 CEST 2008 - ms@suse.de
+
+- removed Serbia and Montenegro key (bnc #379497)
+- update translations for SUSE 11.0
+
+-------------------------------------------------------------------
+Fri Apr 11 10:47:41 CEST 2008 - ms@suse.de
+
+- revert to original keyboard if cancel is pressed (bnc #378832)
+
+-------------------------------------------------------------------
+Thu Apr 10 11:30:05 CEST 2008 - ms@suse.de
+
+- fixed sortres function (bnc #378479)
+
+-------------------------------------------------------------------
+Tue Apr  8 11:40:31 CEST 2008 - ms@suse.de
+
+- added 1280x720 to resolution list (bnc #358346)
+
+-------------------------------------------------------------------
+Mon Apr  7 18:27:53 CEST 2008 - ms@suse.de
+
+- fixed segmentation fault if no XKB variant is set (bnc #373753)
+
+-------------------------------------------------------------------
+Thu Apr  3 18:43:41 CEST 2008 - ms@suse.de
+
+- update tramslations for SUSE 11.0
+
+-------------------------------------------------------------------
+Mon Mar 31 12:37:19 CEST 2008 - sndirsch@suse.de
+
+- sax2-novnc.diff
+  * disable VNC mode configuration (fate #302884)
+
+-------------------------------------------------------------------
+Sat Mar 29 13:29:39 CET 2008 - ms@suse.de
+
+- yet another gt3 to qt4 porting bug, fixed importing
+  keyboard configuration information (bnc #373700)
+
+-------------------------------------------------------------------
+Fri Mar 21 22:00:33 CET 2008 - sndirsch@suse.de
+
+- disable-vmmouse.diff
+  * no longer use vmmouse driver by default (bnc #372189) 
+
+-------------------------------------------------------------------
+Thu Mar 20 14:27:11 CET 2008 - sndirsch@suse.de
+
+- enable-zapwarning.diff
+  * enable Zapwarning flag by default (FATE #302988)
+
+-------------------------------------------------------------------
+Wed Mar 19 17:57:48 CET 2008 - ms@suse.de
+
+- fixed evdev setup for keyboards (bnc #369153)
+- update translations
+
+-------------------------------------------------------------------
+Fri Mar 14 15:20:31 CET 2008 - sndirsch@suse.de
+
+- AIGLX+Composite4nv_nvidia_fglrx_intel.diff:
+  * enable Composite for nv/nvidia (bnc #247374)
+  * enable AIGLX + Composite for fglrx/intel (bnc #247374)
+
+-------------------------------------------------------------------
+Fri Mar 14 13:17:10 CET 2008 - ms@suse.de
+
+- added alps touchpad mapping 0x0002 : 0x0008 (bnc #370948)
+- fixed sysp mouse nutshell algorithm (bnc #370948)
+
+-------------------------------------------------------------------
+Thu Mar 13 11:59:59 CET 2008 - ms@suse.de
+
+- added Apple -> synaptics mouse driver mapping (bnc #250427)
+
+-------------------------------------------------------------------
+Tue Mar 11 16:00:43 CET 2008 - ms@suse.de
+
+- added keyboard patch by Stefan Dirsch <sndirsch@suse.de> (bnc #369153)
+
+-------------------------------------------------------------------
+Mon Mar 10 15:01:42 CET 2008 - ms@suse.de
+
+- fixed synaptics device detection due to id changes (bnc #368640)
+- fixed duplicate InputDevice entries (bnc #368589)
+
+-------------------------------------------------------------------
+Fri Mar  7 17:58:44 CET 2008 - ms@suse.de
+
+- fixed libsax::addItem() function (bnc #351627)
+
+-------------------------------------------------------------------
+Fri Mar  7 12:22:19 CET 2008 - ms@suse.de
+
+- added setup of PreferredMode option in Monitor section
+
+-------------------------------------------------------------------
+Thu Mar  6 09:28:56 CET 2008 - ms@suse.de
+
+- changed xtest to call icewem with -t yast2
+- fixed qx.c to use sprintf in a correct way (bnc #351627)
+- fixed Profile.pm to detect if there is no DDC2 data (bnc #351627)
+- update hwinfo source
+
+-------------------------------------------------------------------
+Tue Mar  4 09:41:27 CET 2008 - ms@suse.de
+
+- added vboxmouse profile on 0x80ee/0x0100 (bnc #358460)
+- added vmware mouse profile on 0x15ad/0x0100 (bnc #358460)
+
+-------------------------------------------------------------------
+Mon Mar  3 17:59:08 CET 2008 - ms@suse.de
+
+- update hwinfo source
+
+-------------------------------------------------------------------
+Mon Mar  3 12:54:51 CET 2008 - ms@suse.de
+
+- flex 2.5.31 and newer has a "feature" that it declares the yylineno
+  variable in the generated scanner even if the generated code won't use
+  it (flex wasn't run with --yylineno). I used to patch this out, because
+  it caused unnecessary trouble for packages happen to use a private
+  'yylineno' variable (sax2 being one of them). Unfortunately the
+  testsuite in newer flex explicitly checks that yylineno is always
+  declared, therefore I'd like to remove the patch. Also sax2 seems to be
+  the only package that still breaks due to yylineno. The best option IMO
+  is to rename the variable to something else
+
+  ==> renamed yylineno to lineno
+
+-------------------------------------------------------------------
+Fri Feb 29 13:28:51 CET 2008 - ms@suse.de
+
+- added DELL 1908FP monitor to CDB (bnc #362174)
+
+-------------------------------------------------------------------
+Thu Feb 28 15:31:37 CET 2008 - ms@suse.de
+
+- moved internal perl bindings to the library package (bnc #365593)
+- fixed some rpmlint complains (bnc #365593)
+
+-------------------------------------------------------------------
+Fri Feb 22 10:03:50 CET 2008 - ms@suse.de
+
+- added SaX2-theme-Oxygen by default (bnc #363763)
+
+-------------------------------------------------------------------
+Wed Feb 20 09:57:37 CET 2008 - ms@suse.de
+
+- added dynamic xen-mouse.pl profile to use the RealDevice for
+  the Xen Virtual Pointer VID 0x0210 DID 0x0018 (bnc #359500)
+
+-------------------------------------------------------------------
+Mon Feb 18 12:03:05 CET 2008 - ms@suse.de
+
+- cleanup spec file, avoid java to be part of the buildsystem if
+  it is not requested with the macro build_java
+
+-------------------------------------------------------------------
+Mon Feb 18 11:42:25 CET 2008 - ms@suse.de
+
+- make icewem the default windowmanager for xw
+
+-------------------------------------------------------------------
+Mon Feb 18 11:03:48 CET 2008 - ms@suse.de
+
+- added missing XKB keys
+
+-------------------------------------------------------------------
+Sun Feb 17 17:15:11 CET 2008 - ms@suse.de
+
+- added vboxmouse and vmmouse for _manual_ selection (bnc #358460)
+
+-------------------------------------------------------------------
+Sat Feb 16 18:28:56 CET 2008 - ms@suse.de
+
+- fixed xfine for qt4
+
+-------------------------------------------------------------------
+Fri Feb 15 14:58:58 CET 2008 - ms@suse.de
+
+- disabled hp-virt_man_dev.diff (bnc #355911, comment #8)
+- hp-virt_man_dev.diff
+  * suport for HP Virtual Management Device (bnc #355911,
+  fate #302599)
+
+-------------------------------------------------------------------
+Wed Feb 13 14:48:40 CET 2008 - ms@suse.de
+
+- added CDB entry for Samsung LE23R8 (bnc #361010)
+
+-------------------------------------------------------------------
+Fri Feb  8 20:25:11 CET 2008 - ms@suse.de
+
+- fixed resolution algorithm which was broken due to qt4 port (bnc #359495)
+
+-------------------------------------------------------------------
+Fri Feb  8 10:42:27 CET 2008 - ms@suse.de
+
+- leave mouse device as part of the configuration in Xen (bnc #359500)
+
+-------------------------------------------------------------------
+Wed Feb  6 09:39:41 CET 2008 - ms@suse.de
+
+- disable DDC based setup of resolution selection box (bnc #358346)
+
+-------------------------------------------------------------------
+Tue Feb  5 17:54:52 CET 2008 - ms@suse.de
+
+- update hwinfo source, fixed sysp (bnc #358800)
+
+-------------------------------------------------------------------
+Mon Feb  4 15:18:54 CET 2008 - ms@suse.de
+
+- update Identity map for all architectures (bnc #358344)
+
+-------------------------------------------------------------------
+Fri Feb  1 15:00:56 CET 2008 - ms@suse.de
+
+- fixed xfine project file, requires 32bit lib on 64bit system
+
+-------------------------------------------------------------------
+Fri Feb  1 11:18:30 CET 2008 - ms@suse.de
+
+- prevent DisplaySize from beeing combined (bnc #357597)
+
+-------------------------------------------------------------------
+Thu Jan 31 18:01:09 CET 2008 - ms@suse.de
+
+- fixed QTextOStream usage in Qt4. Several strange GUI problems
+  are now fixed. For example the resolution selection combo box
+
+-------------------------------------------------------------------
+Wed Jan 30 17:36:25 CET 2008 - ms@suse.de
+
+- removed fvwm2 requirement, use icewm-bin instead
+
+-------------------------------------------------------------------
+Tue Jan 29 15:30:10 CET 2008 - ms@suse.de
+
+- fixed segfault, related to (bnc #354386)
+
+-------------------------------------------------------------------
+Mon Jan 28 10:50:22 CET 2008 - ms@suse.de
+
+- added support for radeonhd randr v1.2 configuration (bnc #351627)
+
+-------------------------------------------------------------------
+Thu Jan 24 14:42:51 CET 2008 - ms@suse.de
+
+- ported sax2 to libqt4, thanks to Tom Patzig (#354386)
+
+-------------------------------------------------------------------
+Thu Jan 24 10:42:47 CET 2008 - ms@suse.de
+
+- use nobus setup for FireGL profile (#355681)
+
+-------------------------------------------------------------------
+Thu Jan 24 10:10:22 CET 2008 - ms@suse.de
+
+- added xen-mouse evdev map (FATE: #302948)
+
+-------------------------------------------------------------------
+Wed Jan 23 15:50:04 CET 2008 - ms@suse.de
+
+- added fate resolution feature: (FATE: #302987)
+
+-------------------------------------------------------------------
+Tue Jan 15 15:21:53 CET 2008 - ms@suse.de
+
+- added Identity sort patch (#353865)
+
+-------------------------------------------------------------------
+Mon Jan 14 10:16:51 CET 2008 - ms@suse.de
+
+- added microsoft-IntelliMouse-Explorer profile. Patch by
+  Stefan Dirsch <sndirsch@novell.com> (#353185)
+
+-------------------------------------------------------------------
+Tue Jan  1 15:45:00 CET 2008 - ms@suse.de
+
+- fixed modeline timings for Samsumg SyncMister 213t (#350919)
+
+-------------------------------------------------------------------
+Wed Dec 19 08:52:48 CET 2007 - ms@suse.de
+
+- added CDB tablet patches by Danny Kukawka <dkukawka@novell.com> (#323541)
+
+-------------------------------------------------------------------
+Wed Dec 12 10:25:15 CET 2007 - ms@suse.de
+
+- added Xen:Virtual Pointer to cdb/Pointers (FATE: #302948)
+
+-------------------------------------------------------------------
+Fri Dec  7 10:24:31 CET 2007 - ms@suse.de
+
+- fixed cut call, fields are are numbered from 1 (#346740)
+- update Identity maps for all architectures (#346740)
+
+-------------------------------------------------------------------
+Thu Dec  6 16:12:56 CET 2007 - ms@suse.de
+
+- fixed setup of inverting pointer Y-axis (#343795)
+
+-------------------------------------------------------------------
+Tue Nov 27 14:56:04 CET 2007 - ms@suse.de
+
+- fixed typographic error 1440*900 WXGA is 1440*900 WXGA+ (#344243)
+
+-------------------------------------------------------------------
+Mon Nov 26 17:17:47 CET 2007 - ms@suse.de
+
+- update FireGL profile
+
+-------------------------------------------------------------------
+Sun Nov 18 11:02:41 CET 2007 - ms@suse.de
+
+- fixed resolution list setup for fbdev and vesa driver (#342047)
+
+-------------------------------------------------------------------
+Wed Nov 14 15:39:59 CET 2007 - ms@suse.de
+
+- added Identity patch by Stefan Dirsch <sndirsch@novell.com>
+  which activates fbdev for RN50 on ppc (#341406)
+
+-------------------------------------------------------------------
+Mon Nov 12 10:09:32 CET 2007 - ms@suse.de
+
+- fixed build for new gcc compiler (beta)
+
+-------------------------------------------------------------------
+Mon Nov  5 09:44:12 CET 2007 - ms@suse.de
+
+- activate evdev profiles for logitech-* profiles (#337822)
+- Added spp patch and new logitech evdev profiles
+  by Stefan Dirsch <sndirsch@novell.com> (#337822)
+
+-------------------------------------------------------------------
+Wed Oct 31 12:13:28 CET 2007 - ms@suse.de
+
+- fixed variant setup (#337513)
+
+-------------------------------------------------------------------
+Tue Oct 30 15:18:43 CET 2007 - ms@suse.de
+
+- disabled profiles logitech-Gaming, logitech-MediaPlay
+  logitech-mxlaser and logitech-optical (#337822)
+
+-------------------------------------------------------------------
+Tue Oct 30 13:21:28 CET 2007 - ms@suse.de
+
+- don't add xfree86 as variant. use basic if no variant is set (#337513)
+
+-------------------------------------------------------------------
+Wed Oct 17 10:44:30 CEST 2007 - ms@suse.de
+
+- really added HorizScrollDelta to synaptics profile (#223827)
+
+-------------------------------------------------------------------
+Tue Oct 16 10:35:46 CEST 2007 - ms@suse.de
+
+- added NoModelines profile for nvidia driver (#285003)
+
+-------------------------------------------------------------------
+Mon Oct 15 15:10:37 CEST 2007 - ms@suse.de
+
+- fixed intel dualhead position setup (#330348)
+
+-------------------------------------------------------------------
+Tue Oct  2 16:39:02 CEST 2007 - ms@suse.de
+
+- added logitech-optical profile for mouse 0xc040 (#329666)
+
+-------------------------------------------------------------------
+Fri Sep 28 17:04:51 CEST 2007 - ms@suse.de
+
+- fixed NoModelines profile remove SpecialModeline as well (#328939)
+
+-------------------------------------------------------------------
+Fri Sep 28 10:31:28 CEST 2007 - ms@suse.de
+
+- fixed modeline trigger in GUI (#328939)
+
+-------------------------------------------------------------------
+Tue Sep 25 10:05:28 CEST 2007 - ms@suse.de
+
+- allow "Logitech USB R*" evdev matching (#327290)
+
+-------------------------------------------------------------------
+Mon Sep 24 19:10:20 CEST 2007 - ms@suse.de
+
+- fixed microsoft-natural keyboard profile (#327017)
+
+-------------------------------------------------------------------
+Mon Sep 24 15:39:47 CEST 2007 - ms@suse.de
+
+- added CDB record for SGX GDM-5411 monitor (#327171)
+- update Identity maps for all architectures (#326503)
+
+-------------------------------------------------------------------
+Mon Sep 24 10:14:43 CEST 2007 - ms@suse.de
+
+- update Identity maps for all architectures (#327568)
+
+-------------------------------------------------------------------
+Thu Sep 20 17:33:22 CEST 2007 - ms@suse.de
+
+- update Identity maps for all architectures (#309546)
+
+-------------------------------------------------------------------
+Thu Sep 20 09:42:27 CEST 2007 - ms@suse.de
+
+- update hwinfo source
+
+-------------------------------------------------------------------
+Tue Sep 18 11:17:29 CEST 2007 - ms@suse.de
+
+- update Identity maps for all architectures
+
+-------------------------------------------------------------------
+Mon Sep 17 17:25:32 CEST 2007 - ms@suse.de
+
+- update translations
+
+-------------------------------------------------------------------
+Mon Sep 17 13:53:15 CEST 2007 - ms@suse.de
+
+- fixed logitech evdev profiles. Thanks to
+  Stefan Dirsch <sndirsch@suse.de> who provided the patch (#310305)
+
+-------------------------------------------------------------------
+Mon Sep 17 09:50:34 CEST 2007 - ms@suse.de
+
+- fixed null pointer dereference in xapi (#320480)
+
+-------------------------------------------------------------------
+Thu Sep 13 13:37:21 CEST 2007 - ms@suse.de
+
+- added patch from Michal Kubeček <bh-novell@mk-sys.cz>
+  fixing a buffer overflow in parse.yc,parse.l (#309009)
+
+-------------------------------------------------------------------
+Thu Sep 13 10:34:15 CEST 2007 - ms@suse.de
+
+- added a check for the mode string of the bootloader update (#310115)
+
+-------------------------------------------------------------------
+Wed Sep 12 16:00:58 CEST 2007 - ms@suse.de
+
+- added evdev logitech patch, adding vendor ID's (#262317) 
+- removed use of evdev for 0x046d:0xc041 (#262317)
+
+-------------------------------------------------------------------
+Wed Sep 12 09:51:31 CEST 2007 - ms@suse.de
+
+- update hwinfo source
+
+-------------------------------------------------------------------
+Mon Sep 10 11:20:11 CEST 2007 - ms@suse.de
+
+- sax2-libsax-perl is required by sax2-libsax (#309125)
+
+-------------------------------------------------------------------
+Fri Sep  7 09:53:47 CEST 2007 - ms@suse.de
+
+- update hwinfo source
+
+-------------------------------------------------------------------
+Tue Sep  4 09:17:38 CEST 2007 - ms@suse.de
+
+- update Identity maps for all architectures (#307218)
+- update hwinfo source
+
+-------------------------------------------------------------------
+Fri Aug 31 09:48:47 CEST 2007 - ms@suse.de
+
+- fixed build for stable
+
+-------------------------------------------------------------------
+Thu Aug 30 10:36:20 CEST 2007 - ms@suse.de
+
+- update hwinfo source
+- fixed broken modeline handling in ImportAPI.pm (#305890)
+- added option DontZap *** against my wishes *** (#59038)
+
+-------------------------------------------------------------------
+Wed Aug 29 11:21:41 CEST 2007 - ms@suse.de
+
+- fixed syntax bug in Xinerama.pl (#305051)
+
+-------------------------------------------------------------------
+Tue Aug 28 11:41:19 CEST 2007 - ms@suse.de
+
+- added check for init stage Monitor entries (#304597)
+
+-------------------------------------------------------------------
+Mon Aug 27 18:43:06 CEST 2007 - ms@suse.de
+
+- update hwinfo source
+
+-------------------------------------------------------------------
+Mon Aug 27 14:05:32 CEST 2007 - ms@suse.de
+
+- fixed sax2 card selection (option -c)
+
+-------------------------------------------------------------------
+Fri Aug 24 10:43:06 CEST 2007 - ms@suse.de
+
+- fixed monitor names. The " sign is not allowed here (#304142)
+- update translations and hwinfo monitor edid block changes
+
+-------------------------------------------------------------------
+Thu Aug 23 15:08:30 CEST 2007 - ms@suse.de
+
+- added EDID first modeline block (#287093)
+
+-------------------------------------------------------------------
+Thu Aug 23 10:12:58 CEST 2007 - ms@suse.de
+
+- fixed keyboard model/type setup (#302107)
+
+-------------------------------------------------------------------
+Wed Aug 22 12:51:25 CEST 2007 - ms@suse.de
+
+- fixed intel position setup (#270846)
+
+-------------------------------------------------------------------
+Tue Aug 21 10:12:22 CEST 2007 - ms@suse.de
+
+- Include hwinfo changes
+- fixed data record for USB gaming mouse (#262317)
+- update Identity maps for all architectures (#300604)
+- fixed randr plugin setup (#270846)
+
+-------------------------------------------------------------------
+Mon Aug 20 16:24:04 CEST 2007 - ms@suse.de
+
+- fixed xkb options reset (#301040)
+- fixed randr plugin detection (#270846)
+
+-------------------------------------------------------------------
+Sun Aug 19 21:19:29 CEST 2007 - ms@suse.de
+
+- update translations
+- update Identity maps for all architectures (#199376)
+- added apply information, related to (#285603)
+- added ibm-trackpoint profile (#301713)
+
+-------------------------------------------------------------------
+Mon Aug 13 10:06:18 CEST 2007 - ms@suse.de
+
+- added dualhead support for new intel driver (#270846)
+
+-------------------------------------------------------------------
+Fri Aug 10 19:02:01 CEST 2007 - ms@suse.de
+
+- fixed modeline validation (#287093)
+- update Identity maps for all architectures (##299265)
+- update translations and hwinfo source
+
+-------------------------------------------------------------------
+Sun Aug  5 17:38:49 CEST 2007 - ms@suse.de
+
+- Include hwinfo changes
+- update Identity maps for all architectures (#296006)
+- Include libhd patch (#296964)
+
+-------------------------------------------------------------------
+Fri Jul 27 08:42:58 CEST 2007 - ms@suse.de
+
+- Include hwinfo changes:
+  fixed framebuffer color depth calculation (#294334)
+
+-------------------------------------------------------------------
+Fri Jul 20 10:04:34 CEST 2007 - ms@suse.de
+
+- fixed broken X11 connection if framebuffer is in use (#292951)
+- including missing XKB keys (#292951)
+
+-------------------------------------------------------------------
+Thu Jul 19 13:49:41 CEST 2007 - ms@suse.de
+
+- moved documentation into devel package (#293020)
+
+-------------------------------------------------------------------
+Thu Jul 19 09:11:20 CEST 2007 - ms@suse.de
+
+- added french/belgium Keyboard.map patch (#290355)
+
+-------------------------------------------------------------------
+Mon Jul 16 09:23:52 CEST 2007 - ms@suse.de
+
+- fixed grub updater to change vga value to correct hex numbers
+
+-------------------------------------------------------------------
+Mon Jul  9 17:17:46 CEST 2007 - ms@suse.de
+
+- update Identity maps for all architectures
+- update translations
+
+-------------------------------------------------------------------
+Fri Jun 22 17:31:48 CEST 2007 - ms@suse.de
+
+- fixed DDC resolution validation in libsax (#285232)
+- include hwinfo changes
+
+-------------------------------------------------------------------
+Fri Jun 22 16:30:08 CEST 2007 - ms@suse.de
+
+- fixed compiler warnings, cleanup code
+- fixed some not all rpmlint warnings and errors
+
+-------------------------------------------------------------------
+Fri Jun 22 11:07:34 CEST 2007 - ms@suse.de
+
+- added Samsung SyncMaster 940BW (#286595)
+
+-------------------------------------------------------------------
+Wed Jun 20 10:55:54 CEST 2007 - ms@suse.de
+
+- reset xkb options before setting new one (#285603)
+
+-------------------------------------------------------------------
+Tue Jun 19 10:13:17 CEST 2007 - ms@suse.de
+
+- added Samsung SyncMaster 226BW to CDB (#285111)
+
+-------------------------------------------------------------------
+Mon Jun 18 13:53:44 CEST 2007 - ms@suse.de
+
+- more robust vga parameter handling in createGRB.pl
+
+-------------------------------------------------------------------
+Thu Jun 14 12:20:29 CEST 2007 - ms@suse.de
+
+- removed 915resolution requirement for suse > 10.2 (#266362)
+
+-------------------------------------------------------------------
+Tue Jun  5 10:05:35 CEST 2007 - ms@suse.de
+
+- fixed segfault during DDC/FBDEV resolution validation (#279951)
+- fixed build (#280462)
+
+-------------------------------------------------------------------
+Mon Jun  4 16:15:36 CEST 2007 - ms@suse.de
+
+- added /var/log/SaX.log as %ghost config to spec file (#280462)
+- fixed monitor detection for FSC AMILO Pro V3205 (#279920)
+
+-------------------------------------------------------------------
+Fri May 25 10:24:26 CEST 2007 - ms@suse.de
+
+- disable resolution check in testX app (#273147)
+
+-------------------------------------------------------------------
+Thu May 24 11:33:59 CEST 2007 - ms@suse.de
+
+- added grub updater (#277325) 
+
+-------------------------------------------------------------------
+Mon May 21 10:43:45 CEST 2007 - ms@suse.de
+
+- update x11 DB for use of intel driver (#214943)
+- added Samsung 931C monitor into the CDB (#275595)
+
+-------------------------------------------------------------------
+Thu May 17 12:12:29 CEST 2007 - ms@suse.de
+
+- include hwinfo changes
+
+-------------------------------------------------------------------
+Wed May 16 10:01:06 CEST 2007 - ms@suse.de
+
+- do not calculate modelines if fbdev driver is used (#265498)
+
+-------------------------------------------------------------------
+Fri May 11 17:34:32 CEST 2007 - ms@suse.de
+
+- include hwinfo changes
+
+-------------------------------------------------------------------
+Fri May 11 13:56:37 CEST 2007 - ms@suse.de
+
+- don't use MouseManPlusPS/2 protocol (#271256)
+- removed strings usage, replaced by grep -a and therefore
+  removed binutils requirement (#273595)
+
+-------------------------------------------------------------------
+Fri May 11 08:13:08 CEST 2007 - ms@suse.de
+
+- update Identity maps for all architectures (#271741)
+
+-------------------------------------------------------------------
+Tue May  8 00:14:08 CEST 2007 - schwab@suse.de
+
+- Fix uninitialized data.
+
+-------------------------------------------------------------------
+Fri May  4 09:24:37 CEST 2007 - ms@suse.de
+
+- include hwinfo changes
+
+-------------------------------------------------------------------
+Thu May  3 14:37:41 CEST 2007 - ms@suse.de
+
+- update translations
+- added support for reverse layout (right-to-left languages).
+  The sax translation file offers a key named "I18N" which could
+  be translated as "RTL". In this case the application will use
+  the reverse layout for displaying the data (#268608)
+
+-------------------------------------------------------------------
+Thu May  3 13:43:56 CEST 2007 - ms@suse.de
+
+- fixed info messages not to be showed if specific dialog is
+  requested by option --dialog | -O (#269787)
+
+-------------------------------------------------------------------
+Tue May  1 10:46:22 CEST 2007 - ms@suse.de
+
+- added opendir patch by Dieter Jäger <dieter@linuxjaeger.de>
+  libsax bug which causes an endless loop if there is no xfine
+  cache directory
+
+-------------------------------------------------------------------
+Thu Apr 26 10:11:26 CEST 2007 - ms@suse.de
+
+- disabled modeline calculation for nv driver (#230961)
+- fixed monitor detection for Belinea 105075 (#261155)
+
+-------------------------------------------------------------------
+Fri Apr 20 16:35:47 CEST 2007 - ms@suse.de
+
+- added MonitorLayout setup for radeon driver in xapi (#263199)
+
+-------------------------------------------------------------------
+Thu Apr 19 15:21:48 CEST 2007 - ms@suse.de
+
+- fixed sax2 manual page (#266190)
+
+-------------------------------------------------------------------
+Tue Apr 17 15:54:51 CEST 2007 - ms@suse.de
+
+- removed help button, not needed (#215213)
+
+-------------------------------------------------------------------
+Tue Apr 17 10:16:45 CEST 2007 - ms@suse.de
+
+- removed X11 font server support (#262444)
+- added radeon MonitorLayout patch by Matthias Hopf (#263199)
+- update translations
+
+-------------------------------------------------------------------
+Mon Apr 16 07:49:28 CEST 2007 - ms@suse.de
+
+- resolving symlinks in sysfs did not work properly
+- updated X11 data
+
+-------------------------------------------------------------------
+Sat Apr  7 10:53:24 CEST 2007 - ms@suse.de
+
+- update Identity maps for all architectures
+
+-------------------------------------------------------------------
+Fri Mar 30 14:24:14 CEST 2007 - rguenther@suse.de
+
+- add flex and bison BuildRequires
+
+-------------------------------------------------------------------
+Fri Mar 30 09:57:29 CEST 2007 - ms@suse.de
+
+- added evdev support for Logitech Bluetooth Mouse (mxlaser)
+- fixed synaptics default configuration
+
+-------------------------------------------------------------------
+Wed Mar 28 17:47:36 CEST 2007 - ms@suse.de
+
+- changed FingerHigh from 15 to 17 for alps touchpads (#179966)
+
+-------------------------------------------------------------------
+Wed Mar 28 14:54:21 CEST 2007 - ms@suse.de
+
+- fixed invalid resolution lookup (#257323)
+
+-------------------------------------------------------------------
+Mon Mar 26 16:38:27 CEST 2007 - ms@suse.de
+
+- added Intel driver options (#237676)
+
+-------------------------------------------------------------------
+Wed Mar 21 15:49:00 CET 2007 - ms@suse.de
+
+- add intel to checkForIntelBoard() (#250133)
+
+-------------------------------------------------------------------
+Mon Mar 19 10:13:08 CET 2007 - ms@suse.de
+
+- add eurosign: group to the XKB options setup (#181116)
+
+-------------------------------------------------------------------
+Fri Mar 16 16:22:39 CET 2007 - ms@suse.de
+
+- include libhd changed v13.29
+
+-------------------------------------------------------------------
+Tue Mar 13 20:38:26 CET 2007 - ms@suse.de
+
+- fixed WACOM:ISDV4 TABLET PC setup (#254161)
+
+-------------------------------------------------------------------
+Tue Mar 13 20:18:41 CET 2007 - ms@suse.de
+
+- fixed reading monitor disk/CD/DVD (#239608)
+
+-------------------------------------------------------------------
+Fri Mar  9 13:41:06 CET 2007 - ms@suse.de
+
+- changed driver map i810beta is now intel
+
+-------------------------------------------------------------------
+Thu Mar  8 09:53:06 CET 2007 - ms@suse.de
+
+- update identity maps for all architectures
+
+-------------------------------------------------------------------
+Tue Mar  6 09:40:17 CET 2007 - ms@suse.de
+
+- disabled loading of the v4l module (#229228)
+
+-------------------------------------------------------------------
+Fri Mar  2 14:23:42 CET 2007 - ms@suse.de
+
+- removed the PenabledTabletPC entry from the touchscreen
+  section. This is in fact a tablet represented by the entry
+  ISDV4 Tablet PC (Serial) within the Tablet section (#250587)
+- fixed segfault when clicking in empty options box (#250564)
+- added options for the fpit driver (#250564)
+
+-------------------------------------------------------------------
+Fri Mar  2 09:43:05 CET 2007 - ms@suse.de
+
+- include hwinfo changes v13.27
+- added checkForIntelBoard() function to init sequence (#250133)
+- by default 3D is enabled now for all cards (#250129)
+- added FinePoint tablet support (#250151)
+
+-------------------------------------------------------------------
+Thu Mar  1 12:48:06 CET 2007 - ms@suse.de
+
+- changed X -> Xorg in Profile.pm
+
+-------------------------------------------------------------------
+Wed Feb 28 12:17:00 CET 2007 - ms@suse.de
+
+- include hwinfo changes v13.25
+
+-------------------------------------------------------------------
+Thu Feb 22 15:08:14 CET 2007 - ms@suse.de
+
+- include hwinfo changes v13.23
+
+-------------------------------------------------------------------
+Thu Feb 22 11:48:22 CET 2007 - ms@suse.de
+
+- update translations [hu,lt,ru,el,cs,et]
+
+-------------------------------------------------------------------
+Wed Feb 21 10:35:38 CET 2007 - ms@suse.de
+
+- added GARTSize option to Radeon driver profile (#247242)
+
+-------------------------------------------------------------------
+Tue Feb 20 15:11:41 CET 2007 - ms@suse.de
+
+- append Xaa options to getCardOptions() method (#245661)
+
+-------------------------------------------------------------------
+Mon Feb 19 14:22:56 CET 2007 - ms@suse.de
+
+- fixed overbound array access (#246655)
+
+-------------------------------------------------------------------
+Thu Feb 15 12:44:09 CET 2007 - ms@suse.de
+
+- include hwinfo changes v13.22
+
+-------------------------------------------------------------------
+Wed Feb 14 17:18:38 CET 2007 - ms@suse.de
+
+- fixed use of uninitialized bootDisplay pointer (#245396)
+
+-------------------------------------------------------------------
+Mon Feb 12 11:31:07 CET 2007 - ms@suse.de
+
+- added 3D warning message in case of unsupported graphics cards
+  or unsupported multihead extensions like Xorg Xinerama (#242062)
+
+-------------------------------------------------------------------
+Mon Feb 12 09:50:40 CET 2007 - ms@suse.de
+
+- fixed build on beta
+
+-------------------------------------------------------------------
+Fri Feb  9 15:35:59 CET 2007 - ms@suse.de
+
+- added 1440x900 into LCD and VESA section (#242062)
+
+-------------------------------------------------------------------
+Thu Feb  8 11:41:54 CET 2007 - ms@suse.de
+
+- fixed monitor record for Fujitsu 21P4 (#237683)
+
+-------------------------------------------------------------------
+Thu Feb  1 13:26:59 CET 2007 - ms@suse.de
+
+- fixed sysp detection (#240693)
+
+-------------------------------------------------------------------
+Wed Jan 31 12:36:13 CET 2007 - ms@suse.de
+
+- fixed compiler warning
+- prevent domain busid on probeonly call in sysp for ppc
+  and don't set busid in case of fbdev
+
+-------------------------------------------------------------------
+Wed Jan 31 10:11:39 CET 2007 - ms@suse.de
+
+- ask X-Server if colordepth value is unknown, related to (#236670)
+- added fbdev yast2 bootloader information to the logfile (#234142) 
+
+-------------------------------------------------------------------
+Tue Jan 30 16:04:14 CET 2007 - ms@suse.de
+
+- fixed GUI crash if no default color depth is set (#233847)
+- don't set default color depth on fbdev devices (#233847)
+- don't set bus ID on fbdev devices (#233847)
+
+-------------------------------------------------------------------
+Mon Jan 29 15:53:36 CET 2007 - ms@suse.de
+
+- update Identity maps for all architectures (#236670)
+- added patch from schwab@suse.de fixing usage of alps driver
+  for Apple Internal Touchpad [ALPS]
+
+-------------------------------------------------------------------
+Mon Jan 29 09:14:19 CET 2007 - ms@suse.de
+
+- there are usb tapes (#222978)
+- apple vs. pc kbd layout issue solved for ppc (#233968)
+
+-------------------------------------------------------------------
+Wed Jan 24 09:18:35 CET 2007 - ms@suse.de
+
+- added LinearAlloc profile for the i810 driver profile (#237674)
+
+-------------------------------------------------------------------
+Tue Jan 23 15:17:11 CET 2007 - ms@suse.de
+
+- added full set of options for i810 driver (#237674)
+- added partial support for fbdev setup. YaST bootloader setup is
+  missing [ not yet finished ] (#234142)
+
+-------------------------------------------------------------------
+Wed Jan 10 09:29:19 CET 2007 - ms@suse.de
+
+- update manual page [sax2]
+
+-------------------------------------------------------------------
+Tue Jan  9 12:20:16 CET 2007 - ms@suse.de
+
+- activated evdev support for Logitech-Gaming and Logitech-MediaPlay
+  mouse. These devices have been tested successfully. General support
+  for evdev instead of mouse is planed as soon as evdev is stable for
+  all common devices (#231189)
+
+-------------------------------------------------------------------
+Mon Jan  8 14:46:56 CET 2007 - ms@suse.de
+
+- added ButtonMapping to support left hand mouse (#231081)
+
+-------------------------------------------------------------------
+Mon Jan  8 09:22:40 CET 2007 - ms@suse.de
+
+- added Bridge BM10A monitor to the CDB
+- added 10.0 traversal support
+
+-------------------------------------------------------------------
+Thu Dec 21 15:05:47 CET 2006 - ms@suse.de
+
+- fixed tablet config and added wacom pad support (#229886)
+
+-------------------------------------------------------------------
+Tue Dec 19 16:29:18 CET 2006 - ms@suse.de
+
+- changed system of intel patch map, use black list of devices
+  instead of a white list. For details see bug: (#201338)
+
+-------------------------------------------------------------------
+Mon Dec 18 11:56:42 CET 2006 - ms@suse.de
+
+- added BIOS patch for Dell Inspiron 510m (#223745)
+- added BIOS patch for Dell Inspiron 640m (#223745)
+- added BIOS patch for Intel 865 G / BenQ FP91GX (#229241)
+
+-------------------------------------------------------------------
+Wed Dec 13 13:50:04 CET 2006 - ms@suse.de
+
+- added support for TwinViewXineramaInfoOrder (#227592)
+- fixed keyboard navigation and tablet import() flag (#228156)
+- fixed WinINF monitor disk parser (#227393)
+
+-------------------------------------------------------------------
+Tue Dec 12 10:46:46 CET 2006 - ms@suse.de
+
+- fixed size information for MultiMedia Display (#227111)
+
+-------------------------------------------------------------------
+Mon Dec 11 11:52:01 CET 2006 - ms@suse.de
+
+- activate microsoftpro for all pc104/pc105 keyboards (#210881)
+
+-------------------------------------------------------------------
+Fri Dec  8 13:57:47 CET 2006 - ms@suse.de
+
+- added Samsung Syncmaster 940T into the CDB (#226746)
+- added BIOS patch for Samsung X20 (#226756)
+
+-------------------------------------------------------------------
+Wed Dec  6 15:42:10 CET 2006 - ms@suse.de
+
+- added BIOS patch for Dell D620 device (#223745)
+
+-------------------------------------------------------------------
+Tue Dec  5 15:48:07 CET 2006 - ms@suse.de
+
+- Added DisplaySize setup for horizontal and vertical layout (#219468)
+- If DDC data available show only DDC available resolutions plus two
+  default resolutions which are 1024x768 and 800x600 (#223651)
+- added BIOS patch for HP nc2400/nc6400/nx7400 (#226023)
+
+-------------------------------------------------------------------
+Thu Nov 30 13:57:00 CET 2006 - ms@suse.de
+
+- fixed internationalization of display tab naming (#218433)
+
+-------------------------------------------------------------------
+Wed Nov 29 17:23:41 CET 2006 - ms@suse.de
+
+- added Dell D820 to the IntelPatch.map (#224528)
+
+-------------------------------------------------------------------
+Tue Nov 28 16:20:15 CET 2006 - ms@suse.de
+
+- update libsax version to v7.3
+- added libsax method to obtain the DDC resolution list
+- activate memory detection again, XServer has been fixed (#215522)
+- add missing XKB keys
+
+-------------------------------------------------------------------
+Tue Nov 28 10:11:45 CET 2006 - ms@suse.de
+
+- deactivate memory detection, workaround for bug (#220197)
+- update i810 patch map for Thinpad R52 and GW MX6923b (#223745)
+- deactivate HorizScrollDelta in synaptics driver (#223827)
+
+-------------------------------------------------------------------
+Mon Nov 27 10:21:23 CET 2006 - ms@suse.de
+
+- fixed keyboard selection (#223799)
+
+-------------------------------------------------------------------
+Fri Nov 24 20:43:02 CET 2006 - ms@suse.de
+
+- update Identity maps. Using i810beta for Intel 965G chipset
+
+-------------------------------------------------------------------
+Fri Nov 24 10:06:47 CET 2006 - ms@suse.de
+
+- update Identity maps. This change will activate 3D for some
+  ATI graphics cards. 3D is activated using the opensource
+  driver
+
+-------------------------------------------------------------------
+Thu Nov 23 14:26:48 CET 2006 - ms@suse.de
+
+- fixed .inf search procedure in WinINF.pm (#223449)
+
+-------------------------------------------------------------------
+Wed Nov 22 18:40:31 CET 2006 - ms@suse.de
+
+- fixed CDB data for Monitor Proview 713s (#223134)
+
+-------------------------------------------------------------------
+Tue Nov 21 11:29:42 CET 2006 - ms@suse.de
+
+- sometimes usb mice were missed (#216091)
+
+-------------------------------------------------------------------
+Mon Nov 20 17:02:56 CET 2006 - ms@suse.de
+
+- added tseng driver profile (#221987)
+- update language translations
+
+-------------------------------------------------------------------
+Mon Nov 20 11:22:51 CET 2006 - ms@suse.de
+
+- added 18.0 Inch display diagonal value  (#222480)
+- added HP LP2065 monitor to the database (#222500)
+- update language translations
+
+-------------------------------------------------------------------
+Fri Nov 17 10:37:25 CET 2006 - ms@suse.de
+
+- fixed monitor specs for Samsung V550 (#221500)
+
+-------------------------------------------------------------------
+Wed Nov 15 15:02:46 CET 2006 - ms@suse.de
+
+- fixed monitor specs for DELL 2007FP (#219389)
+- fixed monitor specs for DELL 1907FP (#220389)
+
+-------------------------------------------------------------------
+Wed Nov 15 10:43:36 CET 2006 - ms@suse.de
+
+- fixed intel patch map detection (#220725)
+- fixed memory detection when multiple cards are installed
+- prevent multiple probeonly calls if one is enough
+
+-------------------------------------------------------------------
+Tue Nov 14 14:59:43 CET 2006 - ms@suse.de
+
+- added patch map for Fujitsu Siemens Lifebook (#220725)
+
+-------------------------------------------------------------------
+Mon Nov 13 09:45:03 CET 2006 - ms@suse.de
+
+- changed xkb layout from microsoft to microsoftpro (#210881)
+- removed dual head display size magic. It's wrong under certain
+  circumstances like clone config or vertical layout (#219468)
+- removed evdev driver support, driver is broken (#220237)
+- added sanity check for the display size in sysp (#219801)
+- fixed Intel (i810) clone setup (#219772)
+- fixed X11 setup on ThinkPad T60p (#220171)
+
+-------------------------------------------------------------------
+Sat Nov 11 20:18:47 CET 2006 - ms@suse.de
+
+- remove Release/Version tag from subpackages
+- fixed build on powerPC this fixes bugs: (#219400,#219405)
+
+-------------------------------------------------------------------
+Wed Nov  8 10:20:01 CET 2006 - ms@suse.de
+
+- fixed 3D support for Radeon R300 cards (#213029)
+- fixed NoDDC profile (#218115)
+
+-------------------------------------------------------------------
+Tue Nov  7 11:32:58 CET 2006 - ms@suse.de
+
+- fixed NoDDC profile: do not include the same option twice
+  even if called twice (#218115)
+- allow up to four serial ports for tablets (#218730)
+- changed dual-head setup of intel driver due to new options
+- fixed sysp memory detection. sysp needs to create a temporary
+  config file to be able to call X with probeonly. This was done
+  for multiple cards only but it is now as well needed for a device
+  count of 1. Additionally vt swtich is done for the complete
+  duration of detection
+- added missing XKB descriptions
+- update translations
+
+-------------------------------------------------------------------
+Mon Nov  6 10:32:52 CET 2006 - ms@suse.de
+
+- added patch map for Intel Mac Mini's internal display (#218352)
+- exchanged libhd framebuffer check to determine the videoram
+  with a X11 probeonly call for the following reasons:
+  1) framebuffer size != videoram
+  2) framebuffer check could cause broken X11 screen which
+     needs a repaint by chvt(1) -> chvt(7)
+
+-------------------------------------------------------------------
+Mon Nov  6 09:47:54 CET 2006 - ms@suse.de
+
+- fixed missing provides/obsoletes (#218235)
+
+-------------------------------------------------------------------
+Thu Nov  2 11:22:27 CET 2006 - ms@suse.de
+
+- update translations
+
+-------------------------------------------------------------------
+Mon Oct 30 14:37:52 CET 2006 - ms@suse.de
+
+- added plausibility check for ddc bandwidth data (#210923)
+- fixed uninitialized bandwidth data if &MsgDetect == 0 (#195630)
+
+-------------------------------------------------------------------
+Mon Oct 30 09:34:51 CET 2006 - ms@suse.de
+
+- fixed desktop file (#216040)
+
+-------------------------------------------------------------------
+Fri Oct 27 11:23:42 CEST 2006 - ms@suse.de
+
+- sometimes it's not really an usb mouse (#208745)
+
+-------------------------------------------------------------------
+Thu Oct 26 09:20:21 CEST 2006 - ms@suse.de
+
+- FHS fix: changed location of dynamically changed profiles
+
+-------------------------------------------------------------------
+Mon Oct 23 09:01:49 CEST 2006 - ms@suse.de
+
+- added plausibility check for monitor display size DDC data
+
+-------------------------------------------------------------------
+Sat Oct 21 18:18:21 CEST 2006 - ms@suse.de
+
+- fixed --lowres mode, use 800x600 instead of 640x480. This
+  seems to be save enough at a level of 60Hz (#214238)
+
+-------------------------------------------------------------------
+Fri Oct 20 13:54:09 CEST 2006 - ms@suse.de
+
+- update hwinfo DDC detection, additional data evaluation code
+
+-------------------------------------------------------------------
+Mon Oct 16 16:45:18 CEST 2006 - ms@suse.de
+
+- update CDB data for Apple 9C5E and Philips 200W
+- fixed round error while calculating traversal length
+
+-------------------------------------------------------------------
+Mon Oct 16 14:01:35 CEST 2006 - ms@suse.de
+
+- added Intel bios patch code for Mac Mini (#212547)
+- use microsoft inet keyboard type as default for latin types (#210881)
+- use libsax for creating automatic configuration
+
+-------------------------------------------------------------------
+Mon Oct 16 10:28:06 CEST 2006 - thoenig@suse.de
+
+- add patch sax2-do-not-close-shared-connection-thoenig-01.patch:
+  Do not close shared connection to the D-Bus system bus.
+
+-------------------------------------------------------------------
+Fri Oct 13 16:46:14 CEST 2006 - ms@suse.de
+
+- update language translations
+
+-------------------------------------------------------------------
+Thu Oct 12 15:49:20 CEST 2006 - ms@suse.de
+
+- update hwinfo patches (v13.7)
+
+-------------------------------------------------------------------
+Tue Oct 10 18:41:40 CEST 2006 - ms@suse.de
+
+- changed patch bios requirement to 915resolution (#201338)
+
+-------------------------------------------------------------------
+Tue Oct 10 11:00:45 CEST 2006 - ms@suse.de
+
+- added support for Multimedia Keyboards (#210881)
+
+-------------------------------------------------------------------
+Wed Sep 27 20:32:11 CEST 2006 - ms@suse.de
+
+- include libhd fixes:
+  - revert TIOCGDEV removal accidentally introduced in v13.0 (#201741)
+  - remove adb code (#206648)
+  - provide bogo mips value (#206649)
+  - no edd unless x86 or x86_64 (#206654)
+  - always use cpu emulation for BIOS calls (#207112)
+  - on dell notebooks, scan 3 ports for monitor data (#162973)
+  - include ACPI dump in log (#143090)
+
+-------------------------------------------------------------------
+Tue Sep 26 21:04:38 CEST 2006 - ms@suse.de
+
+- fixed server detection in case of multiple devices.
+  Several problems like uninitialized variables plus unmatched
+  flex tokens caused this (#205371)
+
+-------------------------------------------------------------------
+Mon Sep 25 17:45:01 CEST 2006 - ms@suse.de
+
+- fixed CD/DVD detection for utility disk feature (#177476)
+
+-------------------------------------------------------------------
+Mon Sep 25 11:45:52 CEST 2006 - ms@suse.de
+
+- fixed location of pci.ids in libpci.a (#207615)
+- changed root mouse cursor from watch to arrow (#207649)
+
+-------------------------------------------------------------------
+Fri Sep 22 11:07:11 CEST 2006 - ms@suse.de
+
+- use libsax to check for IntelPatch.map (#201338)
+- fixed security issue which allows a user to call
+  any command from within a password entry field (#206669)
+- fixed password setup in vnc setup (#206669)
+
+-------------------------------------------------------------------
+Thu Sep 21 13:42:15 CEST 2006 - ms@suse.de
+
+- added support for patching bios using a white list of
+  devices. The IntelPatch.map contains the command and 
+  the parameters to patch the bios (#201338) 
+
+-------------------------------------------------------------------
+Tue Sep 12 16:45:02 CEST 2006 - ms@suse.de
+
+- added DEL1000 monitor profile (#199011)
+
+-------------------------------------------------------------------
+Mon Sep 11 16:01:33 CEST 2006 - ms@suse.de
+
+- use RPM_OPT_FLAGS for building
+
+-------------------------------------------------------------------
+Fri Sep  8 11:56:31 CEST 2006 - ms@suse.de
+
+- added support for evdev driver. As this driver is very new
+  enablement has done for one device only. Details see bug: (#159405)
+
+-------------------------------------------------------------------
+Thu Sep  7 15:33:18 CEST 2006 - ms@suse.de
+
+- update to hwinfo 13.2, better modalias matching (#199112)
+- update to hwinfo 13.2, more device files (#159405)
+
+-------------------------------------------------------------------
+Wed Sep  6 09:53:18 CEST 2006 - ms@suse.de
+
+- update Identity maps for all archs (#199376)
+
+-------------------------------------------------------------------
+Mon Sep  4 11:01:10 CEST 2006 - ms@suse.de
+
+- fixed .pro project file according to last include path
+  fix from Stefan. Added -Iquote ...
+
+-------------------------------------------------------------------
+Sat Sep  2 06:30:01 CEST 2006 - sndirsch@suse.de
+
+- sax2.diff:
+  * finally removed issues when xf86Parser.h/xf86Optrec.h is
+    installed to /usr/include/xorg
+
+-------------------------------------------------------------------
+Fri Sep  1 15:54:27 CEST 2006 - ms@suse.de
+
+- changed VNC module naming and messages to prevent
+  people from being confused about what VNC does in that case
+
+-------------------------------------------------------------------
+Fri Sep  1 14:13:39 CEST 2006 - ms@suse.de
+
+- fixed dependency tree (cyclic dependency)
+
+-------------------------------------------------------------------
+Wed Aug 30 12:39:45 CEST 2006 - ms@suse.de
+
+- added 2560x1600 QSXGA resolution (#202624)
+- added DELL 3007 WFP Display into CDB (#202624)
+
+-------------------------------------------------------------------
+Wed Aug 30 09:29:18 CEST 2006 - ms@suse.de
+
+- include hwinfo patch: missing x86 emulation (#188839)
+- removed usage of libsysfs from sysp
+
+-------------------------------------------------------------------
+Mon Aug 28 11:05:45 CEST 2006 - ms@suse.de
+
+- update monitor database (#143286)
+- update monitor database (#199011)
+- added better information if probing failed (#200146)
+- fixed CloneRefresh setup for Intel driver (#201252)
+- update translations from new lcn repository
+
+-------------------------------------------------------------------
+Sun Aug 27 18:28:29 CEST 2006 - ms@suse.de
+
+- update CDB entries for Xorg v7 (#176265)
+- added IgnoreABI option to FireGL profile
+- fixed fontpath changes between Xorg v6 and v7 (.fontpath)
+- update to hwinfo head branch code, took care for new dbus
+  interface
+
+-------------------------------------------------------------------
+Thu Aug 24 02:54:44 CEST 2006 - thoenig@suse.de
+
+- revert duplication of dbus_connection_unref as libdbus is now
+  fixed
+
+-------------------------------------------------------------------
+Wed Aug 23 12:18:59 CEST 2006 - ro@suse.de
+
+- work around dbus breakage
+
+-------------------------------------------------------------------
+Thu Aug 17 13:23:13 CEST 2006 - olh@suse.de
+
+- quote variable with unpredictable content in build section
+- build as unprivileged user
+- disable sax2-libsax-java for everyone to fix build
+
+-------------------------------------------------------------------
+Sat Aug 12 11:51:27 CEST 2006 - thoenig@suse.de
+
+- Add patch sax2-dbus-api-fix-thoenig-01.patch: Use
+  dbus_connection_close, not dbus_connection_disconnect
+
+-------------------------------------------------------------------
+Fri Aug 11 18:32:12 CEST 2006 - sndirsch@suse.de
+
+- sax2-xorg-fontpath.patch:
+  * fixes wrong fontpath (Bug #198653)
+
+-------------------------------------------------------------------
+Wed Aug  9 09:26:22 CEST 2006 - ms@suse.de
+
+- fixed fglrx driver option (Bug #191839)
+- fixed include path to be able to build for older
+  distributions too
+
+-------------------------------------------------------------------
+Mon Aug  7 11:43:55 CEST 2006 - aj@suse.de
+
+- Fix build failure with xorg7 include files.
+
+-------------------------------------------------------------------
+Thu Jul 27 11:15:57 CEST 2006 - ms@suse.de
+
+- fixed include path for build within xorg7
+- fixed bracket quoting in profile scripts
+
+-------------------------------------------------------------------
+Mon Jul 10 12:38:49 CEST 2006 - ms@suse.de
+
+- fixed locale dependant XKB options setup (#184796)
+- fixed Intel profile patch from mhopf (#190678)
+
+-------------------------------------------------------------------
+Thu Jul  6 11:06:05 CEST 2006 - ms@suse.de
+
+- adapt build requires for xorg-x11-server-sdk package (#190391)
+- added fontpath check for Xorg v6/v7 basic font path  (#190391)
+- disabled java binding from being build (#190391)
+
+-------------------------------------------------------------------
+Fri Jun 30 09:59:08 CEST 2006 - ms@suse.de
+
+- update source code documentation from libhd head
+- adapt build requires for new xorg-x11-server-sdk package (#190391)
+- added fontpath check for Xorg v6/v7 basic font path (#190391)
+- disabled java binding from being build (#190391)
+
+-------------------------------------------------------------------
+Mon Jun 26 16:27:36 CEST 2006 - ms@suse.de
+
+- hd/monitor.c add sanity check to ddc parser (#186096)
+
+-------------------------------------------------------------------
+Fri Jun 23 09:24:22 CEST 2006 - ms@suse.de
+
+- fixed CDB entry for 800x600@75Hz (#137878)
+
+-------------------------------------------------------------------
+Wed Jun 21 12:38:53 CEST 2006 - ms@suse.de
+
+- changed testX to search the environment
+
+-------------------------------------------------------------------
+Mon Jun 19 12:42:40 CEST 2006 - ms@suse.de
+
+- fixed alps default values (#164747)
+
+-------------------------------------------------------------------
+Mon Jun 19 12:07:42 CEST 2006 - ms@suse.de
+
+- added new NVidia devices (#186055)
+
+-------------------------------------------------------------------
+Mon Jun 19 11:34:15 CEST 2006 - ms@suse.de
+
+- fixed options setup while merging the config (#184540)
+
+-------------------------------------------------------------------
+Sun Jun 11 10:32:32 CEST 2006 - sndirsch@suse.de
+
+- using multix variant for multilinugual canadian keyboard mapping
+  by now; problems with non-existing ISO_Level5_* characters has
+  been resolved in xorg-x11/xkeyboard-config (Bug #158951,
+  X.Org Bug #4411)
+
+-------------------------------------------------------------------
+Fri Jun  9 18:11:19 CEST 2006 - sndirsch@suse.de
+
+- added multilinugual canadian keyboard mapping (Bug #158951)
+
+-------------------------------------------------------------------
+Wed May 31 15:19:18 CEST 2006 - ms@suse.de
+
+- update list of supported wacom devices (#173408)
+- added popup message when fbdev driver is used (#168693)
+- added support for detecting DDC modeline timings (#159071)
+- added support for reduced timing modelines (#159071)
+- added IQT L70S monitor to the monitor CDB (#179733)
+- disable DAMAGE extension for fglrx based setup (#173180)
+- added standard ViewSonic 15/17 Inch displays (#181660)
+- fixed NoDDC profile to not overwrite current options (#167367)
+- added support for SiS DualHead; Xinerama and MergedFB
+- fixed display size detection for HP nc6000 laptop
+- fixed spec file to use find_lang and other macros
+
+-------------------------------------------------------------------
+Tue May 30 18:39:03 CEST 2006 - ms@suse.de
+
+- fixed nvidia binary check (#179934)
+
+-------------------------------------------------------------------
+Tue May 23 10:47:04 CEST 2006 - ms@suse.de
+
+- added missing display size values (#176328)
+- added CVT modeline calculation module (#159071)
+- reverted patch for French-Canadian keyboard support. This was done
+  because the related and needed patch for Xorg will not become
+  applied, so it makes no sense to still have it in sax (#158951)
+- added MBO e-Tron 998 monitor into the CDB
+
+-------------------------------------------------------------------
+Mon May 22 14:01:13 CEST 2006 - ms@suse.de
+
+- fixed Identity entries for DELL ATI devices (#177561)
+- fixed perl syntax using defined (#177476)
+
+-------------------------------------------------------------------
+Wed May 17 18:09:06 CEST 2006 - ms@suse.de
+
+- fixed handling of "KernelModuleParm" option (#170698)
+
+-------------------------------------------------------------------
+Thu May 17 13:04:01 CEST 2006 - ms@suse.de
+
+- added automatic detection of touchscreen for P1510 FSC laptop
+- added display size data for LifeBook T4210
+- added DefaultFbBpp support for 32 bit framebuffer
+- changed size unit in sysp from cm -> mm
+
+-------------------------------------------------------------------
+Thu May 12 10:39:32 CEST 2006 - ms@suse.de
+
+- new version sax2 v8 for xorg v7 (X11R7)
+- added chvt support to monitor.c, change before calling int10
+- added support for automatic tablet detection. Currently only one
+  wacom device has been tested (Input.map -> 0x056a:0x0013).
+  this is related to bug: (#163785)
+- added cn-latin1 mapping for French Canadian Keyboard (#158951)
+- enhancement: add wacom rotate option to be configured (#151448)
+- enhancement: disable mouse device before probing (#157415)
+- enhancement: moved libsax scripts (#157475)
+- enhancement: added support for prefixed Identifiers usable within
+  the sections Device, Modes, Monitor and Screen. If an Identifier
+  contains a prefix like "prefix-name[id]" this section is preferred
+  compared to the non prefixed "name[id]" section. SaX2 itself will
+  not make use of prefixed Identifiers but other config tools which
+  are changing the existing config file can include their own section
+  with a prefixed Identifier (#164793)
+- enhancement: added combined DisplaySize check
+- enhancement: added xfs FontPath for default setup (#166113)
+- enhancement: added support for translated xkb country names (#145477)
+- enhancement: added support for monitor bandwidth detection (#159071)
+- enhancement: added new modeline calculation scheme (#159071)
+- moved XSetErrorHandler() to be active on first misc extensions
+  call XF86MiscGetMouseSettings() in hw/mouse.c
+- include libhd fixes: (#115845, #117639, #162209, #155357)
+- added check for vnc password longer than eight chars (#168683)
+- deactivate code to limit framebuffer mode to 60Hz (#167305)
+- fixed mnemonic key for OK button (#168784)
+- fixed Targa 3867-1 monitor data  (#170896)
+
+-------------------------------------------------------------------
+Mon May  8 10:02:21 CEST 2006 - ms@suse.de
+
+- enhancement: added update directory for Identity.map files. A user
+  can put a file named *Identity.map* file into the directory
+  /usr/share/sax/sysp/maps/update. The map there is searched for
+  graphics cards first. It is possible to add support for new
+  cards or overwrite an old entry with this file (#163803)
+
+-------------------------------------------------------------------
+Tue May  2 08:25:26 CEST 2006 - ms@suse.de
+
+- added support for Radeon XPRESS 200M (1002:5955) (#171118)
+
+-------------------------------------------------------------------
+Thu Apr 27 10:39:32 CEST 2006 - ms@suse.de
+
+- update Identity maps for all archs supporting new
+  NVidia CPUs (#166065, #159731, #168618, #167367)
+
+-------------------------------------------------------------------
+Tue Apr 25 17:19:12 CEST 2006 - ms@suse.de
+
+- added obsoletes for sax2-tools packages on s390x (#145823)
+
+-------------------------------------------------------------------
+Tue Apr 25 10:18:22 CEST 2006 - ms@suse.de
+
+- update monitor database (#167857)
+
+-------------------------------------------------------------------
+Mon Apr 24 11:40:30 CEST 2006 - ms@suse.de
+
+- fixed Khmer keyboard layout setup (#164381)
+- fixed DEL7002 monitor setup (#164901)
+
+-------------------------------------------------------------------
+Wed Apr 12 12:47:14 CEST 2006 - ms@suse.de
+
+- update Identity map for all archs (#165387)
+
+-------------------------------------------------------------------
+Tue Apr 11 15:50:32 CEST 2006 - ms@suse.de
+
+- update Identity map for ppc (#159510)
+
+-------------------------------------------------------------------
+Mon Apr 10 10:49:46 CEST 2006 - ms@suse.de
+
+- update Identity maps for all archs (#163877)
+- fixed quoting bug for secondary monitor name on laptops
+
+-------------------------------------------------------------------
+Wed Apr  5 12:30:08 CEST 2006 - ms@suse.de
+
+- fixed display detection on Xgl server (#163027)
+- added monitor Eizo Flexiscan L795 into the CDB (#163656)
+- update Identity maps for all archs (#159815,#163016,#163507,#163483,#152336)
+- added wacom options: TPCButton,ForceDevice and Button2
+- fixed batch mode to allow equal sign in values using __EQUALS__
+- fixed batch mode documentation
+
+-------------------------------------------------------------------
+Mon Apr  3 10:45:11 CEST 2006 - ms@suse.de
+
+- update Identity maps for all archs (#160812,#156015)
+- add option KernelModuleParm to FireGL profile (#162495)
+
+-------------------------------------------------------------------
+Mon Mar 27 12:12:08 CEST 2006 - ms@suse.de
+
+- update Identity maps for all archs (#147070,#160833)
+
+-------------------------------------------------------------------
+Mon Mar 27 12:02:08 CEST 2006 - ms@suse.de
+
+- revert to old bus ID scheme (#139477)
+
+-------------------------------------------------------------------
+Mon Mar 27 10:28:28 CEST 2006 - ms@suse.de
+
+- update Identity maps for all archs (#156015)
+- update translations from Dublin [fi,pl_PL]
+
+-------------------------------------------------------------------
+Fri Mar 24 12:14:48 CET 2006 - ms@suse.de
+
+- update translations from Dublin [pt,km]
+
+-------------------------------------------------------------------
+Wed Mar 22 14:54:58 CET 2006 - ms@suse.de
+
+- fixed MonitorLayout setup for radeon X700 chip (#159391)
+
+-------------------------------------------------------------------
+Wed Mar 22 10:42:19 CET 2006 - ms@suse.de
+
+- update monitor CDB, added Apple Cinema Display 20
+
+-------------------------------------------------------------------
+Tue Mar 21 16:01:22 CET 2006 - ms@suse.de
+
+- removed EnablePrivateBackZ from FireGL profile (#159343)
+- update translations hu from Dublin
+
+-------------------------------------------------------------------
+Mon Mar 20 08:49:22 CET 2006 - ms@suse.de
+
+- added support for korean keyboard detection (#87443)
+- include libhd fixes (#117053,#154725,#104300)
+
+-------------------------------------------------------------------
+Fri Mar 17 09:54:50 CET 2006 - ms@suse.de
+
+- fixed default value of RealDevice in lib/hw/mouse.c (#157415)
+- fixed build for ppc64, csharp binding builds there now
+
+-------------------------------------------------------------------
+Thu Mar 16 14:41:28 CET 2006 - ms@suse.de
+
+- update Identity maps for all archs (#157399, #147070)
+- fixed sax2-tools spec file requirements (#145823)
+- fixed csharp language binding
+
+-------------------------------------------------------------------
+Tue Mar 14 17:30:43 CET 2006 - ms@suse.de
+
+- fixed Identity Raw handling in Options.pm (#157995)
+- limit monitor detection to 2 ports (#155018)
+- assigning to HAL udi could go wrong (#155018)
+
+-------------------------------------------------------------------
+Tue Mar 14 11:31:01 CET 2006 - ms@suse.de
+
+- fixed calling sax2 shell if option -a is set and no GUI
+  package (sax2-gui) is installed (#157342)
+
+-------------------------------------------------------------------
+Mon Mar 13 10:42:41 CET 2006 - ms@suse.de
+
+- update Identity maps for all architectures (#146261,#155323)
+- fixed default value for DisplaySize 15' 4/3 (#156462)
+- fixed display detection for ASUS MV6 laptop (#157587)
+- fixed parsing of MetaModes/ConnectedMonitor in ParseConfig.pm
+- fixed MetaModes setup for Nvidia based Laptops
+- set highest priority of colordepth setup to GUI value
+
+-------------------------------------------------------------------
+Thu Mar  9 17:17:18 CET 2006 - ms@suse.de
+
+- fixed sysp compiler flags -DXORG_LOADER (#157019)
+- removed 32 bit from being used in Screen sections (#136363)
+- fixed Intel_DualHead Xinerama based setup. Intel Xinerama based
+  setups needs including the MonitorLayout too (#136363)
+- remove remaining perror()s so we don't write to stderr (#155132)
+- don't map video bios ram; not really neccessary (#155132)
+
+-------------------------------------------------------------------
+Wed Mar  8 16:02:53 CET 2006 - ms@suse.de
+
+- update Identity maps for all architectures (#156015)
+- added libhd sanity check for display size data (#155096)
+- fixed parsing of MetaModes/ConnectedMonitor in ParseConfig.pm
+- fixed 855resolution requirement, for ix86 and x86_64 only
+
+-------------------------------------------------------------------
+Mon Mar  6 10:59:07 CET 2006 - ms@suse.de
+
+- fixed sysp detection if /dev/fb0 doesn't exist (#154101)
+- fixed display size detection on Toshiba Satellite M30X (#155096)
+- fixed sysp detection if no max h/vsync's provided by DDC (#155317)
+- fixed sysp detection on vmware workstation v5.5 (#154775)
+- update Identity maps for all architectures (#154101)
+- update translations fi,ja,km from Dublin
+
+-------------------------------------------------------------------
+Mon Feb 27 16:44:18 CET 2006 - ms@suse.de
+
+- fixed libhd bug detecting mice on older 2.6 kernels
+- removed check-build.sh, no longer used
+
+-------------------------------------------------------------------
+Mon Feb 27 10:21:34 CET 2006 - ms@suse.de
+
+- fixed vmware X11 configuration setup (#148271)
+- removed Modelines from being used with nvidia driver (#153596)
+- fixed CDB entry for monitor HighScreen MS 1795P (#153596)
+- fixed libsax / ParseConfig.pm MetaModes option handling
+- update translations fi,hu,nb from Dublin
+
+-------------------------------------------------------------------
+Thu Feb 23 11:35:38 CET 2006 - ms@suse.de
+
+- fixed setup for Hyundai L50S monitor (#152336)
+- fixed sysp detection if there are multiple cards installed
+
+-------------------------------------------------------------------
+Wed Feb 22 14:30:46 CET 2006 - ms@suse.de
+
+- fixed setup for Sony SDM-P234 (ANALOG) monitor (#152769)
+- fixed monitor setup to include CDB modelines if set (#152769)
+
+-------------------------------------------------------------------
+Mon Feb 20 12:59:07 CET 2006 - ms@suse.de
+
+- fixed monitor detection for IVM 451 (#149038)
+- added bios data for LifeBook S 7020 display (#151867)
+- added bios data for Samsung SX 20 S display (#151867)
+- reinitialize cache if called in tty console mode
+- adapt Xinerama profiles to make use of the DDC[2] data
+- adapt MergedFB profiles to make use of the DDC[2] data
+- added support for DDC[2] dual head information
+
+-------------------------------------------------------------------
+Thu Feb 16 16:43:34 CET 2006 - ms@suse.de
+
+- added support for Philips 200W 1680x1050 widescreen TFT (#152466)
+
+-------------------------------------------------------------------
+Tue Feb 14 14:21:46 CET 2006 - ms@suse.de
+
+- removed initial Modelines from fglrx setup
+- fixed 64bit binary driver detection problems
+
+-------------------------------------------------------------------
+Mon Feb 13 11:36:29 CET 2006 - ms@suse.de
+
+- fixed wrong graphics card detection (#150246)
+- update Identity maps for all architectures
+- improved DDC detection [snwint]
+- update translations from Dublin
+
+-------------------------------------------------------------------
+Thu Feb  9 11:07:18 CET 2006 - ms@suse.de
+
+- fixed kill call in sax.sh killProc() function (#149114)
+- activate VIDEOBIOS_PATCH if VIDEOBIOS_PARAMETERS are set (#105898)
+- fixed and activated build for s390x (#145823)
+- improved DisplaySize detection for NoteBooks
+
+-------------------------------------------------------------------
+Tue Feb  7 16:20:28 CET 2006 - ms@suse.de
+
+- fixed RawDef options handling for comments (#148292)
+- fixed sort order of color depth values (#148697)
+- added libsax method getResolutionFromServer(). This allows
+  asking the server for its currently used resolution. If the
+  resolution isn't set within xorg.conf the SaX2 GUI will call
+  the new method to ask the server for the resolution. ATI's
+  binary driver required that method. (#148737)
+- added Fujitsu LifeBook P-Series Touchscreen configuration data
+- added LCD 1024x600@60Hz entry
+- update translations from Dublin
+
+-------------------------------------------------------------------
+Tue Feb  7 10:13:24 CET 2006 - ms@suse.de
+
+- fixed GUI listbox keyboard handling (#148340)
+- fixed CDB monitor entry: Nokia:445XiPlus (#145245)
+- disable Composite extension. This extension is broken on
+  ati,nv,nvidia,fglrx and has therefore no business case. It is
+  only creating tons of bugs (#118580) (#148475)
+- added khmer keyboard configuration (#143348)
+
+-------------------------------------------------------------------
+Fri Feb  3 14:48:00 CET 2006 - ms@suse.de
+
+- adapt XKB options due to changes in libxkbfile
+
+-------------------------------------------------------------------
+Wed Feb  1 10:22:10 CET 2006 - ms@suse.de
+
+- fixed mapping table for nvidia driver (#147097)
+- fixed sysp detection on vmware machines (#147566)
+- fixed sysp DisplaySize detection for incomplete DDC records (#148228)
+- update Identity maps for all architectures
+- update translations for hu,km,cs,fi and nb locales
+
+-------------------------------------------------------------------
+Tue Jan 31 10:28:50 CET 2006 - ms@suse.de
+
+- fixed build
+
+-------------------------------------------------------------------
+Sat Jan 28 15:24:09 CET 2006 - ms@suse.de
+
+- added support for Wacom PenabledTabletPC (#145974)
+- added CDB entry for Monitor: PHILIPS 200P4 (#146063)
+- fixed xgettext locale setup, unterminated strings (#145842)
+- prepare build on s390x (#145823)
+- fixed ChipId and ChipRev setup (#146455)
+- update translations, added new translation (sax.km.po)
+- update Identity maps for all architectures
+
+-------------------------------------------------------------------
+Fri Jan 27 02:24:38 CET 2006 - mls@suse.de
+
+- converted neededforbuild to BuildRequires
+
+-------------------------------------------------------------------
+Tue Jan 24 11:44:04 CET 2006 - ms@suse.de
+
+- added 1920x1440 resolution to the list of resolutions (#144801)
+- added check for broken vidmode extensions (#144996)
+
+-------------------------------------------------------------------
+Mon Jan 23 10:46:15 CET 2006 - ms@suse.de
+
+- update Identity maps for all architectures
+
+-------------------------------------------------------------------
+Fri Jan 20 15:09:23 CET 2006 - ms@suse.de
+
+- fixed NVidia TwinView MetaModes/ConnectedMonitor setup
+
+-------------------------------------------------------------------
+Tue Jan 17 16:45:59 CET 2006 - ms@suse.de
+
+- added special case handling for the Radeon X700 card (#120424)
+- added support for inverting mouse axis (#142569)
+- added hwinfo patch from Steffen Winterfeldt <snwint@suse.de>
+  which fixes DDC detection on mulihead cards, great job Steffen !
+- fixed RawDef option handling from Identity map RAW entries
+- fixed Profile.pm to call X -probeonly only if needed
+- update Identity maps for all architectures
+
+-------------------------------------------------------------------
+Mon Jan 16 14:40:50 CET 2006 - ms@suse.de
+
+- prepared sax2 to be able to parse/create multiseat configurations.
+  This feature is up to now not implemented completely (#142657)
+- fixed NVidia MetaModes setup according to information from
+  Andy Ritger <aritger@nvidia.com>
+
+-------------------------------------------------------------------
+Fri Jan 13 15:02:52 CET 2006 - ms@suse.de
+
+- added timestamp check for binary only drivers
+- added 1280x800@60Hz to the LCD section of the CDB
+- fixed sysp detection -> better check for laptop hardware
+- fixed sysp detection -> use framebuffer timing if display.vesacount==0
+- added support for external VGA on nvidia laptops, Thanks to
+  Matthias Hopf <mhopf@suse.de> providing the profile code
+- update all translations from Dublin
+
+-------------------------------------------------------------------
+Thu Jan 12 13:07:42 CET 2006 - ms@suse.de
+
+- changed sysp mouse detection to know about the real device (#142657)
+- changed sysp keyboard detection to detect all keyboards (#142657)
+- enable calculation of modelines for the nv driver
+- fixed MetaModes setup for laptop users
+
+-------------------------------------------------------------------
+Mon Jan  9 12:36:09 CET 2006 - ms@suse.de
+
+- removed runlevel check on startup (#135605)
+- added DELL monitors to the database (#141720,#141721)
+- renamed vnc password program used for sax (#142466)
+- exchanged /usr/X11R6/include with /usr/include/X11 where possible.
+  First step to be prepared for xorg7 (X11R7)
+- allow commandline help to be showed without root privileges
+- update translations from Dublin [ nb,nl,hu,cs ]
+- update CardModules to the current option table of all drivers using
+  the X -showopts feature
+- removed post-arch fixes from qmake generated Makefile. qmake
+  handles it correctly now
+
+-------------------------------------------------------------------
+Thu Jan  5 12:41:11 CET 2006 - ms@suse.de
+
+- removed usage of xsload and setup a static options file again
+
+-------------------------------------------------------------------
+Wed Jan  4 21:05:31 CET 2006 - ms@suse.de
+
+- removed vmware profile to be applied automatically (#140139)
+
+-------------------------------------------------------------------
+Tue Jan  3 11:03:47 CET 2006 - ms@suse.de
+
+- fixed example section in the libsax documentation
+
+-------------------------------------------------------------------
+Tue Dec 27 15:43:48 CET 2005 - ms@suse.de
+
+- fixed PCI detection for multiple cards (#135729)
+
+-------------------------------------------------------------------
+Wed Dec 21 12:24:02 CET 2005 - ms@suse.de
+
+- fixed monitor specs for VISIONMASTER PRO 452
+
+-------------------------------------------------------------------
+Wed Dec 14 09:55:31 CET 2005 - ms@suse.de
+
+- added experimental support for Acecad flair tablets (#137970)
+- added experimental XKB Options setup (#137109)
+
+-------------------------------------------------------------------
+Tue Dec 13 16:59:55 CET 2005 - ms@suse.de
+
+- removed static size setup from wacom configuration (#138297)
+
+-------------------------------------------------------------------
+Mon Dec 12 15:48:14 CET 2005 - ms@suse.de
+
+- added workaround for xsload bug (#137374)
+
+-------------------------------------------------------------------
+Fri Dec  9 12:40:56 CET 2005 - ms@suse.de
+
+- removed InputDevices setup from Files section (#136674)
+
+-------------------------------------------------------------------
+Thu Dec  8 13:00:09 CET 2005 - ms@suse.de
+
+- update Identity maps for all architectures (#127510)
+- include hwinfo changes to detect the correct input device
+  names. This was broken due to changes in sysfs (#134032)
+
+-------------------------------------------------------------------
+Wed Dec  7 12:43:41 CET 2005 - ms@suse.de
+
+- update german translation, fixed fuzzy in topic line
+
+-------------------------------------------------------------------
+Tue Dec  6 15:17:55 CET 2005 - ms@suse.de
+
+- added setDisplayRatioAndTraversal() getDisplayRatio() and
+  getDisplayTraversal() methods to libsax for easy DisplaySize
+  setup implemented in yast2-x11 (#136330)
+
+-------------------------------------------------------------------
+Fri Dec  2 12:05:46 CET 2005 - ms@suse.de
+
+- added option --complete to the cards.pl helper, this option will
+  include the PCI vendor/subvendor ID's if specified
+- removed old code refering to rc.config handling
+- update FireGL driver profile
+
+-------------------------------------------------------------------
+Thu Dec  1 17:00:09 CET 2005 - ms@suse.de
+
+- fixed Profile.pm module for Intel DualHead setup (#136363)
+- added ProfileCreatePreliminaryConfig() function to Profile.pm
+  to be able to run probeonly servers. This is needed to check
+  for the MonitorLayout on Intel and NVidia devices (#136363)
+
+-------------------------------------------------------------------
+Thu Dec  1 10:30:11 CET 2005 - ms@suse.de
+
+- added SiS driver profile to support the control protocol
+- fixed vendor check in new Profile.pm module
+- fixed Driver.map for radeon devices
+
+-------------------------------------------------------------------
+Wed Nov 30 15:24:35 CET 2005 - ms@suse.de
+
+- fixed vbios.c not to crash if hd_list returns null (#136070)
+
+-------------------------------------------------------------------
+Wed Nov 30 12:49:38 CET 2005 - ms@suse.de
+
+- added EnablePrivateBackZ for FireGL devices (#135708)
+- disable Composite extension for FireGL and NVidia (#135708,#118580)
+- fixed Radeon_DualHead_DriverOptions profile to know about the
+  FGLRX_DualHead_DriverOptions profile when needed (#135708)
+- fixed bug including an option multiple times
+- applied sax2-rpath.dif from Michael Schroeder <mls@suse.de>
+
+-------------------------------------------------------------------
+Mon Nov 28 19:49:44 CET 2005 - ms@suse.de
+
+- remove FGLRX_SingleHead profile (#135708)
+- added basic support for Relative layout setup (#135539)
+- include more buildin comfort into Xi DualHead profiles
+- create preliminary registry before calling profiles
+
+-------------------------------------------------------------------
+Tue Nov 22 12:17:12 CET 2005 - ms@suse.de
+
+- removed old nvidia profile and added the information to the new
+  driver profile NVidia/NVidia.pl. Update CDB as well (#127510)
+- add support for Matrox merged framebuffer (G450/G550) (#135423)
+- fixed virtual screen resolution setup (#135423)
+- use QTDIR environment for build process
+
+-------------------------------------------------------------------
+Sun Nov 20 17:16:04 CET 2005 - ms@suse.de
+
+- fixed MonitorLayout setup for intel devices (#134378)
+- fixed SaX2 init not to enter the batch mode accidently (#134623)
+- added Schwab SGI monitors 1920x1200 from SONY (#134496)
+- add a copy of libhd to the repository to support non SuSE dists
+- removed Modes Option from the Intel MergedFB option set.
+  This option is no longer available within the intel driver
+- libsax version 7.2
+
+-------------------------------------------------------------------
+Thu Nov 17 16:16:18 CET 2005 - ms@suse.de
+
+- improved modeline calculation in ImportAPI.pm
+- update Identity maps for all architectures
+- fixed widget layout to display card and monitor correctly
+- fixed driver options profiles to know about laptop hardware.
+  If not applied to a laptop the first monitor data is copied
+  to the second head. If applied on a laptop the second channel
+  will be set to 1024x768@60Hz which is the default resolution
+  used for a projector
+
+-------------------------------------------------------------------
+Wed Nov 16 11:17:16 CET 2005 - ms@suse.de
+
+- added Intel_DualHead profile for Xinerama configuration (#133828)
+- added Samtron 94v to the monitor CDB (#132640)
+- removed exception in xc.pl which causes the modules glx,dri NOT
+  to be included into the temporary X configuration used by SaX
+  to start its own X-Server. There are configurations which requires
+  the modules to be loaded otherwise the server will not start at all
+- added ia64 devices for testing purposes
+
+-------------------------------------------------------------------
+Tue Nov 15 14:54:35 CET 2005 - ms@suse.de
+
+- simplify manual build process:
+	- update doc README including better compile instructions
+	- removed static nvidia binary due to license issues
+	- include SVN release number to SaX.log file
+	- removed additional pixmap source, one tarball only
+
+-------------------------------------------------------------------
+Mon Nov 14 15:58:25 CET 2005 - ms@suse.de
+
+- added colon to be allowed letters for BusID values (#133236)
+- added domain information to BusID setup (#133236)
+
+-------------------------------------------------------------------
+Fri Nov 11 11:50:06 CET 2005 - ms@suse.de
+
+- fixed build environment; usage of autoconf and automake
+- added hwinfo requirement to sax2 base package  
+
+-------------------------------------------------------------------
+Thu Nov 10 16:41:03 CET 2005 - ms@suse.de
+
+- fixed RawData option handling, bug in removeRawItem of libsax
+
+-------------------------------------------------------------------
+Thu Nov 10 12:04:05 CET 2005 - ms@suse.de
+
+- fixed value for AllowMouseOpenFail setup (#132055)
+- update header information to include sax-user mailing list
+
+-------------------------------------------------------------------
+Wed Nov  9 17:37:24 CET 2005 - ms@suse.de
+
+- update monitor database (#132640) (#131959)
+- fixed typo in startup/sax.sh and sax-man/sax2 (#132882)
+
+-------------------------------------------------------------------
+Mon Nov  7 11:04:01 CET 2005 - ms@suse.de
+
+- change wheel default value in lib/hw/mouse.c to always provide
+  a wheel even if the currently connected mouse doesn't have a
+  wheel. This is because to support mice connected later to the
+  system providing a wheel (#118745)
+- fixed build of doxygen docu. A plugin configuration for dot
+  has to be created first. This is done by calling dot -c 
+- removed sax2-libsax-mono binding from build because code
+  generated by swig doesn't compile with new compiler
+
+-------------------------------------------------------------------
+Fri Oct 28 19:47:04 CEST 2005 - ms@suse.de
+
+- fixed button mapping for logitech devices; freedesktop Bug (#4915)
+
+-------------------------------------------------------------------
+Fri Oct 28 11:40:03 CEST 2005 - ms@suse.de
+
+- added LCD TV resolution 1366x768 to the list (#130964)
+
+-------------------------------------------------------------------
+Thu Oct 27 15:29:05 CEST 2005 - ms@suse.de
+
+- added DELL Ultrasharp 1905FP to the CDB (#130724)
+- update translations from dublin
+
+-------------------------------------------------------------------
+Wed Oct 26 14:24:39 CEST 2005 - ms@suse.de
+
+- fixed framebuffer configuration using new FbSet module
+
+-------------------------------------------------------------------
+Tue Oct 25 14:48:09 CEST 2005 - ms@suse.de
+
+- enabled HeaderCheck to not read files not written by SaX
+- added helpfull startup messages
+
+-------------------------------------------------------------------
+Mon Oct 24 10:48:17 CEST 2005 - ms@suse.de
+
+- fixed broken libsax removeCardOption() method
+- fixed regexp quoting bug (#130152)
+
+-------------------------------------------------------------------
+Fri Oct 21 13:07:10 CEST 2005 - ms@suse.de
+
+- fixed HP P720 entry, wrong DDC ID (#129921)
+
+-------------------------------------------------------------------
+Fri Oct 21 12:43:20 CEST 2005 - ms@suse.de
+
+- fixed enable3D function in libsax, do not set wrong colordepth
+- fixed md5sum check which prevent writing the configuration
+  because someone changed the output format of md5sum
+
+-------------------------------------------------------------------
+Fri Oct 21 11:08:58 CEST 2005 - ms@suse.de
+
+- changed NVidia_DualHead_DriverOptions from bash to perl
+- fixed profile name NoDCC to NoDDC
+
+-------------------------------------------------------------------
+Mon Oct 17 17:29:11 CEST 2005 - ms@suse.de
+
+- fixed positioning of windows to the middle if clone mode is active 
+- activate framebuffer timing patch again to use the framebuffer
+  timings but decrease to a 60Hz mode
+
+-------------------------------------------------------------------
+Mon Oct 17 11:05:44 CEST 2005 - ms@suse.de
+
+- increased startup speed a lot
+
+-------------------------------------------------------------------
+Thu Oct 13 12:18:24 CEST 2005 - ms@suse.de
+
+- added busy cursor handling to xw.c
+- added monitor VideoSeven L19B to the database
+- added resolution 1024x600
+
+-------------------------------------------------------------------
+Wed Oct 12 12:05:34 CEST 2005 - ms@suse.de
+
+- added global exception (saxGlobalException) to libsax, to be
+  called in case of exception no matter what exception it was
+
+-------------------------------------------------------------------
+Mon Oct 10 11:34:27 CEST 2005 - ms@suse.de
+
+- added LCD 1280x600 entry to the MonitorResolution [#115271]
+- added support for automatic configuration of ATI binary driver (fglrx)
+- changed DriverOptions profiles to use 1024x768@60Hz by default
+- removed tightvnc requirement, use my own vncpasswd program 
+- removed fbset requirement, use my own ioctl implementation
+- removed perl-gettext requirement, no longer needed
+- moved xmset and xupdate to new package (xmset)
+
+-------------------------------------------------------------------
+Wed Oct  5 17:29:49 CEST 2005 - ms@suse.de
+
+- fixed tty check in SaX2 startup script (#117439)
+- fixed minValue for mouse emulation (#119950)
+- fixed default resolution setup in xstuff.c (#118361)
+- added Compaq MV920 monitor to the CDB (#119797)
+- fixed LCD sections in the database (CDB)
+- fixed perl binding typemap for hash types
+
+-------------------------------------------------------------------
+Fri Sep 30 18:22:13 CEST 2005 - stbinner@suse.de
+
+- fixed capitalization in .desktop file
+
+-------------------------------------------------------------------
+Mon Sep 26 12:20:45 CEST 2005 - ms@suse.de
+
+- activate Composite extension by default (#118580)
+- fixed hsync range of 1024x768@85Hz entry (#118360)
+- added SaX Profile parser, new system based on lex&yacc
+  This one has been implemented according to the feature database
+- disabled code for graphical 3D question from sysp
+
+-------------------------------------------------------------------
+Thu Sep 15 12:22:27 CEST 2005 - ms@suse.de
+
+- added Dell 2405 widescreen TFT to the CDB (#117848)
+- implement VBIOS patch support (#105898)
+- implement enhancement part 4) from Bug: (#113344)
+- implement enhancement part 3) from Bug: (#113344)
+- fixed name clash for whois (#117228)
+- fixed monitor entry for Dell 2001FP (#117290)
+- added Nokia 920C monitor data to the CDB (#117638)
+- added Samsung SyncMaster 406 monitor to the CDB (#117657)
+- fixed getDualHeadProfile() method to recognize if the driver
+  has changed by the user. The returned profile additionally depends
+  on the driver changed by the user. Related to bug: (#113344)
+- implement enhancement part 1) and 2) from Bug: (#113344)
+- did some code cleanup, removed old tools fixed warnings
+- allow multiple profiles to be set using the option -b
+- update Identity maps for alle architectures
+- removed similarity check in detect/Monitor.pm. According to
+  some Bugs like for example #117657 this check will lead to a
+  misdetected monitor.
+
+-------------------------------------------------------------------
+Tue Sep 13 08:45:32 CEST 2005 - ms@suse.de
+
+- added support for another IBook G4 display (#116594)
+- fixed PPC keyboard detection to use pc105 as default model (#116946)
+- switched off using xmset for enabled/disable mouse in init.pl (#116946)
+- fixed monitor display bug crashing sax if an unknown resolution
+  key is used. This happens for example on 720x400 displays (#116946)
+
+-------------------------------------------------------------------
+Mon Sep 12 18:52:30 CEST 2005 - ms@suse.de
+
+- added support for another IBook G4 display (#116481)
+- fixed keyboard map for swiss and french people (#116019)
+- fixed firegl dualhead setup (#116573)
+
+-------------------------------------------------------------------
+Mon Sep 12 08:14:06 CEST 2005 - ms@suse.de
+
+- added Samsung SyncMaster 793 MB to the CDB (#116024)
+
+-------------------------------------------------------------------
+Fri Sep  9 13:37:15 CEST 2005 - ms@suse.de
+
+- fixed default depth setup on Power-PC (#115673)
+- added support for IBook G4 display (#116097)
+- fixed wrong message text adjustment code (#114872)
+
+-------------------------------------------------------------------
+Fri Sep  9 01:31:14 CEST 2005 - ro@suse.de
+
+- added check-build.sh
+  (require 2.6.13 or newer on buildhost, otherwise mono may hang) 
+
+-------------------------------------------------------------------
+Wed Sep  7 11:21:10 CEST 2005 - ms@suse.de
+
+- fixed VBIOS detection due to hwinfo semantic changes (#115567)
+- fixed libsax using SYSP import information (#115236)
+- added support for Sony-Vaio GRT995MP display (#53635)
+
+-------------------------------------------------------------------
+Mon Sep  5 17:14:48 CEST 2005 - ms@suse.de
+
+- update Identity maps according to bug (#114794)
+
+-------------------------------------------------------------------
+Mon Sep  5 12:28:27 CEST 2005 - ms@suse.de
+
+- fixed APPLE color LCD CDB settings (#115151)
+
+-------------------------------------------------------------------
+Mon Sep  5 10:44:05 CEST 2005 - ms@suse.de
+
+- fixed segfault while clicking in empty options box [#115162]
+- added LCD 1280x600 section to the CDB [#115271]
+- fixed APPLE LCD entry to support 1024x768 [#115151]
+- update translations from dublin
+
+-------------------------------------------------------------------
+Thu Sep  1 10:58:57 CEST 2005 - ms@suse.de
+
+- added support for SYNCMASTER 910T (#113795)
+- added support for APPLE Color LCD (#113795)
+- removed radiobutton for traditional mode while setting up
+  MergedFB. The traditional mode is not supported by the drivers
+  implementing MergedFB [#113344]
+- update translations from dublin [uk,bg,pa,pl_PL,nl,lt,cs,sl_SI]
+- update Identity maps for all architectures [#102976]
+
+-------------------------------------------------------------------
+Wed Aug 31 13:56:20 CEST 2005 - ro@suse.de
+
+- remove config-dist.sh completely
+- add ExcludeArch s390 s390x to specfile (last function from above)
+
+-------------------------------------------------------------------
+Wed Aug 31 01:41:43 CEST 2005 - ro@suse.de
+
+- ia64 has mono, remove extra hacks for ia64
+
+-------------------------------------------------------------------
+Thu Aug 25 10:04:26 CEST 2005 - ms@suse.de
+
+- fixed slovene keyboard layout in Keyboard.map (#112614)
+- fixed keyboard toggle setup (#105420)
+- update Identity maps for all architectures
+
+-------------------------------------------------------------------
+Tue Aug 23 10:11:02 CEST 2005 - ms@suse.de
+
+- added Modes2 handling for fglrx driver (#65350)
+- fixed FGLRX_DualHead_DriverOptions profile (#65350)
+- added Intel_DualHead_DriverOptions.sh dynamic part (#65350)
+- fixed button spacing for fixed-width widgets
+- fixed I18n support for libsax error messages
+
+-------------------------------------------------------------------
+Wed Aug 17 18:49:14 CEST 2005 - ms@suse.de
+
+- fixed keyboard toggle setup (#105420)
+- fixed appearance of scrolling pixmaps in mouse test field (#105781)
+- fixed CDB entries for various SAMSUNG monitors (#105577) (#105565)
+- include information box if VNC has been activated to setup the
+  needed RFB and HTTP ports within the firewall setup as well (#105628)
+- fixed FireGL profile to use internal mode pool only
+- fixed mouse detection on ppc64, button detection with libhd
+  is failing (#102743)
+- update translations from dublin
+
+-------------------------------------------------------------------
+Mon Aug 15 19:32:36 CEST 2005 - ms@suse.de
+
+- fixed MetaModes handling according to bug (#104728)
+- fixed resolution setup while importing primary resolution (#104728)
+- fixed modeline check and RAM-dac sort order (#105208)
+- fixed CDB resolution setup for ADI:MICROSCAN G710 (#105156)
+- fixed hwupdate id handling (#105207)
+
+-------------------------------------------------------------------
+Mon Aug 15 10:06:28 CEST 2005 - ms@suse.de
+
+- update Identity maps for all architectures
+- update translations [fi,pa]
+
+-------------------------------------------------------------------
+Fri Aug 12 11:47:03 CEST 2005 - ms@suse.de
+
+- enabled full featured MetaModes handling (#104069)
+- update Identity maps for all architectures
+- update translations [pl_PL,el_GR,pt]
+
+-------------------------------------------------------------------
+Thu Aug 11 15:02:55 CEST 2005 - ms@suse.de
+
+- fixed libsax segfault in pointers.cpp
+- fixed libsax import code for addID() calls
+- fixed wacom tablet configuration, add Graphire-3 support
+- fixed Portuguese keyboard setup (removed nodeadkeys) (#103716)
+
+-------------------------------------------------------------------
+Wed Aug 10 18:23:50 CEST 2005 - ms@suse.de
+
+- fixed vmware X11 configuration using SaX/libsax (#99358)
+- fixed emulate wheel handling (#102656)
+- fixed alps touchpad default settings (AccelFactor,MaxSpeed)
+- according to seife we set the default display size to 300x230
+  this enables all people to at least see the fonts in an
+  acceptable size. This size applies only if the diplay size
+  wasn't detected automatically
+
+-------------------------------------------------------------------
+Tue Aug  9 10:16:33 CEST 2005 - ms@suse.de
+
+- update ident maps for all architectures
+- update translations from dublin: nb hu lt cs
+- fixed Keyboard.map to use _qwerty layouts as XKB variant (#102657)
+- fixed Keyboard.map use gr instead of el (#102657)
+- fixed sysp 3D check (xcmd) to work xorg.conf independently (#99694)
+- fixed modeline calculation on second head
+- fixed option list; Don't show options handled by dualhead profile
+- added default mouse if needed (#102656)
+- fixed build for ppc64
+
+-------------------------------------------------------------------
+Fri Jul 29 11:49:32 CEST 2005 - ms@suse.de
+
+- added language nl and pl_PL from Dublin
+- remove mystic XKB options tab, there is no real documenation
+  about all the options and the translators as well as the users
+  don't know what to do with the information provided there.
+
+-------------------------------------------------------------------
+Thu Jul 28 10:13:45 CEST 2005 - ms@suse.de
+
+- fixed sysp path in synaptics.sh profile script (#99019)
+- removed ImageMagick requirement use netpbm instead
+
+-------------------------------------------------------------------
+Tue Jul 26 15:35:08 CEST 2005 - ms@suse.de
+
+- fixed FGLRX dualhead driver options profile
+- added new methods for set/add/remove special modelines in libsax
+- prepared GUI for MetaModes handling including multiple resolutions
+- added modeline calculation for special modelines needed in
+  combination with dualhead device driver options
+- update Identitiy maps, 3D support for i915GM chips
+- changed default dual-head mode to clone, to avoid missing windows
+  if the user didn't connect both monitors
+- fixed DesktopSetup Option of FGLRX dualhead configuration
+- added uk and pt translations from Dublin
+- fixed battery check in libsax
+
+-------------------------------------------------------------------
+Mon Jul 25 10:45:39 CEST 2005 - ms@suse.de
+
+- added fi -> Finnish translations from Dublin
+- fixed manual driver setup. If the option -m is used to set
+  the driver name it is not allowed to reset that driver by
+  libsax. libsax will now check the CDB driver name with the
+  optional driver name set manually and prefer the manually set
+  one in any case. An exception is thrown in the case where the
+  currently used driver does not fit the CDB driver(s). 
+
+-------------------------------------------------------------------
+Fri Jul 22 16:35:52 CEST 2005 - ms@suse.de
+
+- update Identity maps for [ix86,x86_64,ppc]
+
+-------------------------------------------------------------------
+Wed Jul 20 12:16:19 CEST 2005 - ms@suse.de
+
+- added icons for dualhead arrangement from Ken <wimer@suse.de>
+
+-------------------------------------------------------------------
+Tue Jul 19 18:07:27 CEST 2005 - ms@suse.de
+
+- added dynamic profile support to createPRO libsax script
+
+-------------------------------------------------------------------
+Tue Jul 19 11:09:38 CEST 2005 - ms@suse.de
+
+- adding translations from dublin for [bg,hu,cs]
+- fixed build for ia64 and ppc64
+
+-------------------------------------------------------------------
+Mon Jul 18 10:45:30 CEST 2005 - ms@suse.de
+
+- added new icons from Kenneth Wimer <wimer@suse.de>
+- fixed pixmap path for tooltip help
+
+-------------------------------------------------------------------
+Fri Jul 15 12:06:03 CEST 2005 - ms@suse.de
+
+- update icons from Kenneth Wimer <wimer@suse.de>
+- fixed environment for doInit() call within libsax
+- fixed mouse detection if libhd reports a mouse with buttons=0
+
+-------------------------------------------------------------------
+Thu Jul 14 16:16:37 CEST 2005 - ms@suse.de
+
+- added automatic answer to the 3D question for the sysp
+  profile call in pci.pl
+
+-------------------------------------------------------------------
+Thu Jul 14 11:18:29 CEST 2005 - ms@suse.de
+
+- fixed nvidia TwinView Orientation options
+
+-------------------------------------------------------------------
+Fri Jul  8 09:42:20 CEST 2005 - ms@suse.de
+
+- fixed build
+
+-------------------------------------------------------------------
+Thu Jul  7 13:03:31 CEST 2005 - ms@suse.de
+
+- deactivate libhd hardware flags check in needInit()
+- add /usr/X11R6/bin/sax2 link to run sax2 as "x11"user
+- enable xapi commandline support -- not finished yet
+
+-------------------------------------------------------------------
+Tue Jul  5 13:52:33 CEST 2005 - ms@suse.de
+
+- activate new GUI system and library management (libsax)
+
+-------------------------------------------------------------------
+Wed Jun 29 14:51:39 CEST 2005 - ms@suse.de
+
+- update ident maps for all architectures
+- update translation key file, modified by rwalter@suse.de
+- introduce new GUI system based on libsax
+- introduce new libsax library system
+
+-------------------------------------------------------------------
+Tue Jun 14 11:21:08 CEST 2005 - ro@suse.de
+
+- added sysfsutils to nfb
+
+-------------------------------------------------------------------
+Wed Apr 20 19:32:52 CEST 2005 - ms@suse.de
+
+- added fbdev rgba color check to detect/Resolution.pm
+- fixed Portuguese keyboard setup
+
+-------------------------------------------------------------------
+Mon Apr 18 09:37:18 CEST 2005 - ms@suse.de
+
+- added widescreen resolutions.
+  details: http://www.i386.info/vidres.htm
+
+-------------------------------------------------------------------
+Wed Apr 13 10:51:12 CEST 2005 - ms@suse.de
+
+- added FGLRX single head profile (#76890)
+
+-------------------------------------------------------------------
+Mon Apr 11 10:19:18 CEST 2005 - ms@suse.de
+
+- fixed variant of greek keyboard layout (#75911)
+- removed mem-check in Resolution.pm
+
+-------------------------------------------------------------------
+Fri Apr  8 18:33:56 CEST 2005 - ms@suse.de
+
+- added extended mouse devices (#63632)
+
+-------------------------------------------------------------------
+Thu Apr  7 16:40:47 CEST 2005 - ms@suse.de
+
+- call checkDetected() only if useHwData is true
+- added 5/4 aspect/ratio (#76702)
+
+-------------------------------------------------------------------
+Wed Apr  6 11:13:36 CEST 2005 - ms@suse.de
+
+- fixed InputDevice setting for special device names (#74239)
+- changed default mouse device in xmset (#66989)
+
+-------------------------------------------------------------------
+Mon Apr  4 08:22:43 CEST 2005 - ms@suse.de
+
+- added DELL 2001FP to the CDB (#74541)
+
+-------------------------------------------------------------------
+Wed Mar 23 15:25:09 CET 2005 - ms@suse.de
+
+- fixed SendCoreEvents setting for ttySX devices (#74239)
+
+-------------------------------------------------------------------
+Tue Mar 22 09:45:11 CET 2005 - ms@suse.de
+
+- added support for XGI Volari cards (#74130)
+
+-------------------------------------------------------------------
+Mon Mar 21 08:45:10 CET 2005 - ms@suse.de
+
+- update Identity maps for [i386,x86_64] (#74022)
+
+-------------------------------------------------------------------
+Sat Mar 19 11:01:14 CET 2005 - ms@suse.de
+
+- added NoDDC driver profile to i810 driver (#71198)
+
+-------------------------------------------------------------------
+Fri Mar 18 15:33:26 CET 2005 - ms@suse.de
+
+- added Hitachi Widescreen display (#73830)
+
+-------------------------------------------------------------------
+Fri Mar 18 13:35:21 CET 2005 - ms@suse.de
+
+- update Identity maps for [i386,x86_64]
+
+-------------------------------------------------------------------
+Wed Mar 16 10:55:32 CET 2005 - ms@suse.de
+
+- added language translations for: it,ja,zh_CN,zh_TW
+- update Identity maps for [i386,x86_64]
+
+-------------------------------------------------------------------
+Tue Mar 15 11:32:04 CET 2005 - ms@suse.de
+
+- added LCD check again to not overwrite hwinfo LCD data (#67214)
+- removed linking against GL library for xapi
+
+-------------------------------------------------------------------
+Mon Mar 14 11:58:15 CET 2005 - ms@suse.de
+
+- update monitor database
+- added translations for languages: nl,hu
+
+-------------------------------------------------------------------
+Fri Mar 11 13:29:21 CET 2005 - ms@suse.de
+
+- added new language translation [uk]
+
+-------------------------------------------------------------------
+Fri Mar 11 12:35:22 CET 2005 - ms@suse.de
+
+- fixed acceleration factor for ALPS based touchpads (#72046)
+
+-------------------------------------------------------------------
+Fri Mar 11 11:30:06 CET 2005 - ms@suse.de
+
+- added translations for the following languages:
+  CS,BG,DE,EL_GR,ES,SK
+
+-------------------------------------------------------------------
+Thu Mar 10 10:08:24 CET 2005 - ms@suse.de
+
+- added HP zv5000 monitor to the database (#71797)
+
+-------------------------------------------------------------------
+Wed Mar  9 17:22:19 CET 2005 - ms@suse.de
+
+- fixed image file format of sax2.xpm (#71793)
+
+-------------------------------------------------------------------
+Mon Mar  7 22:52:19 CET 2005 - ms@suse.de
+
+- don't use Bitstream fonts in documentation
+
+-------------------------------------------------------------------
+Mon Mar  7 15:14:33 CET 2005 - ms@suse.de
+
+- update Identity maps for [i386,x86_64]
+
+-------------------------------------------------------------------
+Fri Mar  4 12:53:52 CET 2005 - ms@suse.de
+
+- added [lt] translations
+
+-------------------------------------------------------------------
+Thu Mar  3 12:36:44 CET 2005 - ms@suse.de
+
+- update Identity maps for [i386,x86_64]
+
+-------------------------------------------------------------------
+Mon Feb 28 16:43:26 CET 2005 - ms@suse.de
+
+- fixed Dell D600 panel size setting (#66679)
+
+-------------------------------------------------------------------
+Mon Feb 28 10:49:35 CET 2005 - ms@suse.de
+
+- fixed mouse wheel detection (#65722)
+
+-------------------------------------------------------------------
+Fri Feb 25 18:28:24 CET 2005 - ms@suse.de
+
+- fixed monitor detection, framebuffer settings aren't used
+  if hwinfo --monitor reports noting
+
+-------------------------------------------------------------------
+Tue Feb 22 11:54:07 CET 2005 - ms@suse.de
+
+- From <ro@suse.de>: added wireless-tools to nfb (for libhd)
+
+-------------------------------------------------------------------
+Fri Feb 18 15:01:41 CET 2005 - ms@suse.de
+
+- fixed libhd version check
+
+-------------------------------------------------------------------
+Thu Feb 17 17:08:23 CET 2005 - ms@suse.de
+
+- fixed mouse detection for multiple multiplexed devices on
+  the same input device but with different properties (#50722)
+
+-------------------------------------------------------------------
+Thu Feb 17 15:14:48 CET 2005 - ms@suse.de
+
+- fixed typo in translations (#50987)
+
+-------------------------------------------------------------------
+Thu Feb 17 12:21:40 CET 2005 - ms@suse.de
+
+- fixed state of ratio/traversal widgets if no DisplaySize
+  has been detected
+
+-------------------------------------------------------------------
+Mon Feb 14 11:17:32 CET 2005 - ms@suse.de
+
+- update CDB monitor database
+- update CDB card database (fglrx update)
+
+-------------------------------------------------------------------
+Mon Jan 31 17:53:31 CET 2005 - ms@suse.de
+
+- fixed dynamic profile invocation for InputDevice's (#50323)
+
+-------------------------------------------------------------------
+Wed Jan 26 09:50:56 CET 2005 - ms@suse.de
+
+- update firegl profile (#49989)
+- fixed incorrect path for fbset (#50196)
+- fixed croat kbd layout mapping and added lt.baltic map (#50197)
+- added cz-lat2-us kbd layout mapping (#46829)
+- update Identity maps for all architectures
+
+-------------------------------------------------------------------
+Mon Jan 24 12:07:34 CET 2005 - ms@suse.de
+
+- update monitor database (IVM481A) 
+
+-------------------------------------------------------------------
+Tue Jan 18 14:34:08 CET 2005 - ms@suse.de
+
+- fixed ExtraKeyboard and ExtraPointer handling in ImportAPI.pm
+
+-------------------------------------------------------------------
+Fri Jan 14 11:53:57 CET 2005 - ms@suse.de
+
+- fixed keyboard model <-> layout validation
+
+-------------------------------------------------------------------
+Wed Jan 12 13:05:28 CET 2005 - ms@suse.de
+
+- fixed xmset showMonitorConfig() function
+
+-------------------------------------------------------------------
+Wed Jan 12 10:17:45 CET 2005 - ms@suse.de
+
+- fixed portuguese keyboard setup, use pc105 instead of pc102
+  Thanks to <paulo.granadas@netvisao.pt>
+
+-------------------------------------------------------------------
+Mon Jan  3 11:16:02 CET 2005 - ms@suse.de
+
+- removed high-resolution framebuffer settings (#49406)
+- added monitor with information from bug (#49042)
+
+-------------------------------------------------------------------
+Thu Dec 16 09:44:01 CET 2004 - ms@suse.de
+
+- added hu translation changes   (#49270)
+- fixed typo in hotkey asignment (#49151)
+
+-------------------------------------------------------------------
+Mon Dec 13 17:30:56 CET 2004 - ms@suse.de
+
+- update monitor CDB (include feedback data)
+
+-------------------------------------------------------------------
+Thu Dec  9 15:32:50 CET 2004 - ms@suse.de
+
+- remove monitor profile patch. Include the profile information
+  into the CDB now, Jens Oberender you rock :-)
+
+-------------------------------------------------------------------
+Fri Dec  3 18:03:57 CET 2004 - ms@suse.de
+
+- added white list for 3D high-color cards (#44341)
+
+-------------------------------------------------------------------
+Mon Nov 15 12:11:55 CET 2004 - ms@suse.de
+
+- switched to read and write /etc/X11/xorg.conf (#48235)
+- removed unneeded patches from head branch
+- removed /etc/sysconfig/sax, the toshiba bounce problem has
+  been fixed within the kernel
+
+-------------------------------------------------------------------
+Fri Oct 22 10:46:43 CEST 2004 - ms@suse.de
+
+- added sync value check to xquery PrepareModeline() (#47232)
+- provide possibility to select Traversal plus Aspect/Ratio
+  for setting up the DisplaySize. A user can select for example
+  17 Zoll -> 4/3. This is usefull if the DisplaySize wasn't
+  detected via DDC (#46592)
+
+-------------------------------------------------------------------
+Thu Oct 21 15:22:14 CEST 2004 - ms@suse.de
+
+- added DisplaySize entry to X11 config file used for
+  installation if patched via xupdate (#46632)
+
+-------------------------------------------------------------------
+Fri Oct 15 15:36:50 CEST 2004 - ms@suse.de
+
+- fixed map check in keyboardhandler.cpp (#46891)
+
+-------------------------------------------------------------------
+Wed Oct 13 17:20:58 CEST 2004 - ms@suse.de
+
+- fixed hwupdate to take care about hw_mouse (#44834)
+
+-------------------------------------------------------------------
+Thu Oct  7 16:53:20 CEST 2004 - ms@suse.de
+
+- added input device profile handling based on Vendor/Device ID's
+  for special input devices like synaptics touchpads (#46649)
+
+-------------------------------------------------------------------
+Thu Oct  7 11:20:11 CEST 2004 - ms@suse.de
+
+- update nvidia binary module
+- remove perl module source -> require perl-TermReadLine-Gnu
+- update XFree86 -> Xorg naming in translations
+- changed X link to point to /usr/X11R/bin/Xorg
+
+-------------------------------------------------------------------
+Wed Oct  6 10:09:38 CEST 2004 - ms@suse.de
+
+- fixed automatic resolution selection to avoid virtual pixels (#46841)
+
+-------------------------------------------------------------------
+Tue Oct  5 10:08:36 CEST 2004 - ms@suse.de
+
+- update monitor database, fixed VIEWMODE and LCD entries (#46766)
+- fixed sysp detection module (xstuff) (#46766)
+
+-------------------------------------------------------------------
+Fri Oct  1 15:40:44 CEST 2004 - ms@suse.de
+
+- added polish (pl_PL) translation
+
+-------------------------------------------------------------------
+Thu Sep 30 10:56:27 CEST 2004 - ms@suse.de
+
+- update Identity [ ix86 ] (#45870)
+
+-------------------------------------------------------------------
+Wed Sep 29 15:29:19 CEST 2004 - ms@suse.de
+
+- include HW mouse name to configuration
+- fixed import of extensions section on older versions
+- remove multiple InputDevice sections which are bound to the
+  same device and driver. related to (#44815)
+
+-------------------------------------------------------------------
+Tue Sep 28 11:46:24 CEST 2004 - ms@suse.de
+
+- fixed detect/Mouse and ImportAPI modules: Do not include
+  SendCoreEvents for input devices which already send core events
+  refering to their driver and device specifications (#44815)
+
+-------------------------------------------------------------------
+Mon Sep 27 16:42:42 CEST 2004 - ms@suse.de
+
+- include readline patch from Michael Schroeder <mls@suse.de>
+  module FileHandle expects PerlIO is blessed to IO::Handle
+  This will stop segmentation fault on Perl 5.8.0 w/PerlIO
+- added translation for the languages: pt_BR,zh_CN and zh_TW
+
+-------------------------------------------------------------------
+Mon Sep 27 15:57:56 CEST 2004 - ms@suse.de
+
+- update Identity: updated ix86 entries
+
+-------------------------------------------------------------------
+Mon Sep 27 12:15:16 CEST 2004 - ms@suse.de
+
+- added WXGA 1440x900 resolution (#46210)
+
+-------------------------------------------------------------------
+Thu Sep 23 16:36:41 CEST 2004 - ms@suse.de
+
+- added DisplaySize check to dynamic NVidia_Twinview profile
+- fixed device check to xmset; no device -> no mouse (#45596)
+
+-------------------------------------------------------------------
+Wed Sep 22 09:42:25 CEST 2004 - ms@suse.de
+
+- disabled hwcursor for all Matrox profiles (#45599)
+- update Identity: enabled 3D support for i915G (#45752)
+- update Identity: updated AMD64 entries
+
+-------------------------------------------------------------------
+Tue Sep 21 09:57:12 CEST 2004 - ms@suse.de
+
+- fixed dvorak keyboard setup (#45144)
+
+-------------------------------------------------------------------
+Mon Sep 20 08:27:25 CEST 2004 - ms@suse.de
+
+- added 1280x768 WXGA entry (#45566)
+- added device check to xmset; no device -> no mouse (#45596)
+- added japanese translation fixes from Takashi Iwai
+
+-------------------------------------------------------------------
+Fri Sep 17 15:26:49 CEST 2004 - ms@suse.de
+
+- added WUXGA resolution and CDB entries (#45516)
+
+-------------------------------------------------------------------
+Thu Sep 16 16:04:32 CEST 2004 - ms@suse.de
+
+- removed sizerGrip if GUI is in fullscreen mode (#45468)
+
+-------------------------------------------------------------------
+Wed Sep 15 12:56:55 CEST 2004 - ms@suse.de
+
+- update monitor database (#45323)
+- fixed use of value added option and Twinview profile (#45376)
+- activate serial mouse detection again
+
+-------------------------------------------------------------------
+Mon Sep 13 15:53:11 CEST 2004 - ms@suse.de
+
+- update Identity (#45023)
+- added fullscreen option for lower resolution (#45197)
+- added missing show() call to xmouse.cpp (#45120)
+
+-------------------------------------------------------------------
+Thu Sep  9 11:53:00 CEST 2004 - ms@suse.de
+
+- fixed wheel detection (#44849)
+
+-------------------------------------------------------------------
+Wed Sep  8 11:49:56 CEST 2004 - ms@suse.de
+
+- allow ISaX to list section(s) without root permissions
+
+-------------------------------------------------------------------
+Mon Sep  6 16:11:30 CEST 2004 - ms@suse.de
+
+- added translations for various languages :-)
+
+-------------------------------------------------------------------
+Mon Sep  6 09:07:59 CEST 2004 - ms@suse.de
+
+- added syntax check for --module option (#44686)
+- fixed NVidia_DualHead.sh script header (#44687)
+- remove AccessX Keys from X0-config.keyboard file (#44133)
+- added es,cs and bg translations
+
+-------------------------------------------------------------------
+Thu Sep  2 11:10:04 CEST 2004 - ms@suse.de
+
+- fixed sysp detection, return DEFAULT entry if 3D does not
+  exist but was requested with "-A yes" (#44327)
+
+-------------------------------------------------------------------
+Wed Sep  1 15:49:34 CEST 2004 - ms@suse.de
+
+- added ALPS configuration specifications
+
+-------------------------------------------------------------------
+Mon Aug 30 18:11:45 CEST 2004 - ms@suse.de
+
+- implement read/write handler for Extensions section (#44092)
+- removed usage of psaux device use /dev/input/mice instead (#38655)
+
+-------------------------------------------------------------------
+Mon Aug 30 13:48:13 CEST 2004 - ms@suse.de
+
+- removed speedo module, it doesn't exist anymore
+- adapt firegl profile (add dri module)
+- update Identity [i386]
+
+-------------------------------------------------------------------
+Mon Aug 23 10:47:51 CEST 2004 - ms@suse.de
+
+- added Acer-1400x1050 display (IDT0002)
+- prepared parser and isax for Extensions section (#44092)
+- fixed DELL D600 specifications (#44005)
+- update japanese translation
+
+-------------------------------------------------------------------
+Thu Aug 19 16:33:54 CEST 2004 - ms@suse.de
+
+- added 1280x800 LCD entry to the CDB (#43976)
+
+-------------------------------------------------------------------
+Thu Aug 19 11:31:43 CEST 2004 - ms@suse.de
+
+- fixed version check for libhd to support DDC and mouse wheel
+- update card database (CDB)
+
+-------------------------------------------------------------------
+Wed Aug 18 09:28:30 CEST 2004 - ms@suse.de
+
+- changed to new "kbd" keyboard driver (#43902)
+- changed testX to use fvwmrc.yast2, remove fvwmrc.yast2 from
+  package sax2 -> moved to YaST2 (#43796)
+- update monitor database
+
+-------------------------------------------------------------------
+Fri Aug  6 15:42:44 CEST 2004 - meissner@suse.de
+
+- %_lib fix to make it build on lib64 archs.
+
+-------------------------------------------------------------------
+Thu Jul 29 14:44:19 CEST 2004 - ms@suse.de
+
+- added profile for i915G chipset, update card database
+
+-------------------------------------------------------------------
+Wed Jul 28 10:00:49 CEST 2004 - ms@suse.de
+
+- adapt manual pages
+
+-------------------------------------------------------------------
+Tue Jul 27 14:53:09 CEST 2004 - ms@suse.de
+
+- added GOLDSTAR:CS788C monitor specifications
+- completed specifications for VIEWSONIC:E70 monitor
+- fixed regexp in checkmap.pl not to interpret input \Q...\E 
+  Thanks to Jan Engelhardt <jengelh@linux01.gwdg.de>
+
+-------------------------------------------------------------------
+Thu Jul 22 10:25:19 CEST 2004 - ms@suse.de
+
+- added BENQ FP783 specifications (#43233)
+- added DELL LATITUDE D600 specification
+
+-------------------------------------------------------------------
+Fri Jul 16 11:59:28 CEST 2004 - ms@suse.de
+
+- added HTTP port validation code to ensure unique port names
+
+-------------------------------------------------------------------
+Tue Jul 13 16:17:21 CEST 2004 - ms@suse.de
+
+- add option --fast to the testX utility
+
+-------------------------------------------------------------------
+Tue Jul 13 11:29:47 CEST 2004 - ms@suse.de
+
+- fixed handling of profile paramter: VideoRam (#42831)
+- added SAMSUNG SYNCMASTER 213T to CDB
+- added option --ignoreprofile to be able to ignore
+  automatically applied profiles
+
+-------------------------------------------------------------------
+Fri Jul  9 11:00:36 CEST 2004 - ms@suse.de
+
+- added support for HTTP access via VNC
+
+-------------------------------------------------------------------
+Thu Jul  8 17:07:20 CEST 2004 - ms@suse.de
+
+- fixed Matrox_G550 profile (#42831)
+
+-------------------------------------------------------------------
+Thu Jul  8 16:01:12 CEST 2004 - ms@suse.de
+
+- implement full featured mode not only for the core pointer
+  during installation (#37346)
+
+-------------------------------------------------------------------
+Mon Jul  5 11:58:17 CEST 2004 - ms@suse.de
+
+- fixed LICENSE confusion: SaX2 is GPL !
+
+-------------------------------------------------------------------
+Fri Jul  2 14:36:20 CEST 2004 - ms@suse.de
+
+- fixed RawOption handling used if 3D is selected/deselected (#42186)
+
+-------------------------------------------------------------------
+Fri Jun 25 16:00:09 CEST 2004 - ms@suse.de
+
+- fixed polish mapping table (#42348)
+
+-------------------------------------------------------------------
+Tue Jun 22 10:06:16 CEST 2004 - ms@suse.de
+
+- fixed VIEWSONIC 17PS-2 entry within the CDB (#42308)
+
+-------------------------------------------------------------------
+Wed Jun 16 11:22:44 CEST 2004 - ms@suse.de
+
+- added DUMMY graphics entry for manual dummy driver configuration
+- Include monitor: IIYAMA PRO LITE E481S into CDB
+
+-------------------------------------------------------------------
+Tue Jun  8 12:03:54 CEST 2004 - ms@suse.de
+
+- fixed default configuration for greek kbd-layout (#41727)
+
+-------------------------------------------------------------------
+Tue Jun  1 11:11:29 CEST 2004 - ms@suse.de
+
+- enable wheel emulation if there are exactly 4 btns and no wheel
+- added configuration data for Tablet: Aiptek HyperPen 6000
+
+-------------------------------------------------------------------
+Mon May 24 10:42:32 CEST 2004 - ms@suse.de
+
+- fixed TrackMan Marble FX (PS/2) data record (#40443)
+- fixed use of ininitialized structure variable (#38660)
+- added 1280x800 WXGA resolution (#41271)
+
+-------------------------------------------------------------------
+Tue May 18 10:34:10 CEST 2004 - ms@suse.de
+
+- include SGI monitors (#40748)
+- fixed width of mouse test field (#40780)
+- fixed naming of mouse devices in USB-mouse section (#40779)
+- fixed WinINF module function mountMedia() (#40716)
+- removed fvwmrc.yast2 from package list (#37480)
+- add profile patch for handling monitor profiles
+- update monitor database
+
+-------------------------------------------------------------------
+Thu May 13 11:47:36 CEST 2004 - ms@suse.de
+
+- do not allow removing major entities, for example the
+  monitor entity which is the only one existing (#40477)
+
+-------------------------------------------------------------------
+Thu Apr 29 11:53:55 CEST 2004 - ms@suse.de
+
+- lots of xorg-x11 fixes which will break SaX2 to work correctly
+- fixed building lex&yacc based sources with g++ compiler
+
+-------------------------------------------------------------------
+Tue Apr 27 11:56:59 CEST 2004 - ms@suse.de
+
+- moved fvwmrc.notitle to fvwmrc.yast2 and include the changes
+  from Olaf <od@suse.de> (#36488)
+- changed XFree86 license naming in all source files
+- adapt documentation according to XFree86 -> Xorg changes
+
+-------------------------------------------------------------------
+Tue Apr 27 10:12:45 CEST 2004 - sndirsch@suse.de
+
+- use xorg-x11 packages (neededforbuild/Requires)
+
+-------------------------------------------------------------------
+Thu Apr 22 10:56:04 CEST 2004 - ms@suse.de
+
+- call checkDetected() only for the primary (first) devices
+- added hint to enter the DisplaySize if it couldn't be detected
+- update Identity for IA64 (#39282)
+
+-------------------------------------------------------------------
+Wed Apr 21 14:54:46 CEST 2004 - ms@suse.de
+
+- fixed INF parser to know about [...] sections not starting at
+  the beginning of a line, which is a bug in the .inf file but there
+  is no way out you know
+
+-------------------------------------------------------------------
+Tue Apr 20 13:02:10 CEST 2004 - ms@suse.de
+
+- SaX2 split to provide packages for seperating the engine and GUI
+  as well as providing a unique name scheme and assign the package
+  requirements to GUI and engine:
+  /.../
+  sax2     -> sax2-gui   |  sax2
+  saxtools -> sax2-tools 
+  saxident -> sax2-ident
+
+-------------------------------------------------------------------
+Tue Apr 20 10:17:02 CEST 2004 - ms@suse.de
+
+- fixed spanish keyboard mapping (#39003)
+
+-------------------------------------------------------------------
+Fri Apr 16 11:22:41 CEST 2004 - ms@suse.de
+
+- added SaX2 VNC configuration (#26492)
+- changed xmset to use the device reported from libhd instead of
+  linking it to /dev/mouse
+
+-------------------------------------------------------------------
+Sun Apr 11 20:09:06 CEST 2004  - ms@suse.de
+
+- check for adjustable flag in saveMode function (#38640)
+- create CDB record if ID is provided but not yet included (#38785)
+- fixed CDB data for Belinea 106055 (#38704)
+- removed keyboard repeat/delay dialog, AutoRepeat no longer
+  supported to be set within the config file (#38713)
+- fixed availability of parsed XkbOptions settings (#38714)
+- added TV resolutions to monitor resolution list (#32134)
+- make the SAVE button to be the default
+
+-------------------------------------------------------------------
+Tue Apr  6 14:17:20 CEST 2004 - ms@suse.de
+
+- include sax2_nvidia-msg.dif (#38438)
+- fixed sv-latin1 keyboard configuration (#38440)
+- added [ ja ] translation from Novell
+
+-------------------------------------------------------------------
+Fri Apr  6 14:02:15 CEST 2004 - ms@suse.de
+
+- fixed mouse setup if a Tablet has been connected. The tablet
+  shouldn't be handled as normal pointer device
+
+-------------------------------------------------------------------
+Tue Apr  6 12:56:56 CEST 2004 - sndirsch@suse.de
+
+- sax2_nvidia-msg.dif:
+  * fixed size of 3D nvidia warning window (Bug #38438)
+
+-------------------------------------------------------------------
+Thu Apr  1 10:15:39 CEST 2004 - ms@suse.de
+
+- disable <Save> button in test screen if mode tuning is not
+  available. It may lead to broken modelines (#35949)
+- added 1680x1050 TFT wide screen mode to CDB (#37465)
+- added Dell Latitude D600 display to CDB (#37787)
+- added EIZO:L565 (ANALOG) monitor to CDB
+- update Identities
+
+-------------------------------------------------------------------
+Wed Mar 31 10:36:10 CEST 2004 - ms@suse.de
+
+- fixed monitor CDB entries for Gateway EV500 series (#37560)
+- added translations [ it,fr ]
+- added LGP monitor LGP0557
+
+-------------------------------------------------------------------
+Tue Mar 30 17:39:31 CEST 2004 - ms@suse.de
+
+- added translation [ sv ]
+
+-------------------------------------------------------------------
+Mon Mar 29 18:12:15 CEST 2004 - ms@suse.de
+
+- fixed sax.sh startup script to transfer the --dialog option
+  for later xapi call (#35504)
+
+-------------------------------------------------------------------
+Mon Mar 29 13:08:07 CEST 2004 - ms@suse.de
+
+- added translation [ sl_SI ]
+- added monitor [ SAMSUNG SEC 1024 ] to CDB
+
+-------------------------------------------------------------------
+Fri Mar 26 17:55:36 CET 2004 - ms@suse.de
+
+- update [ ja ] translation
+
+-------------------------------------------------------------------
+Fri Mar 26 11:50:55 CET 2004 - ms@suse.de
+
+- disabled mouse device linking code (#36944)
+- changed testX to set the windowmanager as the first X client
+  started, this will prevent testX to remain open as separate
+  client consuming memory (#37035)
+
+-------------------------------------------------------------------
+Wed Mar 24 11:16:23 CET 2004 - ms@suse.de
+
+- fixed possible loop at installation. set different exit codes 
+  according to the possible exceptions. Handle the exit codes in
+  installation/scripts/YaST2 (#36794)
+- added [ el_GR ] translation
+
+-------------------------------------------------------------------
+Tue Mar 23 10:15:07 CET 2004 - ms@suse.de
+
+- provide additional fvwmrc.notitle configuration file (#36488)
+- added translations [ hu,bg,ru ]
+
+-------------------------------------------------------------------
+Thu Mar 18 15:37:43 CET 2004 - ms@suse.de
+
+- added errorHandler() function to xquery.c
+- added translation [ ja ]
+
+-------------------------------------------------------------------
+Thu Mar 18 11:58:44 CET 2004 - ms@suse.de
+
+- fixed USB tablet port detection (#36115)
+
+-------------------------------------------------------------------
+Tue Mar 16 15:24:59 CET 2004 - ms@suse.de
+
+- added translation [ es ]
+- added translation [ nb ]
+
+-------------------------------------------------------------------
+Mon Mar 15 10:59:42 CET 2004 - ms@suse.de
+
+- update Identities for all architectures (#35883)
+- added nodeadkeys option to all pt based keyboards (#36001)
+- added translation [ cs ]
+- added translation [ sv ]
+
+-------------------------------------------------------------------
+Thu Mar 11 12:19:23 CET 2004 - ms@suse.de
+
+- extend testX to check for dimension and colordepth (#35693)
+- removed mousedev check (#35642)
+
+-------------------------------------------------------------------
+Wed Mar 10 17:36:30 CET 2004 - ms@suse.de
+
+- added -br option to the loader. This will prevent the
+  moiree pattern to be displayed
+
+-------------------------------------------------------------------
+Wed Mar 10 17:24:17 CET 2004 - ms@suse.de
+
+- add CTX monitor VGA/DVI specs (#35573)
+
+-------------------------------------------------------------------
+Wed Mar 10 15:24:35 CET 2004 - ms@suse.de
+
+- added option to start SaX2 with a specific dialog (#35504)
+
+-------------------------------------------------------------------
+Mon Mar  8 10:15:54 CET 2004 - ms@suse.de
+
+- update monitor database
+
+-------------------------------------------------------------------
+Fri Mar  5 13:07:56 CET 2004 - ms@suse.de
+
+- added unknown monitor IQT217A (#35384)
+- include Identity fixes for AMD64 and I386
+
+-------------------------------------------------------------------
+Tue Mar  2 09:06:05 CET 2004 - adrian@suse.de
+
+- add udev to neededforbuild, hwinfo needs libsysfs now
+
+-------------------------------------------------------------------
+Fri Feb 27 11:56:22 CET 2004 - ms@suse.de
+
+- update Identity [ix86]
+
+-------------------------------------------------------------------
+Tue Feb 17 11:46:09 CET 2004 - ms@suse.de
+
+- added Emulate3Buttons to Synaptics default configuration
+- add EIZO L557-A display to database (CDB)
+- fixed keyboard option handling for evaluation of the
+  XkbOptions string (#34563) 
+
+-------------------------------------------------------------------
+Thu Feb 12 12:15:30 CET 2004 - ms@suse.de
+
+- fixed AccessX status evaluation code
+- fixed russian keyboard configuration, and XkbVariant
+  evaluation including empty variant settings
+
+-------------------------------------------------------------------
+Wed Feb 11 15:18:40 CET 2004 - ms@suse.de
+
+- update monitor CDB new IIYAMA LCD/CRT models
+- implement reading of .inf files from CD and Disk (#34362)
+- fixed isax bug while exporting YCP code
+- fixed Identity for x86_64 (#34446)
+
+-------------------------------------------------------------------
+Tue Feb 10 10:41:58 CET 2004 - ms@suse.de
+
+- removed gunze and pacebook driver specifications (#34394)
+- fixed resolution compare bug (#33086)
+
+-------------------------------------------------------------------
+Mon Feb  9 15:23:07 CET 2004 - ms@suse.de
+
+- changed radeon8500 profile to be more general -> Radeon_DualHead
+
+-------------------------------------------------------------------
+Tue Jan 27 11:14:56 CET 2004 - ms@suse.de
+
+- implement improvements for tablet configuration
+- fixed greek mapping from gr to el
+- update monitor database with new LIKOM models
+- new version 4.8
+
+-------------------------------------------------------------------
+Wed Jan 21 16:27:40 CET 2004 - ms@suse.de
+
+- fixed WinINF.pm module to work with .inf files which
+  handles keys as .AddReg and .Addreg in the same way
+
+-------------------------------------------------------------------
+Thu Jan  8 15:10:24 CET 2004 - ms@suse.de
+
+- fixed build according to new yacc/bison version
+
+-------------------------------------------------------------------
+Wed Jan  7 12:32:10 CET 2004 - ms@suse.de
+
+- added firegl UseInternalAGPGART option
+- fixed synaptics options according to new driver 0.12.1 (#33765)
+
+-------------------------------------------------------------------
+Mon Jan  5 14:42:35 CET 2004 - ms@suse.de
+
+- update no-source package to current nvidia driver
+  version: 1.0-5328

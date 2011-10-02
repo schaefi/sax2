@@ -1,0 +1,8 @@
+# /.../
+# VESA compat profile to support X11 v3x
+# used in sax2-vesa run script
+# ----------------------------
+Desktop -> [X] -> CalcModelines = no
+Monitor -> [X] -> CalcAlgorithm = XServerPool
+
+!remove Desktop -> [X] -> Modelines

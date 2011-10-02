@@ -1,0 +1,967 @@
+---------------------------------------------------------
+Tue Jan 13 11:55:39 CET 2009 - ms@suse.de
+
+- added new text: FinalSaXNoTest
+
+---------------------------------------------------------
+Fri Dec 19 14:15:29 CET 2008 - ms@suse.de
+
+- added missing XKB keys (bnc #450851)
+
+---------------------------------------------------------
+Fri Dec 19 13:18:44 CET 2008 - ms@suse.de
+ 
+- quote double quotes (bnc #447492)
+
+---------------------------------------------------------
+Wed Oct 15 12:09:59 CEST 2008 - ms@suse.de
+
+- new string for ttyS4 (bnc #432350)
+
+---------------------------------------------------------
+Thu Jul 31 16:49:26 CEST 2008 - ms@suse.de
+
+- new strings for Add Touch Checkbox / Touch properties
+
+----------------------------------------------------------
+Tue Jul 22 15:27:53 CEST 2008 - sndirsch@suse.de
+
+- new strings for device tabs (bnc #218433)
+
+----------------------------------------------------------
+Fri May 23 15:13:26 CEST 2008 - ms@suse.de
+
+- update to current translation state
+
+----------------------------------------------------------
+Fri May 16 12:29:54 CEST 2008 - ms@suse.de
+
+- changed the finish text due to changes in the Ctrl-Alt-BS
+  behavior. Details in bug (bnc #391134)
+
+-----------------------------------------------------------
+Wed Mar 19 17:52:27 CET 2008 - ms@suse.de
+
+- update to current translation state
+
+-----------------------------------------------------------
+Mon Feb 18 11:08:06 CET 2008 - ms@suse.de
+
+- including missing XKB keys
+
+-----------------------------------------------------------
+Fri Jul 20 10:05:22 CEST 2007 - ms@suse.de
+
+- including missing XKB keys (#292951)
+
+-----------------------------------------------------------
+Mon Jul  9 17:28:44 CEST 2007 - ms@suse.de
+
+- update to current translation state
+
+-----------------------------------------------------------
+Thu May  3 14:35:42 CEST 2007 - ms@suse.de
+
+- added I18N meta text for right-to-left languages (#268608)
+
+-----------------------------------------------------------
+Mon Mar 19 10:14:42 CET 2007 - ms@suse.de
+
+- added XKBEuroSign key (#181116)
+
+-----------------------------------------------------------
+Thu Feb 22 11:52:16 CET 2007 - ms@suse.de
+
+- update to current translation state
+
+-----------------------------------------------------------
+Mon Feb 12 11:37:15 CET 2007 - ms@suse.de
+
+- added messages:
+  # RTF text: 3D acceleration not supported with this card
+  <b>3D acceleration not supported</b><hr>SaX2 cannot offer activation...
+  # RTF text: 3D acceleration not supported with Xinerama
+  <b>3D acceleration not supported</b><hr>SaX2 cannot offer activation... 
+
+-----------------------------------------------------------
+Tue Jan 16 19:08:45 CET 2007 - ms@suse.de
+
+- changed meaning of FBWarning message
+
+-----------------------------------------------------------
+Mon Jan 15 11:02:35 CET 2007 - ms@suse.de
+
+- update translations
+
+-----------------------------------------------------------
+Mon Jan  8 14:49:41 CET 2007 - ms@suse.de
+
+- added ButtonMapping checkbox for left hand mouse setup (#231081)
+
+-----------------------------------------------------------
+Thu Nov 30 13:55:04 CET 2006 - ms@suse.de
+
+- fixed internationalization of display tab naming (#218433)
+
+-----------------------------------------------------------
+Tue Nov 28 16:21:56 CET 2006 - ms@suse.de
+
+- added missing XKB descriptions
+
+-----------------------------------------------------------
+Mon Nov 20 11:29:20 CET 2006 - ms@suse.de
+
+- update language translations
+
+-----------------------------------------------------------
+Thu Nov  2 11:21:08 CET 2006 - ms@suse.de
+
+- update language translations
+
+-----------------------------------------------------------
+Fri Oct 13 16:47:41 CEST 2006 - ms@suse.de
+
+- update language translations
+
+-----------------------------------------------------------
+Fri Sep  1 15:34:27 CEST 2006 - ms@suse.de
+
+- changed VNC messages. People are confused and misunderstand
+  the real meaning of this feature. Meant is the remote control
+  of an X-Server
+
+-----------------------------------------------------------
+Mon Jul 10 15:03:05 CEST 2006 - ms@suse.de
+
+- fixed cs texts (#184796)
+
+-----------------------------------------------------------
+Mon Jul 10 12:36:52 CEST 2006 - ms@suse.de
+
+- update translations from dublin
+
+-----------------------------------------------------------
+Mon May 22 11:06:02 CEST 2006 - ms@suse.de
+
+- merge translations for next version
+
+-----------------------------------------------------------
+Mon Mar 27 10:26:31 CEST 2006 - ms@suse.de
+
+- update translations from dublin
+
+-----------------------------------------------------------
+Fri Mar 24 12:15:30 CET 2006 - ms@suse.de
+
+- update translations from dublin
+
+-----------------------------------------------------------
+Tue Mar 21 16:00:42 CET 2006 - ms@suse.de
+
+- update translations from dublin
+
+-----------------------------------------------------------
+Fri Mar 10 18:07:24 CET 2006 - ms@suse.de
+
+- update translations from dublin
+
+-----------------------------------------------------------
+Mon Mar  6 10:58:23 CET 2006 - ms@suse.de
+
+- update translations from dublin
+
+-----------------------------------------------------------
+Mon Feb 27 10:40:36 CET 2006 - ms@suse.de
+
+- update translations from dublin
+
+-----------------------------------------------------------
+Mon Feb 20 12:44:31 CET 2006 - ms@suse.de
+
+- include Japanese translation
+
+-----------------------------------------------------------
+Mon Feb 13 15:08:17 CET 2006 - ms@suse.de
+
+- update translations from dublin
+
+-----------------------------------------------------------
+Tue Feb  7 16:51:10 CET 2006 - ms@suse.de
+
+- update translations from dublin
+
+-----------------------------------------------------------
+Fri Feb  3 15:01:13 CET 2006 - ms@suse.de
+
+- adapt XKB key file changes to libxkbfile changes
+
+-----------------------------------------------------------
+Thu Feb  2 19:45:57 CET 2006 - ms@suse.de
+
+- update translations from dublin
+
+-----------------------------------------------------------
+Thu Feb  2 12:17:07 CET 2006 - ms@suse.de
+
+- update translations from dublin
+
+-----------------------------------------------------------
+Thu Feb  2 10:11:29 CET 2006 - ms@suse.de
+
+- update translations from dublin
+
+-----------------------------------------------------------
+Wed Jan 18 12:22:34 CET 2006 - ms@suse.de
+
+- added two new message keys: "Invert X-Axis" and "Invert Y-Axis"
+  These are used to activate/deactivate the invertation of X and/or Y
+  axis of a mouse
+
+-----------------------------------------------------------
+Fri Jan 13 17:02:26 CET 2006 - ms@suse.de
+
+- update translations from dublin
+
+-----------------------------------------------------------
+Wed Jan 11 15:10:03 CET 2006 - ms@suse.de
+
+- update translations from dublin
+
+-----------------------------------------------------------
+Fri Dec  9 11:53:45 CET 2005 - ms@suse.de
+
+- removed keys deleted from source which only fills the .po
+  file with useless information. (sl_SI,sv and uk)
+
+-----------------------------------------------------------
+Fri Dec  9 11:53:45 CET 2005 - ms@suse.de
+
+- removed keys deleted from source which only fills the .po
+  file with useless information.
+
+-----------------------------------------------------------
+Wed Dec  7 12:42:31 CET 2005 - ms@suse.de
+
+- fixed german fuzzy according to the last key changes
+
+-----------------------------------------------------------
+Wed Dec  7 12:23:49 CET 2005 - ms@suse.de
+
+- small changes in the key file (topic text)
+
+-----------------------------------------------------------
+Thu Oct 27 12:43:22 CEST 2005 - ms@suse.de
+
+- update translations from dublin
+
+-----------------------------------------------------------
+Mon Sep  5 10:43:30 CEST 2005 - ms@suse.de
+
+- update translations from dublin
+
+-----------------------------------------------------------
+Thu Sep  1 10:46:23 CEST 2005 - ms@suse.de
+
+- update translations from dublin
+
+-----------------------------------------------------------
+Mon Aug 29 17:57:05 CEST 2005 - ms@suse.de
+
+- update translations from dublin
+
+-----------------------------------------------------------
+Fri Aug 19 16:04:51 CEST 2005 - ms@suse.de
+
+- update translations from dublin
+
+-----------------------------------------------------------
+Fri Aug 19 15:10:38 CEST 2005 - ms@suse.de
+
+- added VNC message text to configure the firewall (#105628)
+
+-----------------------------------------------------------
+Mon Aug 15 10:09:39 CEST 2005 - ms@suse.de
+
+- update translations from dublin [ fi,pa ]
+
+-----------------------------------------------------------
+Fri Aug 12 11:23:00 CEST 2005 - ms@suse.de
+
+- update translations from dublin
+
+-----------------------------------------------------------
+Tue Aug  9 12:01:57 CEST 2005 - ms@suse.de
+
+- update translations from dublin
+
+-----------------------------------------------------------
+Fri Jul 29 12:00:08 CEST 2005 - ms@suse.de
+
+- added nl and pl_PL translations
+
+-----------------------------------------------------------
+Fri Jul 29 11:53:08 CEST 2005 - ms@suse.de
+
+- update XKBFile keys, no translation for the keys flagged with
+  XKBFile needed.
+
+-----------------------------------------------------------
+Wed Jul 27 11:15:51 CEST 2005 - ms@suse.de
+
+- added uk and pt translations
+
+-----------------------------------------------------------
+Mon Jul 25 10:40:51 CEST 2005 - ms@suse.de
+
+- added fi translations
+
+-----------------------------------------------------------
+Tue Jul 19 10:38:38 CEST 2005 - ms@suse.de
+
+- update translations from dublin  
+
+-----------------------------------------------------------
+Wed Jun 29 14:45:42 CEST 2005 - ms@suse.de
+
+- update keys: 
+  Index: xapi.gtx
+  ===================================================================
+	--- xapi.gtx    (revision 761)
+	+++ xapi.gtx    (working copy)
+	@@ -681,10 +681,10 @@
+	 InstallPackageCaption=Package Installation
+ 
+	 # Progress bar title text
+	-ImportDataFiles=Importing data...
+	+ImportDataFiles=Importing module:
+ 
+	 # Progress window caption text
+	-ImportDataCaption=SaX2: Importing
+	+ImportDataCaption=SaX2: Importing data...
+
+-----------------------------------------------------------
+Thu Jun 23 11:00:19 CEST 2005 - ms@suse.de
+
+- update keys by rwalter
+
+-----------------------------------------------------------
+Tue Jun 21 12:02:16 CEST 2005 - ms@suse.de
+
+- keys has been proofreaded by rwalter
+
+-----------------------------------------------------------
+Wed Jun  1 16:28:56 CEST 2005 - ms@suse.de
+
+new gettext keys:
+=================
+	- new version of SaX2 GUI, translations needed from scratch
+
+-----------------------------------------------------------
+Wed Mar 16 10:53:31 CET 2005 - ms@suse.de
+
+- added translations for it,ja,zh_CN,zh_TW
+
+-----------------------------------------------------------
+Mon Mar 14 12:22:52 CET 2005 - ms@suse.de
+
+- added nl and hu translations
+
+-----------------------------------------------------------
+Fri Mar 11 13:26:04 CET 2005 - ms@suse.de
+
+- added uk translation
+
+-----------------------------------------------------------
+Fri Mar 11 11:28:13 CET 2005 - ms@suse.de
+
+- added translations for [bg,cs,de,el_GR,es,sk]
+
+-----------------------------------------------------------
+Fri Mar  4 12:51:05 CET 2005 - ms@suse.de
+
+- added lt translations for SuSE Linux 9.3
+
+-----------------------------------------------------------
+Thu Feb 17 15:19:50 CET 2005 - ms@suse.de
+
+- fixed typo in translations (#50987)
+
+-----------------------------------------------------------
+Thu Dec 16 09:32:53 CET 2004 - ms@suse.de
+
+- added hu translation (#49270)
+
+-----------------------------------------------------------
+Fri Oct 22 10:48:52 CEST 2004 - ms@suse.de
+
+new gettext keys:
+=================
+	1) aspect=Select Traversal and Aspect/Ratio...
+	2) zoll=Zoll
+
+- aspect is used to express that the user can select the
+  length of the traversal and the ratio of x/y
+
+- zoll is added to the predefined values for traversal
+  lengths like 19 zoll or 17 zoll
+
+-----------------------------------------------------------
+Fri Oct  1 15:38:48 CEST 2004 - ms@suse.de
+
+- added polish translation
+
+-----------------------------------------------------------
+Mon Sep 27 16:53:44 CEST 2004 - ms@suse.de
+
+- added translation for the languages: pt_BR,zh_CN and zh_TW
+
+-----------------------------------------------------------
+Mon Sep 20 09:23:56 CEST 2004 - ms@suse.de
+
+- added japanese translation fixes
+
+-----------------------------------------------------------
+Mon Sep  6 09:06:11 CEST 2004 - ms@suse.de
+
+- added es amd bg translations
+- added cs translation
+- added it,sv,de,nb,fr,nl,sl_SI,lt,sk,el_GR
+
+-----------------------------------------------------------
+Mon Aug 23 10:43:16 CEST 2004 - ms@suse.de
+
+- update japanese translation
+
+-----------------------------------------------------------
+Fri Jul  9 11:02:26 CEST 2004 - ms@suse.de
+
+- new VNC based texts included
+
+-----------------------------------------------------------
+Tue Apr 27 12:19:35 CEST 2004 - ms@suse.de
+
+- changed naming from XFree86 to X.Org
+
+-----------------------------------------------------------
+Fri Apr 16 16:26:32 CEST 2004 - ms@suse.de
+
+- new texts for VNC SaX2 module
+
+-----------------------------------------------------------
+Wed Mar 31 14:26:34 CEST 2004 - ms@suse.de
+
+- added [ it ] translation
+- added [ fr ] translation
+
+-----------------------------------------------------------
+Tue Mar 30 17:37:59 CEST 2004 - ms@suse.de
+
+- added [ sv ] translation
+
+-----------------------------------------------------------
+Mon Mar 29 15:44:14 CEST 2004 - ms@suse.de
+
+- added [ sl_SI ] translation
+
+-----------------------------------------------------------
+Wed Mar 24 12:21:11 CET 2004 - ms@suse.de
+
+- added [ el_GR ] translation
+
+-----------------------------------------------------------
+Tue Mar 23 10:57:38 CET 2004 - ms@suse.de
+
+- added [ ru ] translation
+- added [ bg ] translation
+- added [ hu ] translation
+
+-----------------------------------------------------------
+Thu Mar 18 15:39:38 CET 2004 - ms@suse.de
+
+- added [ jp ] translation
+
+-----------------------------------------------------------
+Wed Mar 17 14:18:05 CET 2004 - ms@suse.de
+
+- added [ nb ] translation
+
+-----------------------------------------------------------
+Tue Mar 16 16:56:27 CET 2004 - ms@suse.de
+
+- added [ de ] translation
+
+-----------------------------------------------------------
+Tue Mar 16 14:46:37 CET 2004 - ms@suse.de
+
+- added [ es ] translation
+
+-----------------------------------------------------------
+Mon Mar 15 11:21:14 CET 2004 - ms@suse.de
+
+- added [ sv ] translation
+- added [ cs ] translation
+
+-----------------------------------------------------------
+Wed Feb 11 15:23:30 CET 2004 - ms@suse.de
+
+- small changes to the "insert disk" text because we support
+  now reading monitor drivers disks AND CDs
+
+-----------------------------------------------------------
+Thu Feb  5 10:29:09 CET 2004 - ms@suse.de
+
+- added new texts for new tablet dialog
+
+-----------------------------------------------------------
+Tue Oct 14 15:53:01 CEST 2003 - ms@suse.de
+
+- nvidia text changes
+
+-----------------------------------------------------------
+Thu Sep 18 10:03:15 CEST 2003 - ms@suse.de
+
+- added it translation SuSE Linux 9.0
+
+-----------------------------------------------------------
+Tue Sep  2 15:19:42 CEST 2003 - ms@suse.de
+
+- added cs and sk translations
+
+-----------------------------------------------------------
+Tue Aug 19 10:29:51 CEST 2003 - ms@suse.de
+
+- added japanese translation from Mike <mfabian@suse.de>
+
+-----------------------------------------------------------
+Wed Aug  6 16:11:58 CEST 2003 - ms@suse.de
+
+- added warning if one removed all monitors
+
+-----------------------------------------------------------
+Thu Apr 10 16:16:59 CEST 2003 - ms@suse.de
+
+- added warning text if keyboard layout and module does
+  not match
+
+-----------------------------------------------------------
+Tue Apr  1 14:15:33 CEST 2003 - ms@suse.de
+
+- added XKB file information to be ready for i18n
+
+-----------------------------------------------------------
+Tue Mar 25 11:40:58 CET 2003 - ms@suse.de
+
+- added nl translation
+
+-----------------------------------------------------------
+Thu Mar 13 15:01:15 CET 2003 - ms@suse.de
+
+- update sl_SI translation
+
+-----------------------------------------------------------
+Wed Mar 12 10:38:20 CET 2003 - ms@suse.de
+
+- update greek translation
+
+-----------------------------------------------------------
+Tue Mar 11 16:37:11 CET 2003 - ms@suse.de
+
+- update italian translation
+
+-----------------------------------------------------------
+Mon Mar 10 11:28:23 CET 2003 - ms@suse.de
+
+- update spanish translation
+
+-----------------------------------------------------------
+Thu Mar  6 11:30:00 CET 2003 - ms@suse.de
+
+- update french translation
+
+-----------------------------------------------------------
+Tue Mar  4 16:54:05 CET 2003 - ms@suse.de
+
+- added french translation (fr)
+
+-----------------------------------------------------------
+Mon Mar  3 10:29:22 CET 2003 - ms@suse.de
+
+- added and merged slovak translation
+- added and merged cs_CZ translation
+
+-----------------------------------------------------------
+Fri Feb 28 16:36:02 CET 2003 - ms@suse.de
+
+- added Swedish translation
+
+-----------------------------------------------------------
+Thu Feb 27 12:03:04 CET 2003 - ms@suse.de
+
+- removed non-sense help about fonts
+- add idle timer caption text to i18n
+
+-----------------------------------------------------------
+Tue Feb 25 17:18:40 CET 2003 - ms@suse.de
+
+- added bulgarian language support
+
+-----------------------------------------------------------
+Wed Feb 19 12:28:53 CET 2003 - ms@suse.de
+
+- add warning text in xfine if vidmode extension is not
+  supported
+
+-----------------------------------------------------------
+Mon Feb 17 11:18:57 CET 2003 - ms@suse.de
+
+- new message texts because of the new nVidia installer
+
+-----------------------------------------------------------
+Mon Feb  3 09:01:28 CET 2003 - ms@suse.de
+
+- new message: Monitor with ID: %1 not found...
+
+-----------------------------------------------------------
+Wed Jan  8 13:35:05 CET 2003 - ms@suse.de
+
+- add swedish (sv_SV) translation
+
+-----------------------------------------------------------
+Thu Nov 28 16:56:51 CET 2002 - ms@suse.de
+
+- a few new text according virtual resolution dialog
+
+-----------------------------------------------------------
+Mon Nov  4 17:27:22 CET 2002 - ms@suse.de
+
+- changed messages concerning YOU updates
+
+-----------------------------------------------------------
+Wed Oct 23 13:29:31 CEST 2002 - ms@suse.de
+
+- add new messages used for the new mouse test field
+  a) Mouse test field: Ready...
+  b) Single button click: Done
+  c) Double button click: Done
+  d) Wheel is moving...
+  e) Button pressed...
+  f) Button released...
+  g) Wheel stopped: Done
+
+-----------------------------------------------------------
+Wed Oct  9 11:47:31 CEST 2002 - ms@suse.de
+
+- changed nvidia message texts to be distribution independent
+  this means the name SuSE-Linux will no longer be used to point
+  to special update packages
+
+-----------------------------------------------------------
+Wed Sep 25 09:38:42 CEST 2002 - ms@suse.de
+
+- fixed RTF format for msgid: "3D Acceleration impossible..."
+
+-----------------------------------------------------------
+Wed Sep 18 12:22:04 CEST 2002 - ms@suse.de
+
+- added lt_LT translation
+
+-----------------------------------------------------------
+Wed Sep 18 12:05:09 CEST 2002 - ms@suse.de
+
+- changed &Resolution to:
+  resolutiontab=&Resolution(s) for %1 colors
+  %1 is replaced to the current number of colors
+
+-----------------------------------------------------------
+Tue Sep 17 10:26:26 CEST 2002 - ms@suse.de
+
+- update cs translation
+
+-----------------------------------------------------------
+Mon Sep 16 12:32:01 CEST 2002 - ms@suse.de
+
+- changed help text
+- fixed richtext format specifications
+
+-----------------------------------------------------------
+Fri Sep 13 11:38:52 PDT 2002 - ms@suse.de
+
+- added swedish translation (sv)
+- added hungarian translation (hu)
+- create new bundle on FTP
+
+-----------------------------------------------------------
+Thu Sep 12 16:01:20 CEST 2002 - ms@suse.de
+
+- add translation keys for keyboard details (#19446)
+
+-----------------------------------------------------------
+Wed Sep 11 11:57:39 CEST 2002 - ms@suse.de
+
+- changed nVidia warning messages because of user
+  confusion about the contents of this message (#19365)
+
+-----------------------------------------------------------
+Tue Sep  3 11:01:21 CEST 2002 - ms@suse.de
+
+- fixed typos: cabable -> capable (#18469)
+
+-----------------------------------------------------------
+Thu Aug 29 16:46:05 CEST 2002 - ms@suse.de
+
+- added hotkey definitions for tabs and buttons
+
+-----------------------------------------------------------
+Thu Aug 29 15:34:26 CEST 2002 - ms@suse.de
+
+- added sl_SI translation
+
+-----------------------------------------------------------
+Thu Aug 29 13:35:53 CEST 2002 - ms@suse.de
+
+- add da_DA translation
+- add lt_LT translation
+- update hu_HU translation
+
+-----------------------------------------------------------
+Thu Aug 29 12:20:19 CEST 2002 - ms@suse.de
+
+- fixed accent sign
+
+-----------------------------------------------------------
+Tue Aug 27 12:59:33 CEST 2002 - ms@suse.de
+
+- add some hotkeys
+
+-----------------------------------------------------------
+Thu Aug 22 10:21:26 CEST 2002 - ms@suse.de
+
+- had to add accelerator keys for XFine2
+- had to add resolution warning message if the selected
+  resolution does not fit into the currently used
+  monitor sync range
+
+-----------------------------------------------------------
+Mon Aug 19 13:19:31 CEST 2002 - ms@suse.de
+
+- new translation spanish (es)
+
+-----------------------------------------------------------
+Mon Aug 19 11:00:15 CEST 2002 - ms@suse.de
+
+- new lt and sv translations
+
+-----------------------------------------------------------
+Thu Aug  8 14:37:50 CEST 2002 - ms@suse.de
+
+- prepared for next translation round at 12.08.02
+
+-----------------------------------------------------------
+Mon Aug  5 12:27:40 CEST 2002 - ms@suse.de
+
+- add keyboard shortcuts, therefore some keys changed
+
+-----------------------------------------------------------
+Thu Aug  1 11:34:46 CEST 2002 - ms@suse.de
+
+-fixed template file... keys changed
+
+-----------------------------------------------------------
+Mon Jul 29 11:58:48 CEST 2002 - ms@suse.de
+
+- add notConfigured key
+- adapt german translation
+
+-----------------------------------------------------------
+Mon Jul 29 10:52:20 CEST 2002 - ms@suse.de
+
+- changed "loading" translation keys to work with
+  %1 markers, build better sentences for the loading part
+- add translation key to indicate "unknown" devices
+
+-----------------------------------------------------------
+Thu Jul 18 14:24:27 CEST 2002 - ms@suse.de
+
+- add new translation pot file for SaX2 used
+  in YaST2 up to SuSE Linux 8.1
+
+-----------------------------------------------------------
+Tue Mar 19 09:51:59 CET 2002 - ms@suse.de
+
+- added sv and sl_SI translation files to the
+  CVS source tree. Note that both translations
+  are missing the help texts
+
+-----------------------------------------------------------
+Fri Oct 12 15:00:15 CEST 2001 - ms@suse.de
+
+- convert lt translation to iso-8859-13
+- update lt translation
+
+-----------------------------------------------------------
+Wed Sep 12 17:46:03 CEST 2001 - ms@suse.de
+
+- add two new keywoard marked for translation
+  msgid "Video for Linux"
+  msgid "Load v4l Module"
+
+-----------------------------------------------------------
+Fri Aug 24 17:07:33 CEST 2001 - ms@suse.de
+
+- add two buttons to the intro.pl screen which
+  needs to be translated. Keywords marked for translation:
+  msgid "Do you like it:\n"...
+  msgid "Change"...
+
+-----------------------------------------------------------
+Wed Jul 18 14:42:49 CEST 2001 - ms@suse.de
+
+- fixed some header CHARSET errors
+- make sure there are only 7bit characters in sax.pot
+
+-----------------------------------------------------------
+Mon Jun 25 15:19:54 CEST 2001 - ms@suse.de
+
+- new text
+  a) Loading Config page...
+  b) Loading Mouse page...
+  c) Loading Keyboard page...
+  d) Loading Card page...
+  e) Loading Desktop page...
+  f) Loading Layout page...
+
+-----------------------------------------------------------
+Fri Jun 22 16:43:28 CEST 2001 - ms@suse.de
+
+- new text "Software Update..."
+
+-----------------------------------------------------------
+Tue Jun 12 17:54:16 CEST 2001 - ms@suse.de
+
+- update english translation
+
+-----------------------------------------------------------
+Wed May  2 15:12:03 CEST 2001 - ms@suse.de
+
+- update en_US translations (some errors fixed)
+  Thank you Antje :-)
+
+-----------------------------------------------------------
+Mon Apr 30 14:00:42 CEST 2001 - ms@suse.de
+
+- add new cs_CZ translation and help text
+  from <kendy@suse.cz>
+
+-----------------------------------------------------------
+Thu Apr 26 09:42:11 CEST 2001 - ms@suse.de
+
+- fixed "the virtual mouse..." translation to be 
+  more explanable
+
+-----------------------------------------------------------
+Wed Apr 18 11:09:25 CEST 2001 - ms@suse.de
+
+- add lt translation ( alas the sax.lt.txt file misses the
+  translation for the graphics help )
+
+-----------------------------------------------------------
+Wed Mar 21 16:14:54 CET 2001 - ms@suse.de
+
+- update german and english .po files
+
+-----------------------------------------------------------
+Mon Mar 19 15:35:24 CET 2001 - ms@suse.de
+
+- removed the help passages which describe the
+  mouse handling. There is another way of using 
+  the virtual mouse and there is new help assistant to 
+  describe this new virtual mouse using more graphical 
+  effects offering a single window to be displayed 
+  immediatelly after SaX2 starts 
+
+-----------------------------------------------------------
+Tue Mar 13 17:54:20 CET 2001 - ms@suse.de
+
+- create new archive because xapi.gtx has changed
+  new key for translation ( CloneMode )
+
+-----------------------------------------------------------
+fre feb 23 13:00:34 CET 2001 - ms@suse.de
+
+- add da_DK translation from Jens
+
+-----------------------------------------------------------
+Thu Feb 15 15:40:29 CET 2001 - ms@suse.de
+
+- add changes to .cs translation from msvec@suse.cz
+
+-----------------------------------------------------------
+Fri Feb  2 11:57:09 CET 2001 - ms@suse.de
+
+- add .it help text from Olaf
+
+-----------------------------------------------------------
+Thu Feb  1 23:46:21 CET 2001 - ms@suse.de
+
+- add .it translation from Olaf
+
+-----------------------------------------------------------
+Fri Jan 26 13:17:16 CET 2001 - ms@suse.de
+
+- add .cs translation
+
+-----------------------------------------------------------
+Thu Jan 25 10:32:01 CET 2001 - ms@suse.de
+
+- add french translation and help texts
+  from flermen@suse.de
+
+-----------------------------------------------------------
+Tue Jan 23 10:32:27 CET 2001 - ms@suse.de
+
+- fixed format tags in .es help texts
+
+-----------------------------------------------------------
+Mon Jan 22 17:55:41 CET 2001 - ms@suse.de
+
+- added jordi`s help text for .ca 
+  jordi@suse.de
+
+-----------------------------------------------------------
+Mon Jan 22 12:26:54 CET 2001 - ms@suse.de
+
+- added .ca translation and help texts
+  jordi@suse.de
+
+-----------------------------------------------------------
+Thu Jan 18 16:53:10 CET 2001 - ms@suse.de
+
+- add .hu help files from Marcel
+- add .es translation without help texts
+
+-----------------------------------------------------------
+Mon Jan  8 16:06:32 CET 2001 - ms@suse.de
+
+- update hu translation
+  Steve Varadi <svaradi@usa.com>
+
+-----------------------------------------------------------
+Tue Dec 19 14:23:49 CET 2000 - ms@suse.de
+
+- fixed typos: specifiacation -> specification
+               immediatelly   -> immediately
+
+-----------------------------------------------------------
+Tue Dec 12 14:12:18 CET 2000 - ms@suse.de
+
+- changed (en_US) (en_GB) and (de) po file
+  msgid --> "Do you like it:\n"...
+
+-----------------------------------------------------------
+Tue Dec  5 23:36:49 CET 2000 - ms@suse.de
+
+ - implement automatic ftp update system.
+ - structure of sax bundle:
+   sax-help     --> Help texts .txt
+   sax-template --> Gettext template .pot
+

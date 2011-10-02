@@ -1,0 +1,273 @@
+diff -u -r sax.orig//api/.make sax/api/.make
+--- sax.orig//api/.make	2010-03-27 10:12:41.000000000 +0000
++++ sax/api/.make	2010-03-27 11:00:13.000000000 +0000
+@@ -11,8 +11,10 @@
+ if [ -d /usr/share/qt/mkspecs/linux-g++ ];then
+ 	export QMAKESPEC=/usr/share/qt/mkspecs/linux-g++/
+ 	`which qmake` -makefile -unix -o Makefile xapi.pro
++	sed -i -e 's/g++$/g++-4.3/g' -e 's/gcc$/gcc-4.3/g' Makefile
+ else
+ 	export QMAKESPEC=/usr/share/qt4/mkspecs/linux-g++/
+ 	`which qmake` -makefile -unix -o Makefile xapi.pro
++	sed -i -e 's/g++$/g++-4.3/g' -e 's/gcc$/gcc-4.3/g' Makefile
+ fi
+ 
+diff -u -r sax.orig//api/data/LangFirstPath sax/api/data/LangFirstPath
+diff -u -r sax.orig//api/xcmd/.make sax/api/xcmd/.make
+--- sax.orig//api/xcmd/.make	2010-03-27 10:12:41.000000000 +0000
++++ sax/api/xcmd/.make	2010-03-27 10:59:03.000000000 +0000
+@@ -11,8 +11,10 @@
+ if [ -d /usr/share/qt/mkspecs/linux-g++ ];then
+ 	export QMAKESPEC=/usr/share/qt/mkspecs/linux-g++/
+ 	`which qmake` -makefile -unix -o Makefile xcmd.pro
++	sed -i -e 's/g++$/g++-4.3/g' -e 's/gcc$/gcc-4.3/g' Makefile
+ else
+ 	export QMAKESPEC=/usr/share/qt4/mkspecs/linux-g++/
+ 	`which qmake` -makefile -unix -o Makefile xcmd.pro
++	sed -i -e 's/g++$/g++-4.3/g' -e 's/gcc$/gcc-4.3/g' Makefile
+ fi
+ 
+diff -u -r sax.orig//libsax/.make sax/libsax/.make
+--- sax.orig//libsax/.make	2010-03-27 10:12:41.000000000 +0000
++++ sax/libsax/.make	2010-03-27 10:52:38.000000000 +0000
+@@ -11,7 +11,9 @@
+ if [ -d /usr/share/qt/mkspecs/linux-g++ ];then
+ 	export QMAKESPEC=/usr/share/qt/mkspecs/linux-g++/
+ 	`which qmake` -makefile -unix -o Makefile sax.pro
++	sed -i -e 's/g++$/g++-4.3/g' -e 's/gcc$/gcc-4.3/g' Makefile
+ else
+ 	export QMAKESPEC=/usr/share/qt4/mkspecs/linux-g++/
+ 	`which qmake` -makefile -unix -o Makefile sax.pro
++	sed -i -e 's/g++$/g++-4.3/g' -e 's/gcc$/gcc-4.3/g' Makefile
+ fi
+diff -u -r sax.orig//libsax/bindings/perl/Makefile.PL sax/libsax/bindings/perl/Makefile.PL
+--- sax.orig//libsax/bindings/perl/Makefile.PL	2010-03-27 10:12:41.000000000 +0000
++++ sax/libsax/bindings/perl/Makefile.PL	2010-03-27 11:09:06.000000000 +0000
+@@ -22,6 +22,8 @@
+   'dynamic_lib' => { 'OTHERLDFLAGS' => '-L../.. -lsax' },
+   'OBJECT'   => 'SaX_wrap.o',
+   'INC'      => $INCPATH,
+-  'OPTIMIZE' => "-O2 $CFLAGS"
++  'OPTIMIZE' => "-O2 $CFLAGS",
++  'CC'       => "gcc-4.3",
++  'LD'       => "gcc-4.3"
+ );
+ 
+diff -u -r sax.orig//libsax/bindings/python/Makefile sax/libsax/bindings/python/Makefile
+--- sax.orig//libsax/bindings/python/Makefile	2010-03-27 10:12:41.000000000 +0000
++++ sax/libsax/bindings/python/Makefile	2010-03-27 10:56:00.000000000 +0000
+@@ -13,10 +13,10 @@
+ export LD_LIBRARY_PATH=../../
+ 
+ all:
+-	g++ -c $(CFLAGS) -I/usr/X11R6/include -I/usr/include/xorg \
++	g++-4.3 -c $(CFLAGS) -I/usr/X11R6/include -I/usr/include/xorg \
+ 		-I/usr/include/python${PYVER} \
+ 		-O2 -fPIC -fno-strict-aliasing -pipe SaX_wrap.cxx
+-	g++ -shared SaX_wrap.o -o _SaX.so \
++	g++-4.3 -shared SaX_wrap.o -o _SaX.so \
+ 		-L/usr/X11R6/${BINDLIB} ${QTLIBS} \
+ 		-L../../ -lm -lxf86config -lsax -lxkbfile
+ 	python -c "import SaX"
+diff -u -r sax.orig//parse/Makefile sax/parse/Makefile
+diff -u -r sax.orig//parse/Makefile.Linux sax/parse/Makefile.Linux
+--- sax.orig//parse/Makefile.Linux	2010-03-27 10:12:41.000000000 +0000
++++ sax/parse/Makefile.Linux	2010-03-27 10:18:48.000000000 +0000
+@@ -17,7 +17,7 @@
+ 	perl Makefile.PL
+ 
+ test:
+-	gcc -O2 parse.c -o parse -L/usr/X11R6/lib -L/usr/X11R6/lib64 \
++	gcc-4.3 -O2 parse.c -o parse -L/usr/X11R6/lib -L/usr/X11R6/lib64 \
+ 		-iquote /usr/X11R6/include -iquote /usr/include/xorg -I. \
+ 		-DNEW_INPUT -DNDEBUG -D${EXTSEC} -D${XORGHD} \
+ 		-lxf86config -lm
+diff -u -r sax.orig//parse/Makefile.PL sax/parse/Makefile.PL
+--- sax.orig//parse/Makefile.PL	2010-03-27 10:12:41.000000000 +0000
++++ sax/parse/Makefile.PL	2010-03-27 10:22:25.000000000 +0000
+@@ -17,5 +17,7 @@
+   'OBJECT'   => 'parse.o XFree_wrap.o',
+   'DEFINE'   => "-DNEW_INPUT -DNDEBUG -D$FLAG1 -D$FLAG2",
+   'INC'      => '-iquote /usr/X11R6/include -iquote /usr/include/xorg -I.',
+-  'OPTIMIZE' => "-O2 $CFLAGS"
++  'OPTIMIZE' => "-O2 $CFLAGS",
++  'CC'       => "gcc-4.3",
++  'LD'       => "gcc-4.3",
+ ); 
+diff -u -r sax.orig//spp/Makefile.PL sax/spp/Makefile.PL
+--- sax.orig//spp/Makefile.PL	2010-03-27 10:12:41.000000000 +0000
++++ sax/spp/Makefile.PL	2010-03-27 10:25:51.000000000 +0000
+@@ -16,6 +16,7 @@
+   'OBJECT'   => 'SPP_wrap.o lex.yy.o spp.tab.o spp.o',
+   'INC'      => "-I/usr/include/X11 $QTINC",
+   'OPTIMIZE' => "-O2 $CFLAGS",
+-  'CC'       => 'g++'
++  'CC'       => 'g++-4.3',
++  'LD'       => 'g++-4.3'
+ );
+ 
+diff -u -r sax.orig//spp/Makefile.lex sax/spp/Makefile.lex
+--- sax.orig//spp/Makefile.lex	2010-03-27 10:12:41.000000000 +0000
++++ sax/spp/Makefile.lex	2010-03-27 10:16:44.000000000 +0000
+@@ -15,20 +15,20 @@
+ swig:spp.o spp.tab.o lex.yy.o
+ 
+ spp:spp.tab.o lex.yy.o spp.o example.o
+-	g++ -Wall -O2 $(CFLAGS) $(CFLAGSS) -o example example.o spp.o spp.tab.o lex.yy.o \
++	g++-4.3 -Wall -O2 $(CFLAGS) $(CFLAGSS) -o example example.o spp.o spp.tab.o lex.yy.o \
+ 		-lfl -lreadline $(QTLIBS) -lncurses
+ 
+ example.o:example.cpp
+-	g++ -Wall -O2 -fpic $(CFLAGS) -c example.cpp -I. 
++	g++-4.3 -Wall -O2 -fpic $(CFLAGS) -c example.cpp -I. 
+ 
+ spp.o:spp.cpp spp.h
+-	g++ -Wall -O2 -fpic $(CFLAGS) -c spp.cpp -I. 
++	g++-4.3 -Wall -O2 -fpic $(CFLAGS) -c spp.cpp -I. 
+ 
+ spp.tab.o: spp.tab.cc lex.yy.c
+-	g++ -Wall -O2 -fpic $(CFLAGS) -c spp.tab.cc -I. 
++	g++-4.3 -Wall -O2 -fpic $(CFLAGS) -c spp.tab.cc -I. 
+ 
+ lex.yy.o: lex.yy.c
+-	g++ -Wall -O2 -fpic $(CFLAGS) -c lex.yy.c -I. 
++	g++-4.3 -Wall -O2 -fpic $(CFLAGS) -c lex.yy.c -I. 
+ 
+ spp.tab.cc: spp.yc
+ 	bison -d spp.yc
+diff -u -r sax.orig//sysp/Makefile sax/sysp/Makefile
+--- sax.orig//sysp/Makefile	2010-03-27 10:12:41.000000000 +0000
++++ sax/sysp/Makefile	2010-03-27 10:26:21.000000000 +0000
+@@ -1,4 +1,4 @@
+-CC  = g++ -Wall -L/usr/X11R6/lib -L/usr/X11R6/lib64 -DXORG_LOADER
++CC  = g++-4.3 -Wall -L/usr/X11R6/lib -L/usr/X11R6/lib64 -DXORG_LOADER
+ LIB = ./lib/libsysp.a -lhd -lfl -lstdc++ -lX11 -lXrandr -lhal -lXxf86misc
+ 
+ OBJ = sysp.o mouse.o keyboard.o server.o cfg.o xstuff.o d3.o
+diff -u -r sax.orig//sysp/lib/common/Makefile sax/sysp/lib/common/Makefile
+--- sax.orig//sysp/lib/common/Makefile	2010-03-27 10:12:41.000000000 +0000
++++ sax/sysp/lib/common/Makefile	2010-03-27 10:36:28.000000000 +0000
+@@ -1,4 +1,4 @@
+-CC = g++ -Wall -fpic -O2 $(CFLAGS)
++CC = g++-4.3 -Wall -fpic -O2 $(CFLAGS)
+ 
+ all: qx.o xtest.o string.o
+ 
+diff -u -r sax.orig//sysp/lib/cvt/Makefile.PL sax/sysp/lib/cvt/Makefile.PL
+--- sax.orig//sysp/lib/cvt/Makefile.PL	2010-03-27 10:12:41.000000000 +0000
++++ sax/sysp/lib/cvt/Makefile.PL	2010-03-27 10:40:09.000000000 +0000
+@@ -8,6 +8,6 @@
+   'LIBS'     => ['-lm'],
+   'OBJECT'   => 'CVT_wrap.o cvt.o',
+   'OPTIMIZE' => "-O2 $CFLAGS",
+-  'CC'       => 'gcc',
+-  'LD'       => 'gcc'
++  'CC'       => 'gcc-4.3',
++  'LD'       => 'gcc-4.3'
+ );
+diff -u -r sax.orig//sysp/lib/fbset/Makefile.PL sax/sysp/lib/fbset/Makefile.PL
+--- sax.orig//sysp/lib/fbset/Makefile.PL	2010-03-27 10:12:41.000000000 +0000
++++ sax/sysp/lib/fbset/Makefile.PL	2010-03-27 10:34:23.000000000 +0000
+@@ -8,6 +8,6 @@
+   'LIBS'     => ['-lm'],
+   'OBJECT'   => 'FBSet_wrap.o fbset.o',
+   'OPTIMIZE' => "-O2 $CFLAGS",
+-  'CC'       => 'g++',
+-  'LD'       => 'g++'
++  'CC'       => 'g++-4.3',
++  'LD'       => 'g++-4.3'
+ );
+diff -u -r sax.orig//sysp/lib/fbset/Makefile.swig sax/sysp/lib/fbset/Makefile.swig
+--- sax.orig//sysp/lib/fbset/Makefile.swig	2010-03-27 10:12:41.000000000 +0000
++++ sax/sysp/lib/fbset/Makefile.swig	2010-03-27 10:35:29.000000000 +0000
+@@ -4,13 +4,13 @@
+ all: fbset.o
+ 
+ example: example.o fbset.o
+-	g++ -Wall $(CFLAGS) -o example example.o fbset.o
++	g++-4.3 -Wall $(CFLAGS) -o example example.o fbset.o
+ 
+ fbset.o: fbset.cpp
+-	g++ -Wall $(CFLAGS) -c -fpic -O2 fbset.cpp
++	g++-4.3 -Wall $(CFLAGS) -c -fpic -O2 fbset.cpp
+ 
+ example.o: example.cpp
+-	g++ -Wall $(CFLAGS) -c -fpic -O2 example.cpp
++	g++-4.3 -Wall $(CFLAGS) -c -fpic -O2 example.cpp
+ 
+ swig:
+ 	swig -Wall -c++ -perl5 FBSet.i
+diff -u -r sax.orig//sysp/lib/hw/Makefile sax/sysp/lib/hw/Makefile
+--- sax.orig//sysp/lib/hw/Makefile	2010-03-27 10:12:41.000000000 +0000
++++ sax/sysp/lib/hw/Makefile	2010-03-27 10:36:02.000000000 +0000
+@@ -6,7 +6,7 @@
+ # --
+ # Status: Up-to-date
+ #
+-CC     = g++ -Wall -fpic -O2
++CC     = g++-4.3 -Wall -fpic -O2
+ OBJ    = mouse.o tv.o keyboard.o monitor.o memory.o vbios.o cdrom.o framebuffer.o
+ 
+ all: ${OBJ}
+diff -u -r sax.orig//sysp/lib/pci/Makefile sax/sysp/lib/pci/Makefile
+--- sax.orig//sysp/lib/pci/Makefile	2010-03-27 10:12:41.000000000 +0000
++++ sax/sysp/lib/pci/Makefile	2010-03-27 10:33:19.000000000 +0000
+@@ -1,6 +1,6 @@
+ RPM_OPT_FLAGS ?= -O2
+ 
+-CC = g++
++CC = g++-4.3
+ OPT=-O2 -fomit-frame-pointer -fpic
+ CFLAGS=$(RPM_OPT_FLAGS) $(OPT) -Wall -W -Wno-parentheses
+ 
+diff -u -r sax.orig//sysp/lib/plog/Makefile sax/sysp/lib/plog/Makefile
+--- sax.orig//sysp/lib/plog/Makefile	2010-03-27 10:12:41.000000000 +0000
++++ sax/sysp/lib/plog/Makefile	2010-03-27 10:26:57.000000000 +0000
+@@ -5,7 +5,7 @@
+ # Generate plog objects used for libsysp
+ #
+ 
+-CC       = g++
++CC       = g++-4.3
+ LIBS     = -lfl
+ YACC     = bison
+ FLEX     = flex -i
+diff -u -r sax.orig//tools/plog/Makefile.PL.in sax/tools/plog/Makefile.PL.in
+--- sax.orig//tools/plog/Makefile.PL.in	2010-03-27 10:12:41.000000000 +0000
++++ sax/tools/plog/Makefile.PL.in	2010-03-27 11:04:45.000000000 +0000
+@@ -10,7 +10,7 @@
+ 	'DEFINE'   => '-DX_BYTE_ORDER=X_LITTLE_ENDIAN -DNEW_INPUT -DNDEBUG',
+ 	'INC'      => '',
+ 	'OPTIMIZE' => "-O2 $CFLAGS",
+-	'CC'       => 'g++',
+-	'LD'       => 'g++'
++	'CC'       => 'g++-4.3',
++	'LD'       => 'g++-4.3'
+ ); 
+ 
+diff -u -r sax.orig//xfine/.make sax/xfine/.make
+--- sax.orig//xfine/.make	2010-03-27 10:12:41.000000000 +0000
++++ sax/xfine/.make	2010-03-27 11:06:19.000000000 +0000
+@@ -11,8 +11,10 @@
+ if [ -d /usr/share/qt/mkspecs/linux-g++ ];then
+ 	export QMAKESPEC=/usr/share/qt/mkspecs/linux-g++/
+ 	`which qmake` -makefile -unix -o Makefile xfine.pro
++	sed -i -e 's/g++$/g++-4.3/g' -e 's/gcc$/gcc-4.3/g' Makefile
+ else
+ 	export QMAKESPEC=/usr/share/qt4/mkspecs/linux-g++/
+ 	`which qmake` -makefile -unix -o Makefile xfine.pro
++	sed -i -e 's/g++$/g++-4.3/g' -e 's/gcc$/gcc-4.3/g' Makefile
+ fi
+ 
+diff -u -r sax.old//sysp/lib/Makefile sax/sysp/lib/Makefile
+--- sax.old//sysp/lib/Makefile	2010-03-27 11:38:01.000000000 +0000
++++ sax/sysp/lib/Makefile	2010-03-27 11:39:06.000000000 +0000
+@@ -9,7 +9,7 @@
+ 
+ RPM_OPT_FLAGS ?= -O2
+ 
+-CC       = g++
++CC       = g++-4.3
+ CFLAGS   = $(RPM_OPT_FLAGS) -O2 -fpic -Wall
+ LIBS     = -lfl
+ 

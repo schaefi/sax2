@@ -1,0 +1,41 @@
+# settings for screen 0
+# ------------------------
+SaXMeta -> [X]   ->  SAX_NO_DUAL_MODE = 1
+SaXMeta -> [X+1] ->  SAX_NO_DUAL_MODE = 1
+
+Device  -> [X]   ->  Driver           = intel
+Device  -> [X]   ->  Screen           = 0
+
+# new device for Screen 1
+# ------------------------
+$Modes  = Screen -> [X] -> Depth -> 16 -> Modes
+$BusID  = Device -> [X] -> BusID
+$Vendor = Device -> [X] -> VendorName
+$Model  = Device -> [X] -> BoardName
+$Hsync  = Monitor-> [X] -> HorizSync
+$Vsync  = Monitor-> [X] -> VertRefresh
+$Mmodel = Monitor-> [X] -> ModelName
+$Mvendor= Monitor-> [X] -> VendorName
+
+Device  -> [X+1] ->  BusID            = ${BusID}
+Device  -> [X+1] ->  VendorName       = ${Vendor}
+Device  -> [X+1] ->  BoardName        = ${Model}
+Device  -> [X+1] ->  Identifier       = Device[[X+1]]
+Device  -> [X+1] ->  Driver           = intel 
+Device  -> [X+1] ->  Screen           = 1
+
+# new desktop for Screen 1
+# -------------------------
+Screen  -> [X+1] ->  Device           = Device[[X+1]]
+Screen  -> [X+1] ->  Monitor          = Monitor[[X+1]]
+Screen  -> [X+1] ->  Identifier       = Screen[[X+1]]
+Screen  -> [X+1] ->  DefaultDepth     = 24
+Screen  -> [X+1] ->  Depth->8->Modes  = ${Modes}
+Screen  -> [X+1] ->  Depth->15->Modes = ${Modes}
+Screen  -> [X+1] ->  Depth->16->Modes = ${Modes}
+Screen  -> [X+1] ->  Depth->24->Modes = ${Modes}
+Monitor -> [X+1] ->  VertRefresh      = ${Vsync}
+Monitor -> [X+1] ->  ModelName        = ${Mmodel}
+Monitor -> [X+1] ->  HorizSync        = ${Hsync}
+Monitor -> [X+1] ->  VendorName       = ${Mvendor}
+Monitor -> [X+1] ->  Identifier       = Monitor[[X+1]]

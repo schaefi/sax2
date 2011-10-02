@@ -1,0 +1,5 @@
+Screen  -> [X] ->  Depth->8->Virtual = 3840 1200
+Screen  -> [X] ->  Depth->15->Virtual = 3840 1200
+Screen  -> [X] ->  Depth->16->Virtual = 3840 1200
+Screen  -> [X] ->  Depth->24->Virtual = 3840 1200
+Screen  -> [X] ->  Depth->32->Virtual = 3840 1200

@@ -1,0 +1,1895 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: NetworkManager-vpnc\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-03-31 13:39+8\n"
+"PO-Revision-Date: 2005-06-26 01:20+0200\n"
+"Last-Translator: Priyavert Sharma <priyavert.sharma@agreeya.com>\n"
+"Language-Team: AgreeYa Solutions <www.agreeya.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. /.../
+#. Copyright (c) 2005 SuSE GmbH Nuernberg, Germany.  All rights reserved.
+#. This file contains the gettext keys used within a gettext call in the
+#. application code for the SaX2 and XFine GUI
+#.
+#. Dear Translator, translate this string as 'RTL' if your language is right-to-left
+msgid "I18N"
+msgstr ""
+
+#. RTF text: Startup information for the user
+msgid "<b>SaX2 Suggestion</b><hr>The currently-started graphics system is based on a suggestion made by SaX2. If this is acceptable, click <b>OK</b>. Otherwise, change the configuration."
+msgstr "<b>SaX2 পরামর্শ</b><hr>বর্তমানে শুরু হওয়া গ্রাফিক্স সিস্টেমটিSaX2 -র পরামর্শের ভিত্তিতে। এটা যদি গ্রহণীয় হয় তাহলে<b>OK</b> তে ক্লিক করুন। অন্যথায় সংরূপণ পালটান।"
+
+#. RTF text: 3D acceleration not supported with this card
+msgid "<b>3D acceleration not supported</b><hr>SaX2 cannot offer activation of the 3D subsystem because your graphics card/driver doesn't support 3D"
+msgstr ""
+
+#. RTF text: 3D acceleration not supported with Xinerama
+msgid "<b>3D acceleration not supported</b><hr>SaX2 cannot offer activation of the 3D subsystem because Xinerama based dual head mode is used. The Xorg Xinerama extension for combining graphics screens doesn't support 3D on all heads"
+msgstr ""
+
+#. Caption text for the startup information window
+msgid "Automatic Graphics System Setup"
+msgstr "স্বয়ংক্রিয় গ্রাফিক্স সিস্টেম সেটআপ"
+
+#. Caption text for informing the user
+msgid "Information..."
+msgstr "তথ্য..."
+
+#. Caption text for the main window
+msgid "SaX2: X11 Configuration"
+msgstr "SaX2: X11 সংরূপণ"
+
+#. Title text on the left side
+msgid "SaX Control Center"
+msgstr "SaX নিয়ন্ত্রণ কেন্দ্র"
+
+#. Info message about display size changes
+msgid "<b>Display size changed</b><hr>The display size has been adapted to the new layout."
+msgstr ""
+
+#. Help Button text
+msgid "&Help"
+msgstr "&সাহায্য"
+
+#. Ok Button text
+msgid "O&K"
+msgstr "O&K"
+
+#. Yes Button text
+msgid "&Yes"
+msgstr "হ্যাঁ"
+
+#. No Button text
+msgid "&No"
+msgstr "&না"
+
+#. Cancel Button text
+#. Maximum length: 40  characters
+msgid "&Cancel"
+msgstr "&বাতিল"
+
+#. RTF text: exit SaX message
+msgid "<b>Exit SaX2</b><hr>Exit SaX2 now?"
+msgstr "<b>SaX2 থেকে প্রস্থান</b><hr>SaX2 থেকে এখন প্রস্থান করবেন?"
+
+#. Message box default caption text
+msgid "Message"
+msgstr "বার্তা"
+
+#. Change configuration Button text
+msgid "C&hange Configuration"
+msgstr "সংরূপণ পালটান"
+
+#. Short description of the Monitor module
+#. Monitor name label
+msgid "Monitor"
+msgstr "মনিটর"
+
+#. title of module dialog
+msgid "Card and Monitor Properties"
+msgstr "কার্ড ও মনিটরের বৈশিষ্ট্য"
+
+#. Short description of the Mouse module
+#. Simple mouse text for the mouse tab
+msgid "Mouse"
+msgstr "মাউস"
+
+#. title of module dialog
+msgid "Mouse Properties"
+msgstr "মাউসের বৈশিষ্ট্য"
+
+#. Short description of the Keyboard module
+#. Keyboard name label
+msgid "Keyboard"
+msgstr "কিবোর্ড"
+
+#. title of module dialog
+msgid "Keyboard Properties"
+msgstr "কিবোর্ডের বৈশিষ্ট্য"
+
+#. Short description of the Tablet module
+#. Tab title: Tablet vendor name selection
+msgid "Tablet"
+msgstr "ট্যাবলেট"
+
+#. title of module dialog
+msgid "Tablet Properties"
+msgstr "ট্যাবলেট-এর বৈশিষ্ট্য"
+
+#. Short description of the Touchscreen module
+msgid "Touchscreen"
+msgstr "টাচস্ক্রীন"
+
+#. title of module dialog
+msgid "Touchscreen Properties"
+msgstr "টাচস্ক্রীন-এর বৈশিষ্ট্য"
+
+#. Short description of the VNC module
+msgid "Remote Access"
+msgstr ""
+
+#. title of module dialog
+msgid "Remote Access Properties"
+msgstr "দূরস্থ এক্সেস বৈশিষ্ট্য"
+
+#. Tab text for a display tab of the monitor dialog
+msgid "Display %1"
+msgstr ""
+
+#. Tab text for a display tab of the mouse dialog
+#, fuzzy
+msgid "Mouse %1"
+msgstr "মাউস"
+
+#. Activate display checkbox, Display=screen
+msgid "Activate This Display"
+msgstr "এই প্রদর্শন সক্রিয় করুন"
+
+#. Activate mouse checkbox
+msgid "Activate This Pointer"
+msgstr "এই পয়েন্টার সক্রিয় করুন"
+
+#. Graphics Card name label
+msgid "Card"
+msgstr "কার্ড"
+
+#. Desktop name label
+msgid "Desktop"
+msgstr "ডেস্কটপ"
+
+#. Pointers name label, global name for input devices
+#, fuzzy
+msgid "Pointers"
+msgstr "প্রিন্টার"
+
+#. Layout name label, desktop layout
+#. Tab text for a layout tab of the keyboard dialog
+#. Label text for the primary keyboard layout
+#. Table topic text describing the keyboard layout column
+msgid "Layout"
+msgstr "সজ্জা"
+
+#. Path name label, search paths
+msgid "Path"
+msgstr "পথ"
+
+#. Extensions name label, X11 extensions
+msgid "Extensions"
+msgstr ""
+
+#. Change data
+msgid "&Change..."
+msgstr "পালটান..."
+
+#. Set options for some kind of data
+msgid "&Options..."
+msgstr "&বিকল্পগুলি..."
+
+#. Configure some data
+msgid "Con&figure..."
+msgstr "সংরূপণ করুন..."
+
+#. Group box title for dual head setup
+msgid "Dual Head Mode"
+msgstr "ডুয়াল হেড মোড"
+
+#. Group box title for card options
+#. Group box title for mouse options
+#. Tab text for an options tab of the keyboard dialog
+#. Group box title for tablet options
+#. Group box title for the VNC options
+msgid "Options"
+msgstr "বিকল্পগুলি"
+
+#. CheckBox label to activate the mouse wheel
+msgid "Activate Mouse Wheel"
+msgstr "মাউস হুইল সক্রিয় করুন"
+
+#. CheckBox label to invert the mouse X axis
+msgid "Invert X-Axis"
+msgstr "X-অক্ষ উলটে দিন"
+
+#. CheckBox label to invert the mouse Y axis
+msgid "Invert Y-Axis"
+msgstr "Y-অক্ষ উলটে দিন"
+
+#. CheckBox label to activate left hand mouse
+msgid "Activate Left-Hand Button Mapping"
+msgstr ""
+
+#. CheckBox label to activate the 3 Button emulation
+msgid "Activate 3-Button Emulation"
+msgstr "3-বাটন এমুলেশন সক্রিয় করুন"
+
+#. CheckBox label to activate the wheel emulation
+msgid "Emulate Wheel with Mouse Button"
+msgstr "মাউসের বোতাম দিয়ে চাকার নকল করুন"
+
+#. Group box title for card rotation
+msgid "Rotate Screen"
+msgstr "পর্দা ঘোরান"
+
+#. Group box title for the mouse test field
+#. Line edit label pointing to the keyboard test field
+msgid "Test"
+msgstr "পরীক্ষা"
+
+#. Button text in final step message box for testing the configuration
+msgid "&Test"
+msgstr "&পরীক্ষা"
+
+#. Button text in final step message box for saving the configuration
+msgid "&Save"
+msgstr "&সংরক্ষণ করুন"
+
+#. Status line of mouse test field: ready
+msgid "Test ready"
+msgstr "পরীক্ষা প্রস্তুত"
+
+#. Status line of mouse test field: single button click
+msgid "Single Click: Done"
+msgstr "একমাত্র ক্লিক: হয়ে গেছে"
+
+#. Status line of mouse test field: double button click
+msgid "Double Click: Done"
+msgstr "ডবল ক্লিক: হয়ে গেছে"
+
+#. Status line of mouse test field: wheel moved
+msgid "Scrolling"
+msgstr "স্ক্রল করছে"
+
+#. Status line of mouse test field: button pressed
+msgid "Button pressed"
+msgstr "বোতাম টেপা হয়েছে"
+
+#. Status line of mouse test field: button released
+msgid "Button released"
+msgstr "বোতাম মুক্ত করা হয়েছে"
+
+#. Status line of mouse test field: wheel stopped
+msgid "Stopped: Done"
+msgstr "স্তব্ধ: হয়ে গেছে"
+
+#. Group box title for properties
+msgid "Properties"
+msgstr "বৈশিষ্ট্য"
+
+#. Activate dual head mode checkbox
+msgid "Activate Dual Head Mode"
+msgstr "ডুয়াল হেড মোড সক্রিয় করুন"
+
+#. Set display resolution
+msgid "Resolution"
+msgstr "রেজলিউশন"
+
+#. Set display colors
+msgid "Colors"
+msgstr "রঙগুলি"
+
+#. Activate 3D checkboc
+msgid "Activate 3D Acceleration"
+msgstr "3D ত্বরণ সক্রিয় করুন"
+
+#. Tab title: Setup monitor properties for card X
+msgid "Monitor for Card"
+msgstr "কার্ডের জন্য মনিটর"
+
+#. Tab title: Setup monitor for second channel on card X
+msgid "Second Monitor for Card"
+msgstr "কার্ডের জন্য দ্বিতীয় মনিটর"
+
+#. Tab title: Setup sync frequencies
+msgid "Sync Frequencies"
+msgstr "সিংক কম্পাঙ্ক"
+
+#. Tab title: Setup display size
+msgid "Display Size"
+msgstr "আকার দেখান"
+
+#. Tab title: Setup the monitor arrangement
+#. Title for the multihead arrangement
+msgid "Arrangement"
+msgstr "বিন্যাস"
+
+#. Information about dual head mode. %1=the dual head modus %2=the resolution
+msgid "Activated in %1 mode with %2"
+msgstr "%2 দিয়ে %1 মোডে সক্রিয় হয়েছে"
+
+#. Short Information that something has been activated
+msgid "Activated in driver default mode"
+msgstr "ড্রাইভার ডিফল্ট মোডে সক্রিয়"
+
+#. rwalter
+#. Monitor Model is unknown and should be changed
+#. rwalter
+#. Mouse Model is unknown and should be changed
+msgid "Unconfigured"
+msgstr "অসংরূপিত"
+
+#. Message appears when user is trying to deactivate all displays
+msgid "<b>Cannot Deactivate All Displays</b><hr><nobr>At least one display must be active.</nobr>"
+msgstr "<b>সকল প্রদর্শনগুলি নিষ্ক্রিয় করতে পারে না</b><hr><nobr>কমপক্ষে একটি প্রদর্শনসক্রিয় থাকতে হবে।</nobr>"
+
+#. Info label for dual head checkbox
+msgid "No configuration available"
+msgstr "কোন সংরূপণ উপলভ্য নেই"
+
+#. Radiobutton for traditional multihead mode
+msgid ""
+"Traditional Multihead:\n"
+"Each screen is an independent display"
+msgstr ""
+"পরম্পরাগত মাল্টিহেড:\n"
+"প্রতিটি পর্দাই একটি স্বাধীন প্রদর্শন"
+
+#. Radiobutton for cloned multihead mode
+msgid ""
+"Cloned Multihead:\n"
+"Each display is a clone of the primary display"
+msgstr ""
+"ক্লোনড মাল্টিহেড:\n"
+"প্রতিটি প্রদর্শনই প্রধান প্রদর্শনের একটি ক্লোন"
+
+#. Radiobutton for xinerama multihead mode
+msgid ""
+"Xinerama Multihead:\n"
+"Build one big display out of all screens"
+msgstr ""
+"Xinerama মাল্টিহেড:\n"
+"সকল পর্দাগুলি থেকে একটি বড় প্রদর্শন নির্মাণ করুন"
+
+#. Title for multihead modi
+msgid "Multihead Mode"
+msgstr "মাল্টিহেড মোড"
+
+#. Monitor X - connected to - CardY
+msgid "Connected To"
+msgstr "এর সাথে যুক্ত"
+
+#. Tooltip text if monitor is unknown
+msgid "Unknown Monitor:"
+msgstr "অজানা মনিটর:"
+
+#. Tooltip text for primary monitor
+msgid "Primary Monitor:"
+msgstr "প্রধান মনিটর:"
+
+#. Windowanager title for the monitor model setup
+#. Windowanager title for the second monitor model setup
+msgid "Monitor Settings"
+msgstr "মনিটরের সেটিং"
+
+#. Windowanager title for the mouse mode setup
+msgid "Mouse Settings"
+msgstr "মাউসের সেটিং"
+
+#. Windowanager title for the card options dialog
+msgid "Graphics Card Settings"
+msgstr "গ্রাফিক্স কার্ড সেটিং"
+
+#. Windowanager title for the dual head setup
+msgid "Dual Head Settings"
+msgstr "ডুয়াল হেড সেটিং"
+
+#. Radiobutton don't rotate
+msgid "Not Rotated"
+msgstr "আবর্তিত নয়"
+
+#. Radiobutton rotate to the left side
+msgid "To the Left"
+msgstr "বামদিকে"
+
+#. Radiobutton rotate to the right side
+msgid "To the Right"
+msgstr "ডানদিকে"
+
+#. Popup message to inform the user about fbdev restrictions
+msgid "<b>Invalid Color/Resolution combination:</b><hr><nobr>The selected resolution and/or color settings</nobr> are not supported by the graphics cards framebuffer."
+msgstr ""
+
+#. Popup message to ask the user for an option value
+msgid "<b>Option Needs a Value</b><hr><nobr>Set up a value for option %1.</nobr>"
+msgstr "<b>বিকল্পের একটি মান প্রয়োজন</b><hr><nobr>বিকল্প %1-এর জন্য একটি মান সেট আপ করুন।</nobr>"
+
+#. Group box title for the monitor vendor and name selection
+msgid "Monitor: Vendor and Name Selection"
+msgstr "মনিটর: বিক্রেতা এবং নাম নির্বাচন"
+
+#. Group box title for the mouse vendor and name selection
+msgid "Mouse: Vendor and Name Selection"
+msgstr "মাউস: বিক্রেতা এবং নাম নির্বাচন"
+
+#. Group box title for the manual sync frequency set up
+msgid "Manual Sync Frequency Setup"
+msgstr "হস্তচালিত সিংক কম্পাঙ্ক সেটআপ"
+
+#. Group box title for the aspect/ratio selection
+msgid "Diagonal and Aspect Ratio"
+msgstr "কর্ণ বরাবর এবং দৈর্ঘ্য প্রস্থের অনুপাত"
+
+#. Group box title for the display size setup
+msgid "Display Size in [ mm ]"
+msgstr "[ mm ] এ আকার দেখান"
+
+#. Text message telling to be carefull with the monitor sync frequencies
+msgid "<b>Note:</b> Wrong sync ranges may damage your monitor. Consult the monitor manual for the settings.<br><br>If you want your monitor not to use its maximum rating, decrease the sync ranges."
+msgstr "<b>টীকা:</b> ভুল সিংক শ্রেণী আপনার মনিটরকে ক্ষতিগ্রস্ত করতে পারে। সেটিংয়ের জন্য মনিটরের ব্যবহার নির্দেশিকা দেখুন।<br><br> আপনি যদি চান যে আপনার মনিটর তার সর্বাধিক রেটিং ব্যবহার না করুক তাহলে সিংক শ্রেণী কমিয়ে দিন।"
+
+#. Checkbox to activate DPMS
+msgid "Activate DPMS"
+msgstr "DPMS সক্রিয় করুন"
+
+#. Button to popup the disk dialog for reading the monitor utility disk
+msgid "Utility Disk..."
+msgstr "ইউটিলিটি ডিস্ক..."
+
+#. Label text for horizontal sync frequency
+msgid "Horizontal"
+msgstr "অনুভূমিক"
+
+#. Label text for second monitor name
+msgid "Second Monitor:"
+msgstr "দ্বিতীয় মনিটর:"
+
+#. Label text for second monitor resolution
+msgid "Second Monitor Resolution"
+msgstr "দ্বিতীয় মনিটরের রেজলিউশন"
+
+#. Label text for vertical sync frequency
+msgid "Vertical"
+msgstr "উল্লম্ব"
+
+#. Label text for hsync unit
+msgid "KHz"
+msgstr "KHz"
+
+#. Label text for vsync unit
+msgid "Hz"
+msgstr "Hz"
+
+#. Label text for the aspect ratio combo box
+msgid "Aspect Ratio"
+msgstr "দৈর্ঘ্য প্রস্থের অনুপাত"
+
+#. Label text for the diagonal length combo box
+msgid "Diagonal"
+msgstr "কোণ বরাবর"
+
+#. Label text for the display size X-Axis
+msgid "X Axis [mm]"
+msgstr "X অক্ষ [mm]"
+
+#. Label text for the display size Y-Axis
+msgid "Y Axis [mm]"
+msgstr "X অক্ষ [mm]"
+
+#. Something is not configured
+msgid "Not configured"
+msgstr "সংরূপিত নয়"
+
+#. Unit name for inches in german zoll
+msgid "inches"
+msgstr "ইঞ্চি"
+
+#. Message box of type Ok, telling to user to insert a CD or disk
+msgid "<b>Insert CD or Disk</b><hr>Insert the display utility CD or disk from the monitor vendor."
+msgstr "<b>CD বা ডিস্ক প্রবেশ করুন</b><hr>মনিটর বিক্রেতার প্রদর্শন ইউটিলিটি CD বা ডিস্ক প্রবেশ করুন।"
+
+#. Message box of type Error, telling that the utility disk cannot be opened
+msgid "<b>Read Error</b><hr>Could not read from CD or disk. This may point to a damaged medium or incorrectly formatted information files."
+msgstr "<b>পড়ার ত্রুটি</b><hr> সিডি বা ডিস্ক থেকে পড়তে পারে নি। এটা ক্ষতিগ্রস্ত মাধ্যম বা ভুলভাবে ফর্ম্যাট করাতথ্য ফাইলগুলির প্রতি নির্দেশ করতে পারে।"
+
+#. First gap of the ActivateInfo text: Multihead mode name
+msgid "Traditional"
+msgstr "ঐতিহ্যপূর্ণ"
+
+#. First gap of the ActivateInfo text: Multihead mode name
+msgid "Clone"
+msgstr "ক্লোন"
+
+#. First gap of the ActivateInfo text: Multihead mode name
+msgid "Xinerama"
+msgstr "Xinerama"
+
+#. Tab text for the mouse model dialog
+msgid "Mouse Model"
+msgstr "মাউস মডেল"
+
+#. Group box title for the primary keyboard setup
+msgid "Primary Setup"
+msgstr "প্রধান সেটআপ"
+
+#. Label text for the primary keyboard type
+msgid "Type"
+msgstr "ধরন"
+
+#. Label text for the primary keyboard variant
+#. Table topic text describing the variant column
+msgid "Variant"
+msgstr " পরিবর্তনশীল "
+
+#. Group box title for the additional keyboard setup
+msgid "Additional Layouts"
+msgstr "অতিরিক্ত সজ্জা"
+
+#. Table topic text describing the status column
+msgid "Status"
+msgstr "অবস্থা"
+
+#. Table topic text describing the keytable column
+msgid "Keytable"
+msgstr "কিটেবিল"
+
+#. List View root item text
+msgid "Group Shift/Lock Behavior"
+msgstr "গ্রুপ শিফট /লক আচরণ"
+
+#. List View root item text
+msgid "Use Keyboard LED to Show Alternate Group"
+msgstr "বিকল্প গ্রুপ দেখাবার জন্য কিবোর্ডের LED ব্যবহার করুন"
+
+#. List View root item text
+msgid "Compose Key Position"
+msgstr "কি-এর অবস্থান রচনা করুন"
+
+#. List View root item text
+#. XKBFile extension text
+msgid "Control Key Position"
+msgstr "নিয়ন্ত্রণ কি-এর অবস্থান"
+
+#. List View root item text
+msgid "Third Level Chooser"
+msgstr "তৃতীয় পর্যায় নির্বাচক"
+
+#. List View root item text
+msgid "Alt/Win Key Behavior"
+msgstr "Alt/Win কি-এর আচরণ"
+
+#. List View root item text
+msgid "EuroSign Key Position"
+msgstr ""
+
+#. List View root item text
+msgid "CapsLock Key Behavior"
+msgstr "CapsLock কি-এর আচরণ"
+
+#. List View item text: Radiobutton no item selected
+msgid "None"
+msgstr "কোনটিই নয়"
+
+#. XKBFile extension text
+msgid "Morocco"
+msgstr "মরোক্কো"
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Braille"
+msgstr "ব্রাজিল"
+
+#. XKBFile extension text
+msgid "Ethiopia"
+msgstr "এস্টোনিয়া"
+
+#. XKBFile extension text
+msgid "NICOLA-F style Backspace"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Right Alt key never chooses 3rd level."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Left Alt key switches layout while pressed."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Space key outputs non"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Default numeric keypad keys."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Both Ctrl keys together change layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Using space key to input non-breakable space character"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Right Shift key changes layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Left Win-key changes layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "LCtrl+LShift change layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Left Alt key changes layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Both Win-keys switch layout while pressed."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Right Ctrl key switches layout while pressed."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Space key outputs non-breakable space character"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Shift+CapsLock changes layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "R-Alt switches layout while pressed."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Numeric keypad layout selection"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Right Ctrl key changes layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Alt+CapsLock changes layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Super is mapped to the Win-keys."
+msgstr ""
+
+#. XKBFile extension text
+msgid "ScrollLock LED shows alternative layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Both Shift keys together change layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Space key outputs non-breakable space character at second level."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Right Win-key changes layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Space key outputs non-breakable space character at third level."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Numeric keypad keys work as with Mac."
+msgstr ""
+
+#. XKBFile extension text
+msgid "CapsLock LED shows alternative layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "NumLock LED shows alternative layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Left Shift key changes layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Left Win-key switches layout while pressed."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Space key outputs non-breakable space character at fourth level."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Both Alt keys together change layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "CapsLock key changes layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Control is mapped to the Win-keys (and the usual Ctrl keys)."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Right Alt key changes layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Shift with numeric keypad keys works as in MS Windows."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Alt and Meta are on the Alt keys."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Alt+Shift change layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Ctrl+Shift change layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Space key outputs usual space at any level."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Japanese keyboard options"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Use keyboard LED to show alternative layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Left Ctrl key changes layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Menu key changes layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Alt+Ctrl change layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Right Win-key switches layout while pressed."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Layout switching"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Left Alt key switches group while pressed."
+msgstr "বামদিকের Alt কি টেপা থাকলে তা গ্রুপ বদল করে।"
+
+#. XKBFile extension text
+msgid "Both Ctrl keys together change group."
+msgstr "উভয় Ctrl কি একসাথে গ্রুপ বদল করে।"
+
+#. XKBFile extension text
+msgid "Right Shift key changes group."
+msgstr "ডানদিকের Shift কি গ্রুপ বদল করে।"
+
+#. XKBFile extension text
+msgid "Left Win key changes group."
+msgstr "বামদিকের Win কি গ্রুপ বদল করে।"
+
+#. XKBFile extension text
+msgid "Left Alt key changes group."
+msgstr "বামদিকের Alt কি গ্রুপ বদল করে।"
+
+#. XKBFile extension text
+msgid "Both Win keys switch group while pressed."
+msgstr "উভয় Win কি টেপা থাকলে গ্রুপ বদল করে।"
+
+#. XKBFile extension text
+msgid "Right Ctrl key switches group while pressed."
+msgstr "ডানদিকের Ctrl কি টেপা থাকলে তা গ্রুপ বদল করে।"
+
+#. XKBFile extension text
+msgid "Left Alt is swapped with left Win-key."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Default numpad keys."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Adding the nobreakspace keysym to space key"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Use keypad with unicode additions (arrows and math operators)"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Force standard legacy keypad"
+msgstr ""
+
+#. XKBFile extension text
+msgid "CapsLock uses internal capitalization. Shift doesn't affect CapsLock."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Keypad layout selection"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Alt+CapsLock changes group."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Space key output nobreakspace at second level."
+msgstr ""
+
+#. XKBFile extension text
+msgid "CapsLock acts as Shift with locking. Shift doesn't affect CapsLock."
+msgstr ""
+
+#. XKBFile extension text
+#, fuzzy
+msgid "CapsLock uses internal capitalization. Shift \"pauses\" CapsLock."
+msgstr "CapsLock অভ্যন্তরীণ ক্যাপিটালাইজেশন ব্যবহার করে। Shift CapsLock-কে বাতিল করে।"
+
+#. XKBFile extension text
+msgid "Space key output nobreakspace at third level."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Swap keycodes of two keys when Mac keyboards are misdetected by kernel."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Numpad keys work as with Mac."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Kana Lock key is locking"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Space key output nobreakspace at fourth level."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Left Win-key is Compose."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Press Right Alt key to choose 3rd level, Shift+Right Alt key is Multi_Key."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Space key output space at any level."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Japanese Keyboard Options"
+msgstr ""
+
+#. XKBFile extension text
+#, fuzzy
+msgid "CapsLock acts as Shift with locking. Shift \"pauses\" CapsLock."
+msgstr "CapsLock লকিংয়ের সাথে Shift হিসাবে কাজ করে। Shift CapsLock-কে বাতিল করে।"
+
+#. XKBFile extension text
+msgid "CapsLock uses internal capitalization. Shift doesn't cancel CapsLock."
+msgstr "CapsLock অভ্যন্তরীণ ক্যাপিটালাইজেশন ব্যবহার করে। শিফ্ট CapsLock কে বাতিল করে না।"
+
+#. XKBFile extension text
+msgid "CapsLock just locks the Shift modifier."
+msgstr "CapsLock শুধুমাত্র Shift মডিফায়ারকে লক করে দেয়।"
+
+#. XKBFile extension text
+msgid "CapsLock toggles normal capitalization of alphabetic characters."
+msgstr "CapsLock বর্ণ অক্ষরের স্বাভাবিক ক্যাপিটালাইজেশন পালটায়।"
+
+#. XKBFile extension text
+msgid "CapsLock toggles Shift so all keys are affected."
+msgstr "CapsLock Shift-কে পালটে দেয়, তাই সকল কি-গুলি প্রভাবিত হয়।"
+
+#. XKBFile extension text
+msgid "Right Win-key is Compose."
+msgstr "ডানদিকের Win-কি হল কম্পোজ।"
+
+#. XKBFile extension text
+msgid "Shift+CapsLock changes group."
+msgstr "Shift+CapsLock গ্রুপ বদল করে।"
+
+#. XKBFile extension text
+msgid "R-Alt switches group while pressed."
+msgstr "R-Alt টেপা থাকলে গ্রুপ বদল করে।"
+
+#. XKBFile extension text
+msgid "Right Control key works as Right Alt."
+msgstr "ডানদিকের Control কি ডান Alt হিসাবে কাজ করে।"
+
+#. XKBFile extension text
+msgid "Control key at bottom left"
+msgstr "নিচের বামদিকের Control কি"
+
+#. XKBFile extension text
+msgid "Press any of Win-keys to choose 3rd level."
+msgstr "৩য় স্তর বাছার জন্য যে কোন Win-কি টিপুন।"
+
+#. XKBFile extension text
+msgid "Press Right Alt key to choose 3rd level."
+msgstr "৩য় স্তর বাছার জন্য ডানদিকের Alt কি টিপুন।"
+
+#. XKBFile extension text
+msgid "Right Ctrl key changes group."
+msgstr "ডানদিকের Ctrl কি গ্রুপ বদলায়।"
+
+#. XKBFile extension text
+msgid "Right Alt is Compose."
+msgstr "ডানদিকের Alt হল কম্পোজ।"
+
+#. XKBFile extension text
+msgid "Right Ctrl is Compose."
+msgstr "ডানদিকের Ctrl হল কম্পোজ।"
+
+#. XKBFile extension text
+msgid "ScrollLock LED shows alternative group."
+msgstr "ScrollLock LED বিকল্প গ্রুপ দেখায়।"
+
+#. XKBFile extension text
+msgid "Control key at left of -A-"
+msgstr "-A- এর বামদিকে Control কি"
+
+#. XKBFile extension text
+msgid "Third level choosers"
+msgstr "তৃতীয় স্তর নির্বাচক"
+
+#. XKBFile extension text
+msgid "Both Shift keys together change group."
+msgstr "উভয় Shift কি একসাথে গ্রুপ বদল করে।"
+
+#. XKBFile extension text
+msgid "CapsLock acts as Shift with locking. Shift doesn't cancel CapsLock."
+msgstr "লকিংয়ের সাথে CapsLock কাজ করে Shift হিসাবে। Shift CapsLock-কে বাতিল করে না।"
+
+#. XKBFile extension text
+msgid "CapsLock uses internal capitalization. Shift cancels CapsLock."
+msgstr "CapsLock অভ্যন্তরীণ ক্যাপিটালাইজেশন ব্যবহার করে। Shift CapsLock-কে বাতিল করে।"
+
+#. XKBFile extension text
+msgid "Make CapsLock an additional Control."
+msgstr "CapsLock-কে একটি অতিরিক্ত Control করুন। "
+
+#. XKBFile extension text
+msgid "Press Left Win-key to choose 3rd level."
+msgstr "৩য় স্তর বাছার জন্য বামদিকের Win-কি টিপুন।"
+
+#. XKBFile extension text
+msgid "Right Win-key changes group."
+msgstr "ডানদিকের Win-কি গ্রুপ বদল করে।"
+
+#. XKBFile extension text
+msgid "Meta is mapped to the left Win-key."
+msgstr "মেটা-কে বামদিকের Win-কিয়ের সাথে ম্যাপ করা হয়েছে।"
+
+#. XKBFile extension text
+msgid "CapsLock LED shows alternative group."
+msgstr "CapsLock LED বিকল্প গ্রুপ দেখায়।"
+
+#. XKBFile extension text
+msgid "NumLock LED shows alternative group."
+msgstr "NumLock LED বিকল্প গ্রুপ দেখায়।"
+
+#. XKBFile extension text
+msgid "Left Shift key changes group."
+msgstr "বামদিকের Shift কি  গ্রুপ বদল করে।"
+
+#. XKBFile extension text
+msgid "Left Win-key switches group while pressed."
+msgstr "বামদিকের Win-কি টেপা থাকলে গ্রুপ বদল করে।"
+
+#. XKBFile extension text
+msgid "Menu is Compose."
+msgstr "মেনু হল কম্পোজ।"
+
+#. XKBFile extension text
+msgid "Both Alt keys together change group."
+msgstr "উভয় Alt কি একসাথে গ্রুপ বদলায়।"
+
+#. XKBFile extension text
+msgid "CapsLock key changes group."
+msgstr "CapsLock কি  গ্রুপ বদল করে।"
+
+#. XKBFile extension text
+msgid "Swap Control and CapsLock."
+msgstr "Control ও CapsLock পালটাপালটি করুন।"
+
+#. XKBFile extension text
+msgid "Press any of Alt keys to choose 3rd level."
+msgstr "৩য় স্তর বাছার জন্য যে কোন একটি Alt কি টিপুন।"
+
+#. XKBFile extension text
+msgid "Right Alt key changes group."
+msgstr "ডানদিকের Alt কি গ্রুপ বদলায়।"
+
+#. XKBFile extension text
+msgid "Shift with numpad keys works as in MS Windows."
+msgstr "নামপ্যাড কিয়ের সাথে Shift কি MS Windows এর মত কাজ করে।"
+
+#. XKBFile extension text
+msgid "Special keys (Ctrl+Alt+<key>) handled in a server."
+msgstr "বিশেষ কি  (Ctrl+Alt+<key>) সার্ভারে সামলানো হয়।"
+
+#. XKBFile extension text
+msgid "Hyper is mapped to the Win-keys."
+msgstr "হাইপারকে  Win-কিগুলির সাথে ম্যাপ করা হয়েছে।"
+
+#. XKBFile extension text
+msgid "Alt is mapped to the right Win-key and Super to Menu."
+msgstr "Alt কে ডানদিকের Win-কিয়ের সাথে সুপারকে মেনুর সাথে ম্যাপ করা হয়েছে।"
+
+#. XKBFile extension text
+msgid "Super is mapped to the Win-keys (default)."
+msgstr "সুপারকে Win-কিয়ের সাথে ম্যাপ করা হয়েছে (ডিফল্ট)।"
+
+#. XKBFile extension text
+msgid "Alt and Meta on the Alt keys (default)."
+msgstr "Alt কিগুলিতে Alt ও Meta (ডিফল্ট)।"
+
+#. XKBFile extension text
+msgid "Add the standard behavior to Menu key."
+msgstr "মেনু কি-এ প্রমিত আচরণ যোগ করুন"
+
+#. XKBFile extension text
+msgid "Alt and Meta are on the Alt keys (default)."
+msgstr "Alt ও Meta Alt কি-গুলিতে আছে (ডিফল্ট)।"
+
+#. XKBFile extension text
+msgid "Press Right Control to choose 3rd level."
+msgstr "৩য় স্তর বাছার জন্য ডানদিকের Control টিপুন।"
+
+#. XKBFile extension text
+msgid "Alt+Shift changes group."
+msgstr "Alt+Shift গ্রুপ বদল করে।"
+
+#. XKBFile extension text
+msgid "Control+Shift changes group."
+msgstr "Control+Shift গ্রুপ বদল করে। "
+
+#. XKBFile extension text
+msgid "CapsLock acts as Shift with locking. Shift cancels CapsLock."
+msgstr "CapsLock লকিংয়ের সাথে Shift হিসাবে কাজ করে। Shift CapsLock-কে বাতিল করে।"
+
+#. XKBFile extension text
+msgid "Use keyboard LED to show alternative group."
+msgstr "বিকল্প গ্রুপ দেখাবার জন্য কিবোর্ডের LED ব্যবহার করুন।"
+
+#. XKBFile extension text
+msgid "Press Right Win-key to choose 3rd level."
+msgstr "৩য় স্তর বাছার জন্য ডানদিকের Win-কি টিপুন।"
+
+#. XKBFile extension text
+msgid "Press Left Alt key to choose 3rd level."
+msgstr "৩য় স্তর বাছার জন্য বামদিকের Alt কি টিপুন।"
+
+#. XKBFile extension text
+msgid "Meta is mapped to the Win-keys."
+msgstr "মেটা Win-কিয়ের সাথে ম্যাপ করা আছে।"
+
+#. XKBFile extension text
+msgid "Press Menu key to choose 3rd level."
+msgstr "৩য় স্তর বাছার জন্য মেনু কি টিপুন।"
+
+#. XKBFile extension text
+msgid "Left Ctrl key changes group."
+msgstr "বামদিকের Ctrl কি গ্রুপ বদল করে।"
+
+#. XKBFile extension text
+msgid "Menu key changes group."
+msgstr "মেনু কি গ্রুপ বদল করে।"
+
+#. XKBFile extension text
+msgid "Alt+Control changes group."
+msgstr "Alt+Control গ্রুপ বদল করে।"
+
+#. XKBFile extension text
+msgid "Right Win-key switches group while pressed."
+msgstr "ডানদিকের Win-কি টেপা থাকলে গ্রুপ বদল করে।"
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Serbia"
+msgstr "খোঁজো"
+
+#. XKBFile extension text
+msgid "Guinea"
+msgstr "গিনি"
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Montenegro"
+msgstr "সার্বিয়া ও মন্টেনেগ্রো"
+
+#. XKBFile extension text
+msgid "China"
+msgstr "চিলি"
+
+#. XKBFile extension text
+#, fuzzy
+msgid "USA"
+msgstr "USB"
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Add the EuroSign to the 4 key."
+msgstr "5 কিয়ের সাথে ইউরো চিহ্ন যোগ করুন।"
+
+#. XKBFile extension text
+msgid "Four-level key with dot"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Legacy Wang 724 keypad"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Four-level key with abstract separators"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Keypad with unicode additions (arrows and math operators)"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Legacy keypad"
+msgstr ""
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Shift cancels CapsLock."
+msgstr "CapsLock ও Ctrl পালটাপালটি করুন।"
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Swap ESC and CapsLock."
+msgstr "CapsLock ও Ctrl পালটাপালটি করুন।"
+
+#. XKBFile extension text
+msgid "Wang 724 keypad with unicode additions (arrows and math operators). Math operators on default level."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Four-level key with comma"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Legacy key with comma"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Keypad with unicode additions (arrows and math operators). Math operators on default level."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Legacy key with dot"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Four-level key with momayyez"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Numeric keypad delete key behaviour"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Wang 724 keypad with unicode additions (arrows and math operators)"
+msgstr ""
+
+#. Tab title: Tablet port and mode selection
+msgid "Port and Mode"
+msgstr "পোর্ট ও মোড"
+
+#. Tab title: Tablet electronic pens (pen,eraser)
+msgid "Electronic Pens"
+msgstr "বৈদ্যুতিন পেন"
+
+#. Activate tablet checkbox
+msgid "Activate This Tablet"
+msgstr "এই ট্যাবলেটকে সক্রিয় করুন"
+
+#. Group box title for the tablet vendor and name selection
+msgid "Tablet: Vendor and Name Selection"
+msgstr "ট্যাবলেট: বিক্রেতা ও নাম নির্বাচন"
+
+#. Group box title for tablet port combobox
+msgid "Connection Port"
+msgstr "সংযোগ পোর্ট"
+
+#. Group box title for tablet mode
+msgid "Primary Tablet Mode"
+msgstr "প্রধান ট্যাবলেট মোড"
+
+#. Group box title for pen/eraser tablet mode
+msgid "Pen or Eraser Mode"
+msgstr "পেন বা ইরেজার মোড"
+
+#. Radiobutton for relative tablet mode
+msgid "Relative"
+msgstr "তুলনামূলক"
+
+#. Radiobutton for absolute tablet mode
+msgid "Absolute"
+msgstr "পরম"
+
+#. Combobox item text for tablet port: USB
+msgid "USB"
+msgstr "USB"
+
+#. Combobox item text for tablet port: ttyS0
+msgid "COM-1 [ /dev/ttyS0 ]"
+msgstr "COM-1 [ /dev/ttyS0 ]"
+
+#. Combobox item text for tablet port: ttyS1
+msgid "COM-2 [ /dev/ttyS1 ]"
+msgstr "COM-2 [ /dev/ttyS1 ]"
+
+#. Combobox item text for tablet port: ttyS2
+msgid "COM-3 [ /dev/ttyS2 ]"
+msgstr ""
+
+#. Combobox item text for tablet port: ttyS3
+msgid "COM-4 [ /dev/ttyS3 ]"
+msgstr ""
+
+#. Combobox item text for tablet port: ttyS4
+#, fuzzy
+msgid "COM-5 [ /dev/ttyS4 ]"
+msgstr "COM-1 [ /dev/ttyS0 ]"
+
+#. Group box title for the tablet tools (pen/eraser)
+msgid "Tools"
+msgstr "টুল"
+
+#. Add Pen Checkbox
+msgid "Add Pen"
+msgstr "পেন যোগ করুন"
+
+#. Add Eraser Checkbox
+msgid "Add Eraser"
+msgstr "ইরেজার যোগ করুন"
+
+#. Add Touch Checkbox
+msgid "Add Touch"
+msgstr ""
+
+#. Add Pad Checkbox
+msgid "Add Pad"
+msgstr ""
+
+#. Windowanager title for the tablet pen options dialog
+msgid "Pen or Eraser Settings"
+msgstr "পেন বা ইরেজার সেটিং"
+
+#. Tab title: Pen properties
+msgid "Pen Properties"
+msgstr "পেনের বৈশিষ্ট্য"
+
+#. Tab title: Pad properties
+msgid "Pad Properties"
+msgstr ""
+
+#. Tab title: Eraser properties
+msgid "Eraser Properties"
+msgstr "ইরেজারের বৈশিষ্ট্য"
+
+#. Tab title: Touch properties
+#, fuzzy
+msgid "Touch Properties"
+msgstr "টাচস্ক্রীন-এর বৈশিষ্ট্য"
+
+#. Tab text for a touchscreen tab of the touchscreen dialog
+#, fuzzy
+msgid "Touchscreen %1"
+msgstr "টাচস্ক্রীন"
+
+#. Activate/Assign touchscreen checkbox
+msgid "Assign a Touchscreen to Display Number %1"
+msgstr "নম্বর %1 দেখাবার জন্য একটি টাচস্ক্রীন নির্দিষ্ট করুন"
+
+#. Group box title for the touchscreen vendor and name selection
+msgid "Touchscreen: Vendor and Name Selection"
+msgstr "টাচস্ক্রীন: বিক্রেতা ও নাম নির্বাচন"
+
+#. Finish configuration message box
+#, fuzzy
+msgid "<b>Final Steps</b><hr>The last step is saving your new configuration. It is recommended to test the new configuration before saving it. If the test server shows a corrupted desktop, press <b>[ Ctrl+Alt+Backspace ]</b> and <b>[ Ctrl+Alt+Backspace ]</b> shortly after a loud warning (beep) to kill the server."
+msgstr "<b>অন্তিম ধাপগুলি</b><hr>শেষ ধাপটি আপনার নতুন সংরূপণ সংরক্ষণ করছে। নতুন সংরূপণ সংরক্ষণের আগে সেটাকে পরীক্ষা করার পরামর্শ দেওয়া হয়। যদি পরীক্ষামূলক সার্ভার ত্রুটিযুক্ত ডেস্কটপ দেখায়, তাহলে সার্ভার সমাপ্ত করার জন্য <b>[ Ctrl+Alt+Backspace ]</b> টিপুন।"
+
+#. Finish configuration message box (without test)
+msgid "<b>Saving the configuration</b><hr>Click on Save to store the configuration. Your changes will become effective on next X-Server restart."
+msgstr ""
+
+#. Tab title: VNC Server configuration
+msgid "X Server Remote Control"
+msgstr ""
+
+#. Activate VNC server checkbox
+msgid "Allow access to display and keyboard/mouse of your X Server"
+msgstr ""
+
+#. Activate VNC password protection checkbox
+msgid "Activate Password Protection"
+msgstr "পাসওয়ার্ড সুরক্ষা সক্রিয় করুন"
+
+#. LineEdit label: enter password
+msgid "Password"
+msgstr "পাসওয়ার্ড"
+
+#. LineEdit contents: enter new password
+msgid "<Enter new password>"
+msgstr "<নতুন পাসওয়ার্ড প্রবেশ করুন>"
+
+#. LineEdit contents: change password
+msgid "<Change password>"
+msgstr "<পাসওয়ার্ড বদলান>"
+
+#. LineEdit contents: verify password
+msgid "<Verify password>"
+msgstr "<পাসওয়ার্ডের সত্যতা যাচাই করুন>"
+
+#. Activate HTTP access checkbox
+msgid "Activate HTTP Access"
+msgstr "HTTP এক্সেস সক্রিয় করুন"
+
+#. Activate multiple VNC connection checkbox
+msgid "Allow Multiple Connections"
+msgstr ""
+
+#. SpinBox label to setup the HTTP port number
+msgid "HTTP Port"
+msgstr "HTTP পোর্ট"
+
+#. VNC message box appearing if password strings doesn't match
+msgid "<b>Remote Access Password Mismatch</b><hr>The first and the second version of the password do not match."
+msgstr ""
+
+#. VNC message box appearing if password is too short
+msgid "<b>Remote Access Password Fault</b><hr>The password field has been left empty or the password is too short. Enter a password with at least six characters."
+msgstr ""
+
+#. VNC message box appearing if password is too long
+msgid "<b>Remote Access Password Fault</b><hr>The password is too long. Enter a password with a maximum of eight characters."
+msgstr ""
+
+#. Install missing packages box
+msgid "<b>Software Installation:</b><hr>Some packages are missing. Install the missing packages now?"
+msgstr "<b>সফ্টওয়্যার স্থাপনা:</b><hr>কিছু প্যাকেজ অনুপস্থিত।অনুপস্থিত প্যাকেজগুলি এখন স্থাপন করবেন?"
+
+#. Caption text for the missing package info window
+msgid "Package Installation"
+msgstr "প্যাকেজ স্থাপনা"
+
+#. Progress bar title text
+msgid "Importing module"
+msgstr "আমদানি মডিউল"
+
+#. Progress window caption text
+msgid "SaX2: Importing data..."
+msgstr "SaX2: ডেটা আমদানি করছে..."
+
+#. Progress window label text
+msgid "Initialize cache..."
+msgstr "ক্যাশে চালু করছে..."
+
+#. Message box text: configuration cannot be saved
+msgid "<b>Saving Configuration Failed</b><hr>The following report has been created:"
+msgstr "<b>সংরূপণ সংরক্ষণ ব্যর্থ হয়েছে</b><hr>নিচের রিপোর্টটি তৈরি করাহয়েছে: "
+
+#. Message box test: configuration has been saved
+msgid "<b>Configuration Saved</b><hr>Your modifications will take effect the next time the graphics system is restarted. Exit SaX2 now?"
+msgstr ""
+
+#. Message box text: testing the configuration has failed
+msgid "<b>Testing Configuration Failed</b><hr>For further information, refer to the file <tt>/var/log/Xorg.99.log</tt>. The following report has been created from the calling instance:"
+msgstr "<b>সংরূপণ পরীক্ষা করা ব্যর্থ হয়েছে</b><hr>অতিরিক্ত তথ্যের জন্য,  <tt>/var/log/Xorg.99.log</tt> ফাইল দেখুন। কলিং ইন্সট্যান্স থেকে নিচেরনিচের রিপোর্টটি তৈরি করা হয়েছে:"
+
+#. Message box text: if VNC has been enabled the firewall should be checked
+msgid "<b>Remote Access configuration information</b><hr>The Remote Access service requires that the TCP port 5900 and an HTTP port (5800 by default) be open in the firewall. You can configure this with YaST."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Miscellaneous compatibility options"
+msgstr "বিবিধ উপযোগিতা বিকল্প"
+
+#. XKBFile extension text
+msgid "Add the EuroSign to the 5 key."
+msgstr "5 কিয়ের সাথে ইউরো চিহ্ন যোগ করুন।"
+
+#. XKBFile extension text
+msgid "CapsLock key behavior"
+msgstr "CapsLock কিয়ের আচরণ"
+
+#. XKBFile extension text
+msgid "Alt/Win key behavior"
+msgstr "Alt/Win কিয়ের আচরণ"
+
+#. XKBFile extension text
+msgid "Adding the EuroSign to certain keys"
+msgstr "কয়েকটি কিয়ের সাথে ইউরো চিহ্ন যোগ করা"
+
+#. XKBFile extension text
+msgid "Caps Lock is Compose."
+msgstr "Caps Lock হল কম্পোজ।"
+
+#. XKBFile extension text
+msgid "Right Ctrl key works as Right Alt."
+msgstr "ডানদিকের Ctrl কি ডানদিকের Alt কি হিসাবে কাজ করে।"
+
+#. XKBFile extension text
+msgid "Ctrl key at bottom left"
+msgstr "নিচের বামদিকের Ctrl কি"
+
+#. XKBFile extension text
+msgid "Ctrl key at left of 'A'"
+msgstr "'A' এর বামদিকের Ctrl কি"
+
+#. XKBFile extension text
+msgid "Make CapsLock an additional Ctrl."
+msgstr "CapsLock-কে একটি অতিরিক্ত Ctrl-এ পরিণত করুন।"
+
+#. XKBFile extension text
+msgid "Swap Ctrl and CapsLock."
+msgstr "CapsLock ও Ctrl পালটাপালটি করুন।"
+
+#. XKBFile extension text
+msgid "Ctrl key position"
+msgstr "Ctrl কিয়ের অবস্থান"
+
+#. XKBFile extension text
+msgid "Special keys (Ctrl+Alt+&lt;key&gt;) handled in a server."
+msgstr "বিশেষ কিগুলি (Ctrl+Alt+&lt;key&gt;) সার্ভারে পরিচালিত হয়।"
+
+#. XKBFile extension text
+msgid "Press Right Ctrl to choose 3rd level."
+msgstr "৩য় স্তর বাছার জন্য ডানদিকের Ctrl টিপুন।"
+
+#. XKBFile extension text
+msgid "Ctrl+Shift changes group."
+msgstr "Ctrl+Shift গ্রুপ বদলায়।"
+
+#. XKBFile extension text
+msgid "Add the EuroSign to the E key."
+msgstr "E কিয়ের সাথে ইউরো চিহ্ন যোগ করুন।"
+
+#. XKBFile extension text
+msgid "Add the EuroSign to the 2 key."
+msgstr "2 কিয়ের সাথে ইউরো চিহ্ন যোগ করুন।"
+
+#. XKBFile extension text
+msgid "key Compose key position"
+msgstr "কম্পজ কিয়ের অবস্থান"
+
+#. XKBFile extension text
+msgid "Alt+Ctrl changes group."
+msgstr "Alt+Ctrl গ্রুপ বদলায়।"
+
+#. XKBFile extension text
+msgid "Group Shift/Lock behavior"
+msgstr "গ্রুপ Shift/Lock আচরণ"
+
+#. XKBFile extension text
+msgid "Arabic"
+msgstr "আরবী"
+
+#. XKBFile extension text
+msgid "Nepal"
+msgstr "নেপাল"
+
+#. XKBFile extension text
+msgid "Congo, Democratic Republic of the"
+msgstr ""
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Korea, Republic of"
+msgstr "চেক প্রজাতন্ত্র"
+
+#. XKBFile extension text
+msgid "Iraq"
+msgstr "ইরাক"
+
+#. XKBFile extension text
+msgid "Nigeria"
+msgstr "আলজেরিয়া"
+
+#. XKBFile extension text
+msgid "Japan (PC-98xx Series)"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Estonia"
+msgstr "এস্টোনিয়া"
+
+#. XKBFile extension text
+msgid "Myanmar"
+msgstr "পানামা"
+
+#. XKBFile extension text
+msgid "Norway"
+msgstr "নরওয়ে"
+
+#. XKBFile extension text
+msgid "Germany"
+msgstr "জার্মানি"
+
+#. XKBFile extension text
+msgid "Mongolia"
+msgstr "মঙ্গোলিয়া"
+
+#. XKBFile extension text
+msgid "Bhutan"
+msgstr "ভুটান"
+
+#. XKBFile extension text
+msgid "Bangladesh"
+msgstr "বাংলাদেশ"
+
+#. XKBFile extension text
+msgid "Latin American"
+msgstr "ল্যাটিন আমেরিকান"
+
+#. XKBFile extension text
+msgid "Belgium"
+msgstr "বেলজিয়াম"
+
+#. XKBFile extension text
+msgid "Finland"
+msgstr "ফিনল্যান্ড"
+
+#. XKBFile extension text
+msgid "Israel"
+msgstr "ইসরাইল"
+
+#. XKBFile extension text
+msgid "Sweden"
+msgstr "সুইডেন"
+
+#. XKBFile extension text
+msgid "Russia"
+msgstr "রাশিয়া"
+
+#. XKBFile extension text
+msgid "Portugal"
+msgstr "পর্তুগাল"
+
+#. XKBFile extension text
+msgid "Korean"
+msgstr "জর্ডান"
+
+#. XKBFile extension text
+msgid "Maori"
+msgstr "প্রধান"
+
+#. XKBFile extension text
+msgid "Uzbekistan"
+msgstr "উজবেকিস্থান"
+
+#. XKBFile extension text
+msgid "Bulgaria"
+msgstr "বুলগেরিয়া"
+
+#. XKBFile extension text
+msgid "Thailand"
+msgstr "থাইল্যান্ড"
+
+#. XKBFile extension text
+msgid "India"
+msgstr "ভারত"
+
+#. XKBFile extension text
+msgid "Bengali"
+msgstr "বাংলা"
+
+#. XKBFile extension text
+msgid "Switzerland"
+msgstr "সুইজারল্যান্ড"
+
+#. XKBFile extension text
+msgid "Laos"
+msgstr "লাওস"
+
+#. XKBFile extension text
+msgid "Japan"
+msgstr "জাপান"
+
+#. XKBFile extension text
+msgid "Syria"
+msgstr "সিরিয়া"
+
+#. XKBFile extension text
+msgid "Czechia"
+msgstr "চেক"
+
+#. XKBFile extension text
+msgid "Belarus"
+msgstr "বেলারুস"
+
+#. XKBFile extension text
+msgid "Tajikistan"
+msgstr "তাজিকিস্তান"
+
+#. XKBFile extension text
+msgid "Denmark"
+msgstr "ডেনমার্ক"
+
+#. XKBFile extension text
+msgid "Slovenia"
+msgstr "স্লোভেনিয়া"
+
+#. XKBFile extension text
+msgid "Malta"
+msgstr "মালটা"
+
+#. XKBFile extension text
+msgid "Azerbaijan"
+msgstr "আজারবাইজান"
+
+#. XKBFile extension text
+msgid "Lithuania"
+msgstr "লিথুয়েনিয়া"
+
+#. XKBFile extension text
+msgid "Vietnam"
+msgstr "ফাইলের নাম"
+
+#. XKBFile extension text
+msgid "Faroe Islands"
+msgstr "ফারো দ্বীপপূঞ্জ"
+
+#. XKBFile extension text
+msgid "South Africa"
+msgstr "দক্ষিন আফ্রিকা"
+
+#. XKBFile extension text
+msgid "Farsi"
+msgstr "ফারসি"
+
+#. XKBFile extension text
+msgid "Slovakia"
+msgstr "স্লোভাকিয়া"
+
+#. XKBFile extension text
+msgid "Maldives"
+msgstr "মালদ্বীপ"
+
+#. XKBFile extension text
+msgid "Iceland"
+msgstr "আইসল্যান্ড"
+
+#. XKBFile extension text
+msgid "Croatia"
+msgstr "ক্রোয়েশিয়া"
+
+#. XKBFile extension text
+msgid "Latvia"
+msgstr "লাতভিয়া"
+
+#. XKBFile extension text
+msgid "Albania"
+msgstr "আলবেনিয়া"
+
+#. XKBFile extension text
+msgid "Italy"
+msgstr "ইটালী"
+
+#. XKBFile extension text
+msgid "Greece"
+msgstr "গ্রীস"
+
+#. XKBFile extension text
+msgid "United Kingdom"
+msgstr "যুক্তরাজ্য"
+
+#. XKBFile extension text
+msgid "France"
+msgstr "ফ্রান্স"
+
+#. XKBFile extension text
+msgid "Armenia"
+msgstr "আর্জেন্টিনা"
+
+#. XKBFile extension text
+msgid "Pakistan"
+msgstr "পাকিস্তান"
+
+#. XKBFile extension text
+msgid "Poland"
+msgstr "পোল্যান্ড"
+
+#. XKBFile extension text
+msgid "Kyrgyzstan"
+msgstr "কিরগিজস্তান"
+
+#. XKBFile extension text
+msgid "Ireland"
+msgstr "আয়্যারল্যান্ড"
+
+#. XKBFile extension text
+msgid "Hungary"
+msgstr "হাঙ্গেরী"
+
+#. XKBFile extension text
+msgid "Cambodia"
+msgstr "কলম্বিয়া"
+
+#. XKBFile extension text
+msgid "Spain"
+msgstr "স্পেন"
+
+#. XKBFile extension text
+msgid "Ukraine"
+msgstr "ইউক্রেন"
+
+#. XKBFile extension text
+msgid "Romania"
+msgstr "রোমানিয়া"
+
+#. XKBFile extension text
+msgid "Kazakhstan"
+msgstr "কাজাকস্তান"
+
+#. XKBFile extension text
+msgid "Georgia"
+msgstr "জর্জিয়া"
+
+#. XKBFile extension text
+msgid "U.S. English"
+msgstr "ইউএস ইংরেজি"
+
+#. XKBFile extension text
+msgid "Turkish"
+msgstr "তুর্কী"
+
+#. XKBFile extension text
+msgid "PC-98xx Series"
+msgstr "PC-98xx শ্রেণী"
+
+#. XKBFile extension text
+msgid "Netherlands"
+msgstr "নেদারল্যান্ড"
+
+#. XKBFile extension text
+msgid "Macedonia"
+msgstr "ম্যাসেডোনিয়া"
+
+#. XKBFile extension text
+msgid "Canada"
+msgstr "কানাডা"
+
+#. XKBFile extension text
+msgid "Sri Lanka"
+msgstr "শ্রীলঙ্কা"
+
+#. XKBFile extension text
+msgid "Bosnia and Herzegovina"
+msgstr "বসনিয়া এবং হারজেগোভিনা"
+
+#. XKBFile extension text
+msgid "Brazil"
+msgstr "ব্রাজিল"
+
+#. XKBFile extension text
+msgid "Ghana"
+msgstr "ঘানা"
+
+#. XKBFile extension text
+msgid "Andorra"
+msgstr "বিক্রেতা"
+
+#. XKBFile extension text
+msgid "Afghanistan"
+msgstr " আফগানিস্তান"
+
+#. XKBFile extension text
+msgid "Esperanto"
+msgstr "অভিজ্ঞ (&E)"
+
+#. XKBFile extension text
+msgid "Turkey"
+msgstr "তুর্কী"
+
+#. XKBFile extension text
+msgid "CapsLock key switches layout while pressed, Alt+CapsLock does the original capslock action."
+msgstr ""
+
+#. XKBFile extension text
+msgid "CapsLock switch to first layout, Shift+CapsLock switch to last layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Less-than/Greater-than is Compose."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Space key outputs non-breakable space character at fourth level, thin non-breakable space character at sixth level (via Ctrl+Shift"
+msgstr ""
+
+#. /.../
+#. Copyright (c) 2000 SuSE GmbH Nuernberg, Germany.  All rights reserved.
+#. This file contains the gettext keys used within a gettext call in the
+#. application code for XFine2
+#.
+#. Maximum length: 40  characters
+msgid "&Step size"
+msgstr "&ধাপের আকার"
+
+#. Maximum length: 40  characters
+msgid "Small"
+msgstr "ছোট"
+
+#. Maximum length: 40  characters
+msgid "Normal"
+msgstr "স্বাভাবিক মাপ (_N)"
+
+#. Maximum length: 40  characters
+msgid "Big"
+msgstr "বড়"
+
+#. Maximum length: 40  characters
+msgid "Huge"
+msgstr "বিশাল"
+
+#. Maximum length: 40  characters
+msgid "&Next Screen"
+msgstr "&পরবর্তী পর্দা"
+
+#. Maximum length: 40  characters
+msgid "S&ave"
+msgstr "সংরক্ষণ করুন"
+
+#. Maximum length: 40  characters
+msgid "Change &Position"
+msgstr "অবস্থান পালটান"
+
+#. Maximum length: 40  characters
+msgid "C&hange Size"
+msgstr "আকার পালটান"
+
+#. Maximum length: 40  characters
+msgid "Screen"
+msgstr "পর্দা"
+
+#. Maximum length: 60  characters
+msgid "No video mode tuning available"
+msgstr "কোন ভিডিও মোড টিউনিং উপলভ্য নেই"
+
+msgid "Display"
+msgstr "প্রদর্শন"
+
+msgid "Configuration on display"
+msgstr "প্রদর্শনে সংরূপণ"
+
+msgid "Idle timer..."
+msgstr "অলস টাইমার..."

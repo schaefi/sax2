@@ -1,0 +1,13 @@
+digraph SaX2 {
+"sax2" -> "sax2-ident";
+"sax2" -> "sax2-tools";
+"sax2" -> "sax2-libsax";
+"sax2-gui" -> "sax2-tools";
+"sax2-gui" -> "sax2";
+"sax2-libsax" -> "sax2-tools";
+"sax2-libsax" -> "sax2-libsax-perl";
+"sax2-libsax-devel" -> "sax2-libsax";
+"sax2-libsax-perl";
+"sax2-libsax-python" -> "sax2-libsax";
+"sax2-libsax-java" -> "sax2-libsax";
+}

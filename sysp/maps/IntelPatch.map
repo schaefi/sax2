@@ -1,0 +1,8 @@
+# /.../
+# Mapping table for Intel devices __NOT__ to patch
+# =====================================================
+# code | Arguments | Program
+# -----------------------------------------------------
+# Micro-Star International 945 GM (#201338)
+0x808627a214620341SEC3345 : 3c %x %y : /sbin/915resolution
+0x808627a614620341SEC3345 : 3c %x %y : /sbin/915resolution

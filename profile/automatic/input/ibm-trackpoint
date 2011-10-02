@@ -1,0 +1,8 @@
+InputDevice -> [X] -> Identifier = Mouse[[X]]
+InputDevice -> [X] -> Driver     = mouse
+InputDevice -> [X] -> Option -> InputFashion         = Mouse
+InputDevice -> [X] -> Option -> Name                 = IBM;TPPS/2 TrackPoint
+InputDevice -> [X] -> Option -> Device               = /dev/input/mice
+InputDevice -> [X] -> Option -> ZAxisMapping         = 4 5
+InputDevice -> [X] -> Option -> EmulateWheel         = on
+InputDevice -> [X] -> Option -> EmulateWheelButton   = 2

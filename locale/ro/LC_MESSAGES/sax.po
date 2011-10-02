@@ -1,0 +1,2034 @@
+# Alexandru Romanescu <a_romanescu@yahoo.co.uk>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenSUSE\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-05-15 15:07+0200\n"
+"PO-Revision-Date: 2010-02-28 04:55-0800\n"
+"Last-Translator: strainu <crangasi2001@yahoo.com>\n"
+"Language-Team: Romanian <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms:  nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2;\n"
+"X-Generator: Narro 0.9.4 on http://tradu.softwareliber.ro\n"
+
+#. /.../
+#. Copyright (c) 2005 SuSE GmbH Nuernberg, Germany.  All rights reserved.
+#. This file contains the gettext keys used within a gettext call in the
+#. application code for the SaX2 and XFine GUI
+#.
+#. Dear Translator, translate this string as 'RTL' if your language is right-to-left
+msgid "I18N"
+msgstr "I18N"
+
+#. RTF text: Startup information for the user
+msgid ""
+"<b>SaX2 Suggestion</b><hr>The currently-started graphics system is based on a "
+"suggestion made by SaX2. If this is acceptable, click <b>OK</b>. Otherwise, "
+"change the configuration."
+msgstr ""
+"<b>Sugestie SaX2 </b><hr>Sistemul grafic pornit este bazat pe o sugestie "
+"făcută de SaX2. Dacă aceasta este în regulă, apăsați<b>OK</b>. Altfel, "
+"schimbați configurația."
+
+#. RTF text: 3D acceleration not supported with this card
+msgid ""
+"<b>3D acceleration not supported</b><hr>SaX2 cannot offer activation of the "
+"3D subsystem because your graphics card/driver doesn't support 3D"
+msgstr ""
+"<b>Accelerarea 3D nu este suportată</b><hr>SaX2 nu poate oferi activarea "
+"subsistemului 3D fiindcă placa dumneavoastră grafică (sau driverul acesteia) "
+"nu suportă 3D"
+
+#. RTF text: 3D acceleration not supported with Xinerama
+msgid ""
+"<b>3D acceleration not supported</b><hr>SaX2 cannot offer activation of the "
+"3D subsystem because Xinerama based dual head mode is used. The Xorg Xinerama "
+"extension for combining graphics screens doesn't support 3D on all heads"
+msgstr ""
+"<b>Accelerarea 3D nu este suportată</b><hr>SaX2 nu poate oferi activarea "
+"subsistemului 3D fiindcă este folosit modul Dublu Ecran bazat pe Xinerama. "
+"Extensia Xorg Xinerama, nu suportă 3D pe toate ecranele."
+
+#. Caption text for the startup information window
+msgid "Automatic Graphics System Setup"
+msgstr "Configurare Automată a Sistemului Grafic"
+
+#. Caption text for informing the user
+msgid "Information..."
+msgstr "Informații..."
+
+#. Caption text for the main window
+msgid "SaX2: X11 Configuration"
+msgstr "SaX2: Configurarea X11"
+
+#. Title text on the left side
+msgid "SaX Control Center"
+msgstr "Centrul de Control SaX2"
+
+#. Info message about display size changes
+msgid ""
+"<b>Display size changed</b><hr>The display size has been adapted to the new "
+"layout."
+msgstr ""
+"<b>Dimensiunea ecranului modificată</b><hr>Dimensiunea ecranului a fost "
+"adaptată noului aranjament."
+
+#. Help Button text
+msgid "&Help"
+msgstr "&Ajutor"
+
+# ok button label
+#. Ok Button text
+msgid "O&K"
+msgstr "O&K"
+
+#. Yes Button text
+msgid "&Yes"
+msgstr "&Da"
+
+#. No Button text
+msgid "&No"
+msgstr "&Nu"
+
+# cancel button label
+#. Cancel Button text
+#. Maximum length: 40  characters
+msgid "&Cancel"
+msgstr "&Renunță"
+
+#. RTF text: exit SaX message
+msgid "<b>Exit SaX2</b><hr>Exit SaX2 now?"
+msgstr "<b>Ieșire SaX2</b><hr>Ieșiți din SaX2 acum?"
+
+#. Message box default caption text
+msgid "Message"
+msgstr "Mesaj"
+
+#. Change configuration Button text
+msgid "C&hange Configuration"
+msgstr "Sc&himbă configurarea"
+
+#. Short description of the Monitor module
+#. Monitor name label
+msgid "Monitor"
+msgstr "Monitor"
+
+#. title of module dialog
+msgid "Card and Monitor Properties"
+msgstr "Proprietățile Cartelei Grafice și ale Monitorului"
+
+#. Short description of the Mouse module
+#. Simple mouse text for the mouse tab
+msgid "Mouse"
+msgstr "Maus"
+
+#. title of module dialog
+msgid "Mouse Properties"
+msgstr "Proprietățile Mausului"
+
+#. Short description of the Keyboard module
+#. Keyboard name label
+msgid "Keyboard"
+msgstr "Tastatură"
+
+#. title of module dialog
+msgid "Keyboard Properties"
+msgstr "Proprietățile Tastaturii"
+
+#. Short description of the Tablet module
+#. Tab title: Tablet vendor name selection
+msgid "Tablet"
+msgstr "Tabletă"
+
+#. title of module dialog
+msgid "Tablet Properties"
+msgstr "Proprietățile Tabletei"
+
+#. Short description of the Touchscreen module
+msgid "Touchscreen"
+msgstr "Ecran Tactil"
+
+#. title of module dialog
+msgid "Touchscreen Properties"
+msgstr "Proprietățile Ecranului Tactil"
+
+#. Short description of the VNC module
+msgid "Remote Access"
+msgstr "Acces La Distanță"
+
+#. title of module dialog
+msgid "Remote Access Properties"
+msgstr "Proprietățile Accesului la Distanță"
+
+#. Tab text for a display tab of the monitor dialog
+msgid "Display %1"
+msgstr "Ecran %1"
+
+#. Tab text for a display tab of the mouse dialog
+msgid "Mouse %1"
+msgstr "Maus %1"
+
+#. Activate display checkbox, Display=screen
+msgid "Activate This Display"
+msgstr "Activează acest ecran"
+
+#. Activate mouse checkbox
+msgid "Activate This Pointer"
+msgstr "Activează acest pointer"
+
+#. Graphics Card name label
+msgid "Card"
+msgstr "Cartelă"
+
+#. Desktop name label
+msgid "Desktop"
+msgstr "Ecran"
+
+#. Pointers name label, global name for input devices
+msgid "Pointers"
+msgstr "Pointeri"
+
+#. Layout name label, desktop layout
+#. Tab text for a layout tab of the keyboard dialog
+#. Label text for the primary keyboard layout
+#. Table topic text describing the keyboard layout column
+msgid "Layout"
+msgstr "Așezare"
+
+#. Path name label, search paths
+msgid "Path"
+msgstr "Cale"
+
+#. Extensions name label, X11 extensions
+msgid "Extensions"
+msgstr "Extensii"
+
+#. Change data
+msgid "&Change..."
+msgstr "S&chimbă..."
+
+#. Set options for some kind of data
+msgid "&Options..."
+msgstr "&Opțiuni..."
+
+#. Configure some data
+msgid "Con&figure..."
+msgstr "Con&figurare..."
+
+#. Group box title for dual head setup
+msgid "Dual Head Mode"
+msgstr "Mod Dublu Ecran"
+
+#. Group box title for card options
+#. Group box title for mouse options
+#. Tab text for an options tab of the keyboard dialog
+#. Group box title for tablet options
+#. Group box title for the VNC options
+msgid "Options"
+msgstr "Opțiuni"
+
+#. CheckBox label to activate the mouse wheel
+msgid "Activate Mouse Wheel"
+msgstr "Activează rotița mausului"
+
+#. CheckBox label to invert the mouse X axis
+msgid "Invert X-Axis"
+msgstr "Inversează Axa X"
+
+#. CheckBox label to invert the mouse Y axis
+msgid "Invert Y-Axis"
+msgstr "Inversează Axa Y"
+
+#. CheckBox label to activate left hand mouse
+msgid "Activate Left-Hand Button Mapping"
+msgstr "Inversează butoanele"
+
+#. CheckBox label to activate the 3 Button emulation
+msgid "Activate 3-Button Emulation"
+msgstr "Activează imitarea a 3 butoane"
+
+#. CheckBox label to activate the wheel emulation
+msgid "Emulate Wheel with Mouse Button"
+msgstr "Imită rotița prin intermediul butonului"
+
+#. Group box title for card rotation
+msgid "Rotate Screen"
+msgstr "Rotește Ecranul"
+
+#. Group box title for the mouse test field
+#. Line edit label pointing to the keyboard test field
+msgid "Test"
+msgstr "Testează"
+
+#. Button text in final step message box for testing the configuration
+msgid "&Test"
+msgstr "&Testează"
+
+#. Button text in final step message box for saving the configuration
+msgid "&Save"
+msgstr "&Salvează"
+
+#. Status line of mouse test field: ready
+msgid "Test ready"
+msgstr "Test gata"
+
+#. Status line of mouse test field: single button click
+msgid "Single Click: Done"
+msgstr "Clic simplu: Gata"
+
+#. Status line of mouse test field: double button click
+msgid "Double Click: Done"
+msgstr "Clic dublu: Gata"
+
+#. Status line of mouse test field: wheel moved
+msgid "Scrolling"
+msgstr "Derulare"
+
+#. Status line of mouse test field: button pressed
+msgid "Button pressed"
+msgstr "Buton apăsat"
+
+#. Status line of mouse test field: button released
+msgid "Button released"
+msgstr "Buton lăsat"
+
+#. Status line of mouse test field: wheel stopped
+msgid "Stopped: Done"
+msgstr "Oprit: Gata"
+
+#. Group box title for properties
+msgid "Properties"
+msgstr "Proprietăți"
+
+#. Activate dual head mode checkbox
+msgid "Activate Dual Head Mode"
+msgstr "Activează modul Dublu Ecran"
+
+#. Set display resolution
+msgid "Resolution"
+msgstr "Rezoluția"
+
+#. Set display colors
+msgid "Colors"
+msgstr "Culori"
+
+#. Activate 3D checkboc
+msgid "Activate 3D Acceleration"
+msgstr "Activează Accelerarea 3D"
+
+#. Tab title: Setup monitor properties for card X
+msgid "Monitor for Card"
+msgstr "Monitor pentru Cartelă"
+
+#. Tab title: Setup monitor for second channel on card X
+msgid "Second Monitor for Card"
+msgstr "Al doilea Monitor pentru Cartelă"
+
+#. Tab title: Setup sync frequencies
+msgid "Sync Frequencies"
+msgstr "Frecvențele de Sincronizare"
+
+#. Tab title: Setup display size
+msgid "Display Size"
+msgstr "Dimensiunea Ecranului"
+
+#. Tab title: Setup the monitor arrangement
+#. Title for the multihead arrangement
+msgid "Arrangement"
+msgstr "Poziționare"
+
+#. Information about dual head mode. %1=the dual head modus %2=the resolution
+msgid "Activated in %1 mode with %2"
+msgstr "Activat în modul %1 cu %2"
+
+#. Short Information that something has been activated
+msgid "Activated in driver default mode"
+msgstr "Activat în modul implicit al driverului"
+
+#. rwalter
+#. Monitor Model is unknown and should be changed
+#. rwalter
+#. Mouse Model is unknown and should be changed
+msgid "Unconfigured"
+msgstr "Neconfigurat"
+
+#. Message appears when user is trying to deactivate all displays
+msgid ""
+"<b>Cannot Deactivate All Displays</b><hr><nobr>At least one display must be "
+"active.</nobr>"
+msgstr ""
+"<b>Nu pot dezactiva toate ecranele</b><hr><nobr>Cel puțin un afișaj trebuie "
+"sa fie activ.</nobr>"
+
+#. Info label for dual head checkbox
+msgid "No configuration available"
+msgstr "Nici o configurație disponibilă"
+
+#. Radiobutton for traditional multihead mode
+msgid ""
+"Traditional Multihead:\n"
+"Each screen is an independent display"
+msgstr ""
+"Multiecran Tradițional:\n"
+"Fiecare ecran este are un afișaj independent"
+
+#. Radiobutton for cloned multihead mode
+msgid ""
+"Cloned Multihead:\n"
+"Each display is a clone of the primary display"
+msgstr ""
+"Multiecran Clonat: \n"
+"Fiecare afișaj este o clonă a celui primar"
+
+#. Radiobutton for xinerama multihead mode
+msgid ""
+"Xinerama Multihead:\n"
+"Build one big display out of all screens"
+msgstr ""
+"Multiafișaj Xinerama:\n"
+"Construiește un afișaj mare din toate ecranele"
+
+#. Title for multihead modi
+msgid "Multihead Mode"
+msgstr "Mod Multiecran"
+
+#. Monitor X - connected to - CardY
+msgid "Connected To"
+msgstr "Conectat la "
+
+#. Tooltip text if monitor is unknown
+msgid "Unknown Monitor:"
+msgstr "Monitor necunoscut:"
+
+#. Tooltip text for primary monitor
+msgid "Primary Monitor:"
+msgstr "Monitor primar:"
+
+#. Windowanager title for the monitor model setup
+#. Windowanager title for the second monitor model setup
+msgid "Monitor Settings"
+msgstr "Setări pentru monitor"
+
+#. Windowanager title for the mouse mode setup
+msgid "Mouse Settings"
+msgstr "Setări Maus "
+
+#. Windowanager title for the card options dialog
+msgid "Graphics Card Settings"
+msgstr "Setări Cartelă Grafică"
+
+#. Windowanager title for the dual head setup
+msgid "Dual Head Settings"
+msgstr "Setări Dublu Ecran"
+
+#. Radiobutton don't rotate
+msgid "Not Rotated"
+msgstr "Nerotit"
+
+#. Radiobutton rotate to the left side
+msgid "To the Left"
+msgstr "La stânga"
+
+#. Radiobutton rotate to the right side
+msgid "To the Right"
+msgstr "La Dreapta"
+
+#. Popup message to inform the user about fbdev restrictions
+msgid ""
+"<b>Invalid Color/Resolution combination:</b><hr><nobr>The selected resolution "
+"and/or color settings</nobr> are not supported by the graphics cards "
+"framebuffer."
+msgstr ""
+"<b>Combinație Culori/Rezoluție nevalidă:</b><hr><nobr> Configurațiile "
+"selectate pentru rezoluție și/sau culori</nobr> nu sunt suportate de "
+"framebuffer-ul cartelei grafice."
+
+#. Popup message to ask the user for an option value
+msgid ""
+"<b>Option Needs a Value</b><hr><nobr>Set up a value for option %1.</nobr>"
+msgstr ""
+"<b>Opțiunea necesită o valoare</b><hr><nobr> Setați o valoare pentru opțiunea "
+"%1.<b>"
+
+#. Group box title for the monitor vendor and name selection
+msgid "Monitor: Vendor and Name Selection"
+msgstr "Monitor: Selectarea producătorului și a modelului"
+
+#. Group box title for the mouse vendor and name selection
+msgid "Mouse: Vendor and Name Selection"
+msgstr "Maus: Selectarea producătorului și a modelului"
+
+#. Group box title for the manual sync frequency set up
+msgid "Manual Sync Frequency Setup"
+msgstr "Setarea manuală a frecvenței de sincronizare"
+
+#. Group box title for the aspect/ratio selection
+msgid "Diagonal and Aspect Ratio"
+msgstr "Diagonala și factorul de formă"
+
+#. Group box title for the display size setup
+msgid "Display Size in [ mm ]"
+msgstr "Dimensiunea afișajului în [ mm ]"
+
+#. Text message telling to be carefull with the monitor sync frequencies
+msgid ""
+"<b>Note:</b> Wrong sync ranges may damage your monitor. Consult the monitor "
+"manual for the settings.<br><br>If you want your monitor not to use its "
+"maximum rating, decrease the sync ranges."
+msgstr ""
+"<b>Notă:</b> Limite greșite ale frecvenței de sincronizare pot strica "
+"monitorul. Consultați manualul monitorului.<br><br>Dacă vreți ca monitorul sa "
+"nu își folosească rata maximă, micșorați limitele."
+
+#. Checkbox to activate DPMS
+msgid "Activate DPMS"
+msgstr "Activare DPMS"
+
+#. Button to popup the disk dialog for reading the monitor utility disk
+msgid "Utility Disk..."
+msgstr "Disc utilitar..."
+
+#. Label text for horizontal sync frequency
+msgid "Horizontal"
+msgstr "Orizontal"
+
+#. Label text for second monitor name
+msgid "Second Monitor:"
+msgstr "Monitor secund:"
+
+#. Label text for second monitor resolution
+msgid "Second Monitor Resolution"
+msgstr "Rezoluția monitorului secund"
+
+#. Label text for vertical sync frequency
+msgid "Vertical"
+msgstr "Vertical "
+
+#. Label text for hsync unit
+msgid "KHz"
+msgstr "KHz"
+
+#. Label text for vsync unit
+msgid "Hz"
+msgstr "Hz"
+
+#. Label text for the aspect ratio combo box
+msgid "Aspect Ratio"
+msgstr "Factor de formă"
+
+#. Label text for the diagonal length combo box
+msgid "Diagonal"
+msgstr "Diagonala"
+
+#. Label text for the display size X-Axis
+msgid "X Axis [mm]"
+msgstr "Axa X [mm]"
+
+#. Label text for the display size Y-Axis
+msgid "Y Axis [mm]"
+msgstr "Axa Y [mm]"
+
+#. Something is not configured
+msgid "Not configured"
+msgstr "Neconfigurat"
+
+#. Unit name for inches in german zoll
+msgid "inches"
+msgstr "inci"
+
+#. Message box of type Ok, telling to user to insert a CD or disk
+msgid ""
+"<b>Insert CD or Disk</b><hr>Insert the display utility CD or disk from the "
+"monitor vendor."
+msgstr ""
+"<b>Introduceți CD sau disc</b><hr>Introduceți CDul utilitar al ecranului sau "
+"discul de la furnizorul monitorului."
+
+#. Message box of type Error, telling that the utility disk cannot be opened
+msgid ""
+"<b>Read Error</b><hr>Could not read from CD or disk. This may point to a "
+"damaged medium or incorrectly formatted information files."
+msgstr ""
+"<b>Eroare de citire</b><hr>Nu pot citi de pe CD sau disc. Aceasta se poate "
+"datora unui mediu deteriorat sau a unor fișiere de informație formatate "
+"incorect."
+
+#. First gap of the ActivateInfo text: Multihead mode name
+msgid "Traditional"
+msgstr "Tradițional"
+
+#. First gap of the ActivateInfo text: Multihead mode name
+msgid "Clone"
+msgstr "Clonare"
+
+#. First gap of the ActivateInfo text: Multihead mode name
+msgid "Xinerama"
+msgstr "Xinerama"
+
+#. Tab text for the mouse model dialog
+msgid "Mouse Model"
+msgstr "Modelul de maus"
+
+#. Group box title for the primary keyboard setup
+msgid "Primary Setup"
+msgstr "Setări primare"
+
+#. Label text for the primary keyboard type
+msgid "Type"
+msgstr "Tip"
+
+#. Label text for the primary keyboard variant
+#. Table topic text describing the variant column
+msgid "Variant"
+msgstr "Variantă"
+
+#. Group box title for the additional keyboard setup
+msgid "Additional Layouts"
+msgstr "Aranjamente suplimentare"
+
+#. Table topic text describing the status column
+msgid "Status"
+msgstr "Stare"
+
+#. Table topic text describing the keytable column
+msgid "Keytable"
+msgstr "Tabel de taste"
+
+#. List View root item text
+msgid "Group Shift/Lock Behavior"
+msgstr "Comportamentul de Grup al Shift/Lock"
+
+#. List View root item text
+msgid "Use Keyboard LED to Show Alternate Group"
+msgstr "Folosește LEDul tastaturii pentru a indica grupul alternativ"
+
+#. List View root item text
+msgid "Compose Key Position"
+msgstr "Poziția tastei Compose"
+
+#. List View root item text
+#. XKBFile extension text
+msgid "Control Key Position"
+msgstr "Poziția tastei Control"
+
+#. List View root item text
+msgid "Third Level Chooser"
+msgstr "Selector de nivelul trei"
+
+#. List View root item text
+msgid "Alt/Win Key Behavior"
+msgstr "Comportamentul tastei Alt/Win"
+
+#. List View root item text
+msgid "EuroSign Key Position"
+msgstr "Poziția tastei EuroSign"
+
+#. List View root item text
+msgid "CapsLock Key Behavior"
+msgstr "Comportamentul tastei CapsLock"
+
+#. List View item text: Radiobutton no item selected
+msgid "None"
+msgstr "Nimic"
+
+#. XKBFile extension text
+msgid "Morocco"
+msgstr "Maroc"
+
+#. XKBFile extension text
+msgid "Braille"
+msgstr "Braille"
+
+#. XKBFile extension text
+msgid "Ethiopia"
+msgstr "Etiopia"
+
+#. XKBFile extension text
+msgid "NICOLA-F style Backspace"
+msgstr "Backspace în stil NICOLA-F"
+
+#. XKBFile extension text
+msgid "Right Alt key never chooses 3rd level."
+msgstr "Tasta Alt-dreapta nu selectează niciodată nivelul 3."
+
+#. XKBFile extension text
+msgid "Left Alt key switches layout while pressed."
+msgstr "Tasta Alt-stânga schimbă aranjamentul cât timp e apăsată."
+
+#. XKBFile extension text
+msgid "Space key outputs non"
+msgstr "Tasta Spațiu furnizează non"
+
+#. XKBFile extension text
+msgid "Default numeric keypad keys."
+msgstr "Tastele numerice implicite."
+
+#. XKBFile extension text
+msgid "Both Ctrl keys together change layout."
+msgstr "Ambele taste Ctrl simultan schimbă aranjamentul."
+
+#. XKBFile extension text
+msgid "Using space key to input non-breakable space character"
+msgstr "Folosire tasta Spațiu pentru a introduce un caracter spațiu indivizibil"
+
+#. XKBFile extension text
+msgid "Right Shift key changes layout."
+msgstr "Tasta Shift-dreapta schimbă aranjamentul."
+
+#. XKBFile extension text
+msgid "Left Win-key changes layout."
+msgstr "Tasta Win-stânga schimbă aranjamentul."
+
+#. XKBFile extension text
+msgid "LCtrl+LShift change layout."
+msgstr "Ctrl-stânga + Shift-stânga schimbă aranjamentul."
+
+#. XKBFile extension text
+msgid "Left Alt key changes layout."
+msgstr "Tasta Alt-stânga schimbă aranjamentul."
+
+#. XKBFile extension text
+msgid "Both Win-keys switch layout while pressed."
+msgstr "Ambele taste Win simultan schimbă aranjamentul cât timp sunt apăsate."
+
+#. XKBFile extension text
+msgid "Right Ctrl key switches layout while pressed."
+msgstr "Tasta Ctrl-dreapta schimbă aranjamentul cât timp e apăsată."
+
+#. XKBFile extension text
+msgid "Space key outputs non-breakable space character"
+msgstr "Tasta Spațiu furnizează un caracter spațiu indivizibil"
+
+#. XKBFile extension text
+msgid "Shift+CapsLock changes layout."
+msgstr "Shift+CapsLock schimbă aranjamentul."
+
+#. XKBFile extension text
+msgid "R-Alt switches layout while pressed."
+msgstr "Alt-dreapta schimbă aranjamentul cât timp e apăsată."
+
+#. XKBFile extension text
+msgid "Numeric keypad layout selection"
+msgstr "Selectarea aranjamentului tastaturii numerice"
+
+#. XKBFile extension text
+msgid "Right Ctrl key changes layout."
+msgstr "Tasta Ctrl-dreapta schimbă aranjamentul."
+
+#. XKBFile extension text
+msgid "Alt+CapsLock changes layout."
+msgstr "Alt+CapsLock schimbă aranjamentul."
+
+#. XKBFile extension text
+msgid "Super is mapped to the Win-keys."
+msgstr "Super este mapat la tastele Win."
+
+#. XKBFile extension text
+msgid "ScrollLock LED shows alternative layout."
+msgstr "LEDul ScrollLock arată aranjamentul alternativ."
+
+#. XKBFile extension text
+msgid "Both Shift keys together change layout."
+msgstr "Ambele taste Shift deodată schimbă tastatura."
+
+#. XKBFile extension text
+msgid "Space key outputs non-breakable space character at second level."
+msgstr ""
+"Tasta spațiu furnizează caracterul spațiu indivizibil pe nivelul secundar."
+
+#. XKBFile extension text
+msgid "Right Win-key changes layout."
+msgstr "Tasta Win-dreapta schimbă aranjamentul."
+
+#. XKBFile extension text
+msgid "Space key outputs non-breakable space character at third level."
+msgstr ""
+"Tasta spațiu furnizează caracterul spațiu indivizibil pe al treilea nivel."
+
+#. XKBFile extension text
+msgid "Numeric keypad keys work as with Mac."
+msgstr "Tastatura numerică funcționează ca pe Mac."
+
+#. XKBFile extension text
+msgid "CapsLock LED shows alternative layout."
+msgstr "LEDul CapsLock arată aranjamentul alternativ."
+
+#. XKBFile extension text
+msgid "NumLock LED shows alternative layout."
+msgstr "LEDul NumLock arată aranjamentul alternativ."
+
+#. XKBFile extension text
+msgid "Left Shift key changes layout."
+msgstr "Tasta Shift-stânga schimbă aranjamentul."
+
+#. XKBFile extension text
+msgid "Left Win-key switches layout while pressed."
+msgstr "Tasta Win-stânga schimbă aranjamentul cât timp e apasată."
+
+#. XKBFile extension text
+msgid "Space key outputs non-breakable space character at fourth level."
+msgstr ""
+"Tasta spațiu furnizează caracterul spațiu indivizibil pe al patrulea nivel."
+
+#. XKBFile extension text
+msgid "Both Alt keys together change layout."
+msgstr "Ambele taste Alt împreună schimbă aranjamentul."
+
+#. XKBFile extension text
+msgid "CapsLock key changes layout."
+msgstr "Tasta CapsLock schimbă aranjamentul."
+
+#. XKBFile extension text
+msgid "Control is mapped to the Win-keys (and the usual Ctrl keys)."
+msgstr "Control este mapat la tastele Win (și la tastele Ctrl)"
+
+#. XKBFile extension text
+msgid "Right Alt key changes layout."
+msgstr "Tasta Alt-dreapta schimbă aranjamentul."
+
+#. XKBFile extension text
+msgid "Shift with numeric keypad keys works as in MS Windows."
+msgstr "Shift funcționează cu tastatura numerică precum în MS Windows."
+
+#. XKBFile extension text
+msgid "Alt and Meta are on the Alt keys."
+msgstr "Alt și Meta sunt pe tastele Alt."
+
+#. XKBFile extension text
+msgid "Alt+Shift change layout."
+msgstr "Alt+Shift schimbă aranjamentul."
+
+#. XKBFile extension text
+msgid "Ctrl+Shift change layout."
+msgstr "Ctrl+Shift schimbă aranjamentul."
+
+#. XKBFile extension text
+msgid "Space key outputs usual space at any level."
+msgstr "Tasta spațiu furnizează caracterul spațiu normal la orice nivel."
+
+#. XKBFile extension text
+msgid "Japanese keyboard options"
+msgstr "Opțiuni pentru tastatură japoneză"
+
+#. XKBFile extension text
+msgid "Use keyboard LED to show alternative layout."
+msgstr "Folosește LEDul tastaturii pentru a arăta aranjamentul alternativ."
+
+#. XKBFile extension text
+msgid "Left Ctrl key changes layout."
+msgstr "Tasta Ctrl-stânga schimbă aranjamentul."
+
+#. XKBFile extension text
+msgid "Menu key changes layout."
+msgstr "Tasta Menu schimbă aranjamentul."
+
+#. XKBFile extension text
+msgid "Alt+Ctrl change layout."
+msgstr "Alt+Ctrl schimbă aranjamentul."
+
+#. XKBFile extension text
+msgid "Right Win-key switches layout while pressed."
+msgstr "Tasta Win-dreapta schimbă aranjamentul cât timp e apăsată."
+
+#. XKBFile extension text
+msgid "Layout switching"
+msgstr "Schimbarea aranjamentului"
+
+#. XKBFile extension text
+msgid "Left Alt key switches group while pressed."
+msgstr "Tasta Alt-stânga schimbă grupul cât timp e apăsată."
+
+#. XKBFile extension text
+msgid "Both Ctrl keys together change group."
+msgstr "Ambele taste Ctrl simultan schimbă grupul."
+
+#. XKBFile extension text
+msgid "Right Shift key changes group."
+msgstr "Tasta Shift-dreapta schimbă grupul."
+
+#. XKBFile extension text
+msgid "Left Win key changes group."
+msgstr "Tasta Win-stânga schimbă grupul."
+
+#. XKBFile extension text
+msgid "Left Alt key changes group."
+msgstr "Tasta Alt-stânga schimbă grupul."
+
+#. XKBFile extension text
+msgid "Both Win keys switch group while pressed."
+msgstr "Ambele taste Win schimbă grupul cât timp sunt apăsate."
+
+#. XKBFile extension text
+msgid "Right Ctrl key switches group while pressed."
+msgstr "Tasta Ctrl-dreapta schimbă grupul cât timp e apăsată."
+
+#. XKBFile extension text
+msgid "Left Alt is swapped with left Win-key."
+msgstr "Tasta Alt-stânga e interschimbată cu Win-stânga."
+
+#. XKBFile extension text
+msgid "Default numpad keys."
+msgstr "Tastele numerice implicite."
+
+#. XKBFile extension text
+msgid "Adding the nobreakspace keysym to space key"
+msgstr "Adaugă nobreakspace keysym la tasta spațiu"
+
+#. XKBFile extension text
+msgid "Use keypad with unicode additions (arrows and math operators)"
+msgstr ""
+"Folosește tastatura numerică cu suplimente unicod (sâgeți și operații "
+"matematice)"
+
+#. XKBFile extension text
+msgid "Force standard legacy keypad"
+msgstr "Forțează tastatura numerica standard în stil vechi"
+
+#. XKBFile extension text
+msgid "CapsLock uses internal capitalization. Shift doesn't affect CapsLock."
+msgstr ""
+"CapsLock folosește transformarea în litere mari internă. Shift nu afectează "
+"CapsLock."
+
+#. XKBFile extension text
+msgid "Keypad layout selection"
+msgstr "Selectarea aranjamentului tastaturii"
+
+#. XKBFile extension text
+msgid "Alt+CapsLock changes group."
+msgstr "Alt+CapsLock schimbă grupul."
+
+#. XKBFile extension text
+msgid "Space key output nobreakspace at second level."
+msgstr ""
+"Tasta spațiu furnizează spațiu fără întrerupere (nobreakspace) la nivelul "
+"secund."
+
+#. XKBFile extension text
+msgid "CapsLock acts as Shift with locking. Shift doesn't affect CapsLock."
+msgstr "CapsLock se comportă ca Shift cu blocare. Shift nu afectează CapsLock."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "CapsLock uses internal capitalization. Shift \"pauses\" CapsLock."
+msgstr ""
+"CapsLock folosește intern transformarea în litere mari. Shift \"pune pauză\" "
+"pentru CapsLock."
+
+#. XKBFile extension text
+msgid "Space key output nobreakspace at third level."
+msgstr ""
+"Tasta spațiu furnizează spațiu fără întrerupere (nobreakspace) la nivelul al "
+"treilea."
+
+#. XKBFile extension text
+msgid "Swap keycodes of two keys when Mac keyboards are misdetected by kernel."
+msgstr ""
+"Interschimbă codurile a două taste când tastaturile Mac sunt detectate greșit "
+"de către kernel."
+
+#. XKBFile extension text
+msgid "Numpad keys work as with Mac."
+msgstr "Tastatura numerică funcționează ca pe Mac."
+
+#. XKBFile extension text
+msgid "Kana Lock key is locking"
+msgstr "Tasta de blocare Kana (Kana Lock) blochează."
+
+#. XKBFile extension text
+msgid "Space key output nobreakspace at fourth level."
+msgstr ""
+"Tasta spațiu furnizează spațiu fără întrerupere (nobreakspace) la nivelul al "
+"patrulea."
+
+#. XKBFile extension text
+msgid "Left Win-key is Compose."
+msgstr "Tasta Win-stânga este Compose."
+
+#. XKBFile extension text
+msgid ""
+"Press Right Alt key to choose 3rd level, Shift+Right Alt key is Multi_Key."
+msgstr ""
+"Apasă tasta Alt-dreapta pentru a selecta al treilea nivel, Shift+Alt-dreapta "
+"este Multi_Key."
+
+#. XKBFile extension text
+msgid "Space key output space at any level."
+msgstr "Tasta spațiu furnizează spațiu la orice nivel."
+
+#. XKBFile extension text
+msgid "Japanese Keyboard Options"
+msgstr "Opțiun pentru tastatură Japoneză"
+
+#. XKBFile extension text
+#, fuzzy
+msgid "CapsLock acts as Shift with locking. Shift \"pauses\" CapsLock."
+msgstr ""
+"CapsLock se comportă ca Shift cu blocare. Shift \"pune pauză\" pentru "
+"CapsLock."
+
+#. XKBFile extension text
+msgid "CapsLock uses internal capitalization. Shift doesn't cancel CapsLock."
+msgstr ""
+"CapsLock folosește transformarea în litere mari internă. Shift nu anulează "
+"efectul CapsLock."
+
+#. XKBFile extension text
+msgid "CapsLock just locks the Shift modifier."
+msgstr "CapsLock doar blochează modificatorul Shift."
+
+#. XKBFile extension text
+msgid "CapsLock toggles normal capitalization of alphabetic characters."
+msgstr "CapsLock atrage transformarea in litere mari a caracterelor alfabetice."
+
+#. XKBFile extension text
+msgid "CapsLock toggles Shift so all keys are affected."
+msgstr "CapsLock simulează apăsarea tastei Shift (toate tastele sunt afectate)."
+
+#. XKBFile extension text
+msgid "Right Win-key is Compose."
+msgstr "Tasta Win-dreapta este Compose."
+
+#. XKBFile extension text
+msgid "Shift+CapsLock changes group."
+msgstr "Shift+CapsLock schimbă grupul."
+
+#. XKBFile extension text
+msgid "R-Alt switches group while pressed."
+msgstr "Alt-dreapta schimbă grupul cât timp e apăsată."
+
+#. XKBFile extension text
+msgid "Right Control key works as Right Alt."
+msgstr "Control-dreapta funcționează ca Alt-dreapta."
+
+#. XKBFile extension text
+msgid "Control key at bottom left"
+msgstr "Tasta Control în stânga jos"
+
+#. XKBFile extension text
+msgid "Press any of Win-keys to choose 3rd level."
+msgstr "Apasă orice tastă Win pentru a selecta nivelul 3."
+
+#. XKBFile extension text
+msgid "Press Right Alt key to choose 3rd level."
+msgstr "Apasă tasta Alt-dreapta pentru a selecta nivelul 3."
+
+#. XKBFile extension text
+msgid "Right Ctrl key changes group."
+msgstr "Tasta Ctrl-dreapta schimbă grupul."
+
+#. XKBFile extension text
+msgid "Right Alt is Compose."
+msgstr "Alt-dreapta este Compose."
+
+#. XKBFile extension text
+msgid "Right Ctrl is Compose."
+msgstr "Ctrl-dreapta este Compose."
+
+#. XKBFile extension text
+msgid "ScrollLock LED shows alternative group."
+msgstr "LEDul ScrollLock arată grupul alternativ."
+
+#. XKBFile extension text
+msgid "Control key at left of -A-"
+msgstr "Tastă Control la stânga lui -A-"
+
+#. XKBFile extension text
+msgid "Third level choosers"
+msgstr "Selectorul de nivel 3."
+
+#. XKBFile extension text
+msgid "Both Shift keys together change group."
+msgstr "Ambele taste Shift simultan schimbă grupul."
+
+#. XKBFile extension text
+msgid "CapsLock acts as Shift with locking. Shift doesn't cancel CapsLock."
+msgstr "CapsLock se comportă ca Shift cu blocare. Shift nu anulează CapsLock."
+
+#. XKBFile extension text
+msgid "CapsLock uses internal capitalization. Shift cancels CapsLock."
+msgstr ""
+"CapsLock folosește transformare internă în litere mari. Shift anulează "
+"CapsLock."
+
+#. XKBFile extension text
+msgid "Make CapsLock an additional Control."
+msgstr "Fă din CapsLock un Control suplimentar."
+
+#. XKBFile extension text
+msgid "Press Left Win-key to choose 3rd level."
+msgstr "Apasă tasta Win-stânga pentru a selecta nivelul 3."
+
+#. XKBFile extension text
+msgid "Right Win-key changes group."
+msgstr "Tasta Win-dreapta schimbă grupul."
+
+#. XKBFile extension text
+msgid "Meta is mapped to the left Win-key."
+msgstr "Meta este mapat la tasta Win-stânga."
+
+#. XKBFile extension text
+msgid "CapsLock LED shows alternative group."
+msgstr "LEDul CapsLock arată grupul alternativ."
+
+#. XKBFile extension text
+msgid "NumLock LED shows alternative group."
+msgstr "LEDul NumLock arată grupul alternativ."
+
+#. XKBFile extension text
+msgid "Left Shift key changes group."
+msgstr "Tasta Shift-stânga schimbă grupul."
+
+#. XKBFile extension text
+msgid "Left Win-key switches group while pressed."
+msgstr "Tasta Win-stânga schimbă grupul cât timp e apăsată."
+
+#. XKBFile extension text
+msgid "Menu is Compose."
+msgstr "Menu este Compose."
+
+#. XKBFile extension text
+msgid "Both Alt keys together change group."
+msgstr "Ambele taste Alt apăsate simultan schimbă grupul."
+
+#. XKBFile extension text
+msgid "CapsLock key changes group."
+msgstr "Tasta CapsLock schimbă grupul."
+
+#. XKBFile extension text
+msgid "Swap Control and CapsLock."
+msgstr "Interschimbă Control si CapsLock."
+
+#. XKBFile extension text
+msgid "Press any of Alt keys to choose 3rd level."
+msgstr "Apasă orice tastă Alt pentru a selecta nivelul 3."
+
+#. XKBFile extension text
+msgid "Right Alt key changes group."
+msgstr "Tasta Alt-dreapta schimbă grupul."
+
+#. XKBFile extension text
+msgid "Shift with numpad keys works as in MS Windows."
+msgstr "Shift cu tastatura numerică funcționează ca în MS Windows."
+
+#. XKBFile extension text
+msgid "Special keys (Ctrl+Alt+<key>) handled in a server."
+msgstr "Tastele speciale (Ctrl+Alt+<tastă>) sunt tratate într-un server."
+
+#. XKBFile extension text
+msgid "Hyper is mapped to the Win-keys."
+msgstr "Hyper este mapat la tastele Win."
+
+#. XKBFile extension text
+msgid "Alt is mapped to the right Win-key and Super to Menu."
+msgstr "Alt este mapat la tasta Win-dreapta și Super la Menu."
+
+#. XKBFile extension text
+msgid "Super is mapped to the Win-keys (default)."
+msgstr "Super este mapat la tastele Win (implicit)."
+
+#. XKBFile extension text
+msgid "Alt and Meta on the Alt keys (default)."
+msgstr "Alt și Meta la tastele Alt (implicit)."
+
+#. XKBFile extension text
+msgid "Add the standard behavior to Menu key."
+msgstr "Adaugă comportamentul standard la tasta Menu."
+
+#. XKBFile extension text
+msgid "Alt and Meta are on the Alt keys (default)."
+msgstr "Alt și Meta sunt pe tastele Alt (implicit)."
+
+#. XKBFile extension text
+msgid "Press Right Control to choose 3rd level."
+msgstr "Apasă Control-dreapta pentru a selecta nivelul 3."
+
+#. XKBFile extension text
+msgid "Alt+Shift changes group."
+msgstr "Alt+Shift schimbă grupul."
+
+#. XKBFile extension text
+msgid "Control+Shift changes group."
+msgstr "Control+Shift schimbă grupul."
+
+#. XKBFile extension text
+msgid "CapsLock acts as Shift with locking. Shift cancels CapsLock."
+msgstr "CapsLock se comportă ca Shift cu blocare. Shift anulează CapsLock."
+
+#. XKBFile extension text
+msgid "Use keyboard LED to show alternative group."
+msgstr "Folosește LEDul tastaturii pentru a arăta grupul alternativ."
+
+#. XKBFile extension text
+msgid "Press Right Win-key to choose 3rd level."
+msgstr "Apasă tasta Win-dreapta pentru a selecta nivelul 3."
+
+#. XKBFile extension text
+msgid "Press Left Alt key to choose 3rd level."
+msgstr "Apasă tasta Alt-stânga pentru a selecta nivelul 3."
+
+#. XKBFile extension text
+msgid "Meta is mapped to the Win-keys."
+msgstr "Meta este mapat la tastele Win."
+
+#. XKBFile extension text
+msgid "Press Menu key to choose 3rd level."
+msgstr "Apasă tasta Menu pentru a selecta nivelul 3."
+
+#. XKBFile extension text
+msgid "Left Ctrl key changes group."
+msgstr "Tasta Ctrl-stânga schimbă grupul."
+
+#. XKBFile extension text
+msgid "Menu key changes group."
+msgstr "Tasta Menu schimbă grupul."
+
+#. XKBFile extension text
+msgid "Alt+Control changes group."
+msgstr "Alt+Control schimbă grupul."
+
+#. XKBFile extension text
+msgid "Right Win-key switches group while pressed."
+msgstr "Tasta Win-dreapta schimbă grupul cât timp e apăsată."
+
+#. XKBFile extension text
+msgid "Serbia"
+msgstr "Serbia"
+
+#. XKBFile extension text
+msgid "Guinea"
+msgstr "Guineea"
+
+#. XKBFile extension text
+msgid "Montenegro"
+msgstr "Muntenegru"
+
+#. XKBFile extension text
+msgid "China"
+msgstr "China"
+
+#. XKBFile extension text
+msgid "USA"
+msgstr "SUA"
+
+#. XKBFile extension text
+msgid "Add the EuroSign to the 4 key."
+msgstr "Adaugă simbolul Euro la tasta 4."
+
+#. XKBFile extension text
+msgid "Four-level key with dot"
+msgstr "Tastă de 4 nivele cu punct"
+
+#. XKBFile extension text
+msgid "Legacy Wang 724 keypad"
+msgstr "Tastatură numerică Wang 724"
+
+#. XKBFile extension text
+msgid "Four-level key with abstract separators"
+msgstr "Tastă de 4 nivele cu separatori abstracți"
+
+#. XKBFile extension text
+msgid "Keypad with unicode additions (arrows and math operators)"
+msgstr ""
+"Tastatură numerică cu suplimente unicod (săgeți și operatori matematici)"
+
+#. XKBFile extension text
+msgid "Legacy keypad"
+msgstr "Tastatură numerică veche"
+
+#. XKBFile extension text
+msgid "Shift cancels CapsLock."
+msgstr "Shift anulează CapsLock."
+
+#. XKBFile extension text
+msgid "Swap ESC and CapsLock."
+msgstr "Interschimbă ESC și CapsLock"
+
+#. XKBFile extension text
+msgid ""
+"Wang 724 keypad with unicode additions (arrows and math operators). Math "
+"operators on default level."
+msgstr ""
+"Tastatură numerică Wang 724 cu suplimete unicod (săgeți și operatori "
+"matematici). Operatorii matematici pe nivelul implicit."
+
+#. XKBFile extension text
+msgid "Four-level key with comma"
+msgstr "Tastă de 4 nivele cu virgulă"
+
+#. XKBFile extension text
+msgid "Legacy key with comma"
+msgstr "Tastă în stil vechi cu virgulă"
+
+#. XKBFile extension text
+msgid ""
+"Keypad with unicode additions (arrows and math operators). Math operators on "
+"default level."
+msgstr ""
+"Tastatură numerică cu suplimente unicod (săgeți și operatori matematici). "
+"Operatorii matematici pe nivelul implicit."
+
+#. XKBFile extension text
+msgid "Legacy key with dot"
+msgstr "Tastă în stil vechi cu punct"
+
+#. XKBFile extension text
+msgid "Four-level key with momayyez"
+msgstr "Tastă de 4 nivele  cu momayyez"
+
+#. XKBFile extension text
+msgid "Numeric keypad delete key behaviour"
+msgstr "Comportamentul tastei delete de pe tastatura numerică"
+
+#. XKBFile extension text
+msgid "Wang 724 keypad with unicode additions (arrows and math operators)"
+msgstr ""
+"Tastatură numerică Wang 724 cu suplimente unicod (săgeți și operatori "
+"matematici)"
+
+#. Tab title: Tablet port and mode selection
+msgid "Port and Mode"
+msgstr "Portul și Modul"
+
+#. Tab title: Tablet electronic pens (pen,eraser)
+msgid "Electronic Pens"
+msgstr "Stilouri electronice"
+
+#. Activate tablet checkbox
+msgid "Activate This Tablet"
+msgstr "Activează această tabletă"
+
+#. Group box title for the tablet vendor and name selection
+msgid "Tablet: Vendor and Name Selection"
+msgstr "Tabletă: Alegerea producătorului și a numelui"
+
+#. Group box title for tablet port combobox
+msgid "Connection Port"
+msgstr "Portul pentru conectare"
+
+#. Group box title for tablet mode
+msgid "Primary Tablet Mode"
+msgstr "Modul primar al tabletei"
+
+#. Group box title for pen/eraser tablet mode
+msgid "Pen or Eraser Mode"
+msgstr "Mod stilou sau gumă"
+
+#. Radiobutton for relative tablet mode
+msgid "Relative"
+msgstr "Relativ"
+
+#. Radiobutton for absolute tablet mode
+msgid "Absolute"
+msgstr "Absolut"
+
+#. Combobox item text for tablet port: USB
+msgid "USB"
+msgstr "USB"
+
+#. Combobox item text for tablet port: ttyS0
+msgid "COM-1 [ /dev/ttyS0 ]"
+msgstr "COM-1 [ /dev/ttyS0 ]"
+
+#. Combobox item text for tablet port: ttyS1
+msgid "COM-2 [ /dev/ttyS1 ]"
+msgstr "COM-2 [ /dev/ttyS1 ]"
+
+#. Combobox item text for tablet port: ttyS2
+msgid "COM-3 [ /dev/ttyS2 ]"
+msgstr "COM-3 [ /dev/ttyS2 ]"
+
+#. Combobox item text for tablet port: ttyS3
+msgid "COM-4 [ /dev/ttyS3 ]"
+msgstr "COM-4 [ /dev/ttyS3 ]"
+
+#. Combobox item text for tablet port: ttyS4
+msgid "COM-5 [ /dev/ttyS4 ]"
+msgstr "COM-5 [ /dev/ttyS4 ]"
+
+#. Group box title for the tablet tools (pen/eraser)
+msgid "Tools"
+msgstr "Unelte"
+
+#. Add Pen Checkbox
+msgid "Add Pen"
+msgstr "Adaugă stilou"
+
+#. Add Eraser Checkbox
+msgid "Add Eraser"
+msgstr "Adaugă gumă"
+
+#. Add Touch Checkbox
+msgid "Add Touch"
+msgstr "Adaugă senzor tactil"
+
+#. Add Pad Checkbox
+msgid "Add Pad"
+msgstr "Adaugă pad"
+
+#. Windowanager title for the tablet pen options dialog
+msgid "Pen or Eraser Settings"
+msgstr "Setări pentru stilou sau gumă"
+
+#. Tab title: Pen properties
+msgid "Pen Properties"
+msgstr "Proprietăți stilou"
+
+#. Tab title: Pad properties
+msgid "Pad Properties"
+msgstr "Proprietăți pad"
+
+#. Tab title: Eraser properties
+msgid "Eraser Properties"
+msgstr "Proprietăți gumă"
+
+#. Tab title: Touch properties
+msgid "Touch Properties"
+msgstr "Proprietățile Senzorului Tactil"
+
+#. Tab text for a touchscreen tab of the touchscreen dialog
+msgid "Touchscreen %1"
+msgstr "Ecran Tactil %1"
+
+#. Activate/Assign touchscreen checkbox
+msgid "Assign a Touchscreen to Display Number %1"
+msgstr "Alocă un ecran tactil la afișajul numărul %1"
+
+#. Group box title for the touchscreen vendor and name selection
+msgid "Touchscreen: Vendor and Name Selection"
+msgstr "Ecran tactil: Selectarea producătorului și a numelui"
+
+#. Finish configuration message box
+msgid ""
+"<b>Final Steps</b><hr>The last step is saving your new configuration. It is "
+"recommended to test the new configuration before saving it. If the test "
+"server shows a corrupted desktop, press <b>[ Ctrl+Alt+Backspace ]</b> and <b>"
+"[ Ctrl+Alt+Backspace ]</b> shortly after a loud warning (beep) to kill the "
+"server."
+msgstr ""
+"<b>Pași finali</b><hr>Ultimul pas este salvarea configurației noi. Se "
+"recomandă testarea noii configurații înainte de a o salva. Dacă serverul de "
+"test arată un desktop corupt, apăsați <b>[ Ctrl+Alt+Backspace ]</b> și <b>"
+"[ Ctrl+Alt+Backspace]</b> la scurt timp după semnalul sonor de avertizare "
+"(bip) pentru a opri serverul."
+
+#. Finish configuration message box (without test)
+msgid ""
+"<b>Saving the configuration</b><hr>Click on Save to store the configuration. "
+"Your changes will become effective on next X-Server restart."
+msgstr ""
+"<b>Se salvează configurația</b><hr>Apăsați Salvează pentru a stoca "
+"configurația. Modificările dvs. vor deveni active la următorul restart al "
+"serverului X."
+
+#. Tab title: VNC Server configuration
+msgid "X Server Remote Control"
+msgstr "Control la distanță al serverului X"
+
+#. Activate VNC server checkbox
+msgid "Allow access to display and keyboard/mouse of your X Server"
+msgstr ""
+"Permite accesul la afișajul și tastatura/mausul serverului dumneavoastră X"
+
+#. Activate VNC password protection checkbox
+msgid "Activate Password Protection"
+msgstr "Activează protecție prin parolă"
+
+# password dialog title
+#. LineEdit label: enter password
+msgid "Password"
+msgstr "Parolă"
+
+#. LineEdit contents: enter new password
+msgid "<Enter new password>"
+msgstr "<Introduceți noua parolă>"
+
+#. LineEdit contents: change password
+msgid "<Change password>"
+msgstr "<Schimbă parola>"
+
+#. LineEdit contents: verify password
+msgid "<Verify password>"
+msgstr "<Verifică parola>"
+
+#. Activate HTTP access checkbox
+msgid "Activate HTTP Access"
+msgstr "Activează accesul HTTP"
+
+#. Activate multiple VNC connection checkbox
+msgid "Allow Multiple Connections"
+msgstr "Permite conexiuni multiple"
+
+#. SpinBox label to setup the HTTP port number
+msgid "HTTP Port"
+msgstr "Port HTTP"
+
+#. VNC message box appearing if password strings doesn't match
+msgid ""
+"<b>Remote Access Password Mismatch</b><hr>The first and the second version of "
+"the password do not match."
+msgstr ""
+"<b>Nepotrivirea parolei pentru accesul la distanță</b><hr>Prima și a doua "
+"versiune a parolei nu se potrivesc."
+
+#. VNC message box appearing if password is too short
+msgid ""
+"<b>Remote Access Password Fault</b><hr>The password field has been left empty "
+"or the password is too short. Enter a password with at least six characters."
+msgstr ""
+"<b>Eroare la parola pentru acces la distanță</b><hr>Câmpul de parolă fie a "
+"fost lăsat gol, fie parola este prea scurtă. Introduceți o parolă de cel "
+"puțin 6 caractere."
+
+#. VNC message box appearing if password is too long
+msgid ""
+"<b>Remote Access Password Fault</b><hr>The password is too long. Enter a "
+"password with a maximum of eight characters."
+msgstr ""
+"<b>Eroare la parola pentru acces la distanță</b><hr>Parola este prea lungă. "
+"Introduceți o parolă de maxim 8 caractere."
+
+#. Install missing packages box
+msgid ""
+"<b>Software Installation:</b><hr>Some packages are missing. Install the "
+"missing packages now?"
+msgstr ""
+"<b>Instalare software:</b><hr>Câteva pachete lipsesc. Să instalez pachetele "
+"lipsă acum?"
+
+# dialog title for ftp installation
+#. Caption text for the missing package info window
+msgid "Package Installation"
+msgstr "Instalare pachete"
+
+#. Progress bar title text
+msgid "Importing module"
+msgstr "Import module"
+
+#. Progress window caption text
+msgid "SaX2: Importing data..."
+msgstr "SaX2: Import date..."
+
+#. Progress window label text
+msgid "Initialize cache..."
+msgstr "Inițializare cache..."
+
+#. Message box text: configuration cannot be saved
+msgid ""
+"<b>Saving Configuration Failed</b><hr>The following report has been created:"
+msgstr "<b>Salvarea configurației a eșuat</b><hr>Următorul raport a fost creat:"
+
+#. Message box test: configuration has been saved
+msgid ""
+"<b>Configuration Saved</b><hr>Your modifications will take effect the next "
+"time the graphics system is restarted. Exit SaX2 now?"
+msgstr ""
+"<b>Configurație salvată</b><hr>Modificările dumneavoastră vor avea efect de "
+"la următoarea repornire a sistemului grafic. Ieșiți din SaX2 acum?"
+
+#. Message box text: testing the configuration has failed
+msgid ""
+"<b>Testing Configuration Failed</b><hr>For further information, refer to the "
+"file <tt>/var/log/Xorg.99.log</tt>. The following report has been created "
+"from the calling instance:"
+msgstr ""
+"<b>Testarea configurației a eșuat</b><hr>Pentru informații suplimentare "
+"urmăriți fișierul <tt>/var/log/Xorg.99.log</tt>. Următorul raport a fost "
+"creat:"
+
+#. Message box text: if VNC has been enabled the firewall should be checked
+msgid ""
+"<b>Remote Access configuration information</b><hr>The Remote Access service "
+"requires that the TCP port 5900 and an HTTP port (5800 by default) be open in "
+"the firewall. You can configure this with YaST."
+msgstr ""
+"<b>Informații privind configurarea accesului la distanță</b><hr>Serviciul de "
+"acces la distanță necesită ca porturile TCP 5900 și un port HTTP (5800 "
+"implicit) să fie deschise în firewall. Puteți configura asta cu YaST."
+
+#. XKBFile extension text
+msgid "Miscellaneous compatibility options"
+msgstr "Opțiuni diverse privind compatibilitatea"
+
+#. XKBFile extension text
+msgid "Add the EuroSign to the 5 key."
+msgstr "Adaugă simbolul Euro la tasta 5."
+
+#. XKBFile extension text
+msgid "CapsLock key behavior"
+msgstr "Comportamentul tastei CapsLock"
+
+#. XKBFile extension text
+msgid "Alt/Win key behavior"
+msgstr "Comportamentul tastei Alt/Win"
+
+#. XKBFile extension text
+msgid "Adding the EuroSign to certain keys"
+msgstr "Adăugarea simbolului Euro la anumite taste"
+
+#. XKBFile extension text
+msgid "Caps Lock is Compose."
+msgstr "CapsLock este Compose."
+
+#. XKBFile extension text
+msgid "Right Ctrl key works as Right Alt."
+msgstr "Tasta Ctrl-dreapta funcționează ca Alt-dreapta "
+
+#. XKBFile extension text
+msgid "Ctrl key at bottom left"
+msgstr "Tasta Ctrl în stânga jos"
+
+#. XKBFile extension text
+msgid "Ctrl key at left of 'A'"
+msgstr "Tasta Ctrl la stânga lui 'A'"
+
+#. XKBFile extension text
+msgid "Make CapsLock an additional Ctrl."
+msgstr "Fă din CapsLock un Ctrl suplimentar"
+
+#. XKBFile extension text
+msgid "Swap Ctrl and CapsLock."
+msgstr "Interschimbă Ctrl și CapsLock."
+
+#. XKBFile extension text
+msgid "Ctrl key position"
+msgstr "Poziția tastei Ctrl"
+
+#. XKBFile extension text
+msgid "Special keys (Ctrl+Alt+&lt;key&gt;) handled in a server."
+msgstr "Tastele speciale (Ctrl+Alt+&lt;&gt;) sunt tratate într-un server."
+
+#. XKBFile extension text
+msgid "Press Right Ctrl to choose 3rd level."
+msgstr "Apasă Ctrl-dreapta pentru a selecta nivelul 3."
+
+#. XKBFile extension text
+msgid "Ctrl+Shift changes group."
+msgstr "Ctrl+Shift schimbă grupul."
+
+#. XKBFile extension text
+msgid "Add the EuroSign to the E key."
+msgstr "Adaugă simbolul Euro la tasta E."
+
+#. XKBFile extension text
+msgid "Add the EuroSign to the 2 key."
+msgstr "Adaugă simbolul Euro la tasta 2."
+
+#. XKBFile extension text
+msgid "key Compose key position"
+msgstr "Poziția tastei Compose"
+
+#. XKBFile extension text
+msgid "Alt+Ctrl changes group."
+msgstr "Alt+Ctrl schimbă grupul."
+
+#. XKBFile extension text
+msgid "Group Shift/Lock behavior"
+msgstr "Comportamentul combinației Shift/Lock"
+
+#. XKBFile extension text
+msgid "Arabic"
+msgstr "Arabic"
+
+#. XKBFile extension text
+msgid "Nepal"
+msgstr "Nepal"
+
+#. XKBFile extension text
+msgid "Congo, Democratic Republic of the"
+msgstr "Congo, Republica Democrată"
+
+#. XKBFile extension text
+msgid "Korea, Republic of"
+msgstr "Korea, Rebublica "
+
+#. XKBFile extension text
+msgid "Iraq"
+msgstr "Irak"
+
+#. XKBFile extension text
+msgid "Nigeria"
+msgstr "Nigeria"
+
+#. XKBFile extension text
+msgid "Japan (PC-98xx Series)"
+msgstr "Japonia (gama PC-98xx)"
+
+#. XKBFile extension text
+msgid "Estonia"
+msgstr "Estonia"
+
+#. XKBFile extension text
+msgid "Myanmar"
+msgstr "Mianmar"
+
+#. XKBFile extension text
+msgid "Norway"
+msgstr "Norvegia"
+
+#. XKBFile extension text
+msgid "Germany"
+msgstr "Germania"
+
+#. XKBFile extension text
+msgid "Mongolia"
+msgstr "Mongolia"
+
+#. XKBFile extension text
+msgid "Bhutan"
+msgstr "Bhutan"
+
+#. XKBFile extension text
+msgid "Bangladesh"
+msgstr "Bangladesh"
+
+#. XKBFile extension text
+msgid "Latin American"
+msgstr "America Latină"
+
+#. XKBFile extension text
+msgid "Belgium"
+msgstr "Belgia"
+
+#. XKBFile extension text
+msgid "Finland"
+msgstr "Finlanda"
+
+#. XKBFile extension text
+msgid "Israel"
+msgstr "Israel"
+
+#. XKBFile extension text
+msgid "Sweden"
+msgstr "Suedia"
+
+#. XKBFile extension text
+msgid "Russia"
+msgstr "Rusia"
+
+#. XKBFile extension text
+msgid "Portugal"
+msgstr "Portugalia"
+
+#. XKBFile extension text
+msgid "Korean"
+msgstr "Coreea"
+
+#. XKBFile extension text
+msgid "Maori"
+msgstr "Maori"
+
+#. XKBFile extension text
+msgid "Uzbekistan"
+msgstr "Uzbekistan"
+
+#. XKBFile extension text
+msgid "Bulgaria"
+msgstr "Bulgaria"
+
+#. XKBFile extension text
+msgid "Thailand"
+msgstr "Tailanda"
+
+#. XKBFile extension text
+msgid "India"
+msgstr "India"
+
+#. XKBFile extension text
+msgid "Bengali"
+msgstr "Bengaleză"
+
+#. XKBFile extension text
+msgid "Switzerland"
+msgstr "Elveția"
+
+#. XKBFile extension text
+msgid "Laos"
+msgstr "Laos"
+
+#. XKBFile extension text
+msgid "Japan"
+msgstr "Japonia"
+
+#. XKBFile extension text
+msgid "Syria"
+msgstr "Siria"
+
+#. XKBFile extension text
+msgid "Czechia"
+msgstr "Cehia"
+
+#. XKBFile extension text
+msgid "Belarus"
+msgstr "Belarus"
+
+#. XKBFile extension text
+msgid "Tajikistan"
+msgstr "Tajikistan"
+
+#. XKBFile extension text
+msgid "Denmark"
+msgstr "Danemarca"
+
+#. XKBFile extension text
+msgid "Slovenia"
+msgstr "Slovenia"
+
+#. XKBFile extension text
+msgid "Malta"
+msgstr "Malta"
+
+#. XKBFile extension text
+msgid "Azerbaijan"
+msgstr "Azerbaidjan"
+
+#. XKBFile extension text
+msgid "Lithuania"
+msgstr "Lituania"
+
+#. XKBFile extension text
+msgid "Vietnam"
+msgstr "Vietnam"
+
+#. XKBFile extension text
+msgid "Faroe Islands"
+msgstr "Insulele Feroe"
+
+#. XKBFile extension text
+msgid "South Africa"
+msgstr "Africa de Sud"
+
+#. XKBFile extension text
+msgid "Farsi"
+msgstr "Farsi"
+
+#. XKBFile extension text
+msgid "Slovakia"
+msgstr "Slovacia"
+
+#. XKBFile extension text
+msgid "Maldives"
+msgstr "Maldive"
+
+#. XKBFile extension text
+msgid "Iceland"
+msgstr "Islanda"
+
+#. XKBFile extension text
+msgid "Croatia"
+msgstr "Croația"
+
+#. XKBFile extension text
+msgid "Latvia"
+msgstr "Letonia"
+
+#. XKBFile extension text
+msgid "Albania"
+msgstr "Albania"
+
+#. XKBFile extension text
+msgid "Italy"
+msgstr "Italia"
+
+#. XKBFile extension text
+msgid "Greece"
+msgstr "Grecia"
+
+#. XKBFile extension text
+msgid "United Kingdom"
+msgstr "Anglia"
+
+#. XKBFile extension text
+msgid "France"
+msgstr "Franța"
+
+#. XKBFile extension text
+msgid "Armenia"
+msgstr "Armenia"
+
+#. XKBFile extension text
+msgid "Pakistan"
+msgstr "Pakistan"
+
+#. XKBFile extension text
+msgid "Poland"
+msgstr "Polonia"
+
+#. XKBFile extension text
+msgid "Kyrgyzstan"
+msgstr "Kârgâzstan"
+
+#. XKBFile extension text
+msgid "Ireland"
+msgstr "Irlanda"
+
+#. XKBFile extension text
+msgid "Hungary"
+msgstr "Ungaria"
+
+#. XKBFile extension text
+msgid "Cambodia"
+msgstr "Cambodgia"
+
+#. XKBFile extension text
+msgid "Spain"
+msgstr "Spania"
+
+#. XKBFile extension text
+msgid "Ukraine"
+msgstr "Ucraina"
+
+#. XKBFile extension text
+msgid "Romania"
+msgstr "România"
+
+#. XKBFile extension text
+msgid "Kazakhstan"
+msgstr "Kazahstan"
+
+#. XKBFile extension text
+msgid "Georgia"
+msgstr "Georgia"
+
+#. XKBFile extension text
+msgid "U.S. English"
+msgstr "Engleză U.S."
+
+#. XKBFile extension text
+msgid "Turkish"
+msgstr "Turcă"
+
+#. XKBFile extension text
+msgid "PC-98xx Series"
+msgstr "Seriile PC-98xx"
+
+#. XKBFile extension text
+msgid "Netherlands"
+msgstr "Olanda"
+
+#. XKBFile extension text
+msgid "Macedonia"
+msgstr "Macedonia"
+
+#. XKBFile extension text
+msgid "Canada"
+msgstr "Canada"
+
+#. XKBFile extension text
+msgid "Sri Lanka"
+msgstr "Sri Lanka"
+
+#. XKBFile extension text
+msgid "Bosnia and Herzegovina"
+msgstr "Bosnia și Herțegovina"
+
+#. XKBFile extension text
+msgid "Brazil"
+msgstr "Brazilia"
+
+#. XKBFile extension text
+msgid "Ghana"
+msgstr "Ghana"
+
+#. XKBFile extension text
+msgid "Andorra"
+msgstr "Andorra"
+
+#. XKBFile extension text
+msgid "Afghanistan"
+msgstr "Afghanistan"
+
+#. XKBFile extension text
+msgid "Esperanto"
+msgstr "Esperanto"
+
+#. XKBFile extension text
+msgid "Turkey"
+msgstr "Turcia"
+
+#. XKBFile extension text
+msgid ""
+"CapsLock key switches layout while pressed, Alt+CapsLock does the original "
+"capslock action."
+msgstr ""
+"Tasta CapsLock comută maparea când este apăsată, Alt+CapsLock efectuează "
+"acțiunea originală CapsLock."
+
+#. XKBFile extension text
+msgid "CapsLock switch to first layout, Shift+CapsLock switch to last layout."
+msgstr "CapsLock comută pe prima mapare, Shift+CapsLock pe ultima."
+
+#. XKBFile extension text
+msgid "Less-than/Greater-than is Compose."
+msgstr ""
+
+#. XKBFile extension text
+#, fuzzy
+msgid ""
+"Space key outputs non-breakable space character at fourth level, thin non-"
+"breakable space character at sixth level (via Ctrl+Shift"
+msgstr ""
+"Tasta spațiu furnizează caracterul spațiu indivizibil pe al patrulea nivel, "
+"caracter spațiu indivizibil subțire pe al șaselea nivel (via Ctrl+Shift"
+
+#. /.../
+#. Copyright (c) 2000 SuSE GmbH Nuernberg, Germany.  All rights reserved.
+#. This file contains the gettext keys used within a gettext call in the
+#. application code for XFine2
+#.
+#. Maximum length: 40  characters
+msgid "&Step size"
+msgstr "Dimen&siunea pasului"
+
+#. Maximum length: 40  characters
+msgid "Small"
+msgstr "Mic"
+
+#. Maximum length: 40  characters
+msgid "Normal"
+msgstr "Normal"
+
+#. Maximum length: 40  characters
+msgid "Big"
+msgstr "Mare"
+
+#. Maximum length: 40  characters
+msgid "Huge"
+msgstr "Uriaș"
+
+#. Maximum length: 40  characters
+msgid "&Next Screen"
+msgstr "Ecra&nul următor"
+
+#. Maximum length: 40  characters
+msgid "S&ave"
+msgstr "S&alvează"
+
+# boot disk change dialog title
+#. Maximum length: 40  characters
+msgid "Change &Position"
+msgstr "Modifică &poziția"
+
+#. Maximum length: 40  characters
+msgid "C&hange Size"
+msgstr "Sc&himbă dimensiunea"
+
+#. Maximum length: 40  characters
+msgid "Screen"
+msgstr "Ecran"
+
+#. Maximum length: 60  characters
+msgid "No video mode tuning available"
+msgstr "Nici o acordare a modului video nu e disponibilă"
+
+msgid "Display"
+msgstr "Monitor"
+
+msgid "Configuration on display"
+msgstr "Configurarea pe ecran"
+
+msgid "Idle timer..."
+msgstr "Cronometrul de inactivitate ..."

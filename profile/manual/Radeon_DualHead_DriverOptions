@@ -1,0 +1,25 @@
+# /.../
+# profile to setup the second channel on an
+# radeon based dual head card
+# -----------------------------
+SaXMeta -> [X] ->  SAX_NO_CDB_CHECK = 1
+
+$Modes  = Screen  -> [X] -> Depth -> 16 -> Modes
+$Hsync  = Monitor -> [X] -> HorizSync
+$Vsync  = Monitor -> [X] -> VertRefresh
+$Vendor = Monitor -> [X] -> VendorName
+$Model  = Monitor -> [X] -> ModelName
+
+Device  -> [X] -> Option = SaXDualHead
+
+Monitor -> [X] -> PreferredMode = ${Modes[0]}
+
+Device  -> [X] -> Raw -> 21 -> Option = "SaXDualMode" "Clone"
+Device  -> [X] -> Raw -> 22 -> Option = "SaXDualOrientation" "LeftOf"
+Device  -> [X] -> Raw -> 23 -> Option = "SaXDualHSync" "${Hsync}"
+Device  -> [X] -> Raw -> 24 -> Option = "SaXDualVSync" "${Vsync}"
+Device  -> [X] -> Raw -> 25 -> Option = "SaXDualResolution" "${Modes[0]}"
+Device  -> [X] -> Raw -> 26 -> Option = "SaXDualMonitorVendor" "${Vendor}"
+Device  -> [X] -> Raw -> 27 -> Option = "SaXDualMonitorModel" "${Model}"
+
+Device  -> [X] -> Raw -> 28 -> Option = "SaXExternal" "Identifier__AND__EXT__PLUS__VertRefresh__AND__${Vsync}__PLUS__HorizSync__AND__${Hsync}__PLUS__PreferredMode__AND__${Modes[0]}__PLUS__VendorName__AND__${Vendor}__PLUS__ModelName__AND__${Model}"

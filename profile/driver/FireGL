@@ -1,0 +1,21 @@
+# /.../
+# FireGL profile applied as driver profile to the fglrx
+# driver to setup all available options of this driver
+# -------------------------------------------------------
+Device  -> [X] ->  Driver = fglrx
+Desktop -> [X] ->  CalcModelines = no
+Monitor -> [X] ->  CalcAlgorithm = XServerPool
+
+ServerFlags-> 0 -> IgnoreABI = on
+
+!remove Desktop -> [X] -> SpecialModeline
+!remove Monitor -> [X] -> Modeline
+
+Screen->[X]->DefaultDepth    = 24
+Module->[X]->Load            = dbe,extmod,glx,dri
+Device->[X]->Raw->11->Option = "Capabilities" "0x00000000"
+Device->[X]->Raw->12->Option = "VideoOverlay" "on"
+Device->[X]->Raw->13->Option = "OpenGLOverlay" "off"
+Device->[X]->Raw->14->Option = "FSAAEnable" "off"
+Device->[X]->Raw->15->Option = "FSAAScale" "0"
+Device->[X]->Raw->16->Option = "XAANoOffscreenPixmaps" "true"

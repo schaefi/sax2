@@ -1,0 +1,8 @@
+InputDevice -> 0 -> Identifier = Keyboard[0]
+InputDevice -> 0 -> Driver     = evdev
+InputDevice -> 0 -> Option -> evBits = +1
+InputDevice -> 0 -> Option -> keyBits = ~1-255 ~352-511
+InputDevice -> 0 -> Option -> Pass = 3
+InputDevice -> 0 -> Option -> InputFashion = Keyboard
+InputDevice -> 0 -> Option -> Name       = Microsoft Natural Ergonomic Keyboard
+InputDevice -> 0 -> Option -> XkbModel   = microsoftnek4k

@@ -1,0 +1,125 @@
+.TH sax2 1 "March 15, 2005" "Version 8.1" "Utils for X-Window"
+.UC 1
+
+.SH NAME
+SaX2 \- SuSE advanced X11 configuration,
+a complete module based X11 configurator
+
+.SH SYNOPSIS
+.B sax2
+[
+.I options 
+]
+
+.SH DESCRIPTION
+SaX2 is a program to configure the X-Server. It is able to detect almost
+all stuff related to the graphics card. The graphics card, Touchscreens,
+Tablets, 3D features, AccessX, Keyboard, Mouse, Multihead, ... and more
+can be configured using this tool.
+
+.SH COMMAND LINE OPTIONS
+Available command line options are the following:
+.TP
+-b \fI[filename,filename,...]\fP
+Activate the SaX2 batch modus. If no filename is given an interactive
+shell is started to set/overwrite configuration parameters. If the filename
+doesn't contain any / characters it is assumed to be found in /usr/share/sax/profile.
+.TP
+-b \fIXinerama | MergedFB\fP
+Special call for -b, if Xinerama is specified SaX2 will automatically
+search for a profile to enable dualhead in old Xinerama style. If MergedFB
+is specified SaX2 will automatically search for a dualhead profile to
+activate dualhead using merged framebuffer.
+.TP
+-a
+Auto configure modus. Create an automatic configuration without any
+needed user interaction and GUI.
+.TP
+-l
+Enable low resolution. Allow only the 800x600 resolution for the
+graphics setup. This is usefull if the DDC probing of the monitor results
+in not displayable resolution values.
+.TP
+-m \fIcard X=module,card X=module,...\fP
+Set driver module to use for card
+.I X
+You can specify one driver module for each card detected.
+.TP
+-c \fIchip,chip,...\fP
+Set chip to use for configuration. The
+.I -p
+option show all available chip numbers and you can select the
+one you want to use for the configuration.
+.TP
+-d \fIdisplay\-number\fP
+Set the display manually instead of probing the next free one.
+This is only usefull if SaX2 was started from a text console.
+.TP
+-x
+Use server build in Modelines. This will prevent SaX2 from calculating
+its own modelines. The server build in mode pool is used instead.
+This will only work for VESA specified resolutions.
+.TP
+-u
+Use server mode suggestion. This will prevent SaX2 from suggesting
+a resolution used for the configuration. The server itself will decide
+the best resolution to use than.
+.TP
+-p
+Show PCI/AGP information about the detected graphics card(s)
+.TP
+-n \fInode\fP
+Set device node to use for the core pointer. This will specify the
+port the mouse is connected to. For serial mice use /dev/ttySX where X is
+the port number of the serial device, for USB devices use /dev/input/mice
+and for PS/2 devices use /dev/psaux.
+.TP
+-t \fItype\fP
+Set protocol type to use for the core pointer.
+.TP
+-g
+Use gpm as repeater of mouse events.
+.TP
+-s
+This option only takes effect if SaX2 has to start its own X-Server.
+It will than use the system installed config file instead of the
+HW detection data.
+.TP
+--vesa
+This option will set a given resolution and vertical sync
+value (in Hz) as VESA standard resolution for a specific
+card. Please note if you set a resolution smaller than 800x600
+the graphics user interface won't fit the screen dimensions.
+The format is the following:
+.I Card:XxY@VSync
+Example: 0:1024x768@85
+.TP
+--sysconfig
+this option tell SaX2 to import the system wide
+config file even if SaX2 was started from a textconsole
+which normaly will import the SaX2 HW detection data
+.TP
+--fullscreen
+start in fullscreen mode
+.TP
+-i
+This option will disable the use of profiles which are normally applied
+automatically if defined for a specifc card or chipset
+.TP
+-r
+Remove detection database and re-init the hardware database
+.TP
+-v
+print version information and exit.
+
+.SH AUTHORS
+Written by Marcus Schäfer
+
+.SH REPORTING BUGS
+Report bugs to <bugzilla.novell.com>.
+
+.SH COPYRIGHT
+Copyright © 2005 SuSE Linux Products GmbH, Inc.
+This is free software; see the source for copying conditions.  There is
+NO  warranty;  not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR
+PURPOSE.

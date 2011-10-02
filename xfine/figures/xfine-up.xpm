@@ -1,0 +1,48 @@
+/* XPM */
+static char *up[] = {
+/* width height num_colors chars_per_pixel */
+"    37    37        3            1",
+/* colors */
+". c #000000",
+"# c #0000fc",
+"a c None",
+/* pixels */
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+"aaaaaaaaaaaaaaaaaa.aaaaaaaaaaaaaaaaaa",
+"aaaaaaaaaaaaaaaaa.#.aaaaaaaaaaaaaaaaa",
+"aaaaaaaaaaaaaaaa.###.aaaaaaaaaaaaaaaa",
+"aaaaaaaaaaaaaaa.#####.aaaaaaaaaaaaaaa",
+"aaaaaaaaaaaaaa.#######.aaaaaaaaaaaaaa",
+"aaaaaaaaaaaaa.#########.aaaaaaaaaaaaa",
+"aaaaaaaaaaaa.###########.aaaaaaaaaaaa",
+"aaaaaaaaaaa.#############.aaaaaaaaaaa",
+"aaaaaaaaaa.###############.aaaaaaaaaa",
+"aaaaaaaaa.#################.aaaaaaaaa",
+"aaaaaaaa.###################.aaaaaaaa",
+"aaaaaaa.......#########.......aaaaaaa",
+"aaaaaaaaaaaaa.#########.aaaaaaaaaaaaa",
+"aaaaaaaaaaaaa.#########.aaaaaaaaaaaaa",
+"aaaaaaaaaaaaa.#########.aaaaaaaaaaaaa",
+"aaaaaaaaaaaaa.#########.aaaaaaaaaaaaa",
+"aaaaaaaaaaaaa.#########.aaaaaaaaaaaaa",
+"aaaaaaaaaaaaa.#########.aaaaaaaaaaaaa",
+"aaaaaaaaaaaaa.#########.aaaaaaaaaaaaa",
+"aaaaaaaaaaaaa.#########.aaaaaaaaaaaaa",
+"aaaaaaaaaaaaa.#########.aaaaaaaaaaaaa",
+"aaaaaaaaaaaaa.#########.aaaaaaaaaaaaa",
+"aaaaaaaaaaaaa.#########.aaaaaaaaaaaaa",
+"aaaaaaaaaaaaa...........aaaaaaaaaaaaa",
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+};
+

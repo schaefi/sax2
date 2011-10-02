@@ -1,0 +1,12 @@
+#!/bin/sh
+
+for i in $(find -type f);do
+	echo $i | grep -q .svn
+	if [ $? = 0 ];then
+		continue
+	fi
+	head -n 1 $i | grep -q ^#!
+	if [ $? = 0 ];then
+		chmod u+x $i
+	fi
+done

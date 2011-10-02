@@ -1,0 +1,7 @@
+InputDevice -> [X] -> Identifier = Mouse[[X]]
+InputDevice -> [X] -> Driver     = synaptics
+InputDevice -> [X] -> Option -> InputFashion         = Mouse
+InputDevice -> [X] -> Option -> Name                 = Synaptics;Touchpad
+InputDevice -> [X] -> Option -> Device               = /dev/input/mice
+InputDevice -> [X] -> Option -> SHMConfig            = on
+InputDevice -> [X] -> Option -> HorizScrollDelta     = 0

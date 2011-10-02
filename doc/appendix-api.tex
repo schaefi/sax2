@@ -1,0 +1,295 @@
+\chapter{The Variables API File}
+\index{appendix!API file}
+\label{cha:api}
+\minitoc
+
+In this chapter all variables which may be found in a variables 
+API file are explained. The variables API is normally created by SaX2's own 
+configuration interface, but this is not absolutely necessary. As soon as a 
+variables API exists, this can be used to create a configuration file. 
+In conjunction with the \textit{ImportAPI} module and the
+\textit{CreateSections} module, an X11 configuration can be created from the 
+API file. 
+
+\section{API File Keyword Explanations}
+The individual tables in their format description use various keywords, which
+are explained in the following list. 
+
+\begin{itemize}
+\item \textbf{String:}\\
+Refers to any sequence of characters which are \textbf{not}
+embedded in quotation marks. 
+\item \textbf{Subsection:}\\
+Refers to the name of a subsection in the X11 configuration.
+This word is followed by an entry in the subsection.
+\item \textbf{Flagname:}\\
+Refers to the name of a server flag. This is followed by the value for the 
+server flag.
+\item \textbf{Integer:}\\
+Refers to a whole number. Is usually used in connection with variables for
+defining size. 
+\item \textbf{ButtonX:}\\
+Refers to the number of the mouse button which should be adapted for the wheel
+movement in the X axis.
+\item \textbf{ButtonY:}\\
+Refers to the number of the mouse button which should be adapted for the wheel
+movement in the Y axis.
+\item \textbf{Clocks:}\\
+Refers to a list separated by spaces. with clock values. These values can be
+whole numbers as well as fractions. 
+\item \textbf{Mode:}\\
+Refers to a resolution string in the form of \verb+[Xpixel]x[Ypixel]+
+\item \textbf{Algorithm:}\\
+Refers to the two possible algorithms
+\textit{CheckDesktopGeometry} or \textit{IteratePrecisely}.
+\item \textbf{Modeline:}\\
+Refers to a modeline string, starting with a name in quotation marks which
+must match a \textit{resolution string}, followed by the RamDAC speed and 8
+further parameters. 
+\item \textbf{Sync:}\\
+Refers to a frequency range. This is specified through a number range in the
+format:  \verb+[Minimum]-[Maximum]+ 
+\item \textbf{Left,Right,Up,Down}\\
+Refers to a screen position. The value matches an identifier string in
+accordance with the monitor. If there is no screen at this point then
+\verb+<none>+ should be entered.
+\end{itemize}
+
+\section{API File Overview Tables of all Possible Variables}
+Below, all variables which may appear in an API file are listed in tabular
+form. The contents of each table refer to a section in the API file. It should
+be noted that one API section may cover a number of xorg.conf sections.
+
+%====================
+% Pfad Variablen
+%--------------------
+\index{Section!files}
+\index{Section!module}
+\index{Section!serverflags}
+\subsection{Path Variables: Section Files, Modules and Server Flags}
+\begin{tabular}[h]{|p{2cm}|p{4cm}|p{7cm}|}
+ \hline
+ \textbf{Identifier} & \textbf{Variable}     & \textbf{Format}                \\
+ \hline
+ Integer & FontPath     & String,String,String,...                       \\
+ Integer & RgbPath      & String,String,String,...                       \\ 
+ Integer & ModulePath   & String,String,String,...                       \\
+ Integer & ModuleLoad   & String,String,String,...                       \\
+ Integer & Extmod       & Subsection,String\verb+\n+Subsectio,String,... \\ 
+ Integer & SpecialFlags & Flagname,String\verb+\n+Flagname,String,...    \\
+ Integer & ServerFlags  & String,String,String,...                       \\
+ \hline
+\end{tabular}
+
+%==========================
+% Graphikkarten Variablen
+%--------------------------
+\index{Section!Device}
+\subsection{Card Variables: Device Section}
+\begin{tabular}[h]{|p{2cm}|p{4cm}|p{7cm}|}
+ \hline
+ \textbf{Identifier} & \textbf{Variable}     & \textbf{Format}        \\
+ \hline
+ Integer & Identifier      & String                             \\
+ Integer & Driver          & String                             \\
+ Integer & Memory          & Integer                            \\
+ Integer & BusID           & String                             \\
+ Integer & Vendor          & String                             \\
+ Integer & Name            & String                             \\
+ Integer & DacChip         & String                             \\
+ Integer & GraphicsChip    & String                             \\
+ Integer & ClockChip       & String                             \\
+ Integer & DacSpeed        & String                             \\
+ Integer & Clocks          & Clocks,Clocks,...                  \\
+ Integer & Option          & String,String,...                  \\
+ Integer & RawData         & String,String,...                  \\
+ Integer & MaxDac          & Integer                            \\
+ \hline
+\end{tabular}
+
+
+%====================
+% Maus Variablen
+%--------------------
+\index{Section!InputDevice}
+\subsection{Mouse Variables: InputDevice Section}
+\begin{tabular}[h]{|p{2cm}|p{4cm}|p{7cm}|}
+ \hline
+ \textbf{Identifier} & \textbf{Variable}     & \textbf{Format}        \\
+ \hline
+ Integer & Identifier       & String                             \\
+ Integer & Driver           & String                             \\
+ Integer & Protocol         & String                             \\
+ Integer & Device           & String                             \\
+ Integer & Baudrate         & Integer                            \\
+ Integer & Samplerate       & Integer                            \\
+ Integer & Emulate3Buttons  & Yes \verb+|+ No                    \\
+ Integer & Emulate3Timeout  & Integer                            \\
+ Integer & ChordMiddle      & Yes \verb+|+ No                    \\
+ Integer & MinX             & Integer                            \\
+ Integer & MaxX             & Integer                            \\
+ Integer & MinY             & Integer                            \\
+ Integer & MaxY             & Integer                            \\
+ Integer & ScreenNumber     & Integer                            \\
+ Integer & ReportingMode    & String                             \\
+ Integer & ButtonNumber     & Integer                            \\
+ Integer & ButtonThreshold  & Integer                            \\
+ Integer & SendCoreEvents   & Yes \verb+|+ No                    \\
+ Integer & ClearDTR         & Yes \verb+|+ No                    \\
+ Integer & ClearRTS         & Yes \verb+|+ No                    \\
+ Integer & ZAxisMapping     & Off \verb+|+ None \verb+|+ ButtonX ButtonY \verb+|+ X \verb+|+ Y \\
+ Integer & ZAxisNegMove     & Off \verb+|+ ButtonX               \\
+ Integer & ZAxisPosMove     & Off \verb+|+ ButtonY               \\
+ Integer & Vendor           & String                             \\
+ Integer & Name             & String                             \\
+ Integer & TabletMode       & String                             \\
+ Integer & TabletType       & String                             \\
+ \hline
+\end{tabular}
+
+%=========================
+% Oberflaechen Variablen
+%-------------------------
+\index{Section!Monitor}
+\index{Section!Modes}
+\index{Section!Screen}
+\subsection{Desktop Variables: Section Monitor,Modes and Screen}
+\begin{tabular}[h]{|p{2cm}|p{4cm}|p{7cm}|}
+ \hline
+ \textbf{Identifier} & \textbf{Variable}     & \textbf{Format}        \\
+ \hline
+ Integer & Identifier       & String                             \\  
+ Integer & Device           & String                             \\
+ Integer & Monitor          & String                             \\
+ Integer & VendorName       & String                             \\
+ Integer & ModelName        & String                             \\
+ Integer & Virtual          & Integer Integer                    \\
+ Integer & Visual           & String                             \\
+ Integer & HorizSync        & Sync                               \\
+ Integer & VertRefresh      & Sync                               \\
+ Integer & MonitorOptions   & String,String,...                  \\
+ Integer & ScreenOptions    & String,String,...                  \\
+ Integer & Modelines        & Modeline,Modeline,...              \\
+ Integer & SpecialModeline  & Modeline,Modeline,...              \\
+ Integer & ColorDepth       & Integer                            \\
+ Integer & CalcModelines    & Yes \verb+|+ No                    \\
+ Integer & CalcAlgorithm    & Algorithm                          \\
+ Integer & ViewPort         & Integer Integer                    \\
+ Integer & ScreenRawLine    & String,String,...                  \\
+ Integer & Modes:4          & Mode,Mode,...                      \\
+ Integer & Modes:8          & Mode,Mode,...                      \\
+ Integer & Modes:15         & Mode,Mode,...                      \\
+ Integer & Modes:16         & Mode,Mode,...                      \\
+ Integer & Modes:24         & Mode,Mode,...                      \\
+ Integer & Modes:32         & Mode,Mode,...                      \\
+ Integer & ImportXFineCache & Yes \verb+|+ No                    \\
+ \hline
+\end{tabular}
+
+%====================
+% Layout Variablen
+%--------------------
+\index{Section!ServerLayout}
+\subsection{Layout Variables: Section ServerLayout}
+\begin{tabular}[h]{|p{2cm}|p{4cm}|p{7cm}|}
+ \hline
+ \textbf{Identifier} & \textbf{Variable}     & \textbf{Format}        \\
+ \hline
+ Integer & Identifier                 & String                   \\
+ Integer & Keyboard                   & String                   \\
+ Integer & InputDevice                & String,String,..         \\
+ Integer & Xinerama                   & On \verb+|+ Off          \\
+ Integer & Screen:\verb+<Identifier>+ & Left Right Up Down  \\
+ \hline
+\end{tabular}
+
+\newpage
+
+%====================
+% Tastatur Variablen
+%--------------------
+\subsection{Keyboard Variables: InputDevice Section}
+\begin{tabular}[h]{|p{2cm}|p{4cm}|p{7cm}|}
+ \hline
+ \textbf{Identifier} & \textbf{Variable}     & \textbf{Format}        \\
+ \hline
+ Integer & Identifier       & String                             \\
+ Integer & Driver           & String                             \\
+ Integer & Protocol         & String                             \\
+ Integer & XkbRules         & String                             \\
+ Integer & XkbModel         & String                             \\
+ Integer & XkbLayout        & String                             \\
+ Integer & XkbVariant       & String                             \\
+ Integer & XkbOptions       & String,String,...                  \\
+ Integer & AutoRepeat       & String                             \\
+ Integer & Xleds            & String                             \\
+ Integer & XkbDisable       & Yes \verb+|+ None                  \\
+ Integer & VTSysReq         & Yes \verb+|+ None                  \\
+ Integer & VTInit           & String                             \\
+ Integer & ServerNumLock    & Yes \verb+|+ None                  \\
+ Integer & LeftAlt          & String                             \\
+ Integer & RightAlt         & String                             \\
+ Integer & ScrollLock       & String                             \\
+ Integer & RightCtl         & String                             \\
+ Integer & XkbKeyCodes      & String                             \\
+ \hline
+\end{tabular}
+
+
+\newpage
+\index{API file examples}
+\section{Example of API Variables}
+\begin{small}
+\begin{verbatim}
+Keyboard {
+ 0 Protocol         =    Standard
+ 0 XkbLayout        =    de
+ 0 Identifier       =    Keyboard[0]
+ 0 XkbModel         =    pc105
+ 0 XkbVariant       =    nodeadkeys
+ 0 Driver           =    kbd
+}
+Mouse {
+ 1 ZAxisMapping     =    4 5
+ 1 Driver           =    mouse
+ 1 Device           =    /dev/input/mice
+ 1 ButtonNumber     =    5
+ 1 Vendor           =    Sysp
+ 1 Identifier       =    Mouse[1]
+ 1 Name             =    Autodetection
+ 1 Protocol         =    imps/2
+}
+Card {
+ 0 Name             =    RivaTNT
+ 0 Identifier       =    Device[0]
+ 0 BusID            =    1:0:0
+ 0 Driver           =    nv
+ 0 Vendor           =    Nvidia
+}
+Desktop {
+ 0 VertRefresh      =    50-160
+ 0 Device           =    Device[0]
+ 0 ModelName        =    Vision Master Pro 450 (A901HT)
+ 0 CalcModelines    =    yes
+ 0 Identifier       =    Screen[0]
+ 0 ColorDepth       =    16
+ 0 Monitor          =    Monitor[0]
+ 0 Modes:16         =    1800x1350,640x480
+ 0 HorizSync        =    27-115
+ 0 VendorName       =    Iiyama
+}
+Path {
+ 0 ServerFlags      =    AllowMouseOpenFail
+ 0 FontPath         =    /usr/lib/X11/fonts/misc:unscaled
+ 0 ModuleLoad       =    dbe,freetype,extmod,glx
+}
+Layout {
+ 0 Screen:Screen[0] =    <none> <none> <none> <none>
+ 0 InputDevice      =    Mouse[1]
+ 0 Keyboard         =    Keyboard[0]
+ 0 Identifier       =    Layout[all]
+}
+Extensions {
+}
+\end{verbatim}
+\end{small}

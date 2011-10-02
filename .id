@@ -1,0 +1,29 @@
+#!/bin/sh
+
+TMPDIR=`mktemp -d /tmp/id.XXXXXX`
+if [ ! -d $TMPDIR ];then
+	exit 1
+fi
+
+for i in `find -name "*"`;do
+	if [ ! -f $i ];then
+		continue
+	fi
+	grep \$Id.*\$ $i 2>/dev/null >/dev/null
+	if [ "$?" = 0 ];then
+		echo -n "tagging: $i... "
+		SETX="no"
+		if [ -x $i ];then
+			SETX="yes"
+		fi
+		cat $i | sed -e s@\$Id.*\$@"Status: Up-to-date"@ > $TMPDIR/id
+		mv $TMPDIR/id $i
+		if [ "$SETX" = "yes" ];then
+			chmod 755 $i
+		fi
+		echo "done"
+	fi
+done
+
+rm -rf $TMPDIR
+exit 0

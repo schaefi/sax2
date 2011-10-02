@@ -1,0 +1,8 @@
+InputDevice -> [X] -> Identifier = Mouse[[X]]
+InputDevice -> [X] -> Driver     = evdev
+InputDevice -> [X] -> Option -> InputFashion   = Mouse
+InputDevice -> [X] -> Option -> Name           = HP Virtual Management Device
+InputDevice -> [X] -> Option -> MinX           = 0
+InputDevice -> [X] -> Option -> MaxX           = 3000
+InputDevice -> [X] -> Option -> MinY           = 0
+InputDevice -> [X] -> Option -> MaxY           = 3000

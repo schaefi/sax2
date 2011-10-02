@@ -1,0 +1,16 @@
+# Xen mouse
+# dynamic profile which enables the Xen pointer. The Xen pointer
+# requires the real input device to be set as device node. Therefore
+# the dynamic part replaces the static multiplexer device
+#====================================
+# Variables
+#------------------------------------
+$Device = /dev/input/mice
+
+InputDevice -> [X] -> Identifier = Mouse[[X]]
+InputDevice -> [X] -> Driver     = evdev
+InputDevice -> [X] -> Option -> InputFashion   = Mouse
+InputDevice -> [X] -> Option -> Name           = Xen Virtual Pointer
+InputDevice -> [X] -> Option -> Pass           = 3
+InputDevice -> [X] -> Option -> Buttons        = 5
+InputDevice -> [X] -> Option -> Device         = ${Device}

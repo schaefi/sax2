@@ -1,0 +1,44 @@
+# /.../
+# Mapping table for X11 input devices
+# =====================================================
+# Vendor ID | Device ID | Profile
+# -----------------------------------------------------
+# Mice
+#0x0212 : 0x0002 : synaptics : synaptics
+#0x0212 : 0x0001 : synaptics : synaptics
+#0x0002 : 0x0007 : synaptics : synaptics
+#0x046d : 0xc705 : logitech-MX900 : mouse
+#0x046d : 0xc50e : logitech-MediaPlay : evdev
+#0x046d : 0xc508 : logitech-TrackManOptical : mouse
+#0x046d : 0xc01b : logitech-MX310 : mouse
+#0x046d : 0xc041 : logitech-Gaming : evdev
+#0x0210 : 0x0028 : logitech-mxlaser : evdev
+#0x046d : 0xc521 : logitech-vxnano : evdev
+#0x045e : 0x0095 : microsoft-IntelliMouse-Explorer : evdev
+#0x046d : 0xc040 : logitech-optical : evdev
+#0x0210 : 0x0003 : ibm-trackpoint : mouse
+#0x0002 : 0x000a : ibm-trackpoint : mouse
+#0x04b3 : 0x300f : ibm-trackpoint : mouse
+0x056a : 0x0013 : wacom : wacom
+#0x05ac : 0x030b : synaptics : synaptics
+#0x05ac : 0x1000 : synaptics : synaptics
+#0x0002 : 0x0008 : synaptics : synaptics
+0x1943 : 0x5000 : fujitsu : fujitsu
+#0x5853 : 0xfffe : xen-mouse : evdev
+#0x03f0 : 0x1126 : hp-mouse : evdev
+#0x0029 : 0x0000 : touchscreen : evdev
+#0x0030 : 0x0000 : touchscreen : evdev
+#0x04e7 : 0x0030 : touchscreen : evdev
+#0x0596 : 0x0001 : touchscreen : evdev
+0x80ee : 0x0100 : vbox-mouse : vboxmouse
+#0x15ad : 0x0100 : vmware-mouse : vmmouse
+# Keyboards
+# Microsoft Natural Ergonomic Keyboard 4000
+# ---> is profile: microsoft-natural
+#0x045e : 0x00db : microsoft-natural : evdev
+# Chicony Electronics USB Wireless HID Receiver
+# ---> is profile: no information yet
+#0x04f2 : 0x0200 : <undefined> : kbd
+# Cherry Mikroschalter Keyboard
+# ---> is profile: no information yet
+#0x046a : 0x0023 : <undefined> : kbd

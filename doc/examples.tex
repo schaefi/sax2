@@ -1,0 +1,89 @@
+\chapter{libsax - Examples}
+%\minitoc
+
+\section{New configuration...}
+The following example will create a new configuration based on the
+suggestion made by SaX. We will add a new resolution 1600x1200 and
+want a modeline for the mode to be created.
+
+\begin{Command}{12cm}
+\begin{small}
+\begin{verbatim}
+#include <sax.h>
+
+int main (void) {
+    SaXInit init;
+    if (init.needInit()) {
+        init.doInit();
+    }
+    SaXException().setDebug (true);
+    QDict<SaXImport> section;
+    int importID[7] = {
+        SAX_CARD, SAX_DESKTOP, SAX_POINTERS,
+        SAX_KEYBOARD, SAX_LAYOUT, SAX_PATH, SAX_EXTENSIONS
+    };
+    SaXConfig* config = new SaXConfig;
+    for (int id=0; id<7; id++) {
+        SaXImport* import = new SaXImport ( importID[id] );
+        import -> setSource ( SAX_AUTO_PROBE );
+        import -> doImport();
+        config -> addImport (import);
+        section.insert (
+            import->getSectionName(),import
+        );
+    }
+    SaXManipulateDesktop mDesktop (
+        section["Desktop"],section["Card"],section["Path"]
+    );
+    if (mDesktop.selectDesktop (0)) {
+        mDesktop.addResolution (24,1600,1200);
+        mDesktop.calculateModelines (true);
+    }
+    config -> setMode (SAX_NEW);
+    config -> createConfiguration();
+}
+\end{verbatim}
+\end{small}
+\end{Command}
+
+\newpage
+
+\section{Change current configuration...}
+The next example will change the current configuration to use
+24 bit as default color depth.
+
+\begin{Command}{12cm}
+\begin{small}
+\begin{verbatim}
+#include <sax.h>
+
+int main (void) {
+    SaXException().setDebug (true);
+    QDict<SaXImport> section;
+    int importID[3] = {
+        SAX_CARD,
+        SAX_DESKTOP,
+        SAX_PATH,
+    };
+    SaXConfig* config = new SaXConfig;
+    for (int id=0; id<3; id++) {
+        SaXImport* import = new SaXImport ( importID[id] );
+        import -> setSource ( SAX_SYSTEM_CONFIG );
+        import -> doImport();
+        config -> addImport (import);
+        section.insert (
+            import->getSectionName(),import
+        );
+    }
+    SaXManipulateDesktop mDesktop (
+        section["Desktop"],section["Card"],section["Path"]
+    );
+    if (mDesktop.selectDesktop (0)) {
+        mDesktop.setColorDepth (24);
+    }
+    config -> setMode (SAX_MERGE);
+    config -> createConfiguration();
+}
+\end{verbatim}
+\end{small}
+\end{Command}

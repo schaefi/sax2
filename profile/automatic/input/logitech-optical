@@ -1,0 +1,13 @@
+!remove InputDevice -> [X] -> Option -> Device
+!remove InputDevice -> [X] -> Option -> Buttons
+!remove InputDevice -> [X] -> Option -> Protocol
+!remove InputDevice -> [X] -> Option -> ZAxisMapping
+
+InputDevice -> [X] -> Identifier = Mouse[[X]]
+InputDevice -> [X] -> Driver     = evdev
+InputDevice -> [X] -> Option -> InputFashion         = Mouse
+InputDevice -> [X] -> Option -> Name                 = Logitech Optical Mouse
+InputDevice -> [X] -> Option -> evBits               = +1-2
+InputDevice -> [X] -> Option -> keyBits              = ~272-287
+InputDevice -> [X] -> Option -> relBits              = ~0-2 ~6 ~8
+InputDevice -> [X] -> Option -> Pass                 = 3

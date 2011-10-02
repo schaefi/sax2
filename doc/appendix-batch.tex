@@ -1,0 +1,211 @@
+\chapter{Examples of Using the SaX2 Batch Mode}
+\index{appendix!batch-mode examples}
+\minitoc
+
+The batch mode in SaX2 allows you to make special settings directly after the 
+hardware scan. This mode can be switched on in the \textit{init.pl}
+stage. There are two different modes:\\
+\begin{itemize}
+\item Interactive mode\\
+      A shell is provided to enter commands.
+\item Profile mode\\
+      STDIN is read in and you can specify a profile file which contains shell
+      commands.
+\end{itemize}
+Changes at this point directly influence the contents of the 
+\%var hash which is used to construct the registry and create the initial
+configuration. It is absolutely essential to understand the hash structure if
+you want to use this mode sensibly. 
+
+This structure is not a static form. It can be extended at will with the batch
+mode, but it is not clear that all data of the hash can also be used in the
+configuration, since simply everything in the hash can be included. The
+automatically created structure, when SaX2 is started, is built up as follows:
+\\
+\begin{verbatim}
+#------------------------------------------#
+# Files specification...                   #
+#------------------------------------------#
+Files         ->    0  -> FontPath
+Files         ->    0  -> RgbPath
+Files         ->    0  -> ModulePath
+Files         ->    0  -> LogFile
+
+#-----------------------------------------#
+# Module specification...                 #
+#-----------------------------------------#
+Module        ->    0  -> Load
+
+#-----------------------------------------#
+# ServerFlags specification...            #
+#-----------------------------------------#
+ServerFlags   ->    0  -> Option
+ServerFlags   ->    0  -> blank time
+ServerFlags   ->    0  -> standby time
+ServerFlags   ->    0  -> suspend time
+ServerFlags   ->    0  -> off time
+
+#-----------------------------------------#
+# Keyboard specification...               #
+#-----------------------------------------#
+InputDevice   ->    0  -> Identifier
+InputDevice   ->    0  -> Driver
+InputDevice   ->    0  -> Option            ->  Protocol
+InputDevice   ->    0  -> Option            ->  XkbRules
+InputDevice   ->    0  -> Option            ->  XkbModel
+InputDevice   ->    0  -> Option            ->  XkbLayout
+InputDevice   ->    0  -> Option            ->  XkbVariant
+InputDevice   ->    0  -> Option            ->  AutoRepeat
+InputDevice   ->    0  -> Option            ->  Xleds
+InputDevice   ->    0  -> Option            ->  XkbOptions
+
+#-----------------------------------------#
+# Mouse specification...                  #
+#-----------------------------------------#
+InputDevice   ->    1  -> Identifier
+InputDevice   ->    1  -> Driver
+InputDevice   ->    1  -> Option            ->  Protocol
+InputDevice   ->    1  -> Option            ->  Device
+InputDevice   ->    1  -> Option            ->  SampleRate
+InputDevice   ->    1  -> Option            ->  BaudRate
+InputDevice   ->    1  -> Option            ->  Emulate3Buttons
+InputDevice   ->    1  -> Option            ->  Emulate3Timeout
+InputDevice   ->    1  -> Option            ->  ChordMiddle
+InputDevice   ->    1  -> Option            ->  Buttons
+InputDevice   ->    1  -> Option            ->  Resolution
+InputDevice   ->    1  -> Option            ->  ClearDTR
+InputDevice   ->    1  -> Option            ->  ClearRTS
+InputDevice   ->    1  -> Option            ->  ZAxisMapping
+InputDevice   ->    1  -> Option            ->  MinX
+InputDevice   ->    1  -> Option            ->  MaxX
+InputDevice   ->    1  -> Option            ->  MinY
+InputDevice   ->    1  -> Option            ->  MaxY
+InputDevice   ->    1  -> Option            ->  ScreenNumber
+InputDevice   ->    1  -> Option            ->  ReportingMode
+InputDevice   ->    1  -> Option            ->  ButtonThreshold
+InputDevice   ->    1  -> Option            ->  ButtonNumber
+InputDevice   ->    1  -> Option            ->  SendCoreEvents
+
+#-----------------------------------------#
+# Monitor specification...                #
+#-----------------------------------------#
+Monitor       ->    0  -> Identifier
+Monitor       ->    0  -> VendorName
+Monitor       ->    0  -> ModelName
+Monitor       ->    0  -> HorizSync
+Monitor       ->    0  -> VertRefresh
+Monitor       ->    0  -> Modeline          ->  0                -> 640x480
+Monitor       ->    0  -> Option
+
+#-----------------------------------------#
+# Device specification...                 #
+#-----------------------------------------#
+Device        ->    0  -> Identifier
+Device        ->    0  -> VendorName
+Device        ->    0  -> BoardName
+Device        ->    0  -> Videoram
+Device        ->    0  -> Driver
+Device        ->    0  -> Chipset
+Device        ->    0  -> Clocks
+Device        ->    0  -> BusID
+Device        ->    0  -> Option
+Device        ->    0  -> Special           ->  hw_cursor
+
+#-----------------------------------------#
+# Screen specification...                 #
+#-----------------------------------------#
+Screen        ->    0  -> Identifier
+Screen        ->    0  -> Device
+Screen        ->    0  -> Monitor
+Screen        ->    0  -> DefaultDepth
+Screen        ->    0  -> Depth             ->  8                -> Modes
+Screen        ->    0  -> Depth             ->  8                -> ViewPort
+Screen        ->    0  -> Depth             ->  8                -> Virtual
+Screen        ->    0  -> Depth             ->  8                -> Visual
+Screen        ->    0  -> Depth             ->  8                -> Weight
+Screen        ->    0  -> Depth             ->  8                -> Black
+Screen        ->    0  -> Depth             ->  8                -> White
+Screen        ->    0  -> Depth             ->  8                -> Option
+
+#-----------------------------------------#
+# ServerLayout specification...           #
+#-----------------------------------------#
+ServerLayout  ->  all  -> Identifier
+ServerLayout  ->  all  -> InputDevice       ->  0                -> id
+ServerLayout  ->  all  -> InputDevice       ->  0                -> usage
+ServerLayout  ->  all  -> InputDevice       ->  1                -> id
+ServerLayout  ->  all  -> InputDevice       ->  1                -> usage
+ServerLayout  ->  all  -> Screen            ->  0                -> id
+ServerLayout  ->  all  -> Screen            ->  0                -> top
+ServerLayout  ->  all  -> Screen            ->  0                -> bottom
+ServerLayout  ->  all  -> Screen            ->  0                -> left
+ServerLayout  ->  all  -> Screen            ->  0                -> right
+\end{verbatim} 
+
+
+\section{Interactive Mode}
+The interactive mode provides the user with the following basic grammar:
+
+\begin{Command}{12cm}
+\begin{verbatim}
+key -> key ->...-> key [ = ( value | ${variable} ) ]
+$variable = ( string | <key sequence> )
+\end{verbatim}
+\end{Command}
+
+\begin{itemize}
+\item  \textbf{!help}\\
+       The \textit{!help} command prints a small help text.
+
+\item  \textbf{!remove <sequence>}\\
+       The \textit{!remove} command removes the given sequence
+       which is a key path to a specific value or subtree. In case of
+       a subtree the tree will be removed. In case of a value the value
+       is set to an empty string
+
+\item  \textbf{exit}\\
+       Ends interactive mode and saves all changes.
+\end{itemize}
+
+\section{Profile Mode and Creating Profile Files}
+In some very specific cases it may be necessary for a profile for a card to be
+created. SaX2 provides a mechanism which allows you to include known profiles
+in the SaX2 package. These profile files are located under:\\
+\begin{itemize}
+\item /usr/share/sax/profile/
+\end{itemize}
+If there is an entry in
+\textit{/usr/share/sax/sysp/modules/maps/Identity.map} 
+which starts with PROFILE=... then the profile for this card is
+integrated. The profile files essentially consist of variable values, as the
+following example illustrates:
+\begin{verbatim}
+# /.../
+# set some fixed values
+# ----
+Device  -> [X] ->  Driver = fglrx
+Desktop -> [X] ->  CalcModelines = no
+Monitor -> [X] ->  CalcAlgorithm = XServerPool
+
+# /.../
+# save the 16bit Modes into a variable
+$Modes  = Screen  -> [X] -> Depth -> 16 -> Modes
+
+# /.../
+# save first 16bit mode as 24bit mode
+# ----
+Screen  -> [X] -> Depth -> 24 -> Modes = ${Modes[0]}
+
+# /.../
+# copy 16bit modes to 8bit modes
+# ----
+Screen  -> [X] -> Depth -> 8 -> Modes  = ${Modes}
+
+# /.../
+# remove all Modelines from the Monitor section
+# ----
+!remove Monitor -> [X] -> Modeline
+\end{verbatim}
+Since it is never known in advance for which monitor, screen or device the new
+setting is to be made, it is possible to set a place holder in the form of an  
+\textbf{[X]} mark, otherwise a number must be entered at this point.

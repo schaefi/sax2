@@ -1,0 +1,84 @@
+#!/usr/bin/perl
+# Copyright (c) 2002 SuSE GmbH Nuernberg, Germany.  All rights reserved.
+#
+# Author: Marcus Schaefer <sax@suse.de>, 2002
+# xapi script: create 3D Environment
+# --
+#
+# CVS ID:
+# --------
+# Status: Up-to-date
+#
+use strict;
+
+#---[ get3DPackages ]-----#
+sub get3DPackages {
+#-------------------------------------------------
+# return the sysp 3D query information in one
+# line to be processed within the xapi --checkpacs
+# call
+#
+	my $noscan = $_[0];
+
+	my $sysp        = "/usr/sbin/sysp";
+	my $install;    # Install string from 3dlib
+	my $scriptreal; # real 3D script name
+	my $scriptsoft; # software 3D script name
+	my $packlist;   # Packages string from 3dlib
+	my @package;    # package list from $install
+	my @general;    # package list from $packlist
+	my $active;     # 3D active or not
+	my $answer;     # answer to the 3D question
+	my $flag;       # special flags
+	my $result;     # query result
+
+	if ($noscan ne "scan") {
+		$result = qx ($sysp -q 3d);
+	} else {
+		if ($noscan eq "scan_nocheckflag") {
+			$result = qx ($sysp -s 3d --nocheckflag);
+		} else {
+			$result = qx ($sysp -s 3d);
+		}
+	}
+	my @list = split(/\n/,$result);
+	foreach (@list) {
+	if ($_ =~ /Card3D.*Install.*:(.*)/) {
+		$install  = $1;
+		$install  =~ s/ +//g;
+		@package  = split(/,/,$install);
+	}
+	if ($_ =~ /Card3D.*ScriptReal.*:(.*)/) {
+		$scriptreal = $1;
+		$scriptreal =~ s/ +//g;
+	}
+	if ($_ =~ /Card3D.*ScriptSoft.*:(.*)/) {
+		$scriptsoft = $1;
+		$scriptsoft =~ s/ +//g;
+	}
+	if ($_ =~ /Card3D.*Packages.*:(.*)/) {
+		$packlist = $1;
+		$packlist =~ s/ +//g;
+		@general  = split(/,/,$packlist);
+	}
+	if ($_ =~ /Card3D.*Active.*:(.*)/) {
+		$active = $1;
+		$active =~ s/ +//g;
+	}
+	if ($_ =~ /Card3D.*Answer.*:(.*)/) {
+		$answer = $1;
+		$answer =~ s/ +//g;
+	}
+	if ($_ =~ /Card3D.*Flag.*:(.*)/) {
+		$flag = $1;
+		$flag =~ s/ +//g; 
+	}
+	}
+	return (
+		"@package".":".$scriptreal.":".$scriptsoft.":".
+		"@general".":".$active.":".$answer.":".$flag
+	);
+}
+
+my $packageInfo = get3DPackages ( $ARGV[0] );
+print "$packageInfo\n";

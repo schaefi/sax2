@@ -1,0 +1,1892 @@
+# SaX Translations.
+# Craig Jeffares cjeffares@novell.com
+# Eric Shan <ericalways@gmail.com>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Sax\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2008-11-24 19:56+0800\n"
+"Last-Translator: Thruth Wang <wanglihao@gmail.com>\n"
+"Language-Team: Simplified Chinese\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. /.../
+#. Copyright (c) 2005 SuSE GmbH Nuernberg, Germany.  All rights reserved.
+#. This file contains the gettext keys used within a gettext call in the
+#. application code for the SaX2 and XFine GUI
+#.
+#. Dear Translator, translate this string as 'RTL' if your language is right-to-left
+msgid "I18N"
+msgstr "I18N"
+
+#. RTF text: Startup information for the user
+msgid "<b>SaX2 Suggestion</b><hr>The currently-started graphics system is based on a suggestion made by SaX2. If this is acceptable, click <b>OK</b>. Otherwise, change the configuration."
+msgstr "<b>SaX2 建议</b><hr>当前启动的图形系统基于 SaX2 的建议。如果可以接受，请单击<b>确定</b>。否则，请更改设置。"
+
+#. RTF text: 3D acceleration not supported with this card
+msgid "<b>3D acceleration not supported</b><hr>SaX2 cannot offer activation of the 3D subsystem because your graphics card/driver doesn't support 3D"
+msgstr "<b>3D 加速不被支持</b><hr>SaX2 无法激活 3D 子系统因为您的图形卡/驱动不支持 3D"
+
+#. RTF text: 3D acceleration not supported with Xinerama
+msgid "<b>3D acceleration not supported</b><hr>SaX2 cannot offer activation of the 3D subsystem because Xinerama based dual head mode is used. The Xorg Xinerama extension for combining graphics screens doesn't support 3D on all heads"
+msgstr "<b>3D 加速不被支持</b><hr>SaX2 无法激活 3D 子系统因为基于 Xinerama 的双头输出模式被使用。Xorg Xinerama 扩展复合屏幕不在所有 Head 上支持 3D 。"
+
+#. Caption text for the startup information window
+msgid "Automatic Graphics System Setup"
+msgstr "自动图形系统设置"
+
+#. Caption text for informing the user
+msgid "Information..."
+msgstr "信息..."
+
+#. Caption text for the main window
+msgid "SaX2: X11 Configuration"
+msgstr "SaX2： X11 配置"
+
+#. Title text on the left side
+msgid "SaX Control Center"
+msgstr "SaX 控制中心"
+
+#. Info message about display size changes
+msgid "<b>Display size changed</b><hr>The display size has been adapted to the new layout."
+msgstr "<b>显示大小改变</b><hr>显示大小在调整适应新输出。"
+
+#. Help Button text
+msgid "&Help"
+msgstr "帮助(&H)"
+
+#. Ok Button text
+msgid "O&K"
+msgstr "确定(&K)"
+
+#. Yes Button text
+msgid "&Yes"
+msgstr "是(&Y)"
+
+#. No Button text
+msgid "&No"
+msgstr "否(&N)"
+
+#. Cancel Button text
+#. Maximum length: 40  characters
+msgid "&Cancel"
+msgstr "取消(&C)"
+
+#. RTF text: exit SaX message
+msgid "<b>Exit SaX2</b><hr>Exit SaX2 now?"
+msgstr "<b>退出 SaX2</b><hr>是否立即退出 SaX2？"
+
+#. Message box default caption text
+msgid "Message"
+msgstr "讯息"
+
+#. Change configuration Button text
+msgid "C&hange Configuration"
+msgstr "更改配置(&H)"
+
+#. Short description of the Monitor module
+#. Monitor name label
+msgid "Monitor"
+msgstr "显示器"
+
+#. title of module dialog
+msgid "Card and Monitor Properties"
+msgstr "显卡和显示器属性"
+
+#. Short description of the Mouse module
+#. Simple mouse text for the mouse tab
+msgid "Mouse"
+msgstr "鼠标"
+
+#. title of module dialog
+msgid "Mouse Properties"
+msgstr "鼠标属性"
+
+#. Short description of the Keyboard module
+#. Keyboard name label
+msgid "Keyboard"
+msgstr "键盘"
+
+#. title of module dialog
+msgid "Keyboard Properties"
+msgstr "键盘属性"
+
+#. Short description of the Tablet module
+#. Tab title: Tablet vendor name selection
+msgid "Tablet"
+msgstr "图形输入板"
+
+#. title of module dialog
+msgid "Tablet Properties"
+msgstr "图形输入板属性"
+
+#. Short description of the Touchscreen module
+msgid "Touchscreen"
+msgstr "触摸屏"
+
+#. title of module dialog
+msgid "Touchscreen Properties"
+msgstr "触摸屏属性"
+
+#. Short description of the VNC module
+msgid "Remote Access"
+msgstr "远程访问"
+
+#. title of module dialog
+msgid "Remote Access Properties"
+msgstr "远程访问属性"
+
+#. Tab text for a display tab of the monitor dialog
+msgid "Display %1"
+msgstr "显示 %1"
+
+#. Tab text for a display tab of the mouse dialog
+msgid "Mouse %1"
+msgstr "鼠标 %1"
+
+#. Activate display checkbox, Display=screen
+msgid "Activate This Display"
+msgstr "激活此显示器"
+
+#. Activate mouse checkbox
+msgid "Activate This Pointer"
+msgstr "激活此指针"
+
+#. Graphics Card name label
+msgid "Card"
+msgstr "卡"
+
+#. Desktop name label
+msgid "Desktop"
+msgstr "桌面"
+
+#. Pointers name label, global name for input devices
+#, fuzzy
+msgid "Pointers"
+msgstr "打印机"
+
+#. Layout name label, desktop layout
+#. Tab text for a layout tab of the keyboard dialog
+#. Label text for the primary keyboard layout
+#. Table topic text describing the keyboard layout column
+msgid "Layout"
+msgstr "布局"
+
+#. Path name label, search paths
+msgid "Path"
+msgstr "路径"
+
+#. Extensions name label, X11 extensions
+msgid "Extensions"
+msgstr ""
+
+#. Change data
+msgid "&Change..."
+msgstr "更改(&C)..."
+
+#. Set options for some kind of data
+msgid "&Options..."
+msgstr "选项(&O)..."
+
+#. Configure some data
+msgid "Con&figure..."
+msgstr "配置(&F)..."
+
+#. Group box title for dual head setup
+msgid "Dual Head Mode"
+msgstr "双头模式"
+
+#. Group box title for card options
+#. Group box title for mouse options
+#. Tab text for an options tab of the keyboard dialog
+#. Group box title for tablet options
+#. Group box title for the VNC options
+msgid "Options"
+msgstr "选项"
+
+#. CheckBox label to activate the mouse wheel
+msgid "Activate Mouse Wheel"
+msgstr "激活鼠标滚轮"
+
+#. CheckBox label to invert the mouse X axis
+msgid "Invert X-Axis"
+msgstr "翻转 X 轴"
+
+#. CheckBox label to invert the mouse Y axis
+msgid "Invert Y-Axis"
+msgstr "翻转 Y 轴"
+
+#. CheckBox label to activate left hand mouse
+msgid "Activate Left-Hand Button Mapping"
+msgstr "激活左手按钮映射"
+
+#. CheckBox label to activate the 3 Button emulation
+msgid "Activate 3-Button Emulation"
+msgstr "激活 3 键仿真"
+
+#. CheckBox label to activate the wheel emulation
+msgid "Emulate Wheel with Mouse Button"
+msgstr "用鼠标按键模拟滚轮"
+
+#. Group box title for card rotation
+msgid "Rotate Screen"
+msgstr "旋转屏幕"
+
+#. Group box title for the mouse test field
+#. Line edit label pointing to the keyboard test field
+msgid "Test"
+msgstr "测试"
+
+#. Button text in final step message box for testing the configuration
+msgid "&Test"
+msgstr "测试(&T)"
+
+#. Button text in final step message box for saving the configuration
+msgid "&Save"
+msgstr "保存(&S)"
+
+#. Status line of mouse test field: ready
+msgid "Test ready"
+msgstr "测试就绪"
+
+#. Status line of mouse test field: single button click
+msgid "Single Click: Done"
+msgstr "单击：已完成"
+
+#. Status line of mouse test field: double button click
+msgid "Double Click: Done"
+msgstr "双击：已完成"
+
+#. Status line of mouse test field: wheel moved
+msgid "Scrolling"
+msgstr "滚动"
+
+#. Status line of mouse test field: button pressed
+msgid "Button pressed"
+msgstr "按下按钮"
+
+#. Status line of mouse test field: button released
+msgid "Button released"
+msgstr "释放按钮"
+
+#. Status line of mouse test field: wheel stopped
+msgid "Stopped: Done"
+msgstr "停止：已完成"
+
+#. Group box title for properties
+msgid "Properties"
+msgstr "属性"
+
+#. Activate dual head mode checkbox
+msgid "Activate Dual Head Mode"
+msgstr "激活双传感头方式"
+
+#. Set display resolution
+msgid "Resolution"
+msgstr "分辨率"
+
+#. Set display colors
+msgid "Colors"
+msgstr "颜色"
+
+#. Activate 3D checkboc
+msgid "Activate 3D Acceleration"
+msgstr "激活 3D 加速"
+
+#. Tab title: Setup monitor properties for card X
+msgid "Monitor for Card"
+msgstr "卡的显示器"
+
+#. Tab title: Setup monitor for second channel on card X
+msgid "Second Monitor for Card"
+msgstr "卡的第二个显示器"
+
+#. Tab title: Setup sync frequencies
+msgid "Sync Frequencies"
+msgstr "同步频率"
+
+#. Tab title: Setup display size
+msgid "Display Size"
+msgstr "显示大小"
+
+#. Tab title: Setup the monitor arrangement
+#. Title for the multihead arrangement
+msgid "Arrangement"
+msgstr "排列"
+
+#. Information about dual head mode. %1=the dual head modus %2=the resolution
+msgid "Activated in %1 mode with %2"
+msgstr "用 %2 以 %1 方式激活"
+
+#. Short Information that something has been activated
+msgid "Activated in driver default mode"
+msgstr "以驱动程序默认方式激活"
+
+#. rwalter
+#. Monitor Model is unknown and should be changed
+#. rwalter
+#. Mouse Model is unknown and should be changed
+msgid "Unconfigured"
+msgstr "未配置"
+
+#. Message appears when user is trying to deactivate all displays
+msgid "<b>Cannot Deactivate All Displays</b><hr><nobr>At least one display must be active.</nobr>"
+msgstr "<b>无法取消激活所有显示器</b><hr><nobr>必须至少有一台显示器是活动的。</nobr>"
+
+#. Info label for dual head checkbox
+msgid "No configuration available"
+msgstr "没有可用的配置"
+
+#. Radiobutton for traditional multihead mode
+msgid ""
+"Traditional Multihead:\n"
+"Each screen is an independent display"
+msgstr ""
+"传统的多传感头：\n"
+"每个屏幕都是一个独立的显示器"
+
+#. Radiobutton for cloned multihead mode
+msgid ""
+"Cloned Multihead:\n"
+"Each display is a clone of the primary display"
+msgstr ""
+"复制的多传感头：\n"
+"每个显示器都是主显示器的复制品"
+
+#. Radiobutton for xinerama multihead mode
+msgid ""
+"Xinerama Multihead:\n"
+"Build one big display out of all screens"
+msgstr ""
+"Xinerama 多传感头：\n"
+"用所有屏幕构建一个大显示屏幕"
+
+#. Title for multihead modi
+msgid "Multihead Mode"
+msgstr "多传感头方式"
+
+#. Monitor X - connected to - CardY
+msgid "Connected To"
+msgstr "已连接到"
+
+#. Tooltip text if monitor is unknown
+msgid "Unknown Monitor:"
+msgstr "未知显示器："
+
+#. Tooltip text for primary monitor
+msgid "Primary Monitor:"
+msgstr "主显示器："
+
+#. Windowanager title for the monitor model setup
+#. Windowanager title for the second monitor model setup
+msgid "Monitor Settings"
+msgstr "显示器设置"
+
+#. Windowanager title for the mouse mode setup
+msgid "Mouse Settings"
+msgstr "鼠标设置"
+
+#. Windowanager title for the card options dialog
+msgid "Graphics Card Settings"
+msgstr "图形卡设置"
+
+#. Windowanager title for the dual head setup
+msgid "Dual Head Settings"
+msgstr "双传感头设置"
+
+#. Radiobutton don't rotate
+msgid "Not Rotated"
+msgstr "未旋转"
+
+#. Radiobutton rotate to the left side
+msgid "To the Left"
+msgstr "向左"
+
+#. Radiobutton rotate to the right side
+msgid "To the Right"
+msgstr "向右"
+
+#. Popup message to inform the user about fbdev restrictions
+msgid "<b>Invalid Color/Resolution combination:</b><hr><nobr>The selected resolution and/or color settings</nobr> are not supported by the graphics cards framebuffer."
+msgstr "<b>无效颜色／分辨率组合：</b><hr><nobr>选定的分辨率和／或颜色设置</nobr>不被图形卡 framebuffer 支持。"
+
+#. Popup message to ask the user for an option value
+msgid "<b>Option Needs a Value</b><hr><nobr>Set up a value for option %1.</nobr>"
+msgstr "<b>选项需要值</b><hr><nobr>为选项 %1 设置一个值。</nobr>"
+
+#. Group box title for the monitor vendor and name selection
+msgid "Monitor: Vendor and Name Selection"
+msgstr "显示器：供应商和名称选择"
+
+#. Group box title for the mouse vendor and name selection
+msgid "Mouse: Vendor and Name Selection"
+msgstr "鼠标：供应商和名称选择"
+
+#. Group box title for the manual sync frequency set up
+msgid "Manual Sync Frequency Setup"
+msgstr "手工同步频率设置"
+
+#. Group box title for the aspect/ratio selection
+msgid "Diagonal and Aspect Ratio"
+msgstr "对角线和屏幕纵横比"
+
+#. Group box title for the display size setup
+msgid "Display Size in [ mm ]"
+msgstr "显示大小（毫米）"
+
+#. Text message telling to be carefull with the monitor sync frequencies
+msgid "<b>Note:</b> Wrong sync ranges may damage your monitor. Consult the monitor manual for the settings.<br><br>If you want your monitor not to use its maximum rating, decrease the sync ranges."
+msgstr "<b>注意：</b>错误的同步范围可能损坏您的显示器。有关设置的信息，请参考您的显示器手册。<br><br>如果不想显示器使用其最大频率，请缩小同步范围。"
+
+#. Checkbox to activate DPMS
+msgid "Activate DPMS"
+msgstr "激活 DPMS"
+
+#. Button to popup the disk dialog for reading the monitor utility disk
+msgid "Utility Disk..."
+msgstr "实用程序磁盘..."
+
+#. Label text for horizontal sync frequency
+msgid "Horizontal"
+msgstr "横向"
+
+#. Label text for second monitor name
+msgid "Second Monitor:"
+msgstr "第二个显示器："
+
+#. Label text for second monitor resolution
+msgid "Second Monitor Resolution"
+msgstr "第二个显示器的分辨率"
+
+#. Label text for vertical sync frequency
+msgid "Vertical"
+msgstr "纵向"
+
+#. Label text for hsync unit
+msgid "KHz"
+msgstr "KHz"
+
+#. Label text for vsync unit
+msgid "Hz"
+msgstr "Hz"
+
+#. Label text for the aspect ratio combo box
+msgid "Aspect Ratio"
+msgstr "屏幕纵横比"
+
+#. Label text for the diagonal length combo box
+msgid "Diagonal"
+msgstr "对角线"
+
+#. Label text for the display size X-Axis
+msgid "X Axis [mm]"
+msgstr "X 轴 [mm]"
+
+#. Label text for the display size Y-Axis
+msgid "Y Axis [mm]"
+msgstr "Y 轴 [mm]"
+
+#. Something is not configured
+msgid "Not configured"
+msgstr "未配置"
+
+#. Unit name for inches in german zoll
+msgid "inches"
+msgstr "英寸"
+
+#. Message box of type Ok, telling to user to insert a CD or disk
+msgid "<b>Insert CD or Disk</b><hr>Insert the display utility CD or disk from the monitor vendor."
+msgstr "<b>插入 CD 或磁盘</b><hr>插入显示器供应商提供的显示器实用程序 CD 或磁盘。"
+
+#. Message box of type Error, telling that the utility disk cannot be opened
+msgid "<b>Read Error</b><hr>Could not read from CD or disk. This may point to a damaged medium or incorrectly formatted information files."
+msgstr "<b>读取错误</b><hr>无法从 CD 或磁盘读取。可能表示介质损坏或格式化信息文件不正确。"
+
+#. First gap of the ActivateInfo text: Multihead mode name
+msgid "Traditional"
+msgstr "典型"
+
+#. First gap of the ActivateInfo text: Multihead mode name
+msgid "Clone"
+msgstr "复制"
+
+#. First gap of the ActivateInfo text: Multihead mode name
+msgid "Xinerama"
+msgstr "Xinerama"
+
+#. Tab text for the mouse model dialog
+msgid "Mouse Model"
+msgstr "鼠标方式"
+
+#. Group box title for the primary keyboard setup
+msgid "Primary Setup"
+msgstr "主要设置"
+
+#. Label text for the primary keyboard type
+msgid "Type"
+msgstr "类型"
+
+#. Label text for the primary keyboard variant
+#. Table topic text describing the variant column
+msgid "Variant"
+msgstr "变量"
+
+#. Group box title for the additional keyboard setup
+msgid "Additional Layouts"
+msgstr "其他布局"
+
+#. Table topic text describing the status column
+msgid "Status"
+msgstr "状态"
+
+#. Table topic text describing the keytable column
+msgid "Keytable"
+msgstr "键盘映射表"
+
+#. List View root item text
+msgid "Group Shift/Lock Behavior"
+msgstr "组转换/锁定行为"
+
+#. List View root item text
+msgid "Use Keyboard LED to Show Alternate Group"
+msgstr "使用键盘 LED 显示替换组"
+
+#. List View root item text
+msgid "Compose Key Position"
+msgstr "Compose 键的位置"
+
+#. List View root item text
+#. XKBFile extension text
+msgid "Control Key Position"
+msgstr "Ctrl 键的位置"
+
+#. List View root item text
+msgid "Third Level Chooser"
+msgstr "第三级选择器"
+
+#. List View root item text
+msgid "Alt/Win Key Behavior"
+msgstr "Alt/Win 键行为"
+
+#. List View root item text
+msgid "EuroSign Key Position"
+msgstr "欧元键的位置"
+
+#. List View root item text
+msgid "CapsLock Key Behavior"
+msgstr "CapsLock 键行为"
+
+#. List View item text: Radiobutton no item selected
+msgid "None"
+msgstr "无"
+
+#. XKBFile extension text
+msgid "Morocco"
+msgstr "摩洛哥"
+
+#. XKBFile extension text
+msgid "Braille"
+msgstr "布莱利盲文"
+
+#. XKBFile extension text
+msgid "Ethiopia"
+msgstr "埃塞俄比亚"
+
+#. XKBFile extension text
+msgid "NICOLA-F style Backspace"
+msgstr "NICOLA-F 风格退格键"
+
+#. XKBFile extension text
+msgid "Right Alt key never chooses 3rd level."
+msgstr "按右 Alt 键不到第 3 级。"
+
+#. XKBFile extension text
+msgid "Left Alt key switches layout while pressed."
+msgstr "按下左 Alt 键后切换布局。"
+
+#. XKBFile extension text
+msgid "Space key outputs non"
+msgstr "空格键无输出"
+
+#. XKBFile extension text
+msgid "Default numeric keypad keys."
+msgstr "默认的数字键盘键。"
+
+#. XKBFile extension text
+msgid "Both Ctrl keys together change layout."
+msgstr "两个 Ctrl 键一起更改布局。"
+
+#. XKBFile extension text
+msgid "Using space key to input non-breakable space character"
+msgstr "使用空格键输入不可断空格字符"
+
+#. XKBFile extension text
+msgid "Right Shift key changes layout."
+msgstr "右 Shift 键更改布局。"
+
+#. XKBFile extension text
+msgid "Left Win-key changes layout."
+msgstr "左 Win 键更改布局。"
+
+#. XKBFile extension text
+msgid "LCtrl+LShift change layout."
+msgstr "LCtrl+LShift 键更改布局。"
+
+#. XKBFile extension text
+msgid "Left Alt key changes layout."
+msgstr "左 Alt 键更改布局。"
+
+#. XKBFile extension text
+msgid "Both Win-keys switch layout while pressed."
+msgstr "按下两个 Win 键后切换布局。"
+
+#. XKBFile extension text
+msgid "Right Ctrl key switches layout while pressed."
+msgstr "按下右 Ctrl 键后切换布局。"
+
+#. XKBFile extension text
+msgid "Space key outputs non-breakable space character"
+msgstr "空格键输出不可断空格字符"
+
+#. XKBFile extension text
+msgid "Shift+CapsLock changes layout."
+msgstr "Shift＋CapsLock 转换布局。"
+
+#. XKBFile extension text
+msgid "R-Alt switches layout while pressed."
+msgstr "按下右 Alt 键后切换布局。"
+
+#. XKBFile extension text
+msgid "Numeric keypad layout selection"
+msgstr "数字键盘布局选择"
+
+#. XKBFile extension text
+msgid "Right Ctrl key changes layout."
+msgstr "右 Ctrl 键更改布局。"
+
+#. XKBFile extension text
+msgid "Alt+CapsLock changes layout."
+msgstr "Alt+CapsLock 更改布局。"
+
+#. XKBFile extension text
+msgid "Super is mapped to the Win-keys."
+msgstr "Super 被映射到 Win 键。"
+
+#. XKBFile extension text
+msgid "ScrollLock LED shows alternative layout."
+msgstr "ScrollLock LED 显示替换布局。"
+
+#. XKBFile extension text
+msgid "Both Shift keys together change layout."
+msgstr "两个 Shift 键一起更改布局。"
+
+#. XKBFile extension text
+msgid "Space key outputs non-breakable space character at second level."
+msgstr "在第2级，空格键输出不间断的空格字符。"
+
+#. XKBFile extension text
+msgid "Right Win-key changes layout."
+msgstr "右 Win 键更改布局。"
+
+#. XKBFile extension text
+msgid "Space key outputs non-breakable space character at third level."
+msgstr "在第3级，空格键输出不间断的空格字符。"
+
+#. XKBFile extension text
+msgid "Numeric keypad keys work as with Mac."
+msgstr "数字键盘的作用和在 Mac 中的一样。"
+
+#. XKBFile extension text
+msgid "CapsLock LED shows alternative layout."
+msgstr "CapsLock LED 显示替换布局。"
+
+#. XKBFile extension text
+msgid "NumLock LED shows alternative layout."
+msgstr "NumLock LED 显示替换布局。"
+
+#. XKBFile extension text
+msgid "Left Shift key changes layout."
+msgstr "左 Shift 键更改布局。"
+
+#. XKBFile extension text
+msgid "Left Win-key switches layout while pressed."
+msgstr "按下左 Win 键后切换布局。"
+
+#. XKBFile extension text
+msgid "Space key outputs non-breakable space character at fourth level."
+msgstr "在第4级，空格键输出不间断的空格字符。"
+
+#. XKBFile extension text
+msgid "Both Alt keys together change layout."
+msgstr "两个 Alt 键一起更改布局。"
+
+#. XKBFile extension text
+msgid "CapsLock key changes layout."
+msgstr "CapsLock 键更改布局。"
+
+#. XKBFile extension text
+msgid "Control is mapped to the Win-keys (and the usual Ctrl keys)."
+msgstr "Control 映射到 Win 键(和通常的 Ctrl 键)。"
+
+#. XKBFile extension text
+msgid "Right Alt key changes layout."
+msgstr "右 Alt 键更改布局。"
+
+#. XKBFile extension text
+msgid "Shift with numeric keypad keys works as in MS Windows."
+msgstr "Shift 加上数字键盘键的作用和在 MS Windows 中的一样。"
+
+#. XKBFile extension text
+msgid "Alt and Meta are on the Alt keys."
+msgstr "Alt 和 Meta 在 Alt 键上。"
+
+#. XKBFile extension text
+msgid "Alt+Shift change layout."
+msgstr "Alt+Shift 更改布局。"
+
+#. XKBFile extension text
+msgid "Ctrl+Shift change layout."
+msgstr "Ctrl+Shift 键更改布局。"
+
+#. XKBFile extension text
+msgid "Space key outputs usual space at any level."
+msgstr "在任何级别，空格键都输出通常的空格。"
+
+#. XKBFile extension text
+msgid "Japanese keyboard options"
+msgstr "日本键盘选项"
+
+#. XKBFile extension text
+msgid "Use keyboard LED to show alternative layout."
+msgstr "使用键盘 LED 显示替换布局。"
+
+#. XKBFile extension text
+msgid "Left Ctrl key changes layout."
+msgstr "左 Ctrl 键更改布局。"
+
+#. XKBFile extension text
+msgid "Menu key changes layout."
+msgstr "Menu 键更改布局。"
+
+#. XKBFile extension text
+msgid "Alt+Ctrl change layout."
+msgstr "Alt+Ctrl 键更改布局。"
+
+#. XKBFile extension text
+msgid "Right Win-key switches layout while pressed."
+msgstr "按下右 Win 键后切换布局。"
+
+#. XKBFile extension text
+msgid "Layout switching"
+msgstr "输出切换"
+
+#. XKBFile extension text
+msgid "Left Alt key switches group while pressed."
+msgstr "按下左 Alt 键后切换组。"
+
+#. XKBFile extension text
+msgid "Both Ctrl keys together change group."
+msgstr "两个 Ctrl 键一起更改组。"
+
+#. XKBFile extension text
+msgid "Right Shift key changes group."
+msgstr "右 Shift 键更改组。"
+
+#. XKBFile extension text
+msgid "Left Win key changes group."
+msgstr "左 Win 键更改组。"
+
+#. XKBFile extension text
+msgid "Left Alt key changes group."
+msgstr "左 Alt 键更改组。"
+
+#. XKBFile extension text
+msgid "Both Win keys switch group while pressed."
+msgstr "按下两个 Win 键后切换组。"
+
+#. XKBFile extension text
+msgid "Right Ctrl key switches group while pressed."
+msgstr "按下右 Ctrl 键后切换组。"
+
+#. XKBFile extension text
+msgid "Left Alt is swapped with left Win-key."
+msgstr "左 Alt 和左 Win 键交换。"
+
+#. XKBFile extension text
+msgid "Default numpad keys."
+msgstr "默认数字键盘键。"
+
+#. XKBFile extension text
+msgid "Adding the nobreakspace keysym to space key"
+msgstr "把不间断空格的按键代号添加到空格键"
+
+#. XKBFile extension text
+msgid "Use keypad with unicode additions (arrows and math operators)"
+msgstr "在键盘中使用 unicode 的附加字符(箭头和数学运算符)"
+
+#. XKBFile extension text
+msgid "Force standard legacy keypad"
+msgstr "强制标准传统小键盘"
+
+#. XKBFile extension text
+msgid "CapsLock uses internal capitalization. Shift doesn't affect CapsLock."
+msgstr "CapsLock 用于内部大写转换。 Shift 不影响 CapsLock。"
+
+#. XKBFile extension text
+msgid "Keypad layout selection"
+msgstr "键盘布局选择"
+
+#. XKBFile extension text
+msgid "Alt+CapsLock changes group."
+msgstr "Shift＋CapsLock 转换组。"
+
+#. XKBFile extension text
+msgid "Space key output nobreakspace at second level."
+msgstr "空格键在第二级输出不间断空格"
+
+#. XKBFile extension text
+msgid "CapsLock acts as Shift with locking. Shift doesn't affect CapsLock."
+msgstr "CapsLock 键的作用相当于 Shift 键加上锁定。Shift 不影响 CapsLock。"
+
+#. XKBFile extension text
+#, fuzzy
+msgid "CapsLock uses internal capitalization. Shift \"pauses\" CapsLock."
+msgstr "CapsLock 用于内部大写转换。Shift 键取消 CapsLock 键。"
+
+#. XKBFile extension text
+msgid "Space key output nobreakspace at third level."
+msgstr "空格键在第三级输出不间断空格"
+
+#. XKBFile extension text
+msgid "Swap keycodes of two keys when Mac keyboards are misdetected by kernel."
+msgstr "当 Mac 键盘被内核错误探测时，交换两个按键的键码。"
+
+#. XKBFile extension text
+msgid "Numpad keys work as with Mac."
+msgstr "Numpad 键的作用和在 Mac 中的一样。"
+
+#. XKBFile extension text
+msgid "Kana Lock key is locking"
+msgstr "假名 Lock 键被锁定"
+
+#. XKBFile extension text
+msgid "Space key output nobreakspace at fourth level."
+msgstr "空格键在第四级输出不间断空格"
+
+#. XKBFile extension text
+msgid "Left Win-key is Compose."
+msgstr "左 Win 键是 Compose 键。"
+
+#. XKBFile extension text
+msgid "Press Right Alt key to choose 3rd level, Shift+Right Alt key is Multi_Key."
+msgstr "按右 Alt 键可选择第 3 级，Shift+右 Alt 键作为 Multi_Key"
+
+#. XKBFile extension text
+msgid "Space key output space at any level."
+msgstr "空格键在任何级都输出空格"
+
+#. XKBFile extension text
+msgid "Japanese Keyboard Options"
+msgstr "日本键盘选项"
+
+#. XKBFile extension text
+#, fuzzy
+msgid "CapsLock acts as Shift with locking. Shift \"pauses\" CapsLock."
+msgstr "CapsLock 键的作用相当于 Shift 键加上锁定。Shift 键取消 CapsLock 键。"
+
+#. XKBFile extension text
+msgid "CapsLock uses internal capitalization. Shift doesn't cancel CapsLock."
+msgstr "CapsLock 用于内部大写转换。 Shift 不会取消 CapsLock。"
+
+#. XKBFile extension text
+msgid "CapsLock just locks the Shift modifier."
+msgstr "CapsLock 锁定了 Shift 修改器。"
+
+#. XKBFile extension text
+msgid "CapsLock toggles normal capitalization of alphabetic characters."
+msgstr "CapsLock 将字母字符转换为正规的大写字母。"
+
+#. XKBFile extension text
+msgid "CapsLock toggles Shift so all keys are affected."
+msgstr "CapsLock 转换 Shift，因此影响了所有键。"
+
+#. XKBFile extension text
+msgid "Right Win-key is Compose."
+msgstr "右 Win 键是 Compose 键。"
+
+#. XKBFile extension text
+msgid "Shift+CapsLock changes group."
+msgstr "Shift＋CapsLock 转换组。"
+
+#. XKBFile extension text
+msgid "R-Alt switches group while pressed."
+msgstr "按下右 Alt 键后切换组。"
+
+#. XKBFile extension text
+msgid "Right Control key works as Right Alt."
+msgstr "右 Ctrl 键功能和右 Alt 键相同。"
+
+#. XKBFile extension text
+msgid "Control key at bottom left"
+msgstr "Ctrl 键位于左下部"
+
+#. XKBFile extension text
+msgid "Press any of Win-keys to choose 3rd level."
+msgstr "按任一 Win 键可选择第 3 级。"
+
+#. XKBFile extension text
+msgid "Press Right Alt key to choose 3rd level."
+msgstr "按右 Alt 键可选择第 3 级。"
+
+#. XKBFile extension text
+msgid "Right Ctrl key changes group."
+msgstr "右 Ctrl 键更改组。"
+
+#. XKBFile extension text
+msgid "Right Alt is Compose."
+msgstr "右 Alt 键是 Compose 键。"
+
+#. XKBFile extension text
+msgid "Right Ctrl is Compose."
+msgstr "右 Ctrl 键是 Compose 键。"
+
+#. XKBFile extension text
+msgid "ScrollLock LED shows alternative group."
+msgstr "ScrollLock LED 显示替换组。"
+
+#. XKBFile extension text
+msgid "Control key at left of -A-"
+msgstr "Ctrl 键在 -A- 的左侧"
+
+#. XKBFile extension text
+msgid "Third level choosers"
+msgstr "第三级选择器"
+
+#. XKBFile extension text
+msgid "Both Shift keys together change group."
+msgstr "两个 Shift 键一起更改组。"
+
+#. XKBFile extension text
+msgid "CapsLock acts as Shift with locking. Shift doesn't cancel CapsLock."
+msgstr "CapsLock 键的作用相当于 Shift 键加上锁定。Shift 不会取消 CapsLock。"
+
+#. XKBFile extension text
+msgid "CapsLock uses internal capitalization. Shift cancels CapsLock."
+msgstr "CapsLock 用于内部大写转换。Shift 键取消 CapsLock 键。"
+
+#. XKBFile extension text
+msgid "Make CapsLock an additional Control."
+msgstr "将 CapsLock 设置为附加 Ctrl 键。"
+
+#. XKBFile extension text
+msgid "Press Left Win-key to choose 3rd level."
+msgstr "按左 Win 键可选择第 3 级。"
+
+#. XKBFile extension text
+msgid "Right Win-key changes group."
+msgstr "右 Win 键更改组。"
+
+#. XKBFile extension text
+msgid "Meta is mapped to the left Win-key."
+msgstr "Meta 被映射到左 Win 键。"
+
+#. XKBFile extension text
+msgid "CapsLock LED shows alternative group."
+msgstr "CapsLock LED 显示替换组。"
+
+#. XKBFile extension text
+msgid "NumLock LED shows alternative group."
+msgstr "NumLock LED 显示替换组。"
+
+#. XKBFile extension text
+msgid "Left Shift key changes group."
+msgstr "左 Shift 键更改组。"
+
+#. XKBFile extension text
+msgid "Left Win-key switches group while pressed."
+msgstr "按下左 Win 键后切换组。"
+
+#. XKBFile extension text
+msgid "Menu is Compose."
+msgstr "Menu 是 Compose 键。"
+
+#. XKBFile extension text
+msgid "Both Alt keys together change group."
+msgstr "两个 Alt 键一起更改组。"
+
+#. XKBFile extension text
+msgid "CapsLock key changes group."
+msgstr "CapsLock 键更改组。"
+
+#. XKBFile extension text
+msgid "Swap Control and CapsLock."
+msgstr "交换 Ctrl 键和 CapsLock 键。"
+
+#. XKBFile extension text
+msgid "Press any of Alt keys to choose 3rd level."
+msgstr "按任一 Alt 键可选择第 3 级。"
+
+#. XKBFile extension text
+msgid "Right Alt key changes group."
+msgstr "右 Alt 键更改组。"
+
+#. XKBFile extension text
+msgid "Shift with numpad keys works as in MS Windows."
+msgstr "Shift 和 numpad 键的作用和在 MS Windows 中的一样。"
+
+#. XKBFile extension text
+msgid "Special keys (Ctrl+Alt+<key>) handled in a server."
+msgstr "特殊的键 (Ctrl+Alt+<key>) 在服务器中运用。"
+
+#. XKBFile extension text
+msgid "Hyper is mapped to the Win-keys."
+msgstr "Hyper 被映射到 Win 键。"
+
+#. XKBFile extension text
+msgid "Alt is mapped to the right Win-key and Super to Menu."
+msgstr "Alt 被映射到右 Win 键并优先于 Menu 键。"
+
+#. XKBFile extension text
+msgid "Super is mapped to the Win-keys (default)."
+msgstr "Super 被映射到 Win 键（默认的）。"
+
+#. XKBFile extension text
+msgid "Alt and Meta on the Alt keys (default)."
+msgstr "Alt 和 Meta 在 Alt 键上（默认的）。"
+
+#. XKBFile extension text
+msgid "Add the standard behavior to Menu key."
+msgstr "添加标准行为至 Menu 键。"
+
+#. XKBFile extension text
+msgid "Alt and Meta are on the Alt keys (default)."
+msgstr "Alt 和 Meta 在 Alt 键上（默认的）。"
+
+#. XKBFile extension text
+msgid "Press Right Control to choose 3rd level."
+msgstr "按右 Ctrl 键可选择第 3 级。"
+
+#. XKBFile extension text
+msgid "Alt+Shift changes group."
+msgstr "Alt＋Shift 更改组。"
+
+#. XKBFile extension text
+msgid "Control+Shift changes group."
+msgstr "Ctrl＋Shift 更改组。"
+
+#. XKBFile extension text
+msgid "CapsLock acts as Shift with locking. Shift cancels CapsLock."
+msgstr "CapsLock 键的作用相当于 Shift 键加上锁定。Shift 键取消 CapsLock 键。"
+
+#. XKBFile extension text
+msgid "Use keyboard LED to show alternative group."
+msgstr "使用键盘 LED 显示替换组。"
+
+#. XKBFile extension text
+msgid "Press Right Win-key to choose 3rd level."
+msgstr "按右 Win 键可选择第 3 级。"
+
+#. XKBFile extension text
+msgid "Press Left Alt key to choose 3rd level."
+msgstr "按左 Alt 键可选择第 3 级。"
+
+#. XKBFile extension text
+msgid "Meta is mapped to the Win-keys."
+msgstr "Meta 被映射到 Win 键。"
+
+#. XKBFile extension text
+msgid "Press Menu key to choose 3rd level."
+msgstr "按 Menu 键可选择第 3 级。"
+
+#. XKBFile extension text
+msgid "Left Ctrl key changes group."
+msgstr "左 Ctrl 键更改组。"
+
+#. XKBFile extension text
+msgid "Menu key changes group."
+msgstr "Menu 键更改组。"
+
+#. XKBFile extension text
+msgid "Alt+Control changes group."
+msgstr "Alt＋Ctrl 键更改组。"
+
+#. XKBFile extension text
+msgid "Right Win-key switches group while pressed."
+msgstr "按下右 Win 键后切换组。"
+
+#. XKBFile extension text
+msgid "Serbia"
+msgstr "塞尔维亚"
+
+#. XKBFile extension text
+msgid "Guinea"
+msgstr "几内亚"
+
+#. XKBFile extension text
+msgid "Montenegro"
+msgstr "黑山"
+
+#. XKBFile extension text
+msgid "China"
+msgstr "中国"
+
+#. XKBFile extension text
+msgid "USA"
+msgstr "USA"
+
+#. XKBFile extension text
+msgid "Add the EuroSign to the 4 key."
+msgstr "向 4 键添加欧元符号。"
+
+#. XKBFile extension text
+msgid "Four-level key with dot"
+msgstr "四级键包括点"
+
+#. XKBFile extension text
+msgid "Legacy Wang 724 keypad"
+msgstr "老式的 Wang 724 键盘"
+
+#. XKBFile extension text
+msgid "Four-level key with abstract separators"
+msgstr "四级键包括抽象分隔符"
+
+#. XKBFile extension text
+msgid "Keypad with unicode additions (arrows and math operators)"
+msgstr "在键盘中使用 unicode 的附加字符(箭头和数学运算符)"
+
+#. XKBFile extension text
+msgid "Legacy keypad"
+msgstr "老式键盘"
+
+#. XKBFile extension text
+msgid "Shift cancels CapsLock."
+msgstr "Shift 取消 CapsLock 键。"
+
+#. XKBFile extension text
+msgid "Swap ESC and CapsLock."
+msgstr "交换 ESC 和 CapsLock 键。"
+
+#. XKBFile extension text
+msgid "Wang 724 keypad with unicode additions (arrows and math operators). Math operators on default level."
+msgstr "在 Wang 724 键盘中使用 unicode 的附加字符(箭头和数学运算符)。数学运算符在默认级"
+
+#. XKBFile extension text
+msgid "Four-level key with comma"
+msgstr "四级按键包括逗号"
+
+#. XKBFile extension text
+msgid "Legacy key with comma"
+msgstr "老式按键包括逗号"
+
+#. XKBFile extension text
+msgid "Keypad with unicode additions (arrows and math operators). Math operators on default level."
+msgstr "在键盘中使用 unicode 的附加字符(箭头和数学运算符)。数学运算符在默认级。"
+
+#. XKBFile extension text
+msgid "Legacy key with dot"
+msgstr "老式按键包括点"
+
+#. XKBFile extension text
+msgid "Four-level key with momayyez"
+msgstr "四级按键包括 momayyez"
+
+#. XKBFile extension text
+msgid "Numeric keypad delete key behaviour"
+msgstr "数字键盘删除键的行为"
+
+#. XKBFile extension text
+msgid "Wang 724 keypad with unicode additions (arrows and math operators)"
+msgstr "在 Wang 724 键盘中使用 unicode 的附加字符(箭头和数学运算符)"
+
+#. Tab title: Tablet port and mode selection
+msgid "Port and Mode"
+msgstr "端口和方式"
+
+#. Tab title: Tablet electronic pens (pen,eraser)
+msgid "Electronic Pens"
+msgstr "电子笔"
+
+#. Activate tablet checkbox
+msgid "Activate This Tablet"
+msgstr "激活此图形输入板"
+
+#. Group box title for the tablet vendor and name selection
+msgid "Tablet: Vendor and Name Selection"
+msgstr "图形输入板：供应商和名称选择"
+
+#. Group box title for tablet port combobox
+msgid "Connection Port"
+msgstr "连接端口"
+
+#. Group box title for tablet mode
+msgid "Primary Tablet Mode"
+msgstr "主图形输入板方式"
+
+#. Group box title for pen/eraser tablet mode
+msgid "Pen or Eraser Mode"
+msgstr "笔或橡皮方式"
+
+#. Radiobutton for relative tablet mode
+msgid "Relative"
+msgstr "相对"
+
+#. Radiobutton for absolute tablet mode
+msgid "Absolute"
+msgstr "绝对"
+
+#. Combobox item text for tablet port: USB
+msgid "USB"
+msgstr "USB"
+
+#. Combobox item text for tablet port: ttyS0
+msgid "COM-1 [ /dev/ttyS0 ]"
+msgstr "COM-1 [ /dev/ttyS0 ]"
+
+#. Combobox item text for tablet port: ttyS1
+msgid "COM-2 [ /dev/ttyS1 ]"
+msgstr "COM-2 [ /dev/ttyS1 ]"
+
+#. Combobox item text for tablet port: ttyS2
+msgid "COM-3 [ /dev/ttyS2 ]"
+msgstr "COM-3 [ /dev/ttyS2 ]"
+
+#. Combobox item text for tablet port: ttyS3
+msgid "COM-4 [ /dev/ttyS3 ]"
+msgstr "COM-4 [ /dev/ttyS3 ]"
+
+#. Combobox item text for tablet port: ttyS4
+msgid "COM-5 [ /dev/ttyS4 ]"
+msgstr "COM-5 [ /dev/ttyS4 ]"
+
+#. Group box title for the tablet tools (pen/eraser)
+msgid "Tools"
+msgstr "工具"
+
+#. Add Pen Checkbox
+msgid "Add Pen"
+msgstr "添加笔"
+
+#. Add Eraser Checkbox
+msgid "Add Eraser"
+msgstr "添加橡皮"
+
+#. Add Touch Checkbox
+msgid "Add Touch"
+msgstr "添加触摸"
+
+#. Add Pad Checkbox
+msgid "Add Pad"
+msgstr "添加 Pad"
+
+#. Windowanager title for the tablet pen options dialog
+msgid "Pen or Eraser Settings"
+msgstr "笔或橡皮设置"
+
+#. Tab title: Pen properties
+msgid "Pen Properties"
+msgstr "笔属性"
+
+#. Tab title: Pad properties
+msgid "Pad Properties"
+msgstr "Pad 属性"
+
+#. Tab title: Eraser properties
+msgid "Eraser Properties"
+msgstr "橡皮属性"
+
+#. Tab title: Touch properties
+msgid "Touch Properties"
+msgstr "触摸属性"
+
+#. Tab text for a touchscreen tab of the touchscreen dialog
+msgid "Touchscreen %1"
+msgstr "触摸屏 %1"
+
+#. Activate/Assign touchscreen checkbox
+msgid "Assign a Touchscreen to Display Number %1"
+msgstr "指派触摸屏显示数字 %1"
+
+#. Group box title for the touchscreen vendor and name selection
+msgid "Touchscreen: Vendor and Name Selection"
+msgstr "触摸屏：供应商和名称选择"
+
+#. Finish configuration message box
+msgid "<b>Final Steps</b><hr>The last step is saving your new configuration. It is recommended to test the new configuration before saving it. If the test server shows a corrupted desktop, press <b>[ Ctrl+Alt+Backspace ]</b> and <b>[ Ctrl+Alt+Backspace ]</b> shortly after a loud warning (beep) to kill the server."
+msgstr "<b>最终步骤</b><hr>最后一步为保存您的新配置。建议在保存之前测试新配置。如果测试服务器显示损坏的桌面，按下<b>[ Ctrl+Alt+Backspace ]</b> 和 <b>[ Ctrl+Alt+Backspace ]</b> 听到一个大声的警告后(哔)，就可以停止服务器。"
+
+#. Finish configuration message box (without test)
+msgid "<b>Saving the configuration</b><hr>Click on Save to store the configuration. Your changes will become effective on next X-Server restart."
+msgstr ""
+
+#. Tab title: VNC Server configuration
+msgid "X Server Remote Control"
+msgstr "X Server 远程控制"
+
+#. Activate VNC server checkbox
+msgid "Allow access to display and keyboard/mouse of your X Server"
+msgstr "允许访问 X Server 的显示器和键盘/鼠标"
+
+#. Activate VNC password protection checkbox
+msgid "Activate Password Protection"
+msgstr "激活口令保护"
+
+#. LineEdit label: enter password
+msgid "Password"
+msgstr "口令"
+
+#. LineEdit contents: enter new password
+msgid "<Enter new password>"
+msgstr "<输入新口令>"
+
+#. LineEdit contents: change password
+msgid "<Change password>"
+msgstr "<更改新口令>"
+
+#. LineEdit contents: verify password
+msgid "<Verify password>"
+msgstr "<校验新口令>"
+
+#. Activate HTTP access checkbox
+msgid "Activate HTTP Access"
+msgstr "激活 HTTP 访问"
+
+#. Activate multiple VNC connection checkbox
+msgid "Allow Multiple Connections"
+msgstr "允许多个连接"
+
+#. SpinBox label to setup the HTTP port number
+msgid "HTTP Port"
+msgstr "HTTP 端口"
+
+#. VNC message box appearing if password strings doesn't match
+msgid "<b>Remote Access Password Mismatch</b><hr>The first and the second version of the password do not match."
+msgstr "<b>远程访问口令不匹配</b><hr>口令的第一个和第二个版本不匹配。"
+
+#. VNC message box appearing if password is too short
+msgid "<b>Remote Access Password Fault</b><hr>The password field has been left empty or the password is too short. Enter a password with at least six characters."
+msgstr "<b>远程访问口令错误</b><hr>口令字段被留空或口令太短。请输入至少有 6 个字符的口令。"
+
+#. VNC message box appearing if password is too long
+msgid "<b>Remote Access Password Fault</b><hr>The password is too long. Enter a password with a maximum of eight characters."
+msgstr "<b>远程访问口令错误</b><hr>口令太长。请输入至多有 8 个字符的口令。"
+
+#. Install missing packages box
+msgid "<b>Software Installation:</b><hr>Some packages are missing. Install the missing packages now?"
+msgstr "<b>软件安装：</b><hr>缺少某些包。是否立即安装缺少的包？"
+
+#. Caption text for the missing package info window
+msgid "Package Installation"
+msgstr "包安装"
+
+#. Progress bar title text
+msgid "Importing module"
+msgstr "导入模块"
+
+#. Progress window caption text
+msgid "SaX2: Importing data..."
+msgstr "SaX2：正在导入数据..."
+
+#. Progress window label text
+msgid "Initialize cache..."
+msgstr "初始化超速缓存..."
+
+#. Message box text: configuration cannot be saved
+msgid "<b>Saving Configuration Failed</b><hr>The following report has been created:"
+msgstr "<b>保存配置文件失败</b><hr>已创建下列报告："
+
+#. Message box test: configuration has been saved
+msgid "<b>Configuration Saved</b><hr>Your modifications will take effect the next time the graphics system is restarted. Exit SaX2 now?"
+msgstr "<b>配置已保存</b><hr>您的修改将在下次图形系统重启动时生效。是否立即退出 SaX2？"
+
+#. Message box text: testing the configuration has failed
+msgid "<b>Testing Configuration Failed</b><hr>For further information, refer to the file <tt>/var/log/Xorg.99.log</tt>. The following report has been created from the calling instance:"
+msgstr "<b>测试配置失败</b><hr>有关更多信息，请参阅文件 <tt>/var/log/Xorg.99.log</tt>。根据调用的实例创建了下列报告："
+
+#. Message box text: if VNC has been enabled the firewall should be checked
+msgid "<b>Remote Access configuration information</b><hr>The Remote Access service requires that the TCP port 5900 and an HTTP port (5800 by default) be open in the firewall. You can configure this with YaST."
+msgstr "<b>远程访问配置信息</b><hr>远程访问服务需要防火墙上的 TCP 端口 5900 和 HTTP 端口（默认情况下为 5800）打开。可以使用 YaST 配置它。"
+
+#. XKBFile extension text
+msgid "Miscellaneous compatibility options"
+msgstr "其它兼容性选项"
+
+#. XKBFile extension text
+msgid "Add the EuroSign to the 5 key."
+msgstr "向 5 键添加 EuroSign。"
+
+#. XKBFile extension text
+msgid "CapsLock key behavior"
+msgstr "CapsLock 键行为"
+
+#. XKBFile extension text
+msgid "Alt/Win key behavior"
+msgstr "Alt/Win 键行为"
+
+#. XKBFile extension text
+msgid "Adding the EuroSign to certain keys"
+msgstr "向某些键添加 EuroSign"
+
+#. XKBFile extension text
+msgid "Caps Lock is Compose."
+msgstr "Caps Lock 是 Compose 键。"
+
+#. XKBFile extension text
+msgid "Right Ctrl key works as Right Alt."
+msgstr "右 Ctrl 键功能和右 Alt 键相同。"
+
+#. XKBFile extension text
+msgid "Ctrl key at bottom left"
+msgstr "Ctrl 键在左下方"
+
+#. XKBFile extension text
+msgid "Ctrl key at left of 'A'"
+msgstr "Ctrl 键在\"A\"的左侧"
+
+#. XKBFile extension text
+msgid "Make CapsLock an additional Ctrl."
+msgstr "将 CapsLock 设置为附加 Ctrl 键。"
+
+#. XKBFile extension text
+msgid "Swap Ctrl and CapsLock."
+msgstr "交换 Ctrl 键和 CapsLock 键。"
+
+#. XKBFile extension text
+msgid "Ctrl key position"
+msgstr "Ctrl 键位置"
+
+#. XKBFile extension text
+msgid "Special keys (Ctrl+Alt+&lt;key&gt;) handled in a server."
+msgstr "特殊的键 (Ctrl+Alt+&lt;key&gt;) 在服务器中运用。"
+
+#. XKBFile extension text
+msgid "Press Right Ctrl to choose 3rd level."
+msgstr "按右 Ctrl 键可选择第 3 级。"
+
+#. XKBFile extension text
+msgid "Ctrl+Shift changes group."
+msgstr "Ctrl+Shift 键转换组。"
+
+#. XKBFile extension text
+msgid "Add the EuroSign to the E key."
+msgstr "向 E 键添加 EuroSign。"
+
+#. XKBFile extension text
+msgid "Add the EuroSign to the 2 key."
+msgstr "向 2 键添加 EuroSign。"
+
+#. XKBFile extension text
+msgid "key Compose key position"
+msgstr "Compose 键位置"
+
+#. XKBFile extension text
+msgid "Alt+Ctrl changes group."
+msgstr "Alt＋Ctrl 键更改组。"
+
+#. XKBFile extension text
+msgid "Group Shift/Lock behavior"
+msgstr "组转换/锁定行为"
+
+#. XKBFile extension text
+msgid "Arabic"
+msgstr "阿拉伯语"
+
+#. XKBFile extension text
+msgid "Nepal"
+msgstr "尼泊尔"
+
+#. XKBFile extension text
+msgid "Congo, Democratic Republic of the"
+msgstr "刚果（金）"
+
+#. XKBFile extension text
+msgid "Korea, Republic of"
+msgstr "韩国"
+
+#. XKBFile extension text
+msgid "Iraq"
+msgstr "伊拉克"
+
+#. XKBFile extension text
+msgid "Nigeria"
+msgstr "尼日利亚"
+
+#. XKBFile extension text
+msgid "Japan (PC-98xx Series)"
+msgstr "日本 (PC-98xx 系列)"
+
+#. XKBFile extension text
+msgid "Estonia"
+msgstr "爱沙尼亚"
+
+#. XKBFile extension text
+msgid "Myanmar"
+msgstr "缅甸"
+
+#. XKBFile extension text
+msgid "Norway"
+msgstr "挪威"
+
+#. XKBFile extension text
+msgid "Germany"
+msgstr "德国"
+
+#. XKBFile extension text
+msgid "Mongolia"
+msgstr "蒙古"
+
+#. XKBFile extension text
+msgid "Bhutan"
+msgstr "不丹"
+
+#. XKBFile extension text
+msgid "Bangladesh"
+msgstr "孟加拉国"
+
+#. XKBFile extension text
+msgid "Latin American"
+msgstr "拉丁美洲"
+
+#. XKBFile extension text
+msgid "Belgium"
+msgstr "比利时"
+
+#. XKBFile extension text
+msgid "Finland"
+msgstr "芬兰"
+
+#. XKBFile extension text
+msgid "Israel"
+msgstr "以色列"
+
+#. XKBFile extension text
+msgid "Sweden"
+msgstr "瑞典"
+
+#. XKBFile extension text
+msgid "Russia"
+msgstr "俄罗斯"
+
+#. XKBFile extension text
+msgid "Portugal"
+msgstr "葡萄牙"
+
+#. XKBFile extension text
+msgid "Korean"
+msgstr "韩语"
+
+#. XKBFile extension text
+msgid "Maori"
+msgstr "毛利语"
+
+#. XKBFile extension text
+msgid "Uzbekistan"
+msgstr "乌兹别克斯坦"
+
+#. XKBFile extension text
+msgid "Bulgaria"
+msgstr "保加利亚"
+
+#. XKBFile extension text
+msgid "Thailand"
+msgstr "泰国"
+
+#. XKBFile extension text
+msgid "India"
+msgstr "印度"
+
+#. XKBFile extension text
+msgid "Bengali"
+msgstr "孟加拉语"
+
+#. XKBFile extension text
+msgid "Switzerland"
+msgstr "瑞士"
+
+#. XKBFile extension text
+msgid "Laos"
+msgstr "老挝"
+
+#. XKBFile extension text
+msgid "Japan"
+msgstr "日本"
+
+#. XKBFile extension text
+msgid "Syria"
+msgstr "叙利亚"
+
+#. XKBFile extension text
+msgid "Czechia"
+msgstr "捷克语"
+
+#. XKBFile extension text
+msgid "Belarus"
+msgstr "白俄罗斯"
+
+#. XKBFile extension text
+msgid "Tajikistan"
+msgstr "塔吉克斯坦"
+
+#. XKBFile extension text
+msgid "Denmark"
+msgstr "丹麦"
+
+#. XKBFile extension text
+msgid "Slovenia"
+msgstr "斯洛文尼亚"
+
+#. XKBFile extension text
+msgid "Malta"
+msgstr "马耳他"
+
+#. XKBFile extension text
+msgid "Azerbaijan"
+msgstr "阿塞拜疆"
+
+#. XKBFile extension text
+msgid "Lithuania"
+msgstr "立陶宛"
+
+#. XKBFile extension text
+msgid "Vietnam"
+msgstr "越南"
+
+#. XKBFile extension text
+msgid "Faroe Islands"
+msgstr "法罗群岛"
+
+#. XKBFile extension text
+msgid "South Africa"
+msgstr "南非"
+
+#. XKBFile extension text
+msgid "Farsi"
+msgstr "波斯语"
+
+#. XKBFile extension text
+msgid "Slovakia"
+msgstr "斯洛伐克"
+
+#. XKBFile extension text
+msgid "Maldives"
+msgstr "马尔代夫"
+
+#. XKBFile extension text
+msgid "Iceland"
+msgstr "冰岛"
+
+#. XKBFile extension text
+msgid "Croatia"
+msgstr "克罗地亚"
+
+#. XKBFile extension text
+msgid "Latvia"
+msgstr "拉脱维亚"
+
+#. XKBFile extension text
+msgid "Albania"
+msgstr "阿尔巴尼亚"
+
+#. XKBFile extension text
+msgid "Italy"
+msgstr "意大利"
+
+#. XKBFile extension text
+msgid "Greece"
+msgstr "希腊"
+
+#. XKBFile extension text
+msgid "United Kingdom"
+msgstr "英国"
+
+#. XKBFile extension text
+msgid "France"
+msgstr "法国"
+
+#. XKBFile extension text
+msgid "Armenia"
+msgstr "亚美尼亚"
+
+#. XKBFile extension text
+msgid "Pakistan"
+msgstr "巴基斯坦"
+
+#. XKBFile extension text
+msgid "Poland"
+msgstr "波兰"
+
+#. XKBFile extension text
+msgid "Kyrgyzstan"
+msgstr "吉尔吉斯斯坦"
+
+#. XKBFile extension text
+msgid "Ireland"
+msgstr "爱尔兰"
+
+#. XKBFile extension text
+msgid "Hungary"
+msgstr "匈牙利"
+
+#. XKBFile extension text
+msgid "Cambodia"
+msgstr "柬埔寨"
+
+#. XKBFile extension text
+msgid "Spain"
+msgstr "西班牙"
+
+#. XKBFile extension text
+msgid "Ukraine"
+msgstr "乌克兰"
+
+#. XKBFile extension text
+msgid "Romania"
+msgstr "罗马尼亚"
+
+#. XKBFile extension text
+msgid "Kazakhstan"
+msgstr "哈萨克斯坦"
+
+#. XKBFile extension text
+msgid "Georgia"
+msgstr "格鲁吉亚"
+
+#. XKBFile extension text
+msgid "U.S. English"
+msgstr "英语（美国）"
+
+#. XKBFile extension text
+msgid "Turkish"
+msgstr "土耳其语"
+
+#. XKBFile extension text
+msgid "PC-98xx Series"
+msgstr "PC-98xx 系列"
+
+#. XKBFile extension text
+msgid "Netherlands"
+msgstr "荷兰"
+
+#. XKBFile extension text
+msgid "Macedonia"
+msgstr "马其顿"
+
+#. XKBFile extension text
+msgid "Canada"
+msgstr "加拿大"
+
+#. XKBFile extension text
+msgid "Sri Lanka"
+msgstr "斯里兰卡"
+
+#. XKBFile extension text
+msgid "Bosnia and Herzegovina"
+msgstr "波斯尼亚和黑塞哥维那"
+
+#. XKBFile extension text
+msgid "Brazil"
+msgstr "巴西"
+
+#. XKBFile extension text
+msgid "Ghana"
+msgstr "加纳"
+
+#. XKBFile extension text
+msgid "Andorra"
+msgstr "安道尔"
+
+#. XKBFile extension text
+msgid "Afghanistan"
+msgstr "阿富汗"
+
+#. XKBFile extension text
+msgid "Esperanto"
+msgstr "世界语"
+
+#. XKBFile extension text
+msgid "Turkey"
+msgstr "土耳其"
+
+#. XKBFile extension text
+msgid "CapsLock key switches layout while pressed, Alt+CapsLock does the original capslock action."
+msgstr ""
+
+#. XKBFile extension text
+msgid "CapsLock switch to first layout, Shift+CapsLock switch to last layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Less-than/Greater-than is Compose."
+msgstr ""
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Space key outputs non-breakable space character at fourth level, thin non-breakable space character at sixth level (via Ctrl+Shift"
+msgstr "在第4级，空格键输出不间断的空格字符。"
+
+#. /.../
+#. Copyright (c) 2000 SuSE GmbH Nuernberg, Germany.  All rights reserved.
+#. This file contains the gettext keys used within a gettext call in the
+#. application code for XFine2
+#.
+#. Maximum length: 40  characters
+msgid "&Step size"
+msgstr "步长(&S)"
+
+#. Maximum length: 40  characters
+msgid "Small"
+msgstr "小"
+
+#. Maximum length: 40  characters
+msgid "Normal"
+msgstr "常规"
+
+#. Maximum length: 40  characters
+msgid "Big"
+msgstr "大"
+
+#. Maximum length: 40  characters
+msgid "Huge"
+msgstr "巨大"
+
+#. Maximum length: 40  characters
+msgid "&Next Screen"
+msgstr "下一个屏幕(&N)"
+
+#. Maximum length: 40  characters
+msgid "S&ave"
+msgstr "保存(&A)"
+
+#. Maximum length: 40  characters
+msgid "Change &Position"
+msgstr "更改位置(&P)"
+
+#. Maximum length: 40  characters
+msgid "C&hange Size"
+msgstr "更改大小(&H)"
+
+#. Maximum length: 40  characters
+msgid "Screen"
+msgstr "屏幕"
+
+#. Maximum length: 60  characters
+msgid "No video mode tuning available"
+msgstr "无显示方式调整"
+
+msgid "Display"
+msgstr "显示"
+
+msgid "Configuration on display"
+msgstr "显示器配置"
+
+msgid "Idle timer..."
+msgstr "空闲计时器..."
+
+#~ msgid "CapsLock uses internal capitalization. Shift "
+#~ msgstr "CapsLock 用于内部大写转换。Shift "
+
+#~ msgid "CapsLock acts as Shift with locking. Shift "
+#~ msgstr "CapsLock 键的作用相当于 Shift 键加上锁定。Shift "

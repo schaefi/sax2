@@ -1,0 +1,5 @@
+# Virtual box mouse
+InputDevice -> [X] -> Identifier = Mouse[[X]]
+InputDevice -> [X] -> Driver     = vboxmouse
+InputDevice -> [X] -> Option -> InputFashion   = Mouse
+InputDevice -> [X] -> Option -> Name           = Virtual Box Pointer

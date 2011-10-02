@@ -1,0 +1,12 @@
+# /.../
+# MSI-N011 (LVDS) monitor profile
+# ----
+
+Monitor->[X]->HorizSync = 30-48
+Monitor->[X]->VertRefresh = 59-61
+Monitor->[X]->PreferredMode = 1024x600
+Screen->[X]->Depth->8->Modes = 1024x600
+Screen->[X]->Depth->15->Modes = 1024x600
+Screen->[X]->Depth->16->Modes = 1024x600
+Screen->[X]->Depth->24->Modes = 1024x600
+Device->[X]->Raw->11->Option = "monitor-LVDS" "Monitor[[X]]"

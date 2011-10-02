@@ -1,0 +1,9 @@
+# /.../
+# NV profile applied as driver profile to the nv
+# driver to disable modeline calculation
+# -------------------------------------------------------
+Desktop -> [X] ->  CalcModelines = no
+Monitor -> [X] ->  CalcAlgorithm = XServerPool
+
+!remove Desktop -> [X] -> SpecialModeline
+!remove Monitor -> [X] -> Modeline

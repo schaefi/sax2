@@ -1,0 +1,93 @@
+#!/bin/sh
+# Copyright (c) 2000 SuSE GmbH Nuernberg, Germany.  All rights reserved.
+#
+# Author: Marcus Schaefer <sax@suse.de>, 2000
+#
+# SaX (sax) configuration level 3
+#
+# CVS ID:
+# --------
+# Status: Up-to-date
+#
+trap "signal" EXIT HUP INT TERM PIPE QUIT ABRT SEGV
+
+#========================================
+# Functions
+#----------------------------------------
+function signal {
+	killall dots.pl 2>/dev/null >/dev/null
+}
+function isTTY {
+	case `tty` in
+		/dev/tty*)
+			return 0
+		;;
+		*)
+			return 1
+		;;
+    esac
+}
+#========================================
+# Init
+#----------------------------------------
+ERR="/var/log/SaX.log"
+SHC="/bin/sh"
+SUX="su"
+REI=""
+
+#========================================
+# Main
+#----------------------------------------
+for param;do
+	if [ $param = "-v" ] || [ $param = "--version" ];then
+		/usr/sbin/sax.sh -v
+		exit 0
+	fi
+	if [ $param = "-h" ] || [ $param = "--help" ];then
+		/usr/sbin/sax.sh -h
+		exit 0
+	fi
+	if [ $param = "-H" ] || [ $param = "--cmdhelp" ];then
+		/usr/sbin/sax.sh --cmdhelp
+		exit 0
+	fi
+done
+
+#========================================
+# Check console mode
+#----------------------------------------
+if isTTY;then
+	# echo "SaX: running in console mode, re-init cache"
+	REI="-r"
+fi
+
+#========================================
+# test for root privileges...
+#----------------------------------------
+if [ ! "$UID" = 0 ];then
+	echo -n "SaX: root "
+	if [ -f "$SUX" ];then
+		$SUX -c "/usr/sbin/SaX2 $*"
+	else
+		xhost + localhost > /dev/null 2>/dev/null
+		su -c "/usr/sbin/SaX2 $*"
+	fi
+
+	if [ ! "$?" = 0 ];then
+	echo
+	if [ ! -f "$SUX" ];then
+		xhost - localhost 2>/dev/null >/dev/null
+	fi
+	exit 1
+	fi
+
+	if [ ! -f "$SUX" ];then
+		xhost - localhost 2>/dev/null >/dev/null
+	fi
+	exit 0
+fi
+
+#========================================
+# run the main sax start script...
+#----------------------------------------
+/usr/sbin/sax.sh $* $REI

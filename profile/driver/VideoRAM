@@ -1,0 +1,5 @@
+# /.../
+# Driver Profile for the tseng driver. Adding 2MB of VideoRAM
+# to be able to use the driver
+# -----------------------------
+Device->[X]->Videoram = 2048

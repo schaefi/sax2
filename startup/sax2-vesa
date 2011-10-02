@@ -1,0 +1,3 @@
+#!/bin/sh
+
+sax2 -m 0=vesa -b /usr/share/sax/profile/vesa $*

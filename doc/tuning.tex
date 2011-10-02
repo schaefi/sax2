@@ -1,0 +1,52 @@
+\chapter{XFine tuning}
+\label{cha:xfi}
+\minitoc
+XFine in SaX2 represents both a module and an independent X11
+application. The module \textbf{XFineControl.pm} is used within SaX2 to save
+changes in the image geometry and to write these to the configuration file.
+
+\section{The XFine cache}
+The \textbf{xfine} application writes this change information to the image
+geometry as a file in the directory:
+\begin{itemize}
+\item /var/cache/xfine
+\end{itemize}
+Per resolution a file is created with change information. The files are named
+according to the \textit{SCREEN:XxY} convention.
+The format of the files has the following convention:
+\begin{verbatim}
+    SCREEN:OLDMODE:NEWMODE:DACSPEED
+\end{verbatim}
+
+When using xfine as a standalone application no changes are made
+to the actual configuration file, only if used within SaX2 the data written
+to \textit{/var/cache/xfine} is processed.
+
+\section{The XFine tune hash}
+When SaX2 is using the cache data written by xfine the
+main task in using XFineControl.pm is in the creation of the
+so-called \textit{tune} hash. This hash serves in SaX2 as a reference
+for already changed modelines and is checked with each test run. It
+contains the original modeline, the last changed modeline and the
+current modeline. By means of the timing values and the number of
+original modelines, a check is made on whether the tune hash needs to be
+newly created, or if it can serve as a reference.
+
+\newpage
+
+\subsection{The \textit{ImportXFineCache} flag}
+To activate processing the cache data and creating the tune hash the
+following flag has to be set in the Desktop section of the ISaX
+interface file:
+
+\begin{verbatim}
+Desktop {
+    0 ImportXFineCache = yes
+    ...
+}
+\end{verbatim}
+
+If using libsax the xfine cache is automatically included after a
+successful test of the X server. When testing the script
+\textit{/var/lib/sax/createTST.pl} is called which will start the
+server and the tuning tool.

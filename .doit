@@ -1,0 +1,292 @@
+#!/usr/bin/perl
+# Copyright (c) 2000 SuSE GmbH Nuernberg, Germany.  All rights reserved.
+#
+# Author: Marcus Schaefer <sax@suse.de>, 2001
+# Build script for SaX2 with CVS access
+#
+# Syntax:
+# -------
+#   doit --ftp
+#   doit --prepare [ --tag <tag> ] [ --branch <branch> ]
+#				   [ --sourcelevel <n> ] [ --patchlevel <n> ]
+#   doit --build   [ PrepareOptions ]  [ --clean ]
+#
+# tag or branch specifiy the subversion location where a tag
+# or a branch source is stored. The patchlevel option indicate up to
+# which patchlevel a patch or a set of patches should be created
+# ---
+#
+use strict;
+use Getopt::Long;
+use English;
+
+#=====================================
+# Globals...
+#-------------------------------------
+my $Build;
+my $PutOnFTP;
+my $Prepare;
+my $Tag;
+my $Branch;
+my $PatchList;
+my $SourceList;
+my $LocalSource;
+my $Clean;
+
+#----[ main ]-----------------#
+sub main {
+#-----------------------------------------------
+# main routine to build and prepare for all the
+# package and version stuff
+#
+	my $result = GetOptions(
+		"ftp|f"           => \$PutOnFTP,
+		"build|b"         => \$Build,
+		"tag|t=s"         => \$Tag,  
+		"branch|r=s"      => \$Branch,
+		"prepare|p"       => \$Prepare,
+		"patchlevel|l=s"  => \$PatchList,
+		"sourcelevel=i"   => \$SourceList,
+		"local|L"         => \$LocalSource,
+		"clean|c"         => \$Clean,
+		"help|h"          => \&usage,
+		"<>"              => \&usage
+	);
+	if ( $result != 1 ) {
+		usage();
+	}
+	#==============================================
+	# Put Packages onto the FTP Server...
+	#----------------------------------------------
+	if (defined $PutOnFTP) {
+		print "Update FTP packages...\n";
+		if (! -f "./.ftp") {
+			die "Could not find .ftp script... abort";
+		}
+		system ("./.ftp");
+		exit (0);
+    }
+	#==============================================
+	# Check user privileges...
+	#----------------------------------------------
+	if ((defined $Build) && ($UID != 0)) {
+		die "Only root can do this... abort";
+	}
+	if ((! defined $Build) && (! defined $Prepare)) {
+		usage();
+	}
+	#==============================================
+	# Setup subversion path for checkout...
+	#----------------------------------------------
+	my $tagsID;
+	my $treeID;
+	if (defined $Branch) {
+		$tagsID = $Branch;
+		$treeID = "sax-branches";
+	}
+	if (defined $Tag) {
+		$tagsID = $Tag;
+		$treeID = "sax-tags";
+	}
+	#==============================================
+	# Checkout source
+	#----------------------------------------------
+	my $pacdir = checkout (
+		$tagsID,$treeID,$PatchList,$SourceList,$LocalSource
+	);
+	#==============================================
+	# Add %changelog
+	#----------------------------------------------
+	#my $bin = "/suse/ms/bin/convert_changes_to_rpm_changelog";
+	#if (open (FD,">>$pacdir/sax2.spec")) {
+	#	print FD "\n";
+	#	print FD '%changelog -n sax2';
+	#	print FD "\n";
+	#	if (open (LG,"$bin $pacdir/sax2.changes|")) {
+	#		while (<LG>) {
+	#			print FD $_;
+	#		}
+	#	}
+	#	close FD;
+	#	close LG;
+	#}
+	#==============================================
+	# Creating Patches...
+	#----------------------------------------------
+	my @patches = ();
+	if (defined $PatchList) {
+		# TODO...
+	}
+	#==============================================
+	# Patch spec file...
+	#----------------------------------------------
+	if (@patches > 0) {
+		# TODO...
+	}
+	#==============================================
+	# Build package...
+	#----------------------------------------------
+	if (defined $Build) {
+	if (defined $Clean) {
+		chdir $pacdir && system ("./.build clean");
+	} else {
+		chdir $pacdir && system ("./.build");
+	}
+	}
+	#==============================================
+	# Clean sweep
+	#----------------------------------------------
+	if (defined $Build) {
+		qx (rm -rf $pacdir);
+	} else {
+		my $host = qx (hostname);
+		chomp ($host);
+		print 'Retrieve archive with: ';
+		print '[ scp -r root@'.$host.':'.$pacdir." . ]\n";
+	}
+}
+
+#---[ checkout ]-----#
+sub checkout {
+#-------------------------------------------------
+# checkout sources and create a package directory
+# ready to go to /work/src/done
+#
+	my $pacdir = svnup (@_);
+	chdir $pacdir;
+	qx( mv sax/rpm/* . );
+	if (defined $Build) {
+		qx( mv sax/.build . );
+	}
+	chdir "./sax";
+	qx (./.archive);
+	chdir $pacdir;
+	qx( mv sax/*.bz2 . );
+	qx( rm -rf sax );
+	return $pacdir;
+}
+
+#----[ svnup ]----------------#
+sub svnup {
+#-----------------------------------------------
+# checkout SaX2 source according to an optional
+# tag and return the pathname of the temp directory
+# where the new sources are located
+#
+	my $tagName = $_[0];
+	my $treeID  = $_[1];
+	my $plevel  = $_[2];
+	my $slevel  = $_[3];
+	my $local   = $_[4];
+
+	#===========================================
+	# set SVN path to repository and branch/tag
+	#-------------------------------------------
+	my $svnPath = "svn.berlios.de/svnroot/repos/sax/sax-head";
+	if (defined $tagName) {
+		$svnPath = "svn.berlios.de/svnroot/repos/sax/".$treeID."/".$tagName;
+	}
+	#===========================================
+	# create tmp directory and change into it
+	#-------------------------------------------
+	my $parent = qx ( pwd );
+	my $tmpdir = qx (
+		mktemp -q -d /tmp/svnsax.XXXXXX
+	);
+	chomp $parent;
+	chomp $tmpdir;
+	chdir $tmpdir
+		|| die "Could not create temp dir: $!";
+	#===========================================
+	# use local source if defined
+	#-------------------------------------------
+	if (defined $local) {
+		print "Checkout source level [local]...\n";
+		chdir $parent
+			|| die "Could not change dir: $parent:$!";
+		qx (mkdir -p $tmpdir/sax && cp -a . $tmpdir/sax);
+		chdir $tmpdir
+			|| die "Could not create temp dir: $!";
+		return $tmpdir;
+	}
+	#===========================================
+	# checkout source at given level or HEAD
+	#-------------------------------------------
+	if (defined $slevel) {
+		print "Checkout source level [$slevel]...\n";
+		qx (svn co -r $slevel http://$svnPath sax 2>&1 );
+	} else {
+		my $location = "HEAD";
+		if ( defined $Branch ) {
+			$location = "BRANCH: $Branch";
+		}
+		if ( defined $Tag ) {
+			$location = "TAG: $Tag";
+		}
+		print "Checkout source level [$location]...\n";
+		qx ( svn co http://$svnPath sax 2>&1 );
+	}
+	my $error = $? >> 8;
+	if ($error > 0) {
+		die "checkout failed: $!";
+	}
+	#===========================================
+	# setup patches at given level
+	#-------------------------------------------
+	if (defined $plevel) {
+		sub numeric { $a <=> $b; };
+		my @list = sort numeric (split(/,/,$plevel));
+		my $firstLevel = $list[0];
+		if ($firstLevel eq "LAST") {
+			qx (svn co http://$svnPath tmp);
+			my $status = qx (svn status -v tmp/xc.pl);
+			$status =~ s/ +/:/g;
+			$status =~ s/^:+//g;
+			$status =~ s/:+$//g;
+			my @stlist = split(/:/,$status);
+			my $headrv = shift (@stlist);
+			$list[0] = $headrv;
+			if (! defined $slevel) {
+				$slevel = $headrv;
+			}
+			qx (rm -rf tmp);
+		}
+		foreach my $rev (@list) {
+			print "Create patch: $slevel:$rev...\n";
+			qx (svn diff -r $slevel:$rev sax/ > sax_patch$rev.dif );
+			$slevel = $rev;
+		}
+	}
+	return $tmpdir;
+}
+
+#----[ usage ]------------#
+sub usage {
+#----------------------------------------
+# give me a usage message
+#	
+	print "usage: doit [ options ]\n";
+	print "options:\n";
+	print "[ -f | --ftp ]\n";
+	print "   put packages to the FTP server\n";
+	print "\n";
+	print "[ -p | --prepare [ --tag | --branch <name> ] ]\n";
+	print "   prepare package for build. Use sources as specified\n";
+	print "   by tag or branch. If no tag is given the head will\n";
+	print "   be used\n";
+	print "\n";
+	print "[ -b | --build [ --tag | --branch <name> ] [ --clean ] ]\n";
+	print "   prepare and build package\n";
+	print "   same as -p except the fact that the package build\n";
+	print "   immediatelly. --clean will remove the buildsystem and\n";
+	print "   setup a new one\n";
+	print "\n";
+	print "[ -l | --patchlevel <n> ]\n";
+	print "   patches the sources from -b or -p up to the given\n";
+	print "   patchlevel. More than one level may be specified as\n"; 
+	print "   comma seperated list\n";
+	print "--\n";
+	exit (0);
+}
+
+main();

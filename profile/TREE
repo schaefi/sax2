@@ -1,0 +1,16 @@
+profile ─┬─ automatic
+         │  profiles applied automatically due to entries made
+         │  in the Identity map files
+         │
+         ├─ driver
+         │  profiles applied automatically due to the
+         │  selected driver
+         │
+         ├─ manual
+         │  profiles not applied automatically for manual
+         │  use on the commandline or implicit via libsax
+         │
+         └─ script
+            dynamic profile scripts bound to base profile
+            which has to have the same base name. The dynamic
+            part of a profile must be written in perl

@@ -1,0 +1,87 @@
+\chapter{Sysp}
+\index{Sysp}
+\label{cha:sys}
+\minitoc
+
+Sysp stands for \textbf{system profiler} and is an independent program for 
+detecting hardware data based on libhd.
+Sysp is constructed modularly and saves once detected data in so-called perl 
+DBM hash files. The data in these files can be read out and processed again
+through a sysp call. Detecting and saving information is a central part of
+\textit{init.pl}.
+This action is carried out once by SaX2 during the initialization. Use is made
+of the sysp data, which as a whole makes up the SaX2 registry, at various
+points in the configuration process:
+\begin{itemize}
+\item In \textit{xc.pl} to create the initial configuration.
+\item In \textit{xapi} to make data visible in configuration dialogs.
+\end{itemize} 
+Information which was detected by individual sysp modules is stored in the
+directory 
+\begin{itemize}
+\item /usr/share/sax/sysp/rdbms
+\end{itemize}
+and re-read from there as well.
+
+\section{Sysp Modules}
+\index{Sysp!Module}
+In the course of development for SaX2 the following sysp modules were written:
+\begin{itemize}
+\item \textbf{Keyboard}\\
+      This module determines, using the KEYTABLE variable in 
+      /etc/sysconfig/keyboard, which type of protocol can be used under X11.
+      With systems such as Sparc, for example, a direct hardware scan is
+      started to detect this data.
+\item \textbf{Mouse}\\
+      This module determines the connection and protocol of all pointer
+      devices connected to the system. A condition of this is that these are
+      PnP-capable pointer devices, which also provide a checkback signal.
+\item \textbf{Server}\\
+      This module determines all PCI/AGP graphics cards which are inserted in
+      the PCI or AGP bus. Furthermore, it attempts to set an X11 R6 v4.x
+      module allocation by means of the unique vendor and device ID`s of these
+      cards, as well as finding special options and extensions. If a single
+      ISA card isa used, then it attempts to find out, by registry dump, which
+      X11 R6 v4.x module can be responsible for this. If there is a mixture of
+      AGP, PCI and ISA cards, the ISA cards will definitely not be
+      automatically detected.
+\item \textbf{Xstuff}\\
+      This module collects card-specific data, such as video memory, RamDAC
+      speed, possible resolutions per DDC and the synchronization range of the
+      monitor in accordance with the resolutions detected. If there is more
+	  than one pysical graphics card a minimal X11 configuration is created
+      from the result of the preceding sysp module, and the X server is
+      started for a brief test run. The output of the server is then
+      processed and provides the above-mentioned information.
+\end{itemize}
+
+\section{Calling up sysp}
+\index{Sysp!call up}
+Calling up sysp does not have to be regulated in a script, but can also be run
+by hand. For this case, two modes should be differentiated:
+\begin{itemize}
+\item Starting a query
+\item Starting a hardware detection ( scan )
+\end{itemize}
+
+\subsection{Sysp Query}
+The following command can be used to query data:
+
+\begin{Command}{8cm}
+sysp -q $<$ModuleName$>$
+\end{Command}
+
+\subsection{Sysp Scan}
+The following command can be used to start a hardware scan:
+
+\begin{Command}{8cm}
+sysp -s $<$ModuleName$>$ [ -o options ] 
+\end{Command}
+
+When scanning, it also possible, using the option \verb+-o+ , to pass on
+options for the scan. The option list always contains a colon as a separator. 
+An example of such a command could look like this:
+
+\begin{Command}{8cm}
+sysp -s server -o all:0=mga,1=ati
+\end{Command}

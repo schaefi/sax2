@@ -1,0 +1,53 @@
+\chapter{libsax - Thread safety}
+%\minitoc
+
+To be thread safe there are a view code points which needs a
+locking. The following list describes the serialized lock parts of
+the library:
+
+\begin{itemize}
+\item library included debug messages to STDERR are embedded into
+      flockfile() / funlockfile() calls
+\item library initializing calls will lock each other using flock()
+\item library exporting code which creates the apidata files
+      will apply an flock() during file creation
+\end{itemize}
+
+Refering to this the library can be used in a simultaneously
+way without crashing and without leaving the configuration in an
+inconsistent state. Of course it does not make much sense to
+simultaneously configure two different issues in such a case the
+last one will win. The following example will demonstrate a thread
+example including a simultaneously initialization.
+
+\begin{Command}{12cm}
+\begin{small}
+\begin{verbatim}
+#include <pthread.h>
+#include <sax.h>
+
+void* myFunction (void*);
+
+int main (void) {
+    pthread_t outThreadID1,outThreadID2;
+    pthread_create (&outThreadID1, 0, myFunction, 0);
+    pthread_create (&outThreadID2, 0, myFunction, 0);
+    pthread_join (outThreadID1,NULL);
+    pthread_join (outThreadID2,NULL);
+    return 0;
+}
+void* myFunction (void*) {
+    printf ("Checking cache...\n");
+    SaXInit* init = new SaXInit;
+    if (init->needInit()) {
+        printf ("Initialize cache...\n");
+        init->doInit();
+    }
+    printf ("%d : %s\n",
+        init->errorCode(),init->errorString().ascii()
+    );
+    pthread_exit (0);
+}
+\end{verbatim}
+\end{small}
+\end{Command}

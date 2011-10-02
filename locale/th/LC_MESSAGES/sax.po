@@ -1,0 +1,1898 @@
+# Thai message file for YaST2 (@memory@).
+# Copyright (C) 2008 SUSE Linux Products GmbH.
+#
+# Thanomsub Noppaburana <donga.nb@gmail.com>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: YaST (@memory@)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-01-03 17:06+0100\n"
+"PO-Revision-Date: 2008-12-10 19:09+0700\n"
+"Last-Translator: Thanomsub Noppaburana <donga.nb@gmail.com>\n"
+"Language-Team: Thai <thai-l10n@googlegroups.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 0.2\n"
+
+#. /.../
+#. Copyright (c) 2005 SuSE GmbH Nuernberg, Germany.  All rights reserved.
+#. This file contains the gettext keys used within a gettext call in the
+#. application code for the SaX2 and XFine GUI
+#.
+#. Dear Translator, translate this string as 'RTL' if your language is right-to-left
+msgid "I18N"
+msgstr "I18N"
+
+#. RTF text: Startup information for the user
+msgid "<b>SaX2 Suggestion</b><hr>The currently-started graphics system is based on a suggestion made by SaX2. If this is acceptable, click <b>OK</b>. Otherwise, change the configuration."
+msgstr "<b>การเสนอแนะของ SaX2</b><hr>ระบบกราฟิกที่ถูกเริ่มการทำงานอยู่ในปัจจุบัน มีพื้นฐานบนค่าที่ได้รับการเสนอแนะจาก SaX2 หากต้องการยอมรับค่าที่ได้รับนี้ ให้คลิกที่ <b>ตกลง</b> หากไม่ยอมรับ ให้ทำการแก้ไขการปรับแต่งค่า"
+
+#. RTF text: 3D acceleration not supported with this card
+msgid "<b>3D acceleration not supported</b><hr>SaX2 cannot offer activation of the 3D subsystem because your graphics card/driver doesn't support 3D"
+msgstr "<b>การเร่งความเร็วการแสดงผลแบบ 3 มิติยังไม่ถูกรองรับ</b><hr>โปรแกรม SaX2 ไม่สามารถเสนอให้เปิดการทำงานของระบบย่อยแบบ 3 มิติได้ เนื่องจากแผงวงจร/ไดรเวอร์การแสดงผลของคุณ ยังไม่มีการรองรับการแสดงผลแบบ 3 มิติ"
+
+#. RTF text: 3D acceleration not supported with Xinerama
+msgid "<b>3D acceleration not supported</b><hr>SaX2 cannot offer activation of the 3D subsystem because Xinerama based dual head mode is used. The Xorg Xinerama extension for combining graphics screens doesn't support 3D on all heads"
+msgstr "<b>การเร่งความเร็วการแสดงผลแบบ 3 มิติยังไม่ถูกรองรับ</b><hr>โปรแกรม SaX2 ไม่สามารถเสนอให้เปิดการทำงานของระบบย่อยแบบ 3 มิติได้ เนื่องจากมีการใช้งานการแสดงผลแบบ Xinerama ที่มีพื้นฐานอยู่บนการแสดงผลแบบสองจอภาพ ซึ่งส่วนขยายการทำงานการแสดงผล Xinerama ของระบบ Xorg นั้น ไม่ได้รองรับการแสดงผลแบบ 3 มิติกับทุกจอภาพ"
+
+#. Caption text for the startup information window
+msgid "Automatic Graphics System Setup"
+msgstr "ตั้งค่าระบบแสดงผลโดยอัตโนมัติ"
+
+#. Caption text for informing the user
+msgid "Information..."
+msgstr "ข้อมูล..."
+
+#. Caption text for the main window
+msgid "SaX2: X11 Configuration"
+msgstr "SaX2: ปรับตั้งค่าระบบ X11"
+
+#. Title text on the left side
+msgid "SaX Control Center"
+msgstr "ศูนย์ควบคุม SaX"
+
+#. Info message about display size changes
+#, fuzzy
+msgid "<b>Display size changed</b><hr>The display size has been adapted to the new layout."
+msgstr "<b>ขนาดของการแสดงผลมีการเปลี่ยนแปลง</b><hr>ขนาดของการแสดงผลถูกปรับเป็นขนาดใหม่แล้ว"
+
+#. Help Button text
+msgid "&Help"
+msgstr "&ช่วยเหลือ"
+
+#. Ok Button text
+msgid "O&K"
+msgstr "&ตกลง"
+
+#. Yes Button text
+msgid "&Yes"
+msgstr "ใ&ช่"
+
+#. No Button text
+msgid "&No"
+msgstr "ไ&ม่ใช่"
+
+#. Cancel Button text
+#. Maximum length: 40  characters
+msgid "&Cancel"
+msgstr "&ยกเลิก"
+
+#. RTF text: exit SaX message
+msgid "<b>Exit SaX2</b><hr>Exit SaX2 now?"
+msgstr "<b>ออกจาก SaX2</b><hr>จะออกจาก SaX2 เดี๋ยวนี้หรือไม่ ?"
+
+#. Message box default caption text
+msgid "Message"
+msgstr "ข้อความ"
+
+#. Change configuration Button text
+msgid "C&hange Configuration"
+msgstr "แ&ก้ไขการปรับแต่งค่า"
+
+#. Short description of the Monitor module
+#. Monitor name label
+msgid "Monitor"
+msgstr "จอภาพ"
+
+#. title of module dialog
+msgid "Card and Monitor Properties"
+msgstr "คุณสมบัติแผงวงจรและจอภาพ"
+
+#. Short description of the Mouse module
+#. Simple mouse text for the mouse tab
+msgid "Mouse"
+msgstr "เมาส์"
+
+#. title of module dialog
+msgid "Mouse Properties"
+msgstr "คุณสมบัติของเมาส์"
+
+#. Short description of the Keyboard module
+#. Keyboard name label
+msgid "Keyboard"
+msgstr "แป้นพิมพ์"
+
+#. title of module dialog
+msgid "Keyboard Properties"
+msgstr "คุณสมบัติแป้นพิมพ์"
+
+#. Short description of the Tablet module
+#. Tab title: Tablet vendor name selection
+msgid "Tablet"
+msgstr "แท็บเล็ต"
+
+#. title of module dialog
+msgid "Tablet Properties"
+msgstr "คุณสมบัติแท็บเล็ต"
+
+#. Short description of the Touchscreen module
+msgid "Touchscreen"
+msgstr "จอสัมผัส"
+
+#. title of module dialog
+msgid "Touchscreen Properties"
+msgstr "คุณสมบัติจอสัมผัส"
+
+#. Short description of the VNC module
+msgid "Remote Access"
+msgstr "เข้าใช้งานจากระยะไกล"
+
+#. title of module dialog
+msgid "Remote Access Properties"
+msgstr "คุณสมบัติเข้าใช้งานจากระยะไกล"
+
+#. Tab text for a display tab of the monitor dialog
+msgid "Display %1"
+msgstr "จอแสดงผล %1"
+
+#. Tab text for a display tab of the mouse dialog
+msgid "Mouse %1"
+msgstr "เมาส์ %1"
+
+#. Activate display checkbox, Display=screen
+msgid "Activate This Display"
+msgstr "เปิดใช้จอแสดงผลนี้"
+
+#. Activate mouse checkbox
+msgid "Activate This Pointer"
+msgstr "เปิดใช้ตัวชี้นี้"
+
+#. Graphics Card name label
+msgid "Card"
+msgstr "แผงวงจร"
+
+#. Desktop name label
+#, fuzzy
+msgid "Desktop"
+msgstr "เดสก์ทอป:"
+
+#. Pointers name label, global name for input devices
+#, fuzzy
+msgid "Pointers"
+msgstr "เครื่องพิมพ์"
+
+#. Layout name label, desktop layout
+#. Tab text for a layout tab of the keyboard dialog
+#. Label text for the primary keyboard layout
+#. Table topic text describing the keyboard layout column
+msgid "Layout"
+msgstr "ผังแป้นพิมพ์"
+
+#. Path name label, search paths
+#, fuzzy
+msgid "Path"
+msgstr "พาธของพื้นที่ส่วนตัว"
+
+#. Extensions name label, X11 extensions
+#, fuzzy
+msgid "Extensions"
+msgstr "รุ่น"
+
+#. Change data
+msgid "&Change..."
+msgstr "เ&ปลี่ยน..."
+
+#. Set options for some kind of data
+msgid "&Options..."
+msgstr "&ตัวเลือก..."
+
+#. Configure some data
+msgid "Con&figure..."
+msgstr "ป&รับแต่ง..."
+
+#. Group box title for dual head setup
+msgid "Dual Head Mode"
+msgstr "โหมดสองจอภาพ"
+
+#. Group box title for card options
+#. Group box title for mouse options
+#. Tab text for an options tab of the keyboard dialog
+#. Group box title for tablet options
+#. Group box title for the VNC options
+msgid "Options"
+msgstr "ตัวเลือก"
+
+#. CheckBox label to activate the mouse wheel
+msgid "Activate Mouse Wheel"
+msgstr "เปิดใช้งานวงล้อของเมาส์"
+
+#. CheckBox label to invert the mouse X axis
+msgid "Invert X-Axis"
+msgstr "กลับค่าทางแกน X"
+
+#. CheckBox label to invert the mouse Y axis
+msgid "Invert Y-Axis"
+msgstr "กลับค่าทางแกน Y"
+
+#. CheckBox label to activate left hand mouse
+msgid "Activate Left-Hand Button Mapping"
+msgstr "เปิดใช้ปุ่มของเมาส์สำหรับผู้ถนัดมือซ้าย"
+
+#. CheckBox label to activate the 3 Button emulation
+msgid "Activate 3-Button Emulation"
+msgstr "เปิดใช้งานการจำลองเมาส์แบบ 3 ปุ่ม"
+
+#. CheckBox label to activate the wheel emulation
+msgid "Emulate Wheel with Mouse Button"
+msgstr "จำลองวงล้อเมาส์โดยใช้ปุ่มของเมาส์แทน"
+
+#. Group box title for card rotation
+msgid "Rotate Screen"
+msgstr "หมุนจอภาพ"
+
+#. Group box title for the mouse test field
+#. Line edit label pointing to the keyboard test field
+msgid "Test"
+msgstr "ทดสอบ"
+
+#. Button text in final step message box for testing the configuration
+msgid "&Test"
+msgstr "&ทดสอบ"
+
+#. Button text in final step message box for saving the configuration
+msgid "&Save"
+msgstr "&จัดเก็บ"
+
+#. Status line of mouse test field: ready
+msgid "Test ready"
+msgstr "พร้อมทดสอบ"
+
+#. Status line of mouse test field: single button click
+msgid "Single Click: Done"
+msgstr "คลิกหนึ่งครั้ง: ทำแล้ว"
+
+#. Status line of mouse test field: double button click
+msgid "Double Click: Done"
+msgstr "ดับเบิลคลิก: ทำแล้ว"
+
+#. Status line of mouse test field: wheel moved
+msgid "Scrolling"
+msgstr "วงล้อถูกหมุน"
+
+#. Status line of mouse test field: button pressed
+msgid "Button pressed"
+msgstr "ปุ่มถูกกด"
+
+#. Status line of mouse test field: button released
+msgid "Button released"
+msgstr "ปุ่มถูกปล่อย"
+
+#. Status line of mouse test field: wheel stopped
+msgid "Stopped: Done"
+msgstr "หยุด: หยุดแล้ว"
+
+#. Group box title for properties
+msgid "Properties"
+msgstr "คุณสมบัติ"
+
+#. Activate dual head mode checkbox
+msgid "Activate Dual Head Mode"
+msgstr "เปิดใช้งานโหมดสองจอภาพ"
+
+#. Set display resolution
+msgid "Resolution"
+msgstr "ความละเอียดการแสดงผล"
+
+#. Set display colors
+msgid "Colors"
+msgstr "สี"
+
+#. Activate 3D checkboc
+msgid "Activate 3D Acceleration"
+msgstr "เปิดใช้ตัวเร่งความเร็ว 3 มิติ"
+
+#. Tab title: Setup monitor properties for card X
+msgid "Monitor for Card"
+msgstr "จอภาพสำหรับแผงวงจร"
+
+#. Tab title: Setup monitor for second channel on card X
+msgid "Second Monitor for Card"
+msgstr "จอภาพรองสำหรับแผงวงจร"
+
+#. Tab title: Setup sync frequencies
+msgid "Sync Frequencies"
+msgstr "ค่าความถี่การแสดงผล"
+
+#. Tab title: Setup display size
+msgid "Display Size"
+msgstr "ขนาดการแสดงผล"
+
+#. Tab title: Setup the monitor arrangement
+#. Title for the multihead arrangement
+msgid "Arrangement"
+msgstr "ทิศทางการจัดวาง"
+
+#. Information about dual head mode. %1=the dual head modus %2=the resolution
+msgid "Activated in %1 mode with %2"
+msgstr "เปิดใช้งานอยู่ในโหมด %1 ด้วย %2"
+
+#. Short Information that something has been activated
+msgid "Activated in driver default mode"
+msgstr "เปิดใช้งานอยู่ในโหมดปริยายของไดรเวอร์"
+
+#. rwalter
+#. Monitor Model is unknown and should be changed
+#. rwalter
+#. Mouse Model is unknown and should be changed
+msgid "Unconfigured"
+msgstr "ยังไม่ได้ตั้งค่า"
+
+#. Message appears when user is trying to deactivate all displays
+msgid "<b>Cannot Deactivate All Displays</b><hr><nobr>At least one display must be active.</nobr>"
+msgstr "<b>ไม่สามารถปิดการทำงานจอแสดงผลทั้งหมดได้</b><hr><nobr>จะต้องมีจอแสดงผลอย่างน้อยหนึ่งจอที่ทำงานอยู่</nobr>"
+
+#. Info label for dual head checkbox
+msgid "No configuration available"
+msgstr "ไม่มีการปรับแต่งค่าอยู่"
+
+#. Radiobutton for traditional multihead mode
+msgid ""
+"Traditional Multihead:\n"
+"Each screen is an independent display"
+msgstr ""
+"แสดงหลายจอภาพโหมดดั้งเดิม:\n"
+" แต่ละจอภาพจะแสดงผลเป็นอิสระต่อกัน"
+
+#. Radiobutton for cloned multihead mode
+msgid ""
+"Cloned Multihead:\n"
+"Each display is a clone of the primary display"
+msgstr ""
+"แสดงหลายจอภาพโหมดโคลน:\n"
+" แต่ละจอภาพจะแสดงผลโดยโคลนจากจอแสดงผลหลัก"
+
+#. Radiobutton for xinerama multihead mode
+msgid ""
+"Xinerama Multihead:\n"
+"Build one big display out of all screens"
+msgstr ""
+"แสดงหลายจอภาพโหมดรวมเป็นจอเดียว (Xinerama):\n"
+" ผนวกจอทั้งหมดรวมเป็นจอภาพใหญ่ ๆ จอเดียว"
+
+#. Title for multihead modi
+msgid "Multihead Mode"
+msgstr "โหมดหลายจอภาพ"
+
+#. Monitor X - connected to - CardY
+msgid "Connected To"
+msgstr "เชื่อมต่ออยู่กับ"
+
+#. Tooltip text if monitor is unknown
+msgid "Unknown Monitor:"
+msgstr "จอภาพที่ไม่รู้จัก:"
+
+#. Tooltip text for primary monitor
+msgid "Primary Monitor:"
+msgstr "จอภาพหลัก:"
+
+#. Windowanager title for the monitor model setup
+#. Windowanager title for the second monitor model setup
+msgid "Monitor Settings"
+msgstr "ตั้งค่าจอภาพ"
+
+#. Windowanager title for the mouse mode setup
+msgid "Mouse Settings"
+msgstr "ตั้งค่าเมาส์"
+
+#. Windowanager title for the card options dialog
+msgid "Graphics Card Settings"
+msgstr "ตั้งค่าแผงวงจรแสดงผล"
+
+#. Windowanager title for the dual head setup
+msgid "Dual Head Settings"
+msgstr "ตังค่าการแสดงผลสองจอภาพ"
+
+#. Radiobutton don't rotate
+msgid "Not Rotated"
+msgstr "ไม่มีการหมุน"
+
+#. Radiobutton rotate to the left side
+msgid "To the Left"
+msgstr "หมุนไปทางซ้าย"
+
+#. Radiobutton rotate to the right side
+msgid "To the Right"
+msgstr "หมุนไปทางขวา"
+
+#. Popup message to inform the user about fbdev restrictions
+#, fuzzy
+msgid "<b>Invalid Color/Resolution combination:</b><hr><nobr>The selected resolution and/or color settings</nobr> are not supported by the graphics cards framebuffer."
+msgstr ""
+"\n"
+"เฟรมบัฟเฟอร์ของการ์ดแสดงผลนี้ไม่สามารถรองรับความละเอียด และ/หรือ การตั้งค่าสีที่เลือกไว้\n"
+
+#. Popup message to ask the user for an option value
+msgid "<b>Option Needs a Value</b><hr><nobr>Set up a value for option %1.</nobr>"
+msgstr "<b>ตัวเลือกต้องการค่า</b><hr><nobr>ตั้งค่าค่าสำหรับตัวเลือก %1</nobr>"
+
+#. Group box title for the monitor vendor and name selection
+msgid "Monitor: Vendor and Name Selection"
+msgstr "จอภาพ: เลือกผู้ผลิตและชื่อของจอภาพ"
+
+#. Group box title for the mouse vendor and name selection
+msgid "Mouse: Vendor and Name Selection"
+msgstr "เมาส์: เลือกผู้ผลิตและชื่อของเมาส์"
+
+#. Group box title for the manual sync frequency set up
+msgid "Manual Sync Frequency Setup"
+msgstr "ตั้งค่าค่าความถี่การแสดงผลด้วยตนเอง"
+
+#. Group box title for the aspect/ratio selection
+msgid "Diagonal and Aspect Ratio"
+msgstr "เส้นทะแยงมุมและสัดส่วนจอภาพ"
+
+#. Group box title for the display size setup
+msgid "Display Size in [ mm ]"
+msgstr "ขนาดการแสดงผล [ ม.ม. ]"
+
+#. Text message telling to be carefull with the monitor sync frequencies
+msgid "<b>Note:</b> Wrong sync ranges may damage your monitor. Consult the monitor manual for the settings.<br><br>If you want your monitor not to use its maximum rating, decrease the sync ranges."
+msgstr "<b>โปรดทราบ:</b> การตั้งค่าช่วงค่าความถี่การแสดงผลที่ไม่ถูกต้อง อาจจะทำให้จอภาพของคุณได้รับความเสียหายได้ โปรดศึกษาหรือติดต่อผู้ผลิตจอภาพ เพื่อดูข้อมูลในการตั้งค่าด้วยตนเอง<br><br>หากคุณไม่อยากให้จอภาพของคุณต้องใช้ค่าช่วงความถี่สูงสุด ให้ทำการลดค่าช่วงความถี่ลงมา"
+
+#. Checkbox to activate DPMS
+msgid "Activate DPMS"
+msgstr "เปิดการใช้งาน DPMS (ประหยัดพลังงาน)"
+
+#. Button to popup the disk dialog for reading the monitor utility disk
+msgid "Utility Disk..."
+msgstr "ดิสก์อรรถประโยชน์..."
+
+#. Label text for horizontal sync frequency
+msgid "Horizontal"
+msgstr "ความถี่การแสดงผลทางแนวนอน"
+
+#. Label text for second monitor name
+msgid "Second Monitor:"
+msgstr "จอภาพรอง: "
+
+#. Label text for second monitor resolution
+msgid "Second Monitor Resolution"
+msgstr "ความละเอียดแสดงผลของจอภาพรอง"
+
+#. Label text for vertical sync frequency
+msgid "Vertical"
+msgstr "ความถี่การแสดงผลทางแนวตั้ง"
+
+#. Label text for hsync unit
+msgid "KHz"
+msgstr "กิโลเฮิรตซ์"
+
+#. Label text for vsync unit
+msgid "Hz"
+msgstr "เฮิรตซ์"
+
+#. Label text for the aspect ratio combo box
+msgid "Aspect Ratio"
+msgstr "สัดส่วนจอภาพ"
+
+#. Label text for the diagonal length combo box
+msgid "Diagonal"
+msgstr "เส้นทะแยงมุม"
+
+#. Label text for the display size X-Axis
+msgid "X Axis [mm]"
+msgstr "แกน X [ม.ม.]"
+
+#. Label text for the display size Y-Axis
+msgid "Y Axis [mm]"
+msgstr "แกน Y [ม.ม.]"
+
+#. Something is not configured
+msgid "Not configured"
+msgstr "ยังไม่มีการปรับแต่ง"
+
+#. Unit name for inches in german zoll
+msgid "inches"
+msgstr "นิ้ว"
+
+#. Message box of type Ok, telling to user to insert a CD or disk
+msgid "<b>Insert CD or Disk</b><hr>Insert the display utility CD or disk from the monitor vendor."
+msgstr "<b>ใส่แผ่นดิสก์หรือซีดี</b><hr>ใส่แผ่นดิสก์หรือซีดีโปรแกรมอรรถประโยชน์ของจอแสดงผลที่ได้มาจากผู้ผลิต"
+
+#. Message box of type Error, telling that the utility disk cannot be opened
+msgid "<b>Read Error</b><hr>Could not read from CD or disk. This may point to a damaged medium or incorrectly formatted information files."
+msgstr "<b>การอ่านผิดพลาด</b><hr>ไม่สามารถอ่านข้อมูลจากแผ่นดิสก์หรือซีดีได้ อาจจะเนื่องจากแผ่นเสียหรือมีรูปแบบแฟ้มที่ไม่ถูกต้อง"
+
+#. First gap of the ActivateInfo text: Multihead mode name
+msgid "Traditional"
+msgstr "แบบดั้งเดิม"
+
+#. First gap of the ActivateInfo text: Multihead mode name
+msgid "Clone"
+msgstr "แบบโคลน"
+
+#. First gap of the ActivateInfo text: Multihead mode name
+msgid "Xinerama"
+msgstr "แบบรวมเป็นจอเดียว (Xinerama)"
+
+#. Tab text for the mouse model dialog
+msgid "Mouse Model"
+msgstr "รุ่นของเมาส์"
+
+#. Group box title for the primary keyboard setup
+msgid "Primary Setup"
+msgstr "แป้นพิมพ์หลัก"
+
+#. Label text for the primary keyboard type
+msgid "Type"
+msgstr "ประเภท"
+
+#. Label text for the primary keyboard variant
+#. Table topic text describing the variant column
+msgid "Variant"
+msgstr "ผังย่อย"
+
+#. Group box title for the additional keyboard setup
+msgid "Additional Layouts"
+msgstr "ผังแป้นพิมพ์เพิ่มเติม"
+
+#. Table topic text describing the status column
+msgid "Status"
+msgstr "สถานะ"
+
+#. Table topic text describing the keytable column
+msgid "Keytable"
+msgstr "ตารางปุ่มพิมพ์"
+
+#. List View root item text
+#, fuzzy
+msgid "Group Shift/Lock Behavior"
+msgstr "พฤติกรรมการ"
+
+#. List View root item text
+msgid "Use Keyboard LED to Show Alternate Group"
+msgstr "ใช้ไฟ LED ของแป้นพิมพ์เพื่อแสดงถึงการใช้กลุ่มแป้นพิมพ์ตัวอื่น"
+
+#. List View root item text
+#, fuzzy
+msgid "Compose Key Position"
+msgstr "ร้องขอทำการตรวจสอบการปรับแต่งค่าใหม่"
+
+#. List View root item text
+#. XKBFile extension text
+msgid "Control Key Position"
+msgstr "ตำแหน่งของปุ่ม Control"
+
+#. List View root item text
+msgid "Third Level Chooser"
+msgstr "การเลือกระดับที่สาม"
+
+#. List View root item text
+msgid "Alt/Win Key Behavior"
+msgstr "พฤติกรรมของปุ่มพิมพ์ Alt/Win"
+
+#. List View root item text
+msgid "EuroSign Key Position"
+msgstr "พฤติกรรมของปุ่มพิมพ์ สัญลักษณ์ยูโร"
+
+#. List View root item text
+msgid "CapsLock Key Behavior"
+msgstr "พฤติกรรมของปุ่มพิมพ์ CapsLock"
+
+#. List View item text: Radiobutton no item selected
+msgid "None"
+msgstr "ไม่มี"
+
+#. XKBFile extension text
+msgid "Morocco"
+msgstr "โมร็อกโก"
+
+#. XKBFile extension text
+msgid "Braille"
+msgstr "อักษรเบรลล์"
+
+#. XKBFile extension text
+msgid "Ethiopia"
+msgstr "เอธิโอเปีย"
+
+#. XKBFile extension text
+msgid "NICOLA-F style Backspace"
+msgstr "ปุ่ม Backspace รูปแบบ NICOLA-F"
+
+#. XKBFile extension text
+msgid "Right Alt key never chooses 3rd level."
+msgstr "ไม่ใช้ปุ่มพิมพ์ Alt ในการเลือกระดับที่ 3 เลย"
+
+#. XKBFile extension text
+msgid "Left Alt key switches layout while pressed."
+msgstr "สลับผังแป้นพิมพ์ด้วยการกดปุ่มพิมพ์ Alt ด้านซ้ายในระหว่างยังกดอยู่"
+
+#. XKBFile extension text
+msgid "Space key outputs non"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Default numeric keypad keys."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Both Ctrl keys together change layout."
+msgstr "สลับผังแป้นพิมพ์ด้วยการกดปุ่มพิมพ์ Ctrl ทั้งคู่"
+
+#. XKBFile extension text
+msgid "Using space key to input non-breakable space character"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Right Shift key changes layout."
+msgstr "สลับผังแป้นพิมพ์ด้วยการกดปุ่มพิมพ์ Shift ด้านขวา"
+
+#. XKBFile extension text
+msgid "Left Win-key changes layout."
+msgstr "สลับผังแป้นพิมพ์ด้วยการกดปุ่มพิมพ์ Win ด้านซ้าย"
+
+#. XKBFile extension text
+msgid "LCtrl+LShift change layout."
+msgstr "สลับผังแป้นพิมพ์ด้วยการกดปุ่มพิมพ์ LCtrl+LShift"
+
+#. XKBFile extension text
+msgid "Left Alt key changes layout."
+msgstr "สลับผังแป้นพิมพ์ด้วยการกดปุ่มพิมพ์ Alt ด้านซ้าย"
+
+#. XKBFile extension text
+msgid "Both Win-keys switch layout while pressed."
+msgstr "สลับผังแป้นพิมพ์ด้วยการกดปุ่มพิมพ์ Win ทั้งคู่ในระหว่างยังกดอยู่"
+
+#. XKBFile extension text
+msgid "Right Ctrl key switches layout while pressed."
+msgstr "สลับผังแป้นพิมพ์ด้วยการกดปุ่มพิมพ์ Ctrl ด้านขวาในระหว่างยังกดอยู่"
+
+#. XKBFile extension text
+msgid "Space key outputs non-breakable space character"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Shift+CapsLock changes layout."
+msgstr "สลับผังแป้นพิมพ์ด้วยการกดปุ่มพิมพ์ Shift+CapsLock"
+
+#. XKBFile extension text
+msgid "R-Alt switches layout while pressed."
+msgstr "สลับผังแป้นพิมพ์ด้วยการกดปุ่มพิมพ์ Alt ด้านขวาในระหว่างยังกดอยู่"
+
+#. XKBFile extension text
+msgid "Numeric keypad layout selection"
+msgstr "การเลือกผังแป้นตัวเลข"
+
+#. XKBFile extension text
+msgid "Right Ctrl key changes layout."
+msgstr "สลับผังแป้นพิมพ์ด้วยการกดปุ่มพิมพ์ Ctrl ด้านขวา"
+
+#. XKBFile extension text
+msgid "Alt+CapsLock changes layout."
+msgstr "สลับผังแป้นพิมพ์ด้วยการกดปุ่มพิมพ์ Alt+CapsLock"
+
+#. XKBFile extension text
+msgid "Super is mapped to the Win-keys."
+msgstr "ปุ่มพิมพ์ Win ถูกกำหนดให้เป็นปุ่มพิมพ์ Super"
+
+#. XKBFile extension text
+msgid "ScrollLock LED shows alternative layout."
+msgstr "ไฟสถานะปุ่ม ScrollLock แสดงถึงการใช้งานผังแป้นพิมพ์อื่นอยู่"
+
+#. XKBFile extension text
+msgid "Both Shift keys together change layout."
+msgstr "สลับผังแป้นพิมพ์ด้วยการกดปุ่มพิมพ์ Shift ทั้งคู่"
+
+#. XKBFile extension text
+msgid "Space key outputs non-breakable space character at second level."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Right Win-key changes layout."
+msgstr "สลับผังแป้นพิมพ์ด้วยการกดปุ่มพิมพ์ Win ด้านขวา"
+
+#. XKBFile extension text
+msgid "Space key outputs non-breakable space character at third level."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Numeric keypad keys work as with Mac."
+msgstr "ปุ่มพิมพ์ของแป้นตัวเลขทำงานเหมือนเครื่องแมค"
+
+#. XKBFile extension text
+msgid "CapsLock LED shows alternative layout."
+msgstr "ไฟสถานะปุ่ม CapsLock แสดงถึงการใช้งานผังแป้นพิมพ์อื่นอยู่"
+
+#. XKBFile extension text
+msgid "NumLock LED shows alternative layout."
+msgstr "ไฟสถานะปุ่ม NumLock แสดงถึงการใช้งานผังแป้นพิมพ์อื่นอยู่"
+
+#. XKBFile extension text
+msgid "Left Shift key changes layout."
+msgstr "สลับผังแป้นพิมพ์ด้วยการกดปุ่มพิมพ์ Shift ด้านซ้าย"
+
+#. XKBFile extension text
+msgid "Left Win-key switches layout while pressed."
+msgstr "สลับผังแป้นพิมพ์ด้วยการกดปุ่มพิมพ์ Win ด้านซ้ายในระหว่างยังกดอยู่"
+
+#. XKBFile extension text
+msgid "Space key outputs non-breakable space character at fourth level."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Both Alt keys together change layout."
+msgstr "สลับผังแป้นพิมพ์ด้วยการกดปุ่มพิมพ์ Alt ทั้งคู่"
+
+#. XKBFile extension text
+msgid "CapsLock key changes layout."
+msgstr "สลับผังแป้นพิมพ์ด้วยการกดปุ่มพิมพ์ CapsLock"
+
+#. XKBFile extension text
+msgid "Control is mapped to the Win-keys (and the usual Ctrl keys)."
+msgstr "ปุ่มพิมพ์ Control ถูกตั้งให้ใช้เป็นปุ่ม Win (และใช้เป็นปุ่มพิมพ์ Ctrl ตามปกติ)"
+
+#. XKBFile extension text
+msgid "Right Alt key changes layout."
+msgstr "สลับผังแป้นพิมพ์ด้วยการกดปุ่มพิมพ์ Alt ด้านขวา"
+
+#. XKBFile extension text
+msgid "Shift with numeric keypad keys works as in MS Windows."
+msgstr "การกดปุ่มพิมพ์ Shift ร่วมกับปุ่มตัวเลขในแป้นตัวเลข ทำงานเช่นเดียวกับระบบ MS Windows"
+
+#. XKBFile extension text
+msgid "Alt and Meta are on the Alt keys."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Alt+Shift change layout."
+msgstr "สลับผังแป้นพิมพ์ด้วยการกดปุ่มพิมพ์ Alt+Shift"
+
+#. XKBFile extension text
+msgid "Ctrl+Shift change layout."
+msgstr "สลับผังแป้นพิมพ์ด้วยการกดปุ่มพิมพ์ Ctrl+Shift"
+
+#. XKBFile extension text
+msgid "Space key outputs usual space at any level."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Japanese keyboard options"
+msgstr "ตัวเลือกของแป้นพิมพ์ภาษาญี่ปุ่น"
+
+#. XKBFile extension text
+msgid "Use keyboard LED to show alternative layout."
+msgstr "ใช้ไฟ LED ของแป้นพิมพ์เพื่อแสดงถึงการใช้ผังแป้นพิมพ์ตัวอื่น"
+
+#. XKBFile extension text
+msgid "Left Ctrl key changes layout."
+msgstr "สลับผังแป้นพิมพ์ด้วยการกดปุ่มพิมพ์ Ctrl ด้านซ้าย"
+
+#. XKBFile extension text
+msgid "Menu key changes layout."
+msgstr "สลับผังแป้นพิมพ์ด้วยการกดปุ่มพิมพ์ เมนู"
+
+#. XKBFile extension text
+msgid "Alt+Ctrl change layout."
+msgstr "สลับผังแป้นพิมพ์ด้วยการกดปุ่มพิมพ์ Alt+Ctrl"
+
+#. XKBFile extension text
+msgid "Right Win-key switches layout while pressed."
+msgstr "สลับผังแป้นพิมพ์ด้วยการกดปุ่มพิมพ์ Win ด้านขวาในระหว่างยังกดอยู่"
+
+#. XKBFile extension text
+msgid "Layout switching"
+msgstr "การสลับผังแป้นพิมพ์"
+
+#. XKBFile extension text
+msgid "Left Alt key switches group while pressed."
+msgstr "เปลี่ยนกลุ่มด้วยปุ่มพิมพ์ Alt ด้านซ้ายในระหว่างยังกดอยู่"
+
+#. XKBFile extension text
+msgid "Both Ctrl keys together change group."
+msgstr "เปลี่ยนกลุ่มด้วยปุ่มพิมพ์ Ctrl ทั้งคู่"
+
+#. XKBFile extension text
+msgid "Right Shift key changes group."
+msgstr "เปลี่ยนกลุ่มด้วยปุ่มพิมพ์ Shift ด้านขวา"
+
+#. XKBFile extension text
+msgid "Left Win key changes group."
+msgstr "เปลี่ยนกลุ่มด้วยปุ่มพิมพ์ Win ด้านซ้าย"
+
+#. XKBFile extension text
+msgid "Left Alt key changes group."
+msgstr "เปลี่ยนกลุ่มด้วยปุ่มพิมพ์ Alt ด้านซ้าย"
+
+#. XKBFile extension text
+msgid "Both Win keys switch group while pressed."
+msgstr "เปลี่ยนกลุ่มด้วยปุ่มพิมพ์ Win ทั้งคู่ในระหว่างยังกดอยู่"
+
+#. XKBFile extension text
+msgid "Right Ctrl key switches group while pressed."
+msgstr "เปลี่ยนกลุ่มด้วยปุ่มพิมพ์ Ctrl ด้านขวาในระหว่างยังกดอยู่"
+
+#. XKBFile extension text
+msgid "Left Alt is swapped with left Win-key."
+msgstr "ปุ่มพิมพ์ Alt ด้านซ้ายถูกสลับกับปุ่มพิมพ์ Win ด้านซ้าย"
+
+#. XKBFile extension text
+msgid "Default numpad keys."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Adding the nobreakspace keysym to space key"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Use keypad with unicode additions (arrows and math operators)"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Force standard legacy keypad"
+msgstr ""
+
+#. XKBFile extension text
+msgid "CapsLock uses internal capitalization. Shift doesn't affect CapsLock."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Keypad layout selection"
+msgstr "การเลือกผังแป้นตัวเลข"
+
+#. XKBFile extension text
+msgid "Alt+CapsLock changes group."
+msgstr "เปลี่ยนกลุ่มด้วยปุ่มพิมพ์ Alt+CapsLock"
+
+#. XKBFile extension text
+msgid "Space key output nobreakspace at second level."
+msgstr ""
+
+#. XKBFile extension text
+msgid "CapsLock acts as Shift with locking. Shift doesn't affect CapsLock."
+msgstr ""
+
+#. XKBFile extension text
+msgid "CapsLock uses internal capitalization. Shift \"pauses\" CapsLock."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Space key output nobreakspace at third level."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Swap keycodes of two keys when Mac keyboards are misdetected by kernel."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Numpad keys work as with Mac."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Kana Lock key is locking"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Space key output nobreakspace at fourth level."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Left Win-key is Compose."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Press Right Alt key to choose 3rd level, Shift+Right Alt key is Multi_Key."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Space key output space at any level."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Japanese Keyboard Options"
+msgstr "ตัวเลือกของแป้นพิมพ์ภาษาญี่ปุ่น"
+
+#. XKBFile extension text
+msgid "CapsLock acts as Shift with locking. Shift \"pauses\" CapsLock."
+msgstr ""
+
+#. XKBFile extension text
+msgid "CapsLock uses internal capitalization. Shift doesn't cancel CapsLock."
+msgstr ""
+
+#. XKBFile extension text
+msgid "CapsLock just locks the Shift modifier."
+msgstr ""
+
+#. XKBFile extension text
+msgid "CapsLock toggles normal capitalization of alphabetic characters."
+msgstr ""
+
+#. XKBFile extension text
+msgid "CapsLock toggles Shift so all keys are affected."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Right Win-key is Compose."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Shift+CapsLock changes group."
+msgstr ""
+
+#. XKBFile extension text
+msgid "R-Alt switches group while pressed."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Right Control key works as Right Alt."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Control key at bottom left"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Press any of Win-keys to choose 3rd level."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Press Right Alt key to choose 3rd level."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Right Ctrl key changes group."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Right Alt is Compose."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Right Ctrl is Compose."
+msgstr ""
+
+#. XKBFile extension text
+msgid "ScrollLock LED shows alternative group."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Control key at left of -A-"
+msgstr "ปุ่มพิมพ์ Control อยู่ทางด้านซ้ายของปุ่มพิมพ์ -A-"
+
+#. XKBFile extension text
+msgid "Third level choosers"
+msgstr "การเลือกระดับที่สาม"
+
+#. XKBFile extension text
+msgid "Both Shift keys together change group."
+msgstr "เปลี่ยนกลุ่มด้วยปุ่มพิมพ์ Shift ทั้งคู่"
+
+#. XKBFile extension text
+msgid "CapsLock acts as Shift with locking. Shift doesn't cancel CapsLock."
+msgstr ""
+
+#. XKBFile extension text
+msgid "CapsLock uses internal capitalization. Shift cancels CapsLock."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Make CapsLock an additional Control."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Press Left Win-key to choose 3rd level."
+msgstr "กดปุ่ม Win ด้านซ้ายเพื่อเลือกระดับที่ 3"
+
+#. XKBFile extension text
+msgid "Right Win-key changes group."
+msgstr "เปลี่ยนกลุ่มด้วยปุ่มพิมพ์ Win ด้านขวา"
+
+#. XKBFile extension text
+msgid "Meta is mapped to the left Win-key."
+msgstr ""
+
+#. XKBFile extension text
+msgid "CapsLock LED shows alternative group."
+msgstr ""
+
+#. XKBFile extension text
+msgid "NumLock LED shows alternative group."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Left Shift key changes group."
+msgstr "เปลี่ยนกลุ่มด้วยปุ่มพิมพ์ Shift ด้านซ้าย"
+
+#. XKBFile extension text
+msgid "Left Win-key switches group while pressed."
+msgstr "เปลี่ยนกลุ่มด้วยปุ่มพิมพ์ Win ด้านซ้ายในระหว่างยังกดอยู่"
+
+#. XKBFile extension text
+msgid "Menu is Compose."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Both Alt keys together change group."
+msgstr ""
+
+#. XKBFile extension text
+msgid "CapsLock key changes group."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Swap Control and CapsLock."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Press any of Alt keys to choose 3rd level."
+msgstr "กดปุ่มพิมพ์ Alt ตัวใดตัวหนึ่งเพื่อเลือกระดับที่ 3"
+
+#. XKBFile extension text
+msgid "Right Alt key changes group."
+msgstr "เปลี่ยนกลุ่มด้วยปุ่มพิมพ์ Alt ด้านขวา"
+
+#. XKBFile extension text
+msgid "Shift with numpad keys works as in MS Windows."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Special keys (Ctrl+Alt+<key>) handled in a server."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Hyper is mapped to the Win-keys."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Alt is mapped to the right Win-key and Super to Menu."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Super is mapped to the Win-keys (default)."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Alt and Meta on the Alt keys (default)."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Add the standard behavior to Menu key."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Alt and Meta are on the Alt keys (default)."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Press Right Control to choose 3rd level."
+msgstr "กดปุ่มพิมพ์ Control ด้านขวาเพื่อเลือกระดับที่ 3"
+
+#. XKBFile extension text
+msgid "Alt+Shift changes group."
+msgstr "เปลี่ยนกลุ่มด้วยปุ่มพิมพ์ Alt+Shift"
+
+#. XKBFile extension text
+msgid "Control+Shift changes group."
+msgstr "เปลี่ยนกลุ่มด้วยปุ่มพิมพ์ Control+Shift"
+
+#. XKBFile extension text
+msgid "CapsLock acts as Shift with locking. Shift cancels CapsLock."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Use keyboard LED to show alternative group."
+msgstr "ใช้ไฟ LED ของแป้นพิมพ์เพื่อแสดงถึงการใช้กลุ่มแป้นพิมพ์ตัวอื่น"
+
+#. XKBFile extension text
+msgid "Press Right Win-key to choose 3rd level."
+msgstr "กดปุ่มพิมพ์ Win ด้านขวาเพื่อเลือกระดับที่ 3"
+
+#. XKBFile extension text
+msgid "Press Left Alt key to choose 3rd level."
+msgstr "กดปุ่มพิมพ์ Alt ด้านซ้ายเพื่อเลือกระดับที่ 3"
+
+#. XKBFile extension text
+msgid "Meta is mapped to the Win-keys."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Press Menu key to choose 3rd level."
+msgstr "กดปุ่มพิมพ์ เมนู เพื่อเลือกระดับที่ 3"
+
+#. XKBFile extension text
+msgid "Left Ctrl key changes group."
+msgstr "เปลี่ยนกลุ่มด้วยปุ่มพิมพ์ Ctrl ด้านซ้าย"
+
+#. XKBFile extension text
+msgid "Menu key changes group."
+msgstr "เปลี่ยนกลุ่มด้วยปุ่มพิมพ์ เมนู"
+
+#. XKBFile extension text
+msgid "Alt+Control changes group."
+msgstr "เปลี่ยนกลุ่มด้วยปุ่มพิมพ์ Alt+Control"
+
+#. XKBFile extension text
+msgid "Right Win-key switches group while pressed."
+msgstr "เปลี่ยนกลุ่มด้วยปุ่มพิมพ์ Win ด้านขวาในระหว่างยังกดอยู่"
+
+#. XKBFile extension text
+msgid "Serbia"
+msgstr "เซอร์เบีย"
+
+#. XKBFile extension text
+msgid "Guinea"
+msgstr "กินี"
+
+#. XKBFile extension text
+msgid "Montenegro"
+msgstr "มอนติเนโกร"
+
+#. XKBFile extension text
+msgid "China"
+msgstr "จีน"
+
+#. XKBFile extension text
+msgid "USA"
+msgstr "สหรัฐอเมริกา"
+
+#. XKBFile extension text
+msgid "Add the EuroSign to the 4 key."
+msgstr "เพิ่มเครื่องหมายยูโรให้กับปุ่มเลข 4"
+
+#. XKBFile extension text
+msgid "Four-level key with dot"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Legacy Wang 724 keypad"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Four-level key with abstract separators"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Keypad with unicode additions (arrows and math operators)"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Legacy keypad"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Shift cancels CapsLock."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Swap ESC and CapsLock."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Wang 724 keypad with unicode additions (arrows and math operators). Math operators on default level."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Four-level key with comma"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Legacy key with comma"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Keypad with unicode additions (arrows and math operators). Math operators on default level."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Legacy key with dot"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Four-level key with momayyez"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Numeric keypad delete key behaviour"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Wang 724 keypad with unicode additions (arrows and math operators)"
+msgstr ""
+
+#. Tab title: Tablet port and mode selection
+msgid "Port and Mode"
+msgstr "พอร์ตและโหมด"
+
+#. Tab title: Tablet electronic pens (pen,eraser)
+msgid "Electronic Pens"
+msgstr "ปากกาอิเล็กทรอนิกส์"
+
+#. Activate tablet checkbox
+msgid "Activate This Tablet"
+msgstr "เปิดใช้งานแท็บเล็ตนี้"
+
+#. Group box title for the tablet vendor and name selection
+msgid "Tablet: Vendor and Name Selection"
+msgstr "แท็บเล็ต: เลือกผู้ผลิตและชื่อของแท็บเล็ต"
+
+#. Group box title for tablet port combobox
+msgid "Connection Port"
+msgstr "พอร์ตเชื่อมต่อ"
+
+#. Group box title for tablet mode
+msgid "Primary Tablet Mode"
+msgstr "โหมดหลักของแท็บเล็ต"
+
+#. Group box title for pen/eraser tablet mode
+msgid "Pen or Eraser Mode"
+msgstr "โหมดปากกาหรือยางลบ"
+
+#. Radiobutton for relative tablet mode
+msgid "Relative"
+msgstr "สัมพัทธ์"
+
+#. Radiobutton for absolute tablet mode
+msgid "Absolute"
+msgstr "สัมบูรณ์"
+
+#. Combobox item text for tablet port: USB
+msgid "USB"
+msgstr "พอร์ต USB"
+
+#. Combobox item text for tablet port: ttyS0
+msgid "COM-1 [ /dev/ttyS0 ]"
+msgstr "พอร์ต COM-1 [ /dev/ttyS0 ]"
+
+#. Combobox item text for tablet port: ttyS1
+msgid "COM-2 [ /dev/ttyS1 ]"
+msgstr "พอร์ต COM-2 [ /dev/ttyS1 ]"
+
+#. Combobox item text for tablet port: ttyS2
+msgid "COM-3 [ /dev/ttyS2 ]"
+msgstr "พอร์ต COM-3 [ /dev/ttyS2 ]"
+
+#. Combobox item text for tablet port: ttyS3
+msgid "COM-4 [ /dev/ttyS3 ]"
+msgstr "พอร์ต COM-4 [ /dev/ttyS3 ]"
+
+#. Combobox item text for tablet port: ttyS4
+msgid "COM-5 [ /dev/ttyS4 ]"
+msgstr "พอร์ต COM-5 [ /dev/ttyS4 ]"
+
+#. Group box title for the tablet tools (pen/eraser)
+msgid "Tools"
+msgstr "เครื่องมือ"
+
+#. Add Pen Checkbox
+msgid "Add Pen"
+msgstr "เพิ่มปากกา"
+
+#. Add Eraser Checkbox
+msgid "Add Eraser"
+msgstr "เพิ่มยางลบ"
+
+#. Add Touch Checkbox
+msgid "Add Touch"
+msgstr ""
+
+#. Add Pad Checkbox
+msgid "Add Pad"
+msgstr ""
+
+#. Windowanager title for the tablet pen options dialog
+msgid "Pen or Eraser Settings"
+msgstr "ตั้งค่าปากกาหรือยางลบ"
+
+#. Tab title: Pen properties
+msgid "Pen Properties"
+msgstr "คุณสมบัติปากกา"
+
+#. Tab title: Pad properties
+#, fuzzy
+msgid "Pad Properties"
+msgstr "คุณสมบัติ"
+
+#. Tab title: Eraser properties
+msgid "Eraser Properties"
+msgstr "คุณสมบัติยางลบ"
+
+#. Tab title: Touch properties
+#, fuzzy
+msgid "Touch Properties"
+msgstr "คุณสมบัติจอสัมผัส"
+
+#. Tab text for a touchscreen tab of the touchscreen dialog
+msgid "Touchscreen %1"
+msgstr "จอสัมผัส %1"
+
+#. Activate/Assign touchscreen checkbox
+msgid "Assign a Touchscreen to Display Number %1"
+msgstr "กำหนดจอสัมผัสให้ใช้กับจอภาพหมายเลข %1"
+
+#. Group box title for the touchscreen vendor and name selection
+msgid "Touchscreen: Vendor and Name Selection"
+msgstr "จอสัมผัส: เลือกผู้ผลิตและชื่อของจอสัมผัส"
+
+#. Finish configuration message box
+msgid "<b>Final Steps</b><hr>The last step is saving your new configuration. It is recommended to test the new configuration before saving it. If the test server shows a corrupted desktop, press <b>[ Ctrl+Alt+Backspace ]</b> and <b>[ Ctrl+Alt+Backspace ]</b> shortly after a loud warning (beep) to kill the server."
+msgstr "<b>ขั้นตอนสุดท้าย</b><hr>ขั้นตอนสุดท้ายนี้ จะทำการจัดเก็บค่าปรับแต่งใหม่ของคุณไว้ เราขอแนะนำให้คุณทำการทดสอบการปรับแต่งค่าของคุณก่อนจะทำการจัดเก็บค่า หากการทดสอบแสดงถึงหน้าจอที่ผิดพลาด ให้กดปุ่มพิมพ์ <b>[ Ctrl+Alt+Backspace ]</b> และ <b>[ Ctrl+Alt+Backspace ]</b> สั้น ๆ หลังจากนั้นจะได้ยินออดเตือน (เสียงบี๊บ) เพื่อบังคับให้ยุติการทำงานของเซิร์ฟเวอร์"
+
+#. Finish configuration message box (without test)
+msgid "<b>Saving the configuration</b><hr>Click on Save to store the configuration. Your changes will become effective on next X-Server restart."
+msgstr ""
+
+#. Tab title: VNC Server configuration
+msgid "X Server Remote Control"
+msgstr "การควบคุมระบบ X จากทางไกล"
+
+#. Activate VNC server checkbox
+msgid "Allow access to display and keyboard/mouse of your X Server"
+msgstr "อนุญาตให้เข้าใช้การแสดงผลและใช้แป้นพิมพ์/เมาส์ของเซิร์ฟเวอร์ X ของคุณ"
+
+#. Activate VNC password protection checkbox
+msgid "Activate Password Protection"
+msgstr "เปิดใช้การป้องกันด้วยรหัสผ่าน"
+
+#. LineEdit label: enter password
+msgid "Password"
+msgstr "รหัสผ่าน"
+
+#. LineEdit contents: enter new password
+msgid "<Enter new password>"
+msgstr "<ป้อนรหัสผ่านใหม่>"
+
+#. LineEdit contents: change password
+msgid "<Change password>"
+msgstr "<เปลี่ยนรหัสผ่าน>"
+
+#. LineEdit contents: verify password
+msgid "<Verify password>"
+msgstr "<ยืนยันรหัสผ่าน>"
+
+#. Activate HTTP access checkbox
+msgid "Activate HTTP Access"
+msgstr "เปิดใช้งานการเข้าใช้ผ่านบริการ HTTP"
+
+#. Activate multiple VNC connection checkbox
+msgid "Allow Multiple Connections"
+msgstr "อนุญาตให้ทำการเชื่อมต่อได้หลายการเชื่อมต่อ"
+
+#. SpinBox label to setup the HTTP port number
+msgid "HTTP Port"
+msgstr "พอร์ตของ HTTP"
+
+#. VNC message box appearing if password strings doesn't match
+msgid "<b>Remote Access Password Mismatch</b><hr>The first and the second version of the password do not match."
+msgstr "<b>รหัสผ่านการเข้าใช้งานทางไกลไม่ตรงกัน</b><hr>ค่ารหัสผ่านและรหัสผ่านยืนยันไม่ตรงกัน"
+
+#. VNC message box appearing if password is too short
+msgid "<b>Remote Access Password Fault</b><hr>The password field has been left empty or the password is too short. Enter a password with at least six characters."
+msgstr "<b>รหัสผ่านการเข้าใช้งานทางไกลผิดพลาด</b><hr>ช่องรหัสผ่านถูกปล่อยว่างเอาไว้ หรือป้อนรหัสผ่านสั้นเกินไป โปรดป้อนรหัสผ่านใหม่โดยมีความยาวอย่างน้อยหกตัวอักษร"
+
+#. VNC message box appearing if password is too long
+msgid "<b>Remote Access Password Fault</b><hr>The password is too long. Enter a password with a maximum of eight characters."
+msgstr "<b>รหัสผ่านการเข้าใช้งานทางไกลผิดพลาด</b><hr>รหัสผ่านมีความยาวมากเกินไป โปรดป้อนรหัสผ่านใหม่โดยมีความยาวไม่เกินแปดตัวอักษร"
+
+#. Install missing packages box
+msgid "<b>Software Installation:</b><hr>Some packages are missing. Install the missing packages now?"
+msgstr "<b>การติดตั้งซอฟต์แวร์:</b><hr>ไม่พบแพกเกจที่ต้องการบางแพกเกจ ต้องการติดตั้งพวกมันเดี๋ยวนี้หรือไม่ ?"
+
+#. Caption text for the missing package info window
+msgid "Package Installation"
+msgstr "การติดตั้งแพกเกจ"
+
+#. Progress bar title text
+msgid "Importing module"
+msgstr "นำเข้ามอดูล"
+
+#. Progress window caption text
+msgid "SaX2: Importing data..."
+msgstr "SaX2: นำเข้าข้อมูล..."
+
+#. Progress window label text
+msgid "Initialize cache..."
+msgstr "เตรียมการใช้งานแคช..."
+
+#. Message box text: configuration cannot be saved
+msgid "<b>Saving Configuration Failed</b><hr>The following report has been created:"
+msgstr "<b>การจัดเก็บค่าปรับแต่งล้มเหลว</b><hr>รายงานต่อไปนี้ได้ถูกสร้างขึ้น:"
+
+#. Message box test: configuration has been saved
+msgid "<b>Configuration Saved</b><hr>Your modifications will take effect the next time the graphics system is restarted. Exit SaX2 now?"
+msgstr "<b>จัดเก็บค่าปรับแต่งแล้ว</b><hr>การแก้ไขของคุณจะมีผลในการเริ่มการทำงานระบบกราฟิกในครั้งต่อไป ต้องการจะออกจาก SaX2 ในตอนนี้หรือไม่ ?"
+
+#. Message box text: testing the configuration has failed
+msgid "<b>Testing Configuration Failed</b><hr>For further information, refer to the file <tt>/var/log/Xorg.99.log</tt>. The following report has been created from the calling instance:"
+msgstr "<b>การทดสอบค่าปรับแต่งล้มเหลว</b><hr>หากต้องการดูรายละเอียดเพิ่มเติม ให้ดูได้ที่แฟ้ม <tt>/var/log/Xorg.99.log</tt> รายงานต่อไปนี้ถูกสร้างขึ้นจากการเรียกทำงาน:"
+
+#. Message box text: if VNC has been enabled the firewall should be checked
+msgid "<b>Remote Access configuration information</b><hr>The Remote Access service requires that the TCP port 5900 and an HTTP port (5800 by default) be open in the firewall. You can configure this with YaST."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Miscellaneous compatibility options"
+msgstr "ตัวเลือกเบ็ดเตล็ดที่เข้ากันได้"
+
+#. XKBFile extension text
+msgid "Add the EuroSign to the 5 key."
+msgstr "เพิ่มเครื่องหมายยูโรให้กับปุ่มเลข 5"
+
+#. XKBFile extension text
+msgid "CapsLock key behavior"
+msgstr "พฤติกรรมของปุ่มพิมพ์ CapsLock"
+
+#. XKBFile extension text
+msgid "Alt/Win key behavior"
+msgstr "พฤติกรรมของปุ่มพิมพ์ Alt/Win"
+
+#. XKBFile extension text
+msgid "Adding the EuroSign to certain keys"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Caps Lock is Compose."
+msgstr "ปุ่มพิมพ์ Caps Lock ถูกเปิดใช้งาน"
+
+#. XKBFile extension text
+msgid "Right Ctrl key works as Right Alt."
+msgstr "ปุ่มพิมพ์ Ctrl ทางด้านขวาทำงานเหมือนกับปุ่มพิมพ์ Alt ทางด้านขวา"
+
+#. XKBFile extension text
+msgid "Ctrl key at bottom left"
+msgstr "ปุ่มพิมพ์ Ctrl ทางด้านล่างซ้าย"
+
+#. XKBFile extension text
+msgid "Ctrl key at left of 'A'"
+msgstr "ปุ่มพิมพ์ Ctrl ทางด้านซ้ายของปุ่มพิมพ์ 'A'"
+
+#. XKBFile extension text
+msgid "Make CapsLock an additional Ctrl."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Swap Ctrl and CapsLock."
+msgstr "สลับปุ่มพิมพ์ระหว่างปุ่มพิมพ์ Ctrl กับ CapsLock"
+
+#. XKBFile extension text
+msgid "Ctrl key position"
+msgstr "ตำแหน่งของปุ่มพิมพ์ Ctrl"
+
+#. XKBFile extension text
+msgid "Special keys (Ctrl+Alt+&lt;key&gt;) handled in a server."
+msgstr "ปุ่มพิมพ์พิเศษ (Ctrl+Alt+&lt;ปุ่มพิมพ์&gt;) ถูกจัดการในบริการ"
+
+#. XKBFile extension text
+msgid "Press Right Ctrl to choose 3rd level."
+msgstr "กดปุ่มพิมพ์ Ctrl ทางด้านขวาเพื่อเลือกระดับที่ 3"
+
+#. XKBFile extension text
+msgid "Ctrl+Shift changes group."
+msgstr "เปลี่ยนกลุ่มด้วยปุ่มพิมพ์ Ctrl+Shift"
+
+#. XKBFile extension text
+msgid "Add the EuroSign to the E key."
+msgstr "เพิ่มเครื่องหมายยูโรให้กับปุ่ม E"
+
+#. XKBFile extension text
+msgid "Add the EuroSign to the 2 key."
+msgstr "เพิ่มเครื่องหมายยูโรให้กับปุ่มเลข 2"
+
+#. XKBFile extension text
+msgid "key Compose key position"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Alt+Ctrl changes group."
+msgstr "เปลี่ยนกลุ่มด้วยปุ่มพิมพ์ Alt+Ctrl"
+
+#. XKBFile extension text
+msgid "Group Shift/Lock behavior"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Arabic"
+msgstr "อารบิก"
+
+#. XKBFile extension text
+msgid "Nepal"
+msgstr "เนปาล"
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Congo, Democratic Republic of the"
+msgstr "สาธารณรัฐประชาธิปไตยประชาชนลาว"
+
+#. XKBFile extension text
+msgid "Korea, Republic of"
+msgstr "เกาหลี"
+
+#. XKBFile extension text
+msgid "Iraq"
+msgstr "อิรัก"
+
+#. XKBFile extension text
+msgid "Nigeria"
+msgstr "ไนจีเรีย"
+
+#. XKBFile extension text
+msgid "Japan (PC-98xx Series)"
+msgstr "ญี่ปุ่น (ในอนุกรม PC-98xx)"
+
+#. XKBFile extension text
+msgid "Estonia"
+msgstr "เอสโตเนีย"
+
+#. XKBFile extension text
+msgid "Myanmar"
+msgstr "พม่า"
+
+#. XKBFile extension text
+msgid "Norway"
+msgstr "นอร์เวย์"
+
+#. XKBFile extension text
+msgid "Germany"
+msgstr "เยอรมันนี"
+
+#. XKBFile extension text
+msgid "Mongolia"
+msgstr "มองโกเลีย"
+
+#. XKBFile extension text
+msgid "Bhutan"
+msgstr "ภูฏาน"
+
+#. XKBFile extension text
+msgid "Bangladesh"
+msgstr "บังคลาเทศ"
+
+#. XKBFile extension text
+msgid "Latin American"
+msgstr "ละตินอเมริกา"
+
+#. XKBFile extension text
+msgid "Belgium"
+msgstr "เบลเยียม"
+
+#. XKBFile extension text
+msgid "Finland"
+msgstr "ฟินแลนด์"
+
+#. XKBFile extension text
+msgid "Israel"
+msgstr "อิสราเอล"
+
+#. XKBFile extension text
+msgid "Sweden"
+msgstr "สวีเดน"
+
+#. XKBFile extension text
+msgid "Russia"
+msgstr "รัสเซีย"
+
+#. XKBFile extension text
+msgid "Portugal"
+msgstr "โปรตุเกส"
+
+#. XKBFile extension text
+msgid "Korean"
+msgstr "เกาหลี"
+
+#. XKBFile extension text
+msgid "Maori"
+msgstr "เมารี"
+
+#. XKBFile extension text
+msgid "Uzbekistan"
+msgstr "อุซเบกิสถาน"
+
+#. XKBFile extension text
+msgid "Bulgaria"
+msgstr "บัลแกเรีย"
+
+#. XKBFile extension text
+msgid "Thailand"
+msgstr "ราชอาณาจักรไทย"
+
+#. XKBFile extension text
+msgid "India"
+msgstr "อินเดีย"
+
+#. XKBFile extension text
+msgid "Bengali"
+msgstr "ภาษาเบ็งกาลี"
+
+#. XKBFile extension text
+msgid "Switzerland"
+msgstr "สวิตเซอร์แลนด์"
+
+#. XKBFile extension text
+msgid "Laos"
+msgstr "ลาว"
+
+#. XKBFile extension text
+msgid "Japan"
+msgstr "ญี่ปุ่น"
+
+#. XKBFile extension text
+msgid "Syria"
+msgstr "ซีเรีย"
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Czechia"
+msgstr "ภาษาเช็ก"
+
+#. XKBFile extension text
+msgid "Belarus"
+msgstr "เบลารุส"
+
+#. XKBFile extension text
+msgid "Tajikistan"
+msgstr "ทาจีกิสถาน"
+
+#. XKBFile extension text
+msgid "Denmark"
+msgstr "เดนมาร์ก"
+
+#. XKBFile extension text
+msgid "Slovenia"
+msgstr "สโลวีเนีย"
+
+#. XKBFile extension text
+msgid "Malta"
+msgstr "มอลตา"
+
+#. XKBFile extension text
+msgid "Azerbaijan"
+msgstr "อาเซอร์ไบจาน"
+
+#. XKBFile extension text
+msgid "Lithuania"
+msgstr "ลิทัวเนีย"
+
+#. XKBFile extension text
+msgid "Vietnam"
+msgstr "เวียดนาม"
+
+#. XKBFile extension text
+msgid "Faroe Islands"
+msgstr "หมู่เกาะแฟโร"
+
+#. XKBFile extension text
+msgid "South Africa"
+msgstr "แอฟฟริกาใต้"
+
+#. XKBFile extension text
+msgid "Farsi"
+msgstr "ฟาร์ซี"
+
+#. XKBFile extension text
+msgid "Slovakia"
+msgstr "สโลวัก"
+
+#. XKBFile extension text
+msgid "Maldives"
+msgstr "มัลดิฟ"
+
+#. XKBFile extension text
+msgid "Iceland"
+msgstr "ไอซ์แลนด์"
+
+#. XKBFile extension text
+msgid "Croatia"
+msgstr "โครเอเชีย"
+
+#. XKBFile extension text
+msgid "Latvia"
+msgstr "ลัตเวีย"
+
+#. XKBFile extension text
+msgid "Albania"
+msgstr "แอลเบเนีย"
+
+#. XKBFile extension text
+msgid "Italy"
+msgstr "อิตาลี"
+
+#. XKBFile extension text
+msgid "Greece"
+msgstr "กรีซ"
+
+#. XKBFile extension text
+msgid "United Kingdom"
+msgstr "สหราชอาณาจักร"
+
+#. XKBFile extension text
+msgid "France"
+msgstr "ฝรั่งเศส"
+
+#. XKBFile extension text
+msgid "Armenia"
+msgstr "อาร์เมเนีย"
+
+#. XKBFile extension text
+msgid "Pakistan"
+msgstr "ปากีสถาน"
+
+#. XKBFile extension text
+msgid "Poland"
+msgstr "โปแลนด์"
+
+#. XKBFile extension text
+msgid "Kyrgyzstan"
+msgstr "คีร์กีซน"
+
+#. XKBFile extension text
+msgid "Ireland"
+msgstr "ไอร์แลนด์"
+
+#. XKBFile extension text
+msgid "Hungary"
+msgstr "ฮังการี"
+
+#. XKBFile extension text
+msgid "Cambodia"
+msgstr "กัมพูชา"
+
+#. XKBFile extension text
+msgid "Spain"
+msgstr "สเปน"
+
+#. XKBFile extension text
+msgid "Ukraine"
+msgstr "ยูเครน"
+
+#. XKBFile extension text
+msgid "Romania"
+msgstr "โรมาเนีย"
+
+#. XKBFile extension text
+msgid "Kazakhstan"
+msgstr "คาซัคสถาน"
+
+#. XKBFile extension text
+msgid "Georgia"
+msgstr "จอร์เจีย"
+
+#. XKBFile extension text
+msgid "U.S. English"
+msgstr "อังกฤษ (แบบอเมริกัน)"
+
+#. XKBFile extension text
+msgid "Turkish"
+msgstr "ภาษาตุรกี"
+
+#. XKBFile extension text
+msgid "PC-98xx Series"
+msgstr "ในอนุกรม PC-98xx"
+
+#. XKBFile extension text
+msgid "Netherlands"
+msgstr "เนเธอร์แลนด์"
+
+#. XKBFile extension text
+msgid "Macedonia"
+msgstr "มาซิโดเนีย"
+
+#. XKBFile extension text
+msgid "Canada"
+msgstr "แคนาดา"
+
+#. XKBFile extension text
+msgid "Sri Lanka"
+msgstr "ศรีลังกา"
+
+#. XKBFile extension text
+msgid "Bosnia and Herzegovina"
+msgstr "บอสเนียและเฮอร์เซโกวินา"
+
+#. XKBFile extension text
+msgid "Brazil"
+msgstr "บราซิล"
+
+#. XKBFile extension text
+msgid "Ghana"
+msgstr "กานา"
+
+#. XKBFile extension text
+msgid "Andorra"
+msgstr "แอนโดรา"
+
+#. XKBFile extension text
+msgid "Afghanistan"
+msgstr "อัฟกานิสถาน"
+
+#. XKBFile extension text
+msgid "Esperanto"
+msgstr "เอสเปอร์แรนโต"
+
+#. XKBFile extension text
+msgid "Turkey"
+msgstr "ตุรกี"
+
+#. XKBFile extension text
+msgid "CapsLock key switches layout while pressed, Alt+CapsLock does the original capslock action."
+msgstr ""
+
+#. XKBFile extension text
+msgid "CapsLock switch to first layout, Shift+CapsLock switch to last layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Less-than/Greater-than is Compose."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Space key outputs non-breakable space character at fourth level, thin non-breakable space character at sixth level (via Ctrl+Shift"
+msgstr ""
+
+#. /.../
+#. Copyright (c) 2000 SuSE GmbH Nuernberg, Germany.  All rights reserved.
+#. This file contains the gettext keys used within a gettext call in the
+#. application code for XFine2
+#.
+#. Maximum length: 40  characters
+msgid "&Step size"
+msgstr "&ขนาดขั้น"
+
+#. Maximum length: 40  characters
+msgid "Small"
+msgstr "เล็ก"
+
+#. Maximum length: 40  characters
+msgid "Normal"
+msgstr "ปกติ"
+
+#. Maximum length: 40  characters
+msgid "Big"
+msgstr "ใหญ่"
+
+#. Maximum length: 40  characters
+msgid "Huge"
+msgstr "ใหญ่มาก"
+
+#. Maximum length: 40  characters
+msgid "&Next Screen"
+msgstr "จ&อภาพถัดไป"
+
+#. Maximum length: 40  characters
+msgid "S&ave"
+msgstr "จั&ดเก็บ"
+
+#. Maximum length: 40  characters
+msgid "Change &Position"
+msgstr "เปลี่ยน&ตำแหน่ง"
+
+#. Maximum length: 40  characters
+msgid "C&hange Size"
+msgstr "เปลี่ยน&ขนาด"
+
+#. Maximum length: 40  characters
+msgid "Screen"
+msgstr "จอภาพ"
+
+#. Maximum length: 60  characters
+msgid "No video mode tuning available"
+msgstr "ไม่มีส่วนปรับแต่งโหมดวิดีโอ"
+
+msgid "Display"
+msgstr "จอแสดงผล"
+
+msgid "Configuration on display"
+msgstr "การปรับแต่งค่าจอแสดงผล"
+
+msgid "Idle timer..."
+msgstr "ตัวจับเวลาไม่มีการกระทำใด ๆ"

@@ -1,0 +1,19 @@
+#!/bin/bash
+# Copyright (c) 2006 SuSE GmbH, Germany.  All rights reserved.
+#
+# Author: Marcus Schaefer <sax@suse.de>, 2006
+# check basic font path according to Xorg v6 and v7
+#
+rpm -q xorg-x11-server-sdk >/dev/null 2>&1
+if [ ! $? = 0 ];then
+	exit 0
+fi
+filelist="\
+	./api/data/StaticFontPathList \
+	./api/data/LangFirstPath \
+	./doc/appendix-api.tex ./sysp/cfg.c\
+"
+for file in $filelist;do
+	cat $file | sed -e s@usr/lib/X11@usr/share@ > $file.new
+	mv $file.new $file
+done

@@ -1,0 +1,1909 @@
+# translation of sax.po to
+# Copyright (C) 2007 Free Software Foundation, Inc.
+#
+# Benjamin Weber <b.weber@warwick.ac.uk>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: sax\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2007-07-28 23:40+0100\n"
+"Last-Translator: Benjamin Weber <b.weber@warwick.ac.uk>\n"
+"Language-Team:  <en@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#. /.../
+#. Copyright (c) 2005 SuSE GmbH Nuernberg, Germany.  All rights reserved.
+#. This file contains the gettext keys used within a gettext call in the
+#. application code for the SaX2 and XFine GUI
+#.
+#. Dear Translator, translate this string as 'RTL' if your language is right-to-left
+msgid "I18N"
+msgstr "I18N"
+
+#. RTF text: Startup information for the user
+msgid "<b>SaX2 Suggestion</b><hr>The currently-started graphics system is based on a suggestion made by SaX2. If this is acceptable, click <b>OK</b>. Otherwise, change the configuration."
+msgstr "<b>SaX2 Suggestion</b><hr>The currently-started graphics system is based on a suggestion made by SaX2. If this is acceptable, click <b>OK</b>. Otherwise, change the configuration."
+
+#. RTF text: 3D acceleration not supported with this card
+msgid "<b>3D acceleration not supported</b><hr>SaX2 cannot offer activation of the 3D subsystem because your graphics card/driver doesn't support 3D"
+msgstr "<b>3D acceleration not supported</b><hr>SaX2 cannot offer activation of the 3D subsystem because your graphics card/driver doesn't supprt 3D"
+
+#. RTF text: 3D acceleration not supported with Xinerama
+msgid "<b>3D acceleration not supported</b><hr>SaX2 cannot offer activation of the 3D subsystem because Xinerama based dual head mode is used. The Xorg Xinerama extension for combining graphics screens doesn't support 3D on all heads"
+msgstr "<b>3D acceleration not supported</b><hr>SaX2 cannot offer activation of the 3D subsystem because Xinerama based dual head mode is used. The Xorg Xinerama extension for combining graphics screens doesn't support 3D on all heads"
+
+#. Caption text for the startup information window
+msgid "Automatic Graphics System Setup"
+msgstr "Automatic Graphics System Setup"
+
+#. Caption text for informing the user
+msgid "Information..."
+msgstr "Information..."
+
+#. Caption text for the main window
+msgid "SaX2: X11 Configuration"
+msgstr "SaX2: X11 Configuration"
+
+#. Title text on the left side
+msgid "SaX Control Center"
+msgstr "SaX Control Centre"
+
+#. Info message about display size changes
+msgid "<b>Display size changed</b><hr>The display size has been adapted to the new layout."
+msgstr "<b>Display size changed</b><hr>The display size has been adapted to the new layout."
+
+#. Help Button text
+msgid "&Help"
+msgstr "&Help"
+
+#. Ok Button text
+msgid "O&K"
+msgstr "O&K"
+
+#. Yes Button text
+msgid "&Yes"
+msgstr "&Yes"
+
+#. No Button text
+msgid "&No"
+msgstr "&No"
+
+#. Cancel Button text
+#. Maximum length: 40  characters
+msgid "&Cancel"
+msgstr "&Cancel"
+
+#. RTF text: exit SaX message
+msgid "<b>Exit SaX2</b><hr>Exit SaX2 now?"
+msgstr "<b>Exit SaX2</b><hr>Exit SaX2 now?"
+
+#. Message box default caption text
+msgid "Message"
+msgstr "Message"
+
+#. Change configuration Button text
+msgid "C&hange Configuration"
+msgstr "C&hange Configuration"
+
+#. Short description of the Monitor module
+#. Monitor name label
+msgid "Monitor"
+msgstr "Monitor"
+
+#. title of module dialog
+msgid "Card and Monitor Properties"
+msgstr "Card and Monitor Properties"
+
+#. Short description of the Mouse module
+#. Simple mouse text for the mouse tab
+msgid "Mouse"
+msgstr "Mouse"
+
+#. title of module dialog
+msgid "Mouse Properties"
+msgstr "Mouse Properties"
+
+#. Short description of the Keyboard module
+#. Keyboard name label
+msgid "Keyboard"
+msgstr "Keyboard"
+
+#. title of module dialog
+msgid "Keyboard Properties"
+msgstr "Keyboard Properties"
+
+#. Short description of the Tablet module
+#. Tab title: Tablet vendor name selection
+msgid "Tablet"
+msgstr "Tablet"
+
+#. title of module dialog
+msgid "Tablet Properties"
+msgstr "Tablet Properties"
+
+#. Short description of the Touchscreen module
+msgid "Touchscreen"
+msgstr "Touchscreen"
+
+#. title of module dialog
+msgid "Touchscreen Properties"
+msgstr "Touchscreen Properties"
+
+#. Short description of the VNC module
+msgid "Remote Access"
+msgstr "Remote Access"
+
+#. title of module dialog
+msgid "Remote Access Properties"
+msgstr "Remote Access Properties"
+
+#. Tab text for a display tab of the monitor dialog
+msgid "Display %1"
+msgstr "Display %1"
+
+#. Tab text for a display tab of the mouse dialog
+#, fuzzy
+msgid "Mouse %1"
+msgstr "Mouse"
+
+#. Activate display checkbox, Display=screen
+msgid "Activate This Display"
+msgstr "Activate This Display"
+
+#. Activate mouse checkbox
+msgid "Activate This Pointer"
+msgstr "Activate This Pointer"
+
+#. Graphics Card name label
+msgid "Card"
+msgstr "Card"
+
+#. Desktop name label
+#, fuzzy
+msgid "Desktop"
+msgstr "Desktops"
+
+#. Pointers name label, global name for input devices
+#, fuzzy
+msgid "Pointers"
+msgstr "Printer"
+
+#. Layout name label, desktop layout
+#. Tab text for a layout tab of the keyboard dialog
+#. Label text for the primary keyboard layout
+#. Table topic text describing the keyboard layout column
+msgid "Layout"
+msgstr "Layout"
+
+#. Path name label, search paths
+msgid "Path"
+msgstr "Path"
+
+#. Extensions name label, X11 extensions
+msgid "Extensions"
+msgstr ""
+
+#. Change data
+msgid "&Change..."
+msgstr "&Change..."
+
+#. Set options for some kind of data
+msgid "&Options..."
+msgstr "&Options..."
+
+#. Configure some data
+msgid "Con&figure..."
+msgstr "Con&figure..."
+
+#. Group box title for dual head setup
+msgid "Dual Head Mode"
+msgstr "Dual Head Mode"
+
+#. Group box title for card options
+#. Group box title for mouse options
+#. Tab text for an options tab of the keyboard dialog
+#. Group box title for tablet options
+#. Group box title for the VNC options
+msgid "Options"
+msgstr "Options"
+
+#. CheckBox label to activate the mouse wheel
+msgid "Activate Mouse Wheel"
+msgstr "Activate Mouse Wheel"
+
+#. CheckBox label to invert the mouse X axis
+msgid "Invert X-Axis"
+msgstr "Invert X-Axis"
+
+#. CheckBox label to invert the mouse Y axis
+msgid "Invert Y-Axis"
+msgstr "Invert Y-Axis"
+
+#. CheckBox label to activate left hand mouse
+msgid "Activate Left-Hand Button Mapping"
+msgstr "Activate Left-Hand Button Mapping"
+
+#. CheckBox label to activate the 3 Button emulation
+msgid "Activate 3-Button Emulation"
+msgstr "Activate 3-Button Emulation"
+
+#. CheckBox label to activate the wheel emulation
+msgid "Emulate Wheel with Mouse Button"
+msgstr "Emulate Wheel with Mouse Button"
+
+#. Group box title for card rotation
+msgid "Rotate Screen"
+msgstr "Rotate Screen"
+
+#. Group box title for the mouse test field
+#. Line edit label pointing to the keyboard test field
+msgid "Test"
+msgstr "Test"
+
+#. Button text in final step message box for testing the configuration
+msgid "&Test"
+msgstr "&Test"
+
+#. Button text in final step message box for saving the configuration
+msgid "&Save"
+msgstr "&Save"
+
+#. Status line of mouse test field: ready
+msgid "Test ready"
+msgstr "Test ready"
+
+#. Status line of mouse test field: single button click
+msgid "Single Click: Done"
+msgstr "Single Click: Done"
+
+#. Status line of mouse test field: double button click
+msgid "Double Click: Done"
+msgstr "Double Click: Done"
+
+#. Status line of mouse test field: wheel moved
+msgid "Scrolling"
+msgstr "Scrolling"
+
+#. Status line of mouse test field: button pressed
+msgid "Button pressed"
+msgstr "Button pressed"
+
+#. Status line of mouse test field: button released
+msgid "Button released"
+msgstr "Button released"
+
+#. Status line of mouse test field: wheel stopped
+msgid "Stopped: Done"
+msgstr "Stopped: Done"
+
+#. Group box title for properties
+msgid "Properties"
+msgstr "Properties"
+
+#. Activate dual head mode checkbox
+msgid "Activate Dual Head Mode"
+msgstr "Activate Dual Head Mode"
+
+#. Set display resolution
+msgid "Resolution"
+msgstr "Resolution"
+
+#. Set display colors
+msgid "Colors"
+msgstr "Colours"
+
+#. Activate 3D checkboc
+msgid "Activate 3D Acceleration"
+msgstr "Activate 3D Acceleration"
+
+#. Tab title: Setup monitor properties for card X
+msgid "Monitor for Card"
+msgstr "Monitor for Card"
+
+#. Tab title: Setup monitor for second channel on card X
+msgid "Second Monitor for Card"
+msgstr "Second Monitor for Card"
+
+#. Tab title: Setup sync frequencies
+msgid "Sync Frequencies"
+msgstr "Sync Frequencies"
+
+#. Tab title: Setup display size
+msgid "Display Size"
+msgstr "Display Size"
+
+#. Tab title: Setup the monitor arrangement
+#. Title for the multihead arrangement
+msgid "Arrangement"
+msgstr "Arrangement"
+
+#. Information about dual head mode. %1=the dual head modus %2=the resolution
+msgid "Activated in %1 mode with %2"
+msgstr "Activated in %1 mode with %2"
+
+#. Short Information that something has been activated
+msgid "Activated in driver default mode"
+msgstr "Activated in driver default mode"
+
+#. rwalter
+#. Monitor Model is unknown and should be changed
+#. rwalter
+#. Mouse Model is unknown and should be changed
+msgid "Unconfigured"
+msgstr "Unconfigured"
+
+#. Message appears when user is trying to deactivate all displays
+msgid "<b>Cannot Deactivate All Displays</b><hr><nobr>At least one display must be active.</nobr>"
+msgstr "<b>Cannot Deactivate All Displays</b><hr><nobr>At least one display must be active.</nobr>"
+
+#. Info label for dual head checkbox
+msgid "No configuration available"
+msgstr "No configuration available"
+
+#. Radiobutton for traditional multihead mode
+msgid ""
+"Traditional Multihead:\n"
+"Each screen is an independent display"
+msgstr ""
+"Traditional Multihead:\n"
+"Each screen is an independent display"
+
+#. Radiobutton for cloned multihead mode
+msgid ""
+"Cloned Multihead:\n"
+"Each display is a clone of the primary display"
+msgstr ""
+"Cloned Multihead:\n"
+"Each display is a clone of the primary display"
+
+#. Radiobutton for xinerama multihead mode
+msgid ""
+"Xinerama Multihead:\n"
+"Build one big display out of all screens"
+msgstr ""
+"Xinerama Multihead:\n"
+"Build one big display out of all screens"
+
+#. Title for multihead modi
+msgid "Multihead Mode"
+msgstr "Multihead Mode"
+
+#. Monitor X - connected to - CardY
+msgid "Connected To"
+msgstr "Connected To"
+
+#. Tooltip text if monitor is unknown
+msgid "Unknown Monitor:"
+msgstr "Unknown Monitor:"
+
+#. Tooltip text for primary monitor
+msgid "Primary Monitor:"
+msgstr "Primary Monitor:"
+
+#. Windowanager title for the monitor model setup
+#. Windowanager title for the second monitor model setup
+msgid "Monitor Settings"
+msgstr "Monitor Settings"
+
+#. Windowanager title for the mouse mode setup
+msgid "Mouse Settings"
+msgstr "Mouse Settings"
+
+#. Windowanager title for the card options dialog
+msgid "Graphics Card Settings"
+msgstr "Graphics Card Settings"
+
+#. Windowanager title for the dual head setup
+msgid "Dual Head Settings"
+msgstr "Dual Head Settings"
+
+#. Radiobutton don't rotate
+msgid "Not Rotated"
+msgstr "Not Rotated"
+
+#. Radiobutton rotate to the left side
+msgid "To the Left"
+msgstr "To the Left"
+
+#. Radiobutton rotate to the right side
+msgid "To the Right"
+msgstr "To the Right"
+
+#. Popup message to inform the user about fbdev restrictions
+msgid "<b>Invalid Color/Resolution combination:</b><hr><nobr>The selected resolution and/or color settings</nobr> are not supported by the graphics cards framebuffer."
+msgstr "<b>Invalid Colour/Resolution combination:</b><hr><nobr>The selected resolution and/or colour settings</nobr> are not supported by the graphics cards framebuffer."
+
+#. Popup message to ask the user for an option value
+msgid "<b>Option Needs a Value</b><hr><nobr>Set up a value for option %1.</nobr>"
+msgstr "<b>Option Needs a Value</b><hr><nobr>Set up a value for option %1.</nobr>"
+
+#. Group box title for the monitor vendor and name selection
+msgid "Monitor: Vendor and Name Selection"
+msgstr "Monitor: Vendor and Name Selection"
+
+#. Group box title for the mouse vendor and name selection
+msgid "Mouse: Vendor and Name Selection"
+msgstr "Mouse: Vendor and Name Selection"
+
+#. Group box title for the manual sync frequency set up
+msgid "Manual Sync Frequency Setup"
+msgstr "Manual Sync Frequency Setup"
+
+#. Group box title for the aspect/ratio selection
+msgid "Diagonal and Aspect Ratio"
+msgstr "Diagonal and Aspect Ratio"
+
+#. Group box title for the display size setup
+msgid "Display Size in [ mm ]"
+msgstr "Display Size in [ mm ]"
+
+#. Text message telling to be carefull with the monitor sync frequencies
+msgid "<b>Note:</b> Wrong sync ranges may damage your monitor. Consult the monitor manual for the settings.<br><br>If you want your monitor not to use its maximum rating, decrease the sync ranges."
+msgstr "<b>Note:</b> Wrong sync ranges may damage your monitor. Consult the monitor manual for the settings.<br><br>If you want your monitor not to use its maximum rating, decrease the sync ranges."
+
+#. Checkbox to activate DPMS
+msgid "Activate DPMS"
+msgstr "Activate DPMS"
+
+#. Button to popup the disk dialog for reading the monitor utility disk
+msgid "Utility Disk..."
+msgstr "Utility Disk..."
+
+#. Label text for horizontal sync frequency
+msgid "Horizontal"
+msgstr "Horizontal"
+
+#. Label text for second monitor name
+msgid "Second Monitor:"
+msgstr "Second Monitor:"
+
+#. Label text for second monitor resolution
+msgid "Second Monitor Resolution"
+msgstr "Second Monitor Resolution"
+
+#. Label text for vertical sync frequency
+msgid "Vertical"
+msgstr "Vertical"
+
+#. Label text for hsync unit
+msgid "KHz"
+msgstr "KHz"
+
+#. Label text for vsync unit
+msgid "Hz"
+msgstr "Hz"
+
+#. Label text for the aspect ratio combo box
+msgid "Aspect Ratio"
+msgstr "Aspect Ratio"
+
+#. Label text for the diagonal length combo box
+msgid "Diagonal"
+msgstr "Diagonal"
+
+#. Label text for the display size X-Axis
+msgid "X Axis [mm]"
+msgstr "X Axis [mm]"
+
+#. Label text for the display size Y-Axis
+msgid "Y Axis [mm]"
+msgstr "Y Axis [mm]"
+
+#. Something is not configured
+msgid "Not configured"
+msgstr "Not configured"
+
+#. Unit name for inches in german zoll
+msgid "inches"
+msgstr "inches"
+
+#. Message box of type Ok, telling to user to insert a CD or disk
+msgid "<b>Insert CD or Disk</b><hr>Insert the display utility CD or disk from the monitor vendor."
+msgstr "<b>Insert CD or Disk</b><hr>Insert the display utility CD or disk from the monitor vendor."
+
+#. Message box of type Error, telling that the utility disk cannot be opened
+msgid "<b>Read Error</b><hr>Could not read from CD or disk. This may point to a damaged medium or incorrectly formatted information files."
+msgstr "<b>Read Error</b><hr>Could not read from CD or disk. This may point to a damaged medium or incorrectly formatted information files."
+
+#. First gap of the ActivateInfo text: Multihead mode name
+msgid "Traditional"
+msgstr "Traditional"
+
+#. First gap of the ActivateInfo text: Multihead mode name
+msgid "Clone"
+msgstr "Clone"
+
+#. First gap of the ActivateInfo text: Multihead mode name
+msgid "Xinerama"
+msgstr "Xinerama"
+
+#. Tab text for the mouse model dialog
+msgid "Mouse Model"
+msgstr "Mouse Model"
+
+#. Group box title for the primary keyboard setup
+msgid "Primary Setup"
+msgstr "Primary Setup"
+
+#. Label text for the primary keyboard type
+msgid "Type"
+msgstr "Type"
+
+#. Label text for the primary keyboard variant
+#. Table topic text describing the variant column
+msgid "Variant"
+msgstr "Variant"
+
+#. Group box title for the additional keyboard setup
+msgid "Additional Layouts"
+msgstr "Additional Layouts"
+
+#. Table topic text describing the status column
+msgid "Status"
+msgstr "Status"
+
+#. Table topic text describing the keytable column
+msgid "Keytable"
+msgstr "Keytable"
+
+#. List View root item text
+msgid "Group Shift/Lock Behavior"
+msgstr "Group Shift/Lock Behaviour"
+
+#. List View root item text
+msgid "Use Keyboard LED to Show Alternate Group"
+msgstr "Use Keyboard LED to Show Alternate Group"
+
+#. List View root item text
+msgid "Compose Key Position"
+msgstr "Compose Key Position"
+
+#. List View root item text
+#. XKBFile extension text
+msgid "Control Key Position"
+msgstr "Control Key Position"
+
+#. List View root item text
+msgid "Third Level Chooser"
+msgstr "Third Level Chooser"
+
+#. List View root item text
+msgid "Alt/Win Key Behavior"
+msgstr "Alt/Win Key Behaviour"
+
+#. List View root item text
+msgid "EuroSign Key Position"
+msgstr "EuroSign Key Position"
+
+#. List View root item text
+msgid "CapsLock Key Behavior"
+msgstr "CapsLock Key Behaviour"
+
+#. List View item text: Radiobutton no item selected
+msgid "None"
+msgstr "None"
+
+#. XKBFile extension text
+msgid "Morocco"
+msgstr "Morocco"
+
+#. XKBFile extension text
+msgid "Braille"
+msgstr "Braille"
+
+#. XKBFile extension text
+msgid "Ethiopia"
+msgstr "Ethiopia"
+
+#. XKBFile extension text
+msgid "NICOLA-F style Backspace"
+msgstr "NICOLA-F style Backspace"
+
+#. XKBFile extension text
+msgid "Right Alt key never chooses 3rd level."
+msgstr "Right Alt key never chooses 3rd level."
+
+#. XKBFile extension text
+msgid "Left Alt key switches layout while pressed."
+msgstr "Left Alt key switches layout while pressed."
+
+#. XKBFile extension text
+msgid "Space key outputs non"
+msgstr "Space key outputs non"
+
+#. XKBFile extension text
+msgid "Default numeric keypad keys."
+msgstr "Default numeric keypad keys."
+
+#. XKBFile extension text
+msgid "Both Ctrl keys together change layout."
+msgstr "Both Ctrl keys together change layout."
+
+#. XKBFile extension text
+msgid "Using space key to input non-breakable space character"
+msgstr "Using space key to input non-breakable space character"
+
+#. XKBFile extension text
+msgid "Right Shift key changes layout."
+msgstr "Right Shift key changes layout."
+
+#. XKBFile extension text
+msgid "Left Win-key changes layout."
+msgstr "Left Win-key changes layout."
+
+#. XKBFile extension text
+msgid "LCtrl+LShift change layout."
+msgstr "LCtrl+LShift change layout."
+
+#. XKBFile extension text
+msgid "Left Alt key changes layout."
+msgstr "Left Alt key changes layout."
+
+#. XKBFile extension text
+msgid "Both Win-keys switch layout while pressed."
+msgstr "Both Win-keys switch layout while pressed."
+
+#. XKBFile extension text
+msgid "Right Ctrl key switches layout while pressed."
+msgstr "Right Ctrl key switches layout while pressed."
+
+#. XKBFile extension text
+msgid "Space key outputs non-breakable space character"
+msgstr "Space key outputs non-breakable space character"
+
+#. XKBFile extension text
+msgid "Shift+CapsLock changes layout."
+msgstr "Shift+CapsLock changes layout."
+
+#. XKBFile extension text
+msgid "R-Alt switches layout while pressed."
+msgstr "R-Alt switches layout while pressed."
+
+#. XKBFile extension text
+msgid "Numeric keypad layout selection"
+msgstr "Numeric keypad layout selection"
+
+#. XKBFile extension text
+msgid "Right Ctrl key changes layout."
+msgstr "Right Ctrl key changes layout."
+
+#. XKBFile extension text
+msgid "Alt+CapsLock changes layout."
+msgstr "Alt+CapsLock changes layout."
+
+#. XKBFile extension text
+msgid "Super is mapped to the Win-keys."
+msgstr "Super is mapped to the Win-keys."
+
+#. XKBFile extension text
+msgid "ScrollLock LED shows alternative layout."
+msgstr "ScrollLock LED shows alternative layout."
+
+#. XKBFile extension text
+msgid "Both Shift keys together change layout."
+msgstr "Both Shift keys together change layout."
+
+#. XKBFile extension text
+msgid "Space key outputs non-breakable space character at second level."
+msgstr "Space key outputs non-breakable space character at second level."
+
+#. XKBFile extension text
+msgid "Right Win-key changes layout."
+msgstr "Right Win-key changes layout."
+
+#. XKBFile extension text
+msgid "Space key outputs non-breakable space character at third level."
+msgstr "Space key outputs non-breakable space character at third level."
+
+#. XKBFile extension text
+msgid "Numeric keypad keys work as with Mac."
+msgstr "Numeric keypad keys work as with Mac."
+
+#. XKBFile extension text
+msgid "CapsLock LED shows alternative layout."
+msgstr "CapsLock LED shows alternative layout."
+
+#. XKBFile extension text
+msgid "NumLock LED shows alternative layout."
+msgstr "NumLock LED shows alternative layout."
+
+#. XKBFile extension text
+msgid "Left Shift key changes layout."
+msgstr "Left Shift key changes layout."
+
+#. XKBFile extension text
+msgid "Left Win-key switches layout while pressed."
+msgstr "Left Win-key switches layout while pressed."
+
+#. XKBFile extension text
+msgid "Space key outputs non-breakable space character at fourth level."
+msgstr "Space key outputs non-breakable space character at fourth level."
+
+#. XKBFile extension text
+msgid "Both Alt keys together change layout."
+msgstr "Both Alt keys together change layout."
+
+#. XKBFile extension text
+msgid "CapsLock key changes layout."
+msgstr "CapsLock key changes layout."
+
+#. XKBFile extension text
+msgid "Control is mapped to the Win-keys (and the usual Ctrl keys)."
+msgstr "Control is mapped to the Win-keys (and the usual Ctrl keys)."
+
+#. XKBFile extension text
+msgid "Right Alt key changes layout."
+msgstr "Right Alt key changes layout."
+
+#. XKBFile extension text
+msgid "Shift with numeric keypad keys works as in MS Windows."
+msgstr "Shift with numeric keypad keys works as in MS Windows."
+
+#. XKBFile extension text
+msgid "Alt and Meta are on the Alt keys."
+msgstr "Alt and Meta are on the Alt keys."
+
+#. XKBFile extension text
+msgid "Alt+Shift change layout."
+msgstr "Alt+Shift change layout."
+
+#. XKBFile extension text
+msgid "Ctrl+Shift change layout."
+msgstr "Ctrl+Shift change layout."
+
+#. XKBFile extension text
+msgid "Space key outputs usual space at any level."
+msgstr "Space key outputs usual space at any level."
+
+#. XKBFile extension text
+msgid "Japanese keyboard options"
+msgstr "Japanese keyboard options"
+
+#. XKBFile extension text
+msgid "Use keyboard LED to show alternative layout."
+msgstr "Use keyboard LED to show alternative layout."
+
+#. XKBFile extension text
+msgid "Left Ctrl key changes layout."
+msgstr "Left Ctrl key changes layout."
+
+#. XKBFile extension text
+msgid "Menu key changes layout."
+msgstr "Menu key changes layout."
+
+#. XKBFile extension text
+msgid "Alt+Ctrl change layout."
+msgstr "Alt+Ctrl change layout."
+
+#. XKBFile extension text
+msgid "Right Win-key switches layout while pressed."
+msgstr "Right Win-key switches layout while pressed."
+
+#. XKBFile extension text
+msgid "Layout switching"
+msgstr "Layout switching"
+
+#. XKBFile extension text
+msgid "Left Alt key switches group while pressed."
+msgstr "Left Alt key switches group while pressed."
+
+#. XKBFile extension text
+msgid "Both Ctrl keys together change group."
+msgstr "Both Ctrl keys together change group."
+
+#. XKBFile extension text
+msgid "Right Shift key changes group."
+msgstr "Right Shift key changes group."
+
+#. XKBFile extension text
+msgid "Left Win key changes group."
+msgstr "Left Win key changes group."
+
+#. XKBFile extension text
+msgid "Left Alt key changes group."
+msgstr "Left Alt key changes group."
+
+#. XKBFile extension text
+msgid "Both Win keys switch group while pressed."
+msgstr "Both Win keys switch group while pressed."
+
+#. XKBFile extension text
+msgid "Right Ctrl key switches group while pressed."
+msgstr "Right Ctrl key switches group while pressed."
+
+#. XKBFile extension text
+msgid "Left Alt is swapped with left Win-key."
+msgstr "Left Alt is swapped with left Win-key."
+
+#. XKBFile extension text
+msgid "Default numpad keys."
+msgstr "Default numpad keys."
+
+#. XKBFile extension text
+msgid "Adding the nobreakspace keysym to space key"
+msgstr "Adding the nobreakspace keysym to space key"
+
+#. XKBFile extension text
+msgid "Use keypad with unicode additions (arrows and math operators)"
+msgstr "Use keypad with unicode additions (arrows and math operators)"
+
+#. XKBFile extension text
+msgid "Force standard legacy keypad"
+msgstr "Force standard legacy keypad"
+
+#. XKBFile extension text
+msgid "CapsLock uses internal capitalization. Shift doesn't affect CapsLock."
+msgstr "CapsLock uses internal capitalisation. Shift doesn't affect CapsLock."
+
+#. XKBFile extension text
+msgid "Keypad layout selection"
+msgstr "Keypad layout selection"
+
+#. XKBFile extension text
+msgid "Alt+CapsLock changes group."
+msgstr "Alt+CapsLock changes group."
+
+#. XKBFile extension text
+msgid "Space key output nobreakspace at second level."
+msgstr "Space key output nobreakspace at second level."
+
+#. XKBFile extension text
+msgid "CapsLock acts as Shift with locking. Shift doesn't affect CapsLock."
+msgstr "CapsLock acts as Shift with locking. Shift doesn't affect CapsLock."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "CapsLock uses internal capitalization. Shift \"pauses\" CapsLock."
+msgstr "CapsLock uses internal capitalisation. Shift cancels CapsLock."
+
+#. XKBFile extension text
+msgid "Space key output nobreakspace at third level."
+msgstr "Space key output nobreakspace at third level."
+
+#. XKBFile extension text
+msgid "Swap keycodes of two keys when Mac keyboards are misdetected by kernel."
+msgstr "Swap keycodes of two keys when Mac keyboards are misdetected by kernel."
+
+#. XKBFile extension text
+msgid "Numpad keys work as with Mac."
+msgstr "Numpad keys work as with Mac."
+
+#. XKBFile extension text
+msgid "Kana Lock key is locking"
+msgstr "Kana Lock key is locking"
+
+#. XKBFile extension text
+msgid "Space key output nobreakspace at fourth level."
+msgstr "Space key output nobreakspace at fourth level."
+
+#. XKBFile extension text
+msgid "Left Win-key is Compose."
+msgstr "Left Win-key is Compose."
+
+#. XKBFile extension text
+msgid "Press Right Alt key to choose 3rd level, Shift+Right Alt key is Multi_Key."
+msgstr "Press Right Alt key to choose 3rd level, Shift+Right Alt key is Multi_Key."
+
+#. XKBFile extension text
+msgid "Space key output space at any level."
+msgstr "Space key output space at any level."
+
+#. XKBFile extension text
+msgid "Japanese Keyboard Options"
+msgstr "Japanese Keyboard Options"
+
+#. XKBFile extension text
+#, fuzzy
+msgid "CapsLock acts as Shift with locking. Shift \"pauses\" CapsLock."
+msgstr "CapsLock acts as Shift with locking. Shift cancels CapsLock."
+
+#. XKBFile extension text
+msgid "CapsLock uses internal capitalization. Shift doesn't cancel CapsLock."
+msgstr "CapsLock uses internal capitalisation. Shift doesn't cancel CapsLock."
+
+#. XKBFile extension text
+msgid "CapsLock just locks the Shift modifier."
+msgstr "CapsLock just locks the Shift modifier."
+
+#. XKBFile extension text
+msgid "CapsLock toggles normal capitalization of alphabetic characters."
+msgstr "CapsLock toggles normal capitalisation of alphabetic characters."
+
+#. XKBFile extension text
+msgid "CapsLock toggles Shift so all keys are affected."
+msgstr "CapsLock toggles Shift so all keys are affected."
+
+#. XKBFile extension text
+msgid "Right Win-key is Compose."
+msgstr "Right Win-key is Compose."
+
+#. XKBFile extension text
+msgid "Shift+CapsLock changes group."
+msgstr "Shift+CapsLock changes group."
+
+#. XKBFile extension text
+msgid "R-Alt switches group while pressed."
+msgstr "R-Alt switches group while pressed."
+
+#. XKBFile extension text
+msgid "Right Control key works as Right Alt."
+msgstr "Right Control key works as Right Alt."
+
+#. XKBFile extension text
+msgid "Control key at bottom left"
+msgstr "Control key at bottom left"
+
+#. XKBFile extension text
+msgid "Press any of Win-keys to choose 3rd level."
+msgstr "Press any of Win-keys to choose 3rd level."
+
+#. XKBFile extension text
+msgid "Press Right Alt key to choose 3rd level."
+msgstr "Press Right Alt key to choose 3rd level."
+
+#. XKBFile extension text
+msgid "Right Ctrl key changes group."
+msgstr "Right Ctrl key changes group."
+
+#. XKBFile extension text
+msgid "Right Alt is Compose."
+msgstr "Right Alt is Compose."
+
+#. XKBFile extension text
+msgid "Right Ctrl is Compose."
+msgstr "Right Ctrl is Compose."
+
+#. XKBFile extension text
+msgid "ScrollLock LED shows alternative group."
+msgstr "ScrollLock LED shows alternative group."
+
+#. XKBFile extension text
+msgid "Control key at left of -A-"
+msgstr "Control key at left of -A-"
+
+#. XKBFile extension text
+msgid "Third level choosers"
+msgstr "Third level choosers"
+
+#. XKBFile extension text
+msgid "Both Shift keys together change group."
+msgstr "Both Shift keys together change group."
+
+#. XKBFile extension text
+msgid "CapsLock acts as Shift with locking. Shift doesn't cancel CapsLock."
+msgstr "CapsLock acts as Shift with locking. Shift doesn't cancel CapsLock."
+
+#. XKBFile extension text
+msgid "CapsLock uses internal capitalization. Shift cancels CapsLock."
+msgstr "CapsLock uses internal capitalisation. Shift cancels CapsLock."
+
+#. XKBFile extension text
+msgid "Make CapsLock an additional Control."
+msgstr "Make CapsLock an additional Control."
+
+#. XKBFile extension text
+msgid "Press Left Win-key to choose 3rd level."
+msgstr "Press Left Win-key to choose 3rd level."
+
+#. XKBFile extension text
+msgid "Right Win-key changes group."
+msgstr "Right Win-key changes group."
+
+#. XKBFile extension text
+msgid "Meta is mapped to the left Win-key."
+msgstr "Meta is mapped to the left Win-key."
+
+#. XKBFile extension text
+msgid "CapsLock LED shows alternative group."
+msgstr "CapsLock LED shows alternative group."
+
+#. XKBFile extension text
+msgid "NumLock LED shows alternative group."
+msgstr "NumLock LED shows alternative group."
+
+#. XKBFile extension text
+msgid "Left Shift key changes group."
+msgstr "Left Shift key changes group."
+
+#. XKBFile extension text
+msgid "Left Win-key switches group while pressed."
+msgstr "Left Win-key switches group while pressed."
+
+#. XKBFile extension text
+msgid "Menu is Compose."
+msgstr "Menu is Compose."
+
+#. XKBFile extension text
+msgid "Both Alt keys together change group."
+msgstr "Both Alt keys together change group."
+
+#. XKBFile extension text
+msgid "CapsLock key changes group."
+msgstr "CapsLock key changes group."
+
+#. XKBFile extension text
+msgid "Swap Control and CapsLock."
+msgstr "Swap Control and CapsLock."
+
+#. XKBFile extension text
+msgid "Press any of Alt keys to choose 3rd level."
+msgstr "Press any of Alt keys to choose 3rd level."
+
+#. XKBFile extension text
+msgid "Right Alt key changes group."
+msgstr "Right Alt key changes group."
+
+#. XKBFile extension text
+msgid "Shift with numpad keys works as in MS Windows."
+msgstr "Shift with numpad keys works as in MS Windows."
+
+#. XKBFile extension text
+msgid "Special keys (Ctrl+Alt+<key>) handled in a server."
+msgstr "Special keys (Ctrl+Alt+<key>) handled in a server."
+
+#. XKBFile extension text
+msgid "Hyper is mapped to the Win-keys."
+msgstr "Hyper is mapped to the Win-keys."
+
+#. XKBFile extension text
+msgid "Alt is mapped to the right Win-key and Super to Menu."
+msgstr "Alt is mapped to the right Win-key and Super to Menu."
+
+#. XKBFile extension text
+msgid "Super is mapped to the Win-keys (default)."
+msgstr "Super is mapped to the Win-keys (default)."
+
+#. XKBFile extension text
+msgid "Alt and Meta on the Alt keys (default)."
+msgstr "Alt and Meta on the Alt keys (default)."
+
+#. XKBFile extension text
+msgid "Add the standard behavior to Menu key."
+msgstr "Add the standard behaviour to Menu key."
+
+#. XKBFile extension text
+msgid "Alt and Meta are on the Alt keys (default)."
+msgstr "Alt and Meta are on the Alt keys (default)."
+
+#. XKBFile extension text
+msgid "Press Right Control to choose 3rd level."
+msgstr "Press Right Control to choose 3rd level."
+
+#. XKBFile extension text
+msgid "Alt+Shift changes group."
+msgstr "Alt+Shift changes group."
+
+#. XKBFile extension text
+msgid "Control+Shift changes group."
+msgstr "Control+Shift changes group."
+
+#. XKBFile extension text
+msgid "CapsLock acts as Shift with locking. Shift cancels CapsLock."
+msgstr "CapsLock acts as Shift with locking. Shift cancels CapsLock."
+
+#. XKBFile extension text
+msgid "Use keyboard LED to show alternative group."
+msgstr "Use keyboard LED to show alternative group."
+
+#. XKBFile extension text
+msgid "Press Right Win-key to choose 3rd level."
+msgstr "Press Right Win-key to choose 3rd level."
+
+#. XKBFile extension text
+msgid "Press Left Alt key to choose 3rd level."
+msgstr "Press Left Alt key to choose 3rd level."
+
+#. XKBFile extension text
+msgid "Meta is mapped to the Win-keys."
+msgstr "Meta is mapped to the Win-keys."
+
+#. XKBFile extension text
+msgid "Press Menu key to choose 3rd level."
+msgstr "Press Menu key to choose 3rd level."
+
+#. XKBFile extension text
+msgid "Left Ctrl key changes group."
+msgstr "Left Ctrl key changes group."
+
+#. XKBFile extension text
+msgid "Menu key changes group."
+msgstr "Menu key changes group."
+
+#. XKBFile extension text
+msgid "Alt+Control changes group."
+msgstr "Alt+Control changes group."
+
+#. XKBFile extension text
+msgid "Right Win-key switches group while pressed."
+msgstr "Right Win-key switches group while pressed."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Serbia"
+msgstr "Serbian"
+
+#. XKBFile extension text
+msgid "Guinea"
+msgstr "Guinea"
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Montenegro"
+msgstr "Serbia and Montenegro"
+
+#. XKBFile extension text
+msgid "China"
+msgstr "China"
+
+#. XKBFile extension text
+#, fuzzy
+msgid "USA"
+msgstr "USB"
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Add the EuroSign to the 4 key."
+msgstr "Add the EuroSign to the 5 key."
+
+#. XKBFile extension text
+msgid "Four-level key with dot"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Legacy Wang 724 keypad"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Four-level key with abstract separators"
+msgstr ""
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Keypad with unicode additions (arrows and math operators)"
+msgstr "Use keypad with unicode additions (arrows and math operators)"
+
+#. XKBFile extension text
+msgid "Legacy keypad"
+msgstr ""
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Shift cancels CapsLock."
+msgstr "Swap Ctrl and CapsLock."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Swap ESC and CapsLock."
+msgstr "Swap Ctrl and CapsLock."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Wang 724 keypad with unicode additions (arrows and math operators). Math operators on default level."
+msgstr "Use keypad with unicode additions (arrows and math operators)"
+
+#. XKBFile extension text
+msgid "Four-level key with comma"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Legacy key with comma"
+msgstr ""
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Keypad with unicode additions (arrows and math operators). Math operators on default level."
+msgstr "Use keypad with unicode additions (arrows and math operators)"
+
+#. XKBFile extension text
+msgid "Legacy key with dot"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Four-level key with momayyez"
+msgstr ""
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Numeric keypad delete key behaviour"
+msgstr "Numeric keypad layout selection"
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Wang 724 keypad with unicode additions (arrows and math operators)"
+msgstr "Use keypad with unicode additions (arrows and math operators)"
+
+#. Tab title: Tablet port and mode selection
+msgid "Port and Mode"
+msgstr "Port and Mode"
+
+#. Tab title: Tablet electronic pens (pen,eraser)
+msgid "Electronic Pens"
+msgstr "Electronic Pens"
+
+#. Activate tablet checkbox
+msgid "Activate This Tablet"
+msgstr "Activate This Tablet"
+
+#. Group box title for the tablet vendor and name selection
+msgid "Tablet: Vendor and Name Selection"
+msgstr "Tablet: Vendor and Name Selection"
+
+#. Group box title for tablet port combobox
+msgid "Connection Port"
+msgstr "Connection Port"
+
+#. Group box title for tablet mode
+msgid "Primary Tablet Mode"
+msgstr "Primary Tablet Mode"
+
+#. Group box title for pen/eraser tablet mode
+msgid "Pen or Eraser Mode"
+msgstr "Pen or Eraser Mode"
+
+#. Radiobutton for relative tablet mode
+msgid "Relative"
+msgstr "Relative"
+
+#. Radiobutton for absolute tablet mode
+msgid "Absolute"
+msgstr "Absolute"
+
+#. Combobox item text for tablet port: USB
+msgid "USB"
+msgstr "USB"
+
+#. Combobox item text for tablet port: ttyS0
+msgid "COM-1 [ /dev/ttyS0 ]"
+msgstr "COM-1 [ /dev/ttyS0 ]"
+
+#. Combobox item text for tablet port: ttyS1
+msgid "COM-2 [ /dev/ttyS1 ]"
+msgstr "COM-2 [ /dev/ttyS1 ]"
+
+#. Combobox item text for tablet port: ttyS2
+msgid "COM-3 [ /dev/ttyS2 ]"
+msgstr "COM-3 [ /dev/ttyS2 ]"
+
+#. Combobox item text for tablet port: ttyS3
+msgid "COM-4 [ /dev/ttyS3 ]"
+msgstr "COM-4 [ /dev/ttyS3 ]"
+
+#. Combobox item text for tablet port: ttyS4
+#, fuzzy
+msgid "COM-5 [ /dev/ttyS4 ]"
+msgstr "COM-1 [ /dev/ttyS0 ]"
+
+#. Group box title for the tablet tools (pen/eraser)
+msgid "Tools"
+msgstr "Tools"
+
+#. Add Pen Checkbox
+msgid "Add Pen"
+msgstr "Add Pen"
+
+#. Add Eraser Checkbox
+msgid "Add Eraser"
+msgstr "Add Eraser"
+
+#. Add Touch Checkbox
+msgid "Add Touch"
+msgstr ""
+
+#. Add Pad Checkbox
+msgid "Add Pad"
+msgstr "Add Pad"
+
+#. Windowanager title for the tablet pen options dialog
+msgid "Pen or Eraser Settings"
+msgstr "Pen or Eraser Settings"
+
+#. Tab title: Pen properties
+msgid "Pen Properties"
+msgstr "Pen Properties"
+
+#. Tab title: Pad properties
+msgid "Pad Properties"
+msgstr "Pad Properties"
+
+#. Tab title: Eraser properties
+msgid "Eraser Properties"
+msgstr "Eraser Properties"
+
+#. Tab title: Touch properties
+#, fuzzy
+msgid "Touch Properties"
+msgstr "Touchscreen Properties"
+
+#. Tab text for a touchscreen tab of the touchscreen dialog
+#, fuzzy
+msgid "Touchscreen %1"
+msgstr "Touchscreen"
+
+#. Activate/Assign touchscreen checkbox
+msgid "Assign a Touchscreen to Display Number %1"
+msgstr "Assign a Touchscreen to Display Number %1"
+
+#. Group box title for the touchscreen vendor and name selection
+msgid "Touchscreen: Vendor and Name Selection"
+msgstr "Touchscreen: Vendor and Name Selection"
+
+#. Finish configuration message box
+#, fuzzy
+msgid "<b>Final Steps</b><hr>The last step is saving your new configuration. It is recommended to test the new configuration before saving it. If the test server shows a corrupted desktop, press <b>[ Ctrl+Alt+Backspace ]</b> and <b>[ Ctrl+Alt+Backspace ]</b> shortly after a loud warning (beep) to kill the server."
+msgstr "<b>Final Steps</b><hr>The last step is saving your new configuration. It is recommended to test the new configuration before saving it. If the test server shows a corrupted desktop, press <b>[ Ctrl+Alt+Backspace ]</b> to kill the server."
+
+#. Finish configuration message box (without test)
+msgid "<b>Saving the configuration</b><hr>Click on Save to store the configuration. Your changes will become effective on next X-Server restart."
+msgstr ""
+
+#. Tab title: VNC Server configuration
+msgid "X Server Remote Control"
+msgstr "X Server Remote Control"
+
+#. Activate VNC server checkbox
+msgid "Allow access to display and keyboard/mouse of your X Server"
+msgstr "Allow access to display and keyboard/mouse of your X Server"
+
+#. Activate VNC password protection checkbox
+msgid "Activate Password Protection"
+msgstr "Activate Password Protection"
+
+#. LineEdit label: enter password
+msgid "Password"
+msgstr "Password"
+
+#. LineEdit contents: enter new password
+msgid "<Enter new password>"
+msgstr "<Enter new password>"
+
+#. LineEdit contents: change password
+msgid "<Change password>"
+msgstr "<Change password>"
+
+#. LineEdit contents: verify password
+msgid "<Verify password>"
+msgstr "<Verify password>"
+
+#. Activate HTTP access checkbox
+msgid "Activate HTTP Access"
+msgstr "Activate HTTP Access"
+
+#. Activate multiple VNC connection checkbox
+msgid "Allow Multiple Connections"
+msgstr "Allow Multiple Connections"
+
+#. SpinBox label to setup the HTTP port number
+msgid "HTTP Port"
+msgstr "HTTP Port"
+
+#. VNC message box appearing if password strings doesn't match
+msgid "<b>Remote Access Password Mismatch</b><hr>The first and the second version of the password do not match."
+msgstr "<b>Remote Access Password Mismatch</b><hr>The first and the second version of the password do not match."
+
+#. VNC message box appearing if password is too short
+msgid "<b>Remote Access Password Fault</b><hr>The password field has been left empty or the password is too short. Enter a password with at least six characters."
+msgstr "<b>Remote Access Password Fault</b><hr>The password field has been left empty or the password is too short. Enter a password with at least six characters."
+
+#. VNC message box appearing if password is too long
+msgid "<b>Remote Access Password Fault</b><hr>The password is too long. Enter a password with a maximum of eight characters."
+msgstr "<b>Remote Access Password Fault</b><hr>The password is too long. Enter a password with a maximum of eight characters."
+
+#. Install missing packages box
+msgid "<b>Software Installation:</b><hr>Some packages are missing. Install the missing packages now?"
+msgstr "<b>Software Installation:</b><hr>Some packages are missing. Install the missing packages now?"
+
+#. Caption text for the missing package info window
+msgid "Package Installation"
+msgstr "Package Installation"
+
+#. Progress bar title text
+msgid "Importing module"
+msgstr "Importing module"
+
+#. Progress window caption text
+msgid "SaX2: Importing data..."
+msgstr "SaX2: Importing data..."
+
+#. Progress window label text
+msgid "Initialize cache..."
+msgstr "Initialise cache..."
+
+#. Message box text: configuration cannot be saved
+msgid "<b>Saving Configuration Failed</b><hr>The following report has been created:"
+msgstr "<b>Saving Configuration Failed</b><hr>The following report has been created:"
+
+#. Message box test: configuration has been saved
+msgid "<b>Configuration Saved</b><hr>Your modifications will take effect the next time the graphics system is restarted. Exit SaX2 now?"
+msgstr "<b>Configuration Saved</b><hr>Your modifications will take effect the next time the graphics system is restarted. Exit SaX2 now?"
+
+#. Message box text: testing the configuration has failed
+msgid "<b>Testing Configuration Failed</b><hr>For further information, refer to the file <tt>/var/log/Xorg.99.log</tt>. The following report has been created from the calling instance:"
+msgstr "<b>Testing Configuration Failed</b><hr>For further information, refer to the file <tt>/var/log/Xorg.99.log</tt>. The following report has been created from the calling instance:"
+
+#. Message box text: if VNC has been enabled the firewall should be checked
+msgid "<b>Remote Access configuration information</b><hr>The Remote Access service requires that the TCP port 5900 and an HTTP port (5800 by default) be open in the firewall. You can configure this with YaST."
+msgstr "<b>Remote Access configuration information</b><hr>The Remote Access service requires that the TCP port 5900 and an HTTP port (5800 by default) be open in the firewall. You can configure this with YaST."
+
+#. XKBFile extension text
+msgid "Miscellaneous compatibility options"
+msgstr "Miscellaneous compatibility options"
+
+#. XKBFile extension text
+msgid "Add the EuroSign to the 5 key."
+msgstr "Add the EuroSign to the 5 key."
+
+#. XKBFile extension text
+msgid "CapsLock key behavior"
+msgstr "CapsLock key behaviour"
+
+#. XKBFile extension text
+msgid "Alt/Win key behavior"
+msgstr "Alt/Win key behaviour"
+
+#. XKBFile extension text
+msgid "Adding the EuroSign to certain keys"
+msgstr "Adding the EuroSign to certain keys"
+
+#. XKBFile extension text
+msgid "Caps Lock is Compose."
+msgstr "Caps Lock is Compose."
+
+#. XKBFile extension text
+msgid "Right Ctrl key works as Right Alt."
+msgstr "Right Ctrl key works as Right Alt."
+
+#. XKBFile extension text
+msgid "Ctrl key at bottom left"
+msgstr "Ctrl key at bottom left"
+
+#. XKBFile extension text
+msgid "Ctrl key at left of 'A'"
+msgstr "Ctrl key at left of 'A'"
+
+#. XKBFile extension text
+msgid "Make CapsLock an additional Ctrl."
+msgstr "Make CapsLock an additional Ctrl."
+
+#. XKBFile extension text
+msgid "Swap Ctrl and CapsLock."
+msgstr "Swap Ctrl and CapsLock."
+
+#. XKBFile extension text
+msgid "Ctrl key position"
+msgstr "Ctrl key position"
+
+#. XKBFile extension text
+msgid "Special keys (Ctrl+Alt+&lt;key&gt;) handled in a server."
+msgstr "Special keys (Ctrl+Alt+&lt;key&gt;) handled in a server."
+
+#. XKBFile extension text
+msgid "Press Right Ctrl to choose 3rd level."
+msgstr "Press Right Ctrl to choose 3rd level."
+
+#. XKBFile extension text
+msgid "Ctrl+Shift changes group."
+msgstr "Ctrl+Shift changes group."
+
+#. XKBFile extension text
+msgid "Add the EuroSign to the E key."
+msgstr "Add the EuroSign to the E key."
+
+#. XKBFile extension text
+msgid "Add the EuroSign to the 2 key."
+msgstr "Add the EuroSign to the 2 key."
+
+#. XKBFile extension text
+msgid "key Compose key position"
+msgstr "key Compose key position"
+
+#. XKBFile extension text
+msgid "Alt+Ctrl changes group."
+msgstr "Alt+Ctrl changes group."
+
+#. XKBFile extension text
+msgid "Group Shift/Lock behavior"
+msgstr "Group Shift/Lock behaviour"
+
+#. XKBFile extension text
+msgid "Arabic"
+msgstr "Arabic"
+
+#. XKBFile extension text
+msgid "Nepal"
+msgstr "Nepal"
+
+#. XKBFile extension text
+msgid "Congo, Democratic Republic of the"
+msgstr "Congo, Democratic Republic of the"
+
+#. XKBFile extension text
+msgid "Korea, Republic of"
+msgstr "Korea, Republic of"
+
+#. XKBFile extension text
+msgid "Iraq"
+msgstr "Iraq"
+
+#. XKBFile extension text
+msgid "Nigeria"
+msgstr "Nigeria"
+
+#. XKBFile extension text
+msgid "Japan (PC-98xx Series)"
+msgstr "Japan (PC-98xx Series)"
+
+#. XKBFile extension text
+msgid "Estonia"
+msgstr "Estonia"
+
+#. XKBFile extension text
+msgid "Myanmar"
+msgstr "Myanmar"
+
+#. XKBFile extension text
+msgid "Norway"
+msgstr "Norway"
+
+#. XKBFile extension text
+msgid "Germany"
+msgstr "Germany"
+
+#. XKBFile extension text
+msgid "Mongolia"
+msgstr "Mongolia"
+
+#. XKBFile extension text
+msgid "Bhutan"
+msgstr "Bhutan"
+
+#. XKBFile extension text
+msgid "Bangladesh"
+msgstr "Bangladesh"
+
+#. XKBFile extension text
+msgid "Latin American"
+msgstr "Latin American"
+
+#. XKBFile extension text
+msgid "Belgium"
+msgstr "Belgium"
+
+#. XKBFile extension text
+msgid "Finland"
+msgstr "Finland"
+
+#. XKBFile extension text
+msgid "Israel"
+msgstr "Israel"
+
+#. XKBFile extension text
+msgid "Sweden"
+msgstr "Sweden"
+
+#. XKBFile extension text
+msgid "Russia"
+msgstr "Russia"
+
+#. XKBFile extension text
+msgid "Portugal"
+msgstr "Portugal"
+
+#. XKBFile extension text
+msgid "Korean"
+msgstr "Korean"
+
+#. XKBFile extension text
+msgid "Maori"
+msgstr "Maori"
+
+#. XKBFile extension text
+msgid "Uzbekistan"
+msgstr "Uzbekistan"
+
+#. XKBFile extension text
+msgid "Bulgaria"
+msgstr "Bulgaria"
+
+#. XKBFile extension text
+msgid "Thailand"
+msgstr "Thailand"
+
+#. XKBFile extension text
+msgid "India"
+msgstr "India"
+
+#. XKBFile extension text
+msgid "Bengali"
+msgstr "Bengali"
+
+#. XKBFile extension text
+msgid "Switzerland"
+msgstr "Switzerland"
+
+#. XKBFile extension text
+msgid "Laos"
+msgstr "Laos"
+
+#. XKBFile extension text
+msgid "Japan"
+msgstr "Japan"
+
+#. XKBFile extension text
+msgid "Syria"
+msgstr "Syria"
+
+#. XKBFile extension text
+msgid "Czechia"
+msgstr "Czechia"
+
+#. XKBFile extension text
+msgid "Belarus"
+msgstr "Belarus"
+
+#. XKBFile extension text
+msgid "Tajikistan"
+msgstr "Tajikistan"
+
+#. XKBFile extension text
+msgid "Denmark"
+msgstr "Denmark"
+
+#. XKBFile extension text
+msgid "Slovenia"
+msgstr "Slovenia"
+
+#. XKBFile extension text
+msgid "Malta"
+msgstr "Malta"
+
+#. XKBFile extension text
+msgid "Azerbaijan"
+msgstr "Azerbaijan"
+
+#. XKBFile extension text
+msgid "Lithuania"
+msgstr "Lithuania"
+
+#. XKBFile extension text
+msgid "Vietnam"
+msgstr "Vietnam"
+
+#. XKBFile extension text
+msgid "Faroe Islands"
+msgstr "Faroe Islands"
+
+#. XKBFile extension text
+msgid "South Africa"
+msgstr "South Africa"
+
+#. XKBFile extension text
+msgid "Farsi"
+msgstr "Farsi"
+
+#. XKBFile extension text
+msgid "Slovakia"
+msgstr "Slovakia"
+
+#. XKBFile extension text
+msgid "Maldives"
+msgstr "Maldives"
+
+#. XKBFile extension text
+msgid "Iceland"
+msgstr "Iceland"
+
+#. XKBFile extension text
+msgid "Croatia"
+msgstr "Croatia"
+
+#. XKBFile extension text
+msgid "Latvia"
+msgstr "Latvia"
+
+#. XKBFile extension text
+msgid "Albania"
+msgstr "Albania"
+
+#. XKBFile extension text
+msgid "Italy"
+msgstr "Italy"
+
+#. XKBFile extension text
+msgid "Greece"
+msgstr "Greece"
+
+#. XKBFile extension text
+msgid "United Kingdom"
+msgstr "United Kingdom"
+
+#. XKBFile extension text
+msgid "France"
+msgstr "France"
+
+#. XKBFile extension text
+msgid "Armenia"
+msgstr "Armenia"
+
+#. XKBFile extension text
+msgid "Pakistan"
+msgstr "Pakistan"
+
+#. XKBFile extension text
+msgid "Poland"
+msgstr "Poland"
+
+#. XKBFile extension text
+msgid "Kyrgyzstan"
+msgstr "Kyrgyzstan"
+
+#. XKBFile extension text
+msgid "Ireland"
+msgstr "Ireland"
+
+#. XKBFile extension text
+msgid "Hungary"
+msgstr "Hungary"
+
+#. XKBFile extension text
+msgid "Cambodia"
+msgstr "Cambodia"
+
+#. XKBFile extension text
+msgid "Spain"
+msgstr "Spain"
+
+#. XKBFile extension text
+msgid "Ukraine"
+msgstr "Ukraine"
+
+#. XKBFile extension text
+msgid "Romania"
+msgstr "Romania"
+
+#. XKBFile extension text
+msgid "Kazakhstan"
+msgstr "Kazakhstan"
+
+#. XKBFile extension text
+msgid "Georgia"
+msgstr "Georgia"
+
+#. XKBFile extension text
+msgid "U.S. English"
+msgstr "U.S. English"
+
+#. XKBFile extension text
+msgid "Turkish"
+msgstr "Turkish"
+
+#. XKBFile extension text
+msgid "PC-98xx Series"
+msgstr "PC-98xx Series"
+
+#. XKBFile extension text
+msgid "Netherlands"
+msgstr "Netherlands"
+
+#. XKBFile extension text
+msgid "Macedonia"
+msgstr "Macedonia"
+
+#. XKBFile extension text
+msgid "Canada"
+msgstr "Canada"
+
+#. XKBFile extension text
+msgid "Sri Lanka"
+msgstr "Sri Lanka"
+
+#. XKBFile extension text
+msgid "Bosnia and Herzegovina"
+msgstr "Bosnia and Herzegovina"
+
+#. XKBFile extension text
+msgid "Brazil"
+msgstr "Brazil"
+
+#. XKBFile extension text
+msgid "Ghana"
+msgstr "Ghana"
+
+#. XKBFile extension text
+msgid "Andorra"
+msgstr "Andorra"
+
+#. XKBFile extension text
+msgid "Afghanistan"
+msgstr "Afghanistan"
+
+#. XKBFile extension text
+msgid "Esperanto"
+msgstr "Esperanto"
+
+#. XKBFile extension text
+msgid "Turkey"
+msgstr "Turkey"
+
+#. XKBFile extension text
+msgid "CapsLock key switches layout while pressed, Alt+CapsLock does the original capslock action."
+msgstr ""
+
+#. XKBFile extension text
+msgid "CapsLock switch to first layout, Shift+CapsLock switch to last layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Less-than/Greater-than is Compose."
+msgstr ""
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Space key outputs non-breakable space character at fourth level, thin non-breakable space character at sixth level (via Ctrl+Shift"
+msgstr "Space key outputs non-breakable space character at fourth level."
+
+#. /.../
+#. Copyright (c) 2000 SuSE GmbH Nuernberg, Germany.  All rights reserved.
+#. This file contains the gettext keys used within a gettext call in the
+#. application code for XFine2
+#.
+#. Maximum length: 40  characters
+msgid "&Step size"
+msgstr "&Step size"
+
+#. Maximum length: 40  characters
+msgid "Small"
+msgstr "Small"
+
+#. Maximum length: 40  characters
+msgid "Normal"
+msgstr "Normal"
+
+#. Maximum length: 40  characters
+msgid "Big"
+msgstr "Big"
+
+#. Maximum length: 40  characters
+msgid "Huge"
+msgstr "Huge"
+
+#. Maximum length: 40  characters
+msgid "&Next Screen"
+msgstr "&Next Screen"
+
+#. Maximum length: 40  characters
+msgid "S&ave"
+msgstr "S&ave"
+
+#. Maximum length: 40  characters
+msgid "Change &Position"
+msgstr "Change &Position"
+
+#. Maximum length: 40  characters
+msgid "C&hange Size"
+msgstr "C&hange Size"
+
+#. Maximum length: 40  characters
+msgid "Screen"
+msgstr "Screen"
+
+#. Maximum length: 60  characters
+msgid "No video mode tuning available"
+msgstr "No video mode tuning available"
+
+msgid "Display"
+msgstr "Display"
+
+msgid "Configuration on display"
+msgstr "Configuration on display"
+
+msgid "Idle timer..."
+msgstr "Idle timer..."
+
+#~ msgid "CapsLock uses internal capitalization. Shift "
+#~ msgstr "CapsLock uses internal capitalisation. Shift "
+
+#~ msgid "CapsLock acts as Shift with locking. Shift "
+#~ msgstr "CapsLock acts as Shift with locking. Shift "

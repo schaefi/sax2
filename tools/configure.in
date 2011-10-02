@@ -1,0 +1,43 @@
+AC_INIT()
+AM_INIT_AUTOMAKE(tools,8.1)
+
+AC_PROG_CXX
+AC_PROG_CC
+AC_PROG_LEX
+AC_PROG_YACC
+AC_PROG_INSTALL
+
+AC_PREFIX_DEFAULT(/)
+
+sbindir=${prefix}/usr/sbin
+AC_SUBST(sbindir)
+
+perldir=${prefix}/usr/sbin
+AC_SUBST(perldir)
+
+CFLAGS+=" $RPM_OPT_FLAGS"
+AC_SUBST(CFLAGS)
+
+WARN_CFLAGS="-Wall"
+AC_SUBST(WARN_CFLAGS)
+
+AM_CONFIG_HEADER(configure.h)
+AC_CONFIG_FILES([
+	Makefile
+	corner/Makefile
+	dots/Makefile
+	vncp/Makefile
+	whereiam/Makefile
+	xidle/Makefile
+	xlook/Makefile
+	xmode/Makefile
+	xquery/Makefile
+	xtest/Makefile
+	xwrapper/Makefile
+	isax/Makefile
+	xkbctrl/Makefile
+	plog/Makefile
+	plog/Makefile.PL
+	getPrimary/Makefile
+])
+AC_OUTPUT

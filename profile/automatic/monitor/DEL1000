@@ -1,0 +1,7 @@
+# /.../
+# DELL:DRAC5 monitor profile
+# ----
+!remove Monitor -> [X] -> Modeline
+
+Desktop -> [X] -> CalcModelines = no
+Monitor -> [X] -> CalcAlgorithm = XServerPool

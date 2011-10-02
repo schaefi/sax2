@@ -1,0 +1,68 @@
+#!/bin/sh
+# Copyright (c) 2000 SuSE GmbH Nuernberg, Germany.  All rights reserved.
+#
+# Author: Marcus Schaefer <sax@suse.de>, 2001
+# put compiled files to FTP area
+#
+#
+
+#----[ init ]----------------#
+function init {
+#----------------------------------------
+# init some data
+#
+	MIR="/mirror/SuSE/ftp.suse.com/pub/suse/i386/supplementary/X/SaX2/"
+	FIN="\033[71G\033[32mdone\033[m"
+	ERR="\033[71G\033[31m\033[1mfailed\033[m"
+}
+
+#----[ PutOnFtp ]------------#
+function PutOnFtp {
+#----------------------------------------
+# this function put a file to the FTP
+# area
+# ----
+# $1 -> file name
+# $2 -> SuSE release number
+#
+	V=`echo $2 | tr -d .`
+	if [ ! -d $MIR/suse$V ];then
+		echo "directory ...suse$V does not exist"
+		return
+	fi
+	ssh -l ms euklid "cp /suse/ms/compiled/$2/$1 $MIR/suse$V/"
+	ssh -l ms euklid "chgrp -h susewww $MIR/suse$V/$1"
+	ssh -l ms euklid "chmod g+w $MIR/suse$V/$1"
+}
+
+#----[ RemoveFromFtp ]------------#
+function ClearFtp {
+#----------------------------------------
+# this function remove all sax2 data 
+# from the FTP area
+#
+# $1 -> SuSE release number
+#
+	V=`echo $1 | tr -d .`
+	if [ ! -d $MIR/suse$V ];then
+		echo "directory ...suse$V does not exist"
+		return
+	fi
+	ssh -l ms euklid "rm -f $MIR/suse$V/sax*"
+}
+
+#================================================
+# main part for prepare and putonftp
+#------------------------------------------------
+init
+echo "put on ftp...."
+cd /suse/ms/compiled
+for i in 9.0 9.1 9.2;do
+if [ -d "/suse/ms/compiled/$i" ];then
+	cd /suse/ms/compiled/$i
+	ClearFtp $i
+	for n in *;do
+		PutOnFtp $n $i
+	done
+fi
+done

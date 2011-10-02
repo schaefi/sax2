@@ -1,0 +1,33 @@
+#/.../
+# Copyright (c) 2000 SuSE GmbH Nuernberg, Germany.  All rights reserved.
+# Author: Marcus Schaefer <sax@suse.de>, 2001
+#
+# configuration file for twm window
+# manager used if SaX2 had to start own server
+# ---------------------------------------------
+DecorateTransients
+NoGrabServer
+TitleFont "-adobe-helvetica-bold-r-normal--*-120-*-*-*-*-*-*"
+ResizeFont "-adobe-helvetica-bold-r-normal--*-120-*-*-*-*-*-*"
+NoHighlight
+NoTitleHighlight
+OpaqueMove
+BorderWidth 1
+
+Color
+{
+    BorderColor "black"
+    DefaultForeground "white"
+    TitleBackground "midnightblue"
+    TitleForeground "white"
+}
+
+MoveDelta 3
+Function "move-or-lower"   { f.move f.deltastop f.lower   }
+Function "move-or-raise"   { f.move f.deltastop f.raise   }
+Function "move-or-iconify" { f.move f.deltastop f.iconify }
+
+Button3 = : title|icon  : f.delete
+Button2 = : icon  : f.function "move-or-raise"
+Button1 = : title : f.function "move-or-raise"
+

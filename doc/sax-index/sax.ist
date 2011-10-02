@@ -1,0 +1,50 @@
+%%%
+%%% suseindex.ist -- Definitionen für MakeIndex
+%%%
+%%% Status: Up-to-date
+%%%
+%
+% We disable scanning of macro names inside the index because there
+% exists a style option to work with doc.sty which is capable of scanning
+% every \verb command. This would otherwise produce recursion.
+%
+quote    '\''
+%
+preamble
+"%% index
+\\begin{theindex}\\makeatletter
+\\hyphenpenalty10000
+\\exhyphenpenalty10000
+\\pretolerance10000
+\\raggedright
+\\def\\see#1#2{{\\reset@font\\it\\seename\\/} #1}
+\\def\\dominator#1{\\textbf{#1}}
+\\def\\heading#1{{\\reset@font\\bfseries\\normalsize#1}\\hfil\\nopagebreak}
+\\makeatother
+\\small\n\n"
+%
+postamble
+"\n\\end{theindex}\n"
+%
+delim_0   "\\ \\dotfill\\ {}"
+delim_1   "\\ \\dotfill\\ {}"
+delim_2   "\\ \\dotfill\\ {}"
+%
+item_0    "\n \\item "
+item_1    "\n   \\subitem "
+item_2    "\n     \\subsubitem "
+item_01   "\n   \\subitem "
+item_x1   "\n   \\subitem "
+item_12   "\n     \\subsubitem "
+item_x2   "\n     \\subsubitem "
+%
+headings_flag       1                        % Generate Headings
+symhead_positive "\\Symbole"
+numhead_positive "\\Nummern"
+heading_prefix   "\\heading{"
+heading_suffix   "}\n"
+line_max            80
+indent_length    4
+%
+%% ende
+

@@ -1,0 +1,7 @@
+InputDevice -> [X] -> Identifier = Mouse[[X]]
+InputDevice -> [X] -> Driver     = mouse
+InputDevice -> [X] -> Option -> InputFashion         = Mouse
+InputDevice -> [X] -> Option -> Name                 = Logitech;MX310
+InputDevice -> [X] -> Option -> Device               = /dev/input/mice
+InputDevice -> [X] -> Option -> ZAxisMapping         = 4 5
+InputDevice -> [X] -> Option -> Buttons              = 5

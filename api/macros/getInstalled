@@ -1,0 +1,94 @@
+#!/usr/bin/perl
+# Copyright (c) 2002 SuSE GmbH Nuernberg, Germany.  All rights reserved.
+#
+# Author: Marcus Schaefer <sax@suse.de>, 2002
+# xapi script: install a package using YaST2
+# --
+#
+# CVS ID:
+# --------
+# Status: Up-to-date
+#
+use strict;
+
+#=====================================
+# Globals 
+#-------------------------------------
+my $secure;
+
+#---[ installPackage ]----#
+sub installPackage {
+#---------------------------------------------
+# install the given package using the YaST
+# sw_single interface
+#
+	my $package = "";
+	my @pacs  = split (/,/,$_[0]);
+	foreach (@pacs) {
+		$package = "$package,\"$_\"";
+	}
+	$package =~ s/^,+//;
+	createSecureDir();
+
+	open (FD,">$secure/files") || 
+		die "could not create file: $secure/files";
+	print FD "\$\[\"userInput\":false,\n";
+	print FD "\"install\":\[$package\]\n";
+	print FD "\]\n";
+	close (FD);
+	system (
+		"/usr/sbin/yast2 sw_single '\"$secure/files\"'"
+	);
+	cleanTmp();
+	foreach (@pacs) {
+	if (! CheckPackage($_)) {
+		return (0);
+	}
+	}
+	return(1);
+}
+
+#----[ CheckPackage ]----------#
+sub CheckPackage {
+#---------------------------------------------------
+# This function checks via rpm if a package is
+# installed or not.
+#
+	my $package = $_[0];
+	my $rpm = "/bin/rpm";
+	qx ($rpm -q $package 2>/dev/null >/dev/null);
+	if ($? == 0) { return(1); }
+	return(0);
+}
+
+#---[ createSecureDir ]-----#
+sub createSecureDir {
+#----------------------------------------------
+# this function create a secure tmp directory
+# and return the name of the directory
+#
+	$secure = "/tmp/yast2x11-$$";
+	my $result = mkdir($secure,0700);
+	if ($result == 0) {
+		die "could not create tmp dir... abort";
+	}
+	return($secure);
+}
+
+#---[ cleanTmp ]-----#
+sub cleanTmp {
+#----------------------------------------------
+# clean up tmp secure tmp directory
+#
+	qx (rm -rf /tmp/yast2x11*);
+}
+
+#=====================================
+# main...
+#-------------------------------------
+if (! installPackage( $ARGV[0] )) {
+	print "1\n";
+	exit (1);
+}
+print "0\n";
+exit (0);

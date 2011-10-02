@@ -1,0 +1,22 @@
+#!/bin/sh
+
+# /.../
+# Find out which language SaX2 will use for
+# the user interface:
+# ---
+tmplang=${LANGUAGE-${LC_ALL-${LC_MESSAGES-${LANG-en_US}}}}
+
+# /.../
+# run icewm with LC_ALL set to a suitable UTF-8 locale for that language
+# because
+# - display the UTF-8 texts received from SaX2 correctly
+# - make the alias "sans-serif" from icerc expand to a suitable font
+#   for the language
+# ---
+export LC_ALL=`echo ${tmplang} |sed -e 's/[.@:].*//'`.UTF-8
+
+ICERC=icerc.sax
+TWMRC=/usr/share/sax/api/data/twmrc.sax
+
+which icewm &>/dev/null && exec icewm -c $ICERC "$@"
+exec twm -f $TWMRC "$@"

@@ -1,0 +1,3 @@
+# Riva128 Profile for cards supporting only 15/24 bit
+# ---------------------------------------------------
+Screen->[X]->DefaultDepth   = 15

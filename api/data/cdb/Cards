@@ -1,0 +1,3348 @@
+#
+# Copyright (c) 1996 S.u.S.E. GmbH Fuerth, Germany.  All rights reserved.
+#
+# Author: Marcus Schaefer <sax@suse.de>, 1999
+#
+# Template for card data
+# -----------------------
+# <VENDOR NAME>:<DEVICE NAME>  {
+#  Driver               = driver...
+#  Memory               = [ value or Auto ]
+#  DacChip              = RamDAC chip
+#  GraphicsChip         = Graphics Chip
+#  ClockChip            = Clock Chips
+#  Clocks               = clock list like 10,20,30
+#  Option               = option like noaccel,nolinear
+#  RawData              = full formatted section line like:
+#                         ( Option "nolinear",Option "IOBase" "0x1020" )
+# }
+
+#
+# Chips & Technologies CT65520
+#
+CHIPS & TECHNOLOGIES:CT65520   {
+ GraphicsChip = ct65520
+ Driver       = chips
+ Option       = suspend_hack,STN,no_stretch,no_center,use_modeline,fix_panel_size
+}
+
+#
+# Chips & Technologies CT65525
+#
+CHIPS & TECHNOLOGIES:CT65525   {
+ GraphicsChip = ct65525
+ RawData      = Option "MemBase" "0x03b00000"
+ Option       = nolinear
+ Driver       = chips
+}
+
+#
+# Chips & Technologies CT65530
+#
+CHIPS & TECHNOLOGIES:CT65530   {
+ GraphicsChip = ct65530
+ Driver       = chips
+}
+
+#
+# Chips & Technologies CT65535
+#
+CHIPS & TECHNOLOGIES:CT65535   {
+ GraphicsChip = ct65535
+ RawData      = Option "Textclockfreq" "25.175"
+ Option       = hw_clocks
+ Driver       = chips
+}
+
+#
+# Chips & Technologies CT65540
+#
+CHIPS & TECHNOLOGIES:CT65540   {
+ GraphicsChip = ct65540
+ Option       = use_18bit_bus
+ Driver       = chips
+}
+
+#
+# Chips & Technologies CT65545
+#
+CHIPS & TECHNOLOGIES:CT65545   {
+ GraphicsChip = ct65545
+ Option       = noaccel,no_bitblt,xaa_no_color_exp,xaa_benchmark,hw_cursor,mmio
+ Driver       = chips
+}
+
+#
+# Chips & Technologies CT65546
+#
+CHIPS & TECHNOLOGIES:CT65546   {
+ GraphicsChip = ct65546
+ Driver       = chips
+}
+
+#
+# Chips & Technologies CT65548
+#
+CHIPS & TECHNOLOGIES:CT65548   {
+ GraphicsChip = ct65548
+ Driver       = chips
+}
+
+#
+# Chips & Technologies CT65550
+#
+CHIPS & TECHNOLOGIES:CT65550   {
+ GraphicsChip = ct65550
+ RawData      = Option "Textclockfreq" "25.175"
+ Option       = noaccel,no_bitblt,xaa_no_color_exp,xaa_benchmark,hw_cursor,sync_on_green,fast_dram,use_vclk1
+ Driver       = chips
+}
+
+#
+# Chips & Technologies CT65554
+#
+CHIPS & TECHNOLOGIES:CT65554   {
+ GraphicsChip = ct65554
+ Driver       = chips
+}
+
+#
+# Chips & Technologies CT65555
+#
+CHIPS & TECHNOLOGIES:CT65555   {
+ GraphicsChip = ct65555
+ Driver       = chips
+}
+
+#
+# Chips & Technologies CT68554
+#
+CHIPS & TECHNOLOGIES:CT68554   {
+ GraphicsChip = ct68554
+ Driver       = chips
+}
+
+#
+# Chips & Technologies CT69000
+#
+CHIPS & TECHNOLOGIES:CT69000   {
+ GraphicsChip = ct69000
+ Driver       = chips
+}
+
+#
+# Chips & Technologies CT64200
+#
+CHIPS & TECHNOLOGIES:CT64200   {
+ GraphicsChip = ct64200
+ Driver       = chips
+ Memory       = 1024
+}
+
+#
+# Chips & Technologies CT64300
+#
+CHIPS & TECHNOLOGIES:CT64300   {
+ GraphicsChip = ct64300
+ Driver       = chips
+ RawData      = Option "MemBase" "0x03b00000",Option "Textclockfreq" "25.175"
+ Option       = noaccel,no_bitblt,xaa_no_color_exp,xaa_benchmark,hw_cursor,nolinear,hw_clocks
+}
+
+}
+
+#
+# Cirrus Logic GD542x
+#
+CIRRUS LOGIC: GD542X   {
+ Driver = cirrus
+ Option = linear
+}
+
+#
+# Cirrus Logic GD543x
+#
+CIRRUS LOGIC: GD543X   {
+ Driver = cirrus
+ Option = linear
+}
+
+#
+# Cirrus Logic GD544x
+#
+CIRRUS LOGIC: GD544X   {
+ Driver = cirrus
+}
+
+#
+# Creative Labs Graphics Blaster MA201
+#
+CREATIVE LABS: GRAPHICS BLASTER MA201   {
+ Driver = cirrus
+}
+
+#
+# Creative Labs Graphics Blaster MA202
+#
+CREATIVE LABS: GRAPHICS BLASTER MA202   {
+ Driver = cirrus
+}
+
+#
+# Cirrus Logic GD5462
+#
+CIRRUS LOGIC: GD5462   {
+ Driver = cirrus
+ Option = fifo_conservative
+}
+
+#
+# Cirrus Logic GD5464
+#
+CIRRUS LOGIC: GD5464   {
+ Driver = cirrus
+ Option = fifo_conservative
+}
+
+#
+# Cirrus Logic GD5465
+#
+CIRRUS LOGIC: GD5465   {
+ Driver = cirrus
+ Option = fifo_conservative
+}
+
+#
+# Creative Labs Graphics Blaster MA302
+#
+CREATIVE LABS: GRAPHICS BLASTER MA302   {
+ Driver = cirrus
+}
+
+#
+# Creative Labs Graphics Blaster MA334
+#
+CREATIVE LABS: GRAPHICS BLASTER MA334   {
+ Driver = cirrus
+}
+
+#
+# Creative Labs Graphics Blaster 3D
+#
+CREATIVE LABS: GRAPHICS BLASTER 3D   {
+ Driver = cirrus
+}
+
+#
+# Cirrus Logic GD5480
+#
+CIRRUS LOGIC: GD5480   {
+ Driver = cirrus
+}
+
+#
+# Diamond SpeedStar 64
+#
+DIAMOND:SPEEDSTAR 64   {
+ Driver = cirrus
+}
+
+#
+# Diamond SpeedStar64 Graphics 2000/2200
+#
+DIAMOND:SPEEDSTAR64 GRAPHICS 2000/2200   {
+ Driver = cirrus
+}
+
+#
+# Diamond SpeedStar Pro SE (CL-GD5430/5434)
+#
+DIAMOND:SPEEDSTAR PRO SE (CL-GD5430/5434)   {
+ Driver = cirrus
+}
+
+#
+# Diamond SpeedStar Pro 1100
+#
+DIAMOND:SPEEDSTAR PRO 1100   {
+ Driver = cirrus
+}
+
+#
+# Orchid Kelvin 64 VLB Rev A
+#
+ORCHID:KELVIN 64 VLB REV A   {
+ GraphicsChip = CL-GD5434
+ Driver       = cirrus
+ Option       = linear
+}
+
+#
+# Orchid Kelvin 64 VLB Rev B
+#
+ORCHID:KELVIN 64 VLB REV B   {
+ GraphicsChip = CL-GD5434
+ Driver       = cirrus
+ Option       = linear
+}
+
+#
+# Orchid Kelvin 64
+#
+ORCHID:KELVIN 64   {
+ Driver       = cirrus
+}
+
+#
+# Intel 5430
+#
+INTEL:5430   {
+ Driver       = cirrus
+}
+
+#
+# STB Nitro (64)
+#
+STB:NITRO (64)   {
+ Driver       = cirrus
+}
+
+#
+# STB Nitro 64 Video
+#
+STB:NITRO 64 VIDEO   {
+ Driver       = cirrus
+}
+
+#
+# STB Horizon
+#
+STB:HORIZON   {
+ Driver       = cirrus
+}
+
+#
+# STB Horizon Video
+#
+STB:HORIZON VIDEO   {
+ Driver       = cirrus
+}
+
+#
+# Genoa 8500VL(-28)
+#
+GENOA:8500VL(-28)   {
+ Driver       = cirrus
+}
+
+#
+# Diamond SpeedStar Pro (not SE)
+#
+DIAMOND:SPEEDSTAR PRO (NOT SE)   {
+ Driver       = cirrus
+}
+
+#
+# Actix ProStar
+#
+ACTIX:PROSTAR   {
+ Driver       = cirrus
+}
+
+#
+# Actix ProStar 64
+#
+ACTIX:PROSTAR 64   {
+ Driver       = cirrus
+}
+
+#
+# Acumos AVGA3
+#
+ACUMOS:AVGA3   {
+ Driver       = cirrus
+}
+
+#
+# DFI-WG1000
+#
+DFI-WG1000:   {
+ Driver       = cirrus
+}
+
+#
+# Spider VLB Plus
+#
+SPIDER:VLB PLUS   {
+ GraphicsChip = CL-GD5428
+ Driver       = cirrus
+}
+
+#
+# Cirrus Logic GD62xx (laptop)
+#
+CIRRUS LOGIC: GD62XX (LAPTOP)   {
+ Driver = cirrus
+}
+
+#
+# Cirrus Logic GD64xx (laptop)
+#
+CIRRUS LOGIC:GD64XX (LAPTOP)   {
+ Driver = cirrus
+}
+
+#
+# Cirrus Logic GD754x (laptop)
+#
+CIRRUS:LOGIC GD754X (LAPTOP)   {
+ Driver = cirrus
+}
+
+#
+# Techworks Ultimate 3D
+#
+TECHWORKS:ULTIMATE 3D   {
+ Driver = cirrus
+}
+
+#
+# VideoLogic GrafixStar 550
+#
+VIDEOLOGIC:GRAFIXSTAR 550   {
+ Driver = cirrus
+}
+
+#
+# Jaton Video-70P
+#
+JATON:VIDEO-70P   {
+ Driver = cirrus
+}
+
+#
+# PixelView Combo TV Pro (Prolink)
+#
+PIXELVIEW:COMBO TV PRO (PROLINK)   {
+ Driver = cirrus
+ Memory = 4m
+}
+
+#
+# PixelView Combo TV 3D AGP (Prolink)
+#
+PIXELVIEW:COMBO TV 3D AGP (PROLINK)   {
+ Driver = cirrus
+ Memory = 4m
+}
+
+#
+# Creative Labs Graphics Blaster Eclipse
+#
+CREATIVE LABS: GRAPHICS BLASTER ECLIPSE   {
+ Driver = cirrus
+}
+
+#
+# VideoLogic GrafixStar 560 (PCI/AGP)
+#
+VIDEOLOGIC:GRAFIXSTAR 560 (PCI/AGP)   {
+ Driver = cirrus
+}
+
+#
+# Cirrus Logic GD5446
+#
+CIRRUS LOGIC:GD5446   {
+ Driver = cirrus
+}
+
+#
+# Octek VL-VGA-26
+#
+OCTEK:VL-VGA-26   {
+ Driver = cirrus
+}
+
+#
+# Octek VL-VGA-28
+#
+OCTEK:VL-VGA-28   {
+ Driver = cirrus
+}
+
+#
+# Octek Combo-26
+#
+OCTEK:COMBO-26   {
+ Driver = cirrus
+}
+
+#
+# Octek Combo-28
+#
+OCTEK:COMBO-28   {
+ Driver = cirrus
+}
+
+#
+# Octek AVGA-20
+#
+OCTEK:AVGA-20   {
+ Driver = cirrus
+}
+
+
+#
+# S3 ViRGE/DX (generic)
+#
+S3:VIRGE/DX (GENERIC)   {
+ Driver       = s3virge
+ Option       = xaa_benchmark,fifo_moderate,pci_burst_on,pci_retry
+}
+
+#
+# S3 ViRGE/GX (generic)
+#
+S3:VIRGE/GX (GENERIC)   {
+ Driver = s3virge
+ Option = xaa_benchmark,fifo_moderate,pci_burst_on,pci_retry
+}
+
+#
+# S3 ViRGE/GX2 (generic)
+#
+S3:VIRGE/GX2 (GENERIC)   {
+ Driver = s3virge
+ Option = xaa_benchmark,fifo_moderate,pci_burst_on,pci_retry
+}
+
+#
+# S3 ViRGE/MX (generic)
+#
+S3:VIRGE/MX (GENERIC)   {
+ Driver  = s3virge
+ RawData = Option "Set_LCDClk"
+ Option  = lcd_center,xaa_benchmark,fifo_moderate,pci_burst_on,pci_retry
+}
+
+#
+# S3 ViRGE/MX+ (generic)
+#
+S3:VIRGE/MX+ (GENERIC)   {
+ Driver  = s3virge
+}
+
+#
+# S3 Trio3D
+#
+S3:TRIO3D   {
+ Driver  = s3virge
+}
+
+#
+# S3 86C365 (Trio3D)
+#
+S3:86C365 (TRIO3D)   {
+ Driver  = s3virge
+}
+
+#
+# Elsa Winner T3D
+#
+ELSA:WINNER T3D   {
+ Driver  = s3virge
+}
+
+#
+# Hercules Terminator 128/3D
+#
+HERCULES:TERMINATOR 128/3D   {
+ Driver  = s3virge
+}
+
+#
+# AOpen PG128
+#
+AOPEN:PG128   {
+ Driver  = s3virge
+}
+
+#
+# S3 86C325 (generic)
+#
+S3:86C325 (GENERIC)   {
+ Driver  = s3virge
+}
+
+#
+# S3 86C375 (generic)
+#
+S3:86C375 (GENERIC)   {
+ Driver  = s3virge
+}
+
+#
+# S3 86C385 (generic)
+#
+S3:86C385 (GENERIC)   {
+ Driver  = s3virge
+}
+
+#
+# S3 86C357 (generic)
+#
+S3:86C357 (GENERIC)   {
+ Driver  = s3virge
+}
+
+#
+# S3 86C260 (generic)
+#
+S3:86C260 (GENERIC)   {
+ Driver  = s3virge
+}
+
+#
+# S3 86C280 (generic)
+#
+S3:86C280 (GENERIC)   {
+ Driver  = s3virge
+}
+
+#
+# ELSA Victory 3D
+#
+ELSA:VICTORY 3D   {
+ Driver  = s3virge
+}
+
+#
+# ELSA Victory 3DX
+#
+ELSA:VICTORY 3DX   {
+ Driver  = s3virge
+}
+
+#
+# ELSA Winner 3000-S
+#
+ELSA:WINNER 3000-S   {
+ Driver  = s3virge
+}
+
+#
+# Number Nine Visual 9FX Reality 332
+#
+NUMBER NINE:VISUAL 9FX REALITY 332   {
+ Driver  = s3virge
+}
+
+#
+# Number Nine FX Motion 332
+#
+NUMBER NINE: FX MOTION 332   {
+ Driver  = s3virge
+}
+
+#
+# Diamond Stealth 3D 2000
+#
+DIAMOND:STEALTH 3D 2000   {
+ Driver  = s3virge
+}
+
+#
+# Diamond Stealth 3D 2000 PRO
+#
+DIAMOND:STEALTH 3D 2000 PRO   {
+ Driver  = s3virge
+}
+
+#
+# Diamond Multimedia Stealth 3D 2000
+#
+DIAMOND:MULTIMEDIA STEALTH 3D 2000   {
+ Driver  = s3virge
+}
+
+#
+# Diamond Multimedia Stealth 3D 2000 PRO
+#
+DIAMOND:MULTIMEDIA STEALTH 3D 2000 PRO   {
+ Driver  = s3virge
+}
+
+#
+# Canopus Co. Power Window 3DV
+#
+CANOPUS CO.: POWER WINDOW 3DV   {
+ Driver  = s3virge
+}
+
+#
+# DataExpert DSV3325
+#
+DATAEXPERT:DSV3325   {
+ Driver  = s3virge
+}
+
+#
+# ExpertColor DSV3325
+#
+EXPERTCOLOR:DSV3325   {
+ Driver  = s3virge
+}
+
+#
+# Hercules Terminator 64/3D
+#
+HERCULES:TERMINATOR 64/3D   {
+ Driver  = s3virge
+}
+
+#
+# Hercules Terminator 3D/DX
+#
+HERCULES:TERMINATOR 3D/DX   {
+ Driver  = s3virge
+}
+
+#
+# AOpen PT70
+#
+AOPEN:PT70   {
+ Driver  = s3virge
+}
+
+#
+# AOpen PT75
+#
+AOPEN:PT75   {
+ Driver  = s3virge
+}
+
+#
+# LeadTek WinFast 3D S600
+#
+LEADTEK:WINFAST 3D S600   {
+ Driver  = s3virge
+}
+
+#
+# LeadTek WinFast 3D S680
+#
+LEADTEK:WINFAST 3D S680   {
+ Driver  = s3virge
+}
+
+#
+# Miro MiroMedia 3D
+#
+MIRO:MIROMEDIA 3D   {
+ Driver  = s3virge
+}
+
+#
+# Orchid Technology Fahrenheit Video 3D
+#
+ORCHID:TECHNOLOGY FAHRENHEIT VIDEO 3D   {
+ Driver  = s3virge
+}
+
+#
+# STB Systems Powergraph 3D
+#
+STB: POWERGRAPH 3D   {
+ Driver  = s3virge
+}
+
+#
+# STB Nitro 3D
+#
+STB:NITRO 3D   {
+ Driver  = s3virge
+}
+
+#
+# MELCO WGP-VG4S
+#
+MELCO:WGP-VG4S   {
+ RawData = Option "DacSpeed" "191 162 111 83",Option "SetMClck" "75"
+ Driver  = s3virge
+}
+
+#
+# S3 ViRGE/VX (generic)
+#
+S3:VIRGE/VX (GENERIC)   {
+ Driver  = s3virge
+ Option  = xaa_benchmark,fifo_moderate,pci_burst_on,pci_retry
+}
+
+#
+# S3 86C988 (generic)
+#
+S3:86C988 (GENERIC)   {
+ Driver  = s3virge
+}
+
+#
+# ELSA Winner 3000
+#
+ELSA:WINNER 3000   {
+ Driver  = s3virge
+}
+
+#
+# ELSA Winner 3000-M-22
+#
+ELSA:WINNER 3000-M-22   {
+ Driver  = s3virge
+}
+
+#
+# ELSA Winner 3000-L-42
+#
+ELSA:WINNER 3000-L-42   {
+ Driver  = s3virge
+}
+
+#
+# ELSA Winner 2000AVI/3D
+#
+ELSA:WINNER 2000AVI/3D   {
+ Driver  = s3virge
+}
+
+#
+# Diamond Stealth 3D 3000
+#
+DIAMOND:STEALTH 3D 3000   {
+ Driver  = s3virge
+}
+
+#
+# STB Systems Velocity 3D
+#
+STB:VELOCITY 3D   {
+ Driver  = s3virge
+}
+
+#
+# MELCO WGP-VX8
+#
+MELCO:WGP-VX8   {
+ Driver  = s3virge
+}
+
+#
+# Number Nine FX Reality 772
+#
+NUMBER NINE:FX REALITY 772   {
+ Driver  = s3virge
+}
+
+#
+# Diamond Stealth 3D 4000
+#
+DIAMOND:STEALTH 3D 4000   {
+ Driver  = s3virge
+}
+
+#
+# Toshiba Tecra 750CDT
+#
+TOSHIBA:TECRA 750CDT   {
+ Driver  = s3virge
+}
+
+#
+# Toshiba Tecra 750DVD
+#
+TOSHIBA:TECRA 750DVD   {
+ Driver  = s3virge
+}
+
+#
+# Toshiba Tecra 540CDT
+#
+TOSHIBA:TECRA 540CDT   {
+ Driver  = s3virge
+}
+
+#
+# Toshiba Tecra 550CDT
+#
+TOSHIBA:TECRA 550CDT   {
+ Driver  = s3virge
+}
+
+#
+# Matrox Comet
+#
+MATROX:COMET   {
+ Driver = mga
+}
+
+#
+# Matrox Marvel II
+#
+MATROX:MARVEL II   {
+ Driver = mga
+}
+
+#
+# ATI 8514 Ultra (no VGA)
+#
+ATI:8514 ULTRA (NO VGA)   {
+ Driver = ati
+}
+
+#
+# ATI Graphics Ultra
+#
+ATI:GRAPHICS ULTRA   {
+ Driver = ati
+ Clocks = 43,49,80,36,50,56,0,45,30,32,110,79,40,45,75,65:22,25,46,18,25,28,0,22,15,16,55,40,20,22,38,32
+}
+
+#
+# ATI Graphics Ultra Pro
+#
+ATI:GRAPHICS ULTRA PRO   {
+ Driver = ati
+ Clocks = 100,126,92,36,51,57,0,44,135,32,110,80,39:45,75,65,50,63,46,18,25,28,0,22,67,16,55,40,19,23,37,33
+ Option = dac_8_bit
+}
+
+#
+# ATI Wonder SVGA
+#
+ATI:WONDER SVGA   {
+ Driver = ati
+ Clocks = 30,32,11,80,42,48,92,36,40,45,75,65,50,56,0,0:15,16,55,0,21,24,46,18,20,22,37,32,25,28,0,0
+}
+
+#
+# ATI Ultra Plus
+#
+ATI:ULTRA PLUS   {
+ Driver = ati
+}
+
+#
+# ATI Mach32
+#
+ATI:MACH32   {
+ Driver = ati
+}
+
+#
+# ATI Mach64
+#
+ATI:MACH64   {
+ Driver = ati
+}
+
+#
+# ATI Mach64 with ATI68860 RAMDAC
+#
+ATI:MACH64 WITH ATI68860 RAMDAC   {
+ DacChip = ati68860
+ Driver  = ati
+}
+
+#
+# ATI Mach64 with ATI68860B RAMDAC
+#
+ATI:MACH64 WITH ATI68860B RAMDAC   {
+ DacChip = ati68860b
+ Driver  = ati
+}
+
+#
+# ATI Mach64 with ATI68860C RAMDAC
+#
+ATI:MACH64 WITH ATI68860C RAMDAC   {
+ DacChip = ati68860c
+ Driver  = ati
+}
+
+#
+# ATI Mach64 with ATI68875 RAMDAC
+#
+ATI:MACH64 WITH ATI68875 RAMDAC   {
+ DacChip = ati68875
+ Driver  = ati
+}
+
+#
+# ATI Mach64 with AT&T 20C408 RAMDAC
+#
+ATI:MACH64 WITH AT&T 20C408 RAMDAC   {
+ DacChip = att20c408
+ Driver  = ati
+}
+
+#
+# ATI Mach64 with CH8398 RAMDAC
+#
+ATI:MACH64 WITH CH8398 RAMDAC   {
+ DacChip = ch8398
+ Driver  = ati
+}
+
+#
+# ATI Mach64 with IBM RGB514 RAMDAC
+#
+ATI:MACH64 WITH IBM RGB514 RAMDAC   {
+ DacChip = ibm_rgb514
+ Driver  = ati
+}
+
+#
+# ATI Mach64 with STG1702 RAMDAC
+#
+ATI:MACH64 WITH STG1702 RAMDAC   {
+ DacChip = stg1702
+ Driver  = ati
+}
+
+#
+# ATI Mach64 with STG1703 RAMDAC
+#
+ATI:MACH64 WITH STG1703 RAMDAC   {
+ DacChip = stg1703
+ Driver  = ati
+}
+
+#
+# ATI Mach64 with TLC34075 RAMDAC
+#
+ATI:MACH64 WITH TLC34075 RAMDAC   {
+ DacChip = tlc34075
+ Driver  = ati
+}
+
+#
+# ATI Mach64 with Internal RAMDAC
+#
+ATI:MACH64 WITH INTERNAL RAMDAC   {
+ Driver = ati
+}
+
+#
+# ATI Mach64 CT (264CT)
+#
+ATI:MACH64 CT (264CT)   {
+ Driver = ati
+}
+
+#
+# ATI Mach64 VT (264VT)
+#
+ATI:MACH64 VT (264VT)   {
+ Driver = ati
+}
+
+#
+# ATI Mach64 GT (264GT), aka 3D RAGE
+#
+ATI:MACH64 GT (264GT), AKA 3D RAGE   {
+ Driver = ati
+}
+
+#
+# ATI Mach64 3D RAGE II
+#
+ATI:MACH64 3D RAGE II   {
+ Driver = ati
+}
+
+#
+# ATI Mach64 3D RAGE II+DVD
+#
+ATI:MACH64 3D RAGE II+DVD   {
+ Driver = ati
+}
+
+#
+# ATI Mach64 3D Rage IIC
+#
+ATI:MACH64 3D RAGE IIC   {
+ Driver = ati
+}
+
+#
+# ATI Mach64 3D Rage Pro
+#
+ATI:MACH64 3D RAGE PRO   {
+ Driver = ati
+}
+
+#
+# ATI 3D Pro Turbo
+#
+ATI:3D PRO TURBO   {
+ Driver = ati
+}
+
+#
+# ATI 3D Pro Turbo PC2TV
+#
+ATI:3D PRO TURBO PC2TV   {
+ Driver = ati
+}
+
+#
+# ATI 3D Xpression
+#
+ATI:3D XPRESSION   {
+ Driver = ati
+}
+
+#
+# ATI 3D Xpression+
+#
+ATI:3D XPRESSION+   {
+ Driver = ati
+}
+
+#
+# ATI 3D Xpression+ PC2TV
+#
+ATI:3D XPRESSION+ PC2TV   {
+ Driver = ati
+}
+
+#
+# ATI All-in-Wonder
+#
+ATI:ALL-IN-WONDER   {
+ Driver = ati
+}
+
+#
+# ATI All-in-Wonder Pro
+#
+ATI:ALL-IN-WONDER PRO   {
+ Driver = ati
+}
+
+#
+# ATI Graphics Pro Turbo
+#
+ATI:GRAPHICS PRO TURBO   {
+ Driver = ati
+}
+
+#
+# ATI Graphics Xpression
+#
+ATI:GRAPHICS XPRESSION   {
+ Driver = ati
+}
+
+#
+# ATI Video Boost
+#
+ATI:VIDEO BOOST   {
+ Driver = ati
+}
+
+#
+# ATI Video Charger
+#
+ATI:VIDEO CHARGER   {
+ Driver = ati
+}
+
+#
+# ATI Video Xpression
+#
+ATI:VIDEO XPRESSION   {
+ Driver = ati
+}
+
+#
+# ATI Video Xpression+
+#
+ATI:VIDEO XPRESSION+   {
+ Driver = ati
+}
+
+#
+# ATI WinBoost
+#
+ATI:WINBOOST   {
+ Driver = ati
+}
+
+#
+# ATI WinCharger
+#
+ATI:WINCHARGER   {
+ Driver = ati
+}
+
+#
+# ATI WinTurbo
+#
+ATI:WINTURBO   {
+ Driver = ati
+}
+
+#
+# ATI Xpert 98
+#
+ATI:XPERT 98   {
+ Driver = ati
+}
+
+#
+# ATI Xpert XL
+#
+ATI:XPERT XL   {
+ Driver = ati
+}
+
+#
+# ATI Xpert@Play
+#
+ATI:XPERT@PLAY   {
+ Driver = ati
+}
+
+#
+# ATI Xpert@Play 98
+#
+ATI:XPERT@PLAY 98   {
+ Driver = ati
+}
+
+#
+# ATI Xpert@Work
+#
+ATI:XPERT@WORK   {
+ Driver = ati
+}
+
+#
+# ATI integrated on Intel Maui MU440EX motherboard
+#
+ATI:INTEGRATED ON INTEL MAUI MU440EX MOTHERBOARD   {
+ Driver = ati
+}
+
+#
+# ASUS PCI-V264CT
+#
+ASUS:PCI-V264CT   {
+ Driver = ati
+}
+
+#
+# ASUS PCI-AV264CT
+#
+ASUS:PCI-AV264CT   {
+ Driver = ati
+}
+
+#
+# ATI Rage 128 (generic)
+#
+ATI:RAGE 128 (GENERIC)   {
+ Driver = r128
+}
+
+#
+# ATI Rage Fury AGP
+#
+ATI:RAGE FURY AGP   {
+ Driver = r128
+}
+
+#
+# ATI XPERT 128 AGP
+#
+ATI:XPERT 128 AGP   {
+ Driver = r128
+}
+
+#
+# ATI XPERT 99 AGP
+#
+ATI:XPERT 99 AGP   {
+ Driver = r128
+}
+
+#
+# Trident 8900/9000 (generic)
+#
+TRIDENT:8900/9000 (GENERIC)   {
+ Driver = trident
+}
+
+#
+# Trident 8900D (generic)
+#
+TRIDENT:8900D (GENERIC)   {
+ Driver = trident
+}
+
+#
+# Trident TVGA9200CXr (generic)
+#
+TRIDENT:TVGA9200CXR (GENERIC)   {
+ Driver = trident
+}
+
+#
+# Trident TGUI9400CXi (generic)
+#
+TRIDENT:TGUI9400CXI (GENERIC)   {
+ Driver = trident
+}
+
+#
+# Trident TGUI9420DGi (generic)
+#
+TRIDENT:TGUI9420DGI (GENERIC)   {
+ Driver = trident
+}
+
+#
+# Trident TGUI9430DGi (generic)
+#
+TRIDENT:TGUI9430DGI (GENERIC)   {
+ Driver = trident
+}
+
+#
+# Trident TGUI9440 (generic)
+#
+TRIDENT:TGUI9440 (GENERIC)   {
+ Driver = trident
+}
+
+#
+# Trident TGUI9660 (generic)
+#
+TRIDENT:TGUI9660 (GENERIC)   {
+ Driver = trident
+}
+
+#
+# Trident TGUI9680 (generic)
+#
+TRIDENT:TGUI9680 (GENERIC)   {
+ Driver = trident
+}
+
+#
+# Trident TGUI9682 (generic)
+#
+TRIDENT:TGUI9682 (GENERIC)   {
+ Driver = trident
+}
+
+#
+# Trident TGUI9685 (generic)
+#
+TRIDENT:TGUI9685 (GENERIC)   {
+ Driver = trident
+}
+
+#
+# Trident Cyber 9382 (generic)
+#
+TRIDENT:CYBER 9382 (GENERIC)   {
+ Driver = trident
+}
+
+#
+# Trident Cyber 9385 (generic)
+#
+TRIDENT:CYBER 9385 (GENERIC)   {
+ Driver = trident
+}
+
+#
+# Trident Cyber 9388 (generic)
+#
+TRIDENT:CYBER 9388 (GENERIC)   {
+ Driver = trident
+}
+
+#
+# Trident Cyber 9397 (generic)
+#
+TRIDENT:CYBER 9397 (GENERIC)   {
+ GraphicsChip = Cyber9397
+ Driver       = trident
+}
+
+#
+# Trident Cyber 9397 DVD (generic)
+#
+TRIDENT:CYBER 9397 DVD (GENERIC)   {
+ Driver = trident
+}
+
+#
+# Trident Cyber 9320 (generic)
+#
+TRIDENT:CYBER 9320 (GENERIC)   {
+ Driver = trident
+}
+
+#
+# Trident Cyber 9325 (generic)
+#
+TRIDENT:CYBER 9325 (GENERIC)   {
+ Driver = trident
+}
+
+#
+# Trident Cyber 9525 (generic)
+#
+TRIDENT:CYBER 9525 (GENERIC)   {
+ GraphicsChip = Cyber9525
+ Driver       = trident
+}
+
+#
+# Trident 3DImage975 (generic)
+#
+TRIDENT:3DIMAGE975 (GENERIC)   {
+ Driver       = trident
+}
+
+#
+# Trident 3DImage975 AGP (generic)
+#
+TRIDENT:3DIMAGE975 AGP (GENERIC)   {
+ Driver = trident
+}
+
+#
+# Trident 3DImage985 (generic)
+#
+TRIDENT:3DIMAGE985 (GENERIC)   {
+ Driver = trident
+}
+
+#
+# Trident Blade3D (generic)
+#
+TRIDENT:BLADE3D (GENERIC)   {
+ Driver = trident
+}
+
+#
+# Trident CyberBlade (generic)
+#
+TRIDENT:CYBERBLADE (GENERIC)   {
+ Driver = trident
+}
+
+#
+# AOpen PG975
+#
+AOPEN:PG975   {
+ Driver = trident
+}
+
+#
+# SiS SG86C201
+#
+SIS:SG86C201   {
+ Driver = sis
+}
+
+#
+# SiS SG86C205
+#
+SIS:SG86C205   {
+ Driver = sis
+ Option = no_accel,fifo_conserv
+}
+
+#
+# SiS SG86C215
+#
+SIS:SG86C215   {
+ Driver = sis
+ Option = no_accel,no_BitBlt,fifo_conserv
+}
+
+#
+# SiS SG86C225
+#
+SIS:SG86C225   {
+ Driver = sis
+ Option = no_accel,fifo_conserv
+}
+
+#
+# SiS 5597
+#
+SIS:5597   {
+ Driver = sis
+}
+
+#
+# SiS 5598
+#
+SIS:5598   {
+ Driver = sis
+}
+
+#
+# SiS 6326
+#
+SIS:6326   {
+ Driver = sis
+}
+
+#
+# SiS 530
+#
+SIS:530   {
+ Driver = sis
+}
+
+#
+# SiS 620
+#
+SIS:620   {
+ Driver = sis
+}
+
+#
+# MSI MS-4417
+#
+MSI:MS-4417   {
+ Driver = sis
+}
+
+#
+# SiS 3D PRO AGP
+#
+SIS:3D PRO AGP   {
+ Driver = sis
+}
+
+#
+# Miro Crystal DVD
+#
+MIRO:CRYSTAL DVD   {
+ Driver = sis
+}
+
+#
+# PC-Chips M567 Mainboard
+#
+PC-CHIPS:M567 MAINBOARD   {
+ Driver = sis
+}
+
+#
+# Diamond SpeedStar A50
+#
+DIAMOND:SPEEDSTAR A50   {
+ Driver = sis
+}
+
+#
+# AOpen PA50D
+#
+AOPEN:PA50D   {
+ Driver = sis
+}
+
+#
+# AOpen PA50V
+#
+AOPEN:PA50V   {
+ Driver = sis
+}
+
+#
+# AOpen PA50E
+#
+AOPEN:PA50E   {
+ Driver = sis
+}
+
+#
+# AOpen PA80/DVD
+#
+AOPEN:PA80/DVD   {
+ Driver = sis
+}
+
+#
+# AOpen PA45
+#
+AOPEN:PA45   {
+ Driver = sis
+}
+
+#
+# AOpen PT80
+#
+AOPEN:PT80   {
+ Driver = sis
+}
+
+#
+# Chaintech Tornado S6000
+#
+CHAINTECH:TORNADO S6000   {
+ Driver = sis
+}
+
+#
+# Chaintech Desperado SI21
+#
+CHAINTECH:DESPERADO SI21   {
+ Driver = sis
+}
+
+#
+# Chaintech Desperado SI31
+#
+CHAINTECH:DESPERADO SI31   {
+ Driver = sis
+}
+
+#
+# Matrox Millennium 2MB
+#
+MATROX:MILLENNIUM 2MB   {
+ Driver   = mga
+ Memory   = 2048
+ RawData  = Option "DacSpeed" "220 220 220 220"
+}
+
+#
+# Matrox Millennium 4MB
+#
+MATROX:MILLENNIUM 4MB   {
+ Driver = mga
+ Memory = 4096
+}
+
+#
+# Matrox Millennium 8MB
+#
+MATROX:MILLENNIUM 8MB   {
+ Driver = mga
+ Memory = 8192
+}
+
+#
+# Matrox Millennium II 4MB
+#
+MATROX:MILLENNIUM II 4MB   {
+ Driver = mga
+ Memory = 4096
+}
+
+#
+# Matrox Millennium II 8MB
+#
+MATROX:MILLENNIUM II 8MB   {
+ Driver = mga
+ Memory = 8192
+}
+
+#
+# Matrox Millennium II 16MB
+#
+MATROX:MILLENNIUM II 16MB   {
+ Driver = mga
+ Memory = 16384
+}
+
+#
+# Matrox Millennium G200 4MB
+#
+MATROX:MILLENNIUM G200 4MB   {
+ Driver = mga
+ Memory = 4096
+}
+
+#
+# Matrox Millennium G200 8MB
+#
+MATROX:MILLENNIUM G200 8MB   {
+ Driver = mga
+ Memory = 8192
+}
+
+#
+# Matrox Millennium G200 16MB
+#
+MATROX:MILLENNIUM G200 16MB   {
+ Driver = mga
+ Memory = 16384
+}
+
+#
+# Matrox Millennium G200 SD 4MB
+#
+MATROX:MILLENNIUM G200 SD 4MB   {
+ Driver = mga
+ Memory = 4096
+ Option = mga_sdram
+}
+
+#
+# Matrox Millennium G200 SD 8MB
+#
+MATROX:MILLENNIUM G200 SD 8MB   {
+ Driver = mga
+ Memory = 8192
+ Option = mga_sdram
+}
+
+#
+# Matrox Millennium G200 SD 16MB
+#
+MATROX:MILLENNIUM G200 SD 16MB   {
+ Driver = mga
+ Memory = 16384
+ Option = mga_sdram
+}
+
+#
+# Matrox Millennium G400 16MB
+#
+MATROX:MILLENNIUM G400 16MB   {
+ Driver = mga
+ Memory = 16384
+}
+
+#
+# Matrox Millennium G400 32MB
+#
+MATROX:MILLENNIUM G400 32MB   {
+ Driver = mga
+ Memory = 32768
+}
+
+#
+# Matrox Mystique
+#
+MATROX:MYSTIQUE   {
+ Driver = mga
+}
+
+#
+# Matrox Mystique G200 4MB
+#
+MATROX:MYSTIQUE G200 4MB   {
+ Driver = mga
+ Memory = 4096
+}
+
+#
+# Matrox Mystique G200 8MB
+#
+MATROX:MYSTIQUE G200 8MB   {
+ Driver = mga
+ Memory = 8192
+}
+
+#
+# Matrox Mystique G200 16MB
+#
+MATROX:MYSTIQUE G200 16MB   {
+ Driver = mga
+ Memory = 16384
+}
+
+#
+# Matrox Productiva G100 4MB
+#
+MATROX:PRODUCTIVA G100 4MB   {
+ Driver = mga
+ Memory = 4096
+}
+
+#
+# Matrox Productiva G100 8MB
+#
+MATROX:PRODUCTIVA G100 8MB   {
+ Driver = mga
+ Memory = 8192
+}
+
+#
+# Diamond Edge 3D
+#
+DIAMOND:EDGE 3D   {
+ Driver = nv
+}
+
+#
+# RIVA128
+#
+NVIDIA:RIVA128:   {
+ Driver = nv
+}
+
+#
+# RIVA TNT
+#
+NVIDIA:RIVA TNT   {
+ Driver = nv
+}
+
+#
+# RIVA TNT2
+#
+NVIDIA:RIVA TNT2   {
+ Driver = nv
+}
+
+#
+# ELSA VICTORY ERAZOR
+#
+ELSA:VICTORY ERAZOR   {
+ Driver = nv
+}
+
+#
+# ELSA VICTORY ERAZOR LT
+#
+ELSA:VICTORY ERAZOR LT   {
+ Driver = nv
+}
+
+#
+# ELSA Winner 1000 R3D
+#
+ELSA:WINNER 1000 R3D   {
+ Driver = nv
+}
+
+#
+# ELSA ERAZOR II
+#
+ELSA:ERAZOR II   {
+ Driver = nv
+}
+
+#
+# ELSA ERAZOR III
+#
+ELSA:ERAZOR III   {
+ Driver = nv
+}
+
+#
+# ELSA Synergy II
+#
+ELSA:SYNERGY II   {
+ Driver = nv
+}
+
+#
+# Leadtek WinFast 3D S320II
+#
+LEADTEK:WINFAST 3D S320II   {
+ Driver = nv
+}
+
+#
+# Leadtek WinFast 3D S320
+#
+LEADTEK:WINFAST 3D S320   {
+ Driver = nv
+}
+
+#
+# Leadtek WinFast 3D S3500
+#
+LEADTEK:WINFAST 3D S3500   {
+ Driver = nv
+}
+
+#
+# Diamond Viper 330
+#
+DIAMOND:VIPER 330   {
+ Driver = nv
+}
+
+#
+# Diamond Viper 550
+#
+DIAMOND:VIPER 550   {
+ Driver = nv
+}
+
+#
+# Diamond Viper 770
+#
+DIAMOND:VIPER 770   {
+ Driver = nv
+}
+
+#
+# AOpen PS3010
+#
+AOPEN:PS3010   {
+ Driver = nv
+}
+
+#
+# STB Velocity 128
+#
+STB:VELOCITY 128   {
+ Driver = nv
+}
+
+#
+# STB nvidia 128
+#
+STB:NVIDIA 128   {
+ Driver = nv
+}
+
+#
+# ASUS 3Dexplorer
+#
+ASUS:3DEXPLORER   {
+ Driver = nv
+}
+
+#
+# Chaintech Desperado RI20
+#
+CHAINTECH:DESPERADO RI20   {
+ Driver = nv
+}
+
+#
+# Chaintech Desperado RI30
+#
+CHAINTECH:DESPERADO RI30   {
+ Driver = nv
+}
+
+#
+# Chaintech Desperado RI40/41
+#
+CHAINTECH:DESPERADO RI40/41   {
+ Driver = nv
+}
+
+#
+# Chaintech Desperado RI50
+#
+CHAINTECH:DESPERADO RI50   {
+ Driver = nv
+}
+
+#
+# Chaintech Desperado RI60
+#
+CHAINTECH:DESPERADO RI60   {
+ Driver = nv
+}
+
+#
+# Hercules Dynamite TNT
+#
+HERCULES:DYNAMITE TNT   {
+ Driver = nv
+}
+
+}
+
+#
+# 3Dlabs Permedia2 (generic)
+#
+3DLABS:PERMEDIA2 (GENERIC)   {
+ Driver = glint
+}
+
+#
+# ELSA GLoria-L/MX
+#
+ELSA:GLORIA-L/MX   {
+ Driver = glint
+ Option = no_accel
+}
+
+#
+# ELSA GLoria-L
+#
+ELSA:GLORIA-L   {
+ Driver = glint
+}
+
+#
+# ELSA GLoria-XL
+#
+ELSA:GLORIA-XL   {
+ Driver = glint
+}
+
+#
+# ELSA GLoria-XXL
+#
+ELSA:GLORIA-XXL   {
+ Driver = glint
+}
+
+#
+# Diamond Fire GL 3000
+#
+DIAMOND:FIRE GL 3000   {
+ Driver = glint
+ Option = firegl_3000
+}
+
+#
+# ELSA GLoria-S
+#
+ELSA:GLORIA-S   {
+ Driver = glint
+ Memory = 8192
+ Option = no_accel
+}
+
+#
+# Diamond Fire GL 1000
+#
+DIAMOND:FIRE GL 1000   {
+ Driver = glint
+ Memory = 8192
+ Option = no_accel
+}
+
+#
+# ELSA GLoria Synergy
+#
+ELSA:GLORIA SYNERGY   {
+ Driver = glint
+}
+
+#
+# ELSA Winner 2000/Office
+#
+ELSA:WINNER 2000/OFFICE   {
+ Driver = glint
+}
+
+#
+# Diamond Fire GL 1000 PRO
+#
+DIAMOND:FIRE GL 1000 PRO   {
+ Driver = glint
+}
+
+#
+# Creative Blaster Exxtreme
+#
+CREATIVE LABS:BLASTER EXXTREME   {
+ Driver = glint
+}
+
+#
+# AccelStar Permedia II AGP
+#
+ACCELSTAR:PERMEDIA II AGP   {
+ Driver = glint
+}
+
+#
+# Leadtek WinFast 2300
+#
+LEADTEK:WINFAST 2300   {
+ Driver = glint
+}
+
+#
+# Hercules Dynamite 3D/GL
+#
+HERCULES:DYNAMITE 3D/GL   {
+ Driver = glint
+}
+
+#
+# 3DLabs Oxygen GMX
+#
+3DLABS:OXYGEN GMX   {
+ Driver = glint
+}
+
+#
+# NeoMagic (laptop/notebook)
+#
+NEOMAGIC:(LAPTOP/NOTEBOOK)   {
+ Driver       = neomagic
+ GraphicsChip = NM2160
+ RawData      = Option "IOBase" "0xfea00000",Option "MemBase" "0xfd000000",Option "DacSpeed" "90"
+ Memory       = 2048
+}
+
+#
+# Rendition Verite 1000
+#
+RENDITION:VERITE 1000   {
+ Driver = rendition
+ Option = sw_cursor
+}
+
+#
+# Rendition Verite 2x00
+#
+RENDITION:VERITE 2X00   {
+ Driver = rendition
+ Option = sw_cursor
+}
+
+#
+# Creative Labs 3D Blaster PCI (Verite 1000)
+#
+CREATIVE LABS: 3D BLASTER PCI (VERITE 1000)   {
+ Driver = rendition
+ Option = sw_cursor
+}
+
+#
+# Canopus Total-3D
+#
+CANOPUS:TOTAL-3D   {
+ Driver = rendition
+ Option = sw_cursor
+}
+
+#
+# Sierra Screaming 3D
+#
+SIERRA:SCREAMING 3D   {
+ Driver = rendition
+}
+
+#
+# Miro CRYSTAL VRX
+#
+MIRO:CRYSTAL VRX   {
+ Driver = rendition
+}
+
+#
+# Diamond Stealth II S220
+#
+DIAMOND:STEALTH II S220   {
+ Driver = rendition
+}
+
+#
+# Hercules Thriller3D
+#
+HERCULES:THRILLER3D   {
+ Driver = rendition
+}
+
+#
+# Intel 740 (generic)
+#
+INTEL:740 (GENERIC)   {
+ Driver = i740
+}
+
+#
+# Real3D Starfighter AGP
+#
+REAL3D:STARFIGHTER AGP   {
+ Driver = i740
+}
+
+#
+# Real3D Starfighter PCI
+#
+REAL3D:STARFIGHTER PCI   {
+ Driver = i740
+}
+
+#
+# Diamond Stealth II/G460 AGP
+#
+DIAMOND:STEALTH II/G460 AGP   {
+ Driver = i740
+}
+
+#
+# 3DVision-i740 AGP
+#
+3DVISION-I740:AGP   {
+ Driver = i740
+}
+
+#
+# ABIT G740 8MB SDRAM
+#
+ABIT:G740 8MB SDRAM   {
+ Driver = i740
+}
+
+#
+# Acorp AGP i740
+#
+ACORP:AGP I740   {
+ Driver = i740
+}
+
+#
+# AOpen AGP 2X 3D Navigator PA740
+#
+AOPEN:AGP 2X 3D NAVIGATOR PA740   {
+ Driver = i740
+}
+
+#
+# ARISTO i740 AGP (ART-i740-G)
+#
+ARISTO:I740 AGP (ART-I740-G)   {
+ Driver = i740
+}
+
+#
+# ASUS AGP-V2740
+#
+ASUS:AGP-V2740   {
+ Driver = i740
+}
+
+#
+# Atrend (Speedy) 3DIO740 AGP (ATC-2740)
+#
+ATREND:(SPEEDY) 3DIO740 AGP (ATC-2740)   {
+ Driver = i740
+}
+
+#
+# Chaintech AGP-740D
+#
+CHAINTECH:AGP-740D   {
+ Driver = i740
+}
+
+#
+# Chaintech Tornado I7000
+#
+CHAINTECH:TORNADO I7000   {
+ Driver = i740
+}
+
+#
+# EliteGroup 3DVision-i740 AGP
+#
+ELITEGROUP:3DVISION-I740 AGP   {
+ Driver = i740
+}
+
+#
+# EONtronics Picasso 740
+#
+EONTRONICS:PICASSO 740   {
+ Driver = i740
+}
+
+#
+# EONtronics Van Gogh
+#
+EONTRONICS:VAN GOGH   {
+ Driver = i740
+}
+
+#
+# Everex MVGA i740/AG
+#
+EVEREX:MVGA I740/AG   {
+ Driver = i740
+}
+
+#
+# Flagpoint Shocker i740 8MB
+#
+FLAGPOINT:SHOCKER I740 8MB   {
+ Driver = i740
+}
+
+#
+# Gainward CardExpert 740 8MB
+#
+GAINWARD:CARDEXPERT 740 8MB   {
+ Driver = i740
+}
+
+#
+# Genoa Systems Phantom 740
+#
+GENOA:SYSTEMS PHANTOM 740   {
+ Driver = i740
+}
+
+#
+# Gigabyte Predator i740 8MB AGP
+#
+GIGABYTE:PREDATOR I740 8MB AGP   {
+ Driver = i740
+}
+
+#
+# Hercules Terminator 128 2X/i AGP
+#
+HERCULES:TERMINATOR 128 2X/I AGP   {
+ Driver = i740
+}
+
+#
+# Intel Express 3D AGP
+#
+INTEL:EXPRESS 3D AGP   {
+ Driver = i740
+}
+
+#
+# Jaton Video-740 AGP 3D
+#
+JATON:VIDEO-740 AGP 3D   {
+ Driver = i740
+}
+
+#
+# Jetway J-740-3D 8MB AGP, i740 AGP 3D
+#
+JETWAY:J-740-3D 8MB AGP, I740 AGP 3D   {
+ Driver = i740
+}
+
+#
+# Joymedia Apollo 7400
+#
+JOYMEDIA:APOLLO 7400   {
+ Driver = i740
+}
+
+#
+# Leadtek Winfast S900
+#
+LEADTEK:WINFAST S900   {
+ Driver = i740
+}
+
+#
+# Machspeed Raptor i740 AGP 4600
+#
+MACHSPEED:RAPTOR I740 AGP 4600   {
+ Driver = i740
+}
+
+#
+# MAXI Gamer AGP 8 MB
+#
+MAXI:GAMER AGP 8 MB   {
+ Driver = i740
+}
+
+#
+# Palit Daytona AGP740
+#
+PALIT:DAYTONA AGP740   {
+ Driver = i740
+}
+
+#
+# PowerColor C740 (SG/SD) AGP
+#
+POWERCOLOR:C740 (SG/SD) AGP   {
+ Driver = i740
+}
+
+#
+# QDI Amazing I
+#
+QDI:AMAZING I   {
+ Driver = i740
+}
+
+#
+# Soyo AGP (SY-740 AGP)
+#
+SOYO:AGP (SY-740 AGP)   {
+ Driver = i740
+}
+
+#
+# Spacewalker Hot-158 
+#
+SPACEWALKER:HOT-158   {
+ Driver = i740
+}
+
+#
+# VideoExcel AGP 740
+#
+VIDEOEXCEL:AGP 740   {
+ Driver = i740
+}
+
+#
+# ViewTop ZeusL 8MB 
+#
+VIEWTOP:ZEUSL 8MB   {
+ Driver = i740
+}
+
+#
+# Winfast S900 i740 AGP 8MB
+#
+WINFAST:S900 I740 AGP 8MB   {
+ Driver = i740
+ Memory = 8m
+}
+
+#
+# Voodoo Banshee (generic)
+#
+VOODOO:BANSHEE (GENERIC)   {
+ Driver = tdfx
+}
+
+#
+# Voodoo3 (generic)
+#
+VOODOO3:(GENERIC)   {
+ Driver = tdfx
+}
+
+#
+# Elsa Victory II
+#
+ELSA:VICTORY II   {
+ Driver = tdfx
+}
+
+#
+# Diamond Monster Fusion
+#
+DIAMOND:MONSTER FUSION   {
+ Driver = tdfx
+}
+
+#
+# AOpen PA2010
+#
+AOPEN:PA2010   {
+ Driver = tdfx
+}
+
+#
+# Chaintech Desperado 3F10
+#
+CHAINTECH:DESPERADO 3F10   {
+ Driver = tdfx
+}
+
+#
+# OMNICOMP DIVINE3D P240
+#
+OMNICOMP:DIVINE3D P240   {
+ Driver = glint
+}
+
+#
+# OMNICOMP DIVINE3D P280
+#
+OMNICOMP:DIVINE3D P280   {
+ Driver = glint 
+}
+#
+# 2th Max Voodoo Banshee
+#
+2TH MAX:VOODOO BANSHEE  {
+ Driver = tdfx
+ Memory = 16m
+}
+
+#
+# 2th Max Multicolor Daytona i740
+#
+2TH MAX:MULTICOLOR DAYTONA I740  {
+ Driver = i740
+ Memory = 8m
+}
+
+#
+# ASUS PCI-AV264CT
+#
+ASUS:PCI-AV264CT  {
+ Driver = ati
+}
+
+#
+# ASUS 3DP-V500TX
+#
+ASUS:3DP-V500TX  {
+ Driver = glint
+ Memory = 8m
+}
+
+#
+# ASUS PCI-V264GT
+#
+ASUS:PCI-V264GT  {
+ Driver = ati
+ Memory = 2m
+}
+
+#
+# ASUS 3DP-V264GT2/TV
+#
+ASUS:3DP-V264GT2/TV  {
+ Driver = ati
+ Memory = 2m
+}
+
+#
+# ASUS 3DP-V264GT/PRO
+#
+ASUS:3DP-V264GT/PRO  {
+ Driver = ati
+ Memory = 4m
+}
+
+
+#
+# ATI 3D Xpression
+#
+ATI:3D XPRESSION  {
+ Driver = ati
+ Memory = 2m
+}
+
+#
+# ATI Xpression 264VT
+#
+ATI:XPRESSION 264VT  {
+ Driver = ati
+ Memory = 2m
+}
+
+#
+# ATI Graphics Ultra Plus
+#
+ATI:GRAPHICS ULTRA PLUS  {
+ Driver = ati
+}
+
+#
+# ATI Graphics Ultra Pro
+#
+ATI:GRAPHICS ULTRA PRO  {
+ Driver = ati
+ Clocks = 100,126,92,36,51,57,0,44,135,32,110,80,39,45,75,65,50,63,46,18,25,28,0,22,67,16,55,40,19,23,37,33
+}
+
+#
+# ATI Mach64
+#
+ATI:MACH64  {
+ Driver = ati
+}
+
+#
+# ATI Mach64 (20C408 Ramdac)
+#
+ATI:MACH64 (20C408 RAMDAC)  {
+ Driver  = ati
+ DacChip = att20c408
+}
+
+#
+# ATI Mach64 (ch8398 Ramdac)
+#
+ATI:MACH64 (CH8398 RAMDAC)  {
+ Driver  = ati
+ DacChip = ch8389
+}
+
+#
+# ATI Mach64 (rgb514 Ramdac)
+#
+ATI:MACH64 (RGB514 RAMDAC)  {
+ Driver  = ati
+ DacChip = ibm_rgb514
+}
+
+#
+# ATI Winboost (mach64 CT)
+#
+ATI:WINBOOST (MACH64 CT)  {
+ Driver = ati
+}
+
+#
+# ATI Win Turbo
+#
+ATI:WIN TURBO  {
+ Driver = ati
+}
+
+#
+# ATI 3D Charger
+#
+ATI:3D CHARGER  {
+ Driver = ati
+ Memory = 2m
+}
+
+#
+# ATI All-in-Wonder Pro
+#
+ATI:ALL-IN-WONDER PRO  {
+ Driver = ati
+ Memory = 8m
+}
+
+#
+# ATI Rage Fury
+#
+ATI:RAGE FURY  {
+ Driver = r128
+ Memory = 32m
+}
+
+#
+# ATI Rage Magnum
+#
+ATI:RAGE MAGNUM  {
+ Driver = r128
+ Memory = 32m
+}
+
+#
+# ATI Rage LT Pro
+#
+ATI:RAGE LT PRO  {
+ Driver = ati
+ Memory = 4m
+}
+
+#
+# ATI Graphics Pro Turbo
+#
+ATI:GRAPHICS PRO TURBO  {
+ Driver = ati
+}
+
+#
+# ATI 3D Pro Turbo PC2TV
+#
+ATI:3D PRO TURBO PC2TV  {
+ Driver = ati
+ Memory = 4m
+}
+
+#
+# ATI Xpert@Play
+#
+ATI:XPERT@PLAY  {
+ Driver = ati
+ Memory = 8m
+}
+
+#
+# ATI Xpert@Play 98
+#
+ATI:XPERT@PLAY 98  {
+ Driver = ati
+ Memory = 8m
+}
+
+#
+# ATI Xpert@Work
+#
+ATI:XPERT@WORK  {
+ Driver = ati
+ Memory = 2m
+ RawData = ChipId 0x4754, ChipRev 0x01
+}
+
+#
+# ATI Xpert 98
+#
+ATI:XPERT 98  {
+ Driver = ati
+ Memory = 8m
+}
+
+#
+# ATI Xpert XL
+#
+ATI:XPERT XL  {
+ Driver = ati
+ Memory = 4m
+}
+
+#
+# ATI Xpert 128
+#
+ATI:XPERT 128  {
+ Driver = r128
+ Memory = 16m
+}
+
+#
+# ATI Xpert2000
+#
+ATI:XPERT2000  {
+ Driver = r128
+}
+
+#
+# Accelgraphics AccelGMX 2000
+#
+ACCELGRAPHICS:ACCELGMX 2000  {
+ Driver = glint
+ Memory = 16m
+}
+
+#
+# Accelgraphics AccelPRO MX
+#
+ACCELGRAPHICS:ACCELPRO MX  {
+ Driver = glint
+ Memory = 8m
+}
+
+#
+# Accelgraphics AccelSTAR MX
+#
+ACCELGRAPHICS:ACCELSTAR MX  {
+ Driver = glint
+ Memory = 8m
+}
+
+#
+# Accelgraphics AccelSTAR II
+#
+ACCELGRAPHICS:ACCELSTAR II  {
+ Driver = glint
+ Memory = 8m
+}
+
+#
+# California Graphics 3D Emotion
+#
+CALIFORNIA GRAPHICS:3D EMOTION  {
+ Driver = tdfx
+ Memory = 6m
+}
+
+#
+# Cardex Dragon 2000
+#
+CARDEX:DRAGON 2000  {
+ Driver = tdfx
+ Memory = 2m
+}
+
+#
+# Cardex AccuX P-200
+#
+CARDEX:ACCUX P-200  {
+ Driver = glint
+ Memory = 4m
+}
+
+#
+# Creative Labs Graphics Blaster Exxtreme
+#
+CREATIVE LABS:GRAPHICS BLASTER EXXTREME  {
+ Driver = glint
+ Memory = 4m
+}
+
+#
+# Creative Labs Graphics Blaster Riva TNT
+#
+CREATIVE LABS:GRAPHICS BLASTER RIVA TNT  {
+ Driver = nv
+ Memory = 16m
+}
+
+#
+# Creative Labs 3D Blaster
+#
+CREATIVE LABS:3D BLASTER  {
+ Driver = glint
+}
+
+#
+# Creative Labs 3D Blaster Verite
+#
+CREATIVE LABS:3D BLASTER VERITE  {
+ Driver = rendition
+ Memory = 4m
+}
+
+#
+# Creative Labs 3D Blaster Banshee
+#
+CREATIVE LABS:3D BLASTER BANSHEE  {
+ Driver = tdfx
+ Memory = 16m
+}
+
+
+#
+# DFI AGP-7410
+#
+DFI:AGP-7410  {
+ Driver = i740
+ Memory = 8m
+}
+
+#
+# DFI AGP-7400
+#
+DFI:AGP-7400  {
+ Driver = i740
+ Memory = 4m
+}
+
+#
+# Datapath Merlin-1000
+#
+DATAPATH:MERLIN-1000  {
+ Driver = glint
+}
+
+#
+# Diamond EDGE 3D 2000
+#
+DIAMOND:EDGE 3D 2000  {
+ Driver = nv
+ Memory = 1m
+}
+
+#
+# Diamond EDGE 3D 3000
+#
+DIAMOND:EDGE 3D 3000  {
+ Driver = nv
+ Memory = 2m
+}
+
+#
+# Diamond Stealth 3D 2000
+#
+DIAMOND:STEALTH 3D 2000  {
+ Driver = nv
+ Memory = 2m
+}
+
+#
+# Diamond Stealth 3D 3000
+#
+DIAMOND:STEALTH 3D 3000  {
+ Driver = nv
+ Memory = 2m
+}
+
+#
+# Diamond FireGL 1000
+#
+DIAMOND:FIREGL 1000  {
+ Driver = glint
+ Memory = 8m
+}
+
+#
+# Diamond FireGL 1000Pro
+#
+DIAMOND:FIREGL 1000PRO  {
+ Driver = glint
+ Memory = 8m
+}
+
+#
+# Diamond FireGL 3000
+#
+DIAMOND:FIREGL 3000  {
+ Driver = glint
+ Memory = 8m
+}
+
+#
+# Diamond FireGL 5000
+#
+DIAMOND:FIREGL 5000  {
+ Driver = glint
+ Memory = 8m
+}
+
+#
+# Diamond Viper 330
+#
+DIAMOND:VIPER 330  {
+ Driver = nv
+}
+
+#
+# Diamond Viper V550
+#
+DIAMOND:VIPER V550  {
+ Driver = nv
+ Memory = 16m
+}
+
+#
+# Diamond Viper V770
+#
+DIAMOND:VIPER V770  {
+ Driver = nv
+ Memory = 32m
+}
+
+#
+# Elsa Gloria-S
+#
+ELSA:GLORIA-S  {
+ Driver = glint
+}
+
+#
+# Elsa Gloria-L
+#
+ELSA:GLORIA-L  {
+ Driver = glint
+ Memory = 1m
+}
+
+#
+# Elsa Gloria-L/MX
+#
+ELSA:GLORIA-L/MX  {
+ Driver = glint
+ Memory = 8m
+}
+
+#
+# Elsa Gloria-XL
+#
+ELSA:GLORIA-XL  {
+ Driver = glint
+ Memory = 1m
+}
+
+#
+# Elsa Gloria Synergy
+#
+ELSA:GLORIA SYNERGY  {
+ Driver = glint
+ Memory = 4m
+}
+
+#
+# Elsa Victory Erazor LT
+#
+ELSA:VICTORY ERAZOR LT  {
+ Driver = nv
+ Memory = 8m
+}
+
+#
+# Elsa Victory II
+#
+ELSA:VICTORY II  {
+ Driver = tdfx
+ Memory = 16m
+}
+
+#
+# Elsa Winner 1000/T3D
+#
+ELSA:WINNER 1000/T3D  {
+ Driver = r128
+ Memory = 8m
+ RawData = sw_cursor
+}
+
+#
+# Elsa Winner 1000/R3D
+#
+ELSA:WINNER 1000/R3D  {
+ Driver = r128
+ Memory = 4m
+}
+
+#
+# Elsa Winner 2000/Office
+#
+ELSA:WINNER 2000/OFFICE  {
+ Driver = glint
+ Memory = 4m
+}
+
+#
+# Gigabyte GA-600
+#
+GIGABYTE:GA-600  {
+ Driver = glint
+ Memory = 4m
+}
+
+#
+# Gigabyte GA-601
+#
+GIGABYTE:GA-601  {
+ Driver = glint
+ Memory = 4m
+}
+
+#
+# Hercules Dynamite 3D/GL
+#
+HERCULES:DYNAMITE 3D/GL  {
+ Driver = glint
+ Memory = 4m
+}
+
+#
+# Hercules Stingray 128/3D
+#
+HERCULES:STINGRAY 128/3D  {
+ Driver = tdfx
+}
+
+#
+# Jazz Multimedia Adrenaline Rush 3D
+#
+JAZZ MULTIMEDIA:ADRENALINE RUSH 3D  {
+ Driver = tdfx
+ Memory = 6m
+}
+
+#
+# Leadtek Winfast 3D L2300
+#
+LEADTEK:WINFAST 3D L2300  {
+ Driver = glint
+ Memory = 8m
+}
+
+#
+# Leadtek WinFast 3D L2500
+#
+LEADTEK:WINFAST 3D L2500  {
+ Driver = glint
+}
+
+#
+# Leadtek WinFast 3D L2520
+#
+LEADTEK:WINFAST 3D L2520  {
+ Driver = glint
+}
+
+#
+# Leadtek WinFast 3D L2530
+#
+LEADTEK:WINFAST 3D L2530  {
+ Driver = glint
+}
+
+#
+# Leadtek WinFast 3D L3100
+#
+LEADTEK:WINFAST 3D L3100  {
+ Driver = glint
+}
+
+#
+# Matrox Millennium II
+#
+MATROX:MILLENNIUM II  {
+ Driver = mga
+ Memory = 4m
+}
+
+#
+# Matrox Millennium G200
+#
+MATROX:MILLENNIUM G200  {
+ Driver = mga
+ Memory = 8m
+}
+
+#
+# Matrox Mystique
+#
+MATROX:MYSTIQUE  {
+ Driver = mga
+ Memory = 2m
+}
+
+#
+# Matrox Mystique 220
+#
+MATROX:MYSTIQUE 220  {
+ Driver = mga
+ Memory = 2m
+}
+
+#
+# Matrox Productiva G100
+#
+MATROX:PRODUCTIVA G100  {
+ Driver = mga
+ Memory = 8m
+}
+
+#
+# Matrox Millenium G400
+#
+MATROX:MILLENIUM G400  {
+ Driver = mga
+ Memory = 16m
+}
+
+#
+# Mediatech 3DImage 9850
+#
+MEDIATECH:3DIMAGE 9850  {
+ Driver = trident
+ Memory = 2m
+}
+
+#
+# Mediatech ATI Rage II AGP
+#
+MEDIATECH:ATI RAGE II AGP  {
+ Driver = ati
+ Memory = 4m
+}
+
+#
+# Mediatech Banshee 3dfx
+#
+MEDIATECH:BANSHEE 3DFX  {
+ Driver = tdfx
+ Memory = 4m
+}
+
+#
+# Mediatech Intel 740
+#
+MEDIATECH:INTEL 740  {
+ Driver = i740
+ Memory = 4m
+}
+
+#
+# Omnicomp 3Demon MX16/16
+#
+OMNICOMP:3DEMON MX16/16  {
+ Driver = glint
+ Memory = 16m
+}
+
+#
+# Omnicomp 3Demon MX16/32
+#
+OMNICOMP:3DEMON MX16/32  {
+ Driver = glint
+ Memory = 16m
+}
+
+#
+# Omnicomp Divine3D P280
+#
+OMNICOMP:DIVINE3D P280  {
+ Driver = glint
+ Memory = 8m
+}
+
+#
+# Photon TORPEDO 3DM
+#
+PHOTON:TORPEDO 3DM  {
+ Driver = svga
+ Memory = 4m
+}
+
+#
+# QDI I7400
+#
+QDI:I7400  {
+ Driver = i740
+ Memory = 4m
+}
+
+#
+# STB Voodoo3 2000 AGP
+#
+STB:VOODOO3 2000 AGP  {
+ Driver = tdfx
+ Memory = 16m
+}
+
+#
+# STB Voodoo3 2000 PCI
+#
+STB:VOODOO3 2000 PCI  {
+ Driver = tdfx
+ Memory = 16m
+}
+
+#
+# STB Voodoo3 3000 AGP
+#
+STB:VOODOO3 3000 AGP  {
+ Driver = tdfx
+ Memory = 16m
+}
+
+#
+# STB GLyderMAX-2
+#
+STB:GLYDERMAX-2  {
+ Driver = glint
+ Memory = 8m
+}
+
+#
+# STB GLyderTX GOLD
+#
+STB:GLYDERTX GOLD  {
+ Driver = glint
+ Memory = 8m
+}
+
+#
+# Spea/V7 Vega PRO
+#
+SPEA/V7:VEGA PRO  {
+ Driver    = trident
+ ClockChip = tgui
+}
+
+#
+# Trident Cyber9525
+#
+TRIDENT:CYBER9525  {
+ Driver = trident
+ Memory = 2m
+ Option = cyber_shadow
+}
+
+#
+# Viewtop 3D Vulcan B (Voodoo Banshee)
+#
+VIEWTOP:3D VULCAN B (VOODOO BANSHEE)  {
+ Driver = tdfx
+ Memory = 16m
+}
+
+#
+# Viewtop 3D Vulcan (Voodoo Rush)
+#
+VIEWTOP:3D VULCAN (VOODOO RUSH)  {
+ Driver = tdfx
+ Memory = 2m
+}
+
+#
+# Viewtop 3D Mars (Permedia)
+#
+VIEWTOP:3D MARS (PERMEDIA)  {
+ Driver = glint
+ Memory = 4m
+}
+
+#
+# Viewtop 3D Mars-2 (Permedia-2)
+#
+VIEWTOP:3D MARS-2 (PERMEDIA-2)  {
+ Driver = glint
+ Memory = 4m
+}
+
+#
+# Viewtop AGP Mars-2 (Permedia-2)
+#
+VIEWTOP:AGP MARS-2 (PERMEDIA-2)  {
+ Driver = glint
+ Memory = 4m
+}
+
+#
+# Viewtop 3D Titan 2000 (ViRGE / DX)
+#
+VIEWTOP:3D TITAN 2000 (VIRGE / DX)  {
+ Driver = s3virge
+ Memory = 1m
+}
+
+#
+# Viewtop 3D Titan 3000 (ViRGE / GX2)
+#
+VIEWTOP:3D TITAN 3000 (VIRGE / GX2)  {
+ Driver = s3virge
+ Memory = 2m
+}
+
+#
+# Viewtop AGP Titan 3000 (ViRGE / GX2)
+#
+VIEWTOP:AGP TITAN 3000 (VIRGE / GX2)  {
+ Driver = s3virge
+ Memory = 2m
+}
+
+#
+# Yakumo S3 Virge DX 2 MB
+#
+YAKUMO:S3 VIRGE DX 2 MB  {
+ Driver = s3virge
+ Memory = 2m
+}
+
+#
+# Yakumo S3 Virge DX 4 MB
+#
+YAKUMO:S3 VIRGE DX 4 MB  {
+ Driver = s3virge
+ Memory = 4m
+}
+
+#
+# Yakumo 3DFX Rush 4 MB
+#
+YAKUMO:3DFX RUSH 4 MB  {
+ Driver = tdfx
+ Memory = 4m
+}
+
+#
+# Yakumo 3DFX Rush 6 MB
+#
+YAKUMO:3DFX RUSH 6 MB  {
+ Driver = tdfx
+ Memory = 6m
+}
+
+

@@ -1,0 +1,70 @@
+#!/usr/bin/perl
+# Copyright (c) 2002 SuSE GmbH Nuernberg, Germany.  All rights reserved.
+#
+# Author: Marcus Schaefer <sax@suse.de>, 2002
+# create diffs from subversion
+#
+# CVS ID:
+# --------
+# Status: Up-to-date
+#
+use strict;
+use Getopt::Long;
+
+# ========================================
+# get release options...
+# ----------------------------------------
+my @list;
+my $Release1;
+my $Release2;
+my $result = GetOptions (
+	"release1|r1=s"  => \$Release1,
+	"release2|r2=s"  => \$Release2,
+	"help|h"         => \&usage,
+	"<>"             => \&usage
+);
+
+# ========================================
+# get current changes, with release info
+# ----------------------------------------
+if (! defined $Release1) {
+	my $dif  = qx(svn diff -N 2>/dev/null);
+	@list = split (/\n/,$dif);
+} else {
+if (! defined $Release2) {
+	my $dif  = qx(svn diff -N -r $Release1 2>/dev/null);
+	@list = split (/\n/,$dif);
+} else {
+	my $dif  = qx(svn diff -N -r $Release1:$Release2 2>/dev/null);
+	@list = split (/\n/,$dif);
+}
+}
+
+# ========================================
+# grep unneeded information from the dif
+# ----------------------------------------
+@list = grep {!/^=/} @list;
+@list = grep {!/^RCS file:/} @list;
+@list = grep {!/^retrieving revision/} @list;
+@list = grep {!/^Property changes/} @list;
+@list = grep {!/^Name:/} @list;
+@list = grep {!/\+ \*$/} @list;
+@list = grep {!/^_+$/} @list;
+@list = grep {!/^diff/} @list;
+@list = grep {!/^Index:/} @list;
+@list = grep {!/^\?/} @list;
+
+# ========================================
+# print out data
+# ----------------------------------------
+foreach (@list) {
+	print "$_\n";
+}
+
+# ========================================
+# usage
+# ----------------------------------------
+sub usage {
+	print ".svnd [ -r1 <Release1> ] [ -r2 <Release2> ]\n";
+	exit (0);
+}

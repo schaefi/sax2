@@ -1,0 +1,17 @@
+#!/bin/sh
+
+echo "SaX2 translation bundle changed"
+echo "ftp://ftp.suse.com/pub/suse/noarch/i18n/sax"
+echo
+IFS=""
+count=0
+while read line;do
+	echo $line | grep -q "^------------"
+	if [ $? -eq 0 ];then
+		count=$((count + 1))
+	fi
+	echo $line
+	if [ $count = 2 ];then
+		break
+	fi
+done < sax.changes

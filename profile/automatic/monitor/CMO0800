@@ -1,0 +1,2 @@
+Monitor->[X]->DisplaySize = 190 120
+Device->[X]->Raw->21->Option = "PanelID" "3"

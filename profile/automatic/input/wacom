@@ -1,0 +1,91 @@
+#====================================
+# Variables
+#------------------------------------
+$Device = /dev/input/wacom
+
+#====================================
+# Make base mouse a tablet
+#------------------------------------
+!remove InputDevice -> [X] -> Option -> ZAxisMapping
+!remove InputDevice -> [X] -> Option -> Buttons
+
+InputDevice -> [X] -> Identifier = Mouse[[X]]
+InputDevice -> [X] -> Driver     = wacom
+InputDevice -> [X] -> Option -> InputFashion     = Tablet
+InputDevice -> [X] -> Option -> Vendor           = WACOM
+InputDevice -> [X] -> Option -> Name             = GRAPHIRE v1-4 __OB__USB__CB__
+InputDevice -> [X] -> Option -> Mode             = Absolute
+InputDevice -> [X] -> Option -> SendCoreEvents   = on
+InputDevice -> [X] -> Option -> Type             = cursor
+InputDevice -> [X] -> Option -> USB              = on
+InputDevice -> [X] -> Option -> Protocol         = Auto
+InputDevice -> [X] -> Option -> Device           = ${Device}
+
+#====================================
+# Add Pen
+#------------------------------------
+InputDevice -> [X+2] -> Identifier = Mouse[[X+2]]
+InputDevice -> [X+2] -> Driver     = wacom
+InputDevice -> [X+2] -> Option -> InputFashion   = Pen
+InputDevice -> [X+2] -> Option -> Vendor         = WACOM
+InputDevice -> [X+2] -> Option -> Name           = GRAPHIRE v1-4 Stylus __OB__USB__CB__
+InputDevice -> [X+2] -> Option -> Mode           = Absolute
+InputDevice -> [X+2] -> Option -> SendCoreEvents = on
+InputDevice -> [X+2] -> Option -> Type           = stylus
+InputDevice -> [X+2] -> Option -> USB            = on
+InputDevice -> [X+2] -> Option -> Protocol       = Auto
+InputDevice -> [X+2] -> Option -> Device         = ${Device}
+
+ServerLayout -> all -> InputDevice -> [X+2] -> id = Mouse[[X+2]]
+ServerLayout -> all -> InputDevice -> [X+2] -> usage = SendCoreEvents
+
+#====================================
+# Add Eraser
+#------------------------------------
+InputDevice -> [X+4] -> Identifier = Mouse[[X+4]]
+InputDevice -> [X+4] -> Driver     = wacom
+InputDevice -> [X+4] -> Option -> InputFashion   = Eraser
+InputDevice -> [X+4] -> Option -> Vendor         = WACOM
+InputDevice -> [X+4] -> Option -> Name           = GRAPHIRE v1-4 Eraser __OB__USB__CB__
+InputDevice -> [X+4] -> Option -> Mode           = Absolute
+InputDevice -> [X+4] -> Option -> SendCoreEvents = on
+InputDevice -> [X+4] -> Option -> Type           = eraser
+InputDevice -> [X+4] -> Option -> USB            = on
+InputDevice -> [X+4] -> Option -> Protocol       = Auto
+InputDevice -> [X+4] -> Option -> Device         = ${Device}
+
+ServerLayout -> all -> InputDevice -> [X+4] -> id = Mouse[[X+4]]
+ServerLayout -> all -> InputDevice -> [X+4] -> usage = SendCoreEvents
+
+#====================================
+# Add Touch
+#------------------------------------
+InputDevice -> [X+4] -> Identifier = Mouse[[X+6]]
+InputDevice -> [X+4] -> Driver     = wacom
+InputDevice -> [X+4] -> Option -> InputFashion   = Touch
+InputDevice -> [X+4] -> Option -> Vendor         = WACOM
+InputDevice -> [X+4] -> Option -> Name           = GRAPHIRE v1-4 Eraser __OB__USB__CB__
+InputDevice -> [X+4] -> Option -> Mode           = Absolute
+InputDevice -> [X+4] -> Option -> SendCoreEvents = on
+InputDevice -> [X+4] -> Option -> Type           = touch
+InputDevice -> [X+4] -> Option -> USB            = on
+InputDevice -> [X+4] -> Option -> Protocol       = Auto
+InputDevice -> [X+4] -> Option -> Device         = ${Device}
+
+ServerLayout -> all -> InputDevice -> [X+6] -> id = Mouse[[X+6]]
+ServerLayout -> all -> InputDevice -> [X+6] -> usage = SendCoreEvents
+
+#====================================
+# Add pad (ExpressKeys)
+#------------------------------------
+InputDevice -> [X+6] -> Identifier = Mouse[[X+8]]
+InputDevice -> [X+6] -> Driver     = wacom
+InputDevice -> [X+6] -> Option -> InputFashion   = Pad
+InputDevice -> [X+6] -> Option -> Vendor         = WACOM
+InputDevice -> [X+6] -> Option -> Name           = GRAPHIRE v1-4 Pad __OB__USB__CB__
+InputDevice -> [X+6] -> Option -> Type           = pad
+InputDevice -> [X+6] -> Option -> USB            = on
+InputDevice -> [X+6] -> Option -> Device         = ${Device}
+
+ServerLayout -> all -> InputDevice -> [X+8] -> id = Mouse[[X+8]]
+ServerLayout -> all -> InputDevice -> [X+8] -> usage = none

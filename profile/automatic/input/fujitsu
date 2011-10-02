@@ -1,0 +1,27 @@
+#====================================
+# Make serial device a touchscreen
+#------------------------------------
+!remove InputDevice -> [X] -> Option -> ZAxisMapping
+!remove InputDevice -> [X] -> Option -> Buttons
+!remove InputDevice -> [X] -> Option -> AutoSoft
+
+Files -> 0 -> InputDevices = /dev/ttyS0
+
+InputDevice -> [X] -> Identifier = Mouse[[X]]
+InputDevice -> [X] -> Driver     = fujitsu 
+InputDevice -> [X] -> Option -> InputFashion     = Touchpanel
+InputDevice -> [X] -> Option -> Name             = FUJITSU;P-SERIES LIFEBOOK TOUCHSCREEN
+InputDevice -> [X] -> Option -> SwapX            = false
+InputDevice -> [X] -> Option -> ButtonlessDevice = on
+InputDevice -> [X] -> Option -> Emulate3Timeout  = 50
+InputDevice -> [X] -> Option -> TapTimer         = 90
+InputDevice -> [X] -> Option -> LongTouchTimer   = 160
+InputDevice -> [X] -> Option -> OneandahalfTimer = 150
+InputDevice -> [X] -> Option -> MoveLimit        = 180
+InputDevice -> [X] -> Option -> ReportingMode    = Raw
+InputDevice -> [X] -> Option -> MinX             = 82
+InputDevice -> [X] -> Option -> MaxX             = 4036
+InputDevice -> [X] -> Option -> MinY             = 146
+InputDevice -> [X] -> Option -> MaxY             = 3999
+InputDevice -> [X] -> Option -> SendCoreEvents   = on
+InputDevice -> [X] -> Option -> Device           = /dev/ttyS0 

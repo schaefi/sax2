@@ -1,0 +1,180 @@
+# /.../
+# Copyright (c) 2000 SuSE GmbH Nuernberg, Germany.  All rights reserved.
+# Author: Marcus Schaefer <sax@suse.de>, 2001
+#
+# Template for touchscreen data
+# ------------------------------
+# <VENDOR NAME>:<DEVICE NAME>  {
+#  Driver               = driver...
+#  Protocol             = protocol...
+#  Device               = device name...
+#  SampleRate           = sample rate...
+#  Emulate3Buttons      = <on> or <off>
+#  Emulate3Timeout      = timeout val...
+#  ChordMiddle          = <on> or <off>
+#  MinX                 = area border...
+#  MaxX                 = area border...
+#  MinY                 = area border...
+#  MaxY                 = area border...
+#  Rotation             = 0 | 90 | 270
+#  ScreenNumber         = integer...
+#  ReportingMode        = mode...
+#  ButtonThreshold      = integer...
+#  ButtonNumber         = integer...
+#  SendCoreEvents       = <on> or <off>
+#  ClearRTS             = <on> or <off>
+#  ClearDTR             = <on> or <off>
+#  ZAxisMapping         = [ N M ] or X or Y 
+#  TouchType            = string
+#  Mode                 = string
+#  Load                 = string
+#  Option               = string,string
+#  RawOption            = quotedoptionstring quotedvaluestring,...
+# }
+
+#----------------------#
+# Mutouch Touchpad     #
+#----------------------#
+MUTOUCH:TOUCHSCREEN  {
+ Driver               = mutouch
+ Device               = /dev/ttyS1
+ MinX                 = 0
+ MaxX                 = 16350
+ MinY                 = 0
+ MaxY                 = 16350
+ ScreenNumber         = 0
+ ReportingMode        = Scaled
+ TouchType            = Finger
+ SendCoreEvents       = on
+}
+
+#----------------------#
+# Microtouch Touchpad  #
+#----------------------#
+MICROTOUCH:TOUCHSCREEN {
+ Driver               = microtouch
+ ButtonNumber         = 1
+ Device               = /dev/ttyS0
+ MaxX                 = 16383
+ MinY                 = 16383
+ MaxY                 = 0
+ MinX                 = 0
+ Mode                 = Absolute
+ TouchType            = Cursor
+ Protocol             = Auto
+ SendCoreEvents       = on
+ RawOption            = "DataBits" "8","StopBits" "1","Parity" "None","BaudRate" "9600"
+}
+
+#---------------#
+# Elo Touchpad  #
+#---------------#
+ELO:2300-TOUCHSCREEN  {
+ Driver               = elographics
+ Device               = /dev/ttyS0
+ MinX                 = 231
+ MaxX                 = 3868
+ MinY                 = 272
+ MaxY                 = 3858
+ ScreenNumber         = 0
+ ReportingMode        = Scaled
+ ButtonThreshold      = 17
+ ButtonNumber         = 1
+ SendCoreEvents       = on
+}
+
+#---------------------------------------#
+# TABLET PCs:Fujitsu P-SERIES Lifebook  #
+#---------------------------------------#
+TABLET PCs:Fujitsu P-SERIES Lifebook {
+ Driver               = fujitsu
+ Device               = /dev/ttyS0
+ RawOption            = "SwapX" "false","ButtonlessDevice" "On","Emulate3Timeout" "50","TapTimer" "90","LongTouchTimer" "160","OneandahalfTimer" "150","MoveLimit" "180"
+ ReportingMode        = Raw
+ SendCoreEvents       = on
+ MinX                 = 82
+ MinY                 = 146
+ MaxX                 = 4036
+ MaxY                 = 3999
+}
+
+#---------------------------------#
+# TABLET PCs: LG C1 (fujitouch)   #
+#---------------------------------#
+TABLET PCs:LG C1 (fujitouch) {
+ Driver               = fujitsu
+ Device               = /dev/ttyS0
+ SendCoreEvents       = on
+ MinX                 = 82
+ MaxX                 = 4036
+ MinY                 = 146
+ MaxY                 = 3999
+}
+
+#------------------------------------#
+# TABLET PCs:Asus R2H (evtouch)      #
+#------------------------------------#
+TABLET PCs:Clevo TN120R (evtouch) {
+ Driver               = evtouch
+ Device               = /dev/input/evtouch_event
+ RawOption            = "LongTouchTimer" "5","MoveLimit" "5"
+ ReportingMode        = Raw
+ SendCoreEvents       = on
+ Emulate3Buttons      = on
+ Emulate3Timeout      = 50
+ MinX                 = 95
+ MinY                 = 142
+ MaxX                 = 4007
+ MaxY                 = 3919
+}
+
+#------------------------------------#
+# TABLET PCs:Clevo TN120R (evtouch)  #
+#------------------------------------#
+TABLET PCs:Clevo TN120R (evtouch) {
+ Driver               = evtouch
+ Device               = /dev/input/evtouch_event
+ RawOption            = "TapTimer" "50","LongTouchTimer" "30","MoveLimit" "15"
+ ReportingMode        = Raw
+ SendCoreEvents       = on
+ Emulate3Buttons      = on
+ Emulate3Timeout      = 50
+ MinX                 = 116
+ MinY                 = 268
+ MaxX                 = 7940
+ MaxY                 = 7828
+}
+
+#----------------------------------------#
+# TABLET PCs:Samsung Q1 (evtouch)  #
+#----------------------------------------#
+TABLET PCs:Samsung Q1 (evtouch) {
+ Driver               = evtouch
+ Device               = /dev/input/evtouch_event
+ ReportingMode        = Raw
+ SendCoreEvents       = on
+ Emulate3Buttons      = on
+ Emulate3Timeout      = 50
+ MinX                 = 82
+ MinY                 = 195
+ MaxX                 = 3900
+ MaxY                 = 3960
+}
+
+#----------------------------------------#
+# TABLET PCs:Samsung Q1-Ultra (evtouch)  #
+#----------------------------------------#
+TABLET PCs:Samsung Q1-Ultra (evtouch) {
+ Driver               = evtouch
+ Device               = /dev/input/evtouch_event
+ RawOption            = "TapTimer" "200","LongTouchTimer" "400"
+ ReportingMode        = Raw
+ SendCoreEvents       = on
+ Emulate3Buttons      = on
+ Emulate3Timeout      = 50
+ MinX                 = 145
+ MinY                 = 193
+ MaxX                 = 3973
+ MaxY                 = 3898
+}
+

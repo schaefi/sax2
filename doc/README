@@ -1,0 +1,84 @@
+What is SaX2
+------------
+SaX2 is a X11 configuration tool. It can be used as standalone
+application as well as it provides a developer library for
+your own X configuration program. When installed simply call
+
+    sax2
+
+What is libsax
+--------------
+libsax is a C++ development library available in different languages.
+You can use plain C++ as well as perl, python, java, etc... to
+implement your own understanding of a X configuration program. The
+current GUI implementation of sax itself is a C++ written client.
+Further information how to use the library can be found here:
+
+    /usr/share/doc/packages/libsax/html/index.html
+
+Requirements for SaX2
+---------------------
+SaX requires the following software to compile/work correctly
+
+    - XOrg      +devel packages   [ mandatory ]
+    - ncurses   +devel packages   [ mandatory ]
+    - qt v3     +devel packages   [ mandatory ]
+    - readline  +devel packages   [ mandatory ]
+    - hal       +devel packages   [ mandatory ]
+    - dbus      +devel packages   [ mandatory ]
+
+    - bison                       [ mandatory ]
+    - flex                        [ mandatory ]
+    - fvwm2                       [ mandatory ]
+    - netpbm                      [ mandatory ]
+    - perl                        [ mandatory ]
+
+    - 855resolution               [ optional  ]
+    - Java jre                    [ optional  ]
+    - Mono                        [ optional  ]
+    - python                      [ optional  ]
+
+
+1) How to prepare building SaX2
+-------------------------------
+- Prepare for build directly from subversion
+
+    mkdir $HOME/sax && cd $HOME/sax
+    svn co https://svn.berlios.de/svnroot/repos/sax/sax-head .
+    ./.doit -p --local
+    cd /tmp/svnsax.XXXXXX
+
+        ---> XXXXXX must be replaced according to the .doit output
+
+- Or use the tarball from ftp:
+
+    mkdir /tmp/svnsax.XXXXXX
+    cd /tmp/svnsax.XXXXXX
+    wget ftp://ftp.berlios.de/pub/sax/sax2.tar.bz2 .
+
+
+2) How to build and install SaX2
+--------------------------------
+- Start manual compilation
+
+    tar -xvf sax2.tar.bz2
+    cd sax && make && make install
+
+        ---> to install into an alternative root directory you
+             can specify: make install buildroot=<root-path>
+
+- Alternatively use rpmbuild
+
+    cp * /usr/src/packages/SOURCES
+    rpmbuild -ba sax2.spec
+
+        ---> Find the RPM packages at: /usr/src/packages/RPMS/...
+
+Where to ask for help
+---------------------
+    SaX-User  list <https://lists.berlios.de/mailman/listinfo/sax-users>
+    SaX-Devel list <https://lists.berlios.de/mailman/listinfo/sax-devel>
+
+--
+Remember to have fun :-)
+Marcus

@@ -1,0 +1,3 @@
+# Enable AIGLX; Composite, which is required for AIGLX, is enabled
+# in a seperate profile called 'Composite'
+ServerFlags-> 0 -> AIGLX = on

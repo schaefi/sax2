@@ -1,0 +1,1903 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: nis\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-02-05 18:49+0100\n"
+"PO-Revision-Date: 2006-11-11 18:41+0530\n"
+"Last-Translator: Priyavert Sharma<priyavert.sharma@agreeya.com>\n"
+"Language-Team: AgreeYa Solutions<linux_team@agreeya.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.10.2\n"
+
+#. /.../
+#. Copyright (c) 2005 SuSE GmbH Nuernberg, Germany.  All rights reserved.
+#. This file contains the gettext keys used within a gettext call in the
+#. application code for the SaX2 and XFine GUI
+#.
+#. Dear Translator, translate this string as 'RTL' if your language is right-to-left
+msgid "I18N"
+msgstr ""
+
+#. RTF text: Startup information for the user
+msgid "<b>SaX2 Suggestion</b><hr>The currently-started graphics system is based on a suggestion made by SaX2. If this is acceptable, click <b>OK</b>. Otherwise, change the configuration."
+msgstr "<b>SaX2 கருத்து</b><hr>தற்போது துவங்கப்பட்டுள்ள சித்திர அமைப்பு SaX2 அளித்துள்ளகருத்தின் அடிப்படையினாலானது. இது ஏற்கப்பட்டால், <b>சரி</b>யை கிளிக்செய்யவும். இல்லாவிட்டால் உள்ளமைவை மாற்றவும்."
+
+#. RTF text: 3D acceleration not supported with this card
+msgid "<b>3D acceleration not supported</b><hr>SaX2 cannot offer activation of the 3D subsystem because your graphics card/driver doesn't support 3D"
+msgstr ""
+
+#. RTF text: 3D acceleration not supported with Xinerama
+msgid "<b>3D acceleration not supported</b><hr>SaX2 cannot offer activation of the 3D subsystem because Xinerama based dual head mode is used. The Xorg Xinerama extension for combining graphics screens doesn't support 3D on all heads"
+msgstr ""
+
+#. Caption text for the startup information window
+msgid "Automatic Graphics System Setup"
+msgstr "தானியங்கு சித்திரங்கள் அமைப்பின் அமைப்பு"
+
+#. Caption text for informing the user
+msgid "Information..."
+msgstr "விவரங்கள்..."
+
+#. Caption text for the main window
+msgid "SaX2: X11 Configuration"
+msgstr "SaX2: X11 உள்ளமைவு"
+
+#. Title text on the left side
+msgid "SaX Control Center"
+msgstr "SaX கட்டுப்பாட்டு மையம்"
+
+#. Info message about display size changes
+msgid "<b>Display size changed</b><hr>The display size has been adapted to the new layout."
+msgstr ""
+
+#. Help Button text
+msgid "&Help"
+msgstr "&உதவி"
+
+#. Ok Button text
+msgid "O&K"
+msgstr "ச&ரிp"
+
+#. Yes Button text
+msgid "&Yes"
+msgstr "&ஆம்"
+
+#. No Button text
+msgid "&No"
+msgstr "&இல்லை"
+
+#. Cancel Button text
+#. Maximum length: 40  characters
+msgid "&Cancel"
+msgstr "ரத்து செய்யவும்"
+
+#. RTF text: exit SaX message
+msgid "<b>Exit SaX2</b><hr>Exit SaX2 now?"
+msgstr "<b>SaX2வைவிட்டு வெளியேறவும்</b><hr>SaX2வைவிட்டு இப்போது வெளியேறலாமா?"
+
+#. Message box default caption text
+msgid "Message"
+msgstr "தகவல்"
+
+#. Change configuration Button text
+msgid "C&hange Configuration"
+msgstr "உள்ளமையை மாற்றவும்"
+
+#. Short description of the Monitor module
+#. Monitor name label
+msgid "Monitor"
+msgstr "மானிட்டர்"
+
+#. title of module dialog
+msgid "Card and Monitor Properties"
+msgstr "அட்டை மற்றும் மானிட்டர் பண்புகள்"
+
+#. Short description of the Mouse module
+#. Simple mouse text for the mouse tab
+msgid "Mouse"
+msgstr "சுட்டி"
+
+#. title of module dialog
+msgid "Mouse Properties"
+msgstr "சுட்டி பண்புகள்"
+
+#. Short description of the Keyboard module
+#. Keyboard name label
+msgid "Keyboard"
+msgstr "தட்டச்சு பொறி"
+
+#. title of module dialog
+msgid "Keyboard Properties"
+msgstr "தட்டச்சு பொறி பண்புகள்"
+
+#. Short description of the Tablet module
+#. Tab title: Tablet vendor name selection
+msgid "Tablet"
+msgstr "டேப்லட்"
+
+#. title of module dialog
+msgid "Tablet Properties"
+msgstr "டேப்லட் பண்புகள்"
+
+#. Short description of the Touchscreen module
+msgid "Touchscreen"
+msgstr "தொடுதிரை"
+
+#. title of module dialog
+msgid "Touchscreen Properties"
+msgstr "தொடுதிரை பண்புகள்"
+
+#. Short description of the VNC module
+msgid "Remote Access"
+msgstr ""
+
+#. title of module dialog
+msgid "Remote Access Properties"
+msgstr "தொலைதூர அணுக்க பண்புகள்"
+
+#. Tab text for a display tab of the monitor dialog
+msgid "Display %1"
+msgstr ""
+
+#. Tab text for a display tab of the mouse dialog
+#, fuzzy
+msgid "Mouse %1"
+msgstr "சுட்டி"
+
+#. Activate display checkbox, Display=screen
+msgid "Activate This Display"
+msgstr "இக்காட்சியை செயல்படுத்தவும்"
+
+#. Activate mouse checkbox
+msgid "Activate This Pointer"
+msgstr "இக்குறிப்பானை செயல்படுத்தவும்"
+
+#. Graphics Card name label
+msgid "Card"
+msgstr "அட்டை"
+
+#. Desktop name label
+msgid "Desktop"
+msgstr "டெஸ்க்டாப்"
+
+#. Pointers name label, global name for input devices
+#, fuzzy
+msgid "Pointers"
+msgstr "பிரிண்டர்"
+
+#. Layout name label, desktop layout
+#. Tab text for a layout tab of the keyboard dialog
+#. Label text for the primary keyboard layout
+#. Table topic text describing the keyboard layout column
+msgid "Layout"
+msgstr "வடிவமைப்பு"
+
+#. Path name label, search paths
+msgid "Path"
+msgstr "பாதை"
+
+#. Extensions name label, X11 extensions
+msgid "Extensions"
+msgstr ""
+
+#. Change data
+msgid "&Change..."
+msgstr "&மாற்றவும்..."
+
+#. Set options for some kind of data
+msgid "&Options..."
+msgstr "&விருப்பத்தேர்வுகள்..."
+
+#. Configure some data
+msgid "Con&figure..."
+msgstr "உள்ள&மைக்கவும்..."
+
+#. Group box title for dual head setup
+msgid "Dual Head Mode"
+msgstr "இரட்டைத் தலை வகை"
+
+#. Group box title for card options
+#. Group box title for mouse options
+#. Tab text for an options tab of the keyboard dialog
+#. Group box title for tablet options
+#. Group box title for the VNC options
+msgid "Options"
+msgstr "விருப்பத்தேர்வுகள்"
+
+#. CheckBox label to activate the mouse wheel
+msgid "Activate Mouse Wheel"
+msgstr "சுட்டி சக்கரத்தை செயல்படுத்தவும்"
+
+#. CheckBox label to invert the mouse X axis
+msgid "Invert X-Axis"
+msgstr "X-அச்சினை தலைகீழாக்கவும்"
+
+#. CheckBox label to invert the mouse Y axis
+msgid "Invert Y-Axis"
+msgstr "Y-அச்சினை தலைகீழாக்கவும்"
+
+#. CheckBox label to activate left hand mouse
+msgid "Activate Left-Hand Button Mapping"
+msgstr ""
+
+#. CheckBox label to activate the 3 Button emulation
+msgid "Activate 3-Button Emulation"
+msgstr "3-பொத்தான் மேம்பாட்டினை செயல்படுத்தவும்"
+
+#. CheckBox label to activate the wheel emulation
+msgid "Emulate Wheel with Mouse Button"
+msgstr "சுட்டி பொத்தானுடன் சக்கரத்தை மேம்படுத்தவும்"
+
+#. Group box title for card rotation
+msgid "Rotate Screen"
+msgstr "திரையை சுழற்றவும்"
+
+#. Group box title for the mouse test field
+#. Line edit label pointing to the keyboard test field
+msgid "Test"
+msgstr "சோதனை"
+
+#. Button text in final step message box for testing the configuration
+msgid "&Test"
+msgstr "&சோதனை"
+
+#. Button text in final step message box for saving the configuration
+msgid "&Save"
+msgstr "&சேமிக்கவும்"
+
+#. Status line of mouse test field: ready
+msgid "Test ready"
+msgstr "சோதனை தயார்"
+
+#. Status line of mouse test field: single button click
+msgid "Single Click: Done"
+msgstr "ஒரு கிளிக்: முடிவுற்றது"
+
+#. Status line of mouse test field: double button click
+msgid "Double Click: Done"
+msgstr "இரட்டை கிளிக்: முடிவுற்றது"
+
+#. Status line of mouse test field: wheel moved
+msgid "Scrolling"
+msgstr "மேலும் கீழும் செல்கிறது"
+
+#. Status line of mouse test field: button pressed
+msgid "Button pressed"
+msgstr "பொத்தான் அழுத்தப்பட்டுள்ளது"
+
+#. Status line of mouse test field: button released
+msgid "Button released"
+msgstr "பொத்தான் விடுவிக்கப்பட்டுள்ளது"
+
+#. Status line of mouse test field: wheel stopped
+msgid "Stopped: Done"
+msgstr "நிறுத்தப்பட்டது: முடிவுற்றது"
+
+#. Group box title for properties
+msgid "Properties"
+msgstr "பண்புகள்"
+
+#. Activate dual head mode checkbox
+msgid "Activate Dual Head Mode"
+msgstr "இரட்டைத் தலை வகையை செயல்படுத்தவும்;"
+
+#. Set display resolution
+msgid "Resolution"
+msgstr "தெளிவுத்திறன்"
+
+#. Set display colors
+msgid "Colors"
+msgstr "வண்ணங்கள்"
+
+#. Activate 3D checkboc
+msgid "Activate 3D Acceleration"
+msgstr "3D தூண்டுதலை செயல்படுத்தவும்"
+
+#. Tab title: Setup monitor properties for card X
+msgid "Monitor for Card"
+msgstr "அட்டைக்கான மானிட்டர்"
+
+#. Tab title: Setup monitor for second channel on card X
+msgid "Second Monitor for Card"
+msgstr "அட்டைக்கான இரண்டாவது மானிட்டர்"
+
+#. Tab title: Setup sync frequencies
+msgid "Sync Frequencies"
+msgstr "ஒருங்கிணைப்பு அதிர்வெண்கள்"
+
+#. Tab title: Setup display size
+msgid "Display Size"
+msgstr "காட்சிப்படுத்தும் அளவு"
+
+#. Tab title: Setup the monitor arrangement
+#. Title for the multihead arrangement
+msgid "Arrangement"
+msgstr "வரிசைப்படுத்துதல்"
+
+#. Information about dual head mode. %1=the dual head modus %2=the resolution
+msgid "Activated in %1 mode with %2"
+msgstr "%2 உடன் %1 வகையில் செயல்படுத்தப்பட்டுள்ளது"
+
+#. Short Information that something has been activated
+msgid "Activated in driver default mode"
+msgstr "இயக்கி முன்னிருந்த வகையில் செயல்படுத்தப்பட்டுள்ளது"
+
+#. rwalter
+#. Monitor Model is unknown and should be changed
+#. rwalter
+#. Mouse Model is unknown and should be changed
+msgid "Unconfigured"
+msgstr "உள்ளமைக்கப்படாதது"
+
+#. Message appears when user is trying to deactivate all displays
+msgid "<b>Cannot Deactivate All Displays</b><hr><nobr>At least one display must be active.</nobr>"
+msgstr "<b>அனைத்து காட்சிப்படுத்துதல்களையும் செயலிழக்கம் செய்ய முடியாது </b><hr><nobr>குறைந்தபட்சம் ஒரு காட்சியேனும் செயல்பாட்டில் இருக்க வேண்டும்.</nobr>"
+
+#. Info label for dual head checkbox
+msgid "No configuration available"
+msgstr "உள்ளமைவு எதுவும் கிடைக்கவில்லை "
+
+#. Radiobutton for traditional multihead mode
+msgid ""
+"Traditional Multihead:\n"
+"Each screen is an independent display"
+msgstr ""
+"பாரம்பரிய பல்தலை:\n"
+"ஒவ்வொரு திரையும் ஒரு தனிக் காட்சியாகும்;"
+
+#. Radiobutton for cloned multihead mode
+msgid ""
+"Cloned Multihead:\n"
+"Each display is a clone of the primary display"
+msgstr ""
+"போலிகை பல்தலை:\n"
+"ஒவ்வொரு காட்சியும் முதன்மை காட்சியின் ஒரு போலிகை ஆகும்"
+
+#. Radiobutton for xinerama multihead mode
+msgid ""
+"Xinerama Multihead:\n"
+"Build one big display out of all screens"
+msgstr ""
+"சினிரமா பல்தலை:\n"
+"அனைத்து திரைகளிலிருந்தும் ஒரு பெரிய காட்சியை உருவாக்கவும்.;"
+
+#. Title for multihead modi
+msgid "Multihead Mode"
+msgstr "பல்தலை வகை"
+
+#. Monitor X - connected to - CardY
+msgid "Connected To"
+msgstr "இத்துடன் இணைப்பட்டுள்ளது"
+
+#. Tooltip text if monitor is unknown
+msgid "Unknown Monitor:"
+msgstr "தெரியாத மானிட்டர்:"
+
+#. Tooltip text for primary monitor
+msgid "Primary Monitor:"
+msgstr "முதன்மை மானிட்டர்:"
+
+#. Windowanager title for the monitor model setup
+#. Windowanager title for the second monitor model setup
+msgid "Monitor Settings"
+msgstr "மானிட்டர் அமைப்புகள்"
+
+#. Windowanager title for the mouse mode setup
+msgid "Mouse Settings"
+msgstr "சுட்டி அமைப்புகள்"
+
+#. Windowanager title for the card options dialog
+msgid "Graphics Card Settings"
+msgstr "சித்திரங்கள் அட்டை அமைப்புகள்;"
+
+#. Windowanager title for the dual head setup
+msgid "Dual Head Settings"
+msgstr "இரட்டை தலை அமைப்புகள்"
+
+#. Radiobutton don't rotate
+msgid "Not Rotated"
+msgstr "சுழற்றப்படவில்லை"
+
+#. Radiobutton rotate to the left side
+msgid "To the Left"
+msgstr "இடதுபுறமாக"
+
+#. Radiobutton rotate to the right side
+msgid "To the Right"
+msgstr "வலதுபுறமாக"
+
+#. Popup message to inform the user about fbdev restrictions
+msgid "<b>Invalid Color/Resolution combination:</b><hr><nobr>The selected resolution and/or color settings</nobr> are not supported by the graphics cards framebuffer."
+msgstr ""
+
+#. Popup message to ask the user for an option value
+msgid "<b>Option Needs a Value</b><hr><nobr>Set up a value for option %1.</nobr>"
+msgstr "<b>விருப்பத்தேர்வுக்கு ஒரு மதிப்பு தேவை</b><hr><nobr>விருப்பத்தேர்வு %1க்குஒரு மதிப்பை அமைக்கவும்.</nobr>"
+
+#. Group box title for the monitor vendor and name selection
+msgid "Monitor: Vendor and Name Selection"
+msgstr "மானிட்டர்: விற்பனையாளர் மற்றும் பெயரை தேர்ந்தெடுத்தல்"
+
+#. Group box title for the mouse vendor and name selection
+msgid "Mouse: Vendor and Name Selection"
+msgstr "சுட்டி: விற்பனையாளர் மற்றும் பெயரை தேர்ந்தெடுத்தல்"
+
+#. Group box title for the manual sync frequency set up
+msgid "Manual Sync Frequency Setup"
+msgstr "கைமுறை ஒருங்கிணைப்பு அதிர்வெண் அமைப்பு"
+
+#. Group box title for the aspect/ratio selection
+msgid "Diagonal and Aspect Ratio"
+msgstr "கோண மற்றும் பார்வை விகிதம்"
+
+#. Group box title for the display size setup
+msgid "Display Size in [ mm ]"
+msgstr "காட்சியின் அளவு [ மிமீயில் ]"
+
+#. Text message telling to be carefull with the monitor sync frequencies
+msgid "<b>Note:</b> Wrong sync ranges may damage your monitor. Consult the monitor manual for the settings.<br><br>If you want your monitor not to use its maximum rating, decrease the sync ranges."
+msgstr "<b>குறிப்பு:</b> தவறான ஒருங்கிணைப்பு வரிசைகள் மானிட்டரை சேதப்படுத்தலாம்;அமைப்புகளுக்கு மானிட்டர் கையேட்டை பார்க்கவும்.<br><br>உங்கள் மானிட்டர் தனது அதிகபட்ச தரவரிசையைபயன்படுத்த வேண்டாமென்று நீங்கள் கருதினால், ஒருங்கிணைப்பு வரிசைகளை குறைக்கவும்."
+
+#. Checkbox to activate DPMS
+msgid "Activate DPMS"
+msgstr "DPMSஐ செயல்படுத்தவும்"
+
+#. Button to popup the disk dialog for reading the monitor utility disk
+msgid "Utility Disk..."
+msgstr "பயன்பாட்டு வட்டு..."
+
+#. Label text for horizontal sync frequency
+msgid "Horizontal"
+msgstr "கிடைநிலை"
+
+#. Label text for second monitor name
+msgid "Second Monitor:"
+msgstr "இரண்டாவது மானிட்டர்:"
+
+#. Label text for second monitor resolution
+msgid "Second Monitor Resolution"
+msgstr "இரண்டாவது மானிட்டர் தெளிவுத்திறன்"
+
+#. Label text for vertical sync frequency
+msgid "Vertical"
+msgstr "செங்குத்து"
+
+#. Label text for hsync unit
+msgid "KHz"
+msgstr "கிலோஹெர்ட்ஸ்"
+
+#. Label text for vsync unit
+msgid "Hz"
+msgstr "ஹெர்ட்ஸ்"
+
+#. Label text for the aspect ratio combo box
+msgid "Aspect Ratio"
+msgstr "பார்வை விகிதம்"
+
+#. Label text for the diagonal length combo box
+msgid "Diagonal"
+msgstr "கோணம்"
+
+#. Label text for the display size X-Axis
+msgid "X Axis [mm]"
+msgstr "X அச்சு [மிமீ]"
+
+#. Label text for the display size Y-Axis
+msgid "Y Axis [mm]"
+msgstr "Y அச்சு [மிமீ]"
+
+#. Something is not configured
+msgid "Not configured"
+msgstr "உள்ளமைக்கப்படவில்லை"
+
+#. Unit name for inches in german zoll
+msgid "inches"
+msgstr "அங்குலங்கள்"
+
+#. Message box of type Ok, telling to user to insert a CD or disk
+msgid "<b>Insert CD or Disk</b><hr>Insert the display utility CD or disk from the monitor vendor."
+msgstr "<b>சிடி அல்லது வட்டை நுழைக்கவும்</b><hr>காட்சி பயன்பாடு சிடி அல்லது மானிட்டர்விற்பனையாளரிடமிருந்து பெறப்பட்ட  வட்டை நுழைக்கவும்."
+
+#. Message box of type Error, telling that the utility disk cannot be opened
+msgid "<b>Read Error</b><hr>Could not read from CD or disk. This may point to a damaged medium or incorrectly formatted information files."
+msgstr "<b>பிழையை படிக்கவும்</b><hr>சிடி அல்லது வட்டிலிருந்து படிக்க முடியவில்லை. இதுசேதமடைந்த ஊடகம் அல்லது தவறாக வடிவமைக்கப்பட்ட விவர கோப்புகளை சுட்டிக்காட்டக்கூடும்."
+
+#. First gap of the ActivateInfo text: Multihead mode name
+msgid "Traditional"
+msgstr "பாரம்பரிய"
+
+#. First gap of the ActivateInfo text: Multihead mode name
+msgid "Clone"
+msgstr "போலிகை"
+
+#. First gap of the ActivateInfo text: Multihead mode name
+msgid "Xinerama"
+msgstr "சினரமா"
+
+#. Tab text for the mouse model dialog
+msgid "Mouse Model"
+msgstr "சுட்டியின் மாதிரி"
+
+#. Group box title for the primary keyboard setup
+msgid "Primary Setup"
+msgstr "முதன்மை அமைப்பு"
+
+#. Label text for the primary keyboard type
+msgid "Type"
+msgstr "வகை"
+
+#. Label text for the primary keyboard variant
+#. Table topic text describing the variant column
+msgid "Variant"
+msgstr "மாறுபாடு"
+
+#. Group box title for the additional keyboard setup
+msgid "Additional Layouts"
+msgstr "கூடுதல் வடிவமைப்புகள்"
+
+#. Table topic text describing the status column
+msgid "Status"
+msgstr "நிலை"
+
+#. Table topic text describing the keytable column
+msgid "Keytable"
+msgstr "விசைஅட்டவணை"
+
+#. List View root item text
+msgid "Group Shift/Lock Behavior"
+msgstr "குழு மாற்ற/பூட்டுதல் நடத்தை"
+
+#. List View root item text
+msgid "Use Keyboard LED to Show Alternate Group"
+msgstr "மாற்று குழுவை காட்டுவதற்கு தட்டச்சு பொறி  LEDயை பயன்படுத்தவும்"
+
+#. List View root item text
+msgid "Compose Key Position"
+msgstr "விசை நிலையை தொகுக்கவும்"
+
+#. List View root item text
+#. XKBFile extension text
+msgid "Control Key Position"
+msgstr "கட்டுப்பாட்டு விசை நிலை"
+
+#. List View root item text
+msgid "Third Level Chooser"
+msgstr "மூன்றாம் நிலை தேர்வாளர்"
+
+#. List View root item text
+msgid "Alt/Win Key Behavior"
+msgstr "Alt/Win விசை நடத்தை"
+
+#. List View root item text
+msgid "EuroSign Key Position"
+msgstr ""
+
+#. List View root item text
+msgid "CapsLock Key Behavior"
+msgstr "CapsLock விசை நடத்தை"
+
+#. List View item text: Radiobutton no item selected
+msgid "None"
+msgstr "ஒன்றுமில்லை"
+
+#. XKBFile extension text
+msgid "Morocco"
+msgstr "மொராக்கோ"
+
+# BR
+#. XKBFile extension text
+#, fuzzy
+msgid "Braille"
+msgstr "À¢§Ãº¢ø"
+
+# ET
+# fuzzy
+#. XKBFile extension text
+msgid "Ethiopia"
+msgstr "±Í§¼¡É¢Â¡"
+
+#. XKBFile extension text
+msgid "NICOLA-F style Backspace"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Right Alt key never chooses 3rd level."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Left Alt key switches layout while pressed."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Space key outputs non"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Default numeric keypad keys."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Both Ctrl keys together change layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Using space key to input non-breakable space character"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Right Shift key changes layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Left Win-key changes layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "LCtrl+LShift change layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Left Alt key changes layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Both Win-keys switch layout while pressed."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Right Ctrl key switches layout while pressed."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Space key outputs non-breakable space character"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Shift+CapsLock changes layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "R-Alt switches layout while pressed."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Numeric keypad layout selection"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Right Ctrl key changes layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Alt+CapsLock changes layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Super is mapped to the Win-keys."
+msgstr ""
+
+#. XKBFile extension text
+msgid "ScrollLock LED shows alternative layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Both Shift keys together change layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Space key outputs non-breakable space character at second level."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Right Win-key changes layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Space key outputs non-breakable space character at third level."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Numeric keypad keys work as with Mac."
+msgstr ""
+
+#. XKBFile extension text
+msgid "CapsLock LED shows alternative layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "NumLock LED shows alternative layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Left Shift key changes layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Left Win-key switches layout while pressed."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Space key outputs non-breakable space character at fourth level."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Both Alt keys together change layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "CapsLock key changes layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Control is mapped to the Win-keys (and the usual Ctrl keys)."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Right Alt key changes layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Shift with numeric keypad keys works as in MS Windows."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Alt and Meta are on the Alt keys."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Alt+Shift change layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Ctrl+Shift change layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Space key outputs usual space at any level."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Japanese keyboard options"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Use keyboard LED to show alternative layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Left Ctrl key changes layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Menu key changes layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Alt+Ctrl change layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Right Win-key switches layout while pressed."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Layout switching"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Left Alt key switches group while pressed."
+msgstr "அழுத்தப்படும்போது இடது Alt விசை குழு மாறுகிறது."
+
+#. XKBFile extension text
+msgid "Both Ctrl keys together change group."
+msgstr "இரு Ctrl விசைகளும் ஒன்றாக குழு மாறுகின்றன."
+
+#. XKBFile extension text
+msgid "Right Shift key changes group."
+msgstr "வலது Shift விசை குழு மாறுகிறது."
+
+#. XKBFile extension text
+msgid "Left Win key changes group."
+msgstr "இடது Win விசை குழு மாறுகிறது."
+
+#. XKBFile extension text
+msgid "Left Alt key changes group."
+msgstr "இடது Alt விசை குழு மாறுகிறது."
+
+#. XKBFile extension text
+msgid "Both Win keys switch group while pressed."
+msgstr "அழுத்தப்படும்போது இரு Win விசைகளும் குழு மாறுகின்றன."
+
+#. XKBFile extension text
+msgid "Right Ctrl key switches group while pressed."
+msgstr "அழுத்தப்படும்போது வலது Ctrl விசை குழு மாறுகிறது."
+
+#. XKBFile extension text
+msgid "Left Alt is swapped with left Win-key."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Default numpad keys."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Adding the nobreakspace keysym to space key"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Use keypad with unicode additions (arrows and math operators)"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Force standard legacy keypad"
+msgstr ""
+
+#. XKBFile extension text
+msgid "CapsLock uses internal capitalization. Shift doesn't affect CapsLock."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Keypad layout selection"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Alt+CapsLock changes group."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Space key output nobreakspace at second level."
+msgstr ""
+
+#. XKBFile extension text
+msgid "CapsLock acts as Shift with locking. Shift doesn't affect CapsLock."
+msgstr ""
+
+#. XKBFile extension text
+#, fuzzy
+msgid "CapsLock uses internal capitalization. Shift \"pauses\" CapsLock."
+msgstr "CapsLock உள் பெரிய எழுத்தாக்குதலை பயன்படுத்துகிறது. CapsLockகை Shift ரத்து செய்கிறது."
+
+#. XKBFile extension text
+msgid "Space key output nobreakspace at third level."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Swap keycodes of two keys when Mac keyboards are misdetected by kernel."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Numpad keys work as with Mac."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Kana Lock key is locking"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Space key output nobreakspace at fourth level."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Left Win-key is Compose."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Press Right Alt key to choose 3rd level, Shift+Right Alt key is Multi_Key."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Space key output space at any level."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Japanese Keyboard Options"
+msgstr ""
+
+#. XKBFile extension text
+#, fuzzy
+msgid "CapsLock acts as Shift with locking. Shift \"pauses\" CapsLock."
+msgstr "பூட்டுதலுடன்கூடிய Shiftஆக CapsLock செயல்படுகிறது. CapsLockகை Shift ரத்து செய்கிறது"
+
+#. XKBFile extension text
+msgid "CapsLock uses internal capitalization. Shift doesn't cancel CapsLock."
+msgstr "CapsLock உள் பெரிய எழுத்தாக்குதலை பயன்படுத்துகிறது. CapsLockகை Shift ரத்து செய்வதில்லை."
+
+#. XKBFile extension text
+msgid "CapsLock just locks the Shift modifier."
+msgstr "Shift மேம்படுத்தியை CapsLock பூட்ட மட்டும் செய்கிறது."
+
+#. XKBFile extension text
+msgid "CapsLock toggles normal capitalization of alphabetic characters."
+msgstr "CapsLock அகர எழுத்துருக்களின் சாதாரண பெரிய எழுத்தாக்கலை  நிலைமாற்றம் செய்கிறது."
+
+#. XKBFile extension text
+msgid "CapsLock toggles Shift so all keys are affected."
+msgstr "விசைகள் அனைத்தும் பாதிக்கப்படும் வகையில் Shiftஐ CapsLock நிலைமாற்றம் செய்கிறது."
+
+#. XKBFile extension text
+msgid "Right Win-key is Compose."
+msgstr "வலது Win –விசை தொகுப்பதற்கு ஆகும்"
+
+#. XKBFile extension text
+msgid "Shift+CapsLock changes group."
+msgstr "Shift+CapsLock குழுவை மாற்றுகிறது."
+
+#. XKBFile extension text
+msgid "R-Alt switches group while pressed."
+msgstr "அழுத்தப்படும்போது R-Alt குழு மாறுகிறது"
+
+#. XKBFile extension text
+msgid "Right Control key works as Right Alt."
+msgstr "வலது கட்டுப்பாட்டு விசை வலது Altஆக செயல்படுகிறது"
+
+#. XKBFile extension text
+msgid "Control key at bottom left"
+msgstr "இடது ஓரத்திலுள்ள Control விசை"
+
+#. XKBFile extension text
+msgid "Press any of Win-keys to choose 3rd level."
+msgstr "3வது நிலையை தேர்ந்தெடுப்பதற்கு ஏதேனும் ஒரு Win-விசையை அழுத்தவும்."
+
+#. XKBFile extension text
+msgid "Press Right Alt key to choose 3rd level."
+msgstr "3வது நிலையை தேர்ந்தெடுப்பதற்கு வலது Alt விசையை அழுத்தவும்."
+
+#. XKBFile extension text
+msgid "Right Ctrl key changes group."
+msgstr "வலது Ctrl விசை குழுவை மாற்றுகிறது."
+
+#. XKBFile extension text
+msgid "Right Alt is Compose."
+msgstr "வலது Alt தொகுப்பாகும்."
+
+#. XKBFile extension text
+msgid "Right Ctrl is Compose."
+msgstr "வலது Ctrl தொகுப்பாகும்."
+
+#. XKBFile extension text
+msgid "ScrollLock LED shows alternative group."
+msgstr "ScrollLock LED மாற்று குழுவைக் காட்டுகிறது."
+
+#. XKBFile extension text
+msgid "Control key at left of -A-"
+msgstr "-A-ன் இடதுபுறமுள்ள Control விசை"
+
+#. XKBFile extension text
+msgid "Third level choosers"
+msgstr "மூன்றாம் நிலை தேர்வாளர்கள்"
+
+#. XKBFile extension text
+msgid "Both Shift keys together change group."
+msgstr "இது Shift விசைகளும் ஒன்றாக இணைந்து குழுவை மாற்றும்."
+
+#. XKBFile extension text
+msgid "CapsLock acts as Shift with locking. Shift doesn't cancel CapsLock."
+msgstr "பூட்டுதலுடன்கூடிய Shift ஆக CapsLock செயல்படுகிறது. CapsLockகை Shift ரத்து செய்வதில்லை."
+
+#. XKBFile extension text
+msgid "CapsLock uses internal capitalization. Shift cancels CapsLock."
+msgstr "CapsLock உள் பெரிய எழுத்தாக்குதலை பயன்படுத்துகிறது. CapsLockகை Shift ரத்து செய்கிறது."
+
+#. XKBFile extension text
+msgid "Make CapsLock an additional Control."
+msgstr "CapsLockகை கூடுதல் Controlஆக அமைக்கவும்."
+
+#. XKBFile extension text
+msgid "Press Left Win-key to choose 3rd level."
+msgstr "3வது நிலையை தேர்ந்தெடுப்பதற்கு இடது Win-விசையை அழுத்தவும்."
+
+#. XKBFile extension text
+msgid "Right Win-key changes group."
+msgstr "வலது Win-விசை குழுவை மாற்றுகிறது."
+
+#. XKBFile extension text
+msgid "Meta is mapped to the left Win-key."
+msgstr "இடது Win-விசையில் மெடா வரையப்பட்டுள்ளது."
+
+#. XKBFile extension text
+msgid "CapsLock LED shows alternative group."
+msgstr "CapsLock LED மாற்று குழுவைக் காட்டுகிறது."
+
+#. XKBFile extension text
+msgid "NumLock LED shows alternative group."
+msgstr "NumLock LED மாற்று குழுவைக் காட்டுகிறது."
+
+#. XKBFile extension text
+msgid "Left Shift key changes group."
+msgstr "இடது Shift-விசை குழுவை மாற்றுகிறது."
+
+#. XKBFile extension text
+msgid "Left Win-key switches group while pressed."
+msgstr "அழுத்தப்படும்போது இடது Win-விசை குழுவை மாற்றுகிறது."
+
+#. XKBFile extension text
+msgid "Menu is Compose."
+msgstr "நிரலே தொகுப்பாகும்."
+
+#. XKBFile extension text
+msgid "Both Alt keys together change group."
+msgstr "இரு Alt விசைகளும் சேர்ந்து குழுவை மாற்றுகின்றன."
+
+#. XKBFile extension text
+msgid "CapsLock key changes group."
+msgstr "CapsLock விசை குழுவை மாற்றுகிறது"
+
+#. XKBFile extension text
+msgid "Swap Control and CapsLock."
+msgstr "Control மற்றும் CapsLockif மாற்றியமைக்கவும்."
+
+#. XKBFile extension text
+msgid "Press any of Alt keys to choose 3rd level."
+msgstr "3வது நிலையை தேர்தெடுப்பதற்கு ஏந்தவொரு Alt விசையையும்அழுத்தவும்."
+
+#. XKBFile extension text
+msgid "Right Alt key changes group."
+msgstr "வலது Alt விசை குழுவை மாற்றுகிறது."
+
+#. XKBFile extension text
+msgid "Shift with numpad keys works as in MS Windows."
+msgstr "MS Windowsல் உள்ளதைப் போன்றே numpad விசைகளுடன்  Shift பணி செய்கிறது."
+
+#. XKBFile extension text
+msgid "Special keys (Ctrl+Alt+<key>) handled in a server."
+msgstr "சிறப்பு விசைகள் (Ctrl+Alt+<key>)சேவகனில் கையாளப்படுகின்றன"
+
+#. XKBFile extension text
+msgid "Hyper is mapped to the Win-keys."
+msgstr "Win-விசைகளில் Hyper வரையப்பட்டுள்ளது."
+
+#. XKBFile extension text
+msgid "Alt is mapped to the right Win-key and Super to Menu."
+msgstr "வலது Win-விசையில் Alt வரையப்பட்டுள்ளது மற்றும் நிரலில் சூப்பர்."
+
+#. XKBFile extension text
+msgid "Super is mapped to the Win-keys (default)."
+msgstr "Win-விசைகளில் சூப்பர் வரையப்பட்டுள்ளது (முன்னிருந்த நிலை)."
+
+#. XKBFile extension text
+msgid "Alt and Meta on the Alt keys (default)."
+msgstr "Alt மற்றும் Meta ஆகியவை Alt விசைகளில் (முன்னிருந்த நிலை)."
+
+#. XKBFile extension text
+msgid "Add the standard behavior to Menu key."
+msgstr "நிலையான நடத்தையை நிரல் விசையில் சேர்க்கவும்."
+
+#. XKBFile extension text
+msgid "Alt and Meta are on the Alt keys (default)."
+msgstr "Alt மற்றும் Meta ஆகியவை Alt விசைகளில் உள்ளன (முன்னிருந்த நிலை)."
+
+#. XKBFile extension text
+msgid "Press Right Control to choose 3rd level."
+msgstr "3வது நிலையை தேர்ந்தெடுப்பதற்கு வலது Control விசையை அழுத்தவும்."
+
+#. XKBFile extension text
+msgid "Alt+Shift changes group."
+msgstr "Alt+Shift குழுவை மாற்றுகிறது."
+
+#. XKBFile extension text
+msgid "Control+Shift changes group."
+msgstr "Control+Shift குழுவை மாற்றுகிறது."
+
+#. XKBFile extension text
+msgid "CapsLock acts as Shift with locking. Shift cancels CapsLock."
+msgstr "பூட்டுதலுடன்கூடிய Shiftஆக CapsLock செயல்படுகிறது. CapsLockகை Shift ரத்து செய்கிறது"
+
+#. XKBFile extension text
+msgid "Use keyboard LED to show alternative group."
+msgstr "மாற்று குழுவை காட்டுவதற்கு  தட்டச்சுப் பொறி LEDயை பயன்படுத்தவும்"
+
+#. XKBFile extension text
+msgid "Press Right Win-key to choose 3rd level."
+msgstr "3வது நிலையை தேர்ந்தெடுப்பதற்கு வலது Win-விசையை அழுத்தவும்"
+
+#. XKBFile extension text
+msgid "Press Left Alt key to choose 3rd level."
+msgstr "3வது நிலையை தேர்ந்தெடுப்பதற்கு இடது Alt-விசையை அழுத்தவும்."
+
+#. XKBFile extension text
+msgid "Meta is mapped to the Win-keys."
+msgstr "Win-விசைகளில் மெடா வரையப்பட்டுள்ளது."
+
+#. XKBFile extension text
+msgid "Press Menu key to choose 3rd level."
+msgstr "3வது நிலையை தேர்ந்தெடுப்பதற்கு நிரல் விசையை அழுத்தவும்."
+
+#. XKBFile extension text
+msgid "Left Ctrl key changes group."
+msgstr "இடது Ctrl விசை குழுவை மாற்றுகிறது."
+
+#. XKBFile extension text
+msgid "Menu key changes group."
+msgstr "நிரல் விசை குழுவை மாற்றுகிறது."
+
+#. XKBFile extension text
+msgid "Alt+Control changes group."
+msgstr "Alt+Control குழுவை மாற்றுகிறது."
+
+#. XKBFile extension text
+msgid "Right Win-key switches group while pressed."
+msgstr "அழுத்தப்படும்போது வலது Win-விசை குழுவை மாற்றுகிறது."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Serbia"
+msgstr "¦º÷À¢Âý"
+
+#. XKBFile extension text
+msgid "Guinea"
+msgstr "ÌÅ¡ò¾Á¡Ä¡"
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Montenegro"
+msgstr "செர்பியா மற்றும் மான்டநெக்ரோ"
+
+#. XKBFile extension text
+msgid "China"
+msgstr "º£É¡"
+
+#. XKBFile extension text
+#, fuzzy
+msgid "USA"
+msgstr "யூஎஸ்பி"
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Add the EuroSign to the 4 key."
+msgstr "EuroSignனை 5 விசையில் சேர்க்கவும்."
+
+#. XKBFile extension text
+msgid "Four-level key with dot"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Legacy Wang 724 keypad"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Four-level key with abstract separators"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Keypad with unicode additions (arrows and math operators)"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Legacy keypad"
+msgstr ""
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Shift cancels CapsLock."
+msgstr "Ctrl மற்றும் CapsLockஐ இடமாற்றம் செய்யவும்."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Swap ESC and CapsLock."
+msgstr "Ctrl மற்றும் CapsLockஐ இடமாற்றம் செய்யவும்."
+
+#. XKBFile extension text
+msgid "Wang 724 keypad with unicode additions (arrows and math operators). Math operators on default level."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Four-level key with comma"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Legacy key with comma"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Keypad with unicode additions (arrows and math operators). Math operators on default level."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Legacy key with dot"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Four-level key with momayyez"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Numeric keypad delete key behaviour"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Wang 724 keypad with unicode additions (arrows and math operators)"
+msgstr ""
+
+#. Tab title: Tablet port and mode selection
+msgid "Port and Mode"
+msgstr "முணையம் மற்றும் வகை"
+
+#. Tab title: Tablet electronic pens (pen,eraser)
+msgid "Electronic Pens"
+msgstr "மின்னணு பேனாக்கள்;"
+
+#. Activate tablet checkbox
+msgid "Activate This Tablet"
+msgstr "இந்த டேப்லட்டை செயல்படுத்தவும்"
+
+#. Group box title for the tablet vendor and name selection
+msgid "Tablet: Vendor and Name Selection"
+msgstr "டேப்லட்: விற்பனையாளர் மற்றும் பெயர் தேர்வு"
+
+#. Group box title for tablet port combobox
+msgid "Connection Port"
+msgstr "இணைப்புக்கான முணையம்"
+
+#. Group box title for tablet mode
+msgid "Primary Tablet Mode"
+msgstr "முதன்மை டேப்லட் வகை"
+
+#. Group box title for pen/eraser tablet mode
+msgid "Pen or Eraser Mode"
+msgstr "பேனா அல்லது அழிசாதன வகை"
+
+#. Radiobutton for relative tablet mode
+msgid "Relative"
+msgstr "மாறுதலுக்குட்பட்டது"
+
+#. Radiobutton for absolute tablet mode
+msgid "Absolute"
+msgstr "இறுதியானது"
+
+#. Combobox item text for tablet port: USB
+msgid "USB"
+msgstr "யூஎஸ்பி"
+
+#. Combobox item text for tablet port: ttyS0
+msgid "COM-1 [ /dev/ttyS0 ]"
+msgstr "COM-1 [ /dev/ttyS0 ]"
+
+#. Combobox item text for tablet port: ttyS1
+msgid "COM-2 [ /dev/ttyS1 ]"
+msgstr "COM-2 [ /dev/ttyS1 ]"
+
+#. Combobox item text for tablet port: ttyS2
+msgid "COM-3 [ /dev/ttyS2 ]"
+msgstr ""
+
+#. Combobox item text for tablet port: ttyS3
+msgid "COM-4 [ /dev/ttyS3 ]"
+msgstr ""
+
+#. Combobox item text for tablet port: ttyS4
+#, fuzzy
+msgid "COM-5 [ /dev/ttyS4 ]"
+msgstr "COM-1 [ /dev/ttyS0 ]"
+
+#. Group box title for the tablet tools (pen/eraser)
+msgid "Tools"
+msgstr "கருவிகள்"
+
+#. Add Pen Checkbox
+msgid "Add Pen"
+msgstr "பேனாவை சேர்க்கவும்"
+
+#. Add Eraser Checkbox
+msgid "Add Eraser"
+msgstr "அழிசாதனத்தை சேர்க்கவும்"
+
+#. Add Touch Checkbox
+msgid "Add Touch"
+msgstr ""
+
+#. Add Pad Checkbox
+msgid "Add Pad"
+msgstr ""
+
+#. Windowanager title for the tablet pen options dialog
+msgid "Pen or Eraser Settings"
+msgstr "பேனா அல்லது அழிசாதன அமைப்புகள்"
+
+#. Tab title: Pen properties
+msgid "Pen Properties"
+msgstr "பேனா பண்புகள்"
+
+#. Tab title: Pad properties
+msgid "Pad Properties"
+msgstr ""
+
+#. Tab title: Eraser properties
+msgid "Eraser Properties"
+msgstr "அழிசாதன பண்புகள்"
+
+#. Tab title: Touch properties
+#, fuzzy
+msgid "Touch Properties"
+msgstr "தொடுதிரை பண்புகள்"
+
+#. Tab text for a touchscreen tab of the touchscreen dialog
+#, fuzzy
+msgid "Touchscreen %1"
+msgstr "தொடுதிரை"
+
+#. Activate/Assign touchscreen checkbox
+msgid "Assign a Touchscreen to Display Number %1"
+msgstr "%1 எண்ணை காட்டுவதற்கு ஒரு தொடுதிரையை ஒதுக்கீடு செய்யவும்"
+
+#. Group box title for the touchscreen vendor and name selection
+msgid "Touchscreen: Vendor and Name Selection"
+msgstr "தொடுதிரை: விற்பனையாளர் மற்றும் பெயர் தேர்வு"
+
+#. Finish configuration message box
+#, fuzzy
+msgid "<b>Final Steps</b><hr>The last step is saving your new configuration. It is recommended to test the new configuration before saving it. If the test server shows a corrupted desktop, press <b>[ Ctrl+Alt+Backspace ]</b> and <b>[ Ctrl+Alt+Backspace ]</b> shortly after a loud warning (beep) to kill the server."
+msgstr "<b>இறுதி நிலைகள்</b><hr>இறுதி நிலையானது உங்கள் புதிய உள்ளமைவைசேமிப்பதாகும், சேமிப்பதற்கு முன்னதாக புதிய உள்ளமைவு சோதிக்கப்பட வேண்டுமென்றுபரிந்துரைக்கப்படுகிறது. சோதனை சேவகன் சேதமடைந்த கணிமேசயைக் காட்டுமானால், சேவகனைக் கொல்வதற்கு <b>[ Ctrl+Alt+Backspace ]</b>ஐ அழுத்தவும்."
+
+#. Finish configuration message box (without test)
+msgid "<b>Saving the configuration</b><hr>Click on Save to store the configuration. Your changes will become effective on next X-Server restart."
+msgstr ""
+
+#. Tab title: VNC Server configuration
+msgid "X Server Remote Control"
+msgstr ""
+
+#. Activate VNC server checkbox
+msgid "Allow access to display and keyboard/mouse of your X Server"
+msgstr ""
+
+#. Activate VNC password protection checkbox
+msgid "Activate Password Protection"
+msgstr "கடவுச்சொல் பாதுகாப்பை செயல்படுத்தவும்"
+
+#. LineEdit label: enter password
+msgid "Password"
+msgstr "கடவுச்சொல்"
+
+#. LineEdit contents: enter new password
+msgid "<Enter new password>"
+msgstr "<புதிய கடவுச்சொல்லை உள்ளிடவும்>"
+
+#. LineEdit contents: change password
+msgid "<Change password>"
+msgstr "<கடவுச்சொல்லை மாற்றவும்>"
+
+#. LineEdit contents: verify password
+msgid "<Verify password>"
+msgstr "<கடவுச்சொல்லை சரிபார்க்கவும்>"
+
+#. Activate HTTP access checkbox
+msgid "Activate HTTP Access"
+msgstr "HTTP அணுக்கத்தை செயல்படுத்தவும்"
+
+#. Activate multiple VNC connection checkbox
+msgid "Allow Multiple Connections"
+msgstr ""
+
+#. SpinBox label to setup the HTTP port number
+msgid "HTTP Port"
+msgstr "HTTP முணையம்"
+
+#. VNC message box appearing if password strings doesn't match
+msgid "<b>Remote Access Password Mismatch</b><hr>The first and the second version of the password do not match."
+msgstr ""
+
+#. VNC message box appearing if password is too short
+msgid "<b>Remote Access Password Fault</b><hr>The password field has been left empty or the password is too short. Enter a password with at least six characters."
+msgstr ""
+
+#. VNC message box appearing if password is too long
+msgid "<b>Remote Access Password Fault</b><hr>The password is too long. Enter a password with a maximum of eight characters."
+msgstr ""
+
+#. Install missing packages box
+msgid "<b>Software Installation:</b><hr>Some packages are missing. Install the missing packages now?"
+msgstr "<b>மென்பொருள் நிறுவுதல்:</b><hr>சில தயாரிப்புகள் காணப்படவில்லை. தொலைந்துபோன தயாரிப்புகளை இப்போது நிறுவலாமா?"
+
+#. Caption text for the missing package info window
+msgid "Package Installation"
+msgstr "தயாரிப்பு நிறுவுதல்"
+
+#. Progress bar title text
+msgid "Importing module"
+msgstr "கூறு இறக்குமதி செய்யப்படுகிறது"
+
+#. Progress window caption text
+msgid "SaX2: Importing data..."
+msgstr "SaX2: தரவு இறக்குமதி செய்யப்படுகிறது..."
+
+#. Progress window label text
+msgid "Initialize cache..."
+msgstr "தற்காலிக சேமிப்பை துவக்கவும்..."
+
+#. Message box text: configuration cannot be saved
+msgid "<b>Saving Configuration Failed</b><hr>The following report has been created:"
+msgstr "<b>உள்ளமைவு சேமிக்கப்படுவது தோல்வியுற்றது</b><hr>பின்வரும் அறிக்கைஉருவாக்கப்பட்டுள்ளது:"
+
+#. Message box test: configuration has been saved
+msgid "<b>Configuration Saved</b><hr>Your modifications will take effect the next time the graphics system is restarted. Exit SaX2 now?"
+msgstr "<b>உள்ளமைவு சேமிக்கப்பட்டது</b><hr>அடுத்தமுறை சித்திர அமைப்பு மறுதுவக்கம்செய்யப்படும்போது உங்கள் மாற்றங்கள் செயல்படத் துவங்கும். இப்போது SaX2வைவிட்டு வெளியேறலாமா?"
+
+#. Message box text: testing the configuration has failed
+msgid "<b>Testing Configuration Failed</b><hr>For further information, refer to the file <tt>/var/log/Xorg.99.log</tt>. The following report has been created from the calling instance:"
+msgstr "<b>உள்ளமைவை சோதித்தல் தோல்வியுற்றது</b><hr>கூடுதல் விவரங்களுக்கு, <tt>/var/log/Xorg.99.log</tt>என்ற கோப்பை பாக்கவும். குறிப்பிட்ட நிகழ்வுதொடர்பாக பின்வுரம் அறிக்கை உருவாக்கப்பட்டுள்ளது:"
+
+#. Message box text: if VNC has been enabled the firewall should be checked
+msgid "<b>Remote Access configuration information</b><hr>The Remote Access service requires that the TCP port 5900 and an HTTP port (5800 by default) be open in the firewall. You can configure this with YaST."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Miscellaneous compatibility options"
+msgstr "இதர ஒத்திசைவு விருப்பத்தேர்வுகள்"
+
+#. XKBFile extension text
+msgid "Add the EuroSign to the 5 key."
+msgstr "EuroSignனை 5 விசையில் சேர்க்கவும்."
+
+#. XKBFile extension text
+msgid "CapsLock key behavior"
+msgstr "CapsLock விசை நடத்தை"
+
+#. XKBFile extension text
+msgid "Alt/Win key behavior"
+msgstr "Alt/Win விசை நடத்தை"
+
+#. XKBFile extension text
+msgid "Adding the EuroSign to certain keys"
+msgstr "சில விசைகளுடன் EuroSignனை சேர்த்தல்"
+
+#. XKBFile extension text
+msgid "Caps Lock is Compose."
+msgstr "Caps Lock தொகுத்தலாகும்"
+
+#. XKBFile extension text
+msgid "Right Ctrl key works as Right Alt."
+msgstr "வலது Ctrl விசை வலது Altஆக பணி செய்கிறது."
+
+#. XKBFile extension text
+msgid "Ctrl key at bottom left"
+msgstr "இடது கீழ்க் கோடியில் Ctrl விசை"
+
+#. XKBFile extension text
+msgid "Ctrl key at left of 'A'"
+msgstr "Ctrl விசை 'A'ன் இடப்புறம்"
+
+#. XKBFile extension text
+msgid "Make CapsLock an additional Ctrl."
+msgstr "CapsLockஐ ஒரு கூடுதல் Ctrlஆக அமைக்கவும்."
+
+#. XKBFile extension text
+msgid "Swap Ctrl and CapsLock."
+msgstr "Ctrl மற்றும் CapsLockஐ இடமாற்றம் செய்யவும்."
+
+#. XKBFile extension text
+msgid "Ctrl key position"
+msgstr "Ctrl விசையின் நிலை"
+
+#. XKBFile extension text
+msgid "Special keys (Ctrl+Alt+&lt;key&gt;) handled in a server."
+msgstr "சேவகனில் கையாளப்படும் சிறப்பு விசைகள்(Ctrl+Alt+&lt;key&gt;)."
+
+#. XKBFile extension text
+msgid "Press Right Ctrl to choose 3rd level."
+msgstr "3வது நிலையை தேர்தெடுப்பதற்கு வலது Ctrlஐ அழுத்தவும்."
+
+#. XKBFile extension text
+msgid "Ctrl+Shift changes group."
+msgstr "Ctrl+Shift குழுவை மாற்றுகிறது."
+
+#. XKBFile extension text
+msgid "Add the EuroSign to the E key."
+msgstr "E விசையுடன் EuroSignனை சேர்க்கவும்"
+
+#. XKBFile extension text
+msgid "Add the EuroSign to the 2 key."
+msgstr "2 விசையுடன் EuroSignனை சேர்க்கவும்."
+
+#. XKBFile extension text
+msgid "key Compose key position"
+msgstr "விசை தொகுப்பு விசை நிலை"
+
+#. XKBFile extension text
+msgid "Alt+Ctrl changes group."
+msgstr "Alt+Ctrl குழுவை மாற்றுகிறது."
+
+#. XKBFile extension text
+msgid "Group Shift/Lock behavior"
+msgstr "குழு மாற்றம்;/பூட்டுதல் நடத்தை"
+
+#. XKBFile extension text
+msgid "Arabic"
+msgstr "«Ã¡À¢ì"
+
+#. XKBFile extension text
+msgid "Nepal"
+msgstr "நேபாளம்"
+
+#. XKBFile extension text
+msgid "Congo, Democratic Republic of the"
+msgstr ""
+
+# CZ
+# fuzzy
+#. XKBFile extension text
+#, fuzzy
+msgid "Korea, Republic of"
+msgstr "¦¼¡Á¢É¢ì¸ý ÌÊÂÃÍ"
+
+# IQ
+#. XKBFile extension text
+msgid "Iraq"
+msgstr "®Ã¡ì"
+
+# NG
+# fuzzy
+#. XKBFile extension text
+msgid "Nigeria"
+msgstr "¦º÷À¢Â¡"
+
+#. XKBFile extension text
+msgid "Japan (PC-98xx Series)"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Estonia"
+msgstr "±Í§¼¡É¢Â¡"
+
+#. XKBFile extension text
+msgid "Myanmar"
+msgstr "ÀÉ¡Á¡"
+
+#. XKBFile extension text
+msgid "Norway"
+msgstr "¿¡÷§Å"
+
+#. XKBFile extension text
+msgid "Germany"
+msgstr "§º÷ÁÉ¢"
+
+#. XKBFile extension text
+msgid "Mongolia"
+msgstr "மங்கோலியா"
+
+#. XKBFile extension text
+msgid "Bhutan"
+msgstr "À¢§Ãº¢ø"
+
+#. XKBFile extension text
+msgid "Bangladesh"
+msgstr "Àí¸Ç¡§¾Í"
+
+#. XKBFile extension text
+msgid "Latin American"
+msgstr "லத்தீன் அமெரிக்கன்"
+
+#. XKBFile extension text
+msgid "Belgium"
+msgstr "¦Àøº¢Âõ"
+
+#. XKBFile extension text
+msgid "Finland"
+msgstr "À¢ýÄ¡óÐ"
+
+#. XKBFile extension text
+msgid "Israel"
+msgstr "­Í§Ãø"
+
+#. XKBFile extension text
+msgid "Sweden"
+msgstr "ÍÅ£¼ý"
+
+#. XKBFile extension text
+msgid "Russia"
+msgstr "ரஷ்யா"
+
+#. XKBFile extension text
+msgid "Portugal"
+msgstr "§À¡÷òÐ¸ø"
+
+#. XKBFile extension text
+msgid "Korean"
+msgstr "¦¸¡Ã¢Âý"
+
+#. XKBFile extension text
+msgid "Maori"
+msgstr "Á¡µÃ¢"
+
+#. XKBFile extension text
+msgid "Uzbekistan"
+msgstr "உஸ்பெகிஸ்தான்"
+
+#. XKBFile extension text
+msgid "Bulgaria"
+msgstr "Àø§¸Ã¢Â¡"
+
+#. XKBFile extension text
+msgid "Thailand"
+msgstr "¾¡öÄ¡óÐ"
+
+#. XKBFile extension text
+msgid "India"
+msgstr "­ó¾¢Â¡"
+
+#. XKBFile extension text
+msgid "Bengali"
+msgstr "¦Àøº¢Âõ"
+
+#. XKBFile extension text
+msgid "Switzerland"
+msgstr "ÍÅ¢ðº÷Ä¡óÐ"
+
+#. XKBFile extension text
+msgid "Laos"
+msgstr "லாவோஸ்"
+
+#. XKBFile extension text
+msgid "Japan"
+msgstr "ºôÀ¡ý"
+
+#. XKBFile extension text
+msgid "Syria"
+msgstr "¦º÷À¢Â¡"
+
+#. XKBFile extension text
+msgid "Czechia"
+msgstr "செக்கியா"
+
+#. XKBFile extension text
+msgid "Belarus"
+msgstr "¦ÀÄ¡åÍ"
+
+#. XKBFile extension text
+msgid "Tajikistan"
+msgstr "¾¡öÅ¡ý"
+
+#. XKBFile extension text
+msgid "Denmark"
+msgstr "¦¼ýÁ¡÷ì"
+
+#. XKBFile extension text
+msgid "Slovenia"
+msgstr "Í§Ä¡Å¢É¢Â¡"
+
+#. XKBFile extension text
+msgid "Malta"
+msgstr "Á¡ø¼¡"
+
+#. XKBFile extension text
+msgid "Azerbaijan"
+msgstr "«º÷¨Àº¡ý"
+
+#. XKBFile extension text
+msgid "Lithuania"
+msgstr "Ä¢òÐ§ÅÉ¢Â¡"
+
+#. XKBFile extension text
+msgid "Vietnam"
+msgstr "Vietnam"
+
+#. XKBFile extension text
+msgid "Faroe Islands"
+msgstr "«Â÷Ä¡óÐ"
+
+#. XKBFile extension text
+msgid "South Africa"
+msgstr "¦¾ý ¬ôÃ¢ì¸¡"
+
+#. XKBFile extension text
+msgid "Farsi"
+msgstr "ஃபார்ஸி"
+
+#. XKBFile extension text
+msgid "Slovakia"
+msgstr "Í§Ä¡Å¡ì¸¢Â"
+
+#. XKBFile extension text
+msgid "Maldives"
+msgstr "Á¡ø¼¡"
+
+#. XKBFile extension text
+msgid "Iceland"
+msgstr "³ÍÄ¡óÐ"
+
+#. XKBFile extension text
+msgid "Croatia"
+msgstr "Ì¦Ã¡§Åº¢Â¡"
+
+#. XKBFile extension text
+msgid "Latvia"
+msgstr "ÄðÅ¢Â¡"
+
+#. XKBFile extension text
+msgid "Albania"
+msgstr "அல்பேனியா"
+
+#. XKBFile extension text
+msgid "Italy"
+msgstr "­ò¾¡Ä¢"
+
+#. XKBFile extension text
+msgid "Greece"
+msgstr "¸¢Ã£Í"
+
+#. XKBFile extension text
+msgid "United Kingdom"
+msgstr "யுனைடெட் கிங்டம்"
+
+#. XKBFile extension text
+msgid "France"
+msgstr "À¢Ã¡ýÍ"
+
+#. XKBFile extension text
+msgid "Armenia"
+msgstr "¬÷¦ºýÊÉ¡"
+
+#. XKBFile extension text
+msgid "Pakistan"
+msgstr "பாகிஸ்தான்"
+
+#. XKBFile extension text
+msgid "Poland"
+msgstr "§À¡Ä¡óÐ"
+
+#. XKBFile extension text
+msgid "Kyrgyzstan"
+msgstr "கைர்கிஸ்தான்"
+
+#. XKBFile extension text
+msgid "Ireland"
+msgstr "«Â÷Ä¡óÐ"
+
+#. XKBFile extension text
+msgid "Hungary"
+msgstr "¬í§¸Ã¢"
+
+#. XKBFile extension text
+msgid "Cambodia"
+msgstr "¦¸¡ÄõÀ¢Â¡"
+
+#. XKBFile extension text
+msgid "Spain"
+msgstr "Í¦ÀÂ¢ý"
+
+#. XKBFile extension text
+msgid "Ukraine"
+msgstr "¯ì¦Ãöý"
+
+#. XKBFile extension text
+msgid "Romania"
+msgstr "Õ§ÁÉ¢Â¡"
+
+#. XKBFile extension text
+msgid "Kazakhstan"
+msgstr "¾¡öÅ¡ý"
+
+#. XKBFile extension text
+msgid "Georgia"
+msgstr "¦º÷À¢Â¡"
+
+#. XKBFile extension text
+msgid "U.S. English"
+msgstr "யு.எஸ்.ஆங்கிலம்"
+
+#. XKBFile extension text
+msgid "Turkish"
+msgstr "ÐÕì¸¢Â"
+
+#. XKBFile extension text
+msgid "PC-98xx Series"
+msgstr "PC-98xx வரிசை"
+
+#. XKBFile extension text
+msgid "Netherlands"
+msgstr "¦¿¾÷Ä¡óÐ"
+
+#. XKBFile extension text
+msgid "Macedonia"
+msgstr "Á¡º¢§¼¡É¢Â¡"
+
+#. XKBFile extension text
+msgid "Canada"
+msgstr "¸É¼¡"
+
+#. XKBFile extension text
+msgid "Sri Lanka"
+msgstr "¦º÷À¢Âý"
+
+#. XKBFile extension text
+msgid "Bosnia and Herzegovina"
+msgstr "பாஸ்னியா மற்றும் ஹெர்சகோவினா"
+
+#. XKBFile extension text
+msgid "Brazil"
+msgstr "À¢§Ãº¢ø"
+
+#. XKBFile extension text
+msgid "Ghana"
+msgstr "º£É¡"
+
+#. XKBFile extension text
+msgid "Andorra"
+msgstr "அன்டோரா"
+
+#. XKBFile extension text
+msgid "Afghanistan"
+msgstr "ஆப்கானிஸ்தான்"
+
+#. XKBFile extension text
+msgid "Esperanto"
+msgstr "±ÍÀÃ¡ý§¼¡"
+
+#. XKBFile extension text
+msgid "Turkey"
+msgstr "ÐÕì¸¢"
+
+#. XKBFile extension text
+msgid "CapsLock key switches layout while pressed, Alt+CapsLock does the original capslock action."
+msgstr ""
+
+#. XKBFile extension text
+msgid "CapsLock switch to first layout, Shift+CapsLock switch to last layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Less-than/Greater-than is Compose."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Space key outputs non-breakable space character at fourth level, thin non-breakable space character at sixth level (via Ctrl+Shift"
+msgstr ""
+
+#. /.../
+#. Copyright (c) 2000 SuSE GmbH Nuernberg, Germany.  All rights reserved.
+#. This file contains the gettext keys used within a gettext call in the
+#. application code for XFine2
+#.
+#. Maximum length: 40  characters
+msgid "&Step size"
+msgstr "&நிலை அளவு"
+
+#. Maximum length: 40  characters
+msgid "Small"
+msgstr "சிறியது"
+
+#. Maximum length: 40  characters
+msgid "Normal"
+msgstr "_­ÂøÀ¡É «Ç×"
+
+#. Maximum length: 40  characters
+msgid "Big"
+msgstr "பெரியது"
+
+#. Maximum length: 40  characters
+msgid "Huge"
+msgstr "மிகப்பெரியது"
+
+#. Maximum length: 40  characters
+msgid "&Next Screen"
+msgstr "&அடுத்த திரை"
+
+#. Maximum length: 40  characters
+msgid "S&ave"
+msgstr "சேமிக்;&கவும்"
+
+#. Maximum length: 40  characters
+msgid "Change &Position"
+msgstr "நிலையை & மாற்றவும்"
+
+#. Maximum length: 40  characters
+msgid "C&hange Size"
+msgstr "அ&ளவை மாற்றவும்"
+
+#. Maximum length: 40  characters
+msgid "Screen"
+msgstr "திரை"
+
+#. Maximum length: 60  characters
+msgid "No video mode tuning available"
+msgstr "வீடியோ வகை ஒத்திசைவு இல்லை"
+
+msgid "Display"
+msgstr "காட்சிப்படுத்துதல்"
+
+msgid "Configuration on display"
+msgstr "காட்சிப்படுத்தப்பட்டுள்ள உள்ளமைவு"
+
+msgid "Idle timer..."
+msgstr "செயல்பாடில்லாத நேரக்குறிப்பான்..."

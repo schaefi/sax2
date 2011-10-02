@@ -1,0 +1,5 @@
+wacom=USB:bool Tilt:bool KeepShape:bool AlwaysCore:bool TopX:any TopY:any BottomX:any BottomY:any DeviceName:any Suppress:any HistorySize:any DebugLevel:any BaudRate:string%38400,19200,9600 Serial:any Threshold:any ForceDevice:any Button2:string%1,2,3 TPCButton:string%on,off Rotate:string%NONE,CW,CCW,HALF
+hyperpen=AlwaysCore:bool XSize:any YSize:any Cursor:string%Stylus,Pen
+summa=Compatible:bool AlwaysCore:bool Cursor:string%Stylus,Pen
+acecad=Model:any ReportSpeed:any
+fpit=AlwaysCore:bool BaudRate:string%38400,19200,9600 InvertY:bool MaximumXPosition:integer MaximumYPosition:integer MinimumXPosition:integer MinimumYPosition:integer InvertX:bool SwapXY:bool Rotate:string%NONE,CW,CCW DeviceName:any AlwaysCore:bool DebugLevel:integer Passive:bool

@@ -1,0 +1,537 @@
+# /.../
+# Copyright (c) 2000 SuSE GmbH Nuernberg, Germany.  All rights reserved.
+# Author: Marcus Schaefer <sax@suse.de>, 2001
+#
+# Template for pen data
+# -----------------------
+# <VENDOR NAME>:<DEVICE NAME>  {
+#  Driver               = driver...
+#  Protocol             = protocol...
+#  Device               = device name...
+#  BaudRate             = baud rate...
+#  SampleRate           = sample rate...
+#  Emulate3Buttons      = <on> or <off>
+#  Emulate3Timeout      = timeout val...
+#  ChordMiddle          = <on> or <off>
+#  MinX                 = area border...
+#  MaxX                 = area border...
+#  MinY                 = area border...
+#  MaxY                 = area border...
+#  ScreenNumber         = integer...
+#  ReportingMode        = mode...
+#  ButtonThreshold      = integer...
+#  ButtonNumber         = integer...
+#  SendCoreEvents       = <on> or <off>
+#  ClearRTS             = <on> or <off>
+#  ClearDTR             = <on> or <off>
+#  ZAxisMapping         = [ N M ] or X or Y 
+#  TabletType           = string
+#  TabletMode           = string
+#  Load                 = string
+#  Option               = string,string
+# }
+
+
+#-------------------------------#
+# Wacom Intuos Eraser           #
+#-------------------------------#
+WACOM:INTUOS v1+2 Eraser (SERIAL) {
+ Device              = /dev/ttyS0
+ TabletMode          = Absolute
+ Driver              = wacom
+ Protocol            = Auto
+ TabletType          = eraser
+}
+
+#-------------------------------#
+# Wacom Intuos Stylus           #
+#-------------------------------#
+WACOM:INTUOS v1+2 Stylus (SERIAL) {
+ Device              = /dev/ttyS0
+ TabletMode          = Absolute
+ Driver              = wacom
+ Protocol            = Auto
+ TabletType          = stylus
+}
+
+#-------------------------------#
+# Wacom Graphire Eraser         #
+#-------------------------------#
+WACOM:GRAPHIRE v1+2 Eraser (SERIAL) {
+ Device              = /dev/ttyS0
+ TabletMode          = Absolute
+ Driver              = wacom
+ Protocol            = Auto
+ TabletType          = eraser
+}
+
+#-------------------------------#
+# Wacom Graphire Stylus         #
+#-------------------------------#
+WACOM:GRAPHIRE v1+2 Stylus (SERIAL) {
+ Device              = /dev/ttyS0
+ TabletMode          = Absolute
+ Driver              = wacom
+ Protocol            = Auto
+ TabletType          = stylus
+}
+
+#-------------------------------#
+# Wacom Intuos Eraser USB       #
+#-------------------------------#
+WACOM:INTUOS v1-3 Eraser (USB) {
+ Device              = /dev/input/wacom
+ TabletMode          = Absolute
+ Driver              = wacom
+ Protocol            = Auto
+ TabletType          = eraser
+ Option              = USB,Tilt
+ SendCoreEvents      = on
+ ButtonThreshold     = 5
+}
+
+#-------------------------------#
+# Wacom Intuos Stylus USB       #
+#-------------------------------#
+WACOM:INTUOS v1-3 Stylus (USB) {
+ Device              = /dev/input/wacom
+ TabletMode          = Absolute
+ Driver              = wacom
+ Protocol            = Auto
+ TabletType          = stylus
+ Option              = USB,Tilt
+ ButtonThreshold     = 5
+ SendCoreEvents      = on
+}
+
+#-------------------------------#
+# Wacom Graphire Eraser USB     #
+#-------------------------------#
+WACOM:GRAPHIRE v1-4 Eraser (USB) {
+ Device              = /dev/input/wacom
+ TabletMode          = Absolute
+ Driver              = wacom
+ Protocol            = Auto
+ TabletType          = eraser
+ Option              = USB
+ SendCoreEvents      = on
+ ButtonThreshold     = 5
+}
+
+#-------------------------------#
+# Wacom Graphire Stylus USB     #
+#-------------------------------#
+WACOM:GRAPHIRE v1-4 Stylus (USB) {
+ Device              = /dev/input/wacom
+ TabletMode          = Absolute
+ Driver              = wacom
+ Protocol            = Auto
+ TabletType          = stylus
+ Option              = USB
+ ButtonThreshold     = 5
+ SendCoreEvents      = on
+}
+
+#-----------------------------------------------------------------------------------------#
+#                          TABLET PC Section (WACOM)                                      #
+#-----------------------------------------------------------------------------------------#
+
+#------------------------------------------------------#
+# TABLET PCs: ACER TravelMate C30x series Eraser       #
+#------------------------------------------------------#
+TABLET PCs:ACER TravelMate C30x series Eraser (SERIAL) {
+ Device              = /dev/ttyS0
+ TabletMode          = Absolute
+ Driver              = wacom
+ Protocol            = Auto
+ TabletType          = eraser
+ RawOption           = "ForceDevice" "ISDV4","BottomX" "28800","BottomY" "21760"
+
+#------------------------------------------------------#
+# TABLET PCs: ACER TravelMate C30x series Stylus       #
+#------------------------------------------------------#
+TABLET PCs:ACER TravelMate C30x series Stylus (SERIAL) {
+ Device              = /dev/ttyS0
+ TabletMode          = Absolute
+ Driver              = wacom
+ Protocol            = Auto
+ TabletType          = stylus
+ RawOption           = "ForceDevice" "ISDV4","Button2" "3","BottomX" "28800","BottomY" "21760"
+}
+
+#-------------------------------------------#
+# TABLET PCs: ASUS R1E Eraser (USB)         #
+#-------------------------------------------#
+TABLET PCs:ASUS R1E Eraser (USB) {
+ Device              = /dev/input/by-id/usb-Tablet_ISD-V4-event-stylus
+ Option              = USB
+ TabletMode          = Absolute
+ Driver              = wacom
+ Protocol            = Auto
+ TabletType          = eraser
+ RawOption           = "ForceDevice" "ISDV4"
+}
+
+#-------------------------------------------#
+# TABLET PCs: ASUS R1E Stylus (USB)         #
+#-------------------------------------------#
+TABLET PCs:ASUS R1E Stylus (USB) {
+ Device              = /dev/input/by-id/usb-Tablet_ISD-V4-event-stylus
+ Option              = USB
+ TabletMode          = Absolute
+ Driver              = wacom
+ Protocol            = Auto
+ TabletType          = stylus
+ RawOption           = "ForceDevice" "ISDV4","Button2" "3","BottomX" "26365","BottomY" "16488","TopX" "0","TopY" "0"
+}
+
+
+#-------------------------------------------#
+# TABLET PCs: ASUS R1F Eraser (USB)         #
+#-------------------------------------------#
+TABLET PCs:ASUS R1F Eraser (USB) {
+ Device              = /dev/input/by-id/usb-Tablet_ISD-V4-event-stylus
+ Option              = USB
+ TabletMode          = Absolute
+ Driver              = wacom
+ Protocol            = Auto
+ TabletType          = eraser
+ RawOption           = "ForceDevice" "ISDV4"
+}
+
+#-------------------------------------------#
+# TABLET PCs: ASUS R1F Stylus (USB)         #
+#-------------------------------------------#
+TABLET PCs:ASUS R1F Stylus (USB) {
+ Device              = /dev/input/by-id/usb-Tablet_ISD-V4-event-stylus
+ Option              = USB
+ TabletMode          = Absolute
+ Driver              = wacom
+ Protocol            = Auto
+ TabletType          = stylus
+ RawOption           = "ForceDevice" "ISDV4","Button2" "3","BottomX" "28606","BottomY" "17876","TopX" "0","TopY" "0"
+}
+
+#---------------------------------------------#
+# TABLET PCs: Gateway E-155C Eraser (USB)     #
+#---------------------------------------------#
+TABLET PCs:Gateway E-155C Eraser (USB) {
+ Device              = /dev/input/by-id/usb-Tablet_ISD-V4-event-stylus
+ Option              = USB
+ TabletMode          = Absolute
+ Driver              = wacom
+ Protocol            = Auto
+ TabletType          = eraser
+ RawOption           = "ForceDevice" "ISDV4","BottomX" "26294","BottomY" "16376","TopX" "44","TopY" "229"
+}
+
+#---------------------------------------------#
+# TABLET PCs: Gateway E-155C Stylus (USB)     #
+#---------------------------------------------#
+TABLET PCs:Gateway E-155C Stylus (USB) {
+ Device              = /dev/input/by-id/usb-Tablet_ISD-V4-event-stylus
+ Option              = USB
+ TabletMode          = Absolute
+ Driver              = wacom
+ Protocol            = Auto
+ TabletType          = stylus
+ RawOption           = "ForceDevice" "ISDV4","Button2" "3","BottomX" "26294","BottomY" "16376","TopX" "44","TopY" "229"
+}
+
+#---------------------------------------------#
+# TABLET PCs: Gateway E-155C Touch (USB)      #
+#---------------------------------------------#
+TABLET PCs:Gateway E-155C Touch (USB) {
+ Device              = /dev/input/by-id/usb-Tablet_ISD-V4-event-touch
+ Option              = USB
+ TabletMode          = Absolute
+ Driver              = wacom
+ Protocol            = Auto
+ TabletType          = touch
+ RawOption           = "ForceDevice" "ISDV4","BottomX" "4083","BottomY" "4110","TopX" "-19","TopY" "44"
+}
+
+#-------------------------------------------#
+# TABLET PCs: HP Compaq TC4200 Eraser       #
+#-------------------------------------------#
+TABLET PCs:HP Compaq TC4200 Eraser (SERIAL) {
+ Device              = /dev/ttyS0
+ TabletMode          = Absolute
+ Driver              = wacom
+ Protocol            = Auto
+ TabletType          = eraser
+ RawOption           = "ForceDevice" "ISDV4"
+
+#-------------------------------------------#
+# TABLET PCs: HP Compaq TC4200 Stylus       #
+#-------------------------------------------#
+TABLET PCs:HP Compaq TC4200 Stylus (SERIAL) {
+ Device              = /dev/ttyS0
+ TabletMode          = Absolute
+ Driver              = wacom
+ Protocol            = Auto
+ TabletType          = stylus
+ RawOption           = "ForceDevice" "ISDV4","Button2" "3"
+}
+
+#---------------------------------------------#
+# TABLET PCs: HP Pavilion tx2000 Eraser (USB) #
+#---------------------------------------------#
+TABLET PCs:HP Pavilion tx2000 Eraser (USB) {
+ Device              = /dev/input/by-id/usb-Tablet_ISD-V4-event-stylus
+ Option              = USB
+ TabletMode          = Absolute
+ Driver              = wacom
+ Protocol            = Auto
+ TabletType          = eraser
+ RawOption           = "ForceDevice" "ISDV4"
+}
+
+#---------------------------------------------#
+# TABLET PCs: HP Pavilion tx2000 Stylus (USB) #
+#---------------------------------------------#
+TABLET PCs:HP Pavilion tx2000 Stylus (USB) {
+ Device              = /dev/input/by-id/usb-Tablet_ISD-V4-event-stylus
+ Option              = USB
+ TabletMode          = Absolute
+ Driver              = wacom
+ Protocol            = Auto
+ TabletType          = stylus
+ RawOption           = "ForceDevice" "ISDV4","Button2" "3","BottomX" "26300","BottomY" "16375","TopX" "225","TopY" "225"
+}
+
+#---------------------------------------------#
+# TABLET PCs: HP Pavilion tx2000 Touch (USB)  #
+#---------------------------------------------#
+TABLET PCs:HP Pavilion tx2000 Touch (USB) {
+ Device              = /dev/input/by-id/usb-Tablet_ISD-V4-event-touch
+ Option              = USB
+ TabletMode          = Absolute
+ Driver              = wacom
+ Protocol            = Auto
+ TabletType          = touch
+ RawOption           = "ForceDevice" "ISDV4","BottomX" "4000","BottomY" "3875","TopX" "200","TopY" "225"
+}
+
+#------------------------------------------#
+# TABLET PCs: IBM X41 TabletPC Eraser      #
+#------------------------------------------#
+TABLET PCs:IBM X41 TABLET PC Eraser (SERIAL) {
+ Device              = /dev/ttyS0
+ TabletMode          = Absolute
+ Driver              = wacom
+ Protocol            = Auto
+ TabletType          = eraser
+ RawOption           = "ForceDevice" "ISDV4"
+}
+
+#-----------------------------------------#
+# TABLET PCs: IBM X41 TabletPC Stylus     #
+#-----------------------------------------#
+TABLET PCs:IBM X41 TABLET PC Stylus (SERIAL) {
+ Device              = /dev/ttyS0
+ TabletMode          = Absolute
+ Driver              = wacom
+ Protocol            = Auto
+ TabletType          = stylus
+ RawOption           = "ForceDevice" "ISDV4","Button2" "3"
+}
+
+#---------------------------------------------#
+# TABLET PCs: Lenovo X61 TabletPC Eraser      #
+#---------------------------------------------#
+TABLET PCs:Lenovo X61 TABLET PC Eraser (SERIAL) {
+ Device              = /dev/ttyS0
+ TabletMode          = Absolute
+ Driver              = wacom
+ Protocol            = Auto
+ TabletType          = eraser
+ RawOption           = "ForceDevice" "ISDV4"
+}
+
+#-----------------------------------------#
+# TABLET PCs: Lenovo X61 TabletPC Stylus  #
+#-----------------------------------------#
+TABLET PCs:Lenovo X61 TABLET PC Stylus (SERIAL) {
+ Device              = /dev/ttyS0
+ TabletMode          = Absolute
+ Driver              = wacom
+ Protocol            = Auto
+ TabletType          = stylus
+ RawOption           = "ForceDevice" "ISDV4","Button2" "3"
+}
+
+#-----------------------------------------#
+# TABLET PCs: Lenovo X61 TabletPC Touch   #
+#-----------------------------------------#
+TABLET PCs:Lenovo X61 TABLET PC Touch (SERIAL) {
+ Device              = /dev/ttyS0
+ TabletMode          = Absolute
+ Driver              = wacom
+ Protocol            = Auto
+ TabletType          = touch
+ RawOption           = "ForceDevice" "ISDV4","BottomX" "915","BottomY" "950","TopX" "48","TopY" "79"
+}
+
+#-------------------------------------------#
+# TABLET PCs: Motion M1200 Eraser           #
+#-------------------------------------------#
+TABLET PCs:Motion M1200 Eraser (SERIAL) {
+ Device              = /dev/ttyS0
+ TabletMode          = Absolute
+ Driver              = wacom
+ Protocol            = Auto
+ TabletType          = eraser
+ RawOption           = "ForceDevice" "ISDV4","TopX" "297","TopY" "123"
+
+#-------------------------------------------#
+# TABLET PCs: Motion M1200 Stylus           #
+#-------------------------------------------#
+TABLET PCs:Motion M1200 Stylus (SERIAL) {
+ Device              = /dev/ttyS0
+ TabletMode          = Absolute
+ Driver              = wacom
+ Protocol            = Auto
+ TabletType          = stylus
+ RawOption           = "ForceDevice" "ISDV4","Button2" "3","TopX" "297","TopY" "123"
+}
+
+#-------------------------------------------#
+# TABLET PCs: Motion M1400 Stylus           #
+#-------------------------------------------#
+TABLET PCs:Motion M1400 Stylus (SERIAL) {
+ Device              = /dev/ttyS0
+ TabletMode          = Absolute
+ Driver              = wacom
+ Protocol            = Auto
+ TabletType          = stylus
+ RawOption           = "ForceDevice" "ISDV4","Button2" "3"
+}
+
+#-------------------------------------------#
+# TABLET PCs: OQO 02 Eraser                 #
+#-------------------------------------------#
+TABLET PCs:OQO 02 Eraser (SERIAL) {
+ Device              = /dev/ttyS1
+ TabletMode          = Absolute
+ Driver              = wacom
+ Protocol            = Auto
+ TabletType          = eraser
+ RawOption           = "ForceDevice" "ISDV4"
+}
+
+#-------------------------------------------#
+# TABLET PCs: OQO 02 Stylus                 #
+#-------------------------------------------#
+TABLET PCs:OQO 02 Stylus (SERIAL) {
+ Device              = /dev/ttyS1
+ TabletMode          = Absolute
+ Driver              = wacom
+ Protocol            = Auto
+ TabletType          = stylus
+ RawOption           = "ForceDevice" "ISDV4","Button2" "3"
+}
+
+
+#-------------------------------------------#
+# TABLET PCs: Wacom ISDV4 TabletPC Eraser   #
+#-------------------------------------------#
+TABLET PCs:ISDV4 TABLET PC Eraser (SERIAL) {
+ Device              = /dev/ttyS0
+ TabletMode          = Absolute
+ Driver              = wacom
+ Protocol            = Auto
+ TabletType          = eraser
+ RawOption           = "ForceDevice" "ISDV4"
+}
+
+#-------------------------------------------#
+# TABLET PCs: Wacom ISDV4 TabletPC Stylus   #
+#-------------------------------------------#
+TABLET PCs:ISDV4 TABLET PC Stylus (SERIAL) {
+ Device              = /dev/ttyS0
+ TabletMode          = Absolute
+ Driver              = wacom
+ Protocol            = Auto
+ TabletType          = stylus
+ RawOption           = "ForceDevice" "ISDV4","Button2" "3"
+}
+
+#-------------------------------------------#
+# TABLET PCs: Wacom ISDV4 TabletPC Touch    #
+#-------------------------------------------#
+TABLET PCs:ISDV4 TABLET PC Touch (SERIAL) {
+ Device              = /dev/ttyS0
+ TabletMode          = Absolute
+ Driver              = wacom
+ Protocol            = Auto
+ TabletType          = touch
+ RawOption           = "ForceDevice" "ISDV4"
+}
+
+
+#------------------------------------------------#
+# TABLET PCs: Wacom ISDV4 TabletPC Eraser (USB)  #
+#------------------------------------------------#
+TABLET PCs:ISDV4 TABLET PC Eraser (USB) {
+ Device              = /dev/input/by-id/usb-Tablet_ISD-V4-event-stylus
+ Option              = USB
+ TabletMode          = Absolute
+ Driver              = wacom
+ Protocol            = Auto
+ TabletType          = eraser
+ RawOption           = "ForceDevice" "ISDV4"
+}
+
+#------------------------------------------------#
+# TABLET PCs: Wacom ISDV4 TabletPC Stylus (USB)  #
+#------------------------------------------------#
+TABLET PCs:ISDV4 TABLET PC Stylus (USB) {
+ Device              = /dev/input/by-id/usb-Tablet_ISD-V4-event-stylus
+ Option              = USB
+ TabletMode          = Absolute
+ Driver              = wacom
+ Protocol            = Auto
+ TabletType          = stylus
+ RawOption           = "ForceDevice" "ISDV4","Button2" "3"
+}
+
+#------------------------------------------------#
+# TABLET PCs: Wacom ISDV4 TabletPC Touch (USB)   #
+#------------------------------------------------#
+TABLET PCs:ISDV4 TABLET PC Touch (USB) {
+ Device              = /dev/input/by-id/usb-Tablet_ISD-V4-event-touch
+ Option              = USB
+ TabletMode          = Absolute
+ Driver              = wacom
+ Protocol            = Auto
+ TabletType          = touch
+ RawOption           = "ForceDevice" "ISDV4"
+}
+
+#---------------------------------------------#
+# TABLET PCs: HP tx2-12nnxx Stylus            #
+#---------------------------------------------#
+TABLET PCs:HP tx2-12nnxx Stylus {
+ Device              = /dev/input/by-id/usb-1b96_0001-event-mouse
+ Option              = USB
+ TabletMode          = Absolute
+ Driver              = wacom
+ Protocol            = Auto
+ TabletType          = stylus
+ RawOption           = "ForceDevice" "ISDV4","Button2" "3"
+}
+
+#---------------------------------------------#
+# TABLET PCs: HP tx2-12nnxx Touch             #
+#---------------------------------------------#
+TABLET PCs:HP tx2-12nnxx Touch {
+ Device              = /dev/input/by-id/usb-1b96_0001-event-mouse
+ Option              = USB
+ TabletMode          = Absolute
+ Driver              = wacom
+ Protocol            = Auto
+ TabletType          = touch
+ RawOption           = "ForceDevice" "ISDV4","BottomX" "9600","BottomY" "7200"
+}
+

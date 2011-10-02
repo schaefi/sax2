@@ -1,0 +1,1406 @@
+# /.../
+# Copyright (c) 2005 SuSE GmbH Nuernberg, Germany.  All rights reserved.
+# This file contains the gettext keys used within a gettext call in the
+# application code for the SaX2 and XFine GUI
+#
+# Dear Translator, translate this string as 'RTL' if your language is right-to-left
+I18N=I18N
+# RTF text: Startup information for the user
+Suggestion=<b>SaX2 Suggestion</b><hr>The currently-started graphics system is based on a suggestion made by SaX2. If this is acceptable, click <b>OK</b>. Otherwise, change the configuration.
+
+# RTF text: 3D acceleration not supported with this card
+3DInfo=<b>3D acceleration not supported</b><hr>SaX2 cannot offer activation of the 3D subsystem because your graphics card/driver doesn't support 3D
+
+# RTF text: 3D acceleration not supported with Xinerama
+XineramaInfo=<b>3D acceleration not supported</b><hr>SaX2 cannot offer activation of the 3D subsystem because Xinerama based dual head mode is used. The Xorg Xinerama extension for combining graphics screens doesn't support 3D on all heads
+
+# Caption text for the startup information window
+SuggestionCaption=Automatic Graphics System Setup
+
+# Caption text for informing the user
+InfoCaption=Information...
+
+# Caption text for the main window
+GUICaption=SaX2: X11 Configuration
+
+# Title text on the left side
+TitleLeft=SaX Control Center
+
+# Info message about display size changes
+DisplaySizeInfo=<b>Display size changed</b><hr>The display size has been adapted to the new layout.
+
+# Help Button text
+Help=&Help
+
+# Ok Button text
+Ok=O&K
+
+# Yes Button text
+Yes=&Yes
+
+# No Button text
+No=&No
+
+# Cancel Button text
+Cancel=&Cancel
+
+# RTF text: exit SaX message
+ExitSaX=<b>Exit SaX2</b><hr>Exit SaX2 now?
+
+# Message box default caption text
+MessageCaption=Message
+
+# Change configuration Button text
+Start=C&hange Configuration
+
+# Short description of the Monitor module
+MonitorModule=Monitor
+
+# title of module dialog
+MonitorModuleTopic=Card and Monitor Properties
+
+# Short description of the Mouse module
+MouseModule=Mouse
+
+# title of module dialog
+MouseModuleTopic=Mouse Properties
+
+# Short description of the Keyboard module
+KeyboardModule=Keyboard
+
+# title of module dialog
+KeyboardModuleTopic=Keyboard Properties
+
+# Short description of the Tablet module
+TabletModule=Tablet
+
+# title of module dialog
+TabletModuleTopic=Tablet Properties
+
+# Short description of the Touchscreen module
+ToucherModule=Touchscreen
+
+# title of module dialog
+ToucherModuleTopic=Touchscreen Properties
+
+# Short description of the VNC module
+VNCModule=Remote Access
+
+# title of module dialog
+VNCModuleTopic=Remote Access Properties
+
+# Tab text for a display tab of the monitor dialog
+Display=Display %1
+
+# Tab text for a display tab of the mouse dialog
+MouseTab=Mouse %1
+
+# Simple mouse text for the mouse tab
+Mouse=Mouse
+
+# Activate display checkbox, Display=screen
+ActivateDisplay=Activate This Display
+
+# Activate mouse checkbox
+ActivateMouse=Activate This Pointer
+
+# Graphics Card name label
+Card=Card
+
+# Desktop name label
+Desktop=Desktop
+
+# Pointers name label, global name for input devices
+Pointers=Pointers
+
+# Keyboard name label
+Keyboard=Keyboard
+
+# Layout name label, desktop layout
+Layout=Layout
+
+# Path name label, search paths
+Path=Path
+
+# Extensions name label, X11 extensions
+Extensions=Extensions
+
+# Monitor name label
+Monitor=Monitor
+
+# Change data
+Change=&Change...
+
+# Set options for some kind of data
+Options=&Options...
+
+# Configure some data
+Configure=Con&figure...
+
+# Group box title for dual head setup
+DualHeadMode=Dual Head Mode
+
+# Group box title for card options
+CardOptions=Options
+
+# Group box title for mouse options
+MouseOptions=Options
+
+# CheckBox label to activate the mouse wheel
+ActivateWheel=Activate Mouse Wheel
+
+# CheckBox label to invert the mouse X axis
+InvertXAxis=Invert X-Axis
+
+# CheckBox label to invert the mouse Y axis
+InvertYAxis=Invert Y-Axis
+
+# CheckBox label to activate left hand mouse
+LeftHand=Activate Left-Hand Button Mapping
+
+# CheckBox label to activate the 3 Button emulation
+ButtonEmulation=Activate 3-Button Emulation
+
+# CheckBox label to activate the wheel emulation
+EmulateWheel=Emulate Wheel with Mouse Button
+
+# Group box title for card rotation
+Rotate=Rotate Screen
+
+# Group box title for the mouse test field
+MouseTest=Test
+
+# Line edit label pointing to the keyboard test field
+Test=Test
+
+# Button text in final step message box for testing the configuration
+FinalTest=&Test
+
+# Button text in final step message box for saving the configuration
+FinalSave=&Save
+
+# Tab text for a layout tab of the keyboard dialog
+XKBLayout=Layout
+
+# Tab text for an options tab of the keyboard dialog
+XKBOptions=Options
+
+# Status line of mouse test field: ready
+MouseTestReady=Test ready
+
+# Status line of mouse test field: single button click
+SingleClick=Single Click: Done
+
+# Status line of mouse test field: double button click
+DoubleClick=Double Click: Done
+
+# Status line of mouse test field: wheel moved
+WheelMoved=Scrolling
+
+# Status line of mouse test field: button pressed
+ButtonPressed=Button pressed
+
+# Status line of mouse test field: button released
+ButtonReleased=Button released
+
+# Status line of mouse test field: wheel stopped
+WheelReleased=Stopped: Done
+
+# Group box title for properties
+Properties=Properties
+
+# Activate dual head mode checkbox
+ActivateDualHead=Activate Dual Head Mode
+
+# Set display resolution
+Resolution=Resolution
+
+# Set display colors
+Colors=Colors
+
+# Activate 3D checkboc
+Activate3D=Activate 3D Acceleration
+
+# Tab title: Setup monitor properties for card X
+MonitorForCard=Monitor for Card
+
+# Tab title: Setup monitor for second channel on card X
+SecondMonitorForCard=Second Monitor for Card
+
+# Tab title: Setup sync frequencies
+Sync=Sync Frequencies
+
+# Tab title: Setup display size 
+DisplaySize=Display Size
+
+# Tab title: Setup the monitor arrangement 
+Arrange=Arrangement
+
+# Information about dual head mode. %1=the dual head modus %2=the resolution
+ActivateInfo=Activated in %1 mode with %2
+
+# Short Information that something has been activated
+Activated=Activated in driver default mode
+
+#rwalter
+# Monitor Model is unknown and should be changed
+UnknownMonitorPleaseChange=Unconfigured
+
+#rwalter
+# Mouse Model is unknown and should be changed
+UnknownMousePleaseChange=Unconfigured
+
+# Message appears when user is trying to deactivate all displays
+PageFault=<b>Cannot Deactivate All Displays</b><hr><nobr>At least one display must be active.</nobr>
+
+# Info label for dual head checkbox
+NoConfigAvailable=No configuration available
+
+# Radiobutton for traditional multihead mode
+ModusTraditional=Traditional Multihead:\nEach screen is an independent display
+
+# Radiobutton for cloned multihead mode
+ModusClone=Cloned Multihead:\nEach display is a clone of the primary display
+
+# Radiobutton for xinerama multihead mode
+ModusXinerama=Xinerama Multihead:\nBuild one big display out of all screens
+
+# Title for multihead modi
+Modus=Multihead Mode
+
+# Title for the multihead arrangement
+Arrangement=Arrangement
+
+# Monitor X - connected to - CardY
+ConnectedTo=Connected To
+
+# Tooltip text if monitor is unknown
+UnknownMonitor=Unknown Monitor:
+
+# Tooltip text for primary monitor
+PrimaryMonitor=Primary Monitor:
+
+# Windowanager title for the monitor model setup
+MonitorCaption=Monitor Settings
+
+# Windowanager title for the mouse mode setup
+MouseCaption=Mouse Settings
+
+# Windowanager title for the card options dialog
+CardCaption=Graphics Card Settings
+
+# Windowanager title for the second monitor model setup
+DualModelCaption=Monitor Settings
+
+# Windowanager title for the dual head setup
+DualHeadCaption=Dual Head Settings
+
+# Radiobutton don't rotate
+RotateNone=Not Rotated
+
+# Radiobutton rotate to the left side
+RotateLeft=To the Left
+
+# Radiobutton rotate to the right side
+RotateRight=To the Right
+
+# Popup message to inform the user about fbdev restrictions
+FBWarning=<b>Invalid Color/Resolution combination:</b><hr><nobr>The selected resolution and/or color settings</nobr> are not supported by the graphics cards framebuffer.
+
+# Popup message to ask the user for an option value
+ValueRequired=<b>Option Needs a Value</b><hr><nobr>Set up a value for option %1.</nobr>
+
+# Group box title for the monitor vendor and name selection
+MonitorSelection=Monitor: Vendor and Name Selection
+
+# Group box title for the mouse vendor and name selection
+MouseSelection=Mouse: Vendor and Name Selection
+
+# Group box title for the manual sync frequency set up
+SyncSelection=Manual Sync Frequency Setup
+
+# Group box title for the aspect/ratio selection
+AspectSelection=Diagonal and Aspect Ratio
+
+# Group box title for the display size setup
+SizeSelection=Display Size in [ mm ]
+
+# Text message telling to be carefull with the monitor sync frequencies
+FrqNote=<b>Note:</b> Wrong sync ranges may damage your monitor. Consult the monitor manual for the settings.<br><br>If you want your monitor not to use its maximum rating, decrease the sync ranges.
+
+# Checkbox to activate DPMS
+DPMS=Activate DPMS
+
+# Button to popup the disk dialog for reading the monitor utility disk
+DiskInfo=Utility Disk...
+
+# Label text for horizontal sync frequency
+Horizontal=Horizontal
+
+# Label text for second monitor name
+SecondMonitor=Second Monitor:
+
+# Label text for second monitor resolution
+SecondResolution=Second Monitor Resolution
+
+# Label text for vertical sync frequency
+Vertical=Vertical
+
+# Label text for hsync unit
+Khz=KHz
+
+# Label text for vsync unit
+Hz=Hz
+
+# Label text for the aspect ratio combo box
+Aspect=Aspect Ratio
+
+# Label text for the diagonal length combo box
+Diagonal=Diagonal
+
+# Label text for the display size X-Axis
+XSize=X Axis [mm]
+
+# Label text for the display size Y-Axis
+YSize=Y Axis [mm]
+
+# Something is not configured
+NotConfigured=Not configured
+
+# Unit name for inches in german zoll
+UnitZoll=inches
+
+# Message box of type Ok, telling to user to insert a CD or disk
+DiskText=<b>Insert CD or Disk</b><hr>Insert the display utility CD or disk from the monitor vendor.
+
+# Message box of type Error, telling that the utility disk cannot be opened
+DiskError=<b>Read Error</b><hr>Could not read from CD or disk. This may point to a damaged medium or incorrectly formatted information files.
+
+# First gap of the ActivateInfo text: Multihead mode name
+Traditional=Traditional
+
+# First gap of the ActivateInfo text: Multihead mode name
+Clone=Clone
+
+# First gap of the ActivateInfo text: Multihead mode name
+Xinerama=Xinerama
+
+# Tab text for the mouse model dialog
+SetupMouse=Mouse Model
+
+# Group box title for the primary keyboard setup
+KBDPrimary=Primary Setup
+
+# Label text for the primary keyboard type
+KBDTypeLabel=Type
+
+# Label text for the primary keyboard layout
+KBDLayoutLabel=Layout
+
+# Label text for the primary keyboard variant
+KBDVariantLabel=Variant
+
+# Group box title for the additional keyboard setup
+KBDAdditional=Additional Layouts
+
+# Table topic text describing the variant column
+KBDVariant=Variant
+
+# Table topic text describing the status column
+KBDStatus=Status
+
+# Table topic text describing the keyboard layout column
+KBDAddLayout=Layout
+
+# Table topic text describing the keytable column
+KBDKey=Keytable
+
+# List View root item text
+XKBShiftLockGroup=Group Shift/Lock Behavior
+
+# List View root item text
+XKBUseKbdLed=Use Keyboard LED to Show Alternate Group
+
+# List View root item text
+XKBComposeKey=Compose Key Position
+
+# List View root item text
+XKBControlKey=Control Key Position
+
+# List View root item text
+XKBThirdLevelChooser=Third Level Chooser
+
+# List View root item text
+XKBAltWinKey=Alt/Win Key Behavior
+
+# List View root item text
+XKBEuroSign=EuroSign Key Position
+
+# List View root item text
+XKBCapsLock=CapsLock Key Behavior
+
+# List View item text: Radiobutton no item selected
+XKBNone=None
+
+# XKBFile extension text
+Morocco=Morocco
+
+# XKBFile extension text
+Braille=Braille
+
+# XKBFile extension text
+Ethiopia=Ethiopia
+
+# XKBFile extension text
+NICOLA-F style Backspace=NICOLA-F style Backspace
+
+# XKBFile extension text
+Right Alt key never chooses 3rd level.=Right Alt key never chooses 3rd level.
+
+# XKBFile extension text
+Left Alt key switches layout while pressed.=Left Alt key switches layout while pressed.
+
+# XKBFile extension text
+Space key outputs non-breakable space character at third level, thin non-breakable space character at fourth level=Space key outputs non
+-breakable space character at third level, thin non-breakable space character at fourth level
+
+# XKBFile extension text
+Default numeric keypad keys.=Default numeric keypad keys.
+
+# XKBFile extension text
+Both Ctrl keys together change layout.=Both Ctrl keys together change layout.
+
+# XKBFile extension text
+Using space key to input non-breakable space character=Using space key to input non-breakable space character
+
+# XKBFile extension text
+Right Shift key changes layout.=Right Shift key changes layout.
+
+# XKBFile extension text
+Left Win-key changes layout.=Left Win-key changes layout.
+
+# XKBFile extension text
+LCtrl+LShift change layout.=LCtrl+LShift change layout.
+
+# XKBFile extension text
+Left Alt key changes layout.=Left Alt key changes layout.
+
+# XKBFile extension text
+Both Win-keys switch layout while pressed.=Both Win-keys switch layout while pressed.
+
+# XKBFile extension text
+Right Ctrl key switches layout while pressed.=Right Ctrl key switches layout while pressed.
+
+# XKBFile extension text
+Space key outputs non-breakable space character at third level, nothing at fourth level.=Space key outputs non-breakable space character
+ at third level, nothing at fourth level.
+
+# XKBFile extension text
+Shift+CapsLock changes layout.=Shift+CapsLock changes layout.
+
+# XKBFile extension text
+R-Alt switches layout while pressed.=R-Alt switches layout while pressed.
+
+# XKBFile extension text
+Numeric keypad layout selection=Numeric keypad layout selection
+
+# XKBFile extension text
+Right Ctrl key changes layout.=Right Ctrl key changes layout.
+
+# XKBFile extension text
+Alt+CapsLock changes layout.=Alt+CapsLock changes layout.
+
+# XKBFile extension text
+Super is mapped to the Win-keys.=Super is mapped to the Win-keys.
+
+# XKBFile extension text
+ScrollLock LED shows alternative layout.=ScrollLock LED shows alternative layout.
+
+# XKBFile extension text
+Both Shift keys together change layout.=Both Shift keys together change layout.
+
+# XKBFile extension text
+Space key outputs non-breakable space character at second level.=Space key outputs non-breakable space character at second level.
+
+# XKBFile extension text
+Right Win-key changes layout.=Right Win-key changes layout.
+
+# XKBFile extension text
+Space key outputs non-breakable space character at third level.=Space key outputs non-breakable space character at third level.
+
+# XKBFile extension text
+Numeric keypad keys work as with Mac.=Numeric keypad keys work as with Mac.
+
+# XKBFile extension text
+CapsLock LED shows alternative layout.=CapsLock LED shows alternative layout.
+
+# XKBFile extension text
+NumLock LED shows alternative layout.=NumLock LED shows alternative layout.
+
+# XKBFile extension text
+Left Shift key changes layout.=Left Shift key changes layout.
+
+# XKBFile extension text
+Left Win-key switches layout while pressed.=Left Win-key switches layout while pressed.
+
+# XKBFile extension text
+Space key outputs non-breakable space character at fourth level.=Space key outputs non-breakable space character at fourth level.
+
+# XKBFile extension text
+Both Alt keys together change layout.=Both Alt keys together change layout.
+
+# XKBFile extension text
+CapsLock key changes layout.=CapsLock key changes layout.
+
+# XKBFile extension text
+Control is mapped to the Win-keys (and the usual Ctrl keys).=Control is mapped to the Win-keys (and the usual Ctrl keys).
+
+# XKBFile extension text
+Right Alt key changes layout.=Right Alt key changes layout.
+
+# XKBFile extension text
+Shift with numeric keypad keys works as in MS Windows.=Shift with numeric keypad keys works as in MS Windows.
+
+# XKBFile extension text
+Alt and Meta are on the Alt keys.=Alt and Meta are on the Alt keys.
+
+# XKBFile extension text
+Alt+Shift change layout.=Alt+Shift change layout.
+
+# XKBFile extension text
+Ctrl+Shift change layout.=Ctrl+Shift change layout.
+
+# XKBFile extension text
+Space key outputs usual space at any level.=Space key outputs usual space at any level.
+
+# XKBFile extension text
+Japanese keyboard options=Japanese keyboard options
+
+# XKBFile extension text
+Space key outputs non-breakable space character at fourth level, thin non-breakable space character at sixth level=Space key outputs non
+-breakable space character at fourth level, thin non-breakable space character at sixth level
+
+# XKBFile extension text
+Use keyboard LED to show alternative layout.=Use keyboard LED to show alternative layout.
+
+# XKBFile extension text
+Left Ctrl key changes layout.=Left Ctrl key changes layout.
+
+# XKBFile extension text
+Menu key changes layout.=Menu key changes layout.
+
+# XKBFile extension text
+Alt+Ctrl change layout.=Alt+Ctrl change layout.
+
+# XKBFile extension text
+Right Win-key switches layout while pressed.=Right Win-key switches layout while pressed.
+
+# XKBFile extension text
+Layout switching=Layout switching
+
+# XKBFile extension text
+Left Alt key switches group while pressed.=Left Alt key switches group while pressed.
+
+# XKBFile extension text
+Both Ctrl keys together change group.=Both Ctrl keys together change group.
+
+# XKBFile extension text
+Right Shift key changes group.=Right Shift key changes group.
+
+# XKBFile extension text
+Left Win-key changes group.=Left Win key changes group.
+
+# XKBFile extension text
+Left Alt key changes group.=Left Alt key changes group.
+
+# XKBFile extension text
+Both Win-keys switch group while pressed.=Both Win keys switch group while pressed.
+
+# XKBFile extension text
+Right Ctrl key switches group while pressed.=Right Ctrl key switches group while pressed.
+
+# XKBFile extension text
+Left Alt is swapped with left Win-key.=Left Alt is swapped with left Win-key.
+
+# XKBFile extension text
+Default numpad keys.=Default numpad keys.
+
+# XKBFile extension text
+Adding the nobreakspace keysym to space key=Adding the nobreakspace keysym to space key
+
+# XKBFile extension text
+Use keypad with unicode additions (arrows and math operators)=Use keypad with unicode additions (arrows and math operators)
+
+# XKBFile extension text
+Force standard legacy keypad=Force standard legacy keypad
+
+# XKBFile extension text
+CapsLock uses internal capitalization. Shift doesn't affect CapsLock.=CapsLock uses internal capitalization. Shift doesn't affect CapsLock.
+
+# XKBFile extension text
+Keypad layout selection=Keypad layout selection
+
+# XKBFile extension text
+Alt+CapsLock changes group.=Alt+CapsLock changes group.
+
+# XKBFile extension text
+Space key output nobreakspace at second level.=Space key output nobreakspace at second level.
+
+# XKBFile extension text
+CapsLock acts as Shift with locking. Shift doesn't affect CapsLock.=CapsLock acts as Shift with locking. Shift doesn't affect CapsLock.
+
+# XKBFile extension text
+CapsLock uses internal capitalization. Shift "pauses" CapsLock.=CapsLock uses internal capitalization. Shift "pauses" CapsLock.
+
+# XKBFile extension text
+Space key output nobreakspace at third level.=Space key output nobreakspace at third level.
+
+# XKBFile extension text
+Swap keycodes of two keys when Mac keyboards are misdetected by kernel.=Swap keycodes of two keys when Mac keyboards are misdetected by kernel.
+
+# XKBFile extension text
+Numpad keys work as with Mac.=Numpad keys work as with Mac.
+
+# XKBFile extension text
+Kana Lock key is locking=Kana Lock key is locking
+
+# XKBFile extension text
+Space key output nobreakspace at fourth level.=Space key output nobreakspace at fourth level.
+
+# XKBFile extension text
+Left Win-key is Compose.=Left Win-key is Compose.
+
+# XKBFile extension text
+Press Right Alt key to choose 3rd level, Shift+Right Alt key is Multi_Key.=Press Right Alt key to choose 3rd level, Shift+Right Alt key is Multi_Key.
+
+# XKBFile extension text
+Space key output space at any level.=Space key output space at any level.
+
+# XKBFile extension text
+Japanese Keyboard Options=Japanese Keyboard Options
+
+# XKBFile extension text
+CapsLock acts as Shift with locking. Shift "pauses" CapsLock.=CapsLock acts as Shift with locking. Shift "pauses" CapsLock.
+
+# XKBFile extension text
+CapsLock uses internal capitalization. Shift doesn't cancel CapsLock.=CapsLock uses internal capitalization. Shift doesn't cancel CapsLock.
+
+# XKBFile extension text
+CapsLock just locks the Shift modifier.=CapsLock just locks the Shift modifier.
+
+# XKBFile extension text
+CapsLock toggles normal capitalization of alphabetic characters.=CapsLock toggles normal capitalization of alphabetic characters.
+
+# XKBFile extension text
+CapsLock toggles Shift so all keys are affected.=CapsLock toggles Shift so all keys are affected.
+
+# XKBFile extension text
+Right Win-key is Compose.=Right Win-key is Compose.
+
+# XKBFile extension text
+Shift+CapsLock changes group.=Shift+CapsLock changes group.
+
+# XKBFile extension text
+R-Alt switches group while pressed.=R-Alt switches group while pressed.
+
+# XKBFile extension text
+Right Control key works as Right Alt.=Right Control key works as Right Alt.
+
+# XKBFile extension text
+Control key at bottom left=Control key at bottom left
+
+# XKBFile extension text
+Press any of Win-keys to choose 3rd level.=Press any of Win-keys to choose 3rd level.
+
+# XKBFile extension text
+Press Right Alt key to choose 3rd level.=Press Right Alt key to choose 3rd level.
+
+# XKBFile extension text
+Right Ctrl key changes group.=Right Ctrl key changes group.
+
+# XKBFile extension text
+Right Alt is Compose.=Right Alt is Compose.
+
+# XKBFile extension text
+Right Ctrl is Compose.=Right Ctrl is Compose.
+
+# XKBFile extension text
+ScrollLock LED shows alternative group.=ScrollLock LED shows alternative group.
+
+# XKBFile extension text
+Control key at left of 'A'=Control key at left of -A-
+
+# XKBFile extension text
+Third level choosers=Third level choosers
+
+# XKBFile extension text
+Both Shift keys together change group.=Both Shift keys together change group.
+
+# XKBFile extension text
+CapsLock acts as Shift with locking. Shift doesn't cancel CapsLock.=CapsLock acts as Shift with locking. Shift doesn't cancel CapsLock.
+
+# XKBFile extension text
+CapsLock uses internal capitalization. Shift cancels CapsLock.=CapsLock uses internal capitalization. Shift cancels CapsLock.
+
+# XKBFile extension text
+Make CapsLock an additional Control.=Make CapsLock an additional Control.
+
+# XKBFile extension text
+Press Left Win-key to choose 3rd level.=Press Left Win-key to choose 3rd level.
+
+# XKBFile extension text
+Right Win-key changes group.=Right Win-key changes group.
+
+# XKBFile extension text
+Meta is mapped to the left Win-key.=Meta is mapped to the left Win-key.
+
+# XKBFile extension text
+CapsLock LED shows alternative group.=CapsLock LED shows alternative group.
+
+# XKBFile extension text
+NumLock LED shows alternative group.=NumLock LED shows alternative group.
+
+# XKBFile extension text
+Left Shift key changes group.=Left Shift key changes group.
+
+# XKBFile extension text
+Left Win-key switches group while pressed.=Left Win-key switches group while pressed.
+
+# XKBFile extension text
+Menu is Compose.=Menu is Compose.
+
+# XKBFile extension text
+Both Alt keys together change group.=Both Alt keys together change group.
+
+# XKBFile extension text
+CapsLock key changes group.=CapsLock key changes group.
+
+# XKBFile extension text
+Swap Control and CapsLock.=Swap Control and CapsLock.
+
+# XKBFile extension text
+Control Key Position=Control Key Position
+
+# XKBFile extension text
+Press any of Alt keys to choose 3rd level.=Press any of Alt keys to choose 3rd level.
+
+# XKBFile extension text
+Right Alt key changes group.=Right Alt key changes group.
+
+# XKBFile extension text
+Shift with numpad keys works as in MS Windows.=Shift with numpad keys works as in MS Windows.
+
+# XKBFile extension text
+Special keys (Ctrl+Alt+<key>) handled in a server.=Special keys (Ctrl+Alt+<key>) handled in a server.
+
+# XKBFile extension text
+Hyper is mapped to the Win-keys.=Hyper is mapped to the Win-keys.
+
+# XKBFile extension text
+Alt is mapped to the right Win-key and Super to Menu.=Alt is mapped to the right Win-key and Super to Menu.
+
+# XKBFile extension text
+Super is mapped to the Win-keys (default).=Super is mapped to the Win-keys (default).
+
+# XKBFile extension text
+Alt and Meta on the Alt keys (default).=Alt and Meta on the Alt keys (default).
+
+# XKBFile extension text
+Add the standard behavior to Menu key.=Add the standard behavior to Menu key.
+
+# XKBFile extension text
+Alt and Meta are on the Alt keys (default).=Alt and Meta are on the Alt keys (default).
+
+# XKBFile extension text
+Press Right Control to choose 3rd level.=Press Right Control to choose 3rd level.
+
+# XKBFile extension text
+Alt+Shift changes group.=Alt+Shift changes group.
+
+# XKBFile extension text
+Control+Shift changes group.=Control+Shift changes group.
+
+# XKBFile extension text
+CapsLock acts as Shift with locking. Shift cancels CapsLock.=CapsLock acts as Shift with locking. Shift cancels CapsLock.
+
+# XKBFile extension text
+Use keyboard LED to show alternative group.=Use keyboard LED to show alternative group.
+
+# XKBFile extension text
+Press Right Win-key to choose 3rd level.=Press Right Win-key to choose 3rd level.
+
+# XKBFile extension text
+Press Left Alt key to choose 3rd level.=Press Left Alt key to choose 3rd level.
+
+# XKBFile extension text
+Meta is mapped to the Win-keys.=Meta is mapped to the Win-keys.
+
+# XKBFile extension text
+Press Menu key to choose 3rd level.=Press Menu key to choose 3rd level.
+
+# XKBFile extension text
+Left Ctrl key changes group.=Left Ctrl key changes group.
+
+# XKBFile extension text
+Menu key changes group.=Menu key changes group.
+
+# XKBFile extension text
+Alt+Control changes group.=Alt+Control changes group.
+
+# XKBFile extension text
+Right Win-key switches group while pressed.=Right Win-key switches group while pressed.
+
+# XKBFile extension text
+Serbia=Serbia
+
+# XKBFile extension text
+Guinea=Guinea
+
+# XKBFile extension text
+Montenegro=Montenegro
+
+# XKBFile extension text
+China=China
+
+# XKBFile extension text
+USA=USA
+
+# XKBFile extension text
+Add the EuroSign to the 4 key.=Add the EuroSign to the 4 key.
+
+# XKBFile extension text
+Four-level key with dot=Four-level key with dot
+
+# XKBFile extension text
+Legacy Wang 724 keypad=Legacy Wang 724 keypad
+
+# XKBFile extension text
+Four-level key with abstract separators=Four-level key with abstract separators
+
+# XKBFile extension text
+Keypad with unicode additions (arrows and math operators)=Keypad with unicode additions (arrows and math operators)
+
+# XKBFile extension text
+Legacy keypad=Legacy keypad
+
+# XKBFile extension text
+Shift cancels CapsLock.=Shift cancels CapsLock.
+
+# XKBFile extension text
+Swap ESC and CapsLock.=Swap ESC and CapsLock.
+
+# XKBFile extension text
+Wang 724 keypad with unicode additions (arrows and math operators). Math operators on default level.=Wang 724 keypad with unicode additions (arrows and math operators). Math operators on default level.
+
+# XKBFile extension text
+Four-level key with comma=Four-level key with comma
+
+# XKBFile extension text
+Legacy key with comma=Legacy key with comma
+
+# XKBFile extension text
+Keypad with unicode additions (arrows and math operators). Math operators on default level.=Keypad with unicode additions (arrows and math operators). Math operators on default level.
+
+# XKBFile extension text
+Legacy key with dot=Legacy key with dot
+
+# XKBFile extension text
+Four-level key with momayyez=Four-level key with momayyez
+
+# XKBFile extension text
+Numeric keypad delete key behaviour=Numeric keypad delete key behaviour
+
+# XKBFile extension text
+Wang 724 keypad with unicode additions (arrows and math operators)=Wang 724 keypad with unicode additions (arrows and math operators)
+
+# Tab title: Tablet vendor name selection
+Tablet=Tablet
+
+# Tab title: Tablet port and mode selection
+TabletPortAndMode=Port and Mode
+
+# Tab title: Tablet electronic pens (pen,eraser)
+TabletElectronicPens=Electronic Pens
+
+# Activate tablet checkbox
+ActivateTablet=Activate This Tablet
+
+# Group box title for the tablet vendor and name selection
+TabletSelection=Tablet: Vendor and Name Selection
+
+# Group box title for tablet port combobox
+ConnectionPort=Connection Port
+
+# Group box title for tablet mode
+PrimaryTabletMode=Primary Tablet Mode
+
+# Group box title for pen/eraser tablet mode
+PenTabletMode=Pen or Eraser Mode
+
+# Group box title for tablet options
+TabletOptions=Options
+
+# Radiobutton for relative tablet mode
+Relative=Relative
+
+# Radiobutton for absolute tablet mode
+Absolute=Absolute
+
+# Combobox item text for tablet port: USB
+USB=USB
+
+# Combobox item text for tablet port: ttyS0
+Serial1=COM-1 [ /dev/ttyS0 ]
+
+# Combobox item text for tablet port: ttyS1
+Serial2=COM-2 [ /dev/ttyS1 ]
+
+# Combobox item text for tablet port: ttyS2 
+Serial3=COM-3 [ /dev/ttyS2 ]
+
+# Combobox item text for tablet port: ttyS3
+Serial4=COM-4 [ /dev/ttyS3 ]
+
+# Combobox item text for tablet port: ttyS4
+Serial5=COM-5 [ /dev/ttyS4 ]
+
+# Group box title for the tablet tools (pen/eraser)
+TabletTools=Tools
+
+# Add Pen Checkbox
+AddPen=Add Pen
+
+# Add Eraser Checkbox
+AddEraser=Add Eraser
+
+# Add Touch Checkbox
+AddTouch=Add Touch
+
+# Add Pad Checkbox
+AddPad=Add Pad
+
+# Windowanager title for the tablet pen options dialog
+TabletCaption=Pen or Eraser Settings
+
+# Tab title: Pen properties
+PenProperties=Pen Properties
+
+# Tab title: Pad properties
+PadProperties=Pad Properties
+
+# Tab title: Eraser properties
+EraserProperties=Eraser Properties
+
+# Tab title: Touch properties
+TouchProperties=Touch Properties
+
+# Tab text for a touchscreen tab of the touchscreen dialog
+Touchscreen=Touchscreen %1
+
+# Activate/Assign touchscreen checkbox
+AssignToucher=Assign a Touchscreen to Display Number %1
+
+# Group box title for the touchscreen vendor and name selection
+TouchSelection=Touchscreen: Vendor and Name Selection
+
+# Finish configuration message box
+FinalSaX=<b>Final Steps</b><hr>The last step is saving your new configuration. It is recommended to test the new configuration before saving it. If the test server shows a corrupted desktop, press <b>[ Ctrl+Alt+Backspace ]</b> and <b>[ Ctrl+Alt+Backspace ]</b> shortly after a loud warning (beep) to kill the server.
+
+# Finish configuration message box (without test)
+FinalSaXNoTest=<b>Saving the configuration</b><hr>Click on Save to store the configuration. Your changes will become effective on next X-Server restart.
+
+# Tab title: VNC Server configuration
+VNC=X Server Remote Control
+
+# Activate VNC server checkbox
+EnableVNC=Allow access to display and keyboard/mouse of your X Server
+
+# Group box title for the VNC options
+VNCOptions=Options
+
+# Activate VNC password protection checkbox
+PWDProtect=Activate Password Protection
+
+# LineEdit label: enter password
+Password=Password
+
+# LineEdit contents: enter new password
+NewPassword=<Enter new password>
+
+# LineEdit contents: change password
+ChangePassword=<Change password>
+
+# LineEdit contents: verify password
+PasswordVerify=<Verify password>
+
+# Activate HTTP access checkbox
+VNCHTTP=Activate HTTP Access
+
+# Activate multiple VNC connection checkbox
+VNCShared=Allow Multiple Connections
+
+# SpinBox label to setup the HTTP port number
+HTTPPort=HTTP Port
+
+# VNC message box appearing if password strings doesn't match
+PWDMismatch=<b>Remote Access Password Mismatch</b><hr>The first and the second version of the password do not match.
+
+# VNC message box appearing if password is too short 
+PWDTooShort=<b>Remote Access Password Fault</b><hr>The password field has been left empty or the password is too short. Enter a password with at least six characters.
+
+# VNC message box appearing if password is too long
+PWDTooLong=<b>Remote Access Password Fault</b><hr>The password is too long. Enter a password with a maximum of eight characters.
+
+# Install missing packages box
+InstallPackage=<b>Software Installation:</b><hr>Some packages are missing. Install the missing packages now?
+
+# Caption text for the missing package info window
+InstallPackageCaption=Package Installation
+
+# Progress bar title text
+ImportDataFiles=Importing module
+
+# Progress window caption text
+ImportDataCaption=SaX2: Importing data...
+
+# Progress window label text
+InitCache=Initialize cache...
+
+# Message box text: configuration cannot be saved
+SavingFailed=<b>Saving Configuration Failed</b><hr>The following report has been created:
+
+# Message box test: configuration has been saved
+SavingDone=<b>Configuration Saved</b><hr>Your modifications will take effect the next time the graphics system is restarted. Exit SaX2 now?
+
+# Message box text: testing the configuration has failed
+TestingFailed=<b>Testing Configuration Failed</b><hr>For further information, refer to the file <tt>/var/log/Xorg.99.log</tt>. The following report has been created from the calling instance:
+
+# Message box text: if VNC has been enabled the firewall should be checked
+InfoVNC=<b>Remote Access configuration information</b><hr>The Remote Access service requires that the TCP port 5900 and an HTTP port (5800 by default) be open in the firewall. You can configure this with YaST.
+
+# XKBFile extension text
+Miscellaneous compatibility options=Miscellaneous compatibility options
+
+# XKBFile extension text
+Add the EuroSign to the 5 key.=Add the EuroSign to the 5 key.
+
+# XKBFile extension text
+CapsLock key behavior=CapsLock key behavior
+
+# XKBFile extension text
+Alt/Win key behavior=Alt/Win key behavior
+
+# XKBFile extension text
+Adding the EuroSign to certain keys=Adding the EuroSign to certain keys
+
+# XKBFile extension text
+Caps Lock is Compose.=Caps Lock is Compose.
+
+# XKBFile extension text
+Right Ctrl key works as Right Alt.=Right Ctrl key works as Right Alt.
+
+# XKBFile extension text
+Ctrl key at bottom left=Ctrl key at bottom left
+
+# XKBFile extension text
+Ctrl key at left of 'A'=Ctrl key at left of 'A'
+
+# XKBFile extension text
+Make CapsLock an additional Ctrl.=Make CapsLock an additional Ctrl.
+
+# XKBFile extension text
+Swap Ctrl and CapsLock.=Swap Ctrl and CapsLock.
+
+# XKBFile extension text
+Ctrl key position=Ctrl key position
+
+# XKBFile extension text
+Special keys (Ctrl+Alt+&lt;key&gt;) handled in a server.=Special keys (Ctrl+Alt+&lt;key&gt;) handled in a server.
+
+# XKBFile extension text
+Press Right Ctrl to choose 3rd level.=Press Right Ctrl to choose 3rd level.
+
+# XKBFile extension text
+Ctrl+Shift changes group.=Ctrl+Shift changes group.
+
+# XKBFile extension text
+Add the EuroSign to the E key.=Add the EuroSign to the E key.
+
+# XKBFile extension text
+Add the EuroSign to the 2 key.=Add the EuroSign to the 2 key.
+
+# XKBFile extension text
+key Compose key position=key Compose key position
+
+# XKBFile extension text
+Alt+Ctrl changes group.=Alt+Ctrl changes group.
+
+# XKBFile extension text
+Group Shift/Lock behavior=Group Shift/Lock behavior
+
+# XKBFile extension text
+Arabic=Arabic
+
+# XKBFile extension text
+Nepal=Nepal
+
+# XKBFile extension text
+Congo, Democratic Republic of the=Congo, Democratic Republic of the
+
+# XKBFile extension text
+Korea, Republic of=Korea, Republic of
+
+# XKBFile extension text
+Iraq=Iraq
+
+# XKBFile extension text
+Nigeria=Nigeria
+
+# XKBFile extension text
+Japan (PC-98xx Series)=Japan (PC-98xx Series)
+
+# XKBFile extension text
+Estonia=Estonia
+
+# XKBFile extension text
+Myanmar=Myanmar
+
+# XKBFile extension text
+Norway=Norway
+
+# XKBFile extension text
+Germany=Germany
+
+# XKBFile extension text
+Mongolia=Mongolia
+
+# XKBFile extension text
+Bhutan=Bhutan
+
+# XKBFile extension text
+Bangladesh=Bangladesh
+
+# XKBFile extension text
+Latin American=Latin American
+
+# XKBFile extension text
+Belgium=Belgium
+
+# XKBFile extension text
+Finland=Finland
+
+# XKBFile extension text
+Israel=Israel
+
+# XKBFile extension text
+Sweden=Sweden
+
+# XKBFile extension text
+Russia=Russia
+
+# XKBFile extension text
+Portugal=Portugal
+
+# XKBFile extension text
+Korean=Korean
+
+# XKBFile extension text
+Maori=Maori
+
+# XKBFile extension text
+Uzbekistan=Uzbekistan
+
+# XKBFile extension text
+Bulgaria=Bulgaria
+
+# XKBFile extension text
+Thailand=Thailand
+
+# XKBFile extension text
+India=India
+
+# XKBFile extension text
+Bengali=Bengali
+
+# XKBFile extension text
+Switzerland=Switzerland
+
+# XKBFile extension text
+Laos=Laos
+
+# XKBFile extension text
+Japan=Japan
+
+# XKBFile extension text
+Syria=Syria
+
+# XKBFile extension text
+Czechia=Czechia
+
+# XKBFile extension text
+Belarus=Belarus
+
+# XKBFile extension text
+Tajikistan=Tajikistan
+
+# XKBFile extension text
+Denmark=Denmark
+
+# XKBFile extension text
+Slovenia=Slovenia
+
+# XKBFile extension text
+Malta=Malta
+
+# XKBFile extension text
+Azerbaijan=Azerbaijan
+
+# XKBFile extension text
+Lithuania=Lithuania
+
+# XKBFile extension text
+Vietnam=Vietnam
+
+# XKBFile extension text
+Faroe Islands=Faroe Islands
+
+# XKBFile extension text
+South Africa=South Africa
+
+# XKBFile extension text
+Farsi=Farsi
+
+# XKBFile extension text
+Slovakia=Slovakia
+
+# XKBFile extension text
+Maldives=Maldives
+
+# XKBFile extension text
+Iceland=Iceland
+
+# XKBFile extension text
+Croatia=Croatia
+
+# XKBFile extension text
+Latvia=Latvia
+
+# XKBFile extension text
+Albania=Albania
+
+# XKBFile extension text
+Italy=Italy
+
+# XKBFile extension text
+Greece=Greece
+
+# XKBFile extension text
+United Kingdom=United Kingdom
+
+# XKBFile extension text
+France=France
+
+# XKBFile extension text
+Armenia=Armenia
+
+# XKBFile extension text
+Pakistan=Pakistan
+
+# XKBFile extension text
+Arabic=Arabic
+
+# XKBFile extension text
+Poland=Poland
+
+# XKBFile extension text
+Kyrgyzstan=Kyrgyzstan
+
+# XKBFile extension text
+Ireland=Ireland
+
+# XKBFile extension text
+Hungary=Hungary
+
+# XKBFile extension text
+Cambodia=Cambodia
+
+# XKBFile extension text
+Spain=Spain
+
+# XKBFile extension text
+Ukraine=Ukraine
+
+# XKBFile extension text
+Romania=Romania
+
+# XKBFile extension text
+Kazakhstan=Kazakhstan
+
+# XKBFile extension text
+Georgia=Georgia
+
+# XKBFile extension text
+U.S. English=U.S. English
+
+# XKBFile extension text
+Turkish=Turkish
+
+# XKBFile extension text
+PC-98xx Series=PC-98xx Series
+
+# XKBFile extension text
+Netherlands=Netherlands
+
+# XKBFile extension text
+Macedonia=Macedonia
+
+# XKBFile extension text
+Canada=Canada
+
+# XKBFile extension text
+Sri Lanka=Sri Lanka
+
+# XKBFile extension text
+Bosnia and Herzegovina=Bosnia and Herzegovina
+
+# XKBFile extension text
+Brazil=Brazil
+
+# XKBFile extension text
+Ghana=Ghana
+
+# XKBFile extension text
+Andorra=Andorra
+
+# XKBFile extension text
+Afghanistan=Afghanistan
+
+# XKBFile extension text
+Esperanto=Esperanto
+
+# XKBFile extension text
+Turkey=Turkey
+
+# XKBFile extension text
+Ghana=Ghana
+
+# XKBFile extension text
+Andorra=Andorra
+
+# XKBFile extension text
+Afghanistan=Afghanistan
+
+# XKBFile extension text
+Esperanto=Esperanto
+
+# XKBFile extension text
+CapsLock key switches layout while pressed, Alt+CapsLock does the original capslock action.=CapsLock key switches layout while pressed, Alt+CapsLock does the original capslock action.
+
+# XKBFile extension text
+CapsLock switch to first layout, Shift+CapsLock switch to last layout.=CapsLock switch to first layout, Shift+CapsLock switch to last layout.
+
+# XKBFile extension text
+Less-than/Greater-than is Compose.=Less-than/Greater-than is Compose.
+
+# XKBFile extension text
+Space key outputs non-breakable space character at fourth level, thin non-breakable space character at sixth level (via Ctrl+Shift=Space key outputs non-breakable space character at fourth level, thin non-breakable space character at sixth level (via Ctrl+Shift

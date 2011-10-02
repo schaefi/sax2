@@ -1,0 +1,11 @@
+# /.../
+# PHILIPS:PHILIPS 200W monitor profile
+# ----
+!remove Monitor -> [X] -> Modeline
+
+Desktop -> [X] -> CalcModelines = no
+Monitor -> [X] -> CalcAlgorithm = XServerPool
+Monitor -> [X] -> VertRefresh   = 30-61
+Monitor -> [X] -> HorizSync     = 30-66
+Desktop -> [X] -> Modelines     = "1680x1050" 147.14 1680 1784 1968 2256 1050 1051 1054 1087 -hsync -vsync
+Monitor -> [X] -> Modeline->0->1680x1050 = 147.14 1680 1784 1968 2256 1050 1051 1054 1087 -hsync -vsync

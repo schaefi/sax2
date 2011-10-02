@@ -1,0 +1,88 @@
+\chapter{ISaX}
+\index{ISaX}
+\label{cha:isax}
+\minitoc
+
+ISaX stands for \textbf{interfacing sax} and is a program to transport
+information from or to the engine. It is possible to query information
+from isax as well as give information to isax which is then able to create
+or modify the X11 configuration. If asking isax for data there are two
+possible data sources:
+
+\begin{itemize}
+\item The auto probed values from the sax registry
+\item The current configuration represented by the file
+      \textit{/etc/X11/xorg.conf}
+\end{itemize}
+
+\section{ISaX Modules}
+The option \textbf{-b} is used to obtain data from the sax registry.
+If no option is set the current configuration is used. The engine of
+SaX is based on seven sections which can be queried and manipulated:
+
+\begin{itemize}
+\item \textbf{\underline{Keyboard}}\\
+      defines all information about the core keyboard
+\item \textbf{\underline{Mouse}}\\
+      defines all information about mice
+\item \textbf{\underline{Card}}\\
+      defines all information about the graphics hardware
+\item \textbf{\underline{Desktop}}\\
+      defines all information about the desktop which includes
+      settings like resolution and colordepth
+\item \textbf{\underline{Path}}\\
+      defines all information about search paths for fonts
+      and special flags for the X-Server
+\item \textbf{\underline{Layout}}\\
+      defines all information about the server layout which
+      includes information about multihead arrangements as well
+      as priority lists for keyboard and pointers
+\item \textbf{\underline{Extensions}}\\
+      defines all information about new X-Server extensions
+\end{itemize}
+
+\section{Calling up isax}
+\index{ISaX!call up}
+Calling up isax does not have to be regulated in a script, but can also be run
+by hand. The following command can be used to query data about the graphics
+hardware from the current configuration:
+
+\begin{Command}{5cm}
+/usr/sbin/isax -l Card
+\end{Command}
+
+When obtaining data from the SaX registry the call for graphics hardware
+will look like this:
+
+\begin{Command}{5cm}
+/usr/sbin/isax -l Card -b
+\end{Command}
+
+\section{Creating configurations with isax}
+As mentioned in the first section of this chapter isax can be used
+to create or modify X11 configurations as well. To do this it is
+necessary to specify a so called \textbf{apidata} file. Detailed
+information and an example of such a file can be found in
+appendix ~\ref{cha:api} (The Variables API File).
+The important point here is to mention
+that the information for reading and/or writing data with isax provides
+a common interface for all operations which can be done with SaX2.
+The following command can be used to create a new configuration
+from the information specified in the sample file \textit{/var/lib/sax/apidata}:
+
+\begin{Command}{11cm}
+/usr/sbin/isax -f /var/lib/sax/apidata -c /tmp/myconfig
+\end{Command}
+
+When only modifying based on the currently installed configuration
+the command will look like the following. The apidata file in this case
+contains only information about the changes which should be migrated
+with the current configuration data.
+
+\begin{Command}{11cm}
+/usr/sbin/isax -f /var/lib/sax/apidata -c /tmp/myconfig -m
+\end{Command}
+
+Both examples will create an output file specified with the option
+\textbf{-c}. In this case this results in a file named
+\textbf{/tmp/myconfig}.

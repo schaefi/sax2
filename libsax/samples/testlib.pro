@@ -1,0 +1,10 @@
+TEMPLATE  = app
+#SOURCES   += exception.cpp
+SOURCES   += testlib.cpp
+#HEADERS   += exception.h
+CONFIG    += qt warn_on release
+TARGET    = testlib.bin
+unix:LIBS += -L.. -lsax
+unix:INCLUDEPATH += /usr/X11R6/include
+unix:INCLUDEPATH += /usr/include/X11
+unix:INCLUDEPATH += /usr/include/xorg

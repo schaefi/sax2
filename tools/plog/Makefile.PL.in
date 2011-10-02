@@ -1,0 +1,16 @@
+use ExtUtils::MakeMaker;
+
+$CFLAGS = $ENV{RPM_OPT_FLAGS};
+$CFLAGS =~ s/-Wall//;
+
+WriteMakefile(
+	'NAME'     => 'PLog',
+	'LIBS'     => ['-lfl'],
+	'OBJECT'   => 'plog.o PLog_wrap.o ../../sysp/lib/libsysp.a',
+	'DEFINE'   => '-DX_BYTE_ORDER=X_LITTLE_ENDIAN -DNEW_INPUT -DNDEBUG',
+	'INC'      => '',
+	'OPTIMIZE' => "-O2 $CFLAGS",
+	'CC'       => 'g++',
+	'LD'       => 'g++'
+); 
+

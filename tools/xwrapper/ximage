@@ -1,0 +1,75 @@
+#!/bin/sh
+i=-1
+#======================================
+# save options and values in arrays
+#--------------------------------------
+for param;do
+	echo $param | grep -q ^-
+	if [ $? = 0 ];then
+		i=$((i + 1))
+		option[$i]=$param
+	else
+		values[$i]=$param
+	fi
+done
+
+i=0
+#======================================
+# check options
+#--------------------------------------
+for opt in ${option[@]};do
+	value=${values[$i]}
+	case $opt in
+	-xsize)
+		xsize=$value
+	;;
+	-ysize)
+		ysize=$value
+	;;
+	-image)
+		image=$value
+		image=`echo $image | cut -f1 -d.`
+	;;
+	-display)
+		disp=$value
+	;;
+	*)
+	;;
+	esac
+	i=$((i + 1))
+done
+
+#======================================
+# validate options
+#--------------------------------------
+if [ -z "$disp" ];then
+	exit 1
+fi
+if [ -z "$xsize" ];then
+	exit 1
+fi
+if [ -z "$ysize" ];then
+	exit 1
+fi
+if [ -z "$image" ];then
+	exit 1
+fi
+
+#======================================
+# scale image
+#--------------------------------------
+/usr/bin/pngtopnm $image.png |\
+	/usr/bin/pnmscale -xsize=$xsize -ysize=$ysize |\
+	/usr/bin/pnmtopng \
+> $image.scaled.png
+
+#======================================
+# display image
+#--------------------------------------
+which fvwm-root >/dev/null 2>&1
+if [ $? = 0 ];then
+	DISPLAY=$disp fvwm-root $image.scaled.png
+else
+	DISPLAY=$disp display -window root $image.scaled.png
+fi
+rm -f $image.scaled.png

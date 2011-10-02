@@ -1,0 +1,54 @@
+#!/bin/sh
+# Copyright (c) 2000 SuSE GmbH Nuernberg, Germany.  All rights reserved.
+#
+# Author: Marcus Schaefer <sax@suse.de>, 2001
+# SaX2 build script (abuild)
+#
+#
+
+#----[ init ]----------------#
+function init {
+#----------------------------------------
+# init some data
+#
+	FIN="\033[71G\033[32mdone\033[m"
+	ERR="\033[71G\033[31m\033[1mfailed\033[m"
+}
+
+init
+#========================================
+# build sax for some versions...
+#----------------------------------------
+rm -rf /suse/ms/compiled/*
+for i in 9.3 9.2 9.1 9.0;do
+	ROOT="/abuild/kussl/$i"
+	if [ ! -d $ROOT ];then
+		mkdir -p $ROOT
+	fi
+	if [ ! -d /work ];then
+		ln -s /mounts/work /work
+	fi
+	export BUILD_ROOT=$ROOT
+	export BUILD_DIST=$i-i386
+	if [ "$i" = "9.3" ];then
+		export BUILD_DIST=i386
+	fi
+	echo -n "building SaX2 for SuSE Linux $i... "
+	if [ "$1" = "clean" ];then
+		/work/src/bin/build --clean \
+			2>/dev/null >/dev/null
+	else
+		/work/src/bin/build --noinit \
+			2>/dev/null >/dev/null
+	fi
+	if [ $? = 0 ];then
+		echo -e $FIN
+		mkdir /suse/ms/compiled/$i
+		cp $ROOT/usr/src/packages/RPMS/*/sax* \
+			/suse/ms/compiled/$i
+		cp $ROOT/usr/src/packages/SOURCES/sax2.changes \
+			/suse/ms/compiled/$i/ChangeLog
+	else
+		echo -e $ERR
+	fi
+done

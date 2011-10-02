@@ -1,0 +1,6 @@
+# /.../
+# SGI:1600SW FLATPANEL monitor profile
+# ----
+Desktop -> [X] -> CalcModelines = no
+Desktop -> [X] -> Modelines     = "1600x1024" 106.9 1600 1632 1656 1672 1024 1027 1030 1067
+Monitor -> [X] -> Modeline->0->1600x1024 = 106.9 1600 1632 1656 1672 1024 1027 1030 1067

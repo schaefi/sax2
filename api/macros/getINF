@@ -1,0 +1,60 @@
+#!/usr/bin/perl
+# Copyright (c) 2002 SuSE GmbH Nuernberg, Germany.  All rights reserved.
+#
+# Author: Marcus Schaefer <sax@suse.de>, 2002
+# xapi script: read INF file from disk
+# --
+#
+# CVS ID:
+# --------
+# Status: Up-to-date
+#
+use lib '/usr/share/sax/modules';
+use strict;
+
+use WinINF;
+
+#---[ splitData ]----#
+sub splitData {
+#-----------------------------------------------
+# split data stream according to [] seperator
+# into multiple records used for importINFData()
+#
+	my @data;
+	my @full = readDisk();
+	foreach (@full) {
+		push (@data,$_);
+		if ($_ eq "[]") {
+			importINFData (@data);
+			@data = ();
+		}
+	}
+}
+
+#---[ importINFData ]----#
+sub importINFData {
+#-----------------------------------------------
+# read .inf data from a disk and create a CDB
+# formatted output used within xapi 
+# (disk button)
+#
+	my @data = @_;
+	my $size = @data;
+	if ($size == 0) {
+		return (0);
+	}	
+	my %sections = getSections (@data);
+	my %cdb = getMonitorINFData (\%sections);
+	foreach my $vendor (keys(%cdb)) {
+	foreach my $model (keys(%{$cdb{$vendor}})) {
+		print uc($vendor).",";
+		print uc($model).",";
+		print "$cdb{$vendor}{$model}{Vsync},";
+		print "$cdb{$vendor}{$model}{Hsync}\n";
+	}
+	}
+	return (1);
+}
+
+splitData();
+exit (0);

@@ -1,0 +1,5 @@
+#!/usr/bin/perl
+
+print "-I$INC[0]/CORE ";
+print "$INC[0]/CORE/libperl.a ";
+print "$INC[0]/auto/DynaLoader/DynaLoader.a \n";

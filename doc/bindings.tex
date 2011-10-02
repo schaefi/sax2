@@ -1,0 +1,182 @@
+\chapter{libsax - Language bindings}
+\minitoc
+
+libsax has been developed as a C++ written library which means
+including this library into languages providing an object model
+is a possible task whereas bindings to non object oriented languages
+requires a self written wrapper for accessing object methods.
+
+\section{SWIG}
+
+SWIG (Simple Wrapper Interface Generator) is a software development tool
+that simplifies the task of
+interfacing different languages to C and C++ programs. In a nutshell,
+SWIG is a compiler that takes C declarations and creates the wrappers
+needed to access those declarations from other languages
+including csharp, java, perl5, php4, python or tcl. Creating language
+bindings for libsax requires the following tasks:
+
+\begin{itemize}
+\item All libsax C++ header files must be available to create the binding
+\item C++ operator support is not available in many scripting languages.
+      Because of this reason the binding should disable operator support
+      and the library has to provide methods as well as operators.
+\item Typemaps for transforming the Qt types used within the library
+      must be provided for each destination language.
+\item Qts Signal/Slot concept is not supported by the destination languages.
+      libsax is using this mechanism to implement exception handling.
+      As consequence only the traditional error handling is available for
+      the bindings and the SaXException class needs to be wrapped within
+	  the bindings interface definition.
+\end{itemize}
+
+\newpage
+
+\section{Interface template file for libsax (SaX.i)}
+
+The following template illustrate the steps which needs to be
+implemented to be able to map all libsax types into the destination
+language.
+
+\begin{Command}{12cm}
+\begin{small}
+\begin{verbatim}
+//==================================
+// Interface definition for libsax
+//----------------------------------
+#define NO_OPERATOR_SUPPORT 1
+%module SaX
+%{
+#include "../sax.h"
+%}
+//==================================
+// SWIG includes
+//----------------------------------
+%include exception.i
+
+//==================================
+// Typemaps
+//----------------------------------
+//==================================
+// Allow QString return types
+//----------------------------------
+// [ destination language dependant ]
+// ...
+
+//==================================
+// Allow QString refs as parameters
+//----------------------------------
+// [ destination language dependant ]
+// ...
+
+//==================================
+// Allow QDict<QString> return types
+//----------------------------------
+// [ destination language dependant ]
+// ...
+
+//==================================
+// Allow QList<QString> return types
+//----------------------------------
+// [ destination language dependant ]
+// ...
+
+\end{verbatim}
+\end{small}
+\end{Command}
+
+\newpage
+
+\begin{Command}{12cm}
+\begin{small}
+\begin{verbatim}
+//==================================
+// Exception class wrapper...
+//----------------------------------
+class SaXException {
+    public:
+    int   errorCode          ( void );
+    bool  havePrivileges     ( void );
+    void  errorReset         ( void );
+
+    public:
+    QString errorString  ( void );
+    QString errorValue   ( void );
+
+    public:
+    void setDebug ( bool = true );
+};
+//==================================
+// ANSI C/C++ declarations...
+//----------------------------------
+%include "../storage.h"
+%include "../process.h"
+%include "../export.h"
+%include "../import.h"
+%include "../init.h"
+%include "../config.h"
+%include "../card.h"
+%include "../keyboard.h"
+%include "../pointers.h"
+%include "../desktop.h"
+%include "../extensions.h"
+%include "../layout.h"
+%include "../path.h"
+%include "../sax.h"
+\end{verbatim}
+\end{small}
+\end{Command}
+
+\newpage
+
+\subsection{Interface explanations}
+The interface file is divided into four \textit{sections} which
+handles the following interfacing problems:
+
+\begin{enumerate}
+\item Module name and include files to be able to create the
+      wrapper code. The namespace used here is called \textbf{SaX}
+\item type mappings from C++ into the destination language.
+      Currently perl,python,java and csharp types are supported.
+\item Exception class wrapper which doesn't include the Qt signal/slot
+      definitions
+\item Declarations used to create an interface for the destination
+      language. Refering to perl this information is used to create
+      the appropriate SaX.pm file
+\end{enumerate}
+
+\section{Example: libsax used with perl...}
+The following examples will do the same as the last example from the
+Examples chapter; Changing the default colordepth of the current
+configuration to 24 bit.
+
+\begin{Command}{12cm}
+\begin{small}
+\begin{verbatim}
+use SaX;
+sub main {
+    my %section;
+    my @importID = (
+        $SaX::SAX_CARD, $SaX::SAX_DESKTOP, $SaX::SAX_PATH
+    );
+    my $config = new SaX::SaXConfig;
+    foreach my $id (@importID) {
+        $import = new SaX::SaXImport ( $id );
+        $import -> setSource ( $SaX::SAX_SYSTEM_CONFIG );
+        $import -> doImport();
+        $config -> addImport ( $import );
+        $section{$import->getSectionName()} = $import;
+    }
+    my $mDesktop = new SaX::SaXManipulateDesktop (
+        $section{Desktop},$section{Card},$section{Path}
+    );
+    if ($mDesktop->selectDesktop (0)) {
+        $mDesktop->setColorDepth (24);
+    }
+    $config -> setMode (SaX::SAX_MERGE);
+    $config -> createConfiguration();
+}
+main();
+\end{verbatim}
+\end{small}
+\end{Command}

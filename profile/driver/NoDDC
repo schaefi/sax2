@@ -1,0 +1,7 @@
+# /.../
+# Driver dependant DDC profile, disable use of X-Server
+# detected DDC information. Sometimes usefull especially for
+# i810 based graphics devices
+# ---- 
+# dynamic profile
+#

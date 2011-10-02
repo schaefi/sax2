@@ -1,0 +1,12 @@
+# don't apply perl naming policy on libsax
+addFilter("sax2-libsax.* perl5-naming-policy-not-applied")
+
+# don't apply perl naming policy on SPP
+addFilter("SPP.* perl5-naming-policy-not-applied")
+
+# don't apply python naming policy on libsax
+addFilter("sax2-libsax.* python-naming-policy-not-applied")
+
+# don't care for zero length .bs files
+addFilter(".*zero-length.*.bs")
+

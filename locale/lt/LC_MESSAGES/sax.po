@@ -1,0 +1,1955 @@
+# translation of sax.po to Lietuvių
+# translation of sax.po.lt to Lietuvių
+# Copyright (C) 2004, 2006, 2009 Free Software Foundation, Inc.
+# Linas Spraunius <mail@operis.org>, 2004.
+# Andrius Štikonas <stikonas@gmail.com>, 2006.
+# Mindaugas Baranauskas <embar@super.lt>, 2009.
+# Mindaugas Baranauskas <embar@users.berlios.de>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: sax\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2009-12-31 13:47+0200\n"
+"Last-Translator: Mindaugas Baranauskas <embar@users.berlios.de>\n"
+"Language-Team: Lithuanian <kde-i18n-doc@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#. /.../
+#. Copyright (c) 2005 SuSE GmbH Nuernberg, Germany.  All rights reserved.
+#. This file contains the gettext keys used within a gettext call in the
+#. application code for the SaX2 and XFine GUI
+#.
+#. Dear Translator, translate this string as 'RTL' if your language is right-to-left
+msgid "I18N"
+msgstr "I18N"
+
+#. RTF text: Startup information for the user
+msgid "<b>SaX2 Suggestion</b><hr>The currently-started graphics system is based on a suggestion made by SaX2. If this is acceptable, click <b>OK</b>. Otherwise, change the configuration."
+msgstr "<b>SaX2 pasiūlymas</b><hr>Šiuo metu paleista grafinė sistema yra pasiūlyta SaX2 programos. Jei jums tai patinka, spauskite <b>Gerai</b>. Kitu atveju galite keiskite konfigūraciją."
+
+#. RTF text: 3D acceleration not supported with this card
+msgid "<b>3D acceleration not supported</b><hr>SaX2 cannot offer activation of the 3D subsystem because your graphics card/driver doesn't support 3D"
+msgstr "<b>3D spartinimas nepalaikomas</b><hr>SaX2 negali aktyvuoti 3D posistemio, nes jūsų vaizdo plokštė/tvarkyklė nepalaiko 3D"
+
+#. RTF text: 3D acceleration not supported with Xinerama
+msgid "<b>3D acceleration not supported</b><hr>SaX2 cannot offer activation of the 3D subsystem because Xinerama based dual head mode is used. The Xorg Xinerama extension for combining graphics screens doesn't support 3D on all heads"
+msgstr ""
+
+#. Caption text for the startup information window
+msgid "Automatic Graphics System Setup"
+msgstr "Automatinis vaizdo sistemos konfigūravimas"
+
+#. Caption text for informing the user
+msgid "Information..."
+msgstr "Informacija..."
+
+#. Caption text for the main window
+msgid "SaX2: X11 Configuration"
+msgstr "SaX2: X11 konfigūracija"
+
+#. Title text on the left side
+msgid "SaX Control Center"
+msgstr "SaX valdymo centras"
+
+#. Info message about display size changes
+msgid "<b>Display size changed</b><hr>The display size has been adapted to the new layout."
+msgstr ""
+
+#. Help Button text
+msgid "&Help"
+msgstr "&Pagalba"
+
+#. Ok Button text
+msgid "O&K"
+msgstr "&Gerai"
+
+#. Yes Button text
+msgid "&Yes"
+msgstr "&Taip"
+
+#. No Button text
+msgid "&No"
+msgstr "&Ne"
+
+#. Cancel Button text
+#. Maximum length: 40  characters
+msgid "&Cancel"
+msgstr "&Atšaukti"
+
+#. RTF text: exit SaX message
+msgid "<b>Exit SaX2</b><hr>Exit SaX2 now?"
+msgstr "<b>Išeiti iš SaX2:</b><hr>Ar išeiti iš SaX2?"
+
+#. Message box default caption text
+msgid "Message"
+msgstr "Pranešimas"
+
+#. Change configuration Button text
+msgid "C&hange Configuration"
+msgstr "Pa&keisti konfigūraciją"
+
+#. Short description of the Monitor module
+#. Monitor name label
+msgid "Monitor"
+msgstr "Vaizduoklis"
+
+#. title of module dialog
+msgid "Card and Monitor Properties"
+msgstr "Plokštės ir vaizduoklio savybės"
+
+#. Short description of the Mouse module
+#. Simple mouse text for the mouse tab
+msgid "Mouse"
+msgstr "Pelė"
+
+#. title of module dialog
+msgid "Mouse Properties"
+msgstr "Pelės savybės"
+
+#. Short description of the Keyboard module
+#. Keyboard name label
+msgid "Keyboard"
+msgstr "Klaviatūra"
+
+#. title of module dialog
+msgid "Keyboard Properties"
+msgstr "Klaviatūros savybės"
+
+#. Short description of the Tablet module
+#. Tab title: Tablet vendor name selection
+msgid "Tablet"
+msgstr "Grafinis planšetas"
+
+#. title of module dialog
+msgid "Tablet Properties"
+msgstr "Planšeto savybės"
+
+#. Short description of the Touchscreen module
+msgid "Touchscreen"
+msgstr "Lytimasis ekranas"
+
+#. title of module dialog
+msgid "Touchscreen Properties"
+msgstr "Lytimojo ekrano savybės"
+
+#. Short description of the VNC module
+msgid "Remote Access"
+msgstr "Nuotolinė prieiga"
+
+#. title of module dialog
+msgid "Remote Access Properties"
+msgstr "Nuotolinės prieigos savybės"
+
+#. Tab text for a display tab of the monitor dialog
+msgid "Display %1"
+msgstr "Ekranas %1"
+
+#. Tab text for a display tab of the mouse dialog
+msgid "Mouse %1"
+msgstr "%1 pelė"
+
+#. Activate display checkbox, Display=screen
+msgid "Activate This Display"
+msgstr "Aktyvuoti šį ekraną"
+
+#. Activate mouse checkbox
+msgid "Activate This Pointer"
+msgstr "Aktyvuoti šį žymeklį"
+
+#. Graphics Card name label
+msgid "Card"
+msgstr "Plokštė"
+
+#. Desktop name label
+msgid "Desktop"
+msgstr "Darbastalis"
+
+#. Pointers name label, global name for input devices
+msgid "Pointers"
+msgstr "Žymekliai"
+
+#. Layout name label, desktop layout
+#. Tab text for a layout tab of the keyboard dialog
+#. Label text for the primary keyboard layout
+#. Table topic text describing the keyboard layout column
+msgid "Layout"
+msgstr "Išdėstymas"
+
+#. Path name label, search paths
+msgid "Path"
+msgstr "Kelias"
+
+#. Extensions name label, X11 extensions
+msgid "Extensions"
+msgstr "Plėtiniai"
+
+#. Change data
+msgid "&Change..."
+msgstr "&Keisti..."
+
+#. Set options for some kind of data
+msgid "&Options..."
+msgstr "P&arinktys..."
+
+#. Configure some data
+msgid "Con&figure..."
+msgstr "Kon&figūruoti..."
+
+#. Group box title for dual head setup
+msgid "Dual Head Mode"
+msgstr "Dviekranė veiksena"
+
+#. Group box title for card options
+#. Group box title for mouse options
+#. Tab text for an options tab of the keyboard dialog
+#. Group box title for tablet options
+#. Group box title for the VNC options
+msgid "Options"
+msgstr "Parinktys"
+
+#. CheckBox label to activate the mouse wheel
+msgid "Activate Mouse Wheel"
+msgstr "Įjungti pelės ratuką"
+
+#. CheckBox label to invert the mouse X axis
+msgid "Invert X-Axis"
+msgstr "Invertuoti X ašį"
+
+#. CheckBox label to invert the mouse Y axis
+msgid "Invert Y-Axis"
+msgstr "Invertuoti Y ašį"
+
+#. CheckBox label to activate left hand mouse
+msgid "Activate Left-Hand Button Mapping"
+msgstr "Aktyvuoti kairiarankių mygtukų išdėstymą"
+
+#. CheckBox label to activate the 3 Button emulation
+msgid "Activate 3-Button Emulation"
+msgstr "Aktyvuoti 3 mygtuko emuliavimą"
+
+#. CheckBox label to activate the wheel emulation
+msgid "Emulate Wheel with Mouse Button"
+msgstr "Emuliuoti ratuką pelės klavišu"
+
+#. Group box title for card rotation
+msgid "Rotate Screen"
+msgstr "Sukti ekraną"
+
+#. Group box title for the mouse test field
+#. Line edit label pointing to the keyboard test field
+msgid "Test"
+msgstr "Bandyti"
+
+#. Button text in final step message box for testing the configuration
+msgid "&Test"
+msgstr "&Bandyti"
+
+#. Button text in final step message box for saving the configuration
+msgid "&Save"
+msgstr "&Išsaugoti"
+
+#. Status line of mouse test field: ready
+msgid "Test ready"
+msgstr "Bandymas paruoštas"
+
+#. Status line of mouse test field: single button click
+msgid "Single Click: Done"
+msgstr "Vienkartinis paspaudimas: Atlikta"
+
+#. Status line of mouse test field: double button click
+msgid "Double Click: Done"
+msgstr "Dvigubas paspaudimas: Atlikta"
+
+#. Status line of mouse test field: wheel moved
+msgid "Scrolling"
+msgstr "Slinkimas"
+
+#. Status line of mouse test field: button pressed
+msgid "Button pressed"
+msgstr "Klavišas paspaustas"
+
+#. Status line of mouse test field: button released
+msgid "Button released"
+msgstr "Klavišas atleistas"
+
+#. Status line of mouse test field: wheel stopped
+msgid "Stopped: Done"
+msgstr "Sustabdytas: Atlikta"
+
+#. Group box title for properties
+msgid "Properties"
+msgstr "Savybės"
+
+#. Activate dual head mode checkbox
+msgid "Activate Dual Head Mode"
+msgstr "Aktyvuoti dviekranę veikseną"
+
+#. Set display resolution
+msgid "Resolution"
+msgstr "Skiriamoji geba"
+
+#. Set display colors
+msgid "Colors"
+msgstr "Spalvos"
+
+#. Activate 3D checkboc
+msgid "Activate 3D Acceleration"
+msgstr "Aktyvuoti 3D spartinimą"
+
+#. Tab title: Setup monitor properties for card X
+msgid "Monitor for Card"
+msgstr "Vaizduoklio plokštei"
+
+#. Tab title: Setup monitor for second channel on card X
+msgid "Second Monitor for Card"
+msgstr "Antrasis vaizduoklis plokštei"
+
+#. Tab title: Setup sync frequencies
+msgid "Sync Frequencies"
+msgstr "Sinch. dažniai"
+
+#. Tab title: Setup display size
+msgid "Display Size"
+msgstr "Ekrano dydis"
+
+#. Tab title: Setup the monitor arrangement
+#. Title for the multihead arrangement
+msgid "Arrangement"
+msgstr "Išdėstymas"
+
+#. Information about dual head mode. %1=the dual head modus %2=the resolution
+msgid "Activated in %1 mode with %2"
+msgstr "Aktyvuota veiksena %1 su %2"
+
+#. Short Information that something has been activated
+msgid "Activated in driver default mode"
+msgstr "Aktyvuota įprasta tvarkyklės veiksena"
+
+#. rwalter
+#. Monitor Model is unknown and should be changed
+#. rwalter
+#. Mouse Model is unknown and should be changed
+msgid "Unconfigured"
+msgstr "Nesukonfigūruotas"
+
+#. Message appears when user is trying to deactivate all displays
+msgid "<b>Cannot Deactivate All Displays</b><hr><nobr>At least one display must be active.</nobr>"
+msgstr "<b>Nepavyksta deaktyvuoti visų ekranų</b><hr><nobr>Bent vienas ekranas turi būti aktyvus.</nobr>"
+
+#. Info label for dual head checkbox
+msgid "No configuration available"
+msgstr "Nėra konfigūracijos"
+
+#. Radiobutton for traditional multihead mode
+msgid ""
+"Traditional Multihead:\n"
+"Each screen is an independent display"
+msgstr ""
+"Tradicinė daugiaekranė veiksena:\n"
+"Kiekvienas ekranas yra nepriklausomas displėjus"
+
+#. Radiobutton for cloned multihead mode
+msgid ""
+"Cloned Multihead:\n"
+"Each display is a clone of the primary display"
+msgstr ""
+"Klonuota daugiaekranė veiksena:\n"
+"Kiekvienas displėjus yra pirminio displėjaus klonas"
+
+#. Radiobutton for xinerama multihead mode
+msgid ""
+"Xinerama Multihead:\n"
+"Build one big display out of all screens"
+msgstr ""
+"Xinerama daugiaekranė veiksena:\n"
+"Iš visų ekranų sukuriamas vienas didelis displėjus"
+
+#. Title for multihead modi
+msgid "Multihead Mode"
+msgstr "Daugiaekranė veiksena"
+
+#. Monitor X - connected to - CardY
+msgid "Connected To"
+msgstr "Prijungtas prie"
+
+#. Tooltip text if monitor is unknown
+msgid "Unknown Monitor:"
+msgstr "Nežinomas vaizduoklis:"
+
+#. Tooltip text for primary monitor
+msgid "Primary Monitor:"
+msgstr "Pagrindinis vaizduoklis:"
+
+#. Windowanager title for the monitor model setup
+#. Windowanager title for the second monitor model setup
+msgid "Monitor Settings"
+msgstr "Vaizduoklio nuostatos"
+
+#. Windowanager title for the mouse mode setup
+msgid "Mouse Settings"
+msgstr "Pelės nuostatos"
+
+#. Windowanager title for the card options dialog
+msgid "Graphics Card Settings"
+msgstr "Vaizdo plokštės nuostatos"
+
+#. Windowanager title for the dual head setup
+msgid "Dual Head Settings"
+msgstr "Dviekranės veiksenos nuostatos"
+
+#. Radiobutton don't rotate
+msgid "Not Rotated"
+msgstr "Nepasuktas"
+
+#. Radiobutton rotate to the left side
+msgid "To the Left"
+msgstr "Į kairę"
+
+#. Radiobutton rotate to the right side
+msgid "To the Right"
+msgstr "Į dešinę"
+
+#. Popup message to inform the user about fbdev restrictions
+msgid "<b>Invalid Color/Resolution combination:</b><hr><nobr>The selected resolution and/or color settings</nobr> are not supported by the graphics cards framebuffer."
+msgstr ""
+
+#. Popup message to ask the user for an option value
+msgid "<b>Option Needs a Value</b><hr><nobr>Set up a value for option %1.</nobr>"
+msgstr "<b>Parametrui reikia vertės</b><hr><nobr>Nustatykite vertę parametrui %1.</nobr>"
+
+#. Group box title for the monitor vendor and name selection
+msgid "Monitor: Vendor and Name Selection"
+msgstr "Vaizduoklis: Gamintojo ir pavadinimo pasirinkimas"
+
+#. Group box title for the mouse vendor and name selection
+msgid "Mouse: Vendor and Name Selection"
+msgstr "Pelė: Gamintojo ir pavadinimo pasirinkimas"
+
+#. Group box title for the manual sync frequency set up
+msgid "Manual Sync Frequency Setup"
+msgstr "Rankinis sinch. dažnių konfigūravimas"
+
+#. Group box title for the aspect/ratio selection
+msgid "Diagonal and Aspect Ratio"
+msgstr "Įstrižainės ir padėties santykis"
+
+#. Group box title for the display size setup
+msgid "Display Size in [ mm ]"
+msgstr "Ekrano dydis [ mm ]"
+
+#. Text message telling to be carefull with the monitor sync frequencies
+msgid "<b>Note:</b> Wrong sync ranges may damage your monitor. Consult the monitor manual for the settings.<br><br>If you want your monitor not to use its maximum rating, decrease the sync ranges."
+msgstr "<b>Pastaba:</b>Neteisingi sinch. intervalai gali pažeisti jūsų monitorių. Konfigūruodami šias nuostatas pavartykite monitoriaus aprašą.<br><br>Jei nenorite, kad jūsų monitorius naudotų maksimaliu pajėgumu, sumažinkite sinch. intervalus."
+
+#. Checkbox to activate DPMS
+msgid "Activate DPMS"
+msgstr "Aktyvuoti DPMS"
+
+#. Button to popup the disk dialog for reading the monitor utility disk
+msgid "Utility Disk..."
+msgstr "Pagalbinis diskas..."
+
+#. Label text for horizontal sync frequency
+msgid "Horizontal"
+msgstr "Horizontaliai"
+
+#. Label text for second monitor name
+msgid "Second Monitor:"
+msgstr "Antrasis monitorius:"
+
+#. Label text for second monitor resolution
+msgid "Second Monitor Resolution"
+msgstr "Antrojo monitoriaus skiriamoji geba"
+
+#. Label text for vertical sync frequency
+msgid "Vertical"
+msgstr "Vertikaliai"
+
+#. Label text for hsync unit
+msgid "KHz"
+msgstr "KHz"
+
+#. Label text for vsync unit
+msgid "Hz"
+msgstr "Hz"
+
+#. Label text for the aspect ratio combo box
+msgid "Aspect Ratio"
+msgstr "Padėties santykis"
+
+#. Label text for the diagonal length combo box
+msgid "Diagonal"
+msgstr "Įstrižainė"
+
+#. Label text for the display size X-Axis
+msgid "X Axis [mm]"
+msgstr "X ašis [mm]"
+
+#. Label text for the display size Y-Axis
+msgid "Y Axis [mm]"
+msgstr "Y ašis [mm]"
+
+#. Something is not configured
+msgid "Not configured"
+msgstr "Nesukonfigūruota"
+
+#. Unit name for inches in german zoll
+msgid "inches"
+msgstr "coliai"
+
+#. Message box of type Ok, telling to user to insert a CD or disk
+msgid "<b>Insert CD or Disk</b><hr>Insert the display utility CD or disk from the monitor vendor."
+msgstr "<b>Įdėkite CD arba diską</b><hr>Įdėkite displėjaus pagalbinį CD arba monitoriaus gamintojo pateiktą diską."
+
+#. Message box of type Error, telling that the utility disk cannot be opened
+msgid "<b>Read Error</b><hr>Could not read from CD or disk. This may point to a damaged medium or incorrectly formatted information files."
+msgstr "<b>Skaitymo klaida</b><hr>Nepavyksta perskaityti iš CD arba disko. Tai gali būti dėl pažeisto disko arba blogo formato rinkmenų."
+
+#. First gap of the ActivateInfo text: Multihead mode name
+msgid "Traditional"
+msgstr "Tradicinė"
+
+#. First gap of the ActivateInfo text: Multihead mode name
+msgid "Clone"
+msgstr "Klonas"
+
+#. First gap of the ActivateInfo text: Multihead mode name
+msgid "Xinerama"
+msgstr "Xinerama"
+
+#. Tab text for the mouse model dialog
+msgid "Mouse Model"
+msgstr "Pelės modelis"
+
+#. Group box title for the primary keyboard setup
+msgid "Primary Setup"
+msgstr "Pagrindinis konfigūravimas"
+
+#. Label text for the primary keyboard type
+msgid "Type"
+msgstr "Tipas"
+
+#. Label text for the primary keyboard variant
+#. Table topic text describing the variant column
+msgid "Variant"
+msgstr "Variantas"
+
+#. Group box title for the additional keyboard setup
+msgid "Additional Layouts"
+msgstr "Papildomi išdėstymai"
+
+#. Table topic text describing the status column
+msgid "Status"
+msgstr "Būsena"
+
+#. Table topic text describing the keytable column
+msgid "Keytable"
+msgstr "Klavišų lentelė"
+
+#. List View root item text
+msgid "Group Shift/Lock Behavior"
+msgstr "Grupės Lyg2(Shift)/Lock elgsena"
+
+#. List View root item text
+msgid "Use Keyboard LED to Show Alternate Group"
+msgstr "Naudoti klaviatūros LED alternatyvios grupės rodymui"
+
+#. List View root item text
+#, fuzzy
+msgid "Compose Key Position"
+msgstr "Compose klavišo pozicija"
+
+#. List View root item text
+#. XKBFile extension text
+msgid "Control Key Position"
+msgstr "Valdymo(Control) klavišo padėtis"
+
+#. List View root item text
+msgid "Third Level Chooser"
+msgstr "Trečiojo lygio pasirinkimas"
+
+#. List View root item text
+msgid "Alt/Win Key Behavior"
+msgstr "Alt/Win klavišo elgsena"
+
+#. List View root item text
+msgid "EuroSign Key Position"
+msgstr "Euro simbolio klavišo padėtis"
+
+#. List View root item text
+msgid "CapsLock Key Behavior"
+msgstr "Didž.(CapsLock) klavišo elgsena"
+
+#. List View item text: Radiobutton no item selected
+msgid "None"
+msgstr "Nieko"
+
+#. XKBFile extension text
+msgid "Morocco"
+msgstr "Marokas"
+
+# BR
+#. XKBFile extension text
+msgid "Braille"
+msgstr "Brailis"
+
+# ET
+# fuzzy
+#. XKBFile extension text
+msgid "Ethiopia"
+msgstr "Etiopija"
+
+#. XKBFile extension text
+msgid "NICOLA-F style Backspace"
+msgstr ""
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Right Alt key never chooses 3rd level."
+msgstr "Spauskite dešinį Win klavišą 3-iam lygiui."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Left Alt key switches layout while pressed."
+msgstr "Paspaudus kairysis Win klavišas persijungia grupę."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Space key outputs non"
+msgstr "Tarpo klavišas išveda tarpą bet kokiame lygyje."
+
+#. XKBFile extension text
+msgid "Default numeric keypad keys."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Both Ctrl keys together change layout."
+msgstr "Abu Vald(Ctrl) klavišai kartu keičia išdėstymą."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Using space key to input non-breakable space character"
+msgstr "Tarpo klavišas išveda neperkeliamą tarpą ketvirtame lygyje."
+
+#. XKBFile extension text
+msgid "Right Shift key changes layout."
+msgstr "Dešinysis Shift klavišas keičia išdėstymą."
+
+#. XKBFile extension text
+msgid "Left Win-key changes layout."
+msgstr "Kairys Win klavišas keičia išdėstymą."
+
+#. XKBFile extension text
+msgid "LCtrl+LShift change layout."
+msgstr "Kairieji Ctrl+Shift keičia išdėstymą."
+
+#. XKBFile extension text
+msgid "Left Alt key changes layout."
+msgstr "Kairysis Alt klavišas keičia išdėstymą."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Both Win-keys switch layout while pressed."
+msgstr "Abu Win klavišai keičia grupę."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Right Ctrl key switches layout while pressed."
+msgstr "Nuspaustas dešinys Ctrl klavišas perjungia grupę."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Space key outputs non-breakable space character"
+msgstr "Tarpo klavišas išveda neperkeliamą tarpą ketvirtame lygyje."
+
+#. XKBFile extension text
+msgid "Shift+CapsLock changes layout."
+msgstr "Shift+CapsLock keičia išdėstymą."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "R-Alt switches layout while pressed."
+msgstr "R-Alt keičia grupę."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Numeric keypad layout selection"
+msgstr "Kalbos ir klaviatūros išdėstymo pasirinkimas"
+
+#. XKBFile extension text
+msgid "Right Ctrl key changes layout."
+msgstr "Dešinysis Ctrl klavišas keičia išdėstymą."
+
+#. XKBFile extension text
+msgid "Alt+CapsLock changes layout."
+msgstr "Alt+CapsLock keičia išdėstymą."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Super is mapped to the Win-keys."
+msgstr "Hyper susietas su Win klavišais."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "ScrollLock LED shows alternative layout."
+msgstr "Scroll_Lock LED rodo alternatyvią grupę"
+
+#. XKBFile extension text
+msgid "Both Shift keys together change layout."
+msgstr "Abu Shift klavišai kartu keičia išdėstymą."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Space key outputs non-breakable space character at second level."
+msgstr "Tarpo klavišas išveda neperkeliamą tarpą ketvirtame lygyje."
+
+#. XKBFile extension text
+msgid "Right Win-key changes layout."
+msgstr "Dešinys Win klavišas keičia išdėstymą."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Space key outputs non-breakable space character at third level."
+msgstr "Tarpo klavišas išveda neperkeliamą tarpą ketvirtame lygyje."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Numeric keypad keys work as with Mac."
+msgstr "Shift su klaviatūros skaitmenų sritimi veikia kaip MS Windows."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "CapsLock LED shows alternative layout."
+msgstr "CapsLock LED rodo alternatyvią grupę."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "NumLock LED shows alternative layout."
+msgstr "NumLock LED rodo alternatyvią grupę."
+
+#. XKBFile extension text
+msgid "Left Shift key changes layout."
+msgstr "Kairysis Shift klavišas keičia išdėstymą."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Left Win-key switches layout while pressed."
+msgstr "Paspaudus kairį Win persijungia grupė."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Space key outputs non-breakable space character at fourth level."
+msgstr "Tarpo klavišas išveda neperkeliamą tarpą ketvirtame lygyje."
+
+#. XKBFile extension text
+msgid "Both Alt keys together change layout."
+msgstr "Abu Alt klavišai kartu keičia išdėstymą."
+
+#. XKBFile extension text
+msgid "CapsLock key changes layout."
+msgstr "CapsLock klavišas keičia išdėstymą."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Control is mapped to the Win-keys (and the usual Ctrl keys)."
+msgstr "Super susietas su Win klavišu (įprasta)."
+
+#. XKBFile extension text
+msgid "Right Alt key changes layout."
+msgstr "Dešinysis Alt klavišas keičia išdėstymą."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Shift with numeric keypad keys works as in MS Windows."
+msgstr "Shift su klaviatūros skaitmenų sritimi veikia kaip MS Windows."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Alt and Meta are on the Alt keys."
+msgstr "Alt ir Meta Alt klavišams (įprasta)."
+
+#. XKBFile extension text
+msgid "Alt+Shift change layout."
+msgstr "Alt+Shift keičia išdėstymą."
+
+#. XKBFile extension text
+msgid "Ctrl+Shift change layout."
+msgstr "Ctrl+Shift keičia išdėstymą."
+
+#. XKBFile extension text
+msgid "Space key outputs usual space at any level."
+msgstr "Tarpo klavišas išveda tarpą bet kokiame lygyje."
+
+#. XKBFile extension text
+msgid "Japanese keyboard options"
+msgstr "Japonų klaviatūros nustatymai"
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Use keyboard LED to show alternative layout."
+msgstr "Naudoti klaviatūros LED alternatyvios grupės rodymui."
+
+#. XKBFile extension text
+msgid "Left Ctrl key changes layout."
+msgstr "Kairysis Ctrl klavišas keičia išdėstymą."
+
+#. XKBFile extension text
+msgid "Menu key changes layout."
+msgstr "Meniu klavišas keičia išdėstymą."
+
+#. XKBFile extension text
+msgid "Alt+Ctrl change layout."
+msgstr "Alt+Ctrl keičia išdėstymą."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Right Win-key switches layout while pressed."
+msgstr "Nuspaustas dešinys Win perjungia grupę."
+
+#. XKBFile extension text
+msgid "Layout switching"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Left Alt key switches group while pressed."
+msgstr "Paspaudus kairysis Win klavišas persijungia grupę."
+
+#. XKBFile extension text
+msgid "Both Ctrl keys together change group."
+msgstr "Abu Ctrl klavišai kartu keičia grupę."
+
+#. XKBFile extension text
+msgid "Right Shift key changes group."
+msgstr "Dešinys Shift klavišas keičia grupę."
+
+#. XKBFile extension text
+msgid "Left Win key changes group."
+msgstr "Kairys Win klavišas keičia grupę."
+
+#. XKBFile extension text
+msgid "Left Alt key changes group."
+msgstr "Kairys Alt klavišas keičia grupę."
+
+#. XKBFile extension text
+msgid "Both Win keys switch group while pressed."
+msgstr "Abu Win klavišai keičia grupę."
+
+#. XKBFile extension text
+msgid "Right Ctrl key switches group while pressed."
+msgstr "Nuspaustas dešinys Ctrl klavišas perjungia grupę."
+
+#. XKBFile extension text
+msgid "Left Alt is swapped with left Win-key."
+msgstr "Kairysis Alt sukeistas su kairiuoju Win klavišu."
+
+#. XKBFile extension text
+msgid "Default numpad keys."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Adding the nobreakspace keysym to space key"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Use keypad with unicode additions (arrows and math operators)"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Force standard legacy keypad"
+msgstr ""
+
+#. XKBFile extension text
+#, fuzzy
+msgid "CapsLock uses internal capitalization. Shift doesn't affect CapsLock."
+msgstr "CapsLock naudoja vidinį raidžių didinimą. Shift neatšaukia CapsLock."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Keypad layout selection"
+msgstr "Kalbos ir klaviatūros išdėstymo pasirinkimas"
+
+#. XKBFile extension text
+msgid "Alt+CapsLock changes group."
+msgstr "Alt+CapsLock keičia grupę."
+
+#. XKBFile extension text
+msgid "Space key output nobreakspace at second level."
+msgstr ""
+
+#. XKBFile extension text
+#, fuzzy
+msgid "CapsLock acts as Shift with locking. Shift doesn't affect CapsLock."
+msgstr "CapsLock veikia kaip Shift su rakinimu. Shift neatšaukia CapsLock."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "CapsLock uses internal capitalization. Shift \"pauses\" CapsLock."
+msgstr "CapsLock naudoja vidinį raidžių didinimą. Shift atšaukia CapsLock."
+
+#. XKBFile extension text
+msgid "Space key output nobreakspace at third level."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Swap keycodes of two keys when Mac keyboards are misdetected by kernel."
+msgstr ""
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Numpad keys work as with Mac."
+msgstr "Shift su klaviatūros skaitmenų sritimi veikia kaip MS Windows."
+
+#. XKBFile extension text
+msgid "Kana Lock key is locking"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Space key output nobreakspace at fourth level."
+msgstr "Tarpo klavišas išveda neperkeliamą tarpą ketvirtame lygyje."
+
+#. XKBFile extension text
+msgid "Left Win-key is Compose."
+msgstr ""
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Press Right Alt key to choose 3rd level, Shift+Right Alt key is Multi_Key."
+msgstr "Spauskite dešinį Win klavišą 3-iam lygiui."
+
+#. XKBFile extension text
+msgid "Space key output space at any level."
+msgstr "Tarpo klavišas išveda tarpą bet kokiame lygyje."
+
+#. XKBFile extension text
+msgid "Japanese Keyboard Options"
+msgstr "Japoniškis klaviatūros parinktys"
+
+#. XKBFile extension text
+#, fuzzy
+msgid "CapsLock acts as Shift with locking. Shift \"pauses\" CapsLock."
+msgstr "CapsLock veikia kaip Shift su rakinimu. Shift atšaukia CapsLock."
+
+#. XKBFile extension text
+msgid "CapsLock uses internal capitalization. Shift doesn't cancel CapsLock."
+msgstr "CapsLock naudoja vidinį raidžių didinimą. Shift neatšaukia CapsLock."
+
+#. XKBFile extension text
+msgid "CapsLock just locks the Shift modifier."
+msgstr "CapsLock užrakina Shift modifikatorių."
+
+#. XKBFile extension text
+msgid "CapsLock toggles normal capitalization of alphabetic characters."
+msgstr "CapsLock įjungia normalią didžiųjų alfabetinių simbolių veikseną."
+
+#. XKBFile extension text
+msgid "CapsLock toggles Shift so all keys are affected."
+msgstr "CapsLock įjungia Shift taip, jog paveikiami visi klavišai."
+
+#. XKBFile extension text
+msgid "Right Win-key is Compose."
+msgstr "Dešinys Win klavišas yra Compose."
+
+#. XKBFile extension text
+msgid "Shift+CapsLock changes group."
+msgstr "Shift+CapsLock keičia grupę."
+
+#. XKBFile extension text
+msgid "R-Alt switches group while pressed."
+msgstr "R-Alt keičia grupę."
+
+#. XKBFile extension text
+msgid "Right Control key works as Right Alt."
+msgstr "Dešinys Control klavišas veikia kaip dešinysis Alt."
+
+#. XKBFile extension text
+msgid "Control key at bottom left"
+msgstr "Control klavišas apačioje kairėje"
+
+#. XKBFile extension text
+msgid "Press any of Win-keys to choose 3rd level."
+msgstr "Spauskite bet kokį Win klavišą 3-iam lygiui."
+
+#. XKBFile extension text
+msgid "Press Right Alt key to choose 3rd level."
+msgstr "Spauskite dešinį Win klavišą 3-iam lygiui."
+
+#. XKBFile extension text
+msgid "Right Ctrl key changes group."
+msgstr "Dešinys Ctrl klavišas keičia grupę."
+
+#. XKBFile extension text
+msgid "Right Alt is Compose."
+msgstr "Dešinysis Alt yra Compose."
+
+#. XKBFile extension text
+msgid "Right Ctrl is Compose."
+msgstr "Dešinysis Ctrl yra Compose."
+
+#. XKBFile extension text
+msgid "ScrollLock LED shows alternative group."
+msgstr "Scroll_Lock LED rodo alternatyvią grupę"
+
+#. XKBFile extension text
+msgid "Control key at left of -A-"
+msgstr "Control klavišas -A- kairėje"
+
+#. XKBFile extension text
+msgid "Third level choosers"
+msgstr "Trečiojo lygio pasirinkimas"
+
+#. XKBFile extension text
+msgid "Both Shift keys together change group."
+msgstr "Abu Shift klavišai kartu keičia grupę."
+
+#. XKBFile extension text
+msgid "CapsLock acts as Shift with locking. Shift doesn't cancel CapsLock."
+msgstr "CapsLock veikia kaip Shift su rakinimu. Shift neatšaukia CapsLock."
+
+#. XKBFile extension text
+msgid "CapsLock uses internal capitalization. Shift cancels CapsLock."
+msgstr "CapsLock naudoja vidinį raidžių didinimą. Shift atšaukia CapsLock."
+
+#. XKBFile extension text
+msgid "Make CapsLock an additional Control."
+msgstr "Padaryti CapsLock papildomu Control."
+
+#. XKBFile extension text
+msgid "Press Left Win-key to choose 3rd level."
+msgstr "Spauskite kairįjį Win klavišą 3-iam lygiui."
+
+#. XKBFile extension text
+msgid "Right Win-key changes group."
+msgstr "Dešinys Win klavišas keičia grupę."
+
+#. XKBFile extension text
+msgid "Meta is mapped to the left Win-key."
+msgstr "Meta susietas su kairiu Win klavišu."
+
+#. XKBFile extension text
+msgid "CapsLock LED shows alternative group."
+msgstr "CapsLock LED rodo alternatyvią grupę."
+
+#. XKBFile extension text
+msgid "NumLock LED shows alternative group."
+msgstr "NumLock LED rodo alternatyvią grupę."
+
+#. XKBFile extension text
+msgid "Left Shift key changes group."
+msgstr "Kairys Shift klavišas keičia grupę."
+
+#. XKBFile extension text
+msgid "Left Win-key switches group while pressed."
+msgstr "Paspaudus kairį Win persijungia grupė."
+
+#. XKBFile extension text
+msgid "Menu is Compose."
+msgstr "Meniu yra Compose."
+
+#. XKBFile extension text
+msgid "Both Alt keys together change group."
+msgstr "Abu Alt klavišai kartu keičia grupę."
+
+#. XKBFile extension text
+msgid "CapsLock key changes group."
+msgstr "CapsLock klavišas keičia grupę."
+
+#. XKBFile extension text
+msgid "Swap Control and CapsLock."
+msgstr "Sukeisti Control ir CapsLock."
+
+#. XKBFile extension text
+msgid "Press any of Alt keys to choose 3rd level."
+msgstr "Spauskite bet kokį Win klaviša 3-iam lygiui."
+
+#. XKBFile extension text
+msgid "Right Alt key changes group."
+msgstr "Dešinys Alt klavišas keičia grupę."
+
+#. XKBFile extension text
+msgid "Shift with numpad keys works as in MS Windows."
+msgstr "Shift su klaviatūros skaitmenų sritimi veikia kaip MS Windows."
+
+#. XKBFile extension text
+msgid "Special keys (Ctrl+Alt+<key>) handled in a server."
+msgstr "Specialūs klavišai (Ctrl+Alt+<klavišas>) apdorojami serveryje."
+
+#. XKBFile extension text
+msgid "Hyper is mapped to the Win-keys."
+msgstr "Hyper susietas su Win klavišais."
+
+#. XKBFile extension text
+msgid "Alt is mapped to the right Win-key and Super to Menu."
+msgstr "Alt susietas su dešiniu Win klavišu, o Super - su Meniu."
+
+#. XKBFile extension text
+msgid "Super is mapped to the Win-keys (default)."
+msgstr "Super susietas su Win klavišu (įprasta)."
+
+#. XKBFile extension text
+msgid "Alt and Meta on the Alt keys (default)."
+msgstr "Alt ir Meta Alt klavišams (įprasta)."
+
+#. XKBFile extension text
+msgid "Add the standard behavior to Menu key."
+msgstr "Pridėti standarninę elgseną Meniu klavišui."
+
+#. XKBFile extension text
+msgid "Alt and Meta are on the Alt keys (default)."
+msgstr "Alt ir Meta Alt klavišams (įprasta)."
+
+#. XKBFile extension text
+msgid "Press Right Control to choose 3rd level."
+msgstr "Spauskite dešinį Control 3-iam lygiui."
+
+#. XKBFile extension text
+msgid "Alt+Shift changes group."
+msgstr "Alt+Shift keičia grupę."
+
+#. XKBFile extension text
+msgid "Control+Shift changes group."
+msgstr "Control+Shift keičia grupę."
+
+#. XKBFile extension text
+msgid "CapsLock acts as Shift with locking. Shift cancels CapsLock."
+msgstr "CapsLock veikia kaip Shift su rakinimu. Shift atšaukia CapsLock."
+
+#. XKBFile extension text
+msgid "Use keyboard LED to show alternative group."
+msgstr "Naudoti klaviatūros LED alternatyvios grupės rodymui."
+
+#. XKBFile extension text
+msgid "Press Right Win-key to choose 3rd level."
+msgstr "Spauskite dešinį Win klavišą 3-iam lygiui."
+
+#. XKBFile extension text
+msgid "Press Left Alt key to choose 3rd level."
+msgstr "Spauskite kairįjį Alt klavišą 3-iam lygiui."
+
+#. XKBFile extension text
+msgid "Meta is mapped to the Win-keys."
+msgstr "Meta susietas su Win klavišais."
+
+#. XKBFile extension text
+msgid "Press Menu key to choose 3rd level."
+msgstr "Spauskite Meniu klavišą 3-iam lygiui."
+
+#. XKBFile extension text
+msgid "Left Ctrl key changes group."
+msgstr "Kairys Ctrl klavišas keičia grupę."
+
+#. XKBFile extension text
+msgid "Menu key changes group."
+msgstr "Meniu klavišas keičia grupę."
+
+#. XKBFile extension text
+msgid "Alt+Control changes group."
+msgstr "Alt+Control keičia grupę."
+
+#. XKBFile extension text
+msgid "Right Win-key switches group while pressed."
+msgstr "Nuspaustas dešinys Win perjungia grupę."
+
+#. XKBFile extension text
+msgid "Serbia"
+msgstr "Serbija"
+
+#. XKBFile extension text
+msgid "Guinea"
+msgstr "Gvinėja"
+
+#. XKBFile extension text
+msgid "Montenegro"
+msgstr "Juodkalnija"
+
+#. XKBFile extension text
+msgid "China"
+msgstr "Kinija"
+
+#. XKBFile extension text
+msgid "USA"
+msgstr "JAV"
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Add the EuroSign to the 4 key."
+msgstr "Pridėti Euro ženklą prie 5 klavišo."
+
+#. XKBFile extension text
+msgid "Four-level key with dot"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Legacy Wang 724 keypad"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Four-level key with abstract separators"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Keypad with unicode additions (arrows and math operators)"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Legacy keypad"
+msgstr ""
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Shift cancels CapsLock."
+msgstr "Sukeisti Ctrl ir CapsLock."
+
+#. XKBFile extension text
+msgid "Swap ESC and CapsLock."
+msgstr "Sukeisti Esc su CapsLock."
+
+#. XKBFile extension text
+msgid "Wang 724 keypad with unicode additions (arrows and math operators). Math operators on default level."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Four-level key with comma"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Legacy key with comma"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Keypad with unicode additions (arrows and math operators). Math operators on default level."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Legacy key with dot"
+msgstr ""
+
+#. XKBFile extension text
+msgid "Four-level key with momayyez"
+msgstr ""
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Numeric keypad delete key behaviour"
+msgstr "Kalbos ir klaviatūros išdėstymo pasirinkimas"
+
+#. XKBFile extension text
+msgid "Wang 724 keypad with unicode additions (arrows and math operators)"
+msgstr ""
+
+#. Tab title: Tablet port and mode selection
+msgid "Port and Mode"
+msgstr "Prievadas ir veiksena"
+
+#. Tab title: Tablet electronic pens (pen,eraser)
+msgid "Electronic Pens"
+msgstr "Elektroninės plunksnos"
+
+#. Activate tablet checkbox
+msgid "Activate This Tablet"
+msgstr "Aktyvuoti šį planšetą"
+
+#. Group box title for the tablet vendor and name selection
+msgid "Tablet: Vendor and Name Selection"
+msgstr "Planšetas: Gamintojo ir pavadinimo pasirinkimas"
+
+#. Group box title for tablet port combobox
+msgid "Connection Port"
+msgstr "Pajungimo prievadas"
+
+#. Group box title for tablet mode
+msgid "Primary Tablet Mode"
+msgstr "Pirminė planšeto veiksena"
+
+#. Group box title for pen/eraser tablet mode
+msgid "Pen or Eraser Mode"
+msgstr "Plunksnos arba trintuko veiksena"
+
+#. Radiobutton for relative tablet mode
+msgid "Relative"
+msgstr "Reliatyvus"
+
+#. Radiobutton for absolute tablet mode
+msgid "Absolute"
+msgstr "Absoliutus"
+
+#. Combobox item text for tablet port: USB
+msgid "USB"
+msgstr "USB"
+
+#. Combobox item text for tablet port: ttyS0
+msgid "COM-1 [ /dev/ttyS0 ]"
+msgstr "COM-1 [ /dev/ttyS0 ]"
+
+#. Combobox item text for tablet port: ttyS1
+msgid "COM-2 [ /dev/ttyS1 ]"
+msgstr "COM-2 [ /dev/ttyS1 ]"
+
+#. Combobox item text for tablet port: ttyS2
+msgid "COM-3 [ /dev/ttyS2 ]"
+msgstr "COM-3 [ /dev/ttyS2 ]"
+
+#. Combobox item text for tablet port: ttyS3
+msgid "COM-4 [ /dev/ttyS3 ]"
+msgstr "COM-4 [ /dev/ttyS3 ]"
+
+#. Combobox item text for tablet port: ttyS4
+msgid "COM-5 [ /dev/ttyS4 ]"
+msgstr "COM-5 [ /dev/ttyS4 ]"
+
+#. Group box title for the tablet tools (pen/eraser)
+msgid "Tools"
+msgstr "Įrankiai"
+
+#. Add Pen Checkbox
+msgid "Add Pen"
+msgstr "Pridėti plunksną"
+
+#. Add Eraser Checkbox
+msgid "Add Eraser"
+msgstr "Pridėti trintuką"
+
+#. Add Touch Checkbox
+msgid "Add Touch"
+msgstr ""
+
+#. Add Pad Checkbox
+#, fuzzy
+msgid "Add Pad"
+msgstr "Pridėti plunksną"
+
+#. Windowanager title for the tablet pen options dialog
+msgid "Pen or Eraser Settings"
+msgstr "Plunksnos arba trintuko nuostatos"
+
+#. Tab title: Pen properties
+msgid "Pen Properties"
+msgstr "Plunksnos savybės"
+
+#. Tab title: Pad properties
+#, fuzzy
+msgid "Pad Properties"
+msgstr "Plunksnos savybės"
+
+#. Tab title: Eraser properties
+msgid "Eraser Properties"
+msgstr "Trintuko savybės"
+
+#. Tab title: Touch properties
+#, fuzzy
+msgid "Touch Properties"
+msgstr "Lytimojo ekrano savybės"
+
+#. Tab text for a touchscreen tab of the touchscreen dialog
+#, fuzzy
+msgid "Touchscreen %1"
+msgstr "Lytimasis ekranas"
+
+#. Activate/Assign touchscreen checkbox
+msgid "Assign a Touchscreen to Display Number %1"
+msgstr "Priskirti lytimąjį ekraną vaizduoklio numeriui %1"
+
+#. Group box title for the touchscreen vendor and name selection
+msgid "Touchscreen: Vendor and Name Selection"
+msgstr "Lytimasis ekranas: Gamintojo ir pavadinimo pasirinkimas"
+
+#. Finish configuration message box
+#, fuzzy
+msgid "<b>Final Steps</b><hr>The last step is saving your new configuration. It is recommended to test the new configuration before saving it. If the test server shows a corrupted desktop, press <b>[ Ctrl+Alt+Backspace ]</b> and <b>[ Ctrl+Alt+Backspace ]</b> shortly after a loud warning (beep) to kill the server."
+msgstr "<b>Baigiamieji žingsniai:</b><hr>Paskutinis žingsnis- išsaugoti jūsų naują konfigūraciją. Rekomenduojama išbandyti konfigūraciją prieš ją išsaugant. Jei serveris rodo iškraipytą darbalaukį, spauskite:<b>[ Ctrl-Alt-Backspace ]</b>, taip priverstinai išjungsite serverį."
+
+#. Finish configuration message box (without test)
+msgid "<b>Saving the configuration</b><hr>Click on Save to store the configuration. Your changes will become effective on next X-Server restart."
+msgstr ""
+
+#. Tab title: VNC Server configuration
+msgid "X Server Remote Control"
+msgstr "X serverio nuotolinis valdymas"
+
+#. Activate VNC server checkbox
+msgid "Allow access to display and keyboard/mouse of your X Server"
+msgstr "Leisti prieigą prie jūsų X serverio ekrano ir klaviatūros/pelės"
+
+#. Activate VNC password protection checkbox
+msgid "Activate Password Protection"
+msgstr "Aktyvuoti apsaugą slaptažodžiu"
+
+#. LineEdit label: enter password
+msgid "Password"
+msgstr "Slaptažodis"
+
+#. LineEdit contents: enter new password
+msgid "<Enter new password>"
+msgstr "<Įveskite naują slaptažodį>"
+
+#. LineEdit contents: change password
+msgid "<Change password>"
+msgstr "<Pakeiskite slaptažodį>"
+
+#. LineEdit contents: verify password
+msgid "<Verify password>"
+msgstr "<Patikrinkite slaptažodį>"
+
+#. Activate HTTP access checkbox
+msgid "Activate HTTP Access"
+msgstr "Įjungti HTTP prieigą"
+
+#. Activate multiple VNC connection checkbox
+msgid "Allow Multiple Connections"
+msgstr "Leisti daug prisijungimų"
+
+#. SpinBox label to setup the HTTP port number
+msgid "HTTP Port"
+msgstr "HTTP prievadas"
+
+#. VNC message box appearing if password strings doesn't match
+msgid "<b>Remote Access Password Mismatch</b><hr>The first and the second version of the password do not match."
+msgstr "<b>Nesutampa nuotolinės prieigos slaptažodžiai</b><hr>Nesutampa pirmoji ir antroji slaptažodžio versijos."
+
+#. VNC message box appearing if password is too short
+msgid "<b>Remote Access Password Fault</b><hr>The password field has been left empty or the password is too short. Enter a password with at least six characters."
+msgstr "<b>Netinkamas nuotolinės prieigos  slaptažodis</b><hr>Slaptažodžio laukelis yra paliktas tuščias arba slaptažodis yra per trumpas. Prašome įvesti slaptažodį ne trumpesnį, kaip šešių simbolių ilgio."
+
+#. VNC message box appearing if password is too long
+msgid "<b>Remote Access Password Fault</b><hr>The password is too long. Enter a password with a maximum of eight characters."
+msgstr "<b>Netinkamas nuotolinio prisijungimo slaptažodis</b><hr>Slaptažodžio laukelis yra paliktas tuščias arba slaptažodis yra per trumpas. Prašome įvesti slaptažodį ne trumpesnį, kaip šešių simbolių ilgio."
+
+#. Install missing packages box
+msgid "<b>Software Installation:</b><hr>Some packages are missing. Install the missing packages now?"
+msgstr "<b>Programinės įrangos diegimas:</b><hr>Trūksta kai kurių paketų. Ar įdiegti trūkstamus paketus?"
+
+#. Caption text for the missing package info window
+msgid "Package Installation"
+msgstr "Paketo diegimas"
+
+#. Progress bar title text
+msgid "Importing module"
+msgstr "Importuojamas modulis"
+
+#. Progress window caption text
+msgid "SaX2: Importing data..."
+msgstr "SaX2: Importuojami duomenys..."
+
+#. Progress window label text
+msgid "Initialize cache..."
+msgstr "Paleidžiama talpykla..."
+
+#. Message box text: configuration cannot be saved
+msgid "<b>Saving Configuration Failed</b><hr>The following report has been created:"
+msgstr "<b>Nepavyko išsaugoti konfigūracijos</b><hr>Sukurtas toks pranešimas:"
+
+#. Message box test: configuration has been saved
+msgid "<b>Configuration Saved</b><hr>Your modifications will take effect the next time the graphics system is restarted. Exit SaX2 now?"
+msgstr "<b>Konfigūracija išsaugota:</b><hr>Pakeitimai pradės galioti tik iš naujo paleidus grafinę sistemą. Išeiti iš SAX2?"
+
+#. Message box text: testing the configuration has failed
+msgid "<b>Testing Configuration Failed</b><hr>For further information, refer to the file <tt>/var/log/Xorg.99.log</tt>. The following report has been created from the calling instance:"
+msgstr "<b>Nepavyko išbandyti konfigūracijos</b><hr>Detaliau žiūrėkite rinkmenoje <tt>/var/log/Xorg.99.log</tt>. Sukurtas toks pranešimas:"
+
+#. Message box text: if VNC has been enabled the firewall should be checked
+msgid "<b>Remote Access configuration information</b><hr>The Remote Access service requires that the TCP port 5900 and an HTTP port (5800 by default) be open in the firewall. You can configure this with YaST."
+msgstr "<b>Nuotolinės prieigos konfigūracijos informacija</b><hr>Nuotolinės prieigos paslaugai reikia, kad užkardos TCP prievadas 5900 ir HTTP prievadas (5800 įprastinis) būtų atverti. Tai galite sukonfigūruoti su YaST."
+
+#. XKBFile extension text
+msgid "Miscellaneous compatibility options"
+msgstr "Įvairios suderinamumo parinktys"
+
+#. XKBFile extension text
+msgid "Add the EuroSign to the 5 key."
+msgstr "Pridėti Euro ženklą prie 5 klavišo."
+
+#. XKBFile extension text
+msgid "CapsLock key behavior"
+msgstr "CapsLock klavišo elgsena"
+
+#. XKBFile extension text
+msgid "Alt/Win key behavior"
+msgstr "Alt/Win klavišo elgsena"
+
+#. XKBFile extension text
+msgid "Adding the EuroSign to certain keys"
+msgstr "Pridėti Euro ženklą prie tam tikrų klavišų"
+
+#. XKBFile extension text
+msgid "Caps Lock is Compose."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Right Ctrl key works as Right Alt."
+msgstr "Dešinys Ctrl klavišas veikia kaip dešinysis Alt."
+
+#. XKBFile extension text
+msgid "Ctrl key at bottom left"
+msgstr "Ctrl klavišas apačioje kairėje"
+
+#. XKBFile extension text
+msgid "Ctrl key at left of 'A'"
+msgstr "Ctrl klavišas „A“ kairėje"
+
+#. XKBFile extension text
+msgid "Make CapsLock an additional Ctrl."
+msgstr "Padaryti CapsLock papildomu Ctrl"
+
+#. XKBFile extension text
+msgid "Swap Ctrl and CapsLock."
+msgstr "Sukeisti Ctrl ir CapsLock."
+
+#. XKBFile extension text
+msgid "Ctrl key position"
+msgstr "Ctrl klavišo pozicija"
+
+#. XKBFile extension text
+msgid "Special keys (Ctrl+Alt+&lt;key&gt;) handled in a server."
+msgstr "Specialūs klavišai (Ctrl+Alt+&lt;key&gt;) apdorojami serveryje."
+
+#. XKBFile extension text
+msgid "Press Right Ctrl to choose 3rd level."
+msgstr "Spauskite dešinį Ctrl 3-iam lygiui."
+
+#. XKBFile extension text
+msgid "Ctrl+Shift changes group."
+msgstr "Ctrl+Shift keičia grupę."
+
+#. XKBFile extension text
+msgid "Add the EuroSign to the E key."
+msgstr "Pridėti Euro ženklą prie E klavišo."
+
+#. XKBFile extension text
+msgid "Add the EuroSign to the 2 key."
+msgstr "Pridėti Euro ženklą prie 2 klavišo."
+
+#. XKBFile extension text
+#, fuzzy
+msgid "key Compose key position"
+msgstr "Compose klavišo pozicija"
+
+#. XKBFile extension text
+msgid "Alt+Ctrl changes group."
+msgstr "Alt+Vald(Ctrl) keičia grupę."
+
+#. XKBFile extension text
+msgid "Group Shift/Lock behavior"
+msgstr "Grupės Shift/Lock elgsena"
+
+#. XKBFile extension text
+msgid "Arabic"
+msgstr "Arabų"
+
+#. XKBFile extension text
+msgid "Nepal"
+msgstr "Nepalas"
+
+#. XKBFile extension text
+msgid "Congo, Democratic Republic of the"
+msgstr "Demokratinė Kongo Respublika"
+
+#. XKBFile extension text
+msgid "Korea, Republic of"
+msgstr "Korėjos Respublika"
+
+#. XKBFile extension text
+msgid "Iraq"
+msgstr "Irakas"
+
+# NG
+# fuzzy
+#. XKBFile extension text
+msgid "Nigeria"
+msgstr "Serbija"
+
+#. XKBFile extension text
+msgid "Japan (PC-98xx Series)"
+msgstr "Japonija (PC-98xx serija)"
+
+#. XKBFile extension text
+msgid "Estonia"
+msgstr "Estija"
+
+# MM
+# fuzzy
+#. XKBFile extension text
+msgid "Myanmar"
+msgstr "Panama"
+
+#. XKBFile extension text
+msgid "Norway"
+msgstr "Norvegija"
+
+#. XKBFile extension text
+msgid "Germany"
+msgstr "Vokietija"
+
+#. XKBFile extension text
+msgid "Mongolia"
+msgstr "Mongolija"
+
+#. XKBFile extension text
+msgid "Bhutan"
+msgstr "Butanas"
+
+# BD
+# fuzzy
+#. XKBFile extension text
+msgid "Bangladesh"
+msgstr "Bangladešas"
+
+#. XKBFile extension text
+msgid "Latin American"
+msgstr "Lotynų Amerika"
+
+#. XKBFile extension text
+msgid "Belgium"
+msgstr "Belgija"
+
+#. XKBFile extension text
+msgid "Finland"
+msgstr "Suomija"
+
+#. XKBFile extension text
+msgid "Israel"
+msgstr "Izraelis"
+
+#. XKBFile extension text
+msgid "Sweden"
+msgstr "Švedija"
+
+#. XKBFile extension text
+msgid "Russia"
+msgstr "Rusija"
+
+#. XKBFile extension text
+msgid "Portugal"
+msgstr "Portugalija"
+
+#. XKBFile extension text
+msgid "Korean"
+msgstr "Korėjiečių"
+
+#. XKBFile extension text
+msgid "Maori"
+msgstr "Maorių"
+
+#. XKBFile extension text
+msgid "Uzbekistan"
+msgstr "Uzbekistanas"
+
+#. XKBFile extension text
+msgid "Bulgaria"
+msgstr "Bulgarija"
+
+#. XKBFile extension text
+msgid "Thailand"
+msgstr "Tailandas"
+
+#. XKBFile extension text
+msgid "India"
+msgstr "Indija"
+
+#. XKBFile extension text
+msgid "Bengali"
+msgstr "Bengalų"
+
+#. XKBFile extension text
+msgid "Switzerland"
+msgstr "Šveicarija"
+
+#. XKBFile extension text
+msgid "Laos"
+msgstr "Laosas"
+
+#. XKBFile extension text
+msgid "Japan"
+msgstr "Japonija"
+
+# SY
+# fuzzy
+#. XKBFile extension text
+msgid "Syria"
+msgstr "Serbija"
+
+#. XKBFile extension text
+msgid "Czechia"
+msgstr "Čekija"
+
+#. XKBFile extension text
+msgid "Belarus"
+msgstr "Baltarusija"
+
+#. XKBFile extension text
+msgid "Tajikistan"
+msgstr "Tadžikistanas"
+
+#. XKBFile extension text
+msgid "Denmark"
+msgstr "Danija"
+
+#. XKBFile extension text
+msgid "Slovenia"
+msgstr "Slovėnija"
+
+#. XKBFile extension text
+msgid "Malta"
+msgstr "Malta"
+
+# AZ
+#. XKBFile extension text
+msgid "Azerbaijan"
+msgstr "Azerbaidžanas"
+
+#. XKBFile extension text
+msgid "Lithuania"
+msgstr "Lietuva"
+
+# VN
+# fuzzy
+#. XKBFile extension text
+msgid "Vietnam"
+msgstr "Vietnamas"
+
+#. XKBFile extension text
+msgid "Faroe Islands"
+msgstr "Farerų salos"
+
+#. XKBFile extension text
+msgid "South Africa"
+msgstr "Pietų Afrika"
+
+#. XKBFile extension text
+msgid "Farsi"
+msgstr "Farsi"
+
+#. XKBFile extension text
+msgid "Slovakia"
+msgstr "Slovakija"
+
+# MV
+# fuzzy
+#. XKBFile extension text
+msgid "Maldives"
+msgstr "Maldivai"
+
+#. XKBFile extension text
+msgid "Iceland"
+msgstr "Islandija"
+
+#. XKBFile extension text
+msgid "Croatia"
+msgstr "Kroatija"
+
+#. XKBFile extension text
+msgid "Latvia"
+msgstr "Latvija"
+
+#. XKBFile extension text
+msgid "Albania"
+msgstr "Albanija"
+
+#. XKBFile extension text
+msgid "Italy"
+msgstr "Italija"
+
+#. XKBFile extension text
+msgid "Greece"
+msgstr "Graikija"
+
+#. XKBFile extension text
+msgid "United Kingdom"
+msgstr "Jungtinė Karalystė"
+
+#. XKBFile extension text
+msgid "France"
+msgstr "Prancūzija"
+
+# AM
+# fuzzy
+#. XKBFile extension text
+msgid "Armenia"
+msgstr "Armėnija"
+
+#. XKBFile extension text
+msgid "Pakistan"
+msgstr "Pakistanas"
+
+#. XKBFile extension text
+msgid "Poland"
+msgstr "Lenkija"
+
+#. XKBFile extension text
+msgid "Kyrgyzstan"
+msgstr "Kirgiztanas"
+
+#. XKBFile extension text
+msgid "Ireland"
+msgstr "Airija"
+
+#. XKBFile extension text
+msgid "Hungary"
+msgstr "Vengrija"
+
+# KH
+# fuzzy
+#. XKBFile extension text
+msgid "Cambodia"
+msgstr "Kolumbija"
+
+#. XKBFile extension text
+msgid "Spain"
+msgstr "Ispanija"
+
+#. XKBFile extension text
+msgid "Ukraine"
+msgstr "Ukraina"
+
+#. XKBFile extension text
+msgid "Romania"
+msgstr "Rumunija"
+
+# KZ
+# fuzzy
+#. XKBFile extension text
+msgid "Kazakhstan"
+msgstr "Kazakstanas"
+
+#. XKBFile extension text
+msgid "Georgia"
+msgstr "Gruzija"
+
+#. XKBFile extension text
+msgid "U.S. English"
+msgstr "Anglų (JAV)"
+
+#. XKBFile extension text
+msgid "Turkish"
+msgstr "Turkų"
+
+#. XKBFile extension text
+msgid "PC-98xx Series"
+msgstr "PC-98xx serija"
+
+#. XKBFile extension text
+msgid "Netherlands"
+msgstr "Nyderlandai"
+
+#. XKBFile extension text
+msgid "Macedonia"
+msgstr "Makedonija"
+
+#. XKBFile extension text
+msgid "Canada"
+msgstr "Kanada"
+
+#. XKBFile extension text
+msgid "Sri Lanka"
+msgstr "Šti Lanka"
+
+#. XKBFile extension text
+msgid "Bosnia and Herzegovina"
+msgstr "Bosnija ir Hercegovina"
+
+# BR
+#. XKBFile extension text
+msgid "Brazil"
+msgstr "Brazilija"
+
+# GH
+# fuzzy
+#. XKBFile extension text
+msgid "Ghana"
+msgstr "Ghana"
+
+#. XKBFile extension text
+msgid "Andorra"
+msgstr "Andora"
+
+#. XKBFile extension text
+msgid "Afghanistan"
+msgstr "Afghanistanas"
+
+#. XKBFile extension text
+msgid "Esperanto"
+msgstr "Esperanto"
+
+#. XKBFile extension text
+msgid "Turkey"
+msgstr "Turkija"
+
+#. XKBFile extension text
+msgid "CapsLock key switches layout while pressed, Alt+CapsLock does the original capslock action."
+msgstr ""
+
+#. XKBFile extension text
+msgid "CapsLock switch to first layout, Shift+CapsLock switch to last layout."
+msgstr ""
+
+#. XKBFile extension text
+msgid "Less-than/Greater-than is Compose."
+msgstr ""
+
+#. XKBFile extension text
+#, fuzzy
+msgid "Space key outputs non-breakable space character at fourth level, thin non-breakable space character at sixth level (via Ctrl+Shift"
+msgstr "Tarpo klavišas išveda neperkeliamą tarpą ketvirtame lygyje."
+
+#. /.../
+#. Copyright (c) 2000 SuSE GmbH Nuernberg, Germany.  All rights reserved.
+#. This file contains the gettext keys used within a gettext call in the
+#. application code for XFine2
+#.
+#. Maximum length: 40  characters
+msgid "&Step size"
+msgstr "Žing&snio dydis"
+
+#. Maximum length: 40  characters
+msgid "Small"
+msgstr "Mažas"
+
+#. Maximum length: 40  characters
+msgid "Normal"
+msgstr "Normalus"
+
+#. Maximum length: 40  characters
+msgid "Big"
+msgstr "Didelis"
+
+#. Maximum length: 40  characters
+msgid "Huge"
+msgstr "Milžiniškas"
+
+#. Maximum length: 40  characters
+msgid "&Next Screen"
+msgstr "Kitas ekra&nas"
+
+#. Maximum length: 40  characters
+msgid "S&ave"
+msgstr "Išs&augoti"
+
+#. Maximum length: 40  characters
+msgid "Change &Position"
+msgstr "&Pakeisti padėtį"
+
+#. Maximum length: 40  characters
+msgid "C&hange Size"
+msgstr "K&eisti dydį"
+
+#. Maximum length: 40  characters
+msgid "Screen"
+msgstr "Ekranas"
+
+#. Maximum length: 60  characters
+msgid "No video mode tuning available"
+msgstr "Negalimas video veiksenos derinimas"
+
+msgid "Display"
+msgstr "Ekranas"
+
+msgid "Configuration on display"
+msgstr "Ekrano konfigūracija"
+
+msgid "Idle timer..."
+msgstr "Tuščios eigos laikmatis..."
+
+

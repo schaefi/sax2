@@ -1,0 +1,204 @@
+#!/usr/bin/perl
+# Copyright (c) 2000 SuSE GmbH Nuernberg, Germany.  All rights reserved.
+#
+# Author: Marcus Schaefer <sax@suse.de>, 2000
+# Script for creating .po translation files 
+# 
+# Status : development
+#
+use strict;
+use Env qw(ASK_FOR_CHANGELOG TEMPLATE_CHECK);
+
+# init...
+# --------
+my $KeyFile1 = "../api/data/xapi.gtx";
+my $KeyFile2 = "../xfine/xfine.gtx"; 
+my $KeyFile3 = "../tools/xwrapper/xw.c";
+my $KeyFile4 = "../api/xidle.cpp";
+my $Template = "sax-template";
+my $Help     = "sax-help";
+my $CVS      = "CVS";
+my $Changes  = "sax.changes";
+
+#----[ main ]---------#
+sub main {
+#-------------------------------------
+# main function, lets do all those 
+# ugly things :-)
+#
+	my @list;
+	my $dir;
+	my $merge;
+	my $archive;
+
+	# create xapi gettext file for 
+	# xgettext call...
+	# ------------------
+	open (FD,">/tmp/xapi") || die "could not create xapi file";
+	@list = LoadText();
+	print FD @list;
+	close(FD);
+ 
+	# call xgettext to create a po template file (sax.pot)...
+	# ---------------------------------------------------------
+	my $pdate = "POT-Creation-Date";
+	my $tfile = "$Template/sax.pot";
+	my $newtf = "$Template/sax.pot.new";
+	qx (xgettext --no-location -o $newtf -L C++ -c /tmp/xapi 2>/dev/null);
+	qx (cat $newtf| grep -v $pdate > $newtf.dif);
+	qx (mv $newtf.dif $newtf);
+	my $tdif  = qx (diff -u $tfile $newtf);
+	if ($tdif eq "") {
+		unlink ($newtf);
+		if ($TEMPLATE_CHECK ne "no") {
+			print "Template not changed... abort\n";
+			exit(0);
+		}
+	} else {
+		qx (mv $newtf $tfile);
+	}
+
+	# force me to add a change log...
+	# --------------------------------
+	if ($ASK_FOR_CHANGELOG ne "no") {
+		my $fold = qx(filesize $Changes);
+		system("vi $Changes");
+		my $fnew = qx(filesize $Changes);
+		if ($fnew <= $fold) {
+			print "Changes lost or not modified... abort\n";
+			exit(0);
+		}
+	}
+
+	# merge old translations with new template file...
+	# --------------------------------------------------
+	opendir(FD,".");
+	my @files = readdir(FD);
+	closedir(FD);
+	foreach my $dir (sort @files) {
+		if (
+			($dir =~ /^\.|\.\./) || (! -d $dir) || 
+			($dir eq $Template)  || ($dir eq $Help) || ($dir eq $CVS)
+		) {
+			next;
+		}
+		print "SaX merging $dir: ";
+		my $LC="LC_MESSAGES";
+		$merge = qx (
+		msgmerge --no-location ./$dir/$LC/sax.po ./$tfile >./$dir/sax.$dir.po
+		);
+		qx (cp ./$dir/$LC/sax.po ./$dir/$LC/sax.po.old);
+		qx (cp ./$dir/sax.$dir.po ./$dir/$LC/sax.po); 
+		qx (
+		msgfmt ./$dir/$LC/sax.po -o ./$dir/$LC/sax.mo
+		);
+		qx (cat ./$dir/$LC/sax.po| grep -v $pdate > ./$dir/$LC/sax.po.dif);
+		qx (mv ./$dir/$LC/sax.po.dif ./$dir/$LC/sax.po);
+		print $merge; 
+	}
+	qx (cat $tfile| grep -v $pdate > $tfile.dif);
+	qx (mv $tfile.dif $tfile);
+
+	# create translation bundle...
+	# -----------------------------
+	print "creating translation bundle...\n";
+	qx (rm -rf /tmp/sax 2>/dev/null >/dev/null);
+	if (-d "/tmp/sax") {
+		print "\n";
+		print "sorry directory /tmp/sax not removable";
+		exit(1);
+	}
+	qx (mkdir /tmp/sax);
+
+	foreach my $dir (@files) {
+		if (
+			($dir =~ /^\.|\.\./) || (! -d $dir) ||
+			($dir eq $Template)  || ($dir eq $Help) || ($dir eq $CVS)
+		) {
+			next;
+		}
+		my $file = "./$dir/sax.$dir.po";
+		qx (cat $file | grep -v $pdate > $file.dif);
+		qx (mv $file.dif $file);
+		$archive = "$archive $file";
+	}
+	qx (cp $archive /tmp/sax);
+	qx (cp ./$Template/* ./$Help/sax*.txt ./sax.changes /tmp/sax 2>/dev/null);
+	qx (./.fuzzy > /tmp/sax/Status);
+ 
+	my $dir;
+	my $date;
+	$dir = qx(pwd);
+	$dir =~ s/\n//g;
+	$dir =~ s/ +//g;
+	qx (cd /tmp && tar -czf sax-bundle.tgz sax);
+	$date = qx(date -Idate);
+	$date =~ s/\n//g;
+	$date =~ s/ +//g;
+
+	# remove old archiv and create new one
+	# -------------------------------------
+	qx (rm -f ./*.tar.gz);
+	qx (mv /tmp/sax-bundle.tgz $dir/sax-$date.tar.gz);
+}
+
+
+#----[ LoadText ]-----#
+sub LoadText {
+#-----------------------------------------------
+# this function create the gettext caller list
+# the result contain single C/C++ formatted 
+# code which is able to be interpreted from 
+# xgettext
+#
+	my @result;
+	open(TXT,"$KeyFile1") || die "could not open text file: $KeyFile1";
+	while(my $line = <TXT>) {
+	chop($line);
+	if (($line !~ /^#/) && ($line ne "")) {
+		$line =~ /(.*)=(.*)/;
+		my $key   = $1;
+		my $value = $2;
+		push(@result,"text{\"$key\"} = gettext(\"$value\");\n");
+	} elsif ($line =~ /^#/) {
+		$line =~ s/^#/\/\//;
+		$line =~ s/^ +//;
+		push(@result,"$line\n");
+	}
+	}
+	close (TXT);
+	open(TXT,"$KeyFile2") || die "could not open text file: $KeyFile2";
+	while(my $line = <TXT>) {
+	chop($line);
+	if (($line !~ /^#/) && ($line ne "")) {
+		$line =~ /(.*)=(.*)/;
+		my $key   = $1;
+		my $value = $2;
+		push(@result,"text{$key} = gettext(\"$value\");\n");
+	} elsif ($line =~ /^#/) {
+		$line =~ s/^#/\/\//;
+		$line =~ s/^ +//;
+		push(@result,"$line\n");
+	}
+	}
+	close (TXT);
+	open(TXT,"$KeyFile3") || die "could not open text file: $KeyFile3";
+	while(my $line = <TXT>) {
+	chop($line);
+	if ($line =~ /.*gettext.*/) {
+		push(@result,$line);
+	}
+	}
+	close (TXT);
+	open(TXT,"$KeyFile4") || die "could not open text file: $KeyFile4";
+	while(my $line = <TXT>) {
+	chop($line);
+	if ($line =~ /.*gettext.*/) {
+		push(@result,$line);
+	}
+	}
+	close (TXT);
+	return(@result);
+}
+
+main();
